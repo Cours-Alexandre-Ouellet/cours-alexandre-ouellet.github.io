@@ -1,0 +1,24 @@
+{
+    "questions": [
+        {
+            "enonce": "Qu'est-ce qui va le plus vite",
+            "choix": [
+                {
+                    "texte": "Hirondelle d'Afrique",
+                    "correct": true,
+                    "retro": "Bien choisi !"
+                },
+                {
+                    "texte": "Hirondelle d'Europe",
+                    "correct": false,
+                    "retro": "Ben non !"
+                },
+                {
+                    "texte": "Je ne sais pas",
+                    "correct": false,
+                    "retro": "Vous tombez dans le gouffre de la mort"
+                }
+            ]
+        }
+    ]
+}
