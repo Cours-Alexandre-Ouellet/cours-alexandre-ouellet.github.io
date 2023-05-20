@@ -1,0 +1,49 @@
+{
+    "questions": [
+        {
+            "enonce": "Qu'est-ce qui va le plus vite",
+            "choix": [
+                {
+                    "text": "Hirondelle d'Afrique",
+                    "correct": true,
+                    "retro": "Bien choisi !"
+                },
+                {
+                    "text": "Hirondelle d'Europe",
+                    "correct": false,
+                    "retro": "Ben non !"
+                },
+                {
+                    "text": "Je ne sais pas",
+                    "correct": false,
+                    "retro": "Vous tombez dans le gouffre de la mort"
+                }
+            ]
+        },
+        {
+            "enonce": "Qu'est-ce qui va le plus vite",
+            "choix": [
+                {
+                    "text": "Hirondelle d'Afrique",
+                    "correct": true,
+                    "retro": "Bien choisi !"
+                },
+                {
+                    "text": "Hirondelle d'Europe",
+                    "correct": false,
+                    "retro": "Ben non !"
+                },
+                {
+                    "text": "Je ne sais pas",
+                    "correct": false,
+                    "retro": "Vous tombez dans le gouffre de la mort"
+                },
+                {
+                    "text": "!!kotlin|val x : Int = 7",
+                    "correct": false,
+                    "retro": "Vous tombez dans le gouffre de la mort"
+                }
+            ]
+        }
+    ]
+}
