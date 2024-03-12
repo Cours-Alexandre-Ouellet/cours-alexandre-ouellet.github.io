@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/Abstraction/conversion-temps/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Conversion du temps - Activités de développment de l'abstraction en programmation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/hint.min.css" rel="stylesheet" />
+        <link href="../css/override.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Conversion du temps";
+        var mkdocs_page_input_path = "conversion-temps.md";
+        var mkdocs_page_url = "/Cours-Alexandre-Ouellet/Abstraction/conversion-temps/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cs.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Activités de développment de l'abstraction en programmation
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Activités d'écriture de code</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../roche-papier-ciseau/">Roche-papier ciseau / Chifoumi</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Activités de sélection de code</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Conversion du temps</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#situation">Situation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemples-dexecution">Exemples d’exécution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementation-1">Implémentation 1</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementation-2">Implémentation 2</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementation-3">Implémentation 3</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#questions">Questions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mais">MAIS…</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#questions_1">Questions</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Activités de développment de l'abstraction en programmation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">Activités de sélection de code</li>
+      <li class="breadcrumb-item active">Conversion du temps</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="activite-1-les-mathematiques-du-temps">Activité 1 – Les mathématiques du temps</h1>
+<h2 id="situation">Situation</h2>
+<p>Considérez le problème suivant : 
+Écrivez un programme qui convertit un nombre de secondes en nombre d’heures, de minutes et de secondes.
+La méthode qui permet de lire le nombre de secondes est déjà codée. On vous propose trois implémentations de l’algorithme de conversion. Lisez les implémentations puis répondez aux questions .</p>
+<h3 id="exemples-dexecution">Exemples d’exécution</h3>
+<p>Entrée : 10 898         Sortie : 3h 1m 38s
+Entrée : 1796           Sortie : 0h 29m 56s</p>
+<p>La méthode LireSeconde permet de lire un entier au clavier : </p>
+<pre><code class="language-cs">///&lt;summary&gt;
+/// Demande à la personne utilisatrice du système de saisir un nombre entier de secondes au clavier.
+/// Si le nombre est de format invalide ou négatif, alors elle doit recommencer la saisie.
+/// &lt;returns&gt;Le nombre de secondes saisies par la personne utilisatrice&lt;/returns&gt; 
+///&lt;/summary&gt;
+public static LireSecondes() {
+    Console.WriteLine(&quot;Saisissez le nombre de secondes (nombre entier) a couvertir.&quot;);
+    int secondes = -1;
+    bool saisieValide = false;
+
+    while(!saisieValide) {
+        while(!int.TryParse(Console.ReadLine(), out secondes)) {
+            Console.WriteLine(&quot;Le nombre saisie ne correspond pas au format entier. Saisissez la valeur de nouveau.&quot;);
+        }
+
+        if(secondes &lt; 0) {
+            Console.WriteLine(&quot;Le nombre de seconde doit être plus grand ou égal à 0. Saisissez la valeur de nouveau.&quot;);
+        } else {
+            saisieValide = true;
+        }
+    }
+
+    return secondes;
+}
+</code></pre>
+<p>Voici trois implémentations fonctionnelles de l'algorithme qui permettent d’atteindre ce résultat :</p>
+<h3 id="implementation-1">Implémentation 1</h3>
+<pre><code class="language-cs">public static void  ConvertirSecondes() {
+    int secondesEntrees = LireSecondes();
+
+    for(int heures = 0; secondesEntrees &gt;= 3600; secondesEntrees -= 3600) {
+        heures++;
+    }
+    for(int minutes = 0; secondesEntrees &gt;= 60; secondesEntrees -= 60) {
+        minutes++;
+    }
+    Console.WriteLine($&quot;{heures}h {minutes}m {secondesEntrees}s&quot;);
+}
+</code></pre>
+<h3 id="implementation-2">Implémentation 2</h3>
+<pre><code class="language-cs">public static void ConvertirSecondes() {
+    int secondesEntrees = LireSecondes();
+    int heures = secondesEntrees / 3600;        
+    int minutes = (secondesEntrees % 3600) / 60
+    int secondes = ((secondesEntrees % 3600) / 60) % 60
+
+    Console.WriteLine($&quot;{heures}h {minutes}m {secondes}s&quot;);
+}
+</code></pre>
+<h3 id="implementation-3">Implémentation 3</h3>
+<pre><code class="language-cs">public static void ConvertirSecondes() {
+    int tempsConvertir = LireSecondes();
+
+    int heures = tempsConvertir / 3600;
+    tempsConvertir -= heures * 3600;
+
+    int minutes = tempsConvertir / 60;
+    tempsConvertir -= minutes * 60;
+
+    int secondes = tempsConvertir;
+
+    Console.WriteLine($&quot;{heures}h {minutes}m {secondes}s&quot;);
+}
+</code></pre>
+<h3 id="questions">Questions</h3>
+<ol>
+<li>Lequel de ces algorithmes est le plus simple à lire pour comprendre son fonctionnement ? Quelles caractéristiques font-elles en sorte qu’il est plus facile à comprendre ?</li>
+<li>À votre avis, lequel de ces algorithmes est le plus rapide à l’exécution ? Quelles caractéristiques font-elles en sorte qu’il est plus rapide à s’exécuter ?</li>
+<li>Quelle implémentation de l’algorithme est la meilleure ? Énoncez les critères utilisés pour justifier quelle implémentation est la meilleure.</li>
+</ol>
+<h2 id="mais">MAIS…</h2>
+<p>On vous demande maintenant de modifier l’algorithme pour énoncer un nombre de jours, et d’années (on suppose que chaque année contient exactement 365 jours).
+Exemples d’exécution 
+Entrée : 12 898 175         Sortie : 0a 149j 6h 49m 35s
+Entrée : 175 711 648        Sortie : 5a 208j 16h 47m 28s</p>
+<h3 id="questions_1">Questions</h3>
+<ol>
+<li>De laquelle des trois implémentations vous inspiriez-vous ? Est-ce la plus simple à lire, la plus efficace ou la meilleure ? Pourquoi faites-vous ce choix ?</li>
+<li>Écrivez l’implémentation de l’algorithme modifiée.</li>
+<li>Si vous aviez à faire la démarche de conversion sur une feuille de papier, utiliseriez-vous la même technique. Sinon, qu’est-ce qui vous semble peu naturel dans la technique utilisée ?</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../roche-papier-ciseau/" class="btn btn-neutral float-left" title="Roche-papier ciseau / Chifoumi"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../roche-papier-ciseau/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
+</html>
