@@ -23,12 +23,12 @@ span.tooltip {
     font-variant: small-caps;
     font-weight: bolder;
     font-family: inherit;
-    color: #333;
+    color: var(--md-accent-fg-color);
 
     text-decoration: solid;
     text-decoration-line: underline;
     text-decoration-thickness: .75pt;
-    text-decoration-color: #333;
+    text-decoration-color: var(--md-accent-fg-color);
 }
 .competences p {
     margin-bottom: 6px;
@@ -38,6 +38,10 @@ span.tooltip {
 
 /* Indice des problèmes */
 .indice {
-    color: darkcyan;
+    color: var(--md-accent-fg-color);
 }
 
+/* Résolution des fonds transparent d'image */
+img {
+    background-color: white;
+}

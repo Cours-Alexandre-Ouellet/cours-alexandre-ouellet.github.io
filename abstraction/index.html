@@ -16,7 +16,7 @@
       
       
       
-        <link rel="next" href="roche-papier-ciseau/">
+        <link rel="next" href="exercices/connaissances/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -80,7 +80,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -138,31 +138,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink"  aria-label="Basculer au mode foncé"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Basculer au mode foncé" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="pink"  aria-label="Basculer au mode clair"  type="radio" name="__palette" id="__palette_1">
     
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_3">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_4">
+      <label class="md-header__button md-icon" title="Basculer au mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
     
   
 </form>
@@ -172,6 +162,45 @@
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </nav>
@@ -226,6 +255,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -235,6 +275,118 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pour-les-personnes-enseignantes-qui-utilient-le-materiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pour les personnes enseignantes qui utilient le matériel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour les personnes enseignantes qui utilient le matériel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-du-materiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure du matériel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure du matériel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-dactivites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types d'activités
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approche-pedagogique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approche pédagogique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggestion-dapproche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suggestion d'approche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profil-dhabiletes-liees-a-labstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profil d'habiletés liées à l'abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plus-de-lectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plus de lectures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solutionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutionnaires
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#droits-et-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Droits et distribution
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -261,7 +413,7 @@
             
   
   <span class="md-ellipsis">
-    Activités d'écriture de code
+    Exerices
   </span>
   
 
@@ -271,7 +423,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Activités d'écriture de code
+            Exerices
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -282,11 +434,11 @@
   
   
     <li class="md-nav__item">
-      <a href="roche-papier-ciseau/" class="md-nav__link">
+      <a href="exercices/connaissances/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Roche-papier ciseau (Chifoumi)
+    Connaissances conceptuelles
   </span>
   
 
@@ -303,53 +455,11 @@
   
   
     <li class="md-nav__item">
-      <a href="chou-chevre-loup/" class="md-nav__link">
+      <a href="exercices/generalisation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Le chou, la chèvre et le loup
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="rendu-monnaie/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Donne-moi mon argent
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="horaire/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Répartition de locaux
+    Généralisation
   </span>
   
 
@@ -387,7 +497,7 @@
             
   
   <span class="md-ellipsis">
-    Activités de sélection de code
+    Activités d'écriture de code
   </span>
   
 
@@ -396,6 +506,132 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Activités d'écriture de code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ecriture/roche-papier-ciseau/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roche-papier ciseau (Chifoumi)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ecriture/chou-chevre-loup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le chou, la chèvre et le loup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ecirture/rendu-monnaie.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donne-moi mon argent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ecriture/horaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Répartition de locaux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Activités de sélection de code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Activités de sélection de code
           </label>
@@ -408,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="conversion-temps/" class="md-nav__link">
+      <a href="selection/conversion-temps.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,6 +685,107 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pour-les-personnes-enseignantes-qui-utilient-le-materiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pour les personnes enseignantes qui utilient le matériel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour les personnes enseignantes qui utilient le matériel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-du-materiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure du matériel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure du matériel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-dactivites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types d'activités
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approche-pedagogique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approche pédagogique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggestion-dapproche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suggestion d'approche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profil-dhabiletes-liees-a-labstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profil d'habiletés liées à l'abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plus-de-lectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plus de lectures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solutionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutionnaires
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#droits-et-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Droits et distribution
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -463,6 +800,55 @@
 
 
 <h1 id="accueil">Accueil</h1>
+<p>La capacité de représenter des concepts de façon abstraite est essentielle dans les tâches de conception de programmes informatiques. C'est cependant une capacité qui requiert beaucoup d'efforts et de pratique à développer. Les activités présentées ici visent à amener le reforcement de la capacité d'abstraction par des activités de divers niveaux. Les activités amènent souvent à analyser ou à produire du code, mais aussi à se questionner et à partager ces réflexions. Il n'est pas toujours facile de prendre conscience de la façon dont l'on conçoit personnellement l'abstraction d'un concept.</p>
+<ul>
+<li>Quelles sont les étapes dans notre raisonnement ? </li>
+<li>Comment sépare-t-on l'information ?</li>
+<li>Comment l'organise-t-on l'information disponible ?</li>
+</ul>
+<p>Les activités sont accompagnées de questions pour amener les personnes apprennantes à exprimer une réponse à ces questions dans diverses situations.</p>
+<h2 id="pour-les-personnes-enseignantes-qui-utilient-le-materiel">Pour les personnes enseignantes qui utilient le matériel</h2>
+<h3 id="structure-du-materiel">Structure du matériel</h3>
+<p>Chaque rubrique (exercices, activités d'écriture et activités de sélection) présente des activités par ordre de gradation de la difficulté. Pour chaque activité, les concepts de programmation utilisées sont indiquées, de même que la durée approximative, en classe, pour la réalisation des tâches.</p>
+<p>Dans les activités, des liens vers des dépôts Git sont parfois disponibles. Le langage utilisé pour les exemples sur Git est le C#, mais d'autres langages pourraient être ajoutées dans l'avenir. </p>
+<h4 id="types-dactivites">Types d'activités</h4>
+<dl>
+<dt><code>Exerice</code></dt>
+<dd>Tâche courte qui vise le développement d'une seule habileté liées à l'abstraction.</dd>
+<dt><code>Activité d'écriture de code</code></dt>
+<dd>Tâche longue qui amène le développement guidé de plusieurs habiletés liées à l'abstraction.</dd>
+<dt><code>Activité de sélection du code</code></dt>
+<dd>Tâche longue qui amène les personnes étudiantes à analyser plusieurs options possibles et à proposer une solution à partir des observations réalisées.</dd>
+</dl>
+<h3 id="approche-pedagogique">Approche pédagogique</h3>
+<h3 id="suggestion-dapproche">Suggestion d'approche</h3>
+<p>Une approche suggérée pour ces activités est de les répartir durant la session et d'organiser les réponses des personnes étudiantes dans un portfolio. Ce portfolio leur permettra de prendre conscience de l'amélioration accomplie et de revoir comment leur conceptualisation des problèmes à évoluer au fil des semaines. C'est une approche particulièrement efficace pour les cours de première session où les progrès sont rapides et tangibles.</p>
+<h3 id="profil-dhabiletes-liees-a-labstraction">Profil d'habiletés liées à l'abstraction</h3>
+<p>Les habiletés suivantes ont été identifées comme partie intégrante de la capacité d'abstraction à développer chez les personnes étudiantes.</p>
+<dl>
+<dt><code>Connaissances conceptuelles</code></dt>
+<dd>Les connaissances des concepts de code (<em>abstraction</em>) est essentielle pour exprimer une idée ou une démarche dans un langage de programmation. Peu d'activités suggérées ici développent ces connaissances, mais plusieurs activités permettent de les réinvestir afin de les consolider.</dd>
+<dt><code>Généralisation</code></dt>
+<dd>La généralisation est l'une des composantes clés de l'abstraction, car elle représente la capacité à transférer une méthode d'une situation à une autre. Plusieurs activités amènent les personnes étudiantes à dresser un parallèle entre deux problèmes ou même de résoudre un problème avec un algorithme qu'elles ont développées pour une autre situation.</dd>
+<dt><code>Identification des schémas</code></dt>
+<dd>La reconnaissance des schémas permet d'orienter l'utilisation de la généralisation. Les activités plus avancées demandent de dresser un parallèle entre des situations sans préciser les points communs entre les problèmes, laissant aux personnes étudiantes la charge de reconnaître les similitudes dans les algorithmes.</dd>
+<dt><code>Simplification de la complexité</code></dt>
+<dd>Abstraire des problèmes complexes est... complexes. Certaines activités amènent les personnes étudiantes à séparer le problème ou à laisser tomber une partie du problème à résoudre pour ce concentrer sur certaines parties. D'autres activités visent aussi à prendre conscience de certaines limites ou automatismes acquis qui ne s'appliquent pas aux machines.</dd>
+<dt><code>Hiérarchisation ou organisation des connaissances</code></dt>
+<dd>L'abstraction peut demander la mobilisation de plusieurs connaissances en même temps. Il est important de pouvoir correctement nommer et combiner les connaissances dans les limites de chacune et dans leur portée sur le problème à résoudre.</dd>
+<dt><code>Jugement critique</code></dt>
+<dd>L'habileté de jugement critique est utilisée pour évaluer diverses pistes d'action ou divers algorithmes proposés à un problème. Le jugement des personnes étudiantes leur permet de choisir les abstractions qui conviennent et sont pertinentes dans le problème. Il est rare que la meilleure réponse soit la première trouvée, il est donc important que les personnes étudiantes reconnaissent les améliorations à leur démarche ou à leur solution .</dd>
+<dt><code>Habileté à communiquer</code></dt>
+<dd>L'habileté à communiquer ne fait pas partie intégrante de l'abstraction, mais un concept bien compris et bien assimilé devrait pouvoir être communiqué à l'aide de différent support (diagramme, texte, discussion) à d'autres. De même, la communication comporte aussi la portion "réception" (interpréation de diagrammes, lecture ou écoute) qui s'avère aussi essentielle dans les processus d'apprentissage.</dd>
+<dt><code>Autonomie dans l’apprentissage</code></dt>
+<dd>La représentation de l'abstrait est une chose personnelle et le rôle d'une personne enseignante est limitée. Les personnes étudiantes doivent donc entreprendre d'elles-mêmes les démarches nécessaires à la compréhension de l'abstraction dans la résolution de problèmes.</dd>
+</dl>
+<h3 id="plus-de-lectures">Plus de lectures</h3>
+<h3 id="solutionnaires">Solutionnaires</h3>
+<p>Des solutionnaires ont été réalisées pour certaines activités et sont disponibles sur demande à </p>
+<h2 id="droits-et-distribution">Droits et distribution</h2>
+<p>Tout le matériel de cette section (sauf mention contraire) est sous licence <a href="https://creativecommons.org/licenses/by-nc/4.0/"><em>Creative Commons</em> avec obligation d'attribution et interdiction de réutilisation à des fins commerciales</a>.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m245.83 214.87-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M314.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H299c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-101.5-63.7c0-23.3 11.5-35 34.5-35s34.5 11.7 34.5 35c0 23-11.5 34.5-34.5 34.5s-34.5-11.5-34.5-34.5zM247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M247.6 8C387.4 8 496 115.9 496 256c0 147.2-118.5 248-248.4 248C113.1 504 0 393.2 0 256 0 123.1 104.7 8 247.6 8zM55.8 189.1c-7.4 20.4-11.1 42.7-11.1 66.9 0 110.9 92.1 202.4 203.7 202.4 122.4 0 177.2-101.8 178.5-104.1l-93.4-41.6c-7.7 37.1-41.2 53-68.2 55.4v38.1h-28.8V368c-27.5-.3-52.6-10.2-75.3-29.7l34.1-34.5c31.7 29.4 86.4 31.8 86.4-2.2 0-6.2-2.2-11.2-6.6-15.1-14.2-6-1.8-.1-219.3-97.4zM248.4 52.3c-38.4 0-112.4 8.7-170.5 93l94.8 42.5c10-31.3 40.4-42.9 63.8-44.3v-38.1h28.8v38.1c22.7 1.2 43.4 8.9 62 23L295 199.7c-42.7-29.9-83.5-8-70 11.1 53.4 24.1 43.8 19.8 93 41.6l127.1 56.7c4.1-17.4 6.2-35.1 6.2-53.1 0-57-19.8-105-59.3-143.9-39.3-39.9-87.2-59.8-143.6-59.8z"/></svg></span> Alexandre Ouellet, 2024</p>
 
 
 
@@ -470,6 +856,27 @@
 
 
 
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-21</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
 
 
 
@@ -487,6 +894,30 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+        
+          
+          <a href="exercices/connaissances/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Connaissances conceptuelles">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Connaissances conceptuelles
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -503,6 +934,40 @@
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -513,7 +978,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select", "navigation.footer", "search.suggest"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
       <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
