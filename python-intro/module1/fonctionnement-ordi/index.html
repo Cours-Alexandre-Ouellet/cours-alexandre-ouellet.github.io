@@ -1,0 +1,634 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Survol des contenus du cours 420-SN1-RE Programmation en sciences">
+      
+      
+        <meta name="author" content="Alexandre Ouellet">
+      
+      
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/fonctionnement-ordi/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../references/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+    
+    
+      
+        <title>Comment un ordinateur fonctionne-t-il ? - Introduction à Python en Sciences de la nature</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/hint.min.css">
+    
+      <link rel="stylesheet" href="../../css/override.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comment-un-ordinateur-fonctionne-t-il" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-header__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction à Python en Sciences de la nature
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comment un ordinateur fonctionne-t-il ?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_3">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_4">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-nav__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Introduction à Python en Sciences de la nature
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Module 1 - Installation et démarrage avec Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Module 1 - Installation et démarrage avec Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Comment un ordinateur fonctionne-t-il ?
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Comment un ordinateur fonctionne-t-il ?
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristiques-des-ordinateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caractéristiques des ordinateurs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-principales-composantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les principales composantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-processeur-celui-qui-soccupe-de-tout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le processeur : celui qui s'occupe de tout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le processeur : celui qui s'occupe de tout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#x86-ou-64-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      x86 ou 64 bits ?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-cles-de-la-section" class="md-nav__link">
+    <span class="md-ellipsis">
+       Concepts clés de la section
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Références
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristiques-des-ordinateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caractéristiques des ordinateurs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-principales-composantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les principales composantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-processeur-celui-qui-soccupe-de-tout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le processeur : celui qui s'occupe de tout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le processeur : celui qui s'occupe de tout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#x86-ou-64-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      x86 ou 64 bits ?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-cles-de-la-section" class="md-nav__link">
+    <span class="md-ellipsis">
+       Concepts clés de la section
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="comment-un-ordinateur-fonctionne-t-il">Comment un ordinateur fonctionne-t-il ?</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
+<p>Expliquer sommairement le fonctionnement d’un ordinateur </p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>15 minutes</p>
+</div>
+</div>
+<hr />
+<h2 id="caracteristiques-des-ordinateurs">Caractéristiques des ordinateurs</h2>
+<p>Le premier « ordinateur » de l'histoire est la machine d'anticythère (autour du III^e ou du II^e siècle avant Jésus-Christ) qui servait dans le calcul des éclipses. Il s'agit d'un ordinateur analogique, car il y a des données (<strong>entrée</strong>) fournies dans une machine qui ensuite exprime le résultat (<strong>sortie</strong>). </p>
+<p>La machine elle-même <strong>effectue un calcul</strong> avec les entrées fournies, sous le principe de la <strong>boîte noire</strong>, principe selon lequel on peut utiliser un appareil sans connaître son fonctionnement interne. </p>
+<figure>
+    <a class="glightbox" href="../images/machine_anticythere_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/machine_anticythere_1.jpg" width="500" /></a>
+    <figcaption>Fragment de la machine d'Anticythère (Marsyas, 2005)</figcaption>
+</figure>
+<p>Cette annectode permet d'extraire les caractéristiques qu'il est nécessaire de constater dans un objet pour être un <strong>ordinateur</strong> :</p>
+<ul>
+<li>Accepte des données (entrée)</li>
+<li>Fournit une réponse (sortie)</li>
+<li>Effectue un calcul (traitement)</li>
+<li>Conserve de l'information (stockage)</li>
+<li>Opère automatiquement (boîte noire)</li>
+</ul>
+<p>Le métier d'une programmeuse ou d'un programmeur est d'utiliser les quatre premières caractéristiques dans le but de concevoir une méthode de traitement systématique (appelé <strong>algorithme</strong>) des informations pour obtenir le résultat. Le développement d'un système se fait donc en <strong>boîte blanche</strong> et nécessite de comprendre le fonctionnement de la machine (ou du moins de certaines parties comme nous le verrons plus tard).</p>
+<h2 id="les-principales-composantes">Les principales composantes</h2>
+<p>Les ordinateurs modernes sont composés des pièces suivants :</p>
+<dl>
+<dt><code>Carte mère</code></dt>
+<dd>La carte mère est la pièce centrale de l'ordinateur. Elle relie l'information entre les différentes pièces. C'est aussi elle qui contient le <span class="tooltip hint--top" aria-label="Basic Input/Output System">BIOS</span>, le logiciel responsable du démarrage de l'ordinateur.</dd>
+<dt><code>Processeur</code></dt>
+<dd>Le processeur effectue des comparaisons entre deux signaux électriques (pareil ou différent) et d'inverser un signal électrique. Ces deux opérations logiques peuvent être combinées pour obtenir l'ensemble des opérations arithmétiques et logiques.</dd>
+<dt><code>Mémoire RAM</code></dt>
+<dd>La mémoire <span class="tooltip hint--top" aria-label="Random access memory">RAM</span> est la mémoire de travail de l'ordinateur dans laquelle sont enregistrées les données sur lesquels l'ordinateur travail. On peut voir le chargement d'un fihcier dans la mémoire RAM comme laisser trainer une feuille sur son bureau. C'est plus rapide d'y avoir accès, mais le bordel peut s'installer rapidement.</dd>
+<dt><code>Mémoire secondaire (disque SSD, disque dur)</code></dt>
+<dd>La mémoire secondaire est plus structurée que la mémoire RAM, mais cette structure vient au coût de la performance dans l'accès des informations. On peut voir la mémoire secondaire comme le classeur dans lequel on place toutes nos feuilles, bien organisées par dossier et triées en ordre alphabétique. Se lever pour aller consulter une feuille ou y ranger une feuille est long, mais tout est bien ordonné.</dd>
+<dt><code>Carte graphique</code></dt>
+<dd>La carte graphique est un processeur spécialisé dans les calculs de triangles et de certains algorithmes liés au calcul de projections d'éléments tridimentionnels sur un support bidimentionnel.</dd>
+<dt><code>Moniteur</code></dt>
+<dd>C'est le vrai bon terme pour désigner l'écran.</dd>
+<dt><code>Périphériques d'entrée</code></dt>
+<dd>Toutes les composantes qui génèrent un signal qui peut être interprété par l'ordinateur (clavier, souris, manette, écran tactile).</dd>
+</dl>
+<h2 id="le-processeur-celui-qui-soccupe-de-tout">Le processeur : celui qui s'occupe de tout</h2>
+<p>Dans un ordinateur, tout est une comparaison ou une addition de nombres entiers. Le processeur effectue ces opérations au niveau <strong>physique</strong> avec les signaux électriques (0V ou 5V). Le processeur fonctionne sur de <strong>cycles</strong>. À chaque cycle, le processeur reçoit une information à traiter, la traite et emet le signal électrique correspondant à la réponse du calcul. Les cycles sont régulés par la vibration d'un crystal autour de la fréquence <span class="tooltip hint--top" aria-label="3 milliards de cycles par secondes">3 GHz</span> qui permet d'effectuer, dans un cas optimal, 3 000 000 000 de calculs par secondes. </p>
+<p>En vérité, il y a toujours du temps d'attente du processeur (les autres pièces ne fonctionnent pas aussi rapidement), ce qui nous amène loin du cas optimal la plupart du temps.</p>
+<h3 id="x86-ou-64-bits">x86 ou 64 bits ?</h3>
+<p>Une caractéristiques déterminantes des processeurs est la façon dont ils représentent les nombres entiers. Tous les nombres sont représentés en donnée binaire et chaque position d'une donnée binaire est appelé <strong>bit</strong>. Les « vieux » systèmes représentent les entiers en utilisant 32 bits, tandis que les systèmes modernes utilisent plutôt une représentation à 64 bits. Cette représentation est appelée l'<strong>architecture</strong> du processeur. Un système 64 bits permet de traiter un plus grand volume de données ou des données plus voluminieuses par cycle du processeur, que ce qu'un processeur 32 bits le permet. On réfère souvent au processeurs avec une architecture 32 bits comme <strong>x86</strong>.</p>
+<details class="info" open="open">
+<summary>D'où vient le nom x86</summary>
+<p>Ce nom fait référence au processeur 8086, premier processeur lancé en 1978 par <em>Intel</em>. L'architecture du 8086 est sur... 16 bits ! Le nom x86 est resté pour désigner plusieurs produits d'<em>Intel</em> dont le numéro se termine par 86. Comme les processeurs <em>Intel</em> sur une architecture 32 bits ont occupé une large part du marché pendant près de 20 ans, le nom s'est inscrit dans les moeurs de l'informatique pour désigner les processeurs opérant sur 32 bits.</p>
+</details>
+<p>Un processeur 64 bits peut tout à fait exécuter un programme codé pour un processeur 32 bits; la moitié des bits sont simplement inutilisés. Cela entraîne une sous-utilisation du processeur et ne permet pas d'en tirer pleinement profit. Le cas inverse est cependant impossible. Un processeur opérant sur 32 bits ne peut pas exécuter un programme conçu pour un precesseur 64 bits, car il devrait éliminer la moitié des données, ce qui cause évidemment des problèmes majeurs.</p>
+<div class="admonition error">
+<p class="admonition-title">Installer des logiciels</p>
+<p>Plusieurs site de téléchargement offre le choix d'installer la version 32 bits (x86) ou 64 bits d'un logiciel. Il faut faire attention lors du téléchargement poru sélectionner la bonne version.</p>
+</div>
+<p>Pour savoir quelle est la version du processeur installé dans l'ordinateur, on peut accéder aux informations du système en tapant <strong>Système</strong> dans la barre de recherche sur <em>Windows 10</em> ou <em>Windows 11</em>.</p>
+<figure>
+    <a class="glightbox" href="images/information_systeme.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="images/information_systeme.png" width="500" /></a>
+    <figcaption>Fenêtre d'information du système sur Windows 11</figcaption>
+</figure>
+<h2 id="concepts-cles-de-la-section"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m5.6-4c-.8-2.3-3-4-5.6-4-3.3 0-6 2.7-6 6s2.7 6 6 6c2.6 0 4.8-1.7 5.6-4H16v4h4v-4h3v-4H12.6Z"/></svg></span> Concepts clés de la section</h2>
+<dl>
+<dt><code>Boîte blanche et boîte noire</code></dt>
+<dd>Principe de conception selon lesquels on connait la façon dont les données sont traitées (boîte blanche) ou non (boîte noire).</dd>
+<dt><code>Composantes de l'ordinateur</code></dt>
+<dd>Plusieurs composantes spécialisées interviennent dans l'exécution d'un programme. Les opérations de transport des données entre les composantes et les opérations de synchronisation sont complexes et peuvent occasionner des ralentissements dans l'exécution.</dd>
+<dt><code>Architectures</code></dt>
+<dd>Certains programmes sont conçus pour s'exécuter sur certains types de processeur. Il faut être prudent lors de l'installation du logiciel pour sélectionner la bonne version.</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC-BY-NC Alexandre Ouellet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

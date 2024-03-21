@@ -1,98 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="None" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js" defer></script>
-
-    <script>
-        const redirect = (page) => {
-            window.location.href = `./${page}/`
-        }
-    </script>
-
-    <title>Notes de cours</title>
-    <style>
-        #page-layout {
-            margin-left: auto;
-            margin-right: auto;
-            width: 1200px;
-        }
-
-        .container {
-            display: flex;
-            width: 100%;
-            flex-flow: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .card {
-            width: 30%;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 10px !important;
-        }
-
-        .card-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 80px;
-        }
-
-        .card h4 {
-            margin-top: 12px !important;
-            margin-bottom: 12px !important;
-            font-size: 1.5em !important;
-            line-height: 1.1em;
-            font-weight: 500;
-            text-align: center;
-        }
-
-        body {
-            background-color: lightgray;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="page-layout">
-        <h1 class="mdc-typography--headline1">Notes de cours</h1>
-        <div class="container">
-            <div class="card mdc-card mdc-card--elevated  mdc-card__primary-action" onclick="redirect('abstraction')">
-                <div class="card-title">
-                    <h4 class="mdc-typography--headline4">Abstraction</h4>
-                </div>
-                <p class="mdc-typography">Bref résumé du cours d'abstraction</p>
-            </div>
-
-            <div class="card mdc-card mdc-card--elevated mdc-card__primary-action" onclick="redirect('reussir')">
-                <div class="card-title">
-                    <h4 class="mdc-typography--headline4">Réussir en technique de l'informatique</h4>
-                </div>
-                <p class="mdc-typography">Bref résumé du cours de réussir</p>
-            </div>
-
-            <div class="card mdc-card mdc-card--elevated mdc-card__primary-action" onclick="redirect('python-intro')">
-                <div class="card-title">
-                    <h4 class="mdc-typography--headline4">Introduction à Python en Sciences de la nature</h4>
-                </div>
-                <p class="mdc-typography">Bref résumé du cours de la formation</p>
-            </div>
-        </div>
-    </div>
-</body>
+    <title>Vite + React + TS</title>
+    <script type="module" crossorigin src="/assets/index-DS3x6uoc.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BIkoY7iU.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
