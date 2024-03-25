@@ -6,28 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Activités pour développer le raisonnement abstrait en programmation">
+        <meta name="description" content="Survol des contenus du cours 420-SN1-RE Programmation en sciences">
       
       
         <meta name="author" content="Alexandre Ouellet">
       
       
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/types_logique_arithmetique/">
       
       
+        <link rel="prev" href="../syntaxe_base/">
       
-      <link rel="icon" href="/Cours-Alexandre-Ouellet/abstraction/assets/images/favicon.png">
+      
+        <link rel="next" href="../../references/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>Activités de développment de l'abstraction en programmation</title>
+        <title>Types de données, opérations logiques et de chaînes de caractères - Introduction à Python en Sciences de la nature</title>
       
     
     
-      <link rel="stylesheet" href="/Cours-Alexandre-Ouellet/abstraction/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="/Cours-Alexandre-Ouellet/abstraction/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +52,29 @@
       
     
     
-      <link rel="stylesheet" href="/Cours-Alexandre-Ouellet/abstraction/css/hint.min.css">
+      <link rel="stylesheet" href="../../css/hint.min.css">
     
-      <link rel="stylesheet" href="/Cours-Alexandre-Ouellet/abstraction/css/override.css">
+      <link rel="stylesheet" href="../../css/override.css">
     
-    <script>__md_scope=new URL("/Cours-Alexandre-Ouellet/abstraction/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -65,13 +82,18 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#types-de-donnees-operations-logiques-et-de-chaines-de-caracteres" class="md-skip">
+          Aller au contenu
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -85,7 +107,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/Cours-Alexandre-Ouellet/abstraction/." title="Activités de développment de l&#39;abstraction en programmation" class="md-header__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-header__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,13 +121,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Activités de développment de l'abstraction en programmation
+            Introduction à Python en Sciences de la nature
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Types de données, opérations logiques et de chaînes de caractères
             
           </span>
         </div>
@@ -139,8 +161,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -182,13 +202,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/Cours-Alexandre-Ouellet/abstraction/." title="Activités de développment de l&#39;abstraction en programmation" class="md-nav__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-nav__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    Activités de développment de l'abstraction en programmation
+    Introduction à Python en Sciences de la nature
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -200,7 +220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -217,34 +237,36 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Exerices
+    Module 1 - Installation et démarrage avec Python
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Exerices
+            Module 1 - Installation et démarrage avec Python
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -255,11 +277,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/exercices/connaissances/" class="md-nav__link">
+      <a href="../fonctionnement-ordi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Connaissances conceptuelles
+    Comment un ordinateur fonctionne-t-il ?
   </span>
   
 
@@ -276,15 +298,67 @@
   
   
     <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/exercices/generalisation/" class="md-nav__link">
+      <a href="../langage_programmation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Généralisation
+    Le rôle et la structure des langages de programmation
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntaxe_base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La syntaxe de base de Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Types de données, opérations logiques et de chaînes de caractères
+  </span>
+  
+
+      </a>
+      
     </li>
   
 
@@ -318,7 +392,7 @@
             
   
   <span class="md-ellipsis">
-    Activités d'écriture de code
+    Module 2 - Programmer avec Python
   </span>
   
 
@@ -328,7 +402,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Activités d'écriture de code
+            Module 2 - Programmer avec Python
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -339,74 +413,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/ecriture/roche-papier-ciseau/" class="md-nav__link">
+      <a href="../../module2/sujet1.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Roche-papier ciseau (Chifoumi)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/ecriture/chou-chevre-loup/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Le chou, la chèvre et le loup
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/ecriture/rendu-monnaie/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Donne-moi mon argent
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/ecriture/locaux/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Répartition de locaux
+    Sujet 1
   </span>
   
 
@@ -444,7 +455,7 @@
             
   
   <span class="md-ellipsis">
-    Activités de sélection de code
+    Module 3 - Bibliothèques logicielles de Python
   </span>
   
 
@@ -454,7 +465,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Activités de sélection de code
+            Module 3 - Bibliothèques logicielles de Python
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -465,11 +476,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Cours-Alexandre-Ouellet/abstraction/selection/conversion-temps/" class="md-nav__link">
+      <a href="../../module3/sujet1.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Conversion du temps
+    Sujet 1
   </span>
   
 
@@ -482,6 +493,26 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Références
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -503,6 +534,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -514,8 +547,45 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="types-de-donnees-operations-logiques-et-de-chaines-de-caracteres">Types de données, opérations logiques et de chaînes de caractères</h1>
+<p>0.1 en décimal =  0.00011001100110011 (0011) répété à l'infini</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-25</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -528,13 +598,51 @@
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../syntaxe_base/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La syntaxe de base de Python">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                La syntaxe de base de Python
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../references/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Références">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Références
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC-BY-NC Alexandre Ouellet
+      CC BY-NC-SA Alexandre Ouellet
     </div>
   
   
@@ -589,11 +697,17 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/Cours-Alexandre-Ouellet/abstraction/", "features": ["content.code.copy", "content.code.select", "navigation.footer", "search.suggest"], "search": "/Cours-Alexandre-Ouellet/abstraction/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="/Cours-Alexandre-Ouellet/abstraction/assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

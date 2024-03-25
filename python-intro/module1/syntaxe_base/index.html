@@ -18,7 +18,7 @@
         <link rel="prev" href="../langage_programmation/">
       
       
-        <link rel="next" href="../../references/">
+        <link rel="next" href="../types_logique_arithmetique/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -56,6 +56,8 @@
     
       <link rel="stylesheet" href="../../css/override.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -77,12 +79,10 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -135,43 +135,7 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_3">
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_4">
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -428,9 +392,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#declarer-une-variable-de-type-entier-et-effectuer-des-operations-arithmetiques" class="md-nav__link">
+  <a href="#les-bariables-et-les-identificateurs" class="md-nav__link">
     <span class="md-ellipsis">
-      Déclarer une variable de type entier et effectuer des opérations arithmétiques
+      Les bariables et les identificateurs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les bariables et les identificateurs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificateurs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regles-de-style-pour-les-identificateurs-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règles de style pour les identificateurs de variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-une-variable-de-type-numerique-et-effectuer-des-operations-arithmetiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer une variable de type numérique et effectuer des opérations arithmétiques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-une-variable-de-type-chaine-de-caracteres-et-concatener-des-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer une variable de type chaîne de caractères et concaténer des chaînes de caractères
     </span>
   </a>
   
@@ -467,6 +473,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types_logique_arithmetique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de données, opérations logiques et de chaînes de caractères
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -679,9 +706,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#declarer-une-variable-de-type-entier-et-effectuer-des-operations-arithmetiques" class="md-nav__link">
+  <a href="#les-bariables-et-les-identificateurs" class="md-nav__link">
     <span class="md-ellipsis">
-      Déclarer une variable de type entier et effectuer des opérations arithmétiques
+      Les bariables et les identificateurs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les bariables et les identificateurs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificateurs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regles-de-style-pour-les-identificateurs-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règles de style pour les identificateurs de variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-une-variable-de-type-numerique-et-effectuer-des-operations-arithmetiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer une variable de type numérique et effectuer des opérations arithmétiques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-une-variable-de-type-chaine-de-caracteres-et-concatener-des-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer une variable de type chaîne de caractères et concaténer des chaînes de caractères
     </span>
   </a>
   
@@ -793,10 +862,140 @@ Déclarer et concaténer des chaînes de caractère</p>
 <p>Dans plusieurs autres langages de programmation, les guillemets simples ou doubles ont une signification différente et les guillemets doubles servent à traiter les chaînes de caractères. Utiliser cette convention peut aussi faciliter le passage à d'autres langages de programmation.  </p>
 </details>
 <h2 id="executer-un-programme">Exécuter un programme</h2>
-<h2 id="declarer-une-variable-de-type-entier-et-effectuer-des-operations-arithmetiques">Déclarer une variable de type entier et effectuer des opérations arithmétiques</h2>
-<p>Pour déclarer une </p>
+<h2 id="les-bariables-et-les-identificateurs">Les bariables et les identificateurs</h2>
+<p>Les variables en Python servent à contenir l'information d'un type donné. Les variables possèdent toutes un identificateur qui est utilisé pour les manipuler et accéder à leur contenu. Les valeurs contenus dans les variables peuvent changer durant l'exécution d'un programme, mais elles doivent toujours être de même <span class="tooltip hint--top" aria-label="Nature des données contenus comme entier, à virgule flottante, chaîne de caractères ... ">type</span> dans une même variable.</p>
+<h3 id="identificateurs">Identificateurs</h3>
+<p>Plusieurs <span class="tooltip hint--top" aria-label=" Représentation d'un concept tangible ou tiré du monde réel par une construction logicielle. ">abstractions</span> nécessitent d'être nommées pour y faire appel dans le code (comme les variables ou les fonctions). Le langage Python définit 4 règles pour la façon de choisir les identificateurs. Le non respect de ces règles entraîne des erreurs dans l'exécution du script.</p>
+<p>Tous les identificateurs en Python doivent respecter ces quatre règles : </p>
+<ol>
+<li>Ils commencent par une lettre majuscule, minuscule ou un trait de soulignement;</li>
+<li>Les identificateurs sont composés de lettres, de chiffres et de traits de soulignement (&nbsp;_&nbsp;);</li>
+<li>Les identificateurs sont sensibles à la casse (a <span class="arithmatex">\(\neq\)</span> A); et</li>
+<li>Les identificateurs doivent être différents des mots clés réservés du langage.</li>
+</ol>
+<p><strong>Mots clés réservés dans le langage Python</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>False      await      else       import     pass
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>None       break      except     in         raise
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>True       class      finally    is         return
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>and        continue   for        lambda     try
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>as         def        from       nonlocal   while
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>assert     del        global     not        with
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>async      elif       if         or         yield
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Le choix d'un identificateur</p>
+<p>Tous les identificateurs doivent être significatifs. Par exemple, si je veux conserver en mémoire une information sur la concentration d'acide acétique d'une solution, je peux appeler la variable qui contient cette information <code class="language-py highlight"><span class="n">concentration</span></code>, <code class="language-py highlight"><span class="n">concentration_acide</span></code> ou <code class="language-py highlight"><span class="n">concentration_CH3CO</span></code> par exemple. Les identificateurs comme <code class="language-py highlight"><span class="n">x</span></code>, <code class="language-py highlight"><span class="n">conc_acide</span></code>, <code class="language-py highlight"><span class="n">ma_concentration_d_acide_acetique</span></code> ou <code class="language-py highlight"><span class="n">bob</span></code> ne renseignent pas sur la signification de cette variable ou sont inutilement longs.</p>
+</div>
+<h3 id="regles-de-style-pour-les-identificateurs-de-variables">Règles de style pour les identificateurs de variables</h3>
+<p>Pour l'écriture d'un identificateur de variable, il faut respecter les 2 règles : </p>
+<ol>
+<li>On n'utilise pas de lettres majuscules dans les noms de variables, sauf si la lettre majuscule à un sens important; et</li>
+<li>Si notre identificateur comporte plusieurs mots, on place un trait de soulignement (&nbsp;_&nbsp;) entre chaque mot (c'est ce qui s'appelle le <em>snake_case</em>).</li>
+</ol>
+<p>Le non respect de ces règles n'entraînent pas d'erreur dans l'exécution du script, mais diminue la lisibilité du code.</p>
+<h2 id="declarer-une-variable-de-type-numerique-et-effectuer-des-operations-arithmetiques">Déclarer une variable de type numérique et effectuer des opérations arithmétiques</h2>
+<p>Pour déclarer une variable, on lui assigne un identificateur valide et puis on indique le symbole d'égalité (&nbsp;=&nbsp;) puis la valeur initiale de la variable.</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">variable</span> <span class="o">=</span> <span class="mi">2</span>
+</span></code></pre></div>
+<p>Les opérations arithmétiques suivantes peuvent être appliquées sur les types numériques.</p>
+<table>
+<thead>
+<tr>
+<th>Opération</th>
+<th>Opérateur</th>
+<th>Exemple d'utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Addition</td>
+<td>+</td>
+<td><code class="language-py highlight"><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Résultat : 2</span></code></td>
+</tr>
+<tr>
+<td>Soustraction</td>
+<td>-</td>
+<td><code class="language-py highlight"><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1"># Résultat : 0</span></code></td>
+</tr>
+<tr>
+<td>Multiplication</td>
+<td>*</td>
+<td><code class="language-py highlight"><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="mi">2</span> <span class="c1"># Résultat : -2</span></code></td>
+</tr>
+<tr>
+<td>Exponentiation</td>
+<td>**</td>
+<td><code class="language-py highlight"><span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span> <span class="c1"># Résultat : 8</span></code></td>
+</tr>
+<tr>
+<td>Division</td>
+<td>/</td>
+<td><code class="language-py highlight"><span class="mi">3</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># Résultat : 1.5</span></code></td>
+</tr>
+<tr>
+<td>Division entière</td>
+<td>//</td>
+<td><code class="language-py highlight"><span class="mi">11</span> <span class="o">//</span> <span class="mi">3</span> <span class="c1"># Résultat : 3</span></code></td>
+</tr>
+<tr>
+<td>Modulo (reste de la division entière)</td>
+<td>%</td>
+<td><code class="language-py highlight"><span class="mi">11</span> <span class="o">%</span> <span class="mi">3</span> <span class="c1"># Résultat : 2</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Entiers et décimaux</p>
+<p>Les nombres décimaux (à virgule) sont traités différemment des nombres entiers et il faut faire attention quand on les utilise, car cela vient avec certaines implications. Les nombres décimaux seront couverts dans la prochaine section.</p>
+<p>Par exemple, la <strong>division entière</strong> et le <strong>modulo</strong> peuvent se comporter de façon inatendue avec des nombres décimaux.</p>
+</div>
+<h2 id="declarer-une-variable-de-type-chaine-de-caracteres-et-concatener-des-chaines-de-caracteres">Déclarer une variable de type chaîne de caractères et concaténer des chaînes de caractères</h2>
 <h2 id="lire-une-information-de-la-console">Lire une information de la console</h2>
+<p>Pour récupérer une information saisie par la personne utilisatrice, on utilise la fonction <code class="language-py highlight"><span class="nb">input</span><span class="p">()</span></code> qui lit ce qui est entré dans la console jusqu'à symbole de retour à la ligne (touche <span class="keys"><kbd class="key-enter">Enter</kbd></span>). Il faut stocker le résultat de la fonction dans une variable pour pouvoir l'utiliser par la suite. </p>
+<p>Le résultat de <code class="language-py highlight"><span class="nb">input</span><span class="p">()</span></code> est toujours une chaîne de caractère. Par exemple, si l'on entre «&nbsp;5&nbsp;» au clavier, ce sera la chaîne contenant le caractère 5 et non la valeur numérique 5. Pour transformer une chaîne de caractère en valeur numérique entière, il faut utiliser la fonction <code class="language-py highlight"><span class="nb">int</span><span class="p">()</span></code> (la version raccourci du terme <em>integer</em>, entier).</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">saisie</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>        <span class="c1"># Imaginons que 1 est entré, alors saisie </span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                        <span class="c1"># contient &quot;1&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">valeur</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">saisie</span><span class="p">)</span>    <span class="c1"># valeur contient maintenant la valeur </span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>                        <span class="c1"># numérique 1</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">saisie</span> <span class="o">+</span> <span class="mi">1</span>              <span class="c1"># Erreur, on ne peut pas additionner une chaîne</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>                        <span class="c1"># et un entier 👎</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">valeur</span> <span class="o">+</span> <span class="mi">1</span>              <span class="c1"># Tout à fait valide, on peut additionner deux</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>                        <span class="c1"># entiers 👍</span>
+</span></code></pre></div>
 <h2 id="un-premier-programme">Un premier programme</h2>
+<p>Demandez à une personne utilisatrice de saisir deux nombres entier dans la console, multipliez ces nombres et affichez le produit obtenu.</p>
+<details class="abstract">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">super-duper-additionner.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="c1"># Saisie des informations</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrez le premier nombre a multiplier :&quot;</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>    <span class="n">operande_gauche</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entrez le second nombre a multiplier :&quot;</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a>    <span class="n">operande_droite</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a>    <span class="c1"># Calcul et affichage</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a>    <span class="n">produit</span> <span class="o">=</span> <span class="n">operande_gauche</span> <span class="o">*</span> <span class="n">operande_droite</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le produit est : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">produit</span><span class="p">))</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
 <h2 id="concepts-cles-de-la-section"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m5.6-4c-.8-2.3-3-4-5.6-4-3.3 0-6 2.7-6 6s2.7 6 6 6c2.6 0 4.8-1.7 5.6-4H16v4h4v-4h3v-4H12.6Z"/></svg></span> Concepts clés de la section</h2>
 <p><code>point d'entrée</code></p>
 <p><code>déclaration</code></p>
@@ -821,7 +1020,7 @@ Déclarer et concaténer des chaînes de caractère</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-21</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-25</span>
   </span>
 
     
@@ -868,13 +1067,13 @@ Déclarer et concaténer des chaînes de caractère</p>
         
         
           
-          <a href="../../references/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Références">
+          <a href="../types_logique_arithmetique/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Types de données, opérations logiques et de chaînes de caractères">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Références
+                Types de données, opérations logiques et de chaînes de caractères
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -950,6 +1149,12 @@ Déclarer et concaténer des chaînes de caractère</p>
     
     
       <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
