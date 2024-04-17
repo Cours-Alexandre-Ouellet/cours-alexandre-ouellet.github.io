@@ -2,47 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/a_propos/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/environnement_collegial/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/objectifs/</loc>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/references/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/taches_realiser/</loc>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/reussir/temps/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

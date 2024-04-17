@@ -2,52 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/installation/</loc>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/references/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/fonctionnement-ordi/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/langage_programmation/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/syntaxe_base/</loc>
-<<<<<<< HEAD
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/abstraction/module1/types_logique_arithmetique/</loc>
-         <lastmod>2024-03-25</lastmod>
-=======
-         <lastmod>2024-03-22</lastmod>
->>>>>>> 277fdd4e9d462361efe796fe8c98035b69b8f8b2
+         <lastmod>2024-04-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

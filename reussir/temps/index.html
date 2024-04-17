@@ -18,11 +18,11 @@
         <link rel="prev" href="../environnement_collegial/">
       
       
-        <link rel="next" href="../references/">
+        <link rel="next" href="../objectifs/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <link rel="icon" href="../images/siteicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
@@ -55,6 +55,8 @@
       <link rel="stylesheet" href="../css/hint.min.css">
     
       <link rel="stylesheet" href="../css/override.css">
+    
+      <link rel="stylesheet" href="../css/admonition-extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -107,8 +109,7 @@
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-header__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../images/siteicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -136,6 +137,45 @@
     
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </nav>
@@ -165,8 +205,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-nav__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../images/siteicon.png" alt="logo">
 
     </a>
     Réussir en techniques de l'informatique
@@ -230,6 +269,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gestion du temps
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -239,6 +289,255 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-enjeux-a-la-planification-du-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les enjeux à la planification du temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-differents-types-de-planification-du-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les différents types de planification du temps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les différents types de planification du temps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-court-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à court terme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-moyen-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à moyen terme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-long-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à long terme
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outils-pour-planifier-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outils pour planifier son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quelques-trucs-pour-bien-planifier-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs pour bien planifier son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-piege-de-lurgence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le piège de l’urgence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      La procrastination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La procrastination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quelques-mythes-et-faits-sur-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques mythes et faits sur la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-raisons-derriere-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les raisons derrière la procrastination ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelques-trucs-pour-reduire-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs pour réduire la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelques-trucs-qui-ne-fonctionnent-pas-pour-reduire-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs qui ne fonctionnent pas pour réduire la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outils-pour-organiser-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outils pour organiser son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plus-de-lectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plus de lectures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objectifs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se fixer des objectifs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Autres ressources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Autres ressources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taches_realiser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se mettre en action
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -256,26 +555,6 @@
   
   <span class="md-ellipsis">
     Références
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../a_propos/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    À propos
   </span>
   
 
@@ -304,6 +583,161 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-enjeux-a-la-planification-du-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les enjeux à la planification du temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-differents-types-de-planification-du-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les différents types de planification du temps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les différents types de planification du temps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-court-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à court terme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-moyen-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à moyen terme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planification-a-long-terme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planification à long terme
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outils-pour-planifier-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outils pour planifier son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quelques-trucs-pour-bien-planifier-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs pour bien planifier son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-piege-de-lurgence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le piège de l’urgence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      La procrastination
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La procrastination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quelques-mythes-et-faits-sur-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques mythes et faits sur la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-raisons-derriere-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les raisons derrière la procrastination ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelques-trucs-pour-reduire-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs pour réduire la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelques-trucs-qui-ne-fonctionnent-pas-pour-reduire-la-procrastination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques trucs qui ne fonctionnent pas pour réduire la procrastination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outils-pour-organiser-son-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outils pour organiser son temps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plus-de-lectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plus de lectures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -318,65 +752,159 @@
 
 
 <h1 id="gestion-du-temps">Gestion du temps</h1>
-<hr />
-<h1 id="enjeux-a-la-planification">Enjeux à la planification</h1>
+<p>La bonne gestion du temps est un élément déterminant dans la réussite de votre projet d’études collégiales. C’est également un sujet plutôt complexe qui présente beaucoup de défis, surtout durant la période de transition entre le secondaire et le collégial.</p>
+<div class="admonition question">
+<p class="admonition-title">Mais pourquoi ?</p>
+<p>Pourquoi prendre le temps de planifier son temps ? Quand devrais-je faire cette planification ?</p>
+</div>
+<h2 id="les-enjeux-a-la-planification-du-temps">Les enjeux à la planification du temps</h2>
+<p>La planification du temps présente plusieurs des enjeux. Il y a plusieurs avantages à planifier son temps et des avantages à avoir une approche plus du type <em>go with the flow</em>. Par contre, il n’y a pas vraiment d’avantages à oublier un examen ou à perdre des points pour une remise en retard ! <strong>La clé dans la planification du temps est de trouver des outils et des façons de faire qui conviennent à votre style</strong>, tout en vous assurant de ne pas oublier d’éléments importants.</p>
+<p><strong>Avantages à la planification</strong></p>
 <ul>
-<li>Pourquoi prendre le temps planifier son temps ?</li>
-<li>Quand prendre le temps de planifier son temps ?</li>
+<li>Augmente les chances de réaliser toutes les activités que l’on veut réaliser;</li>
+<li>Diminue les chances d’oublier quelque chose d’important;</li>
+<li>Peut aider à vider l’esprit (on planifie la tâche, on peut donc arrêter d’y penser tout le temps pour ne pas l’oublier); et</li>
+<li>Peut aider à diminuer le stress lié à la gestion du temps, car on agit et on se donne des outils pour y arriver.</li>
 </ul>
-<hr />
-<h1 id="enjeux-a-la-planification_1">Enjeux à la planification</h1>
+<p><strong>Désavantages à la planification</strong></p>
 <ul>
-<li>Quels sont les bénéfices à planifier son temps ?</li>
-<li>Quels sont les désavantages à planifier son temps ?</li>
-<li>Quels sont les bénéfices à ne pas planifier son temps ?</li>
-<li>Quels sont les désavantages à ne pas planifier son temps ?</li>
+<li>Nécéssite du temps pour la réaliser et la garder à jour;</li>
+<li>Peut augmenter le stress quand on voit toutes les tâches à réaliser et les échéances approchées (prise de conscience de la charge de travail); et</li>
+<li>Si elle est mal réalisée (oubli d’une tâche ou <span class="tooltip hint--top" aria-label="Comportement où l’on prévoit tout dans les moindres détails et chaque imprévu nous déstabilise.">surplanification</span>) elle peut devenir difficile à modifier et cause plus de défis qu’elle ne nous aide.</li>
 </ul>
-<hr />
-<h1 id="outils-de-planification">Outils de planification</h1>
-<ul>
-<li>Quels outils peut-on utiliser pour planifier son temps ?</li>
-</ul>
-<hr />
-<h1 id="outils-de-planification_1">Outils de planification</h1>
+<p>De règle générale, on ne suggère pas de planifier des tâches qui prennent moins de 2 minutes à réaliser, si elles peuvent l’être immédiatement (comme répondre à un message pour lequel on possède déjà l’information). Planifier trop de petite tâche dans le futur prend souvent plus de temps et peut donner l’impression que l’on est surchargé.</p>
+<h2 id="les-differents-types-de-planification-du-temps">Les différents types de planification du temps</h2>
+<div class="admonition question">
+<p class="admonition-title">Essayez vous-même ?</p>
+<p>Quand on parle de planification, on utilise souvent les expressions : «&nbsp;planification à court terme&nbsp;» ou à «&nbsp;long terme&nbsp;». Trouvez un exemple de quelque chose que vous avez de planifié à court terme et à long terme. Justifiez votre exemple.</p>
+</div>
+<h3 id="planification-a-court-terme">Planification à court terme</h3>
+<p>Planification où l’on identifie des activités qui seront réalisées prochainement, soit dans la journée ou dans les quelques jours qui suivent. On peut identifier des durées assez précisément pour les activités planifiées à court terme et adopter un niveau de détail élevé.</p>
+<h3 id="planification-a-moyen-terme">Planification à moyen terme</h3>
+<p>Planification où l’on identifie des activités qui seront réalisées dans la ou les semaines qui suivent. On peut identifier approximativement des durées (quelques heures ou quelques jours par exemple). Il faut faire attention de ne pas trop inclure de détails dans une planification à moyen terme, car notre planification est moins précise. </p>
+<h3 id="planification-a-long-terme">Planification à long terme</h3>
+<p>Planification où l’on identifie des activités qui seront réalisées soient sur longtemps (plusieurs jours ou semaines) ou dans longtemps (au maximum quelques mois dans un contexte scolaire). Cette planification ne tient pas compte (ou de façon très approximative) des durées des activités et elle inclut peu de détail quant aux tâches à réaliser.</p>
+<div class="admonition abstract">
+<p class="admonition-title">En action !</p>
+<p><strong>Mise en situation</strong> : vous venez d’entreprendre des études collégiales et vous vivez votre deuxième semaine de cours. Vous commencez à planifier votre temps pour la session. Identifiez pour chaque activité si elle est planifiée d’un élément planifier à court, moyen ou long temps ou s’il s’agit d’une activité mal planifiée. Essayez de reformuler les activités mal planifiées pour corriger l’élément fautif. </p>
+<ol>
+<li>Je dois consacrer deux heures cette semaine à faire les exercices 2 à 4 dans le cours de <em>Mathématiques de l’ordinateur</em>;</li>
+<li>J’ai un examen final de 40% à la semaine des examens pour le cours de <em>Programmation 1</em>;</li>
+<li>Je dois prévoir 1 heure à la semaine 12 pour pratiquer mon oral dans le cours d’<em>Écriture et littérature</em>;</li>
+<li>Je dois me garder un après-midi pour un travail d’équipe dans mon cours d’<em>Anglais, formation commune</em> durant la semaine 3 ou 4;</li>
+<li>J’ai un travail à dans 3 jours en <em>Design web</em> qui compte 10% de la session. </li>
+</ol>
+<details class="info">
+<summary>Solution</summary>
+<ol>
+<li>Planifiée à court terme;</li>
+<li>Planifiée à long terme;</li>
+<li>Mal planifiée. Une activité à long terme (dans 10 semaines) ne devrait pas être accompagnée d’une planification de temps aussi précise;</li>
+<li>Planifiée à moyen terme;</li>
+<li>Mal planifiée. Une activité à court terme (dans 3 jours) devrait être accompagnée d’une prévision du temps nécessaire à sa réalisation.</li>
+</ol>
+</details>
+</div>
+<h2 id="outils-pour-planifier-son-temps">Outils pour planifier son temps</h2>
+<p>Plusieurs outils sont disponibles pour la planification du temps. Chaque outil présente des situations où il est plus approprié et d’autres moins. Comme mentionné en introduction, il s’agit de trouver ceux qui nous conviennent le mieux et de les intégrer à notre façon de travailler.</p>
+<div class="admonition group-exercise">
+<p class="admonition-title">Exercice en équipe</p>
+<p>Identifiez des exemples d’utilisation, des avantages et des inconvénients lors de l’utilisation d’un des outils suivants :</p>
 <ul>
 <li>Agenda papier</li>
-<li>Liste de tâche (papier, Google Task ou todoist)</li>
-<li>Application de bureautique comme Outlook ou Google Calendar</li>
-<li>Application spécialisée comme Monday, Click up ou Jira</li>
+<li>Application de calendrier (agenda numérique)</li>
+<li>Liste de tâche (support papier ou numérique)</li>
+<li>Application spécialisée (<em>Monday</em>, <em>Click up</em> ou <em>Jira</em>)</li>
 </ul>
-<hr />
-<h1 id="exercice">Exercice</h1>
-<p>En équipe de 4 lister les avantages et inconvénients d'un outil. Identifiez également des situations où l'outil proposé est adapté et d'autres ou il ne l'est pas. Nommez un porte-parole qui présentera à la classe votre travail.</p>
-<hr />
-<h1 id="trucs-pour-bien-planifier-son-temps">Trucs pour bien planifier son temps</h1>
+<p>Utilisez vos connaissances, vos expériences, votre gros bon sens ou internet pour les trouver. Chaque équipe nomme ensuite une personne qui agit comme porte-parole pour présenter à la classe les avantages et désavantages de vote outil.  </p>
+</div>
+<details class="info">
+<summary>Solution</summary>
+<details class="example">
+<summary>Agenda papier</summary>
+<p><strong>Exemples d’utilisation</strong> : noter des devoirs ou des remises, noter des plages de cours, de devoirs ou de rencontres d’équipe.</p>
+<p><strong>Avantages</strong> : facilement personnalisable et adaptable à notre façon de travailler, présente les éléments avec une vue chronologique claire, la disponibilité du service assurée.</p>
+<p><strong>Inconvénients</strong> : peut s’abimer ou se perdre, si l’on ne tourne pas les pages pour aller voir plus loin, on peut oublier des éléments.</p>
+</details>
+<details class="example">
+<summary>Application de calendrier</summary>
+<p><strong>Exemples d’utilisation</strong> : noter des devoirs ou des remises, noter des plages de cours, de devoirs ou de rencontres d’équipe.</p>
+<p><strong>Avantages</strong> : stockage en ligne et disponibilité dans plusieurs formats, possibilité d’avoir des rappels, différentes vues pour présenter l’information,
+peu ou pas de risque de le perdre.</p>
+<p><strong>Inconvénients</strong> : nécessite du réseau et l’accès à un ordinateur, possibilités de personnalisation limitée, demande quelques connaissances avec l’informatique.</p>
+</details>
+<details class="example">
+<summary>Liste de tâche</summary>
+<p><strong>Exemples d’utilisation</strong> : noter des devoirs à réaliser à court terme, des messages auxquels donner suite, des tâches à réaliser à court terme (on utilise surtout la liste à court terme).</p>
+<p><strong>Avantages</strong> : un seul regard permet de voir tout ce qui est à faire, aspect motivant de <em>barrer</em> une tâche réalisée, libère rapidement notre mémoire de travail.</p>
+<p><strong>Inconvénients</strong> : difficile de représenter l’information de date d’échéance (surtout en format papier), ne tient pas compte de la durée de la tâche ou de sa complexité.</p>
+</details>
+<details class="example">
+<summary>Application spécialisée</summary>
+<p><strong>Exemples d’utilisation</strong> : planifier un travail à long terme composé de plusieurs parties et qui implique plusieurs personnes.</p>
+<p><strong>Avantages</strong> : outil spécialisé avec des fonctionnalités avancées.</p>
+<p><strong>Inconvénients</strong> : demande une grande familiarité avec les outils informatiques, doit être bien utilisée sinon elle devient plus nuisible qu’aidante.</p>
+<p>Un tel outil est souvent trop complexe pour en tirer profit dans sa gestion personnelle du temps.</p>
+</details>
+</details>
+<h2 id="quelques-trucs-pour-bien-planifier-son-temps">Quelques trucs pour bien planifier son temps</h2>
+<dl>
+<dt><code>Ne pas surplanifier son temps</code></dt>
+<dd>
+<p>Même si les études et vos vies sont chargées, faire le plan parfait qui organise chaque minute de votre semaine risque plus de vous contraindre et de vous causer des maux de tête. Une fois que vous avez identifié l’<strong>essentiel</strong> (remises, activités obligatoires), laissez-vous de la place pour les ajustements et pour vous-même.</p>
+</dd>
+<dt><code>Prévoir des périodes d’étude de différentes longueurs</code></dt>
+<dd>
+<p>Personne n’est efficace du matin au soir à fournir des efforts de longue durée dans toutes ces tâches. Également, ce n’est pas tous vos cours qui vous demandent de longues périodes d’études chaque semaine. Assurez-vous de prévoir des périodes plus longues et plus courtes qui correspondent à votre niveau d’énergie dans la journée, votre niveau de motivation et le niveau d’intensité. Pour des exercices complexes, vous pourriez prévoir une plage plus courte. Ces exercices viennent avec <span class="tooltip hint--top" aria-label="demande intellectuelle à réaliser la tâche.">charge cognitive</span> plus intense que celle demandée pour la rédaction d’un travail long pour lequel vous voulez rester dans le sujet. Ça ne veut pas dire que rédiger un travail long est plus simple, mais la façon de travailler est différente. Faites des essais et avec le temps vous apprendrez vos meilleurs moyens de travailler.</p>
+</dd>
+<dt><code>Ne pas toujours prévoir le « urgent en premier »</code></dt>
+<dd>
+<p>À toujours vouloir régler les urgences, on finit par ne plus avoir le temps de faire les autres tâches… jusqu’à ce qu’elles deviennent elle-même des urgences. C’est une bonne façon de perdre le contrôle de votre temps et de vous sentir surchargé. Certaines fois, il est profitable de «&nbsp;protéger&nbsp;» le soi du futur en réglant des tâches non urgentes immédiatement. </p>
+</dd>
+</dl>
+<h2 id="le-piege-de-lurgence">Le piège de l’urgence</h2>
+<p>Lorsqu’on ne fait pas la distinction entre ce qui est «&nbsp;urgent&nbsp;» et ce qui est «&nbsp;important&nbsp;», c’est facile de s’imposer une pression à réaliser des tâches qui ne nous apportent pas beaucoup ou de se mettre une pression à réaliser des tâches qui pourraient attendre. </p>
 <ul>
-<li>Ne pas surplanifier son temps</li>
-<li>Prévoir des périodes d'étude de différentes longueurs</li>
-<li>Ne pas toujours prévoir le « urgent en premier »</li>
+<li>Urgent : ce qui doit être remis rapidement</li>
+<li>Important : ce qui a une grande valeur</li>
 </ul>
+<p>La <a href="https://infogram.com/matrice-eisenhower-1h8n6m3xnegvz4x?live"><strong>Matrice d’Eisenhower</strong></a> présente la façon de gérer les situations selon les caractères de leur urgence et de leur importance. </p>
 <hr />
-<h1 id="le-piege-de-lurgence">Le piège de l'urgence</h1>
-<p>Il faut apprendre à différencier « urgent » et « important ». </p>
-<ul>
-<li>Urgent : qui doit être remis rapidement</li>
-<li>Important : qui a une grande valeur</li>
-</ul>
-<p>Voir la <a href="https://infogram.com/matrice-eisenhower-1h8n6m3xnegvz4x?live">matrice</a>.</p>
-<hr />
-<h1 id="exercice-important-ou-urgent">Exercice : important ou urgent</h1>
-<ul>
+<div class="admonition abstract">
+<p class="admonition-title">En action !</p>
+<p>Pour chaque situation ci-dessous, indiquez si elle est urgente, importante, aucune ou les deux.</p>
+<ol>
 <li>Faire la mise en page de ma dissertation de français à remettre la semaine prochaine</li>
 <li>Faire les exercices formatifs pour le cours dans 1 heure</li>
 <li>Préparer à souper</li>
 <li>Étudier pour le test de 5% de la semaine prochaine</li>
-<li>Étudier pour l'examen de 40% de la semaine prochaine</li>
-<li><em>Bing-watch</em> la dernière saison du Mandalorien</li>
+<li>Étudier pour l’examen de 40% de la semaine prochaine</li>
+<li><em>Binge watch</em> la dernière saison du Mandalorien</li>
 <li>Terminer mon projet de session à remettre demain matin</li>
-<li>Assister à mon cours d'éducation physique</li>
-</ul>
+<li>Assister à mon cours d’éducation physique</li>
+</ol>
+<details class="info">
+<summary>Solution</summary>
+<ol>
+<li>Importante et pas encore urgente, mais pourrait le devenir.</li>
+<li>Assurément urgente, l’importance dépend de la situation.</li>
+<li>Sans être une situation particulièrement urgente ou importante, il faut prendre le temps de prendre ses repas aux bonnes heures, même sous la pression.</li>
+<li>Chaque test est important, pour 5% on peut se douter qu’il n’y a pas beaucoup de matière, donc ce n’est sûrement pas encore urgent.</li>
+<li>Importante (définitivement plus que le test à 5%). Également, avec la quantité de matière que couvre un examen de 40%, c’est probablement urgent de s’y mettre.</li>
+<li>Pas très importante ou urgente, mais définitivement amusant.</li>
+<li>Importante et urgente. C’est le genre de situation que vous ne devriez pas souhaiter voir se produire trop souvent…</li>
+<li>Importante et urgente. La plage horaire est fixe, donc demande une action immédiate (urgence). En éducation physique la participation aux activités est essentielle pour améliorer sa condition physique, donc c’est important d’assister au cours.</li>
+</ol>
+</details>
+</div>
 <hr />
-<h1 id="la-matrice-du-procrastinateur">LA matrice du procrastinateur</h1>
+<h2 id="la-procrastination">La procrastination</h2>
+<p>Ce comportement adopté par une majorité des élèves (un sondage de 2018 révèle que plus de 50% des personnes étudiantes disent procrastiner) consiste à ne pas travailler ou à remettre à plus tard des tâches qui devraient normalement être réalisées prochainement.</p>
+<div class="admonition note">
+<p class="admonition-title">Un comportement nouveau ?</p>
+<p>En 1978, seulement 5% des gens se disent qu’ils procrastinent. Quarante ans plus tard, en 2018, cette proportion a augmenté à 20% des gens. Comme dans plusieurs études, le milieu scolaire affiche une tendance plus marquée comme mentionnée plus haut. </p>
+</div>
+<p>La <strong>matrice de la procrastination</strong> est un pastiche de la matrice d’Eisenhower. Bien qu’elle n’ait pas d’assises scientifiques, elle illustre bien la réflexion que plusieurs ont quand vient le temps de se mettre au travail. </p>
 <table>
 <thead>
 <tr>
@@ -388,8 +916,8 @@
 <tbody>
 <tr>
 <td><strong>Important</strong></td>
-<td>Le faire quand c'est désespéré / en retard</td>
-<td>Délégué à mon moi du futur</td>
+<td>Le faire quand c’est désespéré / en retard</td>
+<td>Déléguer à mon moi du futur</td>
 </tr>
 <tr>
 <td><strong>Pas important</strong></td>
@@ -398,56 +926,73 @@
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="mythes-et-faits-sur-la-procrastination">Mythes et faits sur la procrastination</h1>
+<h3 id="quelques-mythes-et-faits-sur-la-procrastination">Quelques mythes et faits sur la procrastination</h3>
+<details class="question">
+<summary>La procrastination est une mauvaise habitude</summary>
+<p><strong>Mythe</strong> Ce n’est pas réellement une habitude, car une habitude est quelque chose d’acquis. Il s’agit plus d’une perception du travail. Il est possible de la travailler, mais cela demande souvent de changer sa perception et non juste ses actes.</p>
+</details>
+<details class="question">
+<summary>Les personnes qui procrastinent ne sont pas très perfectionnistes</summary>
+<p><strong>Fait</strong> Les gens perfectionnistes sont moins portés à la procrastination, car s’appliquer à perfectionner un résultat prend du temps.</p>
+</details>
+<details class="question">
+<summary>Les personnes qui procrastinent ont peur de l’échec</summary>
+<p><strong>Mythe</strong> Certaines personnes qui procrastinent le font effectivement par peur de l’échec. Toutefois, les personnes qui ont peur de l’échec sont souvent <span class="tooltip hint--top" aria-label=" représentent une plus grande proportion dans l’étude que dans la population, ce qui augmente la force des phénomènes qu’on leur associe.">surreprésentées</span> dans les études.</p>
+</details>
+<details class="question">
+<summary>Les  personnes qui procrastinent  sont plus bêtes ou intelligents que les autres</summary>
+<p><strong>Mythe</strong> Aucune étude sérieuse ne semble démontrer une ou l’autre des tendances.</p>
+</details>
+<details class="question">
+<summary>Les  personnes qui procrastinent  vivent plus dans le moment présent</summary>
+<p><strong>Fait</strong> C’est un des rares traits associés avec la procrastination. Après tout, la procrastination entraîne souvent des conséquences à moyen terme, c’est donc normal que les personnes qui procrastinent souvent pensent moins à ces conséquences distantes.</p>
+</details>
+<h3 id="les-raisons-derriere-la-procrastination">Les raisons derrière la procrastination ?</h3>
+<p>Bien qu’il y ait plusieurs profils de personnes qui procrastinent et des raisons différentes de le faire, certains traits sont constatés plus fréquemment pour expliquer la procrastination. Voici quelques raisons souvent entendues :</p>
 <ul>
-<li>La procrastination est une mauvaise habitude</li>
-<li>Il s'agit plus d'un trait de caractère qu'un acquis</li>
-<li>Celui qui procrastine a peur de l'échec</li>
-<li>Surreprésentation des personnes qui ont peur de l'échec dans les études</li>
-<li>Les procrastinateurs sont plus bêtes / intelligents que les autres</li>
-<li>Rien ne le prouve</li>
-<li>Les procrastinateurs sont perfectionnistes</li>
-<li>C'est plus l'inverse qui est vrai</li>
-<li>Les procrastinateurs vivent plus dans le moment présent</li>
-<li>Tout à fait</li>
+<li>On ne veut pas faire (manque d’intérêt)</li>
+<li>Refus des exigences (tâche inutile ou trop exigeante)</li>
+<li>On ne sait pas par où commencer (difficulté à la réaliser)</li>
+<li>Fatigue (manque de concentration ou d’intérêt)</li>
 </ul>
+<p>On voit dans les raisons qu’on a plus rarement tendance à procrastiner des tâches pour lesquelles l’on a une <span class="tooltip hint--top" aria-label="attitude avant de commencer"><strong>prédisposition</strong></span> <strong>positive</strong> </p>
+<p>Globalement, quand on se situe dans les extrêmes (trop ou pas assez de pression, trop ou pas assez de travail, travail trop ou pas assez difficile) on a tendance à perdre la motivation et à adopter des comportements d’évitement du travail, dont la procrastination.</p>
+<p><a class="glightbox" href="../images/procrastination.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Continuum de la procrastination" src="../images/procrastination.png" /></a></p>
+<h3 id="quelques-trucs-pour-reduire-la-procrastination">Quelques trucs pour réduire la procrastination</h3>
+<dl>
+<dt><code>Dresser une liste de tâches ordonnées</code></dt>
+<dd>Quelques fois, cibler certaines tâches et ne pas essayer de tout accomplir dans la même journée peut être suffisant pour se trouver le petit peu de motivation qui manque pour se lancer au travail. Se dire un samedi que vous faites des devoirs pour seulement 2 cours, au lieu d’essayer de les faire pour 6 cours risque de vous placer dans une meilleure prédisposition à travailler. Évidemment, ciblez les 2 cours les plus urgents et importants !</dd>
+<dt><code>Se fixer des objectifs atteignables</code></dt>
+<dd>Les objectifs (prochaine section) doivent être réalistes, autrement vous risquez de <em>ne pas savoir par où commencer</em>. Également, votre motivation sera plus difficile à conserver, car malgré d’importants efforts vous n’aurez pas la perception d’être plus près de votre objectif. </dd>
+<dd>Les objectifs atteignables dépendent aussi de notre humeur. Il y a des journées où nous sommes moins efficaces, moins motivés ou fatigués; c’est normal chez les humains de vivre ces variations. Il faut en tenir compte dans les objectifs à court terme que l’on se fixe. Il vaut mieux être surpris en réalisant plus qu’il était prévu que se décourager à aller au-delà de notre capacité.</dd>
+<dt><code>Trouver des *starters*</code></dt>
+<dd>Les <em>starters</em> sont des actions ou des rituels que l’on fait avant de se mettre au travail. Cela peut nous aider à créer une prédisposition favorable à travailler, même si l’on est moins motivé une journée.</dd>
+<dt><code>Éviter les distractions</code></dt>
+<dd>Une fois la motivation à travailler trouver, il faut porter attention à ne pas être sorti de notre travail par la moindre distraction. Souvent, il ne nous faut pas une excuse bien importante pour se mettre à procrastiner. </dd>
+<dt><code>Se récompenser</code></dt>
+<dd>Après une séance de travail productive, c’est important de prendre le temps de se récompenser avec une activité que l’on aime. En plus, ça nous offre une occasion de se reposer et d’être plus disposé à une future séance de travail.  </dd>
+</dl>
+<p>Les bonnes méthodes de travail sont comme une roue qui tourne. C’est difficile à mettre en mouvement, mais une fois bien lancée, elle demande moins d’effort à maintenir en mouvement. Récupérer un retard accumulé en plus de réaliser les nouvelles tâches qui s’ajoutent est plus difficile que simplement réaliser les tâches au fur et à mesure qu’elles apparaissent.</p>
+<h3 id="quelques-trucs-qui-ne-fonctionnent-pas-pour-reduire-la-procrastination">Quelques trucs qui ne fonctionnent pas pour réduire la procrastination</h3>
+<dl>
+<dt><code>Se créer des scénarios effrayants</code></dt>
+<dd>Se créer une trop grande pression pour travailler s’avère souvent contre-productif. Cela risque de créer une montagne et renforcer la procrastination. On peut voir le niveau de pression adéquat comme un continuum. Les lignes de la zone de performance sont différentes pour chaque personne.</dd>
+<dt><code>L’abandon des activités procrastinées</code></dt>
+<dd>Non seulement vous ne développerez pas de bonnes habitudes de travail, mais en plus vous risquez sérieusement de vous placer en situation de difficulté scolaire (ou à votre travail). Si les activités qu’on vous demande de faire n’ont pas de sens pour vous, alors questionnez-les, échanger (en faisant preuve d’ouverture) avec les personnes qui vous enseignent pour comprendre pourquoi elle demande de vous ces tâches.</dd>
+<dt><code>Tout changer d’un coup</code></dt>
+<dd>Tout changement prend du temps et parfois plusieurs essais. Il est préférable de travailler sur un ou deux éléments à la fois plutôt que d’être trop ambitieux et qu’au final l’on soit plus découragés qu’autre chose. Entre 4 et 5 tentatives peuvent nécessaires pour réaliser un changement, il ne faut pas se décourager au premier écueil. S’il vous faut plus que 6-7 tentatives, peut-être que votre stratégie doivent être révisée.   </dd>
+</dl>
 <hr />
-<h1 id="quelques-statistiques-sur-la-procrastination">Quelques statistiques sur la procrastination</h1>
-<p>1978 : 5% des gens se disent procrastinateurs</p>
-<p>2018 : 20% des gens</p>
-<p>Et chez les étudiants ?
-  * 50% se disent procrastinateurs</p>
-<hr />
-<h1 id="pourquoi-la-procrastination">Pourquoi la procrastination ?</h1>
-<ul>
-<li>Tâche que l'on ne veut pas faire</li>
-<li>Refus des exigences</li>
-<li>On ne sait pas par où commencer</li>
-<li>Fatigue</li>
-</ul>
-<hr />
-<h1 id="vaincre-la-procrastination">Vaincre la procrastination</h1>
-<ol>
-<li>Faire une liste de tâches ordonnées</li>
-<li>Se fixer des objectifs atteignables</li>
-<li>Trouver des "starters"</li>
-<li>Éviter les distractions</li>
-<li>Se récompenser</li>
-<li>Créer un sentiment d'urgence</li>
-</ol>
-<hr />
-<h1 id="5-traitements-habituellement-inefficaces">5 traitements habituellement inefficaces</h1>
-<ul>
-<li>Scénario effrayant</li>
-<li>Anxiolytiques</li>
-<li>Psychotérapie</li>
-<li>L'abandon des activités procrastinées</li>
-<li>Tout changer d'un coup</li>
-<li>Entre 4 à 5 tentatives sont nécessaires pour provoquer le changement. Plus de 10 =&gt; réévaluer la stratégie  </li>
-</ul>
-<hr />
-<h1 id="travail-de-lagenda">Travail de l'agenda</h1>
+<h2 id="outils-pour-organiser-son-temps">Outils pour organiser son temps</h2>
+<p>Deux fichiers Excel ici proposent des structures de planification du temps à court et long terme (session).</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg></span> <a download="horaire semaine" href="../fichiers/Horaire semaine.xlsx">Horaire d’une semaine</a>. Permet de dresser l’horaire pour une semaine avec des blocs de 50 minutes qui respectent les heures de cours du Cégep. Vous pouvez utiliser votre horaire de cours pour remplir le document et y ajouter vos activités personnelles récurrentes.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg></span> <a download="planification session" href="../fichiers/Horaire session.xlsx">Planification de la session</a>. Permet de dresser l’horaire des évaluations pour une session (avec une semaine 16 ou semaine des examens). Vous pouvez utiliser l’information de vos plans de cours pour trouver l’information de vos évaluations.</p>
+<h2 id="plus-de-lectures">Plus de lectures</h2>
+<p>Dionne, B. (2023). <em>L’essentiel pour réussir ses études</em>, Montréal, Chenelière éducation.</p>
+<p>Escudier, F. &amp; Debas, K. (2020). <em>Savoir apprendre pour réussir</em>, Montréal, Pearson/ERPI.</p>
+<p>ICI Radio-Canada. (6 avril 2019) Pourquoi est-ce que je procrastine? <a href="https://ici.radio-canada.ca/ohdio/premiere/emissions/moteur-de-recherche/segments/chronique/113007/procrastination-remettre-plus-tard-pourquoi-raisons-consequences-conseils-trucs">https://ici.radio-canada.ca/ohdio/premiere/emissions/moteur-de-recherche/segments/chronique/113007/procrastination-remettre-plus-tard-pourquoi-raisons-consequences-conseils-trucs</a> [repéré le 28 octobre 2021].</p>
+<p>Passig, K. &amp; Lobo, S. (2010). Demain, c’est bien aussi: apprendre à gérer sa vie sans aucune discipline personnelle. France: Anabet éd.</p>
+<p>Tracy, B. &amp; Leingerber A. (2021). <em>Avalez le crapaud pour étudiants!:22 moyens pour arrêter de procrastiner et exceller dans ses études</em>, Gatineau, Les Éditions du Trésor caché.</p>
 
 
 
@@ -455,6 +1000,27 @@
 
 
 
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-17</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
 
 
 
@@ -472,18 +1038,92 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../environnement_collegial/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Environnement collégial">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Environnement collégial
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../objectifs/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Se fixer des objectifs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Se fixer des objectifs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC-BY-NC Alexandre Ouellet, Carine Croteau, Mathieu Fréchette
+      CC BY-NC-SA 4.0 | Alexandre Ouellet, Carine Croteau et Mathieu Fréchette
     </div>
   
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
     </a>
   
 </div>
@@ -498,10 +1138,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
