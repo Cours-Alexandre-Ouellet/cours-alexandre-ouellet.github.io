@@ -1,0 +1,35 @@
+/* Section des compétences */
+.competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: space-between;
+}
+.competences .subtitle {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    font-size: medium !important;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: inherit;
+    color: var(--md-accent-fg-color);
+
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-decoration-thickness: .75pt;
+    text-decoration-color: var(--md-accent-fg-color);
+}
+.competences p {
+    margin-bottom: 6px;
+    margin-top: 0px;
+    font-size: smaller;
+}
+
+/* Questions */
+span.question {
+    color: var(--md-accent-fg-color);
+    font-size: large !important;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: inherit;
+}
