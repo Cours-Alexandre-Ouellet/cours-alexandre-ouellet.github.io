@@ -6,27 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Activités pour développer le raisonnement abstrait en programmation">
+        <meta name="description" content="Survol des contenus du cours 420-SN1-RE Programmation en sciences">
       
       
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/abstraction/ecriture/chou-chevre-loup/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module1/types_logique_arithmetique/">
       
       
-        <link rel="prev" href="../roche-papier-ciseau/">
+        <link rel="prev" href="../syntaxe_base/">
       
       
-        <link rel="next" href="../rendu-monnaie/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Le chou, la chèvre et le loup - Activités de développment de l'abstraction en programmation</title>
+        <title>Types de données, opérations logiques et de chaînes de caractères - Introduction à Python en Sciences de la nature</title>
       
     
     
@@ -56,6 +54,8 @@
     
       <link rel="stylesheet" href="../../css/override.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -80,7 +80,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="pink">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#le-chou-la-chevre-et-le-loup" class="md-skip">
+        <a href="#types-de-donnees-operations-logiques-et-de-chaines-de-caracteres" class="md-skip">
           Aller au contenu
         </a>
       
@@ -101,14 +101,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Activités de développment de l&#39;abstraction en programmation" class="md-header__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-header__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -119,13 +116,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Activités de développment de l'abstraction en programmation
+            Introduction à Python en Sciences de la nature
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Le chou, la chèvre et le loup
+              Types de données, opérations logiques et de chaînes de caractères
             
           </span>
         </div>
@@ -160,8 +157,6 @@
         </button>
       </nav>
       
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -186,6 +181,89 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  La formation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../fonctionnement-ordi/" class="md-tabs__link">
+          
+  
+  Module 1 - Installation et démarrage avec Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module2/sujet1.md" class="md-tabs__link">
+          
+  
+  Module 2 - Programmer avec Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../module3/sujet1.md" class="md-tabs__link">
+          
+  
+  Module 3 - Bibliothèques logicielles de Python
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -199,22 +277,65 @@
                     
 
 
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Activités de développment de l&#39;abstraction en programmation" class="md-nav__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
-      
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-nav__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
+      
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
-    Activités de développment de l'abstraction en programmation
+    Introduction à Python en Sciences de la nature
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    La formation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            La formation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -232,41 +353,7 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Exerices
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Exerices
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+              
             
               
                 
@@ -275,11 +362,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercices/connaissances/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Connaissances conceptuelles
+    Préparer l'environnement
   </span>
   
 
@@ -296,11 +383,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercices/generalisation/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Généralisation
+    Références
   </span>
   
 
@@ -328,29 +415,37 @@
     
     
     
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Activités d'écriture de code
+    Module 1 - Installation et démarrage avec Python
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Activités d'écriture de code
+            Module 1 - Installation et démarrage avec Python
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -361,11 +456,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../roche-papier-ciseau/" class="md-nav__link">
+      <a href="../fonctionnement-ordi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Roche-papier ciseau (Chifoumi)
+    Comment un ordinateur fonctionne-t-il ?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../langage_programmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le rôle et la structure des langages de programmation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntaxe_base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La syntaxe de base de Python
   </span>
   
 
@@ -391,107 +528,67 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Le chou, la chèvre et le loup
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Le chou, la chèvre et le loup
+    Types de données, opérations logiques et de chaînes de caractères
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
   
   
   
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
+    
       
-        <li class="md-nav__item">
-  <a href="#enonce-du-probleme" class="md-nav__link">
-    <span class="md-ellipsis">
-      Énoncé du problème
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#taches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tâches
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strategie-a-reutiliser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stratégie à réutiliser
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#defis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Défis
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rendu-monnaie/" class="md-nav__link">
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
-    Donne-moi mon argent
+    Module 2 - Programmer avec Python
   </span>
   
 
-      </a>
-    </li>
-  
-
-              
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module 2 - Programmer avec Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -500,11 +597,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../locaux/" class="md-nav__link">
+      <a href="../../module2/sujet1.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Répartition de locaux
+    Sujet 1
   </span>
   
 
@@ -530,6 +627,11 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -542,7 +644,7 @@
             
   
   <span class="md-ellipsis">
-    Activités de sélection de code
+    Module 3 - Bibliothèques logicielles de Python
   </span>
   
 
@@ -552,7 +654,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Activités de sélection de code
+            Module 3 - Bibliothèques logicielles de Python
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -563,11 +665,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../selection/conversion-temps/" class="md-nav__link">
+      <a href="../../module3/sujet1.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Conversion du temps
+    Sujet 1
   </span>
   
 
@@ -591,68 +693,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enonce-du-probleme" class="md-nav__link">
-    <span class="md-ellipsis">
-      Énoncé du problème
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tâches
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strategie-a-reutiliser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stratégie à réutiliser
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#defis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Défis
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -661,63 +701,8 @@
                   
 
 
-<h1 id="le-chou-la-chevre-et-le-loup">Le chou, la chèvre et le loup</h1>
-<div class="competences">
-<div style="flex: 0 0 70%">
-<p class="subtitle">Compétences mobilisées</p>
-<p>Identification des schémas &mdash; Simplification de la complexité &mdash; Généralisation</p>
-<p class="subtitle">Concepts de programmation utilisés</p>
-<p>Entrées et sorties en console &mdash; Conditions &mdash; Boucles</p>
-</div>
-<div>
-<! -- omit in toc -->
-<p class="subtitle">Niveau</p>
-<p>Intermédiaire</p>
-<! -- omit in toc -->
-<p class="subtitle">Temps requis</p>
-<p>2 périodes (1 h 40)</p>
-</div>
-</div>
-<p class="github-header">
-<span style="margin-right:10px"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span></span><span class="github-link"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.5 15.97.41 2.44c-.26.14-.68.27-1.24.39-.57.13-1.24.2-2.01.2-2.21-.04-3.87-.7-4.98-1.96C2.56 15.77 2 14.16 2 12.21c.05-2.31.72-4.08 2-5.32C5.32 5.64 6.96 5 8.94 5c.75 0 1.4.07 1.94.19s.94.25 1.2.4l-.58 2.49-1.06-.34c-.4-.1-.86-.15-1.39-.15-1.16-.01-2.12.36-2.87 1.1-.76.73-1.15 1.85-1.18 3.34 0 1.36.37 2.42 1.08 3.2.71.77 1.71 1.17 2.99 1.18l1.33-.12c.43-.08.79-.19 1.1-.32M13.89 19l.61-4H13l.34-2h1.5l.32-2h-1.5L14 9h1.5l.61-4h2l-.61 4h1l.61-4h2l-.61 4H22l-.34 2h-1.5l-.32 2h1.5L21 15h-1.5l-.61 4h-2l.61-4h-1l-.61 4h-2m2.95-6h1l.32-2h-1l-.32 2Z"/></svg></span> <a href="https://github.com/Cours-Alexandre-Ouellet/activites-abstraction/tree/traverse-rive-csharp-solution">Solution</a></span><span class="github-link"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55 1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73 1.6 0 2.8-.83 2.8-2.36 0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02 0-.41.31-.73.81-.73.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33-1.51 0-2.48.96-2.48 2.23 0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13 0 .48-.45.83-1.15.83-.83 0-1.31-.43-1.67-1.03l-1.38.8Z"/></svg></span> <a href="https://github.com/Cours-Alexandre-Ouellet/activites-abstraction/tree/locaux-janvascript-solution">Solution</a></span>
-</p>
-<h2 id="enonce-du-probleme">Énoncé du problème</h2>
-<p>Le problème du chou, de la chèvre et du loup est un problème classique d’algorithmie. Sur la rive d’une rivière sont disposés un chou, un chèvre et un loup. Le but est de faire traverser les trois items sur l’autre rive à l’aide d’une barque qui ne peut transporter qu’un des items à la fois. Si pendant un transport, le chou et la chèvre sont sur la même rive, la chèvre mange le chou, ce que l’on veut éviter. De même le loup mange la chèvre s’ils sont sur la même rive pendant un transport. Il n’y a pas de contraintes sur le nombre de transports qui peuvent être fait, ni sur la direction de ceux-ci.</p>
-<h2 id="taches">Tâches</h2>
-<ol>
-<li>Trouvez la solution au problème et énoncez les étapes à suivre ;</li>
-<li>Énoncez est la contrainte qui doit être respectée pour que le problème soit résolu ;</li>
-<li>Dans l’énoncé précédent, nous ajoutons un bâton et un feu. Le bâton bat le loup et le feu brule le bâton. Votre barque possède maintenant 2 places. Trouvez la solution à ce problème. Si vous avez la bonne contrainte à la tâche 2, la solution devrait vous apparaître simplement. Si la solution vous semble complexe à trouver, revoyez votre réponse de la tâche 2 ;</li>
-<li>Reformulez la contrainte de l’énoncé de 2 de la façon la plus générale possible ;</li>
-<li>On généralise maintenant le problème (<em>Problème de traverse de rive</em>) de la façon suivante :<br/>
-Sur une rive, il y a un nombre N d’éléments impairs numérotés de 0 à N-1. Chaque élément détruit l’élément de numéro précédent (par exemple, l’élément 2 détruit l’élément 1). Une barque, qui peut transporter (N-1) / 2 éléments, permet de transporter les éléments d’une rive à l’autre (donc si vous avez 17 éléments, votre barque peut en transporter 8). Le but est d’apporter tous les éléments sur l’autre rive sans qu’ils soient détruits.<br/><br/>
-Écrivez un programme qui indique à chaque voyage de la barque entre les deux rives quels sont éléments transportés. Inspirez vous des étapes précédentes pour ce faire.<br/><br/></li>
-</ol>
-<div class="admonition exemple">
-<p class="admonition-title">Sortie attendue du programme (exemple qui n'est pas fonctionnel)</p>
-<p><pre markdown="1">
-Combien d'éléments doivent être traversés (nombre impair 3 et 99) ?
-9 <br />
-Solution au problème de traverse de rive
-    Nombre d'elements : 9
-    Taille de la barque : 4</p>
-<div class="language-text highlight"><pre><span></span><code>Aller 1  (4 éléments): transporter les éléments 1, 2, 3, 4 
-Retour 1 (2 éléments): transporter les éléments 2, 3 
-Aller 2  (3 éléments): transporter les éléments 3, 5, 6 
-Retour 2 : ...
-</code></pre></div>
-</pre>
-</div>
-<ol start="6">
-<li>Expliquez ce que vous retenez de la stratégie utilisée pour résoudre le <em>Problème de traverse de rive</em>.</li>
-</ol>
-<h2 id="strategie-a-reutiliser">Stratégie à réutiliser</h2>
-<p>Face à un cas général comme le problème de traverse de rive définit à l’étape 4, il faut commencer par le résoudre avec des exemples concrets et simples. Cela aide grandement à comprendre le fonctionnement du problème. On observe et extrait les stratégies utilisées pour faire la résolution (que l’on essaie de formuler de la façon la plus générale possible) et on les applique dans le cas général.</p>
-<h2 id="defis">Défis</h2>
-<ol>
-<li>Utilisez un seul tableau pour encoder les éléments à transporter ;</li>
-<li>Dans tous les cas (peu importe le N), vous ne devriez pas faire plus de 3 allers-retours et 1 aller simple (7 traversées) pour transporter tous les éléments.</li>
-</ol>
+<h1 id="types-de-donnees-operations-logiques-et-de-chaines-de-caracteres">Types de données, opérations logiques et de chaînes de caractères</h1>
+<p>0.1 en décimal =  0.00011001100110011 (0011) répété à l'infini</p>
 
 
 
@@ -738,7 +723,7 @@ Retour 2 : ...
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-25</span>
   </span>
 
     
@@ -768,7 +753,7 @@ Retour 2 : ...
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../roche-papier-ciseau/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Roche-papier ciseau (Chifoumi)">
+          <a href="../syntaxe_base/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La syntaxe de base de Python">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -778,27 +763,11 @@ Retour 2 : ...
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Roche-papier ciseau (Chifoumi)
+                La syntaxe de base de Python
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../rendu-monnaie/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Donne-moi mon argent">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Donne-moi mon argent
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -808,7 +777,7 @@ Retour 2 : ...
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC-BY-NC Alexandre Ouellet
+      CC BY-NC-SA Alexandre Ouellet
     </div>
   
   
@@ -863,10 +832,16 @@ Retour 2 : ...
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.footer", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

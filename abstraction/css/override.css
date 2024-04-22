@@ -35,6 +35,12 @@ span.tooltip {
     margin-top: 0px;
     font-size: smaller;
 }
+.github-link a {
+    font-size: smaller;
+}
+.github-link + .github-link {
+    margin-left: 50px;
+}
 
 /* Indice des problèmes */
 .indice {
