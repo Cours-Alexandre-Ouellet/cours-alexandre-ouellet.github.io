@@ -21,7 +21,7 @@
         <link rel="next" href="../rendu-monnaie/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
@@ -107,8 +107,7 @@
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Activités de développment de l&#39;abstraction en programmation" class="md-header__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -204,8 +203,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Activités de développment de l&#39;abstraction en programmation" class="md-nav__button md-logo" aria-label="Activités de développment de l'abstraction en programmation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
     Activités de développment de l'abstraction en programmation
@@ -690,7 +688,7 @@
 <li>Dans l’énoncé précédent, nous ajoutons un bâton et un feu. Le bâton bat le loup et le feu brule le bâton. Votre barque possède maintenant 2 places. Trouvez la solution à ce problème. Si vous avez la bonne contrainte à la tâche 2, la solution devrait vous apparaître simplement. Si la solution vous semble complexe à trouver, revoyez votre réponse de la tâche 2 ;</li>
 <li>Reformulez la contrainte de l’énoncé de 2 de la façon la plus générale possible ;</li>
 <li>On généralise maintenant le problème (<em>Problème de traverse de rive</em>) de la façon suivante :<br/>
-Sur une rive, il y a un nombre N d’éléments impairs numérotés de 0 à N-1. Chaque élément détruit l’élément de numéro précédent (par exemple, l’élément 2 détruit l’élément 1). Une barque, qui peut transporter (N-1) / 2 éléments, permet de transporter les éléments d’une rive à l’autre (donc si vous avez 17 éléments, votre barque peut en transporter 8). Le but est d’apporter tous les éléments sur l’autre rive sans qu’ils soient détruits.<br/><br/>
+Sur une rive, il y a un nombre N d’éléments impairs numérotés de 1 à N. Chaque élément détruit l’élément de numéro précédent (par exemple, l’élément 2 détruit l’élément 1). Une barque, qui peut transporter (N-1) / 2 éléments, permet de transporter les éléments d’une rive à l’autre (donc si vous avez 17 éléments, votre barque peut en transporter 8). Le but est d’apporter tous les éléments sur l’autre rive sans qu’ils soient détruits.<br/><br/>
 Écrivez un programme qui indique à chaque voyage de la barque entre les deux rives quels sont éléments transportés. Inspirez vous des étapes précédentes pour ce faire.<br/><br/></li>
 </ol>
 <div class="admonition exemple">
@@ -715,7 +713,6 @@ Retour 2 : ...
 <p>Face à un cas général comme le problème de traverse de rive définit à l’étape 4, il faut commencer par le résoudre avec des exemples concrets et simples. Cela aide grandement à comprendre le fonctionnement du problème. On observe et extrait les stratégies utilisées pour faire la résolution (que l’on essaie de formuler de la façon la plus générale possible) et on les applique dans le cas général.</p>
 <h2 id="defis">Défis</h2>
 <ol>
-<li>Utilisez un seul tableau pour encoder les éléments à transporter ;</li>
 <li>Dans tous les cas (peu importe le N), vous ne devriez pas faire plus de 3 allers-retours et 1 aller simple (7 traversées) pour transporter tous les éléments.</li>
 </ol>
 
@@ -738,7 +735,7 @@ Retour 2 : ...
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-24</span>
   </span>
 
     
