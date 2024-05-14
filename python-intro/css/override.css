@@ -42,3 +42,10 @@ span.tooltip {
     color: darkcyan;
 }
 
+/* Ajout d'une bordure autour des tab contents */
+.md-typeset .tabbed-content {
+    border: solid 1.5px lightgrey;
+    border-radius: 0px 12px 12px 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
