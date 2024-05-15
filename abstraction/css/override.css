@@ -47,7 +47,3 @@ span.tooltip {
     color: var(--md-accent-fg-color);
 }
 
-/* Résolution des fonds transparent d'image */
-img {
-    background-color: white;
-}

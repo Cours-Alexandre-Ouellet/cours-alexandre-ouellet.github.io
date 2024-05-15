@@ -18,13 +18,15 @@
         <link rel="prev" href="../syntaxe_base/">
       
       
+        <link rel="next" href="../../module2/boucles/">
+      
       
       <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Types de données, opérations logiques et de chaînes de caractères - Introduction à Python en Sciences de la nature</title>
+        <title>Types de données, opérations et conditions logiques - Introduction à Python en Sciences de la nature</title>
       
     
     
@@ -89,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#types-de-donnees-operations-logiques-et-de-chaines-de-caracteres" class="md-skip">
+        <a href="#types-de-donnees-operations-et-conditions-logiques" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Types de données, opérations logiques et de chaînes de caractères
+              Types de données, opérations et conditions logiques
             
           </span>
         </div>
@@ -231,7 +233,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../module2/sujet1.md" class="md-tabs__link">
+        <a href="../../module2/boucles/" class="md-tabs__link">
           
   
   Module 2 - Programmer avec Python
@@ -528,15 +530,198 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Types de données, opérations et conditions logiques
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Types de données, opérations logiques et de chaînes de caractères
+    Types de données, opérations et conditions logiques
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types de données
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types de données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nombres-entiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nombres entiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nombres-a-virgule-flottante" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nombres à virgule flottante
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representation-des-types-logiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Représentation des types logiques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representation-de-rien-pantoute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Représentation de rien pantoute
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autres-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conversion-entre-les-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversion entre les types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-conditionnelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction conditionnelle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction conditionnelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clause-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clause de base
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clause de base">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparateurs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sinon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sinon...
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-logiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opérations logiques
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-roche-papier-ciseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le roche-papier-ciseau
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-cles-de-la-section" class="md-nav__link">
+    <span class="md-ellipsis">
+       Concepts clés de la section
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fonctions-vues-dans-cette-section" class="md-nav__link">
+    <span class="md-ellipsis">
+       Les fonctions vues dans cette section
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -597,11 +782,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module2/sujet1.md" class="md-nav__link">
+      <a href="../../module2/boucles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sujet 1
+    Boucles «&nbsp;pour&nbsp;» et «&nbsp;tant que&nbsp;»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les collections de données
   </span>
   
 
@@ -701,8 +907,60 @@
                   
 
 
-<h1 id="types-de-donnees-operations-logiques-et-de-chaines-de-caracteres">Types de données, opérations logiques et de chaînes de caractères</h1>
-<p>0.1 en décimal =  0.00011001100110011 (0011) répété à l'infini</p>
+<h1 id="types-de-donnees-operations-et-conditions-logiques">Types de données, opérations et conditions logiques</h1>
+<p>Tel que vu à la section précédente, il existe différents types aux données que l'on manipule. Les fonctions et les opérations s'attendent à recevoir des données dans certains types, il faut donc s'assurer de les respecter. Le langage python est dit typé :
+- <strong>fort</strong> : on ne peut pas mélanger les types de données, il faut faire les conversions explicites; et
+- <strong>dynamique</strong> : on ne précise pas le type dans la déclaration de la variable, il est déduit par l'interpréteur de python.</p>
+<p>Concrètement, cela signifie que l'on ne peut pas par exemple additionner une chaîne de caractères et un entier, mais on peut assigner une chaîne de caractères à une variable, puis assigner un entier dans la même variable</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Typage des variables</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">chaine</span> <span class="o">=</span> <span class="s2">&quot;Allo&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">valeur</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Ce bout de code est invalide</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">valeur</span> <span class="o">+</span> <span class="n">chaine</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># Ce bout de code est valide</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">valeur</span> <span class="o">=</span> <span class="s2">&quot;valeur&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="types-de-donnees">Types de données</h2>
+<p>On trouve en python les types de données suivants :</p>
+<ul>
+<li>Nombres entiers;</li>
+<li>Nombres à virgule flottante;</li>
+<li>Chaînes de caractères;</li>
+<li>Booléens (variables logiques);</li>
+<li>Tableaux (vus au module 2);</li>
+<li>Structures de données (vues au module 2); et</li>
+<li>Classes (pas vues dans la formation).</li>
+</ul>
+<h3 id="nombres-entiers">Nombres entiers</h3>
+<p>Les nombres entiers sont représentés en format binaire (composé de 0 et de 1). Le binaire fonctionne comme le système décimal, mais au lieu de compter en base 10, on compte en base 2.</p>
+<p>Par exemple le nombre 101 en décimale est en fait la somme suivante :
+<span class="arithmatex">\(101 = 1 \times 10^2 + 0 \times 10^1 + 1 \times 10^0\)</span></p>
+<p>Le même nombre en binaire représente plutôt la somme suivante : <span class="arithmatex">\(101 = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0\)</span> ... soit la valeur 5 en base décimale.</p>
+<p>Les entiers en python, contrairement à bien des langages de programmation, sont encodés sur un nombre de bits variable, ce qui évite les erreurs de débordement (<em>overflow</em>) constatés avec d'autres langages.</p>
+<h3 id="nombres-a-virgule-flottante">Nombres à virgule flottante</h3>
+<p>Les nombres à virgule (appelés vrigule flottante en informatique) sont également représentés en binaire, à l'aide d'un <span class="tooltip hint--top" aria-label=" signification des bits selon leur position au lieu d'une interprétation numérique comme pour les entiers ">masque</span>. Le passage de la base décimale en la base binaire se fait moins naturellement que pour les entiers à cause du changement des nombres à représentation périodique. </p>
+<p>Par exemple en base 10, on écrit souvent la fraction <span class="arithmatex">\(\frac{1}{3}\)</span> comme 0.33 ou 0.333 ... selon le degré de précision souhaité. Cet arrondi cause des erreurs arithmétiques qui s'accumulent lors des calculs. En binaire, le même phénomène se produit, mais sur des valeurs différentes. Par exemple la fraction <span class="arithmatex">\(\frac{1}{10}\)</span> est représentée en binaire par 0.0011 0011 0011 (0011) répété à l'infini, donc est aussi arrondit et cause des erreurs arithmétiques. Par exemple, <span class="arithmatex">\(\frac{1}{10} + \frac{1}{10} + \frac{1}{10} = 0.30000000000000004\)</span>.</p>
+<p>De plus, la représentation en virgule flottante exploite la <strong>notation scientifique</strong>. Donc la précision est autour de la virgule (d'où le nom virgule flottante) et il est possible de perdre une partie de l'information pour les grands nombres. Python présente que les 17 premières décimales d'un nombre, même si plus sont calculées. Les nombres décimaux doivent être 2.2250738585072014e-308 entre 1.7976931348623157e+308.</p>
+<h3 id="representation-des-types-logiques">Représentation des types logiques</h3>
+<h3 id="representation-de-rien-pantoute">Représentation de rien pantoute</h3>
+<h3 id="autres-types">Autres types</h3>
+<h2 id="conversion-entre-les-types">Conversion entre les types</h2>
+<h2 id="instruction-conditionnelle">Instruction conditionnelle</h2>
+<h3 id="clause-de-base">Clause de base</h3>
+<h4 id="comparateurs">Comparateurs</h4>
+<h3 id="sinon">Sinon...</h3>
+<h3 id="operations-logiques">Opérations logiques</h3>
+<h2 id="le-roche-papier-ciseau">Le roche-papier-ciseau</h2>
+<h2 id="concepts-cles-de-la-section"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m5.6-4c-.8-2.3-3-4-5.6-4-3.3 0-6 2.7-6 6s2.7 6 6 6c2.6 0 4.8-1.7 5.6-4H16v4h4v-4h3v-4H12.6Z"/></svg></span> Concepts clés de la section</h2>
+<h2 id="les-fonctions-vues-dans-cette-section"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81L22 13.65Z"/></svg></span> Les fonctions vues dans cette section</h2>
 
 
 
@@ -723,7 +981,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-30</span>
   </span>
 
     
@@ -768,6 +1026,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../../module2/boucles/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Boucles «&amp;nbsp;pour&amp;nbsp;» et «&amp;nbsp;tant que&amp;nbsp;»">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Boucles «&nbsp;pour&nbsp;» et «&nbsp;tant que&nbsp;»
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
