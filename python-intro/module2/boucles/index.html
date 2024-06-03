@@ -18,7 +18,7 @@
         <link rel="prev" href="../../module1/types_logique_arithmetique/">
       
       
-        <link rel="next" href="../collections/">
+        <link rel="next" href="../fonctions/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -691,10 +691,73 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lerreur-arithmetique-du-float" class="md-nav__link">
+    <span class="md-ellipsis">
+      L'erreur arithmétique du float
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-suite-de-fibonacci" class="md-nav__link">
+    <span class="md-ellipsis">
+      La suite de Fibonacci
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-methode-de-newton" class="md-nav__link">
+    <span class="md-ellipsis">
+      La méthode de Newton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fonctions
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -820,7 +883,7 @@ Utiliser les boucles <strong>pour</strong> et <strong>tant que</strong> dans les
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>25 minutes</p>
+<p>40 minutes</p>
 </div>
 </div>
 <h2 id="traitements-repetitifs">Traitements répétitifs</h2>
@@ -853,7 +916,7 @@ Utiliser les boucles <strong>pour</strong> et <strong>tant que</strong> dans les
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure markdown="span">
-    <a class="glightbox" href="../../images/schema_nombre_positif1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/schema_nombre_positif1.png" width="250" /></a>
+    <a class="glightbox" href="../../images/schema_nombre_positif.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/schema_nombre_positif.png" width="250" /></a>
     <figcation markdown>Schéma d'exécution - Saisir un nombre positif</figcaption>
 </figure></p>
 </div>
@@ -868,7 +931,7 @@ Utiliser les boucles <strong>pour</strong> et <strong>tant que</strong> dans les
 <span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Veuillez saisir un nombre positif.&quot;</span><span class="p">)</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">while</span> <span class="n">nombre</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">while</span> <span class="n">nombre</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&#39;est pas bien compliqué, entrez n&#39;importe quel nombre plus grand que 0 !&quot;</span><span class="p">)</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="n">nombre</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
@@ -900,33 +963,166 @@ Utiliser les boucles <strong>pour</strong> et <strong>tant que</strong> dans les
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># Instructions après la boucle</span>
 </span></code></pre></div></td></tr></table></div>
 <p>La variable <strong>compteur</strong> (qu'on appelle souvent simplement <em>i</em>) déclarée dans la boucle contient la valeur courrant du compteur. Voici quelques exemples de boucles <code class="language-py highlight"><span class="k">for</span></code> :</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Afficher les nombres de 1 à 10</label><label for="__tabbed_2_2">Afficher les nombres impairs entre 5 et 17</label><label for="__tabbed_2_3">Afficher les nombres entre -5 et 5 en ordre décroissant</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Schéma d'exécution</label><label for="__tabbed_2_2">Afficher les nombres de 1 à 10</label><label for="__tabbed_2_3">Afficher les nombres impairs entre 5 et 17</label><label for="__tabbed_2_4">Afficher les nombres entre -5 et 5 en ordre décroissant</label></div>
 <div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown="span">
+    <a class="glightbox" href="../../images/schema_afficher_nombre.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/schema_afficher_nombre.png" width="250" /></a>
+    <figcation markdown>Schéma d'exécution - Afficher les nombres de 1 à 10</figcaption>
+</figure></p>
+</div>
 <div class="tabbed-block">
 <div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les entiers de 1 à 10</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1">## Pour afficher 10, il faut arrêter à 11, car l&#39;instruction print s&#39;exécute seulement pour les valeurs strictement plus petites que 11</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les entiers impairs de 5 à 17</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les entiers entre -5 et 5 en ordre décroissant</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">:</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h4 id="raccourcis-decriture-de-la-fonction-range">Raccourcis d'écriture de la fonction <code class="language-py highlight"><span class="nb">range</span></code></h4>
+<p>La fonction <code>py range</code> définie certains de ses paramètres par défaut, ce qui signifie que si l'on <strong>omet</strong> des paramètres, alors Python lui assigne automatiquement une valeur. </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Fonction <code class="language-py highlight"><span class="nb">range</span></code>avec 2 paramètres</label><label for="__tabbed_3_2">Fonction <code class="language-py highlight"><span class="nb">range</span></code>avec 1 paramètre</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Par défaut, le <strong>pas</strong> vaut 1. Les deux appels ci-dessous sont équivalents.</p>
+<div class="language-py highlight"><span class="filename">Valeur du pas par défaut</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="c1"># Instructions dans la boucle</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="c1"># Instructions dans la boucle</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Par défaut, le <strong>pas</strong> vaut 1 et l<strong>'initialisation du compteur</strong> se fait à 0. Les deux appels ci-dessous sont équivalents.</p>
+<div class="language-py highlight"><span class="filename">Valeur du pas par défaut</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="c1"># Instructions dans la boucle</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="c1"># Instructions dans la boucle</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="exercices">Exercices</h2>
+<h3 id="lerreur-arithmetique-du-float">L'erreur arithmétique du <strong>float</strong></h3>
+<p>Avec une boucle, additionnez 100 fois la valeur 1 / 100. Que remarquez-vous ?</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Addition avec errreur arithmétique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">somme</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="n">somme</span> <span class="o">=</span> <span class="n">somme</span> <span class="o">+</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="mf">100.0</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">somme</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<p>La somme est de 1.0000000000000007, ce qui témoigne de l'accumulation d'une erreur arithmétique. </p>
+</details>
+<h3 id="la-suite-de-fibonacci">La suite de Fibonacci</h3>
+<p>La suite de Fibonacci prend la forme suivante : 
+$$ F_{n + 2} = F_{n + 1} + F_{n}\text{, avec } F_{0} = 1\text{ et }F_{1} = 1 $$ </p>
+<p>Codez un programme python qui affiche les 100 premiers termes de la suite.</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">100 termes de Fibonacci</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">terme_precedent_1</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="n">terme_precedent_2</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">terme_precedent_1</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">terme_precedent_2</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">98</span><span class="p">):</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a>    <span class="n">terme</span> <span class="o">=</span> <span class="n">terme_precedent_1</span> <span class="o">+</span> <span class="n">terme_precedent_2</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">terme</span><span class="p">))</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a>    <span class="n">terme_precedent_1</span> <span class="o">=</span> <span class="n">terme_precedent_2</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a>    <span class="n">terme_precedent_2</span> <span class="o">=</span> <span class="n">terme</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<h3 id="la-methode-de-newton">La méthode de Newton</h3>
+<p>La méthode de Newton permet d'approximer numériquement les zéros d'une fonction. La méthode consiste à la série suivante :</p>
+<div class="arithmatex">\[ x_{n+1} = x_{n} - \frac{f(x_n)}{f'(x_n)} \]</div>
+<p>Écrivez un code pour trouver au moins un des zéros de la fonction $ f(x) = x^{3} -2x^{2} -7x -1 $ (sa dérivée est <span class="arithmatex">\(f'(x) = 3x^2-4x-7\)</span>) avec une précision de 3 chiffres après la virgule. </p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthode de Newton</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span>
+<span class="normal"><a href="#__codelineno-10-19">19</a></span>
+<span class="normal"><a href="#__codelineno-10-20">20</a></span>
+<span class="normal"><a href="#__codelineno-10-21">21</a></span>
+<span class="normal"><a href="#__codelineno-10-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a>    <span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span>         <span class="c1"># Point de la solution</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="n">ecart</span> <span class="o">=</span> <span class="mf">1.0</span>     <span class="c1"># Écart entre les deux dernières solutions</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>    <span class="k">while</span> <span class="n">ecart</span> <span class="o">&gt;</span> <span class="mf">0.0001</span> <span class="ow">or</span> <span class="n">ecart</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.0001</span><span class="p">:</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a>        <span class="c1"># ecart verifie l&#39;avancement vers la solution</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>        <span class="n">fonction</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">2.0</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">7.0</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mf">1.0</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a>        <span class="n">derivee</span> <span class="o">=</span> <span class="mf">3.0</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">4.0</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mf">7.0</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a>        <span class="c1"># Gere les erreurs de division par 0</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a>        <span class="k">if</span><span class="p">(</span><span class="n">derivee</span> <span class="o">==</span> <span class="mf">0.0</span><span class="p">):</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a>            <span class="n">ecart</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Division par 0. Impossible d&#39;evaluer avec la valeur intiale &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a>            <span class="n">terme</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">fonction</span> <span class="o">/</span> <span class="n">derivee</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a>            <span class="c1"># Calcule la différence entre les deux derniere solution</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a>            <span class="n">ecart</span> <span class="o">=</span> <span class="n">terme</span> <span class="o">-</span> <span class="n">x</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a>            <span class="c1"># Le changement de x par la nouvelle valeur (terme) prepare pour la prochaine iteration</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a>            <span class="n">x</span> <span class="o">=</span> <span class="n">terme</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19"></a>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21"></a>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22"></a>    <span class="c1"># Les trois racines sont -1.7240, -0.14974 et 3.8737</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<details class="bug">
+<summary>Convergence de la méthode de Newton</summary>
+<p>Utiliser la condition <code class="language-py highlight"><span class="n">ecart</span> <span class="o">&gt;</span> <span class="mf">0.0001</span> <span class="ow">or</span> <span class="n">ecart</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.0001</span></code> ne permet pas de s'assurer d'être précis à 3 chiffres après la virgule dans tous les cas (la bonne façon est passablement plus complexe). Dans le cas de notre problème, si vous prenez comme point de départ la valeur -5 500 vous remarquerez que la précision n'est pas atteinte. </p>
+<p>Pour plus de détails : <a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03V6.5c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2h-.43Z"/></svg></span></a></p>
+</details>
 
 
 
@@ -994,13 +1190,13 @@ Utiliser les boucles <strong>pour</strong> et <strong>tant que</strong> dans les
         
         
           
-          <a href="../collections/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les collections de données">
+          <a href="../fonctions/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Fonctions">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Les collections de données
+                Fonctions
               </div>
             </div>
             <div class="md-footer__button md-icon">
