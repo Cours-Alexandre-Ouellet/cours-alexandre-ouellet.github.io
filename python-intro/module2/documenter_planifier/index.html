@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module2/fonctions/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module2/documenter_planifier/">
       
       
-        <link rel="prev" href="../boucles/">
+        <link rel="prev" href="../fonctions/">
       
       
-        <link rel="next" href="../documenter_planifier/">
+        <link rel="next" href="../collections/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Les fonctions - Introduction à Python en Sciences de la nature</title>
+        <title>Documenter et planifier le code - Introduction à Python en Sciences de la nature</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-fonctions" class="md-skip">
+        <a href="#planifier-la-programmation-et-documenter-le-code" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les fonctions
+              Documenter et planifier le code
             
           </span>
         </div>
@@ -628,6 +628,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les fonctions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -644,7 +665,7 @@
           
   
   <span class="md-ellipsis">
-    Les fonctions
+    Documenter et planifier le code
   </span>
   
 
@@ -655,7 +676,7 @@
         
   
   <span class="md-ellipsis">
-    Les fonctions
+    Documenter et planifier le code
   </span>
   
 
@@ -677,64 +698,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quest-ce-quune-fonction" class="md-nav__link">
+  <a href="#planifier-la-programmation" class="md-nav__link">
     <span class="md-ellipsis">
-      Qu'est-ce qu'une fonction ?
+      Planifier la programmation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#declarer-une-fonction" class="md-nav__link">
+  <a href="#documenter-le-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Déclarer une fonction
+      Documenter le code
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retourner-des-valeurs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retourner des valeurs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#portee-des-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Portée des variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#allez-plus-loin-avec-les-fonctions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Allez plus loin avec les fonctions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Allez plus loin avec les fonctions">
+    <nav class="md-nav" aria-label="Documenter le code">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#valeurs-par-defaut" class="md-nav__link">
+  <a href="#commentaires-de-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Valeurs par défaut
+      Commentaires de code
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#indiquer-explicitement-les-parametres-lors-de-lappel" class="md-nav__link">
+  <a href="#docstring" class="md-nav__link">
     <span class="md-ellipsis">
-      Indiquer explicitement les paramètres lors de l'appel
+      Docstring
     </span>
   </a>
   
@@ -746,9 +740,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices-sur-les-fonctions" class="md-nav__link">
+  <a href="#exercice-premier-programme-complet" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices sur les fonctions
+      Exercice - premier programme complet
     </span>
   </a>
   
@@ -758,27 +752,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../documenter_planifier/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Documenter et planifier le code
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -916,169 +889,45 @@
                   
 
 
-<h1 id="les-fonctions">Les fonctions</h1>
+<h1 id="planifier-la-programmation-et-documenter-le-code">Planifier la programmation et documenter le code</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
-<p>Écrire une fonction avec des paramètres et des valeurs de retour <br/>
-Appeler une fonction</p>
+<p>Planifier adéquatement la programmation à réaliser <br/>
+Documenter le code selon les standards du PEP257</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>30 minutes</p>
+<p>20 minutes</p>
 </div>
 </div>
-<h2 id="quest-ce-quune-fonction">Qu'est-ce qu'une fonction ?</h2>
-<p>Les fonctions, d'un point de vue des mathématiques, sont des opérateurs complexes qui acceptent une ou plusieurs variables et retourne une ou plusieurs valeurs. Une fonction mathématique a comme seule contrainte que pour les mêmes valeurs acceptées, le même résultat est retourné (autrement dit chaque valeur du domaine est associée à une seule valeur de l'image de la fonction). On peut penser aux fonctions polynomiales ou trigonométriques classiques (<span class="arithmatex">\(f(x) = x\)</span>, <span class="arithmatex">\(f(x) = 5\)</span> ou <span class="arithmatex">\(f(x, y) = x+y\)</span>).</p>
-<p>En informatique, le terme fonction désigne une idée similaire : soit le fait de prendre des valeurs et d'appliquer des opérations sur ces valeurs. Les fonctions sont des blocs de code qui <strong>encapsulent</strong> un traitement. Ces blocs de code acceptent aucune, une ou plusieurs variable et retourne aucun ou un seul résultat. Dans le code, on retrouve une instruction qui vise à <strong>déclarer</strong> (<em>declare</em>) une fonction et une instruction qui vise à <strong>appeler</strong> ou <strong>invoquer</strong> (<em>call</em> ou <em>invoke</em>) la fonction.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Modèle de la fonction <strong>multiplier</strong></label><label for="__tabbed_1_2">Exécution de la fonction <strong>multiplier</strong></label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><figure markdown="span">
-    <a class="glightbox" href="../../images/fonction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/fonction.png" width="400" /></a>
-</figure></p>
-</div>
-<div class="tabbed-block">
-<p><figure markdown="span">
-    <a class="glightbox" href="../../images/appel_fonction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/appel_fonction.png" width="400" /></a>
-</figure></p>
-</div>
-</div>
-</div>
-<h2 id="declarer-une-fonction">Déclarer une fonction</h2>
-<p>Le mot-clé <code class="language-py highlight"><span class="k">def</span></code> est utilisé pour déclarer un fonction. On indique le nom de la fonction (mème règles d'indicateur que pour les variables). On place ensuite entre parenthèses les paramètres de la fonction. Si la fonction n'a pas de paramètres, on place une paire de parenthèses vides. On place ensuite un deux-points puis tout le code de la fonction sera identé d'un niveau.</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Structure de base d'une fonction</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Fonction sans paramètre</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">def</span> <span class="nf">identificateur_fonction</span><span class="p">():</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="c1"># Instructions dans la fonction</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># Appel de la fonction</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">identificateur_fonction</span><span class="p">()</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="retourner-des-valeurs">Retourner des valeurs</h2>
-<p>Il est possible de retourner une valeur à la fin de l'exécution d'une fonction. Pour se faire, on utilise l'instruction <code class="language-py highlight"><span class="k">return</span></code>. Dès que cette instruction est rencontrée, l'exécution de la fonction s'arrête et la valeur est retournée. Il est possible de mettre plusieurs instructions <code class="language-py highlight"><span class="k">return</span></code> dans une fonction. Dans ce cas, la première instruction <code class="language-py highlight"><span class="k">return</span></code> exécutée met fin à l'exécution de la fonction.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">La fonction multiplier</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">def</span> <span class="nf">identificateur_fonction</span><span class="p">(</span><span class="n">operande_gauche</span><span class="p">,</span> <span class="n">operande_droite</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">operande_gauche</span> <span class="o">*</span> <span class="n">operande_droite</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">La fonction calcul_taxes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span>
-<span class="normal"><a href="#__codelineno-2-7">7</a></span>
-<span class="normal"><a href="#__codelineno-2-8">8</a></span>
-<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">calcul_taxes</span><span class="p">(</span><span class="n">montant</span><span class="p">,</span> <span class="n">taxable_provincial</span><span class="p">,</span> <span class="n">taxable_federal</span><span class="p">):</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="k">if</span> <span class="n">taxable_provincial</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">taxable_federal</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>        <span class="k">return</span> <span class="n">montant</span> <span class="o">*</span> <span class="mf">1.14975</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="k">elif</span> <span class="n">taxable_provincial</span> <span class="o">==</span> <span class="kc">False</span> <span class="ow">and</span> <span class="n">taxable_federal</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>        <span class="k">return</span> <span class="n">montant</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>    <span class="k">elif</span> <span class="n">taxable_provincial</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>        <span class="k">return</span> <span class="n">montant</span> <span class="o">*</span> <span class="mf">1.0975</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>    <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>        <span class="k">return</span> <span class="n">montant</span> <span class="o">*</span> <span class="mf">1.05</span> 
-</span></code></pre></div></td></tr></table></div>
-<h2 id="portee-des-variables">Portée des variables</h2>
-<p>Les variables déclarées dans les fonction et les paramètres ont une portée <em>scope</em> limitée à la fonction qui les déclare. Autrement dit, les variables et les paramètres suivent ces deux comportements :</p>
-<ul>
-<li>On peut réutiliser les identificateurs utilisés ailleurs sans risque d'effet de bord (que la modification d'une ait un impact sur l'autre); et</li>
-<li>On ne peut pas utiliser les valeurs des paramètres et variables déclarées dans la fonction hors de celle-ci.</li>
-</ul>
-<p>Voici quelques exemples des conséquences de la portée des variables et des paramètres.</p>
-<div class="language-text highlight"><pre><span></span><code>```python title=&quot;Portée des variables et des paramètres&quot; linenums=&quot;1&quot;
-
-###### Exemple 1 ######
-def aire_rectangle(base, hauteur):
-    aire = base * hauteur
-    return aire
-
-def aire_triangle(base, hauteur):
-    aire = base * hauteur * 0.5
-    return aire
-
-# Tout à fait correct, les variables base et hauteur sont liés chacune à une fonction différente.
-
-###### Exemple 2 ######
-rayon = 3
-aire = 55
-
-def aire_cercle(rayon):
-    aire = 3.1415926536 * rayon
-    return aire
-
-print(aire_cercle(6))          # Retourne environ 18.85
-print(aire_cercle(rayon))      # Retourne environ 9.42
-print(str(aire))               # Affiche 55
-```
-</code></pre></div>
-<p>Dans cet exemple, il peut sembler y avoir plusieurs variables qui s'appellent <code class="language-py highlight"><span class="n">aire</span></code>, <code class="language-py highlight"><span class="n">base</span></code> ou <code class="language-py highlight"><span class="n">hauteur</span></code> mais comme elles sont déclarées dans différentes fonctions, elle n'interfèrent pas entre elles.</p>
-<div class="admonition info">
-<p class="admonition-title">Ordre de déclaration des fonctions</p>
-<p>Les fonctions doivent être déclarées avant d'être utilisées. C'est pourquoi on place toujours la les lignes suivantes à la fin du fichier.</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">main</span><span class="p">()</span>
+<h2 id="planifier-la-programmation">Planifier la programmation</h2>
+<p>Le cycle de développement en cascade (méthode traditionnelle) des logiciels est le suivant :</p>
+<p><a class="glightbox" href="../../images/etapes_developpement.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/etapes_developpement.png" width="400" /></a></p>
+<p>Pour effectuer la planfication (étapes d'analyse et de conception), il est suggéré d'utiliser le gabarit suivant :</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25m-.8 8.09 1.2 3.94H9.6l1.31-6.56H9.53l-.78 3.88-1.11-3.75H6.5l-1.19 3.77-.78-3.9H3.09l1.31 6.56h1.37m14.98 4.22V17H8.25v2.5m12.5-3.75v-3.12H12v3.12m8.75-4.37V8.25H12v3.13M20.75 7V4.5H8.25V7Z"/></svg></span> <a download="Gabarit planification" href="../../fichiers/Gabarit%20-%20planification.docx">Gabarit de planification de la programmation</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25m-.8 8.09 1.2 3.94H9.6l1.31-6.56H9.53l-.78 3.88-1.11-3.75H6.5l-1.19 3.77-.78-3.9H3.09l1.31 6.56h1.37m14.98 4.22V17H8.25v2.5m12.5-3.75v-3.12H12v3.12m8.75-4.37V8.25H12v3.13M20.75 7V4.5H8.25V7Z"/></svg></span> <a download="Gabarit planification (consignes)" href="../../fichiers/Gabarit%20-%20planification%20-%20consignes.docx">Gabarit de planification de la programmation (avec consignes)</a></p>
+<h2 id="documenter-le-code">Documenter le code</h2>
+<p>Plus le code augmente en taille, plus il est important de laisser des traces des réflexions et de l'utilité du code. C'est ce que l'on appelle la documentation. L'utilisation de la documentation permet de lire en texte ce qu'une fonction fait sans constamment devoir en relire le code. Elle aide aussi à reconnaître l'intention derrière une fonction ou les astuces utilisées pour contourner certains problèmes.</p>
+<h3 id="commentaires-de-code">Commentaires de code</h3>
+<p>Les commentaires dans le code prennent la forme d'une simple phrase placé après le caractère <code class="language-py highlight"><span class="c1">#</span></code>. On peut diviser le commentaire sur plusieurs lignes en répétant le symbole <code class="language-py highlight"><span class="c1">#</span></code> au début de chaque ligne. Il n'est pas nécessaire de commenter chaque ligne (en fait même ça n'apporte rien et allourdit la lecture). On réserve les commentaires pour les lignes plus complexes ou celles qui introduisent un bloc de code (par exemple, un boucle qui aurait 3 instructions à l'intérieur pourrait avoir un commentaire qui la précède.)</p>
+<h3 id="docstring">Docstring</h3>
+<p>Les <strong>docstring</strong> sont des commentaires qui expliquent ce qu'une fonction fait. Elles consistent en plusieurs lignes délimitées par 3 guillemets anglais. Aucun retour à la ligne n'est fait avant ou après la docstring.</p>
+<div class="language-py highlight"><span class="filename">Exemple de documentation d'une fonction</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    <span class="k">def</span> <span class="nf">aire_rectangle</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Calcul l&#39;aire d&#39;un rectangle et la retourne.</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">        Keywords arguments:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="sd">        base -- la base du rectangle</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="sd">        hauteur -- la hauteur du rectangle (default = 0.0)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">hauteur</span>
 </span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Expressions anglaises</p>
+<p>Il est important d'utiliser l'expression anglaise «&nbsp;Keywords arguments:&nbsp;» et «&nbsp;default&nbsp;» pour introduire les paramètres de la fonction et les valeurs par défaut, car certains traitements peuvent utiliser les docstrings et utiliseront cette expression.</p>
 </div>
-<h2 id="allez-plus-loin-avec-les-fonctions">Allez plus loin avec les fonctions</h2>
-<h3 id="valeurs-par-defaut">Valeurs par défaut</h3>
-<p>Il est possible définir des valeurs par défaut à des paramètres de la fonction. Les valeurs par défaut font en sorte qu'il n'est pas nécessaire d'indiquer le paramètre lors de l'appel. Pour indiquer une valeur par défaut, on ajoute un symbole d'égalité après le paramètre suivi de la valeur défaut. Par exemple, voici une définition de la fonction <code class="language-py highlight"><span class="n">calcul_taxes</span></code> avec des valeurs par défaut.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fonction calcul_taxes avec des paramètres par défaut</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">def</span> <span class="nf">calcul_taxes</span><span class="p">(</span><span class="n">montant</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">taxable_federal</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>   <span class="c1"># Instructions de la fonction</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Donc par défaut, on applique les deux taxes sur les deux produits. La difficulté avec les valeurs par défaut est que dès qu'on utilise une valeur par défaut, <strong>tous</strong> les paramètres définis après doivent aussi proposer une valeur par défaut. Par exemple, le code suivant est fautif.</p>
-<div class="admonition bug">
-<p class="admonition-title">Erreur dans la déclaration des paramètres</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fonction calcul_taxes avec des paramètres par défaut</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">def</span> <span class="nf">calcul_taxes</span><span class="p">(</span><span class="n">montant</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">taxable_federal</span><span class="p">):</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="c1"># Instructions de la fonction</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Affiche le message suivant : SyntaxError: non-default argument follows default argument</p>
-</div>
-<p>Regardons quelques appels de la fonction <code class="language-py highlight"><span class="n">calcul_taxes</span></code></p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Appels de la fonction calcul_taxes avec des paramètres par défaut</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span>
-<span class="normal"><a href="#__codelineno-7-4">4</a></span>
-<span class="normal"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">def</span> <span class="nf">calcul_taxes</span><span class="p">(</span><span class="n">montant</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">taxable_federal</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>   <span class="c1"># Instructions de la fonction</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="mf">10.0</span><span class="p">)</span>              <span class="c1"># Équivalent à calcul_taxes(10.0, True, True)</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>       <span class="c1"># Équivalent à calcul_taxes(10.0, False, True)</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Comment appeler la fonction pour appliquer seulement la taxe fédérale ? Il faut indiquer tous les paramètres dans l'ordre, donc il faudra aussi indiquer la taxe provinciale. Il existe une seconde méthode détaillée à la section ci-dessous. </p>
-<h3 id="indiquer-explicitement-les-parametres-lors-de-lappel">Indiquer explicitement les paramètres lors de l'appel</h3>
-<p>Normalement, on appelle la fonction avec les paramètres dans le même ordre que lors de la déclaration. On peut changer cet ordre en indiquant le nom des paramètres lors de l'appel. Cette technique permet de contourner le problème rencontré lorsqu'on veut utiliser que certaines des valeurs par défaut. Pour indiquer explicitement les paramètres lors de l'appel, on indique dans les parenthèses <strong>lors de l'appel</strong> le nom du paramètre suivi d'un symbole d'égalité et de sa valeur.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Appels de la fonction calcul_taxes avec des paramètres par défaut</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span>
-<span class="normal"><a href="#__codelineno-8-6">6</a></span>
-<span class="normal"><a href="#__codelineno-8-7">7</a></span>
-<span class="normal"><a href="#__codelineno-8-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">def</span> <span class="nf">calcul_taxes</span><span class="p">(</span><span class="n">montant</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">taxable_federal</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>   <span class="c1"># Instructions de la fonction</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="n">montant</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">)</span>                                    <span class="c1"># Équivalent à calcul_taxes(10.0, True, True)</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="n">montant</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>        <span class="c1"># Équivalent à calcul_taxes(10.0, False, True)</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="n">montant</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">taxable_federal</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>           <span class="c1"># Équivalent à calcul_taxes(10.0, True, False) 👍</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">taxable_provincial</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>                  <span class="c1"># Équivalent à calcul_taxes(10.0, False, True)</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="n">calcul_taxes</span><span class="p">(</span><span class="n">montant</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>                             <span class="c1"># Provoque une erreur 😢 || SyntaxError: positional argument follows keyword argument</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Par contre, dès qu'un paramètre est indiqué explicitement avec son nom, tous les paramètres après doivent aussi être indiqués explicitement avec leur nom.</p>
-<h2 id="exercices-sur-les-fonctions">Exercices sur les fonctions</h2>
-<ol>
-<li>Exercice du roche-papier-ciseau, partie 3 : organisez le code du roche-papier-ciseau en fonction. Chacune des fonctions doit avoir une responsabilité. Suggestion : vous devriez avoir 3 fonctions (la fonction <strong>main</strong> et deux autres).</li>
-<li>Pour trouver les zéros d'une fonction, on peut utiliser la méthode de Newton. Il s'agit de construire une suite de points convergents (ou du moins ils convergent généralement ) vers l'un des zéros de la fonction. À l'aide de la méthode de Newton, trouvez le zéro réel, avec 4 décimales de précision, de la fonction <span class="arithmatex">\(f(x) = x^3-3x^2+4x-4\)</span> dont la dérivée est <span class="arithmatex">\(f'(x) = 3x^2-6x+4\)</span> (<em>réponse</em> 2). Les termes itérés de la méthode de Newton prennent la forme suivante :</li>
-</ol>
-<p>$$ x_{n+1} = x_n - f(x_n)/f'(x_n) $$</p>
+<h2 id="exercice-premier-programme-complet">Exercice - premier programme complet</h2>
+<p>Planifiez et programmez une calculatrice simple. La calculatrice doit permettre d'additionner, de soustraire, de multiplier et de diviser des nombres. Chaque fois qu'un calcul est effectué, la réponse est affichée à la personne utilisatrice. Tant que la personne utilisatrice ne demande pas de quitter, la calculatrice doit demander un nouveau calcul.</p>
 
 
 
@@ -1129,7 +978,7 @@ print(str(aire))               # Affiche 55
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../boucles/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Boucles «&amp;nbsp;pour&amp;nbsp;» et «&amp;nbsp;tant que&amp;nbsp;»">
+          <a href="../fonctions/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Les fonctions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1139,20 +988,20 @@ print(str(aire))               # Affiche 55
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Boucles «&nbsp;pour&nbsp;» et «&nbsp;tant que&nbsp;»
+                Les fonctions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../documenter_planifier/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Documenter et planifier le code">
+          <a href="../collections/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les collections de données">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Documenter et planifier le code
+                Les collections de données
               </div>
             </div>
             <div class="md-footer__button md-icon">
