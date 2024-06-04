@@ -992,32 +992,50 @@ Appeler une fonction</p>
 <li>On ne peut pas utiliser les valeurs des paramètres et variables déclarées dans la fonction hors de celle-ci.</li>
 </ul>
 <p>Voici quelques exemples des conséquences de la portée des variables et des paramètres.</p>
-<div class="language-text highlight"><pre><span></span><code>```python title=&quot;Portée des variables et des paramètres&quot; linenums=&quot;1&quot;
-
-###### Exemple 1 ######
-def aire_rectangle(base, hauteur):
-    aire = base * hauteur
-    return aire
-
-def aire_triangle(base, hauteur):
-    aire = base * hauteur * 0.5
-    return aire
-
-# Tout à fait correct, les variables base et hauteur sont liés chacune à une fonction différente.
-
-###### Exemple 2 ######
-rayon = 3
-aire = 55
-
-def aire_cercle(rayon):
-    aire = 3.1415926536 * rayon
-    return aire
-
-print(aire_cercle(6))          # Retourne environ 18.85
-print(aire_cercle(rayon))      # Retourne environ 9.42
-print(str(aire))               # Affiche 55
-```
-</code></pre></div>
+<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Portée des variables et des paramètres</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>    <span class="c1">###### Exemple 1 ######</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">def</span> <span class="nf">aire_rectangle</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">):</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="n">aire</span> <span class="o">=</span> <span class="n">base</span> <span class="o">*</span> <span class="n">hauteur</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>        <span class="k">return</span> <span class="n">aire</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>    <span class="k">def</span> <span class="nf">aire_triangle</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>        <span class="n">aire</span> <span class="o">=</span> <span class="n">base</span> <span class="o">*</span> <span class="n">hauteur</span> <span class="o">*</span> <span class="mf">0.5</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>        <span class="k">return</span> <span class="n">aire</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="c1"># Tout à fait correct, les variables base et hauteur sont liés chacune à une fonction différente.</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>    <span class="c1">###### Exemple 2 ######</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a>    <span class="n">rayon</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a>    <span class="n">aire</span> <span class="o">=</span> <span class="mi">55</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a>    <span class="k">def</span> <span class="nf">aire_cercle</span><span class="p">(</span><span class="n">rayon</span><span class="p">):</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>        <span class="n">aire</span> <span class="o">=</span> <span class="mf">3.1415926536</span> <span class="o">*</span> <span class="n">rayon</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a>        <span class="k">return</span> <span class="n">aire</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">aire_cercle</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>          <span class="c1"># Retourne environ 18.85</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">aire_cercle</span><span class="p">(</span><span class="n">rayon</span><span class="p">))</span>      <span class="c1"># Retourne environ 9.42</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">aire</span><span class="p">))</span>               <span class="c1"># Affiche 55</span>
+</span></code></pre></div></td></tr></table></div>
 <p>Dans cet exemple, il peut sembler y avoir plusieurs variables qui s'appellent <code class="language-py highlight"><span class="n">aire</span></code>, <code class="language-py highlight"><span class="n">base</span></code> ou <code class="language-py highlight"><span class="n">hauteur</span></code> mais comme elles sont déclarées dans différentes fonctions, elle n'interfèrent pas entre elles.</p>
 <div class="admonition info">
 <p class="admonition-title">Ordre de déclaration des fonctions</p>
