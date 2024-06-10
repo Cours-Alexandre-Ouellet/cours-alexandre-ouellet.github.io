@@ -15,8 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module2/collections/">
       
       
-        <link rel="prev" href="../boucles/">
+        <link rel="prev" href="../documenter_planifier/">
       
+      
+        <link rel="next" href="../techniques_programmation/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -231,7 +233,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../boucles/" class="md-tabs__link">
+        <a href="../revision_1/" class="md-tabs__link">
           
   
   Module 2 - Programmer avec Python
@@ -587,11 +589,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../revision_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Révision du module 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../boucles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Boucles «&nbsp;pour&nbsp;» et «&nbsp;tant que&nbsp;»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les fonctions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documenter_planifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documenter et planifier le code
   </span>
   
 
@@ -663,24 +728,166 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#caracterisques-de-collections-de-donnees" class="md-nav__link">
+  <a href="#descriptions-des-collections-de-donnees-natives" class="md-nav__link">
     <span class="md-ellipsis">
-      Caractérisques de collections de données
+      Descriptions des collections de données natives
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Descriptions des collections de données natives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#liste" class="md-nav__link">
     <span class="md-ellipsis">
       Liste
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Liste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctions-sur-les-listes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonctions sur les listes
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#fonctions-sur-les-listes-numeriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonctions sur les listes numériques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-une-liste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier une liste
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modifier une liste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifier-les-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier les éléments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-un-element-a-une-liste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter un élément à une liste
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajouter un élément à une liste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-un-element-a-la-fin-dune-liste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter un élément à la fin d'une liste
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-un-element-a-une-position-precise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter un élément à une position précise
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retirer-un-element-dune-liste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retirer un élément d'une liste
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retirer un élément d'une liste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrait-par-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrait par valeur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrait-par-indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrait par indice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joindre-deux-listes-et-repeter-une-liste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joindre deux listes et répéter une liste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoupage-de-listes-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Découpage de listes (slicing)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercices-sur-les-listes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercices sur les listes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#n-uplet" class="md-nav__link">
     <span class="md-ellipsis">
       N-uplet
@@ -688,20 +895,217 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#ensemble" class="md-nav__link">
     <span class="md-ellipsis">
       Ensemble
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Ensemble">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creer-un-ensemble-vide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer un ensemble vide
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-un-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parcourir un ensemble
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifier-si-une-valeur-est-presente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vérifier si une valeur est présente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-un-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier un ensemble
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modifier un ensemble">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-des-elements-dans-un-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter des éléments dans un ensemble
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retirer-des-elements-dans-un-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retirer des éléments dans un ensemble
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operation-des-ensembles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opération des ensembles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dictionnaire" class="md-nav__link">
     <span class="md-ellipsis">
       Dictionnaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parcourir un dictionnaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parcourir un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-selon-les-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parcourir selon les clés
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-selon-les-cles-et-les-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parcourir selon les clés et les valeurs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dutilisation-du-dictionnaire-pour-traiter-des-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple d'utilisation du dictionnaire pour traiter des données
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier un dictionnaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modifier un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changer-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changer une valeur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter une valeur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retirer-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retirer une valeur
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-one-liner-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les one-liner de Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-resume-des-collections-natives-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau résumé des collections natives de données
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-de-collection-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercices de collection de données
     </span>
   </a>
   
@@ -711,6 +1115,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../techniques_programmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tâche de programmation et organisation de projets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sujets_intermediaires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sujets intermédiaires en programmation
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -819,11 +1265,927 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
 </div>
 </div>
 <h2 id="utilite-des-collections-de-donnees">Utilité des collections de données</h2>
-<h2 id="caracterisques-de-collections-de-donnees">Caractérisques de collections de données</h2>
-<h2 id="liste">Liste</h2>
-<h2 id="n-uplet">N-uplet</h2>
-<h2 id="ensemble">Ensemble</h2>
-<h2 id="dictionnaire">Dictionnaire</h2>
+<p>Imaginons que l'on effectue un laboratoire en chimie et que l'on observe la température d'une solution toute les secondes pendant 10 secondes. Pour importer les données dans un programme, il faudrait créer 10 variables et calculer par exemple la plus haute température demanderait l'écriture de 9 conditions (<code class="language-py highlight"><span class="k">if</span></code>). Ça serait un travail beaucoup trop long pour être efficace, et encore il n'y a que 10 données !</p>
+<p>Les collections permettent de gérer plusieurs valeurs dans une seule variable et d'accéder dynamiquement au contenu. Elles sont très utilisées en programmation. Dans les prochains modules, nous verrons 6 types de collections fréquemment utilisées :</p>
+<ul>
+<li>4 collections natives de Python (liste, n-uplet, ensemble et le dictionnaire)</li>
+<li>Les tableaux (<em>array</em>) de NumPy</li>
+<li>Les tableaux de données (<em>dataframe</em>) de Pandas </li>
+</ul>
+<h2 id="descriptions-des-collections-de-donnees-natives">Descriptions des collections de données natives</h2>
+<h3 id="liste">Liste</h3>
+<p>Une liste entrepose séquentiellement des données : les données sont toujours présentées dans le même ordre. On utilise les crochets carrés (<em>square brackets</em>) pour déclarer une liste et l'on place les éléments de la liste dans les crochets carrés en les séparant par des virgules.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Déclaration d'une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+<p>À chaque donnée lui est associé un indice (<em>index</em>) qui permet d'accéder à l'élément dans la liste. Les éléments sont numérotés <strong>à partir de 0</strong>. On indique entre crochets carrés l'indice de la valeur à laquelle l'on veut accéder. Par exemple, pour accéder à la première valeur (5.0), on indique entre crochets la valeur 0.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Accéder à des éléments</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>      <span class="c1"># Affiche 5.0</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>      <span class="c1"># Affiche 5.9</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="mi">9</span><span class="p">])</span>      <span class="c1"># Affiche 5.1</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>     <span class="c1"># Provoque une erreur </span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1"># Boucle qui affiche toutes les valeurs</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+<p>On peut aussi utiliser un indice négatif pour accéder à des éléments à partir de la fin de la liste</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Accéder à des éléments à partir de la fin</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>     <span class="c1"># Affiche 5.1, le dernier élément</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">])</span>     <span class="c1"># Affiche 5.5, le 6e élément</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">])</span>    <span class="c1"># Affiche 5.0, le premier élément de la liste</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="fonctions-sur-les-listes">Fonctions sur les listes</h4>
+<p>La fonction la plus utile sur les listes est la fonction <code class="language-py highlight"><span class="nb">len</span></code> qui accepte un paramètre : une liste; puis retourne la longueur de la liste (c'est-à-dire le nombre d'éléments qu'elle contient).</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Utilisation de la fonction len</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>        <span class="c1"># Affiche 10</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1"># Boucle qui affiche toutes les valeurs (pour n&#39;importe quelle liste)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="fonctions-sur-les-listes-numeriques">Fonctions sur les listes numériques</h4>
+<p>Pour les listes composées uniquement d'éléments numériques, quelques fonctions existent pour extraire des résumés ou des informations sur la liste. Toutes ces fonctions acceptent qu'un paramètre, la liste pour laquelle obtenir l'information.</p>
+<dl>
+<dt><code>Maximum</code></dt>
+<dd>
+<p>La fonction <code class="language-py highlight"><span class="nb">max</span></code> retourne la plus grande valeur d'une liste</p>
+</dd>
+<dt><code>Minimum</code></dt>
+<dd>
+<p>La fonction <code class="language-py highlight"><span class="nb">min</span></code> retourne la plus petite valeur d'une liste</p>
+</dd>
+<dt><code>Somme</code></dt>
+<dd>
+<p>La fonction <code class="language-py highlight"><span class="nb">sum</span></code> retourne la plus petite valeur d'une liste</p>
+</dd>
+</dl>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fonctions arithmétiques sur les listes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>        <span class="c1"># Affiche 6.0  </span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>        <span class="c1"># Affiche 5.0</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>        <span class="c1"># Affiche 54.699999999999996</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="modifier-une-liste">Modifier une liste</h4>
+<h5 id="modifier-les-elements">Modifier les éléments</h5>
+<p>On peut modifier un élément d'une liste simplement en affectant une valeur à l'élément en utilisant le système d'indice. Par exemple, après relecture on réalise que l'avant-dernière donnée (5.1 avec l'indice 8) a été mal saisie et qu'elle aurait dû être 5.2.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification d'un élément d'une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="n">temperatures</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="mf">5.2</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="c1"># Affiche [5.0, 5.3, 5.7, 6.0, 5.9, 5.8, 5.5, 5.3, 5.2, 5.1]</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="ajouter-un-element-a-une-liste">Ajouter un élément à une liste</h5>
+<p>Deux techniques existent pour ajouter des éléments à une liste, soit à la fin, soit à une position précise (déterminée par un indice).</p>
+<h6 id="ajouter-un-element-a-la-fin-dune-liste">Ajouter un élément à la fin d'une liste</h6>
+<p>On peut ajouter un élément à la fin d'une liste avec la méthode <code class="language-py highlight"><span class="n">append</span></code>. </p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajouter un élément à une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span>
+<span class="normal"><a href="#__codelineno-6-6">6</a></span>
+<span class="normal"><a href="#__codelineno-6-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1"># On ajoute une mesure de plus</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="n">temperatures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">4.9</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="c1"># Affiche [5.0, 5.3, 5.7, 6.0, 5.9, 5.8, 5.5, 5.3, 5.1, 5.1, 4.9]</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Méthode et fonction</p>
+<p>Une méthode est une fonction qui est associée à une classe (concept de programmation orientée objet). La différence à l'usage est la suivante :</p>
+<ul>
+<li><strong>Fonction</strong> : appel sans référence (comme <code class="language-py highlight"><span class="nb">len</span></code> ou <code class="language-py highlight"><span class="nb">range</span></code>)</li>
+<li><strong>Méthode</strong> : appel sur une donnée avec le symbole point (comme <code class="language-py highlight"><span class="n">append</span></code>)</li>
+</ul>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Attention aux ajouts</p>
+<p>Il ne faut pas ajouter une liste à une autre avec <code class="language-py highlight"><span class="n">append</span></code>, il faut plutôt utiliser la méthode <code class="language-py highlight"><span class="n">extend</span></code> ou l'opérateur + décrit à la section <a href="./#Joindre deux listes et répéter une liste">Joindre deux listes et répéter une liste</a>.</p>
+</div>
+<h6 id="ajouter-un-element-a-une-position-precise">Ajouter un élément à une position précise</h6>
+<p>Pour ajouter un élément dans une liste à un endroit précis, on utilise la méthode <code class="language-py highlight"><span class="n">insert</span></code> qui accepte aussi l'indice où insérer les éléments. Tous les éléments dont l'indice est égal ou supérieur à l'indice inséré seront décalés «&nbsp;d'une case vers la droite&nbsp;» donc verrons leur indice augmenter de 1.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Insérer un élément dans une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="c1"># On ajoute une mesure de plus au début (insertion de 4.8 à l&#39;indice 0)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="n">temperatures</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1"># Affiche [4.8, 5.0, 5.3, 5.7, 6.0, 5.9, 5.8, 5.5, 5.3, 5.1, 5.1, 4.9]</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="retirer-un-element-dune-liste">Retirer un élément d'une liste</h5>
+<p>Il existe deux techniques pour retirer un élément d'une liste : on peut le retirer par sa valeur ou par son indice.</p>
+<h6 id="retrait-par-valeur">Retrait par valeur</h6>
+<p>Pour retirer un élément par sa valeur, on utilise la méthode <code class="language-py highlight"><span class="n">remove</span></code> qui retire <strong>seulement la première occurrence</strong> de la valeur dans la liste. Attention, cette méthode lance une erreur si aucun élément ne porte cette valeur dans la liste.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Retirer un élément dans une liste par sa valeur</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span>
+<span class="normal"><a href="#__codelineno-8-7">7</a></span>
+<span class="normal"><a href="#__codelineno-8-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.8</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">]</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="c1"># On retire une mesure de 5.3</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="n">temperatures</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mf">5.3</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="c1"># Affiche [4.8, 5.0, 5.7, 6.0, 5.9, 5.8, 5.5, 5.3, 5.1, 5.1, 4.9]</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="c1"># On remarque le 5.3 à l&#39;indice 2 est retiré, mais pas celui de l&#39;indice 8</span>
+</span></code></pre></div></td></tr></table></div>
+<h6 id="retrait-par-indice">Retrait par indice</h6>
+<p>Pour retirer un élément par son indice, on utilise la méthode <code class="language-py highlight"><span class="n">pop</span></code> en indiquant l'indice de l'élément à retirer.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Retirer un élément dans une liste par son indice</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.8</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="c1"># On retire la mesure à l&#39;indice 4</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="n">temperatures</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c1"># Affiche [4.8, 5.0, 5.7, 6.0, 5.8, 5.5, 5.3, 5.1, 5.1, 4.9]</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="joindre-deux-listes-et-repeter-une-liste">Joindre deux listes et répéter une liste</h5>
+<p>On peut combiner deux listes avec l'opérateur <code class="language-py highlight"><span class="o">+</span></code>. Dans ce cas, une nouvelle liste est créée (aucune des deux listes originales n'est modifiée) tous les éléments de la première puis tous les éléments de la seconde.</p>
+<p>On peut créer une nouvelle liste en répétant les valeurs d'une liste avec l'opérateur <code class="language-py highlight"><span class="o">*</span></code>. On indique après la liste, puis l'opérateur et le nombre de fois pour lequel répliquer la liste. Une nouvelle liste est créée avec les éléments répétés.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Opérateurs sur les listes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span>
+<span class="normal"><a href="#__codelineno-10-7">7</a></span>
+<span class="normal"><a href="#__codelineno-10-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">liste_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="n">liste_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste_1</span> <span class="o">+</span> <span class="n">liste_2</span><span class="p">)</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="c1"># Affiche [1, 3, 5, 2, 4, 6]</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste_1</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="c1"># Affiche [1, 3, 5, 1, 3, 5, 1, 3, 5, 1, 3, 5]</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="decoupage-de-listes-slicing">Découpage de listes (<em>slicing</em>)</h4>
+<p>Le découpage de liste permet d'extraire ou de manipuler seulement une partie de la liste. L'opérateur de découpage sélectionne les éléments entre deux indices, celui de départ(inclus) et celui de fin(exclus).</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Découpage de liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># Syntaxe générale</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="n">tableau</span><span class="p">[</span><span class="n">indice</span> <span class="n">depart</span><span class="p">:</span><span class="n">indice</span> <span class="n">fin</span><span class="p">]</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="c1"># Extration des 5 premières secondes </span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="n">debut_experience</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>    <span class="c1"># Truc ici : je commence à 0 et je sélectionne 5 secondes, donc j&#39;arrête à 5.</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">debut_experience</span><span class="p">)</span>   
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="c1"># Extraction des 3 dernières secondes</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="n">fin_expérience</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[</span><span class="mi">7</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">fin_expérience</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Il y a aussi des valeurs par défaut dans l'opérateur de découpage de liste. Si aucune valeur de départ ou de fin n'est indiqué alors le découpage commence au début ou s'arrête à la fin de la liste.
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Découpage de liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span>
+<span class="normal"><a href="#__codelineno-12-7">7</a></span>
+<span class="normal"><a href="#__codelineno-12-8">8</a></span>
+<span class="normal"><a href="#__codelineno-12-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="c1"># Extration des 5 premières secondes </span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="n">debut_experience</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>    <span class="c1"># Truc ici : je commence à 0 et je sélectionne 5 secondes, donc j&#39;arrête à 5.</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">debut_experience</span><span class="p">)</span>   
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="c1"># Extraction des 3 dernières secondes</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="n">fin_expérience</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">fin_expérience</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>On peut aussi utiliser le système d'indice négatif pour découper des éléments d'une liste.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Découpage de liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="c1"># Extraction des 3 dernières secondes</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="n">fin_expérience</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">fin_expérience</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Il est aussi possible de changer le saut d'indice. Il faut utiliser le troisième paramètre dans le découpage d'indice, soit le nombre d'indices qui sont sautés entre chaque sélection (comme le pas de la boucle). Par défaut il vaut 1, mais il est possible de définir sa valeur explicitement.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Découpage de liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span>
+<span class="normal"><a href="#__codelineno-14-8">8</a></span>
+<span class="normal"><a href="#__codelineno-14-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="c1"># Sélectionne un élément sur deux</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="n">secondes_impaires</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">secondes_impaires</span><span class="p">)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="c1"># Inverse l&#39;ordre de la liste</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="n">temperatures_ordre_inverse</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures_ordre_inverse</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="exercices-sur-les-listes">Exercices sur les listes</h4>
+<p>Utiliser la liste suivante pour les exercices 1 à 4 <code class="language-py highlight"><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span></code></p>
+<ol>
+<li>
+<p>Écrivez une fonction qui trouve la valeur moyenne de la température durant l'expérience.</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fonction moyenne</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">def</span> <span class="nf">moyenne</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule et retourne la moyenne de la liste</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="sd">    Keywords arguments:</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="sd">    liste -- une liste de données numériques</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</li>
+<li>
+<p>Trouvez l'indice de la valeur maximale de la température (<em>réponse 3</em>).</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Indice de la température maximale</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="n">maximum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)):</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4"></a>    <span class="k">if</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">maximum</span><span class="p">):</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<p>Ce code affiche plusieurs valeurs si la valeur maximale est présente plusieurs fois.</p>
+</li>
+<li>
+<p>Construisez une liste avec les deux premières et les deux dernières températures.</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les deux premières et les deux dernières températures</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="n">extremites_temperatures</span> <span class="o">=</span> <span class="n">temperatures</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">extremites_temperatures</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</li>
+<li>
+<p>Affichez les 4 premières températures de la liste, en ordre inverse, de sept façons différentes. [6.0, 5.7, 5.3, 5.0]</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les quatre premières températures</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span>
+<span class="normal"><a href="#__codelineno-18-20">20</a></span>
+<span class="normal"><a href="#__codelineno-18-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1"># Façon 1</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="mi">3</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3"></a>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="c1"># Façon 2</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="o">-</span><span class="mi">7</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6"></a>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="c1"># Façon 3</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10"></a>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="c1"># Façon 4</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[:</span><span class="mi">4</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13"></a>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="c1"># Façon 5</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[:</span><span class="o">-</span><span class="mi">6</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16"></a>
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17"></a><span class="c1"># Façon 6</span>
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">6</span><span class="p">:])</span>
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19"></a>
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20"></a><span class="c1"># Façon 7</span>
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</li>
+<li>
+<p>Faites le ménage de la liste suivante en retirant toutes les valeurs négatives. Essayez de faire le code le plus générique possible. Ce numéro n'est pas facile à réaliser !</p>
+<p><code class="language-py highlight"><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span></code></p>
+<details class="info">
+<summary>Solution</summary>
+<p>Modifier une liste pendant que l'on itère au travers de ses éléments n'est pas permis. Il faut donc stocker les indices à supprimer ou les valeurs à supprimer dans une autre liste et faire la suppression 
+dans un deuxième temps.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Supression des nombres négatifs</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-19-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-19-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-19-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-19-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-19-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-19-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-19-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-19-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-19-10">10</a></span>
+<span class="normal"><a href="#__codelineno-19-11">11</a></span>
+<span class="normal"><a href="#__codelineno-19-12">12</a></span>
+<span class="normal"><a href="#__codelineno-19-13">13</a></span>
+<span class="normal"><a href="#__codelineno-19-14">14</a></span>
+<span class="normal"><a href="#__codelineno-19-15">15</a></span>
+<span class="normal"><a href="#__codelineno-19-16">16</a></span>
+<span class="normal"><a href="#__codelineno-19-17">17</a></span>
+<span class="normal"><a href="#__codelineno-19-18">18</a></span>
+<span class="normal"><a href="#__codelineno-19-19">19</a></span>
+<span class="normal"><a href="#__codelineno-19-20">20</a></span>
+<span class="normal"><a href="#__codelineno-19-21">21</a></span>
+<span class="normal"><a href="#__codelineno-19-22">22</a></span>
+<span class="normal"><a href="#__codelineno-19-23">23</a></span>
+<span class="normal"><a href="#__codelineno-19-24">24</a></span>
+<span class="normal"><a href="#__codelineno-19-25">25</a></span>
+<span class="normal"><a href="#__codelineno-19-26">26</a></span>
+<span class="normal"><a href="#__codelineno-19-27">27</a></span>
+<span class="normal"><a href="#__codelineno-19-28">28</a></span>
+<span class="normal"><a href="#__codelineno-19-29">29</a></span>
+<span class="normal"><a href="#__codelineno-19-30">30</a></span>
+<span class="normal"><a href="#__codelineno-19-31">31</a></span>
+<span class="normal"><a href="#__codelineno-19-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="c1"># Technique 1 - Avec les indices</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="n">indices_a_supprimer</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="c1"># On identifie les indices à supprimer</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)):</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7"></a>    <span class="k">if</span> <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8"></a>        <span class="n">indices_a_supprimer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9"></a>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10"></a><span class="c1"># On inverse la liste des indices pour éviter les décalages. En supprimant les plus grands en premier on évite les décalages dus à la suppression</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11"></a><span class="n">indices_a_supprimer</span> <span class="o">=</span> <span class="n">indices_a_supprimer</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12"></a>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13"></a><span class="c1"># On supprime aux indices identifiés</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14"></a><span class="k">for</span> <span class="n">indice</span> <span class="ow">in</span> <span class="n">indices_a_supprimer</span><span class="p">:</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15"></a>    <span class="n">liste</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">indice</span><span class="p">)</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16"></a>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18"></a>
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19"></a><span class="c1"># Technique 2 - Avec les valeur</span>
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20"></a><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21"></a><span class="n">valeurs_a_supprimer</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22"></a>
+</span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23"></a><span class="c1"># On identifie les valeurs à supprimer</span>
+</span><span id="__span-19-24"><a id="__codelineno-19-24" name="__codelineno-19-24"></a><span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">liste</span><span class="p">:</span>
+</span><span id="__span-19-25"><a id="__codelineno-19-25" name="__codelineno-19-25"></a>    <span class="k">if</span> <span class="n">valeur</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
+</span><span id="__span-19-26"><a id="__codelineno-19-26" name="__codelineno-19-26"></a>        <span class="n">valeurs_a_supprimer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span>
+</span><span id="__span-19-27"><a id="__codelineno-19-27" name="__codelineno-19-27"></a>
+</span><span id="__span-19-28"><a id="__codelineno-19-28" name="__codelineno-19-28"></a><span class="c1"># On supprime les valeurs indentifées</span>
+</span><span id="__span-19-29"><a id="__codelineno-19-29" name="__codelineno-19-29"></a><span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">valeurs_a_supprimer</span><span class="p">:</span>
+</span><span id="__span-19-30"><a id="__codelineno-19-30" name="__codelineno-19-30"></a>    <span class="n">liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span>
+</span><span id="__span-19-31"><a id="__codelineno-19-31" name="__codelineno-19-31"></a>
+</span><span id="__span-19-32"><a id="__codelineno-19-32" name="__codelineno-19-32"></a><span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Kessé ça <code class="language-py highlight"><span class="k">for</span> <span class="n">indice</span> <span class="ow">in</span> <span class="n">indices_a_supprimer</span></code> ??</p>
+<p>La fonction <code class="language-py highlight"><span class="nb">range</span></code> retourne... une liste (pas tout à fait, mais ça ne change rien à la situation présente) donc la boucle for parcours les valeurs d'une liste. Dans le cas présent on souhaite seulement accéder aux valeurs du tableau <code class="language-py highlight"><span class="n">indices_a_supprimer</span></code> et non aux indices du tableau, donc pourquoi ne pas itérer directement sur les valeurs !</p>
+</div>
+</details>
+</li>
+</ol>
+<h3 id="n-uplet">N-uplet</h3>
+<p>Pour traiter des collections de données immuables, il est possible d'utiliser les n-uplets (<em>tuples</em>). On les déclare en utilisant des parenthèses et l'on accède aux éléments de la même façon que pour les listes (toujours des crochets carrés et le système des indices).</p>
+<p>Il est aussi possible d'appeler les fonctions arithmétiques ainsi que les opérateurs + et * sur les n-uplets. Cependant, <strong>les éléments d'un n-uplet sont immuables et on ne peut pas ajouter ou retirer des éléments</strong> d'un n-uplet.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple d'utilisation des n-uplets</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="n">point</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>      <span class="c1"># On déclare un point du plan cartésien</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Les coordonnées du point sont (&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="c1"># Affiche Les coordonnées du point sont (2, 4)</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="ensemble">Ensemble</h3>
+<p>Les ensembles sont des collections de données semblables aux listes avec la restriction que chaque élément ne peut apparaître qu'une seule fois. On les déclare en utilisant les accolades <strong>{ }</strong>. Comme les éléments dans un ensemble ne sont pas ordonnés, <strong>on ne peut pas leur accéder avec le système des indices</strong>.</p>
+<h4 id="creer-un-ensemble-vide">Créer un ensemble vide</h4>
+<p>Contrairement aux autres conteneurs, on ne peut pas simplement indiquer une paire d'accolades vides pour déclarer un ensemble vide, il faut utiliser la fonction <code class="language-py highlight"><span class="nb">set</span><span class="p">()</span></code>. Une paire d'accolades vides créent un dictionnaire.</p>
+<h4 id="parcourir-un-ensemble">Parcourir un ensemble</h4>
+<p>Pour énumérer les éléments dans un ensemble, on utilise une boucle. On place à droite de l'opérateur <code class="language-py highlight"><span class="ow">in</span></code> et la variable «&nbsp;compteur&nbsp;» contiendra plutôt les valeurs successives des éléments de l'ensemble.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Afficher les nombres permiers sous 20</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="n">nombres_premiers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">}</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="n">nombres_premiers</span><span class="p">:</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">À propos de la fonction <code class="language-py highlight"><span class="nb">range</span></code></p>
+<p>La fonction <code class="language-py highlight"><span class="nb">range</span></code> retourne une collection de données. Lorsque l'on écrit <code class="language-py highlight"><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span></code> on génère un ensemble de valeurs qui correspondent aux indices de la liste, puis on parcourt cette liste. Ce qui a été présenté plus haut est un raccourci de dire que l'on parcourt les indices de la liste, on parcourt plutôt les valeurs d'indice de la liste.</p>
+</div>
+<h4 id="verifier-si-une-valeur-est-presente">Vérifier si une valeur est présente</h4>
+<p>Pour déterminer si une valeur se trouve dans un ensemble, on utilise l'opérateur <code class="language-py highlight"><span class="ow">in</span></code>, mais dans une opération autre qu'une boucle. Le membre de gauche doit aussi être une valeur ou une variable qui contient une valeur. Pour vérifier l'absence d'une valeur dans un ensemble, on utilise l'opérateur <code class="language-py highlight"><span class="ow">not</span> <span class="ow">in</span></code></p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Tester si un nombre est premier 20</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-22-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-22-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-22-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-22-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-22-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-22-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-22-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-22-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-22-10">10</a></span>
+<span class="normal"><a href="#__codelineno-22-11">11</a></span>
+<span class="normal"><a href="#__codelineno-22-12">12</a></span>
+<span class="normal"><a href="#__codelineno-22-13">13</a></span>
+<span class="normal"><a href="#__codelineno-22-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="n">nombres_premiers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">}</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="k">if</span> <span class="mi">5</span> <span class="ow">in</span> <span class="n">nombres_premiers</span><span class="p">:</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5 est premier&quot;</span><span class="p">)</span>      <span class="c1"># Devrait s&#39;afficher</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5"></a>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6"></a><span class="n">valeur</span> <span class="o">=</span> <span class="mi">8</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7"></a><span class="k">if</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">nombres_premiers</span><span class="p">:</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;8 est premier&quot;</span><span class="p">)</span>      <span class="c1"># Ne devrait pas s&#39;afficher</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9"></a>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10"></a><span class="n">test_premier_11</span> <span class="o">=</span> <span class="mi">11</span> <span class="ow">in</span> <span class="n">nombres_premiers</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test si 11 est premier : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">test_premier_11</span><span class="p">))</span>     <span class="c1"># Affiche True</span>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12"></a>
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13"></a><span class="n">test_compose_14</span> <span class="o">=</span> <span class="mi">14</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">nombres_premiers</span>
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test si 14 est composé : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">test_compose_14</span><span class="p">))</span>     <span class="c1"># Affiche True</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="modifier-un-ensemble">Modifier un ensemble</h4>
+<p>On peut modifier un ensemble en lui ajoutant ou en lui enlevant des valeurs à l'aide des <strong>méthodes</strong> de l'ensemble. Les méthodes utilisées ne sont pas les mêmes que pour la liste.</p>
+<h5 id="ajouter-des-elements-dans-un-ensemble">Ajouter des éléments dans un ensemble</h5>
+<p>Pour ajouter un élément, on utilise la méthode <code class="language-py highlight"><span class="n">add</span></code>.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les nombres premiers</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span>
+<span class="normal"><a href="#__codelineno-23-5">5</a></span>
+<span class="normal"><a href="#__codelineno-23-6">6</a></span>
+<span class="normal"><a href="#__codelineno-23-7">7</a></span>
+<span class="normal"><a href="#__codelineno-23-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="n">nombres_premiers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">}</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="n">nombres_premiers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="n">nombres_premiers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5"></a><span class="n">nombres_premiers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6"></a>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7"></a><span class="c1"># Affiche {2, 3, 5, 7, 11, 13, 17, 19, 23, 29}</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_premiers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="retirer-des-elements-dans-un-ensemble">Retirer des éléments dans un ensemble</h5>
+<p>Pour retirer un élément de la liste, on utilise la méthode  <code class="language-py highlight"><span class="n">remove</span></code> qui accepte un paramètre, l'élément à retirer.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Les nombres premiers</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span>
+<span class="normal"><a href="#__codelineno-24-6">6</a></span>
+<span class="normal"><a href="#__codelineno-24-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="n">nombres_premiers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">}</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="n">nombres_premiers</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="n">nombres_premiers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5"></a>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="c1"># Affiche {2, 3, 5, 7, 11, 13, 17, 19}</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_premiers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition error">
+<p class="admonition-title">La méthode <code class="language-py highlight"><span class="n">pop</span></code></p>
+<p>La méthode <code class="language-py highlight"><span class="n">pop</span></code> existe aussi pour les ensembles, mais retire le plus petit des éléments.</p>
+</div>
+<h4 id="operation-des-ensembles">Opération des ensembles</h4>
+<p>Les opérations mathématiques définies sur les ensembles sont disponibles dans le langage Python nativement.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Opération</th>
+<th style="text-align: left;">Opérateur</th>
+<th style="text-align: left;">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Différence</td>
+<td style="text-align: left;">A - B</td>
+<td style="text-align: left;">Retourne un ensemble des éléments qui sont dans A, mais pas dans B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Différence symétrique</td>
+<td style="text-align: left;">A ^ B</td>
+<td style="text-align: left;">Retourne un ensemble des éléments qui sont dans A ou B, mais pas ceux dans A et B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Est un sous-ensemble</td>
+<td style="text-align: left;">A &lt;= B ou A &lt; B</td>
+<td style="text-align: left;">True si A que des éléments de B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Est un super-ensemble</td>
+<td style="text-align: left;">A &gt;= B ou A &gt; B</td>
+<td style="text-align: left;">True si A contient au moins tous les éléments de B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Intersection</td>
+<td style="text-align: left;">&amp;</td>
+<td style="text-align: left;">Retourne un ensemble des éléments qui sont dans A et dans B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Union</td>
+<td style="text-align: left;">|</td>
+<td style="text-align: left;">Retourne un ensemble des éléments qui sont dans A ou dans B</td>
+</tr>
+</tbody>
+</table>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Utilisation des opérations sur les ensembles</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-25-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-25-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-25-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-25-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-25-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-25-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-25-10">10</a></span>
+<span class="normal"><a href="#__codelineno-25-11">11</a></span>
+<span class="normal"><a href="#__codelineno-25-12">12</a></span>
+<span class="normal"><a href="#__codelineno-25-13">13</a></span>
+<span class="normal"><a href="#__codelineno-25-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="n">nombres_fibonacci</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">}</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="n">nombres_triangulaires</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">36</span><span class="p">}</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_fibonacci</span> <span class="o">-</span> <span class="n">nombres_triangulaires</span><span class="p">)</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="c1"># Affiche {2, 34, 5, 8, 13}</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6"></a>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_fibonacci</span> <span class="o">^</span> <span class="n">nombres_triangulaires</span><span class="p">)</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="c1"># Affiche {2, 34, 36, 5, 6, 8, 10, 13, 15, 28}</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9"></a>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_fibonacci</span> <span class="o">&amp;</span> <span class="n">nombres_triangulaires</span><span class="p">)</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="c1"># Affiche {1, 3, 21}</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12"></a>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombres_fibonacci</span> <span class="o">|</span> <span class="n">nombres_triangulaires</span><span class="p">)</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14"></a><span class="c1"># Affiche {1, 2, 3, 34, 5, 36, 6, 8, 10, 13, 15, 21, 28}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="dictionnaire">Dictionnaire</h3>
+<p>Un dictionnaire permet de stocker des données qui associent des clés et des valeurs (parfois appelé fautivement <em>tableau associatif</em>). Les dictionnaires sont très utiles pour gérer des configurations ou des informations statiques et calculées à partir d'autres valeurs. On déclare le dictionnaire de la façon suivante :</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Déclaration de dictionnaire</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="n">dictionnaire</span> <span class="o">=</span> <span class="p">{</span><span class="n">cle1</span> <span class="p">:</span> <span class="n">valeur1</span><span class="p">,</span> <span class="n">cle2</span> <span class="p">:</span> <span class="n">valeur2</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>N'importe quel type de donnée peut être utilisé comme valeur dans un dictionnaire. Pour les clés elles doivent être dans l'un des trois types suivants :
+- Un nombre,
+- Une chaîne de caractères, ou 
+- Un n-uplet qui contient que des nombres, des chaînes ou d'autres n-uplets composés seulement de nombres ou de chaînes.</p>
+<p>Dans un dictionnaire, chaque clé doit être <strong>unique</strong>. On peut voir les clés comme un «&nbsp;index&nbsp;» plus général. Cependant, tout comme les ensembles, les dictionnaires ne sont pas triés. </p>
+<div class="admonition infotip">
+<p class="admonition-title">Bien coder ses dictionnaires</p>
+<p>Bien qu'il soit possible d'utiliser plusieurs types de clés dans un dictionnaire (par exemple des clés entier et chaîne de caractères), le code est plus facile à comprendre si un seul type de clé est utilisé (seulement des chaînes ou seulement des valeurs de clé par exemple).</p>
+</div>
+<p>Pour accéder à une valeur dans un dictionnaire, on utilise aussi les crochets carrés, mais en indiquant une clé existante entre les croches. Pour vérifier si une clé existe, on utilise le mot clé <code class="language-py highlight"><span class="ow">in</span></code> comme pour les ensembles. </p>
+<h4 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h4>
+<p>Il existe deux façons de parcourir un dictionnaire : soit l'on parcourt ses clés ou l'on parcourt les clés et les valeurs en même temps.</p>
+<h5 id="parcourir-selon-les-cles">Parcourir selon les clés</h5>
+<p>Pour parcourir selon les clés, on utilise la boucle <code class="language-py highlight"><span class="k">for</span></code> et la variable d'itération devient la clé. À chaque passage de la boucle, une clé qui n'a pas déjà été parcourue est sélectionnée. Il n'y a pas d'assurance que les éléments sont parcourus dans l'ordre dans lequel ils ont été ajoutés. Par exemple, parcourons un dictionnaire qui pour un symbole chimique retourne le nom complet de l'élément.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Information sur les éléments chimiques</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hydrogène&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span> <span class="p">:</span> <span class="s2">&quot;Helium&quot;</span><span class="p">,</span> <span class="s2">&quot;Na&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sodium&quot;</span><span class="p">,</span> <span class="s2">&quot;Be&quot;</span> <span class="p">:</span> <span class="s2">&quot;Béryllium&quot;</span><span class="p">,</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>     <span class="s2">&quot;B&quot;</span> <span class="p">:</span> <span class="s2">&quot;Bore&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span> <span class="p">:</span> <span class="s2">&quot;Azote&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span> <span class="p">:</span> <span class="s2">&quot;Oxygène&quot;</span> <span class="p">}</span>     <span class="c1"># ...</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="k">for</span> <span class="n">symbole</span> <span class="ow">in</span> <span class="n">elements</span><span class="p">:</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">symbole</span> <span class="o">+</span> <span class="s2">&quot; -- &quot;</span> <span class="o">+</span> <span class="n">elements</span><span class="p">[</span><span class="n">symbole</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="parcourir-selon-les-cles-et-les-valeurs">Parcourir selon les clés et les valeurs</h5>
+<p>Pour accéder aux deux informations en même (clé et valeur), il faut utiliser deux variables d'itérations et appeler la méthode <code class="language-py highlight"><span class="n">items</span></code> sur le dictionnaire.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Information sur les éléments chimiques</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-28-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-28-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-28-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-28-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-28-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-28-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-28-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-28-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-28-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="c1"># Format du parcours des clés et des valeurs</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="k">for</span> <span class="n">cle</span><span class="p">,</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">dictionnaire</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a>    <span class="c1"># Parcours</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5"></a>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6"></a><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hydrogène&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span> <span class="p">:</span> <span class="s2">&quot;Helium&quot;</span><span class="p">,</span> <span class="s2">&quot;Na&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sodium&quot;</span><span class="p">,</span> <span class="s2">&quot;Be&quot;</span> <span class="p">:</span> <span class="s2">&quot;Béryllium&quot;</span><span class="p">,</span> 
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7"></a>    <span class="s2">&quot;B&quot;</span> <span class="p">:</span> <span class="s2">&quot;Bore&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span> <span class="p">:</span> <span class="s2">&quot;Azote&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span> <span class="p">:</span> <span class="s2">&quot;Oxygène&quot;</span> <span class="p">}</span>     <span class="c1"># ...</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8"></a>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9"></a><span class="k">for</span> <span class="n">symbole</span><span class="p">,</span> <span class="n">nom_element</span> <span class="ow">in</span> <span class="n">elements</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">symbole</span> <span class="o">+</span> <span class="s2">&quot; -- &quot;</span> <span class="o">+</span> <span class="n">nom_element</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="exemple-dutilisation-du-dictionnaire-pour-traiter-des-donnees">Exemple d'utilisation du dictionnaire pour traiter des données</h4>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Information sur les triangles</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-29-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-29-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-29-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-29-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-29-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-29-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-29-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-29-10">10</a></span>
+<span class="normal"><a href="#__codelineno-29-11">11</a></span>
+<span class="normal"><a href="#__codelineno-29-12">12</a></span>
+<span class="normal"><a href="#__codelineno-29-13">13</a></span>
+<span class="normal"><a href="#__codelineno-29-14">14</a></span>
+<span class="normal"><a href="#__codelineno-29-15">15</a></span>
+<span class="normal"><a href="#__codelineno-29-16">16</a></span>
+<span class="normal"><a href="#__codelineno-29-17">17</a></span>
+<span class="normal"><a href="#__codelineno-29-18">18</a></span>
+<span class="normal"><a href="#__codelineno-29-19">19</a></span>
+<span class="normal"><a href="#__codelineno-29-20">20</a></span>
+<span class="normal"><a href="#__codelineno-29-21">21</a></span>
+<span class="normal"><a href="#__codelineno-29-22">22</a></span>
+<span class="normal"><a href="#__codelineno-29-23">23</a></span>
+<span class="normal"><a href="#__codelineno-29-24">24</a></span>
+<span class="normal"><a href="#__codelineno-29-25">25</a></span>
+<span class="normal"><a href="#__codelineno-29-26">26</a></span>
+<span class="normal"><a href="#__codelineno-29-27">27</a></span>
+<span class="normal"><a href="#__codelineno-29-28">28</a></span>
+<span class="normal"><a href="#__codelineno-29-29">29</a></span>
+<span class="normal"><a href="#__codelineno-29-30">30</a></span>
+<span class="normal"><a href="#__codelineno-29-31">31</a></span>
+<span class="normal"><a href="#__codelineno-29-32">32</a></span>
+<span class="normal"><a href="#__codelineno-29-33">33</a></span>
+<span class="normal"><a href="#__codelineno-29-34">34</a></span>
+<span class="normal"><a href="#__codelineno-29-35">35</a></span>
+<span class="normal"><a href="#__codelineno-29-36">36</a></span>
+<span class="normal"><a href="#__codelineno-29-37">37</a></span>
+<span class="normal"><a href="#__codelineno-29-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">):</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule la distance entre deux points (longueur d&#39;un segment) et la retourne.</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a><span class="sd">    Keywords arguments:</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5"></a><span class="sd">    p0 -- le premier point du segment.</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6"></a><span class="sd">    p1 -- le second point du segment.</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8"></a>    <span class="k">return</span> <span class="n">sqrt</span><span class="p">((</span><span class="n">p0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9"></a>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="k">def</span> <span class="nf">info_triangle</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule l&#39;aire, le périmètre et la longueur des côtés d&#39;un triangle et retourne</span>
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12"></a><span class="sd">    un dictionnaire avec les informations.</span>
+</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13"></a>
+</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14"></a><span class="sd">    Keywords arguments:</span>
+</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15"></a><span class="sd">    p0 -- le premier point du triangle.</span>
+</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16"></a><span class="sd">    p1 -- le second point du triangle.</span>
+</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17"></a><span class="sd">    p2 -- le troisième point du triangle.</span>
+</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19"></a>    <span class="n">cotes</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;a&quot;</span> <span class="p">:</span> <span class="n">distance</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">),</span> <span class="s2">&quot;b&quot;</span> <span class="p">:</span> <span class="n">distance</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p2</span><span class="p">),</span> <span class="s2">&quot;c&quot;</span> <span class="p">:</span> <span class="n">distance</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span> <span class="p">}</span>
+</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20"></a>
+</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21"></a>    <span class="c1"># Calcul du perimetre</span>
+</span><span id="__span-29-22"><a id="__codelineno-29-22" name="__codelineno-29-22"></a>    <span class="n">perimetre</span> <span class="o">=</span> <span class="mf">0.0</span>                     <span class="c1"># Ici sum(cotes) ne fonctionne pas, car c&#39;est un dictionnaire</span>
+</span><span id="__span-29-23"><a id="__codelineno-29-23" name="__codelineno-29-23"></a>
+</span><span id="__span-29-24"><a id="__codelineno-29-24" name="__codelineno-29-24"></a>    <span class="k">for</span> <span class="n">cote</span> <span class="ow">in</span> <span class="n">cotes</span><span class="p">:</span>
+</span><span id="__span-29-25"><a id="__codelineno-29-25" name="__codelineno-29-25"></a>        <span class="n">perimetre</span> <span class="o">+=</span> <span class="n">cotes</span><span class="p">[</span><span class="n">cote</span><span class="p">]</span>        <span class="c1"># Même chose que perimetre = perimetre + longueur</span>
+</span><span id="__span-29-26"><a id="__codelineno-29-26" name="__codelineno-29-26"></a>
+</span><span id="__span-29-27"><a id="__codelineno-29-27" name="__codelineno-29-27"></a>    <span class="c1"># Calcule de l&#39;aire</span>
+</span><span id="__span-29-28"><a id="__codelineno-29-28" name="__codelineno-29-28"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">perimetre</span>
+</span><span id="__span-29-29"><a id="__codelineno-29-29" name="__codelineno-29-29"></a>    <span class="n">aire</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">s</span> <span class="o">*</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">cotes</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">cotes</span><span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">cotes</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]))</span>
+</span><span id="__span-29-30"><a id="__codelineno-29-30" name="__codelineno-29-30"></a>
+</span><span id="__span-29-31"><a id="__codelineno-29-31" name="__codelineno-29-31"></a>    <span class="k">return</span> <span class="p">{</span>
+</span><span id="__span-29-32"><a id="__codelineno-29-32" name="__codelineno-29-32"></a>        <span class="s2">&quot;aire&quot;</span> <span class="p">:</span> <span class="n">aire</span><span class="p">,</span>
+</span><span id="__span-29-33"><a id="__codelineno-29-33" name="__codelineno-29-33"></a>        <span class="s2">&quot;cotes&quot;</span> <span class="p">:</span> <span class="n">cotes</span><span class="p">,</span>
+</span><span id="__span-29-34"><a id="__codelineno-29-34" name="__codelineno-29-34"></a>        <span class="s2">&quot;perimetre&quot;</span> <span class="p">:</span> <span class="n">perimetre</span>    
+</span><span id="__span-29-35"><a id="__codelineno-29-35" name="__codelineno-29-35"></a>    <span class="p">}</span>
+</span><span id="__span-29-36"><a id="__codelineno-29-36" name="__codelineno-29-36"></a>
+</span><span id="__span-29-37"><a id="__codelineno-29-37" name="__codelineno-29-37"></a><span class="c1"># Exécution de la fonction</span>
+</span><span id="__span-29-38"><a id="__codelineno-29-38" name="__codelineno-29-38"></a><span class="nb">print</span><span class="p">(</span><span class="n">info_triangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+</span></code></pre></div></td></tr></table></div>
+<h4 id="modifier-un-dictionnaire">Modifier un dictionnaire</h4>
+<p>On peut modifier les dictionnaires en changeant leur valeur, en ajoutant une valeur ou en retirant une valeur. Tout comme les autres conteneurs, on ne peut pas retirer de valeurs pendant que l'on itère dans un dictionnaire. Une contrainte supplémentaire s'impose, il n'est pas possible de modifier une clé. Pour changer la clé d'un élément, il faut plutôt dupliquer l'élément en lui affectant la nouvelle clé et supprimer la copie qui est associée à la version de la clé avant la modification. </p>
+<h5 id="changer-une-valeur">Changer une valeur</h5>
+<p>Tout comme pour les listes, on peut simplement écrire par-dessus un élément comme l'on affecterait une variable normale.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification du nom d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span>
+<span class="normal"><a href="#__codelineno-30-4">4</a></span>
+<span class="normal"><a href="#__codelineno-30-5">5</a></span>
+<span class="normal"><a href="#__codelineno-30-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hydrogène&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span> <span class="p">:</span> <span class="s2">&quot;Helium&quot;</span><span class="p">,</span> <span class="s2">&quot;Na&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sodium&quot;</span><span class="p">,</span> <span class="s2">&quot;Be&quot;</span> <span class="p">:</span> <span class="s2">&quot;Béryllium&quot;</span><span class="p">,</span> 
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a>    <span class="s2">&quot;B&quot;</span> <span class="p">:</span> <span class="s2">&quot;Bore&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span> <span class="p">:</span> <span class="s2">&quot;Nazote&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span> <span class="p">:</span> <span class="s2">&quot;Oxygène&quot;</span> <span class="p">}</span>     <span class="c1"># ...</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4"></a><span class="c1"># Modification de nazote pour azote...</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5"></a><span class="n">elements</span><span class="p">[</span><span class="s2">&quot;N&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Azote&quot;</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="ajouter-une-valeur">Ajouter une valeur</h5>
+<p>Pour ajouter une valeur, c'est la même syntaxe que pour la modification, mais on indique entre les crochets une clé qui n'est pas utilisée.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajout d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span>
+<span class="normal"><a href="#__codelineno-31-5">5</a></span>
+<span class="normal"><a href="#__codelineno-31-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hydrogène&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span> <span class="p">:</span> <span class="s2">&quot;Helium&quot;</span><span class="p">,</span> <span class="s2">&quot;Na&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sodium&quot;</span><span class="p">,</span> <span class="s2">&quot;Be&quot;</span> <span class="p">:</span> <span class="s2">&quot;Béryllium&quot;</span><span class="p">,</span> 
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2"></a>    <span class="s2">&quot;B&quot;</span> <span class="p">:</span> <span class="s2">&quot;Bore&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span> <span class="p">:</span> <span class="s2">&quot;Nazote&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span> <span class="p">:</span> <span class="s2">&quot;Oxygène&quot;</span> <span class="p">}</span>     <span class="c1"># ...</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3"></a>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4"></a><span class="c1"># Oups le carbone a été oublié ...</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5"></a><span class="n">elements</span><span class="p">[</span><span class="s2">&quot;C&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Carbone&quot;</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h5 id="retirer-une-valeur">Retirer une valeur</h5>
+<p>Pour retirer une valeur d'un dictionnaire il faut utiliser l'opérateur de suppression <code class="language-py highlight"><span class="k">del</span></code> suivi du dictionnaire et de la clé à supprimer entre crochets carrés. (Note personnelle : pourquoi ce n'est pas une fonction comme tout le reste je l'ignore !).</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Retrait d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span>
+<span class="normal"><a href="#__codelineno-32-5">5</a></span>
+<span class="normal"><a href="#__codelineno-32-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;H&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hydrogène&quot;</span><span class="p">,</span> <span class="s2">&quot;He&quot;</span> <span class="p">:</span> <span class="s2">&quot;Helium&quot;</span><span class="p">,</span> <span class="s2">&quot;Na&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sodium&quot;</span><span class="p">,</span> <span class="s2">&quot;Be&quot;</span> <span class="p">:</span> <span class="s2">&quot;Béryllium&quot;</span><span class="p">,</span> 
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>    <span class="s2">&quot;B&quot;</span> <span class="p">:</span> <span class="s2">&quot;Bore&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span> <span class="p">:</span> <span class="s2">&quot;Nazote&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span> <span class="p">:</span> <span class="s2">&quot;Oxygène&quot;</span> <span class="p">}</span>     <span class="c1"># ...</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4"></a><span class="c1"># On se rend compte que l&#39;oxygène n&#39;existe pas pour vrai, c&#39;est une hallucination de masse des chimistes !</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5"></a><span class="k">del</span> <span class="n">elements</span><span class="p">[</span><span class="s2">&quot;O&quot;</span><span class="p">]</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="les-one-liner-de-python">Les <em>one-liner</em> de Python</h2>
+<p>Python permet d'écrire plusieurs expressions sous la forme de <em>one-liner</em> (instruction qui tient sur une ligne). Si vous remarquez dans un code une expression entre parenthèses, crochets carrés ou accolades avec de courtes instructions (comme des <code class="language-py highlight"><span class="k">if</span></code> et des <code class="language-py highlight"><span class="k">for</span></code>) à l'intérieur, il y a de fortes chances qui s'agissent de <em>one-liner</em>. Pour les personnes intéressées, on réfère à ses expressions comme des <em>comprehension</em>, par exemple <em>list comprehension</em>.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple de list-comprehension</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span>
+<span class="normal"><a href="#__codelineno-33-5">5</a></span>
+<span class="normal"><a href="#__codelineno-33-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="c1"># Affiche la liste des carrés pairs des nombres entre 1 et 100</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="p">[</span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3"></a>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="c1"># Retirer les valeurs negatives d&#39;une liste</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5"></a><span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6"></a><span class="nb">print</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">liste</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="tableau-resume-des-collections-natives-de-donnees">Tableau résumé des collections natives de données</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Collection</th>
+<th style="text-align: left;">Consulter un élément</th>
+<th style="text-align: left;">Permet les valeurs dupliquées</th>
+<th style="text-align: left;">Changer un élément</th>
+<th style="text-align: left;">Préserve l'ordre</th>
+<th style="text-align: left;">Ajouter un élément</th>
+<th style="text-align: left;">Retirer un élément</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="./#liste">Liste</a></td>
+<td style="text-align: left;">Indice de l'élément entre crochets carrés</td>
+<td style="text-align: left;">Oui</td>
+<td style="text-align: left;">Oui, affectation par-dessus l'élément existant</td>
+<td style="text-align: left;">Oui</td>
+<td style="text-align: left;">Méthodes <code class="language-py highlight"><span class="n">append</span></code> ou <code class="language-py highlight"><span class="n">insert</span></code></td>
+<td style="text-align: left;">Méthodes <code class="language-py highlight"><span class="n">remove</span></code> ou <code class="language-py highlight"><span class="n">pop</span></code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="./#n-uplet">N-uplet</a></td>
+<td style="text-align: left;">Indice de l'élément entre crochets carrés</td>
+<td style="text-align: left;">Oui</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Oui</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Non</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="./#ensemble">Ensemble</a></td>
+<td style="text-align: left;">Parcours seulement (pas de système d'index)</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Méthode <code class="language-py highlight"><span class="n">add</span></code></td>
+<td style="text-align: left;">Méthodes <code class="language-py highlight"><span class="n">remove</span></code> ou <code class="language-py highlight"><span class="n">pop</span></code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="./#dictionnaire">Dictionnaire</a></td>
+<td style="text-align: left;">Oui, avec sa clé</td>
+<td style="text-align: left;">Chaque clé est unique, mais les valeurs peuvent se répéter</td>
+<td style="text-align: left;">Oui, en indiquant sa clé. Les clés ne sont pas modifiables</td>
+<td style="text-align: left;">Non</td>
+<td style="text-align: left;">Affectation avec une clé inutilisée</td>
+<td style="text-align: left;">Instruction <code class="language-py highlight"><span class="k">del</span></code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercices-de-collection-de-donnees">Exercices de collection de données</h2>
+<ol>
+<li>
+<p>Pour chaque situation, identifiez le bon conteneur de données à utiliser.</p>
+<ol>
+<li>Une série de mesure de vitesses d'un objet en chute libre;</li>
+<li>Les stades de développement d'un organisme vivant;</li>
+<li>Les éléments d'une suite mathématique;</li>
+<li>Les différents règnes des vivants; et</li>
+<li>Les équipes des élèves dans un travail collaboratif.</li>
+</ol>
+<details class="info">
+<summary>Solution</summary>
+<ol>
+<li>Une liste ou un n-uplet</li>
+<li>Un n-uplet (relation d'ordre entre les éléments)</li>
+<li>Une liste ou un ensemble (attention aux valeurs répétées)</li>
+<li>Un ensemble</li>
+<li>Un dictionnaire ou un ensemble composé de listes</li>
+</ol>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">equipes</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="mi">1</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;Carl&quot;</span><span class="p">],</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="mi">2</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Damien&quot;</span><span class="p">,</span> <span class="s2">&quot;Erika&quot;</span><span class="p">,</span> <span class="s2">&quot;Félix&quot;</span><span class="p">]</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+</li>
+<li>
+<p>Écrivez un programme qui calcule puis affiche les nombres premiers entre 1 et 500. Plusieurs approches permettent de résoudre ce problème.</p>
+<details class="info">
+<summary>Solution</summary>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Nombres premiers</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-35-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-35-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-35-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-35-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-35-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-35-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-35-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-35-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-35-10">10</a></span>
+<span class="normal"><a href="#__codelineno-35-11">11</a></span>
+<span class="normal"><a href="#__codelineno-35-12">12</a></span>
+<span class="normal"><a href="#__codelineno-35-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="n">nombres_premiers</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>    <span class="c1"># Crée un ensemble vide</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">501</span><span class="p">):</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a>    <span class="n">est_premier</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5"></a>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6"></a>    <span class="k">for</span> <span class="n">facteur</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">nombre</span><span class="p">):</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7"></a>        <span class="k">if</span> <span class="n">nombre</span> <span class="o">%</span> <span class="n">facteur</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8"></a>            <span class="n">est_premier</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9"></a>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10"></a>    <span class="k">if</span> <span class="n">est_premier</span><span class="p">:</span>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11"></a>        <span class="n">nombres_premiers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12"></a>
+</span><span id="__span-35-13"><a id="__codelineno-35-13" name="__codelineno-35-13"></a><span class="nb">print</span> <span class="p">(</span><span class="n">nombres_premiers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</li>
+<li>
+<p>Modifiez le jeu du roche-papier-ciseau pour enregistrer la personne gagnante de chaque tour. Si vous voulez, vous pouvez aussi enregistre l'information de chaque coup joué. Utilisez cette information pour afficher la personne gagnante de la partie. </p>
+</li>
+</ol>
 
 
 
@@ -844,7 +2206,7 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-10</span>
   </span>
 
     
@@ -874,7 +2236,7 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../boucles/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Boucles «&amp;nbsp;pour&amp;nbsp;» et «&amp;nbsp;tant que&amp;nbsp;»">
+          <a href="../documenter_planifier/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Documenter et planifier le code">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -884,11 +2246,27 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Boucles «&nbsp;pour&nbsp;» et «&nbsp;tant que&nbsp;»
+                Documenter et planifier le code
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../techniques_programmation/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Tâche de programmation et organisation de projets">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Tâche de programmation et organisation de projets
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
