@@ -1,0 +1,1036 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours de jeux 3d pour Unity">
+      
+      
+        <meta name="author" content="Alexandre Ouellet">
+      
+      
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/jeu-simulation/">
+      
+      
+      
+        <link rel="next" href="../classification/">
+      
+      
+      <link rel="icon" href="../images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Que sont les simulations et les jeux ? - Jeux 3D</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/hint.min.css">
+    
+      <link rel="stylesheet" href="../css/override.css">
+    
+      <link rel="stylesheet" href="../css/card-genre.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#que-sont-les-simulations-et-les-jeux" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Jeux 3D" class="md-header__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+      
+  <img src="../images/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jeux 3D
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Que sont les simulations et les jeux ?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Concepts et idéation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Rappels sur les vecteurs 3D" class="md-tabs__link">
+          
+  
+  Les mathématiques des jeux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index" class="md-tabs__link">
+          
+  
+  Programmer avec Unity
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index" class="md-tabs__link">
+          
+  
+  Ressources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Jeux 3D" class="md-nav__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+      
+  <img src="../images/favicon.svg" alt="logo">
+
+    </a>
+    Jeux 3D
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Concepts et idéation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts et idéation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Que sont les simulations et les jeux ?
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Que sont les simulations et les jeux ?
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les simulations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-jeux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les jeux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les jeux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-jeux-comme-une-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les jeux comme une simulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-jeux-comme-un-probleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les jeux comme un problème
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-bien-definir-un-probleme-dans-un-jeu-et-les-pieges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment bien définir un problème dans un jeu et les pièges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comment bien définir un problème dans un jeu et les pièges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trouver-une-structure-dans-le-flou" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trouver une structure dans le flou
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficulte-du-probleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difficulté du problème
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accoutumance-au-probleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accoutumance au problème
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tout-devient-un-clou" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tout devient un clou
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classification des jeux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les types de caméras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Les mathématiques des jeux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Les mathématiques des jeux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rappels sur les vecteurs 3D" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Déplacement dans l'espace" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programmer avec Unity
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Programmer avec Unity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ressources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="que-sont-les-simulations-et-les-jeux">Que sont les simulations et les jeux</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>1-5 Types de jeu et leurs caractéristiques<br/></p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>20 minutes</p>
+</div>
+</div>
+<h2 id="les-simulations">Les simulations</h2>
+<p>Selon Antitode <img alt="📙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4d9.svg" title=":orange_book:" />, le terme <strong>simuler</strong> est « Imiter (un fonctionnement), reproduire de façon artificielle ». Donc le but d'une simulation informatique est de reproduire le fonctionnement d'un système réel à l'aide d'un système informatique. Les programmes qui accomplissent des simulations se distinguent des autres programmes en respectant les guides suivants :</p>
+<dl>
+<dt><code>Exécution en temps réel</code></dt>
+<dd>
+<p>La simulation doit s'exécuter sur un intervalle de temps semblable à celui réel. La plupart des simulations prendront <strong>au plus</strong> un temps similaire à l'exécution du phénomène réel. On retrouve des exceptions à cette règle notamment dans la simulation visant à représenter des phénomènes avec un grand degré de précision. </p>
+</dd>
+<dt><code>Abstraction (représentation) des concepts</code></dt>
+<dd>
+<p>La simulation traite numériquement des concepts réels (qui sont généralement quantifiés). Cette abstraction permet de respecter ou d'imiter des règles et des phénomènes réels avec un <strong>degré de précision variable</strong>. Dans tous les cas, les concepts du monde réel qui ont un impact sur la simulation doivent être représentés dans cette forme.  </p>
+</dd>
+<dt><code>Définition restreinte des entrées</code></dt>
+<dd>
+<p>Rares sont les systèmes réels qui opèrent en boîte noire (un système constant n'est pas très pertinent à simuler...). Les entrées des systèmes doivent donc aussi être représentées, mais souvent de façon restreinte. C'est-à-dire que seul un sous-ensemble de toutes les opérations possibles peut être effectué dans la simulation. Les actions sont représentées sont souvent choisies en fonction de leur <strong>pertinence</strong> et de la <strong>difficulté d'implémentation</strong>.</p>
+</dd>
+<dt><code>Définition des sorties à partir d'un ensemble de règles</code></dt>
+<dd>
+<p>Les systèmes réels réagissent aux entrées et aux interactions entre les composantes pour produire un résultat (une sortie). Par exemple, en termes d'interactions sociales, on peut difficilement prévoir le résultat exact d'une conversation (les règles qui les régissent sont trop complexes), mais il est facile d'avoir une discussion sans choquer l'autre personne. La simulation ne peut prendre en compte l'ensemble des règles et se restreint encore une fois à des règles généralement quantifiées.   </p>
+</dd>
+</dl>
+<div class="admonition example">
+<p class="admonition-title">Simulation de voiture</p>
+<p>Voici l'application des caractéristiques de la simulation au contexte de la conduite d'une voiture.</p>
+<ul>
+<li>Temps d'exécution : la simulation doit s'exécuter en temps réel (ratio de temps 1:1)</li>
+<li>Concepts représentés : déplacement de la voiture, routes, obstacles sur le chemin, accident, environnement</li>
+<li>Entrées possibles : déplacement du véhicule (gauche, droite, avant, arrière), temps de la journée, condition de route, météo...</li>
+<li>Règles : règles de la circulation (certaines seulement), réaction des autres usagers de la route, physique (glace, aquaplanage, dérapage)...</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Simulation de file d'attente d'épicerie</p>
+<p>Identifiez les caractéristiques d'une simulation de file d'attente à l'épicerie à l'aide des questions suivantes.</p>
+<ul>
+<li>Quel est le temps d'exécution ?</li>
+<li>Quels sont les principaux concepts à représenter ? Qu'est-ce qu'on utilise pour abstraire ces concepts ?</li>
+<li>Quelles sont les entrées possibles à la simulation ?</li>
+<li>Quelles sont les principales règles de la simulation ? Quelles pourraient être les sorties de la simulation ?</li>
+</ul>
+</div>
+<h2 id="les-jeux">Les jeux</h2>
+<div class="admonition note">
+<p class="admonition-title">Mécanique de jeu</p>
+</div>
+<p>Mécanique de jeu (<em>game mechanic</em>) : Ensemble de règles qui définissent la manière de jouer à un jeu vidéo, d'interagir avec l'environnement, lors d'une partie, et qui sont destinées à produire une expérience de jeu agréable (GDT, 2010).</p>
+<p>Le terme <em>gameplay</em> est un peu différent des mécaniques de jeu. Traduit par «&nbsp;jouabilité&nbsp;», il réfère aux règles et mécaniques avec lesquelles la personne joueuse interagit avec le jeu. On peut voir la jouabilité comme des règles externes et les mécaniques par des règles internes. Toutefois, la distinction entre les deux n'est pas toujours facile à faire.</p>
+<h3 id="les-jeux-comme-une-simulation">Les jeux comme une simulation</h3>
+<p>On peut voir les jeux comme une simulation sans la contrainte que les règles (mécaniques) sont calquées du monde réel. Dans ce cas, on réinterprète simplement les mêmes caractéristiques qu'énoncées précédemment.</p>
+<div class="admonition question">
+<p class="admonition-title">Identification des mécaniques de jeu et d'éléments de jouabilité</p>
+<ul>
+<li>Nommez un jeu dont le temps d'exécution est réel, un dont le temps est compressé.</li>
+<li>Nommez deux abstractions de concepts fréquemment utilisés dans les jeux.</li>
+<li>Nommez deux entrées fréquemment utilisées dans les jeux.</li>
+<li>Nommez deux règles que tout le monde connait dans un jeu qui ont peu de sens dans le monde réel.</li>
+</ul>
+</div>
+<p>Toutefois, c'est rarement la qualité de la simulation qui nous incite à jouer à jeu. D'où la motivation peut-elle bien provenir alors ?</p>
+<h3 id="les-jeux-comme-un-probleme">Les jeux comme un problème</h3>
+<p>Le cerveau humain est une machine à résoudre des problèmes et aime particulièrement les résoudre. On peut définir un jeu comme un problème à résoudre auquel l'on ajoute un contexte.</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Let's picture a mass murder game wherein there is a gas chamber shaped like a well. You the player are dropping innocent victims down into the gas chamber, and they come in all shapes and sizes. There are old ones and young ones, fat ones and tall ones. As they fall to the bottom, they grab onto each other and try to from human pyramids to get to the top of the well. Should they manage to get out, the game is over and you lose. But if you pack them in tightly enough, the ones on the bottom succumb to the gas and die (Koster, 2013).</p>
+<hr />
+<p>Imaginons un jeu d'extermination dans lequel il y a une chambre à gaz de la forme d'un puit. Vous, la personne joueuse, lancez d'innocentes victimes dans la chambre gaz; victimes qui prennent diverses formes et tailles. Il y en a des vieilles et des jeunes, des grosses et des grandes. Dans leur chute, elles s'accrochent les unes aux autres et tentent de former une pyramide humaine pour atteindre le dessus du puit. Si elles parviennent à s'échapper, la partie est terminée et vous avez perdu. Cependant, si vous les compactez assez serré, celles dans le bas succombent au gaz et meurent (Koster, 2013. Traduit de l'anglais).</p>
+</div>
+<p>La description de ce jeu semble assez horrible de par son contexte gore et morbide. Cependant les mêmes mécaniques, exploitées dans un contexte différent avec de simples formes géométriques (polyominos de degrés 4), offrent le célèbre jeu de Tetris.</p>
+<h3 id="comment-bien-definir-un-probleme-dans-un-jeu-et-les-pieges">Comment bien définir un problème dans un jeu et les pièges</h3>
+<h4 id="trouver-une-structure-dans-le-flou">Trouver une structure dans le flou</h4>
+<p>La première condition à l'obtention d'un problème intéressant est que la solution au problème ne soit pas évidente. Pour permettre à la personne joueuse de trouver la solution, on présente plusieurs instances du problème et tranquillement elle remarque les similitudes et déduit la solution.</p>
+<p>Par exemple, apprendre dans un jeu la séquence de combat d'un ennemi est le repérage d'une structure dans le flou.</p>
+<h4 id="difficulte-du-probleme">Difficulté du problème</h4>
+<p>La difficulté d'un problème est très <strong>subjective</strong> et notre sensibilité à cette difficulté l'est tout autant. Pour rendre un jeu agréable, il faut donc moduler cette difficulté selon l'avancement du joueur. Généralement, les niveaux de difficulté dans un jeu font appel simplement au changement de valeurs, mais elles pourraient aussi s'appliquer sur des mécaniques de jeu ou la vitesse d'introduction de celles-ci.</p>
+<p>Par exemple, les quatre premiers ennemis pourraient avoir une séquence de combat composé de deux mouvements et le cinquième ennemi introduit un troisième mouvement et ainsi de suite.</p>
+<h4 id="accoutumance-au-probleme">Accoutumance au problème</h4>
+<p>À force de résoudre le même problème, on y devient habitué et alors deux choses se produisent :</p>
+<ul>
+<li>Le problème devient plus simple à résoudre (on s'attend aux mouvements de l'ennemi)</li>
+<li>On peut appliquer la solution à des contextes différents (en repérant un nouvel ennemi, on cherchera d'abord à apprendre sa séquence)</li>
+</ul>
+<h4 id="tout-devient-un-clou">Tout devient un clou</h4>
+<p>À force de combats, on chercherait toujours à apprendre les séquences. Le sentiment de puissance vécu les deux ou trois premières fois que l'on domine un combat car on sait à quoi s'attendre peut être intéressant, mais rapidement le cerveau manque de stimulation : le problème est trop simple. </p>
+<p>C'est à ce moment que l'on déstabilise la personne joueuse en introduisant quelque chose qui change la façon d'aborder le problème. Par exemple au lieu que chaque ennemi ait une séquence propre, les séquences de deux ennemis peuvent interagir ou si le combat devient trop long (on prend le temps d'étudier la séquence avant d'agir) l'ennemi appelle des renforts.</p>
+<p>Le changement de mécanique est très déstabilisant, car la personne joueuse est habituée de régler les problèmes d'une façon particulière (tout est un clou), alors il faut en user avec parcimonie.</p>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
+<p>KOSTER, Raph. A Theory of Fun for Game Design. O'Reilly , 2e édition, 2013, 279p.</p>
+<p>Mécanique de jeu. (2010). Dans <em>Grand dictionnaire terminologique</em>. Office québécois de la langue française. <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26502525/mecanique-de-jeu">https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26502525/mecanique-de-jeu</a></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-21</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+        
+          
+          <a href="../classification/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Classification des jeux">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Classification des jeux
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC BY-NC-SA Alexandre Ouellet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
