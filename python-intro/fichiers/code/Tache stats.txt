@@ -1,0 +1,14 @@
+1. Statistique descriptive (min, max, somme, moyenne, écart-type, 
+	médiane, nombre d'observations et quartiles)
+
+2. Faire un test d'hypothèse entre les températures et 2023
+	et les quantités de neige reçu en 2022 et 2023.
+	 Est-ce significatif ou non ?
+
+3. Donnez un intervalle de confiance à 95% de la moyenne de la température 
+	moyenne de 2023 x +- z_{0.95} * s/sqrt(n)
+
+4. Étudiez la corrélation entre la variation de la neige au sol 
+	et la variation de la température par rapport à la veille en 2022
+
+5. Dessinez un histogramme avec la neige au sol en 2022
