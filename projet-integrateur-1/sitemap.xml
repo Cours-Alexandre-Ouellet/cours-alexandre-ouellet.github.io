@@ -21,7 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+<<<<<<< HEAD
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/redaction_technique/</loc>
+=======
+         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/redaction/</loc>
+>>>>>>> b7fe90d9fd63774e95775f56718ac44c1fb4bb5e
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
