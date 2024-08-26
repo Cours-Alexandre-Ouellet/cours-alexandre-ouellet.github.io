@@ -2,21 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/</loc>
+<<<<<<< HEAD
          <lastmod>2024-08-26</lastmod>
+=======
+         <lastmod>2024-08-23</lastmod>
+>>>>>>> a3b35b99ff82b6cd6490be37f0dc245ac7a6ae8a
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/camera/</loc>
+<<<<<<< HEAD
          <lastmod>2024-08-26</lastmod>
+=======
+         <lastmod>2024-08-23</lastmod>
+>>>>>>> a3b35b99ff82b6cd6490be37f0dc245ac7a6ae8a
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/classification/</loc>
+<<<<<<< HEAD
          <lastmod>2024-08-26</lastmod>
+=======
+         <lastmod>2024-08-23</lastmod>
+>>>>>>> a3b35b99ff82b6cd6490be37f0dc245ac7a6ae8a
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/jeu-simulation/</loc>
+<<<<<<< HEAD
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -38,6 +51,9 @@
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/vecteurs_3d/</loc>
          <lastmod>2024-08-26</lastmod>
+=======
+         <lastmod>2024-08-23</lastmod>
+>>>>>>> a3b35b99ff82b6cd6490be37f0dc245ac7a6ae8a
          <changefreq>daily</changefreq>
     </url>
 </urlset>
