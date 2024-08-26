@@ -22,7 +22,11 @@
       
       
       <link rel="icon" href="../../images/favicon.svg">
+<<<<<<< HEAD
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+=======
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+>>>>>>> 3a34eb1f2208e30405f09f89e4ce03cc7e077258
     
     
       
@@ -554,6 +558,7 @@
 </li>
       
         <li class="md-nav__item">
+<<<<<<< HEAD
   <a href="#regarder-directement-un-point" class="md-nav__link">
     <span class="md-ellipsis">
       Regarder directement un point
@@ -587,6 +592,8 @@
 </li>
       
         <li class="md-nav__item">
+=======
+>>>>>>> 3a34eb1f2208e30405f09f89e4ce03cc7e077258
   <a href="#conversions-degres-radians" class="md-nav__link">
     <span class="md-ellipsis">
       Conversions degrés / radians
@@ -899,13 +906,18 @@
 <p>La rotation s'opère toujours autour d'un axe. La rotation entraîne un changement de perspective dans le plan perpendiculaire à l'axe de rotation. Une rotation autour de l'axe y, entraîne un changement de perspective dans le plan XZ. Du point de vue du joueur, cela signifierait qu'un personnage tourne sur lui-même par exemple. Les rotations positives sont dans le sens horaire dans <em>Unity</em>, contrairement à la référence admise en mathématique où les rotations positives sont en sens antihoraires.</p>
 <p>Comme vous avez sûrement vu en mathématiques, on peut représenter une rotation dans l'espace par une matrice de rotation de coordonnées homogènes de dimensions 4x4. Il existe aussi un objet mathématique, <em>le quaternion</em>, qui peut être utilisé pour représenter des rotations. Le gain de performance observé peut être de l'ordre de 1800 %, soit 18 fois plus performant (Gavilan, 2016).</p>
 <h2 id="les-quaternions">Les quaternions</h2>
+<<<<<<< HEAD
 <p>Un quaternion est un nombre en 4 dimensions (1 réel et 3 imaginaires). Il n'est pas important dans le contexte du cours de comprendre la structure des quaternions. Il faut simplement retenir ceci : l'objet quaternion a les composantes <em>w, x, y</em> et <em>z</em> auquel on peut directement accéder. <strong>Les composantes <em>x, y</em> et <em>z</em> ne représentent pas des rotations autour des axes correspondants. Il s'agit de données ayant une autre signification et que vous ne devez jamais modifier directement.</strong></p>
+=======
+<p>Un quaternion est un nombre en 4 dimensions (1 réel et 3 imaginaires). Il n'est pas important dans le contexte du cours de comprendre la structure des quaternions. Il faut simplement retenir ceci : l'objet quaternion a les composantes <em>w, x, y</em> et <em>z</em> auquel on peut directement accéder. <strong>Les composantes *x, y* et *z* ne représentent pas des rotations autour des axes correspondants. Il s'agit de données ayant une autre signification et que vous ne devez jamais modifier directement.</strong></p>
+>>>>>>> 3a34eb1f2208e30405f09f89e4ce03cc7e077258
 <h2 id="le-systeme-eulerien">Le système Eulérien</h2>
 <p>Le système des rotations Eulérien permet de représenter une rotation selon les trois axes x, y et z. Chaque valeur de rotation peut se situer entre 0 et 360 (les deux valeurs existent, mais les utiliser les deux peut vous poser problème...). La valeur de rotation de l'axe indique une rotation autour d'un axe.</p>
 <p>Ce sont des valeurs indiquées dans ce système qui sont affichées dans l'éditeur (les conversions en quaternion se font implicitement par l'éditeur).</p>
 <h2 id="manipuler-des-rotations-avec-unity">Manipuler des rotations avec Unity</h2>
 <p>La méthode <code class="language-c# highlight"><span class="n">Rotate</span></code> de <code class="language-c# highlight"><span class="n">transform</span></code> permet de faire une rotation d'un objet. Cette méthode accepte les valeurs des 3 axes, ainsi que l'espace dans lequel faire la rotation.</p>
 <p>La méthode <code class="language-c# highlight"><span class="n">RotateAround</span></code> permet de calculer une rotation autour d'un point autre (exemple : planètes autour du soleil), selon un axe de rotation et un nombre de degrés selon lequel pivoter.</p>
+<<<<<<< HEAD
 <div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthodes de rotation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -937,6 +949,17 @@
 <p class="admonition-title">Modifier la valeur de <code class="language-c# highlight"><span class="n">forward</span></code></p>
 <p>Selon le moment où la modification est prise en compte, la valeur a déjà pu être utilisée, ce n'est donc pas une méthode suggérée.</p>
 </div>
+=======
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w"> </span><span class="c1">// Rotation autour de l&#39;axe des y de 90 en sens anti-horaire</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">Rotate</span><span class="p">(</span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">90f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="n">Space</span><span class="p">.</span><span class="n">World</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w"> </span><span class="c1">// Rotation autour de l&#39;axe x de 15 degrés de plus que le parent en sens horaire</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">Rotate</span><span class="p">(</span><span class="m">15f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="n">Space</span><span class="p">.</span><span class="n">Local</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w"> </span><span class="c1">// Rotation de 90 degrés en sens horaire sur l&#39;axe des y par rapport au point (5, -5, 4)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">RotateAround</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">up</span><span class="p">,</span><span class="w"> </span><span class="m">90f</span><span class="p">);</span>
+</span></code></pre></div>
+>>>>>>> 3a34eb1f2208e30405f09f89e4ce03cc7e077258
 <h2 id="conversions-degres-radians">Conversions degrés / radians</h2>
 <p>Pour convertir un angle de degrés vers un angle en radian (et vice-versa), deux constantes de <code class="language-c# highlight"><span class="n">Mathf</span></code> sont utiles. La constante <code class="language-c# highlight"><span class="n">Deg2Rad</span></code> convertit de degrés vers radians et <code class="language-c# highlight"><span class="n">Rad2Deg</span></code> effectue la conversion inverse. On doit multiplier les angles par ces constantes pour opérer les conversions. </p>
 <p>Notons que bien que les angles sont exprimés en degrés dans <em>Unity</em>, les fonctions trigonométriques utilisent les valeurs en radians (et les fonctions trigonométriques inverses retournent leur réponse en radians).</p>
@@ -1090,7 +1113,11 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
+<<<<<<< HEAD
       <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+=======
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+>>>>>>> 3a34eb1f2208e30405f09f89e4ce03cc7e077258
       
         <script src="../../javascripts/katex.js"></script>
       
