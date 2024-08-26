@@ -12,28 +12,28 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/camera/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/deplacements/">
       
       
-        <link rel="prev" href="../classification/">
+        <link rel="prev" href="../rotations/">
       
       
-        <link rel="next" href="../maths/vecteurs_3d/">
+        <link rel="next" href="../bezier/">
       
       
-      <link rel="icon" href="../images/favicon.svg">
+      <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Les types de caméras - Jeux 3D</title>
+        <title>Déplacement dans l'espace - Jeux 3D</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,22 +52,22 @@
       
     
     
-      <link rel="stylesheet" href="../css/hint.min.css">
+      <link rel="stylesheet" href="../../css/hint.min.css">
     
-      <link rel="stylesheet" href="../css/override.css">
+      <link rel="stylesheet" href="../../css/override.css">
     
-      <link rel="stylesheet" href="../css/card-genre.css">
+      <link rel="stylesheet" href="../../css/card-genre.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -76,7 +76,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-types-de-cameras" class="md-skip">
+        <a href="#deplacement-dans-lespace" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,9 +107,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Jeux 3D" class="md-header__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="../.." title="Jeux 3D" class="md-header__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
       
-  <img src="../images/favicon.svg" alt="logo">
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les types de caméras
+              Déplacement dans l'espace
             
           </span>
         </div>
@@ -193,13 +193,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../jeu-simulation/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../jeu-simulation/" class="md-tabs__link">
           
   
   Concepts et idéation
@@ -213,11 +211,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../maths/vecteurs_3d/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vecteurs_3d/" class="md-tabs__link">
           
   
   Les mathématiques des jeux
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../index" class="md-tabs__link">
+        <a href="../../index" class="md-tabs__link">
           
   
   Programmer avec Unity
@@ -253,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../index" class="md-tabs__link">
+        <a href="../../index" class="md-tabs__link">
           
   
   Ressources
@@ -288,15 +288,125 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Jeux 3D" class="md-nav__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="../.." title="Jeux 3D" class="md-nav__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
       
-  <img src="../images/favicon.svg" alt="logo">
+  <img src="../../images/favicon.svg" alt="logo">
 
     </a>
     Jeux 3D
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts et idéation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts et idéation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jeu-simulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Que sont les simulations et les jeux ?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classification des jeux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les types de caméras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -322,24 +432,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Concepts et idéation
+    Les mathématiques des jeux
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Concepts et idéation
+            Les mathématiques des jeux
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -350,11 +460,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../jeu-simulation/" class="md-nav__link">
+      <a href="../vecteurs_3d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Que sont les simulations et les jeux ?
+    Rappels sur les vecteurs 3D
   </span>
   
 
@@ -371,11 +481,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../classification/" class="md-nav__link">
+      <a href="../rotations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Classification des jeux
+    Rotations et quaternions
   </span>
   
 
@@ -405,7 +515,7 @@
           
   
   <span class="md-ellipsis">
-    Les types de caméras
+    Déplacement dans l'espace
   </span>
   
 
@@ -416,7 +526,7 @@
         
   
   <span class="md-ellipsis">
-    Les types de caméras
+    Déplacement dans l'espace
   </span>
   
 
@@ -438,27 +548,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#les-projections" class="md-nav__link">
+  <a href="#la-resolution-mathematique" class="md-nav__link">
     <span class="md-ellipsis">
-      Les projections
+      La résolution mathématique
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#positionnement-de-la-camera" class="md-nav__link">
+  <a href="#le-code-dans-unity" class="md-nav__link">
     <span class="md-ellipsis">
-      Positionnement de la caméra
+      Le code dans Unity
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
+  <a href="#application-dans-un-jeu-unity" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice
+      Application dans un jeu Unity
     </span>
   </a>
   
@@ -473,53 +583,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Les mathématiques des jeux
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Les mathématiques des jeux
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -527,70 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maths/vecteurs_3d/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rappels sur les vecteurs 3D
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maths/rotations/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rotations et quaternions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maths/deplacements/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Déplacement dans l'espace
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maths/intervalle.md" class="md-nav__link">
+      <a href="../intervalle.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,17 +616,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -651,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maths/bezier/" class="md-nav__link">
+      <a href="../bezier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -727,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index" class="md-nav__link">
+      <a href="../../index" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index" class="md-nav__link">
+      <a href="../../index" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,60 +834,76 @@
                   
 
 
-<h1 id="les-types-de-cameras">Les types de caméras</h1>
+<h1 id="deplacement-dans-lespace">Déplacement dans l'espace</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>1-3 Types de caméra<br/></p>
+<p>1-1 Déplacement des objets de la simulation dans l'espace tridimensionnel</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>10 minutes</p>
+<p>15 minutes</p>
 </div>
 </div>
-<p>Les caméras déterminent comme la personne joueuse voit le monde. Le type de caméra en dit long sur le point de vue à adopter, les contrôles disponibles et l'ambiance du jeu. Une caméra avec un large champ permet de voir beaucoup d'éléments et donc oriente l'attention vers le monde et sa composition. Une caméra restreinte au contraire concentre l'action dans l'immédiat du personnage et peut contribuer à créer un univers incertain avec de grandes zones d'ombres. De même, une caméra libre offre un grand degré d'exploration sans risque alors qu'une caméra qui suit le personnage force le déplacement et la prise de risque pour explorer.</p>
-<h2 id="les-projections">Les projections</h2>
-<p>On appelle projection le calcul fait pour afficher une scène en 3D sur un support en 2D (moniteur). Ce calcul entraîne une <strong>perte d'information</strong> (élimination d'une dimension). On triche en donnant l'aspect de profondeur au joueur, mais cela complexifie le calcul d'élément d'entrée (comme le fait de cliquer sur un élément dans le monde).</p>
-<p><a class="glightbox" href="../images/Projection.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center" src="../images/Projection.gif" /></a></p>
-<p>La <strong>projection en perspective</strong> est semblable à celle que nos yeux voient. Les objets semblent plus petits au fur et à mesure que l'on s'éloigne du point d'observation. L'utilisation de ce type de projection confère un aspect réaliste au jeu. Elle est très utilisée pour les jeux à la première personne.</p>
-<p>La <strong>projection isométrique</strong> n'a pas d'effet sur la profondeur, toutes les dimensions restent constantes. L'utilisation de ce type de caméra permet d'afficher des zones sans perte d'information (comme on regarderait une carte). L'utilisation de ce type de projection détache la personne joueuse du jeu et permet d'observer de grandes surfaces. Elle est très utilisée pour les jeux de gestion et de stratégie.</p>
-<h2 id="positionnement-de-la-camera">Positionnement de la caméra</h2>
-<p>La caméra peut prendre plusieurs positions relatives au personnage du jeu :</p>
-<p>En <strong>première personne</strong>, la caméra donne l'impression de regarder par les yeux du personnage. C'est l'un des éléments immersifs les plus importants si l'on veut que la personne joueuse s'identifie au personnage.</p>
-<p>En <strong>troisième personne</strong>, la caméra suit le personnage, mais permet aussi d'observer l'environnement avoisinant. Cela aide à la recherche de trajet ou d'objets du jeu. On la retrouve souvent dans les RPG, MMORPG et jeux de plateforme.</p>
-<p>La <strong>caméra libre</strong> ou <strong>caméra dieu</strong> n'est pas lié à un personnage et permet de voir l'univers du jeu du point de vue souhaité par la personne joueuse. Elle peut s'accompagner de quelques restrictions (zones visibles et zones masquées), mais des contrôles existent, indépendamment des personnages ou des objets du jeu, pour déplacer la caméra.</p>
-<h2 id="exercice">Exercice</h2>
-<p>Identifiez les types de caméras des images suivantes</p>
-<p><a class="glightbox" href="../images/ES_online_premiere_personne.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/ES_online_premiere_personne.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Perspective en première personne </p>
-</details>
-<p><a class="glightbox" href="../images/civ6_dieu_camera.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/civ6_dieu_camera.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Isométrique en caméra libre </p>
-</details>
-<p><a class="glightbox" href="../images/witcher_troisieme_camera.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/witcher_troisieme_camera.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Perspective en troisième personne </p>
-</details>
-<p><a class="glightbox" href="../images/zelda_troisieme_camera.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/zelda_troisieme_camera.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Perspective en troisième personne </p>
-</details>
-<p><a class="glightbox" href="../images/xcom_camera_dieu.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/xcom_camera_dieu.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Isométrique en caméra libre </p>
-</details>
-<p><a class="glightbox" href="../images/cod_premiere_personne_2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/cod_premiere_personne_2.jpg" /></a></p>
-<details class="success">
-<summary>Réponse</summary>
-<p>Perspective en première personne </p>
-</details>
+<hr />
+<p>Voici un problème de déplacement classique de jeux vidéos : </p>
+<p>Timmy se trouve à la position <span class="arithmatex">\(\mathbf{t} = (2, 0, 4)\)</span> et souhaite se rendre jusqu'à son frère, Larry, qui se trouve à la position <span class="arithmatex">\(\mathbf{\ell} = (9, 2, 6)\)</span>. Timmy possède d'obscurs pouvoirs lui permettant de voler et de traverser tous les objets qui pourraient se trouver sur son passage (autrement dit, il se déplace en ligne droite) et il parcourt 3 mètres par seconde. Supposons que le jeu s'exécute à 60 fps. Trouver la position de Timmy après 45 frames, puis écrivez l'algorithme en C# du déplacement de Timmy.</p>
+<h2 id="la-resolution-mathematique">La résolution mathématique</h2>
+<p><strong>1) Trouver le vecteur de direction entre Timmy et Larry</strong></p>
+<p>Pour trouver ce vecteur, on soustrait la position finale à la position initiale.
+$$ \mathbf{d} = \mathbf{\ell} - \mathbf{t} = (9, 2, 6) - (2, 0, 4) = (7, 2, 2) $$</p>
+<p><strong>2) Trouver la vitesse de déplacement par frame de Timmy</strong></p>
+<p>Il suffit de diviser sa vitesse de déplacement par le nombre de fps.
+$$ \text{vitesse par frame} = 3 / 60 = 0.05 $$</p>
+<p><strong>3) Trouver la quantité de déplacement de Timmy par frame</strong></p>
+<p>On sait que Timmy avance de 0.05 mètre par frame, on veut maintenant savoir combien cela représente sur le vecteur de direction entre sa position et celle de Larry. On doit donc d'abord normer le vecteur de direction trouvé à l'étape (1), puis réduire sa longueur à 0.05 (voir propriété des normes)
+$$ \mathbf{d'} = \frac{\mathbf{d}}{|\mathbf{d}|} = \frac{1}{7.55}(7, 2, 2) = (0.9272, 0.2649, 0.2649) $$</p>
+<p>Le vecteur de déplacement de Timmy sera noté <span class="arithmatex">\(\mathbf{d_{Timmy}}\)</span>.
+$$ \mathbf{d_{Timmy}} = 0.05(0.9272, 0.2649, 0.2649) = (0.0464, 0.0132, 0.0132)$$</p>
+<p><strong>4) Trouver le déplacement pour 45 frames et déterminer la position</strong></p>
+<p>On multiplie le déplacement par frame par 45 pour obtenir le déplacement pour 45 frames (<span class="arithmatex">\(\mathbf{d_{Timmy, 45}}\)</span>)
+$$ \mathbf{d_{Timmy, 45}} = 45\mathbf{d_{Timmy}} = (2.088, 0.596, 0.596) $$</p>
+<p>On trouve la position en additionnant le déplacement à la position de départ.
+$$ \mathbf{p_{Timmy, 45}} = \mathbf{t} + \mathbf{d_{Timmy, 45}} = (2, 0, 4) + (2.088, 0.596, 0.596) = (4.088, 0.596, 4.596) $$</p>
+<p><strong>5) Réponser et conclusion</strong>
+Après 45 frames, Timmy est à la position (4.088, 0.596, 4.596).</p>
+<h2 id="le-code-dans-unity">Le code dans Unity</h2>
+<div class="language-cs highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Calcul du déplacement de Timmy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w"> </span><span class="c1">// Données du problème</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">posTimmy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="m">2.0f</span><span class="p">,</span><span class="w"> </span><span class="m">0.0f</span><span class="p">,</span><span class="w"> </span><span class="m">4.0f</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">posLarry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="m">9.0f</span><span class="p">,</span><span class="w"> </span><span class="m">2.0f</span><span class="p">,</span><span class="w"> </span><span class="m">6.0f</span><span class="p">);</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">vitesseTimmy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3.0f</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">nombreFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">45</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w"> </span><span class="c1">// Étape 1</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">posLarry</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">posTimmy</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w"> </span><span class="c1">// Étape 2</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">vitesseTimmyFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vitesseTimmy</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">;</span><span class="w"> </span><span class="c1">// Time.deltaTime retourne le temps de rendu de la frame, donc 1/fps </span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w"> </span><span class="c1">// Étape 3</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">deplacementTimmy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">direction</span><span class="p">.</span><span class="n">normalized</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">vitesseTimmyFrame</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">nombreFrames</span><span class="p">;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w"> </span><span class="c1">// Étape 4</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w"> </span><span class="n">posTimmy</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">deplacementTimmyFrame</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="application-dans-un-jeu-unity">Application dans un jeu Unity</h2>
+<p>Avec les fonctionnalités du moteur de jeu et la boucle de jeu, le code suivant est utilisé dans le passage de la boucle.</p>
+<div class="language-cs highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Déplacement linéaire entre deux positions</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Dans la méthode Update ou FixedUpdate</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">Vector3</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">posLarry</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">posTimmy</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">posTimmy</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">vitesseTimmy</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">;</span><span class="w"> </span>
+</span></code></pre></div></td></tr></table></div>
 
 
 
@@ -905,7 +924,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-21</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-26</span>
   </span>
 
     
@@ -935,7 +954,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../classification/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Classification des jeux">
+          <a href="../rotations/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Rotations et quaternions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -945,20 +964,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Classification des jeux
+                Rotations et quaternions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../maths/vecteurs_3d/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Rappels sur les vecteurs 3D">
+          <a href="../bezier/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Courbes de Bézier">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Rappels sur les vecteurs 3D
+                Courbes de Bézier
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1030,12 +1049,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
