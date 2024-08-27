@@ -585,8 +585,59 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#multiplication-composantes-par-composantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplication composantes par composantes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produit-scalaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Produit scalaire
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vecteurs-speciaux-dans-unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vecteurs spéciaux dans Unity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vecteurs spéciaux dans Unity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-vecteurs-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les vecteurs constants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-references-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les références locales
+    </span>
+  </a>
   
 </li>
         
@@ -1006,6 +1057,41 @@ Dans <em>Unity</em> on peut normer le vecteur ou calculer le vecteur normé d'un
 <div class="arithmatex">\[ \|a\mathbf{u}\| = |a|\times \|u\| \]</div>
 <p>Donc si l'on multiplie un vecteur par la quantité 0.5 par exemple, sa norme se trouve réduite de moitié. Cette propriété permet de démontrer l'opération de normage.</p>
 <div class="arithmatex">\[ \|u'\| = \left|\frac{1}{\|\mathbf{u}\|}\right|\times\|\mathbf{u}\| = \frac{\|u\|}{\|u\|} = 1 \]</div>
+<h4 id="multiplication-composantes-par-composantes">Multiplication composantes par composantes</h4>
+<h4 id="produit-scalaire">Produit scalaire</h4>
+<h2 id="vecteurs-speciaux-dans-unity">Vecteurs spéciaux dans Unity</h2>
+<h3 id="les-vecteurs-constants">Les vecteurs constants</h3>
+<p><em>Unity</em> définit huit vecteurs de valeurs constantes, le vecteur nul, le vecteur de 1 ainsi qu'un vecteur pour chaque axe du monde et son inverse.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Vecteurs constante</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="w">    </span><span class="c1">// Retourne (0.0f, 0.0f, 0.0f)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">one</span><span class="w">     </span><span class="c1">// Retourne (1.0f, 1.0f, 1.0f)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1">// Axe x</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">right</span><span class="w">   </span><span class="c1">// Retourne (1.0f, 0.0f, 0.0f)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">left</span><span class="w">   </span><span class="c1">// Retourne (-1.0f, 0.0f, 0.0f)</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1">// Axe y </span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">up</span><span class="w">    </span><span class="c1">// Retourne (0.0f, 1.0f, 0.0f)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">down</span><span class="w">    </span><span class="c1">// Retourne (0.0f, -1.0f, 0.0f)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="c1">// Axe z</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">forward</span><span class="w">     </span><span class="c1">// Retourne (0.0f, 0.0f, 1.0f)</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="n">Vector3</span><span class="p">.</span><span class="n">back</span><span class="w">        </span><span class="c1">// Retourne (0.0f, 0.0f, -1.0f)</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="les-references-locales">Les références locales</h3>
+<p>Pour les vecteurs de direction (<em>right</em>, <em>up</em> et <em>forward</em> par exemple), il est aussi possible de les appeler sur le <code class="language-c# highlight"><span class="n">transform</span></code> d'un objet et cela retourne le référentiel local d'un objet. Par exemple  <code class="language-c# highlight"><span class="n">transform</span><span class="p">.</span><span class="n">forward</span></code> retourne le devant de l'objet (orientation locale z-positive). Cette technique est utile pour savoir dans quelle direction un objet "regarde".</p>
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
 <p>Image de référentiel : https://i.imgur.com/SHHNGNX.jpg, récupéré le 10 août 2022.</p>
 
