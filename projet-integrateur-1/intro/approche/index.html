@@ -12,11 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/methodes_pointage/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/approche/">
       
       
-        <link rel="prev" href="../../analyse/cu/">
+        <link rel="prev" href="../genie_logiciel/">
       
+      
+        <link rel="next" href="../redaction_technique/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -24,7 +26,7 @@
     
     
       
-        <title>Méthodes à pointage - Projet intégrateur 1</title>
+        <title>Approches de développement logiciel - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methodes-a-pointage" class="md-skip">
+        <a href="#approches-de-developpement-logiciel" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Méthodes à pointage
+              Approches de développement logiciel
             
           </span>
         </div>
@@ -189,11 +191,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../genie_logiciel/" class="md-tabs__link">
           
   
   Introduction et généralités
@@ -293,13 +297,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../gestion/methodes_pointage/" class="md-tabs__link">
           
   
   Gestion des projets
@@ -348,25 +350,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -377,7 +384,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Introduction et généralités
@@ -391,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/genie_logiciel/" class="md-nav__link">
+      <a href="../genie_logiciel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -409,10 +416,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../intro/approche/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Approches de développement logiciel
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -421,6 +448,155 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-6-phases-du-developpement-logiciel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les 6 phases du développement logiciel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les 6 phases du développement logiciel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-analyse-et-modelisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Analyse et modélisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-conception" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Conception
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Implémentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-verification-et-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Vérification et validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-maintenance-et-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Maintenance et évolution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-mort" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Mort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-modeles-de-developpement-logiciel" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 modèles de développement logiciel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-manifeste-agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le Manifeste Agile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le Manifeste Agile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traduction-du-manifeste-agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traduction du manifeste agile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-12-principes-agiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les 12 principes agiles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-agile-en-pratique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le Agile en pratique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -433,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/redaction_technique/" class="md-nav__link">
+      <a href="../redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -454,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/gabarits/" class="md-nav__link">
+      <a href="../gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,30 +914,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -772,7 +943,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Gestion des projets
@@ -783,30 +954,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Méthodes à pointage
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../gestion/methodes_pointage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,101 +966,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#impact-des-erreurs-de-prediction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Impact des erreurs de prédiction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methodes-a-pointage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Méthodes à pointage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Méthodes à pointage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ponderation-des-aspects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pondération des aspects
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#estimation-en-temps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Estimation en temps
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Estimation en temps">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#effet-ringelmann" class="md-nav__link">
-    <span class="md-ellipsis">
-      Effet Ringelmann
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methode-poker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Méthode Poker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -937,223 +993,128 @@
                   
 
 
-<h1 id="methodes-a-pointage">Méthodes à pointage</h1>
+<h1 id="approches-de-developpement-logiciel">Approches de développement logiciel</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
-<p>1-1 Outils de gestion de projet<br>
-1-3 Concept de réunion de cadrage<br>
-3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br></p>
+<p>3-6 Vocabulaire de la méthode Agile <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
+3-8 Étapes de développement d'un projet<br>
+4-4 Compréhension des points importants du dossier de conception</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>25 minutes</p>
+<p>40 minutes</p>
 </div>
 </div>
 <hr />
-<p>Deux des tâches difficile dans la planification des projets est la prédiction de la durée et l'ordonnancement des tâches dans la réalisation d'un projet. Ce sont deux tâches qui s'apprennent par la pratique, tous manquant invariablement de précision dans l'accomplissement de ces tâches, parfois même avec une grande expérience. Des méthodes ont été développées, en particulier dnas la pratique de l'Agile afin d'adresser ces enjeux. Ces approches ne rendent pas les prédictions parfaites et ne garantissent pas une priorisation optimale, mais aide grandement à améliorer la qualité de ces dernières.</p>
-<h2 id="impact-des-erreurs-de-prediction">Impact des erreurs de prédiction</h2>
-<p>Avant de décrire la méthode en pratique, petit détour sur l'impact des erreurs de prédiction en temps (quoiqu'une analyse analogue peut être faite pour les coûts) sur l'avancement d'un projet. Le graphique présente une ligne <em>réaliste</em> qui montre la prévision faite pour le projet. Une ligne <em>pessimiste</em> indique l'avancement du projet avec un retard de 15% dans l'avancement du projet, tandis que la ligne <em>optimiste</em> indique un avancement plus rapide par 15%. <em>Le nombre de 15% a été choisi arbitrairement à des fins d'illustrations</em>.</p>
-<figure>
-    <a class="glightbox" href="../../images/graphique_prevision.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/graphique_prevision.png" /></a>
-    <figcaption>Impact des divers types de prévision dans le temps</figcaption>
-</figure>
-<h2 id="methodes-a-pointage_1">Méthodes à pointage</h2>
-<p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles sont qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retire se biais en comparant les CU entre eux. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
-<dl>
-<dt><code>Impact sur l'architecture du système</code></dt>
-<dd>Considère à quel point les CU ont un impact sur la structure du système. Un CU avec un fort impact de l'architecture est un CU dont les composantes on un fort degré de <span class="tooltip hint--top" aria-label="de nombreuses composantes dépendent des données de ce CU">dépendances sortantes</span>. Également, les CU qui manipulent beaucoup de données (car on optimisera pour les larges ensembles de données) où que l'on sait instable (à risque d'évoluer) seront considérées comme ayant un impact élevé sur l'architecture du système.</dd>
-<dt><code>Importance du cas</code></dt>
-<dd>L'importance se définit par rapport au besoin de l'entité cliente. Une fonctionnalité importante sera développée plus rapidement (score d'importance plus élevé), car ces CU ont plus de valeurs pour permettre des déploiments rapides d'un système utilisable et utile.</dd>
-<dt><code>Complexité de développement</code></dt>
-<dd>Un CU complexe peut être complexe lors qu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asychrone), effectue un traitement parallèle ou tout autre tâche qui présente un défi d'implémentation. De façon général, les fonctionnalités complexes seront développées plus rapidement, car cela permet une meilleure assurance qualité de ces fonctionnalités complexes et permet de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</dd>
-</dl>
-<details class="ex-projet" open="open">
-<summary>Classification de 3 CU</summary>
-<p><em>Certains nombres entre 0 et 100 sont utilisés dans cet exemple. Nous verrons lesquels et pourquoi ceux là à la section <a href="./#méthode-poker">Méthode <em>Poker</em></a>.</em></p>
-<hr />
-<p><strong>CU-A01-A - Créer un nouveau projet</strong></p>
+<h2 id="les-6-phases-du-developpement-logiciel">Les 6 phases du développement logiciel</h2>
+<p>Le développement de logiciel est composé par 6 phases (ou étapes) :</p>
+<h3 id="1-analyse-et-modelisation">1. Analyse et modélisation</h3>
+<p>Cette phase vise à <strong>identifier</strong> et <strong>expliciter</strong> les besoins des entités clientes et des personnes utilisatrices du système. L'information est colligée dans le document d'analyse. Cette collecte d'information se fait à partir de diverses sources dont : </p>
+<ul>
+<li>l'entrevue avec les entités clientes et les personnes utilisatrices potentielles;</li>
+<li>les études de marché;</li>
+<li>l'entretien avec des personnes expertes du domaine;</li>
+<li>l'étude du domaine applicatif (systèmes proposant des fonctionnalités comparables); et</li>
+<li>la référence à des normes et des règlementations.</li>
+</ul>
+<p>Les besoins identifiés peuvent être appelés à changer ou à être raffinés durant le développement du système. Cette phase représente de 10 à 15 % du temps de développement.</p>
+<h3 id="2-conception">2. Conception</h3>
+<p>La conception permet de <strong>définir la structure</strong> du système qui sera mis place pour répondre aux besoins. La conception peut être divisée en trois grandes phases :</p>
+<ul>
+<li>la conception de l'architecture du système (organisation dans la structure interne);</li>
+<li>la conception des flux et du stockage des données; et</li>
+<li>la conception des fonctionnalités du système.</li>
+</ul>
+<p>C'est une étape pour laquelle l'on peut avoir envie de faire des coins ronds ou de l'ignorer complètement. Toutefois, plusieurs problèmes d'implémentation peuvent être résolu à cette étape et ils sont plus rapides et moins coûteux à résoudre en conception qu'en implémentation ou après. Cette phase représente de 10 à 15 % du temps de développement.</p>
+<h3 id="3-implementation">3. Implémentation</h3>
+<p>Il s'agit de la réalisation du système conformément à la conception établie. En cas de disparité, il est important de revenir sur la conception (et possiblement l'analyse des besoins) pour assurer une <strong>traçabilité</strong>
+complète entre les différents documents qui décrivent le système. Cette phase représente de 15 à 20 % du temps de développement.</p>
+<h3 id="4-verification-et-validation">4. Vérification et validation</h3>
+<p>Réalisation des opérations centrales d'<strong>assurance qualité</strong>, dont la <strong>vérification</strong> (est-ce que le système fonctionne correctement?) et la <strong>validation</strong> (est-ce que le système fait la bonne chose?). Cette phase inclut non seulement le repérage des erreurs, mais aussi leur correctif. Tout comme dans les changements qui surviennent durant l'implémentation, il est important que les correctifs appliqués prennent en compte la <strong>traçabilité</strong>. Cette phase peut représenter entre 30 % et 50 % du temps de développement.</p>
+<h3 id="5-maintenance-et-evolution">5. Maintenance et évolution</h3>
+<p>Mise à jour du système selon l'évolution et la disponibilité des dépendances, des enjeux de sécurité de l'information et besoins qui changent. Cette étape peut inclure le réusinage de parties de la base de code ainsi que la redéfinition des besoins. Il peut s'agir d'une opération continue ou sporadique selon l'envergure et l'utilisation du système. Comme c'est une phase qui s'étend dans le temps jusqu'à plusieurs années après le déploiement du système, l'utilisation de la documentation établie (analyse, modèles de conception et documentation technique) est cruciale pour parvenir à effectuer les modifications à moindre coût et en limitant les effets de bord (<em>ripple effect</em>). Selon les systèmes, cette phase peut s'étendre pendant plus de 80 % de la durée de vie du système.</p>
+<h3 id="6-mort">6. Mort</h3>
+<p>Bien que la maintenance et l'évolution d'un système allongent considérablement la durée d'utilisation du système où celui-ci demeure pertinent et de qualité, inévitablement le système se dégrade soit parce qu'il ne répond plus au besoin, que la qualité du code est dégradée au point où le système est difficilement utilisable ou que des dépendances majeures (bibliothèques, langages, systèmes d'exploitation) ne sont plus supportées ou elles-mêmes mises à jour. Lorsqu'il n'est plus possible que le système évolue pour s'adapter à ces changements, le système meurt et cesse d'être mis à jour, ce qui cause une cessation complète (ou du moins majeure) de son utilisation. Des bouts du système peuvent être réutilisés vers un système nouveau (nouvelle version).</p>
+<p>D'un point de vue entrepreneurial, cette phase permet aussi le lancement d'un nouveau produit ce qui régénère une entrée importante de revenus. Cependant, avec la stabilisation des technologies (moins de dépréciation rapide des outils et des langages), plusieurs entreprises sont passées dans un mode de paiement par abonnement (on ne permet plus à la personne utilisatrice de posséder le système, on lui «&nbsp;loue&nbsp;») ce qui valorise le temps et les ressources investis dans l'étape de maintenance et d'évolution. </p>
+<h2 id="3-modeles-de-developpement-logiciel">3 modèles de développement logiciel</h2>
+<p>Les 6 phases du développement s'enchaînent en pratique selon différents modèles. Chaque modèle possède des forces et des faiblesses et le choix d'un modèle doit s'appuyer sur des éléments observables tels que :</p>
+<ul>
+<li>la prévisibilité des besoins;</li>
+<li>les délais de développement;</li>
+<li>le modèle de financement; et</li>
+<li>la complexité technique du système.</li>
+</ul>
+<p><a href="https://infogram.com/approches-de-developpement-logiciels-1hxr4zx8o0v9o6y?live">Infographie illustrant les modèles</a></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
+<th>Modèle</th>
+<th>Réalisation</th>
+<th>Modification</th>
+<th>Livraison</th>
+<th>Exemples de système</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">40</td>
-<td style="text-align: left;">20</td>
-<td style="text-align: left;">2</td>
+<td>Cascade</td>
+<td>Chaque étape est complétée pour l'ensemble des fonctionnalités avant de passer à la suivante</td>
+<td>Pas de modification</td>
+<td>Livraison unique</td>
+<td>Système d'avionique, appareil médical</td>
+</tr>
+<tr>
+<td>Incrémental</td>
+<td>Quelques fonctionnalités sont sélectionnées et développées entièrement à chaque itération</td>
+<td>Pas de modification</td>
+<td>Livraisons partielles avec des fonctionnalités complètes</td>
+<td>Outil comptable, outil de plans architecturaux</td>
+</tr>
+<tr>
+<td>Itératif</td>
+<td>Quelques fonctionnalités sont sélectionnées et développées à chaque itération</td>
+<td>Possibilité de revenir sur les fonctionnalités développées</td>
+<td>Livraisons partielles avec des fonctionnalités partielles</td>
+<td>Média social, outil de traitement de texte</td>
 </tr>
 </tbody>
 </table>
-<p>Le CU a un haut impact sur l'architecture, car toutes les tâches et paramètres du projet dépendent de la structure des projets qui est défini dans leur création. Le cas a aussi une grande importance, car sans la structure de projet, le système ne présente que peu d'intérêt d'utilisation. Finalement, le cas ne présente que peu de complexité puisque qu'il s'agit d'initialiser un projet vide, donc avec peu ou pas de dépendances à d'autres données.</p>
-<hr />
-<p><strong>CU-A02-A Ajouter un état de tâche</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">13</td>
-<td style="text-align: left;">40</td>
-</tr>
-</tbody>
-</table>
-<p>Le CU a un impact moyen sur l'architecture, car les états de tâches permettent au projet de cheminer vers sa réalisation, mais certains états sont déjà définis à la création des projet, donc l'ajout d'un état ne devrait pas changer de façon majeure le fonctionnement du système. C'est un cas avec une certaine importance pour adapter le flux de travail aux pratiques de l'entreprise réalisant le projet. Finalement, le cas a une haute complexité, car il peut avoir un impact sur toutes les tâches d'un projet, par exemple en modifiant leur progression, car ces tâches ont maintenant des étapes de plus à accomplir.</p>
-<hr />
-<p><strong>CU-B06 Générer un rapport d’avancement de projet</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">1/2</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">3</td>
-</tr>
-</tbody>
-</table>
-<p>Le CU n'a aucun impact sur l'architecture, car il consulte des données sans les modifier. Donc qu'importe comment les données sont organisées, ce CU les interrogera et extraira l'information pertinente. Le cas a une importance stratégique pour le suivi des projets, mais il s'agit d'une vue condensée; l'information peut être extraite manuellement des diverses interfaces. Le cas aussi présente peu de complexité, car il s'agit que de récupérer et agréger des données.</p>
-</details>
-<h3 id="ponderation-des-aspects">Pondération des aspects</h3>
-<p>Chacun des trois aspects reçoit une pondération entre 1 et 3 qui agit comme un <strong>facteur multiplicateur</strong> pour cet aspect. Cela permet de faire ressortir un aspect au-devant des autres ou de les ordonnées. Autant que possible, l'on souhaite éviter une égalité dans les coefficients, car sinon les objetifs de développement deviennent moins clairs (on travaille à la fois en priorisant par exemple les éléments importants et complexes, donc autrement dit un peu tout...).</p>
-<div class="admonition exercice">
-<p class="admonition-title">Types de systèmes et priorités</p>
-<p>Complétez le tableau suivant des coefficients (3 plus important, 1 le moins important)</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Impact architecture (A)</th>
-<th style="text-align: center;">Importance (I)</th>
-<th style="text-align: center;">Complexité (C)</th>
-<th>Type de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<details class="success">
-<summary>Solution</summary>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">A</th>
-<th style="text-align: center;">I</th>
-<th style="text-align: center;">C</th>
-<th>Type de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td><strong>Application scientifique, fonctionnalité unique</strong> : Projets d'outil d'analyse ou API effectuant un traitement complexe spécifique</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td><strong>Démonstration pour preuve de concept</strong> : Sert à valider un projet. L'entièreté du code peut être jetable</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td><strong>Projets avec gestion de risques</strong> : Projets avec livraison unique ou contrainte de sécurité/d'exactitude</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td><strong>Livraison rapide</strong> : Projets à livraison continue ou devant être mis en production rapidement</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td><strong>Projets d'envergure</strong> : Projets volumineux ou qui seront maintenus/bonifié pendant longtemps</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td><strong>Cadriciel</strong> : Utile pour le développement de cadriciel ou autre base de système</td>
-</tr>
-</tbody>
-</table>
-</details>
-</div>
-<h2 id="estimation-en-temps">Estimation en temps</h2>
-<p>Après avoir déterminer le niveau de complexité des CU et d'avoir déterminer leur ordonnancement, il faut estimer le temps nécessaire à leur complétion. Encore une fois, on utilise un système de pointage, mais cette fois-ci il est assit sur une conversion en temps réel. Par exemple, on peut fixer (arbitrairement), qu'une personne travaille 20 points par semaine. Donc si l'on croit que le développement d'un CU prend deux semaines, on assigne 40 points à ce CU. L'avantage de travailler par point (plutôt qu'avec des heures ou des jours), est qu'en cas de changement dans le rythme du projet (ajout ou retrait de ressources), les estimations demeurent utilisables, il suffit que de changer le rythme (nombre de points par semaine) que l'on peut accomplir. On peut voir les points comme étant une mesure équivalente aux heures-personnes ou jours-personnes selon la conversion faite.  </p>
-<div class="admonition ex-projet">
-<p class="admonition-title">Ex-projet</p>
-<p>Par exemple, on considère que le développement du système de gestion de projet demande 480 points pour la première livraison. On engage deux personnes pour réaliser le développement. Au rythme de 20 points par semaine, on estime à 12 semaines le temps qu'il faudra pour la première livraison. Après 4 semaines, nos ressources financières permettent l'embauche d'une 3e personne. Combien de temps faudra-t-il alors pour compléter le projet ? </p>
-<p>La réponse est plus rapide et avec un peu d'algèbre, on arrive à un peu plus de 5 semaines de travail restantes. Si par exemple pour un CU on avait réalisé la prédiction en terme de temps, comme 10 jours (à deux), on aurait du le convertir en 6,66 jours (à 3). Cette conversion aurait été faite avec chacun de CU, ce qui prend un temps considérable.</p>
-</div>
-<h3 id="effet-ringelmann">Effet Ringelmann</h3>
-<p>Une blague de gestion de projet va comme suit : «&nbsp;un gestionnaire de projet est quelqu'un qui pense que si une femme peut faire un enfant en 9 mois, 9 femmes peuvent faire un enfant en 1 mois.&nbsp;». Évidemment, nous réalisons toute de suite le non sens dans cette blague. Cependant, elle contient quand même un fond de vérité : quand on ajoute des gens dans un processus (augmenter la taille d'une équipe), on ne peut pas systématiquement diviser le travail enter le nombre de personne. D'autres mécanismes apparaissent souvent comme le temps de rencontre (plus il y a de gens, plus l'effort de coordination est grand), le temps pour prendre connaissance des travaux des autres, le temps perdu en distraction... Tout cela est connu sous le nom de l'<strong>Effet Ringelmann</strong>.</p>
-<figure>
-  <a class="glightbox" href="../../images/ringelmann%20effect%20for%20productivity.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/ringelmann%20effect%20for%20productivity.png" /></a>
-  <figcaption>Effet Ringelmann, tiré de Ayen, 2016.</figcaption>
-</figure>
-<p>Comme on le voit sur la figure, la ligne pointillé représente le «&nbsp;potentiel&nbsp;», soit le produit du nombre de personnes impliquées dans le projet par une mesure de performance (ici chaque personne a un potentiel de performance de 100). La ligne pleine «&nbsp;actual&nbsp;» suit une courbe logarithmique montrant que l'apport de chaque personne, bien qu'augmentant la performance est, <span class="tooltip hint--top" aria-label="dans un modèle à plusieurs variables, on appelle «&nbsp;marginal&nbsp;» l'effet isolé d'une des variables">marginalement</span>, de moins en moins important. La perte de productivité occasionnée est illustrée par la zone grise «&nbsp;Process loss&nbsp;».</p>
-<h2 id="methode-poker">Méthode <em>Poker</em></h2>
-<p>La méthode du <em>poker</em> se réalise avec un jeu de cartes. La liste des tâches doit être préalablement établie. Chaque personne possède un ensemble de cartes numéroté, souvent selon la suite de Fibonacci. L'utilisation de cette suite permet de tenir compte de l'erreur grandissante d'estimation. À chaque tour, une tâche est sélectionnée et chaque personne choisit immédiatement et en silence une carte correspondant au nombre de points à assigner à la tâche et elle place la carte, face cachée, devant elle. Lorsque toutes les cartes sont placées, elles sont toutes révélées en même temps. L'équipe discute ensuite pour obtenir un <strong>consensus</strong> sur le nombre de points. <strong>Il ne faut pas utiliser des mesures de tendance centrale comme la moyenne pour sauver des débats</strong> La liste des tâches peut être clarifiée, bonifiée ou simplifiée selon l'interprétation de la tâche par tout un chacun durant le processus.</p>
-<p>Les cartes disponibles pour le pointage sont : <strong>1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100</strong>. La carte 100 indique souvent un élément trop élevé et peut mener à scinder ou préciser le CU en question. Une carte <strong>pause café</strong> permet de signaler qu'il est le temps d'arrêter et une carte d'<strong>interrogation</strong> permet de demander des clarifications le CU, car il est impossible de l'évaluer dans l'état actuel de sa formulation.</p>
-<p><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Gabarit méthodes par point</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"/></svg></span></p>
+<p>On peut voir les approches présentées des plus strictes vers les plus flexibles (celles avec la plus grande adaptabilité).</p>
+<h2 id="le-manifeste-agile">Le Manifeste Agile</h2>
+<p>Les approches agiles désignent une philosophie de gestion de projet. Il n'existe pas une approche agile, mais plutôt des approches qui s'appuient sur la philosophie agile. Le document qui présente la philosophie se nomme «Agile Manisfeto» (Beck, 2001). Il présente les 4 énoncés et les 12 principes de l'Agile.</p>
+<p>Les approches agiles se distinguent des approches classiques par l'accent qu'elles mettent sur le résultat et la flexibilité.</p>
+<p>Lire le <a href="./documents/agile_manifesto.pdf">Agile Manifesto <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></a></p>
+<h3 id="traduction-du-manifeste-agile">Traduction du manifeste agile</h3>
+<blockquote>
+<p>Les individus et les interactions plutôt que les processus et les outils <br>
+Système fonctionnel plutôt que documentation exhaustive <br>
+Collaboration de l'entité cliente plutôt que négociation contractuelle <br>
+S'adapter aux changements plutôt que suivre un plan <br>
+<br>
+Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
+</blockquote>
+<h3 id="les-12-principes-agiles">Les 12 principes agiles</h3>
+<ol>
+<li>La priorité est de satisfaire l'entité cliente avec des livraisons rapides et régulières de système utilisable.</li>
+<li>Accueillez les changements dans les besoins, et ce, même tard dans le développement. Les processus agiles utilisent le changement pour assurer l'avantage compétitif de l'entité cliente.</li>
+<li>Livrez le système fréquemment, avec des intervalles de quelques semaines à quelques moins. Préférez les planifications plus courtes.</li>
+<li>Les experts du domaine et les programmeurs doivent collaborer sur une base quotidienne pour l'avancement du projet.</li>
+<li>Les projets se construisent autour de gens motivés. Accordez-leur l'environnement et le support dont ils ont besoin et faites leur confiance pour accomplir le travail.</li>
+<li>La façon la plus efficace et efficiente de transmettre de l'information dans une équipe de développement est la conversation face à face.</li>
+<li>La mesure de succès la plus importante est un système fonctionnel.</li>
+<li>Les processus agiles promeuvent le développement à un rythme soutenable. Tous devraient pouvoir travailler indéfiniment sur le projet.</li>
+<li>Un souci continu de la qualité technique et de bonne conception augmente l'agilité.</li>
+<li>Simplicité - l'art de maximiser le travail non fait - est essentiel.</li>
+<li>Les meilleures architectures, analyses de besoins et conceptions proviennent d'équipes auto-organisées.</li>
+<li>À intervalle régulier, l'équipe se questionne sur ses façons de faire, propose des moyens d'être plus efficace et s'ajuste.</li>
+</ol>
+<h2 id="le-agile-en-pratique">Le Agile en pratique</h2>
+<p>En pratique la pratique Agile se manifeste dans des méthodes de développement telles le Scrum ou le Kanban, explicité dans les sections... Mettre en action l'ensemble des pratiques Agile s'avère complexe, mais une équipe qui les conserve en tête et les consulte, particulièrement au moment de prendre des décisions, saura appliquer les pratiques Agile. Le danger de passer à côté de l'Agile consiste à tenter de se sécuriser en prévoyant tout et en abordant le projet «&nbsp;défensivement&nbsp;». Souvenvez-vous du quatrième énoncé de l'Agile : « S'adapter aux changements plutôt que suivre un plan », les autres éléments ont tendance à suivre plus naturellement après. </p>
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Ayen, E. M. (2016, 21 Février). Ringelmann effect. <a href="https://www.slideshare.net/ellaabyou/ringelmann-effect">https://www.slideshare.net/ellaabyou/ringelmann-effect</a>.</p>
+<p>Beck, K., et al. (2001) The Agile Manifesto. Agile Alliance. http://agilemanifesto.org/</p>
+<p>Sommerville, I. (2019). History of software engineering. Software Engineering 10th edition. https://software-engineering-book.com/web/history/ </p>
 
 
 
@@ -1204,7 +1165,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../analyse/cu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La méthode des cas d&#39;utilisation">
+          <a href="../genie_logiciel/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Histoire du génie logiciel et de l&#39;informatique">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1214,11 +1175,27 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                La méthode des cas d'utilisation
+                Histoire du génie logiciel et de l'informatique
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../redaction_technique/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Éléments de rédaction technique">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Éléments de rédaction technique
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
