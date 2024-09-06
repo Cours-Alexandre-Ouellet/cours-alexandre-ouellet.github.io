@@ -12,28 +12,26 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module2/documenter_planifier/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/python-intro/module3/">
       
       
-        <link rel="prev" href="../fonctions/">
+        <link rel="prev" href="../module2/sujets_intermediaires/">
       
       
-        <link rel="next" href="../collections/">
       
-      
-      <link rel="icon" href="../../images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+      <link rel="icon" href="../images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Documenter et planifier le code - Introduction à Python en Sciences de la nature</title>
+        <title>Module 3 - Bibliothèques logicielles de Python - Introduction à Python en Sciences de la nature</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,20 +50,20 @@
       
     
     
-      <link rel="stylesheet" href="../../css/hint.min.css">
+      <link rel="stylesheet" href="../css/hint.min.css">
     
-      <link rel="stylesheet" href="../../css/override.css">
+      <link rel="stylesheet" href="../css/override.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +72,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -91,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#planifier-la-programmation-et-documenter-le-code" class="md-skip">
+        <a href="#installer-une-bibliotheque" class="md-skip">
           Aller au contenu
         </a>
       
@@ -105,9 +103,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-header__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
+    <a href=".." title="Introduction à Python en Sciences de la nature" class="md-header__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="logo">
+  <img src="../images/favicon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -124,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documenter et planifier le code
+              Module 3 - Bibliothèques logicielles de Python
             
           </span>
         </div>
@@ -195,7 +193,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href=".." class="md-tabs__link">
           
   
   La formation
@@ -213,7 +211,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../module1/fonctionnement-ordi/" class="md-tabs__link">
+        <a href="../module1/fonctionnement-ordi/" class="md-tabs__link">
           
   
   Module 1 - Installation et démarrage avec Python
@@ -227,13 +225,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../revision_1/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../module2/revision_1/" class="md-tabs__link">
           
   
   Module 2 - Programmer avec Python
@@ -247,9 +243,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../../module3/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -285,9 +283,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Introduction à Python en Sciences de la nature" class="md-nav__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
+    <a href=".." title="Introduction à Python en Sciences de la nature" class="md-nav__button md-logo" aria-label="Introduction à Python en Sciences de la nature" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="logo">
+  <img src="../images/favicon.svg" alt="logo">
 
     </a>
     Introduction à Python en Sciences de la nature
@@ -342,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -363,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/" class="md-nav__link">
+      <a href="../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module1/fonctionnement-ordi/" class="md-nav__link">
+      <a href="../module1/fonctionnement-ordi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -473,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module1/langage_programmation/" class="md-nav__link">
+      <a href="../module1/langage_programmation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -494,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module1/syntaxe_base/" class="md-nav__link">
+      <a href="../module1/syntaxe_base/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -515,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module1/types_logique_arithmetique/" class="md-nav__link">
+      <a href="../module1/types_logique_arithmetique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,30 +538,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -574,7 +567,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Module 2 - Programmer avec Python
@@ -588,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../revision_1/" class="md-nav__link">
+      <a href="../module2/revision_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../boucles/" class="md-nav__link">
+      <a href="../module2/boucles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fonctions/" class="md-nav__link">
+      <a href="../module2/fonctions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,30 +641,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Documenter et planifier le code
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../module2/documenter_planifier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -680,77 +653,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#planifier-la-programmation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Planifier la programmation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documenter-le-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documenter le code
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documenter le code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commentaires-de-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commentaires de code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docstring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docstring
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercice-premier-programme-complet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercice - premier programme complet
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -763,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../collections/" class="md-nav__link">
+      <a href="../module2/collections/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -784,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../techniques_programmation/" class="md-nav__link">
+      <a href="../module2/techniques_programmation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -805,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sujets_intermediaires/" class="md-nav__link">
+      <a href="../module2/sujets_intermediaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,10 +732,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../module3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Module 3 - Bibliothèques logicielles de Python
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -842,6 +762,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installer-une-bibliotheque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installer une bibliothèque
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quelques-bibliotheques-scientifiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quelques bibliothèques scientifiques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemples-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples d'utilisation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -861,45 +826,42 @@
                   
 
 
-<h1 id="planifier-la-programmation-et-documenter-le-code">Planifier la programmation et documenter le code</h1>
+  <h1>Module 3 - Bibliothèques logicielles de Python</h1>
+
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
-<p>Planifier adéquatement la programmation à réaliser <br/>
-Documenter le code selon les standards du PEP257</p>
+<p>Explorer les fonctionalités de bibliothèques logicielles en Python<br/></p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>20 minutes</p>
+<p>2 heures</p>
 </div>
 </div>
-<h2 id="planifier-la-programmation">Planifier la programmation</h2>
-<p>Le cycle de développement en cascade (méthode traditionnelle) des logiciels est le suivant :</p>
-<p><a class="glightbox" href="../../images/etapes_developpement.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/etapes_developpement.png" width="400" /></a></p>
-<p>Pour effectuer la planfication (étapes d'analyse et de conception), il est suggéré d'utiliser le gabarit suivant :</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25m-.8 8.09 1.2 3.94H9.6l1.31-6.56H9.53l-.78 3.88-1.11-3.75H6.5l-1.19 3.77-.78-3.9H3.09l1.31 6.56h1.37m14.98 4.22V17H8.25v2.5m12.5-3.75v-3.12H12v3.12m8.75-4.37V8.25H12v3.13M20.75 7V4.5H8.25V7Z"/></svg></span> <a download="Gabarit planification" href="../../fichiers/Gabarit%20-%20planification.docx">Gabarit de planification de la programmation</a></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25m-.8 8.09 1.2 3.94H9.6l1.31-6.56H9.53l-.78 3.88-1.11-3.75H6.5l-1.19 3.77-.78-3.9H3.09l1.31 6.56h1.37m14.98 4.22V17H8.25v2.5m12.5-3.75v-3.12H12v3.12m8.75-4.37V8.25H12v3.13M20.75 7V4.5H8.25V7Z"/></svg></span> <a download="Gabarit planification (consignes)" href="../../fichiers/Gabarit%20-%20planification%20-%20consignes.docx">Gabarit de planification de la programmation (avec consignes)</a></p>
-<h2 id="documenter-le-code">Documenter le code</h2>
-<p>Plus le code augmente en taille, plus il est important de laisser des traces des réflexions et de l'utilité du code. C'est ce que l'on appelle la documentation. L'utilisation de la documentation permet de lire en texte ce qu'une fonction fait sans constamment devoir en relire le code. Elle aide aussi à reconnaître l'intention derrière une fonction ou les astuces utilisées pour contourner certains problèmes.</p>
-<h3 id="commentaires-de-code">Commentaires de code</h3>
-<p>Les commentaires dans le code prennent la forme d'une simple phrase placé après le caractère <code class="language-py highlight"><span class="c1">#</span></code>. On peut diviser le commentaire sur plusieurs lignes en répétant le symbole <code class="language-py highlight"><span class="c1">#</span></code> au début de chaque ligne. Il n'est pas nécessaire de commenter chaque ligne (en fait même ça n'apporte rien et allourdit la lecture). On réserve les commentaires pour les lignes plus complexes ou celles qui introduisent un bloc de code (par exemple, un boucle qui aurait 3 instructions à l'intérieur pourrait avoir un commentaire qui la précède.)</p>
-<h3 id="docstring">Docstring</h3>
-<p>Les <strong>docstring</strong> sont des commentaires qui expliquent ce qu'une fonction fait. Elles consistent en plusieurs lignes délimitées par 3 guillemets anglais. Aucun retour à la ligne n'est fait avant ou après la docstring.</p>
-<div class="language-py highlight"><span class="filename">Exemple de documentation d'une fonction</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    <span class="k">def</span> <span class="nf">aire_rectangle</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Calcul l&#39;aire d&#39;un rectangle et la retourne.</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">        Keywords arguments:</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="sd">        base -- la base du rectangle</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="sd">        hauteur -- la hauteur du rectangle (default = 0.0)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">hauteur</span>
-</span></code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Expressions anglaises</p>
-<p>Il est important d'utiliser l'expression anglaise «&nbsp;Keywords arguments:&nbsp;» et «&nbsp;default&nbsp;» pour introduire les paramètres de la fonction et les valeurs par défaut, car certains traitements peuvent utiliser les docstrings et utiliseront cette expression.</p>
-</div>
-<h2 id="exercice-premier-programme-complet">Exercice - premier programme complet</h2>
-<p>Planifiez et programmez une calculatrice simple. La calculatrice doit permettre d'additionner, de soustraire, de multiplier et de diviser des nombres. Chaque fois qu'un calcul est effectué, la réponse est affichée à la personne utilisatrice. Tant que la personne utilisatrice ne demande pas de quitter, la calculatrice doit demander un nouveau calcul.</p>
+<hr />
+<p>Afin de bonifier les fonctionnalités offertes dans Python, il est possible d'utiliser des bibliothèques supplémentaires. Elles offrent des fonctions et des classes qui permettent d'effecuter souvent des traitements complexes avec un seul appel. Voici quelques bibliothèques utiles en Sciences de la nature, suivi d'exemples d'applications.</p>
+<h2 id="installer-une-bibliotheque">Installer une bibliothèque</h2>
+<p>Pour installer une bibliothèque dans Thonny, on doit d'abord la télécharger. Ensuite, on inclut ses fonctions comme on le ferait avec des fonctions <a href="../module2/techniques_programmation/#importer-un-fichier">d'autres fichiers</a>, mais en indiquant le nom de la bibliothèque plutôt que le nom du fichier.</p>
+<figure>
+    <a class="glightbox" href="../images/installer_paquet.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/installer_paquet.png" /></a>
+    <figcaption>Ouverture du gestionnaire de paquet</figcaption>
+</figure>
+<h2 id="quelques-bibliotheques-scientifiques">Quelques bibliothèques scientifiques</h2>
+<ul>
+<li><strong><a href="https://matplotlib.org/stable/api/index.html">Matplotlib</a></strong> : bibliothèque pour réaliser et mettre en forme des graphiques.</li>
+<li><strong><a href="https://numpy.org/doc/stable/reference/index.html#reference">Numpy</a></strong> : bibliothèque de traitements mathématiques (quelques méthodes numériques, algèbre linéaire et statistiques simples) et de collection de données (<em>array</em>).</li>
+<li><strong><a href="https://pandas.pydata.org/docs/reference/index.html">Pandas</a></strong> : bibliothèque pour manipuler des tableaux de données (<em>dataframe</em>) et les charger ou les enregistrer dans Excel.</li>
+<li><strong><a href="https://docs.scipy.org/doc/scipy/reference/index.html">SciPy</a></strong> : biblithèque de traitement scientifique dont plusieurs méthodes numériques et méthodes statistiques (incluant les tests d'hypothèse).</li>
+<li><strong><a href="https://docs.sympy.org/latest/reference/index.html">SymPy</a></strong> : bibliothèque qui permet de faire certains calculs de façon symbolique.</li>
+</ul>
+<h2 id="exemples-dutilisation">Exemples d'utilisation</h2>
+<ul>
+<li><strong><a href="../fichiers/code/demo_systeme.py">Démonstration de l'étude d'un système d'équation linéaire <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span></a></strong> : réalise l'étude d'une système d'équation linéaire à l'aide des fonctions de la bibliothèque <em>NumPy</em></li>
+<li><strong><a href="../fichiers/code/demo_parallelogramme.py">Démonstration du calcul d'un parallélogramme <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span></a></strong> : réalise l'étude d'un parallélogramme à l'aide des fonctions de la bibliothèque <em>NumPy</em></li>
+<li><strong><a href="../fichiers/code/analyse_calibration.py">Tracé d'un graphique de calibration <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span></a></strong> : réalise le graphique de calibration d'un spectromètre. <a href="../fichiers/code/donnees.xlsx">Fichier des données <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"/></svg></span></a>.</li>
+<li><strong><a href="../fichiers/code/integration.py">Comparaison de méthode d'intégration numérique avec l'intégration exacte (symbolique) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span></a></strong> : compare divers modes d'intégration (rectangles inscrits, circonscrits et trapèze) avec l'intégration symbolique.</li>
+<li><strong><a href="../fichiers/code/analyse_physique.py">Analyse d'un mouvement linéaire rectiligne uniformément accéléré <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span></a></strong> : réalise l'analyse d'un mouvement linéaire rectiligne uniformément accéléré à partir de données expérimentales (simulées) dans un fichier Excel. <a href="../fichiers/code/donnees_physique.xlsx">Fichier des données <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"/></svg></span></a>.</li>
+</ul>
 
 
 
@@ -920,7 +882,7 @@ Documenter le code selon les standards du PEP257</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-03</span>
   </span>
 
     
@@ -950,7 +912,7 @@ Documenter le code selon les standards du PEP257</p>
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../fonctions/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Les fonctions">
+          <a href="../module2/sujets_intermediaires/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Sujets intermédiaires en programmation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -960,27 +922,11 @@ Documenter le code selon les standards du PEP257</p>
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Les fonctions
+                Sujets intermédiaires en programmation
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../collections/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les collections de données">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Les collections de données
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -1045,12 +991,12 @@ Documenter le code selon les standards du PEP257</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       

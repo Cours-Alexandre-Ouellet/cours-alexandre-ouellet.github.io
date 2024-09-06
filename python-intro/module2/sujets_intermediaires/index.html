@@ -18,6 +18,8 @@
         <link rel="prev" href="../techniques_programmation/">
       
       
+        <link rel="next" href="../../module3/">
+      
       
       <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
@@ -246,17 +248,16 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../../module3/" class="md-tabs__link">
+        
+  
     
-    
-      <li class="md-tabs__item">
-        <a href="../../module3/sujet1.md" class="md-tabs__link">
-          
   
   Module 3 - Bibliothèques logicielles de Python
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -809,64 +810,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../module3/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Module 3 - Bibliothèques logicielles de Python
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Module 3 - Bibliothèques logicielles de Python
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../module3/sujet1.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sujet 1
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -929,8 +882,47 @@
 <span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">garfield</span><span class="o">.</span><span class="n">nom</span><span class="p">)</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">grosminet</span><span class="o">.</span><span class="n">manger</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
-<p>On a rencontré des méthodes dans les collections de données comme <code>!py add</code>, <code>!py remove</code>, <code>!py insert</code>... Les collections natives sont en fait des objets (un peu spéciaux, mais des objets pareils). Les bilbiothèques comme <strong>Pandas</strong> ou <strong>Mathplotlib</strong> fournissent souvent des objets qu'il faut utiliser. </p>
+<p>On a rencontré des méthodes dans les collections de données comme <code class="language-py highlight"><span class="n">add</span></code>, <code class="language-py highlight"><span class="n">remove</span></code>, <code class="language-py highlight"><span class="n">insert</span></code>... Les collections natives sont en fait des objets (un peu spéciaux, mais des objets pareils). Les bilbiothèques comme <strong>Pandas</strong> ou <strong>Mathplotlib</strong> fournissent souvent des objets qu'il faut utiliser. </p>
 <h2 id="gerer-les-erreurs">Gérer les erreurs</h2>
+<p>La gestion des erreurs permet d'éviter les plantages ou l'arrêt imprévu du programme après une opération interdite. La cause de l'opération peut parfois être corrigée (comme dans le cas d'une mauvaise saisie au clavier). Pour permettre de récupérer les erreurs, on utilise la constrution <code class="language-py highlight"><span class="k">try</span> <span class="k">except</span></code>. On précise dans un bloc <code class="language-py highlight"><span class="k">try</span></code> les opérations suceptibles de déclencher des erreurs et dans un bloc <code class="language-py highlight"><span class="k">except</span></code> les opérations pour récupérer les erreurs. Si aucun type d'exception (c'est le terme technique pour les erreurs gérées) n'est précisé, alors toutes les exceptions sont gérées par le même bloc <code>#py except</code>.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Gestion d'une erreur de saisie avec une demande répété à la personne utilisatrice</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Veuillez saisir votre age.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>    <span class="n">ageValide</span> <span class="o">=</span> <span class="kc">False</span>       <span class="c1"># Indique si l&#39;age a été validé</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>    <span class="k">while</span> <span class="ow">not</span> <span class="n">ageValide</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>            <span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>            <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous etes mineur.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>            <span class="k">else</span> <span class="p">:</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous etes majeur.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a>            <span class="n">ageValide</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Veuillez saisir un nombre valide&quot;</span><span class="p">)</span>         
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Liste des exceptions standards</p>
+<p>La <a href="https://docs.python.org/3/library/exceptions.html#concrete-exceptions">liste des exceptions</a> (en anglais) de Python inclus dans le langage de base. L'utilisation de bibliothèque peut apporter de nouvelles exceptions.</p>
+</div>
 
 
 
@@ -996,6 +988,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../../module3/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Module 3 - Bibliothèques logicielles de Python">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Module 3 - Bibliothèques logicielles de Python
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
