@@ -12,11 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/methodes_pointage/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/">
       
       
-        <link rel="prev" href="../../conception/ui/">
+        <link rel="prev" href="../../analyse/cu/">
       
+      
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -24,7 +26,7 @@
     
     
       
-        <title>Méthodes à pointage - Projet intégrateur 1</title>
+        <title>Interfaces utilisateurs - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methodes-a-pointage" class="md-skip">
+        <a href="#conception-de-linterface-utilisateur" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Méthodes à pointage
+              Interfaces utilisateurs
             
           </span>
         </div>
@@ -225,11 +227,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../conception/ui/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Conception
@@ -294,13 +298,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../gestion/methodes_pointage/" class="md-tabs__link">
           
   
   Gestion des projets
@@ -659,25 +661,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -688,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -699,10 +706,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conception/ui/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interfaces utilisateurs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -711,6 +738,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ui-ux-et-pourquoi-on-se-casse-la-tete-avec-cela" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI, UX et pourquoi on se casse la tête avec cela ?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -787,30 +843,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -821,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Gestion des projets
@@ -832,30 +883,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Méthodes à pointage
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../gestion/methodes_pointage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,101 +895,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#impact-des-erreurs-de-prediction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Impact des erreurs de prédiction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methodes-a-pointage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Méthodes à pointage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Méthodes à pointage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ponderation-des-aspects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pondération des aspects
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#estimation-en-temps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Estimation en temps
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Estimation en temps">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#effet-ringelmann" class="md-nav__link">
-    <span class="md-ellipsis">
-      Effet Ringelmann
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methode-poker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Méthode Poker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -986,223 +922,291 @@
                   
 
 
-<h1 id="methodes-a-pointage">Méthodes à pointage</h1>
+<h1 id="conception-de-linterface-utilisateur">Conception de l'interface utilisateur</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
-<p>1-1 Outils de gestion de projet<br>
-1-3 Concept de réunion de cadrage<br>
-3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p>1-4 Dessin de maquettes de l'interface principale<br>
+2-5 Normes et concepts des interfaces utilisateur<br>
+4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>25 minutes</p>
+<p>90 minutes</p>
 </div>
 </div>
 <hr />
-<p>Deux des tâches difficile dans la planification des projets est la prédiction de la durée et l'ordonnancement des tâches dans la réalisation d'un projet. Ce sont deux tâches qui s'apprennent par la pratique, tous manquant invariablement de précision dans l'accomplissement de ces tâches, parfois même avec une grande expérience. Des méthodes ont été développées, en particulier dnas la pratique de l'Agile afin d'adresser ces enjeux. Ces approches ne rendent pas les prédictions parfaites et ne garantissent pas une priorisation optimale, mais aide grandement à améliorer la qualité de ces dernières.</p>
-<h2 id="impact-des-erreurs-de-prediction">Impact des erreurs de prédiction</h2>
-<p>Avant de décrire la méthode en pratique, petit détour sur l'impact des erreurs de prédiction en temps (quoiqu'une analyse analogue peut être faite pour les coûts) sur l'avancement d'un projet. Le graphique présente une ligne <em>réaliste</em> qui montre la prévision faite pour le projet. Une ligne <em>pessimiste</em> indique l'avancement du projet avec un retard de 15% dans l'avancement du projet, tandis que la ligne <em>optimiste</em> indique un avancement plus rapide par 15%. <em>Le nombre de 15% a été choisi arbitrairement à des fins d'illustrations</em>.</p>
-<figure>
-    <a class="glightbox" href="../../images/graphique_prevision.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/graphique_prevision.png" /></a>
-    <figcaption>Impact des divers types de prévision dans le temps</figcaption>
-</figure>
-<h2 id="methodes-a-pointage_1">Méthodes à pointage</h2>
-<p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles sont qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retire se biais en comparant les CU entre eux. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
-<dl>
-<dt><code>Impact sur l'architecture du système</code></dt>
-<dd>Considère à quel point les CU ont un impact sur la structure du système. Un CU avec un fort impact de l'architecture est un CU dont les composantes on un fort degré de <span class="tooltip hint--top" aria-label="de nombreuses composantes dépendent des données de ce CU">dépendances sortantes</span>. Également, les CU qui manipulent beaucoup de données (car on optimisera pour les larges ensembles de données) où que l'on sait instable (à risque d'évoluer) seront considérées comme ayant un impact élevé sur l'architecture du système.</dd>
-<dt><code>Importance du cas</code></dt>
-<dd>L'importance se définit par rapport au besoin de l'entité cliente. Une fonctionnalité importante sera développée plus rapidement (score d'importance plus élevé), car ces CU ont plus de valeurs pour permettre des déploiments rapides d'un système utilisable et utile.</dd>
-<dt><code>Complexité de développement</code></dt>
-<dd>Un CU complexe peut être complexe lors qu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asychrone), effectue un traitement parallèle ou tout autre tâche qui présente un défi d'implémentation. De façon général, les fonctionnalités complexes seront développées plus rapidement, car cela permet une meilleure assurance qualité de ces fonctionnalités complexes et permet de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</dd>
-</dl>
-<details class="ex-projet" open="open">
-<summary>Classification de 3 CU</summary>
-<p><em>Certains nombres entre 0 et 100 sont utilisés dans cet exemple. Nous verrons lesquels et pourquoi ceux là à la section <a href="./#méthode-poker">Méthode <em>Poker</em></a>.</em></p>
+<h2 id="ui-ux-et-pourquoi-on-se-casse-la-tete-avec-cela">UI, UX et pourquoi on se casse la tête avec cela ?</h2>
+<p><br/><br/><br/><br/></p>
+<p>Aux débuts de l'informatique, on faisait des programmes scientifiques (sans interface).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../images/punch_card.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height:350px" src="../../images/punch_card.jpg" /></a>
+Birkinshaw, 2023</p>
+<p></center></p>
 <hr />
-<p><strong>CU-A01-A - Créer un nouveau projet</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">40</td>
-<td style="text-align: left;">20</td>
-<td style="text-align: left;">2</td>
-</tr>
-</tbody>
-</table>
-<p>Le CU a un haut impact sur l'architecture, car toutes les tâches et paramètres du projet dépendent de la structure des projets qui est défini dans leur création. Le cas a aussi une grande importance, car sans la structure de projet, le système ne présente que peu d'intérêt d'utilisation. Finalement, le cas ne présente que peu de complexité puisque qu'il s'agit d'initialiser un projet vide, donc avec peu ou pas de dépendances à d'autres données.</p>
+<p>Sont venues après des interfaces console, une première mouture d'interface utilisateur (8 bits).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../images/C64c_system.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height:450px" src="../../images/C64c_system.jpg" /></a>
+Bertram, 2023
+</center></p>
 <hr />
-<p><strong>CU-A02-A Ajouter un état de tâche</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">13</td>
-<td style="text-align: left;">40</td>
-</tr>
-</tbody>
-</table>
-<p>Le CU a un impact moyen sur l'architecture, car les états de tâches permettent au projet de cheminer vers sa réalisation, mais certains états sont déjà définis à la création des projet, donc l'ajout d'un état ne devrait pas changer de façon majeure le fonctionnement du système. C'est un cas avec une certaine importance pour adapter le flux de travail aux pratiques de l'entreprise réalisant le projet. Finalement, le cas a une haute complexité, car il peut avoir un impact sur toutes les tâches d'un projet, par exemple en modifiant leur progression, car ces tâches ont maintenant des étapes de plus à accomplir.</p>
+<p>Puis, l'arrivée de la souris a amené l'utilisation d'icône et de boutons cliquables (paradigmes de clic à un bouton, clic gauche, clic droit) </p>
+<p><center></p>
+<p><a class="glightbox" href="../../images/Windows_95_at_first_run.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hegiht:450px" src="../../images/Windows_95_at_first_run.png" /></a>
+Hohho56oy, 2023</p>
+<p></center></p>
+<p>Tranquillement le marketing, la psychologie et la démocratisation des plateformes a amené le focus à se déplacer de la conception d'une interface (conception d'interface utilisateur <strong>ui</strong>) à la façon dont les gens utilisent une interface (expérience de l'utilisateur <strong>ux</strong>).</p>
 <hr />
-<p><strong>CU-B06 Générer un rapport d’avancement de projet</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Impact architectural</th>
-<th style="text-align: left;">Importance</th>
-<th style="text-align: left;">Complexité</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">1/2</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">3</td>
-</tr>
-</tbody>
-</table>
-<p>Le CU n'a aucun impact sur l'architecture, car il consulte des données sans les modifier. Donc qu'importe comment les données sont organisées, ce CU les interrogera et extraira l'information pertinente. Le cas a une importance stratégique pour le suivi des projets, mais il s'agit d'une vue condensée; l'information peut être extraite manuellement des diverses interfaces. Le cas aussi présente peu de complexité, car il s'agit que de récupérer et agréger des données.</p>
-</details>
-<h3 id="ponderation-des-aspects">Pondération des aspects</h3>
-<p>Chacun des trois aspects reçoit une pondération entre 1 et 3 qui agit comme un <strong>facteur multiplicateur</strong> pour cet aspect. Cela permet de faire ressortir un aspect au-devant des autres ou de les ordonnées. Autant que possible, l'on souhaite éviter une égalité dans les coefficients, car sinon les objetifs de développement deviennent moins clairs (on travaille à la fois en priorisant par exemple les éléments importants et complexes, donc autrement dit un peu tout...).</p>
-<div class="admonition exercice">
-<p class="admonition-title">Types de systèmes et priorités</p>
-<p>Complétez le tableau suivant des coefficients (3 plus important, 1 le moins important)</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Impact architecture (A)</th>
-<th style="text-align: center;">Importance (I)</th>
-<th style="text-align: center;">Complexité (C)</th>
-<th>Type de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<details class="success">
-<summary>Solution</summary>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">A</th>
-<th style="text-align: center;">I</th>
-<th style="text-align: center;">C</th>
-<th>Type de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td><strong>Application scientifique, fonctionnalité unique</strong> : Projets d'outil d'analyse ou API effectuant un traitement complexe spécifique</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td><strong>Démonstration pour preuve de concept</strong> : Sert à valider un projet. L'entièreté du code peut être jetable</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-<td><strong>Projets avec gestion de risques</strong> : Projets avec livraison unique ou contrainte de sécurité/d'exactitude</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td><strong>Livraison rapide</strong> : Projets à livraison continue ou devant être mis en production rapidement</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td><strong>Projets d'envergure</strong> : Projets volumineux ou qui seront maintenus/bonifié pendant longtemps</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">1</td>
-<td><strong>Cadriciel</strong> : Utile pour le développement de cadriciel ou autre base de système</td>
-</tr>
-</tbody>
-</table>
-</details>
+<h1 id="pourquoi-prendre-le-temps-de-penser-aux-interfaces">Pourquoi prendre le temps de penser aux interfaces ?</h1>
+<p><br/><br/></p>
+<ul>
+<li>Le client veut que la personne utilisatrice « aime » le système :</li>
+<li>gestion des frustrations,</li>
+<li>facilité d'utilisation,</li>
+<li>facilité apprentissage,</li>
+<li>addiction et conditionnement</li>
+<li>Permet de rendre les opérations plus efficaces et efficientes que dans les systèmes équivalents ou sans machine</li>
+<li>Efficacité : vitesse de travail, utilisation optimale des ressources</li>
+<li>Efficience : rapport ressources utilisées et résultat produit</li>
+</ul>
+<hr />
+<h1 id="modele-theorique-de-laction">Modèle théorique de l'action</h1>
+<p><br/><br/></p>
+<p>Décomposition de l'action dans une interface humain-machine en deux ponts de 6 étapes.</p>
+<div class="columns">
+<div>
+
+## Pont de l'exécution
+
+1. Intentions : ce que l'utilisateur veut accomplir
+2. Spécification : chemin à prendre pour y arriver
+3. Mécanisme de l'interface : contrôle offert par le système
+
 </div>
-<h2 id="estimation-en-temps">Estimation en temps</h2>
-<p>Après avoir déterminer le niveau de complexité des CU et d'avoir déterminer leur ordonnancement, il faut estimer le temps nécessaire à leur complétion. Encore une fois, on utilise un système de pointage, mais cette fois-ci il est assit sur une conversion en temps réel. Par exemple, on peut fixer (arbitrairement), qu'une personne travaille 20 points par semaine. Donc si l'on croit que le développement d'un CU prend deux semaines, on assigne 40 points à ce CU. L'avantage de travailler par point (plutôt qu'avec des heures ou des jours), est qu'en cas de changement dans le rythme du projet (ajout ou retrait de ressources), les estimations demeurent utilisables, il suffit que de changer le rythme (nombre de points par semaine) que l'on peut accomplir. On peut voir les points comme étant une mesure équivalente aux heures-personnes ou jours-personnes selon la conversion faite.  </p>
-<div class="admonition ex-projet">
-<p class="admonition-title">Ex-projet</p>
-<p>Par exemple, on considère que le développement du système de gestion de projet demande 480 points pour la première livraison. On engage deux personnes pour réaliser le développement. Au rythme de 20 points par semaine, on estime à 12 semaines le temps qu'il faudra pour la première livraison. Après 4 semaines, nos ressources financières permettent l'embauche d'une 3e personne. Combien de temps faudra-t-il alors pour compléter le projet ? </p>
-<p>La réponse est plus rapide et avec un peu d'algèbre, on arrive à un peu plus de 5 semaines de travail restantes. Si par exemple pour un CU on avait réalisé la prédiction en terme de temps, comme 10 jours (à deux), on aurait du le convertir en 6,66 jours (à 3). Cette conversion aurait été faite avec chacun de CU, ce qui prend un temps considérable.</p>
+<div>
+
+## Pont de l'évaluation
+
+1. Affichage de l'interface : signal du système (image, son, pop-up, impression)
+2. Interprétation du signal : signification des couleurs, du son, des symboles, de l'image...
+3. Evaluation : est-ce que le signal du système me permet de dire que j'ai atteint mon objectif ?
+
 </div>
-<h3 id="effet-ringelmann">Effet Ringelmann</h3>
-<p>Une blague de gestion de projet va comme suit : «&nbsp;un gestionnaire de projet est quelqu'un qui pense que si une femme peut faire un enfant en 9 mois, 9 femmes peuvent faire un enfant en 1 mois.&nbsp;». Évidemment, nous réalisons toute de suite le non sens dans cette blague. Cependant, elle contient quand même un fond de vérité : quand on ajoute des gens dans un processus (augmenter la taille d'une équipe), on ne peut pas systématiquement diviser le travail enter le nombre de personne. D'autres mécanismes apparaissent souvent comme le temps de rencontre (plus il y a de gens, plus l'effort de coordination est grand), le temps pour prendre connaissance des travaux des autres, le temps perdu en distraction... Tout cela est connu sous le nom de l'<strong>Effet Ringelmann</strong>.</p>
-<figure>
-  <a class="glightbox" href="../../images/ringelmann%20effect%20for%20productivity.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/ringelmann%20effect%20for%20productivity.png" /></a>
-  <figcaption>Effet Ringelmann, tiré de Ayen, 2016.</figcaption>
-</figure>
-<p>Comme on le voit sur la figure, la ligne pointillé représente le «&nbsp;potentiel&nbsp;», soit le produit du nombre de personnes impliquées dans le projet par une mesure de performance (ici chaque personne a un potentiel de performance de 100). La ligne pleine «&nbsp;actual&nbsp;» suit une courbe logarithmique montrant que l'apport de chaque personne, bien qu'augmentant la performance est, <span class="tooltip hint--top" aria-label="dans un modèle à plusieurs variables, on appelle «&nbsp;marginal&nbsp;» l'effet isolé d'une des variables">marginalement</span>, de moins en moins important. La perte de productivité occasionnée est illustrée par la zone grise «&nbsp;Process loss&nbsp;».</p>
-<h2 id="methode-poker">Méthode <em>Poker</em></h2>
-<p>La méthode du <em>poker</em> se réalise avec un jeu de cartes. La liste des tâches doit être préalablement établie. Chaque personne possède un ensemble de cartes numéroté, souvent selon la suite de Fibonacci. L'utilisation de cette suite permet de tenir compte de l'erreur grandissante d'estimation. À chaque tour, une tâche est sélectionnée et chaque personne choisit immédiatement et en silence une carte correspondant au nombre de points à assigner à la tâche et elle place la carte, face cachée, devant elle. Lorsque toutes les cartes sont placées, elles sont toutes révélées en même temps. L'équipe discute ensuite pour obtenir un <strong>consensus</strong> sur le nombre de points. <strong>Il ne faut pas utiliser des mesures de tendance centrale comme la moyenne pour sauver des débats</strong> La liste des tâches peut être clarifiée, bonifiée ou simplifiée selon l'interprétation de la tâche par tout un chacun durant le processus.</p>
-<p>Les cartes disponibles pour le pointage sont : <strong>1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100</strong>. La carte 100 indique souvent un élément trop élevé et peut mener à scinder ou préciser le CU en question. Une carte <strong>pause café</strong> permet de signaler qu'il est le temps d'arrêter et une carte d'<strong>interrogation</strong> permet de demander des clarifications le CU, car il est impossible de l'évaluer dans l'état actuel de sa formulation.</p>
-<p><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Gabarit méthodes par point</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"/></svg></span></p>
+</div>
+
+<hr />
+<h1 id="ponts-de-lexecution-et-de-levaluation">Ponts de l'exécution et de l'évaluation</h1>
+<p><br/><br/></p>
+<p><center></p>
+<p><a class="glightbox" href="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" /></a></p>
+<p>Norman et Draper, 1986</p>
+<p></center></p>
+<hr />
+<h1 id="exercice">Exercice</h1>
+<p>En équipes de 2-3 personnes, trouvez un système et analysez deux tâches avec ce système (<em>Word</em>, <em>Excel</em>, <em>IntelliJ</em>, votre navigateur, bloc-notes, <em>paint</em>...)</p>
+<p>Utilisez la théorie des ponts de l'exécution et de l'évaluation pour expliquer votre raisonnement (possiblement inconscient) lors de la réalisation d'une tâche avec le système.</p>
+<hr />
+<h1 id="3-paradigmes-de-conception-dinterface">3 paradigmes de conception d'interface</h1>
+<p>3 approches possibles à la conception des interfaces</p>
+<ul>
+<li>Paradigme technologique</li>
+<li>Paradigme métaphorique</li>
+<li>Paradigme idiomatique</li>
+</ul>
+<p><em>Paradigme : Modèle de pensée. Conception théorique dominante qui a cours à une certaine époque dans une communauté scientifique.</em> (Antidote 9, 2023)</p>
+<hr />
+<h1 id="paradigme-technologique">Paradigme technologique</h1>
+<p>Dans ce paradigme, l'interface est le miroir de l'organisation du système. Par exemple, chaque fonction du code du système s'appelle à l'aide d'un bouton qui nomme explicitement (ou presque) cette fonction.</p>
+<p>On retrouve très souvent ce type d'interface dans les programmes consoles ou dans les systèmes techniques.</p>
+<p>L'interface de Git (ligne de commande et client GUI) est un exemple de système utilisant le paradigme technologique.</p>
+<hr />
+<h1 id="paradigme-metaphorique">Paradigme métaphorique</h1>
+<p>Le paradigme métaphorique consiste à utiliser une métaphore (image) pour représenter l'abstraction par un concept analogue du monde réel.</p>
+<p>Les métaphores sont très utiles pour aider des utilisateurs à prendre en main les systèmes. </p>
+<p>Par exemple, le site Facebook utilise de nombreuses métaphores (amis, groupes, conversations…)</p>
+<hr />
+<h1 id="paradigme-idiomatique">Paradigme idiomatique</h1>
+<p>Le paradigme idiomatique consiste à créer de nouveaux idiomes (expression dont le sens ne correspond pas au sens donné par la collection des mots).</p>
+<p>On trouve ce paradigme lorsqu'on ne souhaite pas utiliser le paradigme technologique (pour éviter d'augmenter la difficulté d'apprentissage) et qu'il n'y a pas de métaphore existante.</p>
+<p>Par exemple, le site Facebook utilise des idiomes comme le bouton « j'aime » et le fait de « suivre » une personnalité. </p>
+<hr />
+<h1 id="quoi-choisir-comme-paradigme">Quoi choisir comme paradigme ?</h1>
+<p><br/></p>
+<ul>
+<li>Technologique</li>
+<li>Application de soutien (utilitaire)</li>
+<li>Application scientifique (1 fonctionnalité)</li>
+<li>Utilisateur = développeur</li>
+<li>Métaphorique</li>
+<li>Quand le contexte s'y prête</li>
+<li>Reprise d'une métaphore existante</li>
+<li>Idiomatique</li>
+<li>Quand la métaphore ne s'y prête pas</li>
+<li>Pour ajouter une abstraction à l'organisation des fonctionnalités</li>
+</ul>
+<hr />
+<h1 id="exercice_1">Exercice</h1>
+<p>En équipes de 2-3 personnes :</p>
+<ol>
+<li>Dans l'interface du système d'exploitation Windows, trouvez 2 métaphores et 2 idiomes utilisés.</li>
+<li>À partir du système de l'exercice précédent, identifiez les métaphores et idiomes utilisés dans l'action choisie, expliquez leur signification et comment ces métaphores / idiomes vous ont aidé. </li>
+</ol>
+<hr />
+<h1 id="principes-de-conception">Principes de conception</h1>
+<p><br/><br/></p>
+<div class="columns">
+<div>
+
+## Accessibilité
+
+- Fait référence aux façons qu'il est possible d'utiliser le système. 
+- Peut être intentionnelle ou accidentelle.
+
+**Exercice :** nommez une accessibilité intentionnelle et une accidentelle du système Google.
+
+</div>
+<div>
+
+## Indicateur
+
+- Mécanisme explicite qui permet à l'utilisateur d'acquérir des informations sur le fonctionnement du système.
+- Complémentaires aux accessibilités intentionnelles offertes (implémenter la fonctionnalité n'est pas suffisant, il faut le communiquer à l'utilisateur).
+- Voir document des normes et astuces de conception visuelle.
+
+**Exercice :** nommez trois indicateurs du système Google.
+
+</div>
+</div>
+
+<hr />
+<h1 id="principes-de-conception_1">Principes de conception</h1>
+<p><br/></p>
+<div class="columns">
+<div>
+
+## Contrainte
+
+- Limites imposées dans la manipulation du système (indicateur à la négative)
+- Permet de communiquer des informations sur la cohérence des données, les autorisations ou l'ordonnancement des opérations
+
+**Exercice :** nommez un système qui utilise le mécanisme de contrainte pour limiter les erreurs des personnes utilisatrices.
+
+</div>
+<div>
+
+## Association (*mapping*)
+
+- Relation entre les interfaces du système et les réactions du système.
+- Si les indicateurs sont clairs, l'association se fait facilement. Une association mal faite amène souvent à se « chercher » dans le système.
+
+**Exercice :** nommez une association que vous avez faites qui vous a induit en erreur dans la manipulation d'un système.
+
+</div>
+</div>
+
+<hr />
+<h1 id="principes-de-conception_2">Principes de conception</h1>
+<p><br/></p>
+<div class="columns">
+<div>
+
+## Rétroaction
+
+- Permet aux personnes utilisatrices de suivre les changements dans l'état d'un système
+- Doit être fréquente, ciblée et aussi transparente (non bloquante) que possible 
+
+**Exercice :** à partir de l'exemple présenter, nommez des éléments qui peuvent être améliorés dans la rétroaction.
+
+</div>
+<div>
+
+## Modèle conceptuel
+
+- Représentation que la personne utilisatrice se fait du fonctionnement du système
+- Plus profond que l'association, car suppose du fonctionnement interne des composantes du système
+- Concept riche, mais beaucoup plus complexe qui ne sera pas étudié plus avant au Cégep
+
+</div>
+</div>
+
+<hr />
+<h1 id="la-conception-en-pratique">La conception en pratique</h1>
+<p>Voir le document « Normes de conception d'interface ».</p>
+<hr />
+<h1 id="inclusivite-et-conception-universelle">Inclusivité et conception universelle</h1>
+<p>Le principe de conception universelle tire son origine des considérations architecturales, en particulier les rampes d'accès pour fauteuils roulants.</p>
+<p>En appliquant ces principes dans la conception des interfaces, on permet à nos interfaces de rejoindre un plus grand nombre de personnes et de les accommoder dans un plus grand nombre de situations.</p>
+<hr />
+<h2 id="enjeux-visuels">Enjeux visuels</h2>
+<ul>
+<li>Taille des caractères</li>
+<li>Thèmes de couleurs</li>
+<li>Redondance de l'information (2 codes)</li>
+</ul>
+<p><br/></p>
+<p><a class="glightbox" href="images/7_feux_circulation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="images/7_feux_circulation.png" /></a></p>
+<p><a class="glightbox" href="images/7_slum_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="images/7_slum_1.png" /></a></p>
+<h2 id="auditif">Auditif</h2>
+<ul>
+<li>Rendre le son obligatoire seulement si nécessaire</li>
+<li>Description textuelle des éléments visuels importants</li>
+</ul>
+<hr />
+<h2 id="moteurs-et-physiologique">Moteurs et physiologique</h2>
+<ul>
+<li>Taille des mains</li>
+<li>Vitesse de travail</li>
+<li>Stabilité des mains</li>
+</ul>
+<h2 id="droit-a-lerreur">Droit à l'erreur</h2>
+<ul>
+<li>Système d'annulation</li>
+<li>Confirmation avant les opérations critiques</li>
+<li>Confirmation bloquante avant les opérations qu'on ne peut pas annuler</li>
+</ul>
+<hr />
+<h2 id="interpretation-de-linformation">Interprétation de l'information</h2>
+<ul>
+<li>Niveau de langage et d'éducation</li>
+<li>Phrases courtes</li>
+<li>Éviter les formulations longues inutiles</li>
+<li>Utilisation la redondance des termes</li>
+<li>Éviter les syntaxes complexes (reprise d'information distante)</li>
+<li>Différences culturelles des normes visuelles (couleurs et symboles)</li>
+</ul>
+<h2 id="ecriture-inclusive">Écriture inclusive</h2>
+<ul>
+<li>Si la donnée de genre n'est pas pertinente au fonctionnement du système, ne pas la collecter</li>
+<li>Offrir de multiples choix (champ texte au besoin)</li>
+<li>Offrir la possibilité de changer l'information (genre et nom)</li>
+<li>Utiliser une rédaction neutre ou épicène</li>
+</ul>
+<p>Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui explique les grandes lignes de l'écriture inclusive.</p>
+<hr />
+<h1 id="artefacts">Artefacts</h1>
+<h2 id="diagrammes-en-fil-de-fer-mockup">Diagrammes en fil de fer / Mockup</h2>
+<ul>
+<li>Montrent les principaux contrôles</li>
+<li>N'inclus aucun élément de mise en forme</li>
+<li>Utile pour visualiser le « workflow »</li>
+<li>Souvent joint à la description du cas d'utilisation</li>
+</ul>
+<h2 id="prototype-cliquable">Prototype cliquable</h2>
+<ul>
+<li>Semblable au fil de fer, mais permet de cliquer et naviguer entre les interfaces.</li>
+<li>Peut inclure des éléments graphiques (couleur, police)</li>
+<li>Prototype de plus haut niveau, étape suivante =&gt; coder le prototype</li>
+<li>Développez dans un logiciel spécialisé : (bubble, anima...)</li>
+</ul>
+<hr />
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Ayen, E. M. (2016, 21 Février). Ringelmann effect. <a href="https://www.slideshare.net/ellaabyou/ringelmann-effect">https://www.slideshare.net/ellaabyou/ringelmann-effect</a>.</p>
+<p>Bertram, B. (2023, September 4). Commodore 64. Wikipedia. <a href="https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg">https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg</a> </p>
+<p>Birkinshaw, P. (2023, September 6). Punched card. Wikipedia. <a href="https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg">https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg</a></p>
+<p>Hohho56oy. (2023, July 17). File:windows 95 at first run.png. Wikipedia. <a href="https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png">https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png</a> </p>
+<p>Norman, D. (2013). The Design of Everyday Things: Revised and Expanded Edition. États-Unis: Basic Books.</p>
+<p>Norman, D.A. and Draper, S. (1986) User Centered System Design: New Perspectives on Human-Computer Interaction Lawrence Erlbaum Associates.</p>
+<p>Université de Sherbrooke. (n.d.). Guide de rédaction inclusive de l’Université de Sherbrooke. Sherbrooke. </p>
+<p>Wise, G. B. (1997, January 27). The Psychology of Everyday Actions. Rensselaer Polytechnic Institute. </p>
 
 
 
@@ -1253,7 +1257,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../conception/ui/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Interfaces utilisateurs">
+          <a href="../../analyse/cu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La méthode des cas d&#39;utilisation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1263,11 +1267,27 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Interfaces utilisateurs
+                La méthode des cas d'utilisation
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Méthodes à pointage
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
