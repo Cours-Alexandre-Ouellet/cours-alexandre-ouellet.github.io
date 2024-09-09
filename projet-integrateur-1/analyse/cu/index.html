@@ -18,11 +18,11 @@
         <link rel="prev" href="../acteurs/">
       
       
-        <link rel="next" href="../../gestion/methodes_pointage/">
+        <link rel="next" href="../../conception/ui/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
@@ -230,16 +230,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../allo.md" class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../../conception/ui/" class="md-tabs__link">
+          
   
   Conception
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -706,8 +707,6 @@
   
 </li>
       
-<<<<<<< HEAD
-=======
         <li class="md-nav__item">
   <a href="#gabarit-de-document" class="md-nav__link">
     <span class="md-ellipsis">
@@ -717,7 +716,6 @@
   
 </li>
       
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
     </ul>
   
 </nav>
@@ -812,16 +810,64 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../allo.md" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Conception
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Conception
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfaces utilisateurs
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -972,7 +1018,7 @@
 <h1 id="la-methode-des-cas-dutilisation">La méthode des cas d'utilisation</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Objectifs de la section</span></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
 <p>3-4 Production des gabarits contenant des cas d'utilisation ainsi que des diagrammes<br>
 3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
 4-2 Description et explication des cas d'utilisation<br>
@@ -1022,19 +1068,6 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 </li>
 </ul>
 <h4 id="parties-dun-cas-dutilisation">Parties d'un cas d'utilisation</h4>
-<<<<<<< HEAD
-<p><code>information d'en-tête</code></p>
-<p><code>pré et post conditions</code></p>
-<p><code>déclencheur et acteurs</code></p>
-<p><code>description abrégée (uniquement pour les cas abrégés)</code></p>
-<p><code>scénario nominal (uniquement pour les cas détaillés)</code></p>
-<p><code>scénario d'exception (uniquement pour les cas détaillés)</code></p>
-<p><code>scénario d'extension (uniquement pour les cas détaillés)</code></p>
-<p><code>spécification non fonctionnel (section optionnelle)</code></p>
-<p><code>diagramme de séquence système (section optionnelle)</code></p>
-<p><code>diagramme d'état-transition (section optionnelle)</code></p>
-<p><code>prototype d'écran ou diagramme en fil de fer</code></p>
-=======
 <dl>
 <dt><code>information d'en-tête</code></dt>
 <dd>Présente les informations principales du cas d'utilisation dont :
@@ -1071,7 +1104,6 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 <dt><code>prototype d'écran ou diagramme en fil de fer</code></dt>
 <dd>Le prorotype d'écran présente les contrôles et le fonctionnement de l'interface (lien entre les boutons et les rétroactions). On n'inclut pas d'élément de mise en forme dans ces prototypes, on se concentre sur l'utilisabilité de l'interface. Il seront décrits en détail dans la section sur les <a href="">interfaces utilisateurs</a>.</dd>
 </dl>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
 <hr />
 <div class="admonition ex-projet">
 <p class="admonition-title">Le document d'analyse du système de suivi de projets</p>
@@ -1086,14 +1118,6 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 <h2 id="trucs-dans-lecriture-des-cas-dutilisation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27Z"/></svg></span> Trucs dans l'écriture des cas d'utilisation</h2>
 <dl>
 <dt><code>Ne pas copier-coller d'information</code></dt>
-<<<<<<< HEAD
-<dd></dd>
-</dl>
-<p><code>Éviter de «&amp;nbsp;sauver des étapes&amp;nbsp;»</code>
-:</p>
-<p><code>Rassembler des spécifications ou faire des cas englobant</code>
-:</p>
-=======
 <dd>Le copier-coller d'information entraîne la duplication de l'information et il devient nécessaire de dupliquer chacune des modifications qui occurent. Comme il est impossible de se souvenir de toutes les duplications qui ont été faites, on préfère faire référence en indiquant de façon souligné <ins>le nom du CU</ins>. Cela évite d'avoir plusieurs versions de la même spécifications qui se contredisent entre elles. </dd>
 <dt><code>Éviter de « sauver des étapes »</code></dt>
 <dd>Abréger des CU long en évitant d'écrire des étapes simples peut mener à les oublier (par exemple une validation avant de quitter une page). Donc même si certaines étapes semblent superflues, il faut se souvernir que les descriptions peuvent être consultées des mois après leur écriture. Donc une spécification qui parait superflue aujourd'hui peut rapidement nous sortir de la tête et devenir un oubli quelques semaines plus tard... </dd>
@@ -1102,7 +1126,6 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 </dl>
 <h2 id="gabarit-de-document">Gabarit de document</h2>
 <p><a href="../../documents/Analyse%20et%20conception%20-%20Gabarit.docx">Gabarit de document d'analyse et de conception</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1S69.2 242.2 73 254.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg></span></p>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
 
 
 
@@ -1123,7 +1146,7 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
   </span>
 
     
@@ -1170,13 +1193,13 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
         
         
           
-          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
+          <a href="../../conception/ui/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Interfaces utilisateurs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Méthodes à pointage
+                Interfaces utilisateurs
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1251,7 +1274,7 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="../../javascripts/katex.js"></script>
       
