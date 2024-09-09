@@ -2,47 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/camera/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/classification/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/jeu-simulation/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/bezier/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/deplacements/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/rotations/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/vecteurs_3d/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+<<<<<<< HEAD
+         <lastmod>2024-09-06</lastmod>
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/evenements/</loc>
+<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
+=======
+         <lastmod>2024-09-06</lastmod>
+=======
+         <lastmod>2024-09-03</lastmod>
+>>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
+>>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
 </urlset>
