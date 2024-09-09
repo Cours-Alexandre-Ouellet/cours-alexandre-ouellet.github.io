@@ -2,96 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
-=======
-<<<<<<< HEAD
-         <lastmod>2024-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/approche/</loc>
-         <lastmod>2024-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/entite-actrices/</loc>
-         <lastmod>2024-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/genie_logiciel/</loc>
-         <lastmod>2024-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/redaction_technique/</loc>
-         <lastmod>2024-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/telos/</loc>
-         <lastmod>2024-09-06</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/acteurs/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
-=======
-<<<<<<< HEAD
-         <lastmod>2024-09-06</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/cu/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
-=======
-<<<<<<< HEAD
-         <lastmod>2024-09-06</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/telos/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/</loc>
          <lastmod>2024-09-09</lastmod>
-=======
-<<<<<<< HEAD
-         <lastmod>2024-09-06</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/methodes_pointage/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
-=======
-<<<<<<< HEAD
-         <lastmod>2024-09-06</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
     <url>
@@ -111,12 +47,7 @@
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/redaction_technique/</loc>
-<<<<<<< HEAD
          <lastmod>2024-09-09</lastmod>
-=======
-         <lastmod>2024-09-03</lastmod>
->>>>>>> 96ac60e1f1966db5784e9d14ae6bbf65a0d44ec5
->>>>>>> b42f149a6c808d79cd3e52f525197f8433ea44b5
          <changefreq>daily</changefreq>
     </url>
 </urlset>
