@@ -1070,11 +1070,15 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 <h4 id="parties-dun-cas-dutilisation">Parties d'un cas d'utilisation</h4>
 <dl>
 <dt><code>information d'en-tête</code></dt>
-<dd>Présente les informations principales du cas d'utilisation dont :
-- Son nom
-- Son code
-- La version dans laquelle il a ét introduit dans les spécifications
-- Le nom de la personne autrice de la description </dd>
+<dd>Présente les informations principales du cas d'utilisation dont :</dd>
+</dl>
+<ul>
+<li>Son nom</li>
+<li>Son code</li>
+<li>La version dans laquelle il a ét introduit dans les spécifications</li>
+<li>Le nom de la personne autrice de la description </li>
+</ul>
+<dl>
 <dt><code>pré et post conditions</code></dt>
 <dd>Les préconditions sont des conditions vérifiées lors de l'exécution du CU. Aucun des éléments présentés dans les préconditions devrait se retrouver dans la description. Pour les postconditions, il s'agit de conditions vérifiées lors de la conclusion avec succès du scénario nominal.</dd>
 <dt><code>entité actrice principale</code></dt>
@@ -1086,15 +1090,15 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
 <dt><code>scénario nominal (uniquement pour les cas détaillés)</code></dt>
 <dd>C'est le scénario de base, souvent le plus simple, et celui qui se termine par un succès. Toutes ses étapes doivent être exécutées. Pour chaque étape, on identifie les actions de l'entité actrice et les réponses du système. On peut utiliser un tableau ou une liste pour ce faire. Dans tous les cas, on utilise une syntaxe de la forme : [ENTITÉ] + [VERBE D'ACTION] + [ACTION].</dd>
 <dt><code>scénario d'exception (uniquement pour les cas détaillés)</code></dt>
-<dd>Ce sont les erreurs qui peuvent survenir ainsi que la façon d'y répondre. Pour chaque erreur, on lui assigne un code basé sur l'étape à laquelle l'erreur peut survenir. Si plusieurs erreurs peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'erreur peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape. </dd>
-</dl>
+<dd>
+<p>Ce sont les erreurs qui peuvent survenir ainsi que la façon d'y répondre. Pour chaque erreur, on lui assigne un code basé sur l'étape à laquelle l'erreur peut survenir. Si plusieurs erreurs peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'erreur peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape. </p>
 <p>On décrit ensuite de façon détaillée (souvent en liste) les étapes pour ramener le système dans un état cohérent. Si l'erreur interrompt l'exécution du CU, il faut le préciser clairement.</p>
-<dl>
+</dd>
 <dt><code>scénario d'extension (uniquement pour les cas détaillés)</code></dt>
-<dd>Ce sont les étapes facultatives ou alternatives à celles du scénario nominal. Il n'est pas nécessaire de les exécuter pour que le cas s ecomplète avec un succès. Pour chaque extention, on lui assigne un code basé sur l'étape à laquelle l'extension peut s'exécuter. Si plusieurs extensions peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'extension peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape.  On décrit ensuite de façon détaillée (souvent en liste) les étapes pour accomplir l'extention. </dd>
-</dl>
+<dd>
+<p>Ce sont les étapes facultatives ou alternatives à celles du scénario nominal. Il n'est pas nécessaire de les exécuter pour que le cas s ecomplète avec un succès. Pour chaque extention, on lui assigne un code basé sur l'étape à laquelle l'extension peut s'exécuter. Si plusieurs extensions peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'extension peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape.  On décrit ensuite de façon détaillée (souvent en liste) les étapes pour accomplir l'extention. </p>
 <p>On considère que le scénario nominal continu ensuite avec la prochaine étape. Si ce n'est pas le cas, il faut le préciser clairement. </p>
-<dl>
+</dd>
 <dt><code>spécification non fonctionnel (section optionnelle)</code></dt>
 <dd>On indique les éléments à tenir compte dans la conception du cas, mais qui ne correspondent pas à des étapes du fil d'exécution du système.  On y trouve des particularités sur l'interface du système, des contraintes de temps d'exécution ou de journalisation. Tout autre spécification non fonctionnelle peut s'y retrouver.</dd>
 <dt><code>diagramme de séquence système (section optionnelle)</code></dt>
@@ -1146,7 +1150,7 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-12</span>
   </span>
 
     
