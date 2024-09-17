@@ -12,11 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/genie_logiciel/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/conception-objet/">
       
       
+        <link rel="prev" href="../ui/">
       
-        <link rel="next" href="../approche/">
+      
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -24,7 +26,7 @@
     
     
       
-        <title>Histoire du génie logiciel et de l'informatique - Projet intégrateur 1</title>
+        <title>Conception orientée objet - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#histoire-du-genie-logiciel-et-de-linformatique" class="md-skip">
+        <a href="#conception-orientee-objet" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Histoire du génie logiciel et de l'informatique
+              Conception orientée objet
             
           </span>
         </div>
@@ -189,13 +191,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
           
   
   Introduction et généralités
@@ -227,11 +227,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../conception/ui/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ui/" class="md-tabs__link">
           
   
   Conception
@@ -349,30 +351,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -383,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Introduction et généralités
@@ -394,30 +391,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Histoire du génie logiciel et de l'informatique
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,35 +403,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -467,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../approche/" class="md-nav__link">
+      <a href="../../intro/approche/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redaction_technique/" class="md-nav__link">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gabarits/" class="md-nav__link">
+      <a href="../../intro/gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -713,25 +661,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -742,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -756,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/ui/" class="md-nav__link">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,10 +727,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conception/conception-objet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conception orientée objet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -786,6 +759,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retour-sur-les-concepts-et-constructions-de-loriente-objet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retour sur les concepts et constructions de l'orienté objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retour sur les concepts et constructions de l'orienté objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encapsulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encapsulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modularite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modularité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réutilisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-patrons-de-conception" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les patrons de conception
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les patrons de conception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patrons-du-folklore-de-linformatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patrons du folklore de l'informatique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patrons du folklore de l'informatique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dry-dont-repeat-yourself-ne-te-repete-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRY : Don't repeat yourself - Ne te répète pas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide" class="md-nav__link">
+    <span class="md-ellipsis">
+      KISS : Keep It Stupid Simple - Garde ça si simple que ça en est stupide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yagni-you-aint-gonna-need-it-tu-nen-aura-pas-besoin" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAGNI : You ain't gonna need it - Tu n'en aura pas besoin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le SOLID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-general-responsability-assignment-software-patterns-grasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les General Responsability Assignment Software Patterns (GRASP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-patrons-dela-gang-of-four-gof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les patrons dela Gang Of Four (GoF)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-modelisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      La modélisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -941,74 +1096,158 @@
                   
 
 
-<h1 id="histoire-du-genie-logiciel-et-de-linformatique">Histoire du génie logiciel et de l'informatique</h1>
+<h1 id="conception-orientee-objet">Conception orientée objet</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>Culture générale du domaine de l'informatique</p>
+<p>3-2 Analyse des données pour concevoir le diagramme de classe <br>
+3-3 Relation entre les différentes classes <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse <br>
+3-9 Développement du projet en cohérence avec la conception établie <br>
+4-1 Établissement du lien entre le diagramme des classes et les cas d'utilisation <br>
+4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>30 minutes</p>
+<p>120 minutes</p>
 </div>
 </div>
-<hr />
-<p>Depuis l'antiquité l'être humain cherche à développer des outils pour les aider à calculer. Les Grecs ont développé, au deuxième siècle av. J.-C., un mécanisme permettant de calculer les éclipses plusieurs années d'avance appelé <strong>machine d'Anticythère</strong> (Wikimedia, 2023). </p>
-<figure>
-  <a class="glightbox" href="../../images/machine_anticythere.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Image title" src="../../images/machine_anticythere.jpg" width="300" /></a> 
-  <figcaption>Machine d'Anticythère</figcaption>
-</figure>
-<p>Il fallut attendre l'industrialisation (début du XIXe siècle) pour que l'informatique connaisse une grande avancée par l'introduction des cartes poinçonnées dans les métiers à tisser (machine de Jacquard). Ces cartes permettaient au métier de tisser des motifs complexes.</p>
-<p>La formalisation théorique de l'informatique telle qu'on la connaît commença au milieu du XIXe siècle avec les travaux du mathématicien anglais <strong>George Boole</strong>. Au début du XXe siècle, l'algèbre proposée par Boole fut appelée algèbre booléenne. Au début du XXe siècle, John von Neumann, un mathématicien américano-hongrois proposa le modèle de machine de von Neumann (modèle théorique) qui servit de base à la conception des premiers ordinateurs. Nos ordinateurs modernes sont toujours basés sur ces modèles. von Neumann s'intéressa aussi à la théorie des automates, un modèle théorique pour l'analyse de complexité de problème et un incontournable en intelligence artificielle.</p>
-<p>Durant la Seconde Guerre mondiale, Alan Turing construisit la première machine utilisant l'électricité pour effectuer des calculs avec un dispositif d'entrée et de sortie. Alan Turing continua sa carrière après la guerre en s'intéressant à l'intelligence artificielle et proposa le célèbre <em>Test de Turing</em> toujours d'actualité dans le domaine de l'intelligence artificielle.</p>
-<div class="grid cards">
+<h2 id="retour-sur-les-concepts-et-constructions-de-loriente-objet">Retour sur les concepts et constructions de l'orienté objet</h2>
+<p>Voici quelques grands principes de la programmation orientée objet (POO) et le lien avec les constructions «&nbsp;usuelles&nbsp;» des langages objets.</p>
+<div class="admonition info">
+<p class="admonition-title">Constructions usuelles</p>
+<p>Certains langages proposent des mécanismes explcitents (comme des mots-clés) dans la construction du langage pour représenter ou mettre en action certains concepts. D'autres langage ne proposent pas de mécanismes, mais certaines pratiques permettent d'arriver au même résultat (pensons à l'absence de modificateur de visibilité en <em>Python</em>). Donc les constructions «&nbsp;usuelles&nbsp;» peuvent ne pas se retrouver dans tous les langages objets : cela ne doit pas être utilisé pour qualifier un langage d'orienté objet ou non. </p>
+</div>
+<h3 id="abstraction">Abstraction</h3>
+<p>Le conception d'abstraction consiste à représenter les concepts du monde réel à l'aide de construction d'un langage de programmation. On trouve le sous-concept de la <strong>correspondance directe</strong> qui consiste à faire correspondre la structure du logiciel avec celle du monde réel. Il est généralement possible de le faire, surtout pour les classes métiers.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
-<li>
-<p>George Boole </p>
-<hr />
-<p><figure markdown="span">
-  <a class="glightbox" href="../../images/george_boole.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/george_boole.jpg" width="200" /></a> 
-</figure>  </p>
-</li>
-<li>
-<p>John von Neumann</p>
-<hr />
-<p><figure markdown="span">
-  <a class="glightbox" href="../../images/von-neumann.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/von-neumann.jpg" width="200" /></a> 
-</figure></p>
-</li>
-<li>
-<p>Alan Turing</p>
-<hr />
-<p><figure markdown="span">
-  <a class="glightbox" href="../../images/turing.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/turing.jpg" width="200" /></a> 
-</figure> </p>
-</li>
+<li>Les types de données (principalement les classes)</li>
+<li>Les méthodes</li>
+<li>Les attributs</li>
 </ul>
-</div>
-<p>Les années cinquante et soixante furent caractérisées par le développement de la programmation scientifique. D'abord très orientés pour assister la résolution de problèmes mathématiques et physiques, les programmes furent ensuite élargis pour résoudre des problèmes d'administration et de génie industriel. À l'époque, le cursus d'informatique n'existait pas. Programmer était une compétence que des professionnels d'autres domaines (mathématicien, administrateur, ingénieur...) apprenaient pour les assister dans leur résolution de problème.</p>
-<p>En 1968 et 1969, lors de rencontre de l'OTAN, le comité identifia une <em>crise des logiciels</em>. La taille et complexité croissante des logiciels les rendaient presque impossibles à développer. C'est alors que prit naissance dans les années qui suivirent le génie logiciel. </p>
-<p>Le génie logiciel regroupe l'ensemble des techniques formelles visant à permettre le développement d'application et étudie les méthodes de programmation (et plus tard les méthodes de gestion de projet) favorisant le développement des logiciels. Des idées comme la programmation-objet et les exceptions sont directement issues des réflexions des années 60 face à la difficulté de développement grandissante des logiciels.</p>
-<div class="grid cards">
+<h3 id="encapsulation">Encapsulation</h3>
+<p>L'encapsulation consiste à regrouper des informations cohésives dans un même type de données. Cela permet de contrôler l'accès aux données et aux comportements de l'extérieur d'un type. Cela améliore l'<strong>intégrité</strong> des données traitées par le système.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
-<li>
-<p>Margaret Hamilton</p>
-<hr />
-<p>Superviseure QA du projet Apollo et pionière du génie logiciel
-<figure markdown="span">
-  <a class="glightbox" href="../../images/hamilton.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/hamilton.jpg" width="200" /></a> 
-</figure>  </p>
-</li>
+<li>Les types de données</li>
+<li>Les espaces de nom</li>
+<li>Les modificateurs de visibilité (ils ne sont pas essentiels)</li>
 </ul>
+<h3 id="modularite">Modularité</h3>
+<p>La modularité facilile l'apport de <strong>modifications</strong> au code tout en augmentant la <strong>lisibilité</strong> et la <strong>compréhensibilité</strong> de celui-ci. La modularité propose le découpage du code en module (en POO, il s'agit des classes) afin de séparer les différentes fonctionnalités. Chaque module devrait communiquer avec <strong>le moins d'autres modules possibles</strong> et, lorsqu'ils doivent échanger, communiquent <strong>le moins d'informations possibles</strong>. C'est deux principes assure que chaque module est aussi pertient et autonome que possible.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
+<ul>
+<li>Types abstraits</li>
+<li>Les modificateurs de visibilité</li>
+<li>Les espaces de nom</li>
+<li>Mise en oeuvre du polymorphisme</li>
+</ul>
+<h3 id="reutilisation">Réutilisation</h3>
+<p>La réutilisation permet de reprendre les traitements d'un module et les exploiter dans un autre module. On trouve parmi les sous-concepts de la réutilisation <strong>l'autodocumentation</strong> (chaque module dispose de l'information nécessaire à sa compréhension) et l'<strong>accès uniforme</strong> (les façon d'accéder aux informations sons constantes, idéalement même entre les modules d'un système). </p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
+<ul>
+<li>Les interfaces publiques des types</li>
+<li>Types abstraits</li>
+<li>Mise en oeuvre du polymorphisme</li>
+</ul>
+<h2 id="les-patrons-de-conception">Les patrons de conception</h2>
+<p>Un patron de conception est une solution ou un énoncé qui répond adéquatment à un problème ou un questionnement souvent rencontré dans la conception. Parmi les patrons présentés ici, certains sont généraux à tous les types de programmation, d'autres propres à la programmation objet.</p>
+<h3 id="patrons-du-folklore-de-linformatique">Patrons du folklore de l'informatique</h3>
+<p>Les trois premiers patrons sont des énoncés généraux qui devraient guider dans la façon d'approcher les problèmes de conception dans tous les types de programmation.</p>
+<h4 id="dry-dont-repeat-yourself-ne-te-repete-pas">DRY : <em>Don't repeat yourself</em> - Ne te répète pas</h4>
+<p>Il ne faut répéter du code dans un système. Le code répété génère une augmentation de l'effort lié au test, en plus d'augmenter le risque d'erreur. </p>
+<p>Pour éviter de répéter du code, il est possible de :</p>
+<ul>
+<li>Créer une méthode (privée) si les appels multiples ont lieu dans une même classe.</li>
+<li>Créer une classe (privée au système) si les appels multiples ont lieu dans plusieurs classes.</li>
+</ul>
+<h4 id="kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide">KISS : <em>Keep It Stupid Simple</em> - Garde ça si simple que ça en est stupide</h4>
+<p>Le principee <em>KISS</em> prévoit d'éviter les façon de faire complexe au profit des façons simples. Il n'est évidemment pas toujours possible d'éviter les constructions complexes, mais voici quelques exemples :</p>
+<ul>
+<li>Réduire l'imbrication des blocs de code</li>
+<li>Limiter le nombre de paramètres dans les méthodes</li>
+<li>Limiter la longueur des méthodes</li>
+<li>Limiter la longueur des lignes de code</li>
+<li>Utiliser les types de données et les alias adaptés</li>
+<li>Déclarer des variables temporaires et intermédiaires</li>
+</ul>
+<h4 id="yagni-you-aint-gonna-need-it-tu-nen-aura-pas-besoin">YAGNI : <em>You ain't gonna need it</em> - Tu n'en aura pas besoin</h4>
+<p>En conception, on peut prévoir pour tous les changements potentiels et tous les cas possibles d'extension du système (ou du moins, presque tous les cas). Cette pensée mène à des systèmes incroyablement complexe dans leur définition en raison du haut niveau de flexibilité qu'ils offrent. Le problème est que la plupart de ces ouvertures seront inutilisées, mais l'effet de leur design complexité se fera quand même sentir dans le code. Il faut donc éviter les design qui inclut des ouvertures pour des besoins incertains ou non planifiés.</p>
+<h3 id="le-solid">Le <em>SOLID</em></h3>
+<p>Le <em>SOLID</em> est un acronoyme de 5 principes. Les principes en gras sont ceux qui sont le plus couvert dans le cadre du cours.</p>
+<ul>
+<li><strong>Single responsability (responsabilité unique)</strong> : chaque classe sert à traiter une seule responsabilité, elle joue un seul rôle dans le système. En séparant les rôles de façon plus cohésive, on augmente la <strong>modularité</strong> et la <strong>réutilisabilité</strong> du code.</li>
+<li><strong>Open-close principle (ouvert-complet principe)</strong> : les classes sont ouvertes à la réutilisation et complétée face aux modifications. Cet énoncé précise qu'une classe complète doit pouvoir voir son comportement étendu sans que cela n'affecte son code (par l'utilisation de structures abstraites et génériques par exemple), on la qualifie alors de <strong>ouverte</strong>. La classe est qualifiée de complété <strong>close</strong> si elle définit suffisamment d'éléments pour être utilisable de façon autonome.</li>
+<li><strong>Liskov substitution (substitution de Liskov)</strong> : on peut substituer dans une référence d'une classe, une référence d'une de ses spécialisations. Autrement dit, on peut indiquer dans une variable typée une instance de n'importe quel de ses enfants. Les instances ainsi référés sont utilisables seulement au travers de l'interface de leur parent. C'est le principe derrière l'utilisaiton du <strong>polymorphisme</strong>.  </li>
+<li>Interface segregation (ségrégation par interfaces): le code doit dépendre uniquement des implémentations utilisées. On utilise de plus petites interfaces (application du <em>S</em>), afin de réduire les dépendances vers des méthodes qui ne sont psa utilisés.</li>
+<li>Dependency inversion (inversion de dépendances): il y a une hiérarchie dans l'établissement des dépendances. Les modules et composantes de haut niveau (qui ont un impact sur tout un système) ne doivent dépendre d'implémentation de bas niveau. Chaucu des modules de haut niveau ne peut se coupler que sur des interfaces des composantes de bas niveau. Ce prinicpe s'applique aussi aux types abstraits qui ne devraient pas dépendre de types concrets : les types concrets eux dépendent des abstractions.</li>
+</ul>
+<h3 id="les-general-responsability-assignment-software-patterns-grasp">Les <em>General Responsability Assignment Software Patterns (GRASP)</em></h3>
+<p>Les patrons GRASP traitent des responsabilités d'un système. On entend par responsabilité toute opération ou traitement élémentaire effectué pour la réalisation d'un CU. On peut voir l'assignation d'une responsabilité comme l'étape où, pour chaque opération identifiée dans un CU, on définit comment le système la réalise. Cette spécification ne se retrouve pas dans l'analyse.</p>
+<div class="admonition tip">
+<p class="admonition-title">La différence entre la conception et l'analyse</p>
+<p>L'analyse définit la portée et les contrats d'un système, mais laisse le champ à libre à leur implémentation sous plusieurs technologies ou à la gestion de l'évolution de ces technologies. La conception répond au <strong>comment</strong> le système s'aquitte des opérations décrites dans les CU. </p>
 </div>
-<p>Les années 70 et 80 furent marquées par la démocratisation des langages-objets, la multiplication de langages de haut niveau et divers essais de méthodes de gestion de projet. Ce fut aussi le début des cursus en informatique (originalement dérivé de celui de mathématique et qui évoluèrent vers ceux de génie). À partir des années 90, on retrouve de plus en plus d'études empiriques sur les méthodes de développement et les bonnes pratiques (encore enseignées et utilisées aujourd'hui). Parmi ces pratiques, on trouve les patrons de conception (<em>design patterns</em>), les architectures logicielles, les notations formelles (UML 1.0 et ses ancêtres), l'utilisation de la composition plutôt que l'héritage...</p>
-<p>Les années 2000 pour leur part virent peu de changement dans les langages et méthodes de programmation, mais beaucoup dans la gestion de projet, avec entre autres la sortie du <em>Agile manifesto</em> en 2001. Les éléments matériels se développaient rapidement avec la loi de Moore et plusieurs idées étaient explorées sans être concluantes. Pour plusieurs entreprise, cette décennie vue aussi l'intégration de l'informatique dans les pratiques.</p>
-<p>La décennie de 2010 à aujourd'hui vit se développer un intérêt très marqué pour l'intelligence artificielle, en particulier l'apprentissage automatique. Cela entraîna un retour de la programmation en script (généralement plus court qu'un système objet) et attira beaucoup d'attention des chercheurs d'une pluralité de domaines. La démocratisation des plateformes alternatives (web et mobile) poussa aussi la recherche dans la direction de l'intégration multiplateforme et la cohabitation de plusieurs langages de programmation dans un même système et le développement de langages utilisables dans des environnements variés. </p>
+<p>Les GRASP sont donc des stratégies pour choisir quelles classes du système (ou s'il est nécessaire d'ajouter une nouvelle classe) s'aquitte de la responsabilité. Selon la complexité de la responsabilité, plusieurs classes ou méthodes peuvent être sollicitées pour répondre à une seule responsabilité. </p>
+<div class="admonition warning">
+<p class="admonition-title">Perdre le contrôle avec GRASP</p>
+<p>D'expérience comme enseignant, les modélisations avec GRASP mène à une explosion du nombre de classes suggérées dans un système. Pour éviter cela, trois éléments à retenir :</p>
+<ol>
+<li>Il faut toujours que les méthodes accomplissent quelque chose. Simplement relayer une information n'est pas accomplir quelque chose. </li>
+<li>Appliquer le YAGNI quand on a tendance à s'emballer.</li>
+<li>Ne pas appliquer le principe de responsabilité unique de façon dogmatique. Les patrons <strong>faible couplage</strong> et <strong>forte cohésion</strong> justifient cette mise en garde. </li>
+</ol>
+</div>
+<ul>
+<li><strong>Expert</strong> : </li>
+<li>Créateur :</li>
+<li><strong>Contrôleur</strong> :</li>
+<li>Indirection :</li>
+<li><strong>Faible couplage</strong> : </li>
+<li><strong>Forte cohésion</strong> :</li>
+</ul>
+<h3 id="les-patrons-dela-gang-of-four-gof">Les patrons dela <em>Gang Of Four (GoF)</em></h3>
+<p>Publié en 1994 par «&nbsp;la gang des quatre&nbsp;» : Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides le livre <em>Design Patterns, Elements of Reusable Object-Oriented Software</em> pose les bases de plusieurs des patrons de conception moderne. Avec le temps, certains de leur patrons ont été modifié, critiqué ou même rejetés, mais dans l'ensemble leur travail est encore très d'actualité dans la façon de concevoir les systèmes objets.</p>
+<p>Parmi les patrons de la GOF, on retrouve  : </p>
+<ul>
+<li><strong>Création</strong> : fabrique abstraite, monteur, fabrique, prototype et singleton</li>
+<li><strong>Structure</strong> : adaptateur, pont, composite, décorateur, façade, poids-mouche et proxy</li>
+<li><strong>Comportement</strong> : chaîne de responsabilité, commande, interpréteur, itérateur, médiateur, mémento, observateur, état, stratégie, patron de méthode et visiteur</li>
+</ul>
+<h2 id="la-modelisation">La modélisation</h2>
+<blockquote>
+<p>Before the first Unified Modelling LanguageTM (UML) standards were published in the mid1990s, visual software modelling was plagued by the incompatibility of different notations created by different modelling gurus. The absence of a standardised notation deterred potential users, and as an inevitable result the modelling tools market was tiny and fragmented. The few tools that were available suffered from a lack of investment; many only allowed sketching of software designs, lacking facilities for checking the diagrams’ internal consistency or automatically processing the information they held. These early visual diagrams were useful as design aids or documentation, but were rarely integrated into the software development lifecycle. (Watson, 2008)</p>
+</blockquote>
+<p>L'extrait présenté explique l'intérêt et l'engouement qui a entouré le lancement d'UML2 qui est venu régler bien des problèmes de compréhension et d'utilisabilité des langages de modélisation. Cela a permis, entre autre, d'intégrer les langages de modélisation dans le cycle de conception des logiciels.</p>
+<p>Afin d'en apprendre plus sur les différents diagrammes et leurs notations référez-vous au <a href="https://cours-alexandre-ouellet.github.io/guide-uml/">Guide UML <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></span></a>.</p>
+<h2 id="exercice">Exercice</h2>
+<details class="exercice">
+<summary>Exercice 1 - L'usine de trombone</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un jeu de type clicker. Le joueur possède une usine de fabrication de trombones. L'usine possède diverses caractéristiques de production (qualite, quantite de matière consommée, temps de création). Le joueur peut acheter des améliorations qui modifie la valeur de certaines caractéristiques de l'usine. Les améliorations possède un coût et un temps de recherche.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
+<details class="exercice">
+<summary>Exercice 2 - L'itinéraire de voyage</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un système de gestion d'itinéraire de voyages pour une entreprise. Chaque itinéraire se compose de plusieurs destinations. Les destinations peuvent être finale ou intermédiaires. Entre deux destinations, un moyen de transport doit être employé. Chaque moyen de transport possède un coût et une durée. La durée dépend de la distance à parcourir et de la vitesse du moyen de transport.</p>
+<p>Proposez des méthodes qui permettent d'ajouter des destinations et d'obtenir le temps total entre le point de départ d'un parcours et le point d'arrivée. Expliquez comment l'encapsulation de vos opérations permet de réduire le risque d'erreur.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
+<details class="exercice">
+<summary>Exercice 3 - Les stations météo</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous gérez un système de stations météorologiques. Chaque station enregistre la température, l'humiditié et la force du vent à toutes les heures. Les stations possède un nom et une zone. Les zones servent à grouper les stations (par exemple : la zone Centre-du-Québec (centre) regroupe les stations Victoriaville, Warwick, Saint-Albert, Saint-Élizabeth de Warwick, Sainte-Séraphine et Kingsey Falls). Vous devez enregistrer ces données dans une base de données MySQL (attention de bien isoler cette responsabilité).</p>
+<p>Votre système doit aussi pouvoir être interoger pour obtenir la moyenne des dernières données lues pour chaque zone lors de la lecture des informations. Vos données doivent être disponible au format JSON, XML et texte.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>LANL. (2008). <em>John Von Neumann</em>. <a href="http://www.lanl.gov/history/atomicbomb/images/NeumannL.GIF">http://www.lanl.gov/history/atomicbomb/images/NeumannL.GIF</a></p>
-<p><small>Unless otherwise indicated, this information has been authored by an employee or employees of the Los Alamos National Security, LLC (LANS), operator of the Los Alamos National Laboratory under Contract No. DE-AC52-06NA25396 with the U.S. Department of Energy. The U.S. Government has rights to use, reproduce, and distribute this information. The public may copy and use this information without charge, provided that this Notice and any statement of authorship are reproduced on all copies. Neither the Government nor LANS makes any warranty, express or implied, or assumes any liability or responsibility for the use of this information.</small></p>
-<p>Sommerville, I. (2019). <em>History of software engineering</em>. Software Engineering 10th edition. <a href="https://software-engineering-book.com/web/history/">https://software-engineering-book.com/web/history/</a> </p>
-<p>Wikimedia Foundation. (8 août 2023). <em>Antikythera mechanism</em>. Wikipedia. <a href="https://en.wikipedia.org/wiki/Antikythera_mechanism">https://en.wikipedia.org/wiki/Antikythera_mechanism</a></p>
+<p>Gamma, E., Helm, R., Johnson, R., Vlissides, J. (1995). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley.</p>
+<p>Larman, C. (2005). UML 2 et les design patterns. Pearson Education.</p>
+<p>Martin, R. C., Martin, M. (2006). Agile Principles, Patterns, and Practices in C#. Pearson Education.</p>
+<p>Meyer, B. (2017). Conception et programmation orientées objet. Eyrolles.</p>
+<p>Watson, A. (2008). Visual Modelling: past, present and future . Object Management Group. https://www.omg.org/UML/Visual_Modeling.pdf</p>
 
 
 
@@ -1029,7 +1268,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-16</span>
   </span>
 
     
@@ -1058,15 +1297,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
+          
+          <a href="../ui/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Interfaces utilisateurs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Interfaces utilisateurs
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="../approche/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Approches de développement logiciel">
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Approches de développement logiciel
+                Méthodes à pointage
               </div>
             </div>
             <div class="md-footer__button md-icon">
