@@ -18,7 +18,7 @@
         <link rel="prev" href="../../analyse/cu/">
       
       
-        <link rel="next" href="../../gestion/methodes_pointage/">
+        <link rel="next" href="../conception-objet/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -836,13 +836,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#principes-de-conception" class="md-nav__link">
+  <a href="#principes-et-normes-de-conception" class="md-nav__link">
     <span class="md-ellipsis">
-      Principes de conception
+      Principes et normes de conception
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Principes de conception">
+    <nav class="md-nav" aria-label="Principes et normes de conception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -894,11 +904,25 @@
     </nav>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#normes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#modele-conceptuel" class="md-nav__link">
+  <a href="#quoi-faire-avec-tous-ces-concepts" class="md-nav__link">
     <span class="md-ellipsis">
-      Modèle conceptuel
+      Quoi faire avec tous ces concepts ?
     </span>
   </a>
   
@@ -917,6 +941,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conception-objet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conception orientée objet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercice1-conception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 1 - Les trombones
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1166,39 +1232,53 @@ Utilisez la théorie des ponts de l'exécution et de l'évaluation pour explique
 <li>À partir du système de l'exercice précédent (sur les ponts de l'action), identifiez les métaphores et idiomes utilisés dans l'action choisie, expliquez leur signification et comment ces métaphores / idiomes vous ont aidé. </li>
 </ol>
 </div>
-<h2 id="principes-de-conception">Principes de conception</h2>
-<h3 id="accessibilite">Accessibilité</h3>
+<h2 id="principes-et-normes-de-conception">Principes et normes de conception</h2>
+<p>Les principes de conception sont de grandes règles à suivre dans l'élaboration des interfaces. Sous les principes se trouvent des normes qui sont des règles précises pour chaque média de diffusion ou même pour chaque système. On exprime généralement le respect des principes en respectant les normes qui leur sont associés</p>
+<h3 id="principes">Principes</h3>
+<h4 id="accessibilite">Accessibilité</h4>
 <p>Cela fait référence aux façons qu'il est possible d'utiliser le système. Elles sont intentionnelles si le système est conçu pour être utilisé de cette façon ou accidentelles si le système n'est pas conçu spécifiquement pour cela, mais qu'il est quand même possible de l'utiliser à cette fin. </p>
 <div class="admonition exercice">
 <p class="admonition-title">Accessibilités</p>
 <p>Nommez une accessibilité intentionnelle et une accidentelle du système Google.</p>
 </div>
-<h3 id="indicateur">Indicateur</h3>
+<h4 id="indicateur">Indicateur</h4>
 <p>Il s'agit des mécanismes explicites qui permettent à l'utilisateur d'acquérir des informations sur le fonctionnement du système. Ils sont complémentaires aux accessibilités intentionnelles offertes (implémenter la fonctionnalité n'est pas suffisant, il faut le communiquer à l'utilisateur). </p>
 <div class="admonition exercice">
 <p class="admonition-title">Indicateurs</p>
 <p>Nommez trois indicateurs du système Google.</p>
 </div>
-<h3 id="contrainte">Contrainte</h3>
+<h4 id="contrainte">Contrainte</h4>
 <p>Il s'agit de limites imposées dans la manipulation du système (indicateur à la négative) afin d'éviter les mauvaises saisies de données. Elles permettent d'assurer la cohérence des données, que la personne utilisatrice dispose des autorisations ou l'ordonnancement correct des opérations.</p>
 <div class="admonition exercice">
 <p class="admonition-title">Contraintes</p>
 <p>Nommez un système qui utilise le mécanisme de contrainte pour limiter les erreurs des personnes utilisatrices.</p>
 </div>
-<h3 id="association-mapping">Association (<em>mapping</em>)</h3>
+<h4 id="association-mapping">Association (<em>mapping</em>)</h4>
 <p>Il s'agit de l'établissement d'une relation entre les commandes dans les interfaces du système et les réactions du système. Si les indicateurs sont clairs, l'association se fait facilement et de façon correcte. Une association mal faite amène souvent à se «&nbsp;chercher&nbsp;» dans le système.</p>
 <div class="admonition exercice">
 <p class="admonition-title">Association</p>
 <p>Nommez une association que vous avez faite qui vous a induit en erreur dans la manipulation d'un système.</p>
 </div>
-<h3 id="retroaction">Rétroaction</h3>
+<div class="admonition tip">
+<p class="admonition-title">Modèle conceptuel</p>
+<p>Le modèle conceptuel est un "sixième principe" de conception plus avancé. Il s'agit d'une représentation que la personne utilisatrice se fait du fonctionnement du système. Ce concept va plus loin que l'association simple, car la personne utilisatrice présume du mode de fonctionnement interne des composantes du système entre elles, et non seulement des liens entre les options de l'interface avec les composantes du système. C'est un concept riche, mais beaucoup plus complexe qui ne sera pas étudié plus avant au collégial.</p>
+</div>
+<h4 id="retroaction">Rétroaction</h4>
 <p>Elle permet aux personnes utilisatrices de suivre les changements dans l'état d'un système, autant pour informer sur des erreurs ou des actions interdites, que pour signaler des succès. Elle doit être fréquente, ciblée et aussi transparente (non bloquante) que possible.</p>
 <div class="admonition exercice">
 <p class="admonition-title">Rétroaction</p>
+<p>Nommez cinq méthodes de rétroaction que vous avez observer dans des logiciels. Identifier parmi ces rétroactions celles qui vont été utiles et pourquoi elles l'ont été.</p>
 </div>
-<p>À partir de l'exemple présenté, nommez des éléments qui peuvent être améliorés dans la rétroaction.</p>
-<h2 id="modele-conceptuel">Modèle conceptuel</h2>
-<p>Il s'agit d'une représentation que la personne utilisatrice se fait du fonctionnement du système. Ce concept va plus loin que l'association simple, car la personne utilisatrice présume du mode de fonctionnement interne des composantes du système entre elles, et non seulement des liens entre les options de l'interface avec les composantes du système. C'est un concept riche, mais beaucoup plus complexe qui ne sera pas étudié plus avant au collégial.</p>
+<h3 id="normes">Normes</h3>
+<p>Plusieurs définitions de normes dans les contrôles sont donnés dans <a href="https://cours-alexandre-ouellet.github.io/normes-interfaces">ce guide</a> <em>À venir</em>.  </p>
+<h2 id="quoi-faire-avec-tous-ces-concepts">Quoi faire avec tous ces concepts ?</h2>
+<p>Trois éléments ont été présentés dans cette section :</p>
+<ul>
+<li>La théorie de l'action de Norman;</li>
+<li>Les paradigmes des interfaces; et</li>
+<li>Les principes de conception</li>
+</ul>
+<p>Lors de la conception d'une interface, on doit permettre à la personne utilisatrice d'accomplir tous les éléments du pont de l'action. De ce fait, on dispose des contrôles (<strong>mécanismes de l'interface</strong>) et des réactions (<strong>affichage de l'interface</strong>). Afin de choisir ces contrôles et réactions, on se base sur un ou plusieurs paradigmes pour leur donner un sens (<strong>interprétation du signal</strong>) et faciliter la projection de la façon d'utiliser le système dans la tête de la personne utilisatrice <strong>spécification du chemin</strong>. Les principes comme l'<strong>accessibilité</strong> et l'<strong>association</strong> définissent comment la <strong>spécification de l'action</strong> s'accomplit concrètement. Les principes comme les <strong>indicateurs</strong>, les <strong>contraintes</strong> et les <strong>rétroactions</strong> sont des composants des interfaces concrets introduits dans le système pour permettre l'<strong>interprétation des signaux</strong> et limiter les <strong>erreurs</strong> qui empêchent la réalisation du <strong>but</strong> initial.</p>
 <!--
 
 # La conception en pratique
@@ -1331,7 +1411,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-16</span>
   </span>
 
     
@@ -1378,13 +1458,13 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
         
         
           
-          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
+          <a href="../conception-objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception orientée objet">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Méthodes à pointage
+                Conception orientée objet
               </div>
             </div>
             <div class="md-footer__button md-icon">

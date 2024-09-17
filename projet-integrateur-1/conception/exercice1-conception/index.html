@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/approche/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/exercice1-conception/">
       
       
-        <link rel="prev" href="../genie_logiciel/">
+        <link rel="prev" href="../conception-objet/">
       
       
-        <link rel="next" href="../redaction_technique/">
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Approches de développement logiciel - Projet intégrateur 1</title>
+        <title>Exercice 1 - Les trombones - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#approches-de-developpement-logiciel" class="md-skip">
+        <a href="#resolution-de-lexercice-1-lusine-de-trombone" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Approches de développement logiciel
+              Exercice 1 - Les trombones
             
           </span>
         </div>
@@ -191,13 +191,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../genie_logiciel/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
           
   
   Introduction et généralités
@@ -229,11 +227,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../conception/ui/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ui/" class="md-tabs__link">
           
   
   Conception
@@ -351,30 +351,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -385,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Introduction et généralités
@@ -399,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../genie_logiciel/" class="md-nav__link">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -417,30 +412,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Approches de développement logiciel
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intro/approche/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,155 +424,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#les-6-phases-du-developpement-logiciel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les 6 phases du développement logiciel
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les 6 phases du développement logiciel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-analyse-et-modelisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Analyse et modélisation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-conception" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Conception
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Implémentation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-verification-et-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Vérification et validation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-maintenance-et-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Maintenance et évolution
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-mort" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Mort
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-modeles-de-developpement-logiciel" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 modèles de développement logiciel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-manifeste-agile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le Manifeste Agile
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Le Manifeste Agile">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#traduction-du-manifeste-agile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traduction du manifeste agile
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#les-12-principes-agiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les 12 principes agiles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-agile-en-pratique" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le Agile en pratique
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -610,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redaction_technique/" class="md-nav__link">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -631,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gabarits/" class="md-nav__link">
+      <a href="../../intro/gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,25 +661,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -864,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -878,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/ui/" class="md-nav__link">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/conception-objet/" class="md-nav__link">
+      <a href="../conception-objet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -917,10 +748,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conception/exercice1-conception/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercice 1 - Les trombones
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -929,6 +780,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reperer-les-donnees-et-les-classes-metiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repérer les données et les classes métiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#affecter-la-responsabilite-dacheter-lamelioration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Affecter la responsabilité d'acheter l'amélioration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-les-effets-de-lamelioration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter les effets de l'amélioration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-polymorphisme-a-la-rescousse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le polymorphisme à la rescousse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#augmenter-la-reutilisabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Augmenter la réutilisabilité
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1084,128 +1000,135 @@
                   
 
 
-<h1 id="approches-de-developpement-logiciel">Approches de développement logiciel</h1>
+<h1 id="resolution-de-lexercice-1-lusine-de-trombone">Résolution de l'exercice 1 - L'usine de trombone</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>3-6 Vocabulaire de la méthode Agile <br>
-3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
-3-8 Étapes de développement d'un projet<br>
-4-4 Compréhension des points importants du dossier de conception</p>
+<p>3-2 Analyse des données pour concevoir le diagramme de classe <br>
+3-3 Relation entre les différentes classes <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse <br>
+3-9 Développement du projet en cohérence avec la conception établie <br>
+4-1 Établissement du lien entre le diagramme des classes et les cas d'utilisation <br>
+4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>40 minutes</p>
+<p>30 minutes</p>
 </div>
 </div>
-<hr />
-<h2 id="les-6-phases-du-developpement-logiciel">Les 6 phases du développement logiciel</h2>
-<p>Le développement de logiciel est composé par 6 phases (ou étapes) :</p>
-<h3 id="1-analyse-et-modelisation">1. Analyse et modélisation</h3>
-<p>Cette phase vise à <strong>identifier</strong> et <strong>expliciter</strong> les besoins des entités clientes et des personnes utilisatrices du système. L'information est colligée dans le document d'analyse. Cette collecte d'information se fait à partir de diverses sources dont : </p>
-<ul>
-<li>l'entrevue avec les entités clientes et les personnes utilisatrices potentielles;</li>
-<li>les études de marché;</li>
-<li>l'entretien avec des personnes expertes du domaine;</li>
-<li>l'étude du domaine applicatif (systèmes proposant des fonctionnalités comparables); et</li>
-<li>la référence à des normes et des règlementations.</li>
-</ul>
-<p>Les besoins identifiés peuvent être appelés à changer ou à être raffinés durant le développement du système. Cette phase représente de 10 à 15 % du temps de développement.</p>
-<h3 id="2-conception">2. Conception</h3>
-<p>La conception permet de <strong>définir la structure</strong> du système qui sera mis place pour répondre aux besoins. La conception peut être divisée en trois grandes phases :</p>
-<ul>
-<li>la conception de l'architecture du système (organisation dans la structure interne);</li>
-<li>la conception des flux et du stockage des données; et</li>
-<li>la conception des fonctionnalités du système.</li>
-</ul>
-<p>C'est une étape pour laquelle l'on peut avoir envie de faire des coins ronds ou de l'ignorer complètement. Toutefois, plusieurs problèmes d'implémentation peuvent être résolu à cette étape et ils sont plus rapides et moins coûteux à résoudre en conception qu'en implémentation ou après. Cette phase représente de 10 à 15 % du temps de développement.</p>
-<h3 id="3-implementation">3. Implémentation</h3>
-<p>Il s'agit de la réalisation du système conformément à la conception établie. En cas de disparité, il est important de revenir sur la conception (et possiblement l'analyse des besoins) pour assurer une <strong>traçabilité</strong>
-complète entre les différents documents qui décrivent le système. Cette phase représente de 15 à 20 % du temps de développement.</p>
-<h3 id="4-verification-et-validation">4. Vérification et validation</h3>
-<p>Réalisation des opérations centrales d'<strong>assurance qualité</strong>, dont la <strong>vérification</strong> (est-ce que le système fonctionne correctement?) et la <strong>validation</strong> (est-ce que le système fait la bonne chose?). Cette phase inclut non seulement le repérage des erreurs, mais aussi leur correctif. Tout comme dans les changements qui surviennent durant l'implémentation, il est important que les correctifs appliqués prennent en compte la <strong>traçabilité</strong>. Cette phase peut représenter entre 30 % et 50 % du temps de développement.</p>
-<h3 id="5-maintenance-et-evolution">5. Maintenance et évolution</h3>
-<p>Mise à jour du système selon l'évolution et la disponibilité des dépendances, des enjeux de sécurité de l'information et besoins qui changent. Cette étape peut inclure le réusinage de parties de la base de code ainsi que la redéfinition des besoins. Il peut s'agir d'une opération continue ou sporadique selon l'envergure et l'utilisation du système. Comme c'est une phase qui s'étend dans le temps jusqu'à plusieurs années après le déploiement du système, l'utilisation de la documentation établie (analyse, modèles de conception et documentation technique) est cruciale pour parvenir à effectuer les modifications à moindre coût et en limitant les effets de bord (<em>ripple effect</em>). Selon les systèmes, cette phase peut s'étendre pendant plus de 80 % de la durée de vie du système.</p>
-<h3 id="6-mort">6. Mort</h3>
-<p>Bien que la maintenance et l'évolution d'un système allongent considérablement la durée d'utilisation du système où celui-ci demeure pertinent et de qualité, inévitablement le système se dégrade soit parce qu'il ne répond plus au besoin, que la qualité du code est dégradée au point où le système est difficilement utilisable ou que des dépendances majeures (bibliothèques, langages, systèmes d'exploitation) ne sont plus supportées ou elles-mêmes mises à jour. Lorsqu'il n'est plus possible que le système évolue pour s'adapter à ces changements, le système meurt et cesse d'être mis à jour, ce qui cause une cessation complète (ou du moins majeure) de son utilisation. Des bouts du système peuvent être réutilisés vers un système nouveau (nouvelle version).</p>
-<p>D'un point de vue entrepreneurial, cette phase permet aussi le lancement d'un nouveau produit ce qui régénère une entrée importante de revenus. Cependant, avec la stabilisation des technologies (moins de dépréciation rapide des outils et des langages), plusieurs entreprises sont passées dans un mode de paiement par abonnement (on ne permet plus à la personne utilisatrice de posséder le système, on lui «&nbsp;loue&nbsp;») ce qui valorise le temps et les ressources investis dans l'étape de maintenance et d'évolution. </p>
-<h2 id="3-modeles-de-developpement-logiciel">3 modèles de développement logiciel</h2>
-<p>Les 6 phases du développement s'enchaînent en pratique selon différents modèles. Chaque modèle possède des forces et des faiblesses et le choix d'un modèle doit s'appuyer sur des éléments observables tels que :</p>
-<ul>
-<li>la prévisibilité des besoins;</li>
-<li>les délais de développement;</li>
-<li>le modèle de financement; et</li>
-<li>la complexité technique du système.</li>
-</ul>
-<p><a href="https://infogram.com/approches-de-developpement-logiciels-1hxr4zx8o0v9o6y?live">Infographie illustrant les modèles</a></p>
-<table>
-<thead>
-<tr>
-<th>Modèle</th>
-<th>Réalisation</th>
-<th>Modification</th>
-<th>Livraison</th>
-<th>Exemples de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cascade</td>
-<td>Chaque étape est complétée pour l'ensemble des fonctionnalités avant de passer à la suivante</td>
-<td>Pas de modification</td>
-<td>Livraison unique</td>
-<td>Système d'avionique, appareil médical</td>
-</tr>
-<tr>
-<td>Incrémental</td>
-<td>Quelques fonctionnalités sont sélectionnées et développées entièrement à chaque itération</td>
-<td>Pas de modification</td>
-<td>Livraisons partielles avec des fonctionnalités complètes</td>
-<td>Outil comptable, outil de plans architecturaux</td>
-</tr>
-<tr>
-<td>Itératif</td>
-<td>Quelques fonctionnalités sont sélectionnées et développées à chaque itération</td>
-<td>Possibilité de revenir sur les fonctionnalités développées</td>
-<td>Livraisons partielles avec des fonctionnalités partielles</td>
-<td>Média social, outil de traitement de texte</td>
-</tr>
-</tbody>
-</table>
-<p>On peut voir les approches présentées des plus strictes vers les plus flexibles (celles avec la plus grande adaptabilité).</p>
-<h2 id="le-manifeste-agile">Le Manifeste Agile</h2>
-<p>Les approches agiles désignent une philosophie de gestion de projet. Il n'existe pas une approche agile, mais plutôt des approches qui s'appuient sur la philosophie agile. Le document qui présente la philosophie se nomme «Agile Manisfeto» (Beck, 2001). Il présente les 4 énoncés et les 12 principes de l'Agile.</p>
-<p>Les approches agiles se distinguent des approches classiques par l'accent qu'elles mettent sur le résultat et la flexibilité.</p>
-<p>Lire le <a href="../../documents/agile_manifesto.pdf">Agile Manifesto <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></a></p>
-<h3 id="traduction-du-manifeste-agile">Traduction du manifeste agile</h3>
+<p>Dans cette solution détaillée, nous ferons une conception étape par étape, améliorant à chaque fois la qualité de la conception obtenue.</p>
+<p><ins>Rappel de l'exercice</ins></p>
 <blockquote>
-<p>Les individus et les interactions plutôt que les processus et les outils <br>
-Système fonctionnel plutôt que documentation exhaustive <br>
-Collaboration de l'entité cliente plutôt que négociation contractuelle <br>
-S'adapter aux changements plutôt que suivre un plan <br>
-<br>
-Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un jeu de type clicker. Le joueur possède une usine de fabrication de trombones. L'usine possède diverses caractéristiques de production (qualité, quantité de matière consommée, temps de création). Le joueur peut acheter des améliorations qui modifient la valeur de certaines caractéristiques de l'usine. Les améliorations possèdent un coût et un temps de recherche.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
 </blockquote>
-<h3 id="les-12-principes-agiles">Les 12 principes agiles</h3>
-<ol>
-<li>La priorité est de satisfaire l'entité cliente avec des livraisons rapides et régulières de système utilisable.</li>
-<li>Accueillez les changements dans les besoins, et ce, même tard dans le développement. Les processus agiles utilisent le changement pour assurer l'avantage compétitif de l'entité cliente.</li>
-<li>Livrez le système fréquemment, avec des intervalles de quelques semaines à quelques moins. Préférez les planifications plus courtes.</li>
-<li>Les experts du domaine et les programmeurs doivent collaborer sur une base quotidienne pour l'avancement du projet.</li>
-<li>Les projets se construisent autour de gens motivés. Accordez-leur l'environnement et le support dont ils ont besoin et faites leur confiance pour accomplir le travail.</li>
-<li>La façon la plus efficace et efficiente de transmettre de l'information dans une équipe de développement est la conversation face à face.</li>
-<li>La mesure de succès la plus importante est un système fonctionnel.</li>
-<li>Les processus agiles promeuvent le développement à un rythme soutenable. Tous devraient pouvoir travailler indéfiniment sur le projet.</li>
-<li>Un souci continu de la qualité technique et de bonne conception augmente l'agilité.</li>
-<li>Simplicité - l'art de maximiser le travail non fait - est essentiel.</li>
-<li>Les meilleures architectures, analyses de besoins et conceptions proviennent d'équipes auto-organisées.</li>
-<li>À intervalle régulier, l'équipe se questionne sur ses façons de faire, propose des moyens d'être plus efficace et s'ajuste.</li>
-</ol>
-<h2 id="le-agile-en-pratique">Le Agile en pratique</h2>
-<p>En pratique la pratique Agile se manifeste dans des méthodes de développement telles le Scrum ou le Kanban, explicité dans les sections... Mettre en action l'ensemble des pratiques Agile s'avère complexe, mais une équipe qui les conserve en tête et les consulte, particulièrement au moment de prendre des décisions, saura appliquer les pratiques Agile. Le danger de passer à côté de l'Agile consiste à tenter de se sécuriser en prévoyant tout et en abordant le projet «&nbsp;défensivement&nbsp;». Souvenvez-vous du quatrième énoncé de l'Agile : « S'adapter aux changements plutôt que suivre un plan », les autres éléments ont tendance à suivre plus naturellement après. </p>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Beck, K., et al. (2001) The Agile Manifesto. Agile Alliance. http://agilemanifesto.org/</p>
-<p>Sommerville, I. (2019). History of software engineering. Software Engineering 10th edition. https://software-engineering-book.com/web/history/ </p>
+<h2 id="reperer-les-donnees-et-les-classes-metiers">Repérer les données et les classes métiers</h2>
+<p>Selon le principe de <strong>correspondance directe</strong> de l'<strong>abstraction</strong>, on souhaite créer par une classe logicielle chaque entité représentée dans le logiciel. À la première lecture, on discerne 3 classes avec chacune un ensemble d'attributs. Le principe de <strong>responsabilité unique</strong> peut aussi être évoqué afin de justifier la décision de créer trois classes.</p>
+<ul>
+<li>Joueur</li>
+<li>Usine</li>
+<li>Amelioration</li>
+</ul>
+<p>On voit sur le diagramme ci-dessous les trois classes et leurs attributs. </p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape1.png" /></a>
+</figure>
+<h2 id="affecter-la-responsabilite-dacheter-lamelioration">Affecter la responsabilité d'acheter l'amélioration</h2>
+<p>Quelle classe devrait s'occuper de déclencher la recherche et l'application d'une amélioration ? Par le patron du <strong>contrôleur</strong>, le joueur ou l'usine peuvent agir comme contrôleur dans ce cas. Toutefois, placer la responsabilité dans joueur créer une dépendance entre joueur et amélioration, ce qui n'est pas nécessaire au bon fonctionnement du cas. Donc l'usine sera le contrôleur par les patrons <strong>contrôleur</strong> et <strong>faible couplage</strong>.</p>
+<p>Cela force à inverser la dépendance entre le joueur et l'usine pour que l'usine ait un propriétaire et non que le joueur possède une usine. Pour gérer le paiement, on ajoute la responsabilité de payer au Joueur qui possède déjà le total d'argent à cause du patron <strong>expert en information</strong>.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape2.png" /></a>
+</figure>
+<h2 id="ajouter-les-effets-de-lamelioration">Ajouter les effets de l'amélioration</h2>
+<p>Une fois que l'amélioration est achetée, il faut appliquer son effet (l'amélioration apportée) aux valeurs de l'usine. Pour affecter les changements apportés, il faut ajouter cette information quelque part. On peut l'ajouter dans la classe <code>Amelioration</code> comme il s'agit d'information cohésive avec le reste de la classe par les patrons <strong>forte cohésion</strong> et <strong>responsabilité unique</strong>.</p>
+<p>L'usine peut donc lire les informations de l'amélioration et les appliquer sur ses valeurs. De la même façon, l'amélioration devra appliquer successivement chacun de ces effets, ce qui entraîne l'ajout d'une méthode par le patron <strong>expert en information</strong>.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape3.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> effet-amelioration </p>
+<div class="admonition warning">
+<p class="admonition-title">Attention au couplage !</p>
+<p>Cette façon de travailler introduit un fort couplage entre les deux objets <code>Usine</code> et <code>Amelioration</code>. Ajouter une nouvelle caractéristique, comme l'électricité consommée pour la création d'un trombone, vient changer la structure des deux classes. C'est contraire au principes de <strong>modularité</strong>, d'<strong>ouvert-complet</strong> et au patron de <strong>faible couplage</strong>. On devra donc retravailler le système pour tenir compte de ce besoin. </p>
+</div>
+<h2 id="le-polymorphisme-a-la-rescousse">Le polymorphisme à la rescousse</h2>
+<p>On doit trouver une façon de sortir l'information de la classe <code>Amelioration</code> pour parvenir à la découpler (où diminuer son couplage) avec <code>Usine</code>. Pour ce faire, on va ajouter une classe dont le rôle sera d'appliquer à l'usine un effet d'amélioration. Nous pourrons rendre cette gestion transparente du point de vue de l'usine grâce au principe de la <strong>substitution de Liskov</strong> ce qui permettra à notre système de mieux respecter la <strong>modularité</strong> et le principe d'<strong>ouvert-complet</strong>.</p>
+<p>La classe abstraite <code>EffetAmelioration</code> spécifie ce qu'un effet d'amélioration doit définir. Nous pouvons ensuite changer la gestion des améliorations pour tenir compte de cette interface et l'implémenter pour chaque type d'effet que l'on peut avoir.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape4.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> classe-effet </p>
+<p>Les trois classes qui hérite de <code>EffetAmelioration</code> implémenteront la méthode <code>AppliquerEffet</code> chacune à leur façon.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">AmeliorationQualite</label><label for="__tabbed_1_2">AmeliorationMatiereConsommee</label><label for="__tabbed_1_3">AmeliorationVitesseProduction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationQualite</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">Qualite</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationMatiereConsommee</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">MatiereConsommee</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationVitesseProduction</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">VitesseProduction</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p>Cette nouvelle façon de faire permet de modifier les caractéristiques de l'usine (comme l'électricité consommée) sans modifier d'autres classes que celle de l'usine. Pour les améliorations, il suffira de créer un nouveau type adapté (<code>AmeliorationElectriciteConsommee</code>) et de créer les instances. C'est un exemple d'<strong>ouverture à la réutilisation</strong> tout en étant clos face aux modifications.</p>
+<h2 id="augmenter-la-reutilisabilite">Augmenter la réutilisabilité</h2>
+<p>La dernière étape du processus de réutilisabilité est d'augmenter celle-ci en permettant la modification des caractéristiques seulement par extension du code (ajout de nouvelles classes), sans jamais avoir à réécrire le code de l'usine. Cela constitue un système très versatile, quoiqu’un peu plus complexe. Si le contexte ne se prête pas à rendre les caractéristiques modulaires, le principe <strong>YAGNI</strong> serait à utiliser.</p>
+<p>Pour ajouter une dernière étape, on isolera les caractéristiques dans une classe dédiée. La direction des liens permet de contrôle le couplage (la caractéristique ne voit pas l'amélioration) et permet le maintien d'un <strong>faible couplage</strong> tout en permettant une <strong>réutilisabilité maximale</strong>. La transformation de la classe <code>EffetAmelioration</code> en classe concrète et l'élimination de ses enfants est un exemple de <strong>KISS</strong>. Ces classes ne sont plus nécessaires, alors on les supprime. </p>
+<p>Pour l'application des caractéristiques, l'usine définit une méthode <code>ChangerCaracteristique</code> où elle agit à la fois comme <strong>experte en information</strong>, car elle connait les caractéristiques et <strong>contrôle</strong> de l'accès aux caractéristiques.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape5.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> carac-isolees </p>
+<p>Les deux constructeurs permettent l'ajout des trois caractéristiques initiales dès la création de l'usine, assurant qu'elles soient toujours disponibles. </p>
+<div class="admonition info">
+<p class="admonition-title">Résumé</p>
+<p>Dans la forme finale la plus modulaire on n’utilise aucune construction abstraite et pourtant on atteint un haut niveau de modularité, réutilisabilité et d'encapsulation. Le code reste simple <em>KISS</em> et n'introduit pas de dépendances ou d'ouvertures inutiles <em>YAGNI</em>. Donc faire une bonne conception objet ne passe pas par être un ninja des langages de programmation et l'utilisation de mécanisme complet, mais plus sur la capacité à dégager des composantes <strong>cohésives</strong> et à gérer correctement les <strong>couplages</strong> (passage d'information) entre les types. </p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Aller plus loin</p>
+<p>L'utilisation de chaîne de caractères à la dernière étape fera sourciller les puristes. Il serait possible de définir plutôt une classe TypeCaracteristique (qui ne contiendrait qu'une chaîne de caractères, le nom de la caractéristique) pour y faire référence dans le système d'amélioration et éviter les erreurs typographiques.</p>
+</div>
 
 
 
@@ -1226,7 +1149,7 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-17</span>
   </span>
 
     
@@ -1256,7 +1179,7 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../genie_logiciel/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Histoire du génie logiciel et de l&#39;informatique">
+          <a href="../conception-objet/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception orientée objet">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1266,20 +1189,20 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Histoire du génie logiciel et de l'informatique
+                Conception orientée objet
               </div>
             </div>
           </a>
         
         
           
-          <a href="../redaction_technique/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Éléments de rédaction technique">
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Éléments de rédaction technique
+                Méthodes à pointage
               </div>
             </div>
             <div class="md-footer__button md-icon">

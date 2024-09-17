@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/approche/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/conception-objet/">
       
       
-        <link rel="prev" href="../genie_logiciel/">
+        <link rel="prev" href="../ui/">
       
       
-        <link rel="next" href="../redaction_technique/">
+        <link rel="next" href="../exercice1-conception/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Approches de développement logiciel - Projet intégrateur 1</title>
+        <title>Conception orientée objet - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#approches-de-developpement-logiciel" class="md-skip">
+        <a href="#conception-orientee-objet" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Approches de développement logiciel
+              Conception orientée objet
             
           </span>
         </div>
@@ -191,13 +191,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../genie_logiciel/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
           
   
   Introduction et généralités
@@ -229,11 +227,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../conception/ui/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ui/" class="md-tabs__link">
           
   
   Conception
@@ -351,30 +351,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -385,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Introduction et généralités
@@ -399,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../genie_logiciel/" class="md-nav__link">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -417,30 +412,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Approches de développement logiciel
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intro/approche/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,155 +424,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#les-6-phases-du-developpement-logiciel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les 6 phases du développement logiciel
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les 6 phases du développement logiciel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-analyse-et-modelisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Analyse et modélisation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-conception" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Conception
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Implémentation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-verification-et-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Vérification et validation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-maintenance-et-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Maintenance et évolution
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-mort" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Mort
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-modeles-de-developpement-logiciel" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 modèles de développement logiciel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-manifeste-agile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le Manifeste Agile
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Le Manifeste Agile">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#traduction-du-manifeste-agile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Traduction du manifeste agile
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#les-12-principes-agiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les 12 principes agiles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-agile-en-pratique" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le Agile en pratique
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -610,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redaction_technique/" class="md-nav__link">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -631,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gabarits/" class="md-nav__link">
+      <a href="../../intro/gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,25 +661,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -864,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -878,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/ui/" class="md-nav__link">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,10 +727,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conception/conception-objet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conception orientée objet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -908,6 +759,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retour-sur-les-concepts-et-constructions-de-loriente-objet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retour sur les concepts et constructions de l'orienté objet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retour sur les concepts et constructions de l'orienté objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encapsulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encapsulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modularite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modularité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réutilisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-patrons-de-conception" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les patrons de conception
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les patrons de conception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patrons-du-folklore-de-linformatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patrons du folklore de l'informatique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patrons du folklore de l'informatique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dry-dont-repeat-yourself-ne-te-repete-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRY : Don't repeat yourself - Ne te répète pas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide" class="md-nav__link">
+    <span class="md-ellipsis">
+      KISS : Keep It Stupid Simple - Garde ça si simple que ça en est stupide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAGNI : You ain't gonna need it - Tu n'en auras pas besoin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le SOLID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-general-responsability-assignment-software-patterns-grasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les General Responsability Assignment Software Patterns (GRASP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-patrons-dela-gang-of-four-gof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les patrons dela Gang Of Four (GoF)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-modelisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      La modélisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -920,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/exercice1-conception/" class="md-nav__link">
+      <a href="../exercice1-conception/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,128 +1117,158 @@
                   
 
 
-<h1 id="approches-de-developpement-logiciel">Approches de développement logiciel</h1>
+<h1 id="conception-orientee-objet">Conception orientée objet</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>3-6 Vocabulaire de la méthode Agile <br>
-3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
-3-8 Étapes de développement d'un projet<br>
-4-4 Compréhension des points importants du dossier de conception</p>
+<p>3-2 Analyse des données pour concevoir le diagramme de classe <br>
+3-3 Relation entre les différentes classes <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse <br>
+3-9 Développement du projet en cohérence avec la conception établie <br>
+4-1 Établissement du lien entre le diagramme des classes et les cas d'utilisation <br>
+4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>40 minutes</p>
+<p>120 minutes</p>
 </div>
 </div>
-<hr />
-<h2 id="les-6-phases-du-developpement-logiciel">Les 6 phases du développement logiciel</h2>
-<p>Le développement de logiciel est composé par 6 phases (ou étapes) :</p>
-<h3 id="1-analyse-et-modelisation">1. Analyse et modélisation</h3>
-<p>Cette phase vise à <strong>identifier</strong> et <strong>expliciter</strong> les besoins des entités clientes et des personnes utilisatrices du système. L'information est colligée dans le document d'analyse. Cette collecte d'information se fait à partir de diverses sources dont : </p>
+<h2 id="retour-sur-les-concepts-et-constructions-de-loriente-objet">Retour sur les concepts et constructions de l'orienté objet</h2>
+<p>Voici quelques grands principes de la programmation orientée objet (POO) et le lien avec les constructions «&nbsp;usuelles&nbsp;» des langages objets.</p>
+<div class="admonition info">
+<p class="admonition-title">Constructions usuelles</p>
+<p>Certains langages proposent des mécanismes explicitent (comme des mots-clés) dans la construction du langage pour représenter ou mettre en action certains concepts. D'autres langages ne proposent pas de mécanismes, mais certaines pratiques permettent d'arriver au même résultat (pensons à l'absence de modificateur de visibilité en <em>Python</em>). Donc les constructions «&nbsp;usuelles&nbsp;» peuvent ne pas se retrouver dans tous les langages objets : cela ne doit pas être utilisé pour qualifier un langage d'orienté objet ou non. </p>
+</div>
+<h3 id="abstraction">Abstraction</h3>
+<p>Le conception d'abstraction consiste à représenter les concepts du monde réel à l'aide de construction d'un langage de programmation. On trouve le sous-concept de la <strong>correspondance directe</strong> qui consiste à faire correspondre la structure du logiciel avec celle du monde réel. Il est généralement possible de le faire, surtout pour les classes métiers.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
-<li>l'entrevue avec les entités clientes et les personnes utilisatrices potentielles;</li>
-<li>les études de marché;</li>
-<li>l'entretien avec des personnes expertes du domaine;</li>
-<li>l'étude du domaine applicatif (systèmes proposant des fonctionnalités comparables); et</li>
-<li>la référence à des normes et des règlementations.</li>
+<li>Les types de données (principalement les classes)</li>
+<li>Les méthodes</li>
+<li>Les attributs</li>
 </ul>
-<p>Les besoins identifiés peuvent être appelés à changer ou à être raffinés durant le développement du système. Cette phase représente de 10 à 15 % du temps de développement.</p>
-<h3 id="2-conception">2. Conception</h3>
-<p>La conception permet de <strong>définir la structure</strong> du système qui sera mis place pour répondre aux besoins. La conception peut être divisée en trois grandes phases :</p>
+<h3 id="encapsulation">Encapsulation</h3>
+<p>L'encapsulation consiste à regrouper des informations cohésives dans un même type de données. Cela permet de contrôler l'accès aux données et aux comportements de l'extérieur d'un type. Cela améliore l'<strong>intégrité</strong> des données traitées par le système.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
-<li>la conception de l'architecture du système (organisation dans la structure interne);</li>
-<li>la conception des flux et du stockage des données; et</li>
-<li>la conception des fonctionnalités du système.</li>
+<li>Les types de données</li>
+<li>Les espaces de nom</li>
+<li>Les modificateurs de visibilité (ils ne sont pas essentiels)</li>
 </ul>
-<p>C'est une étape pour laquelle l'on peut avoir envie de faire des coins ronds ou de l'ignorer complètement. Toutefois, plusieurs problèmes d'implémentation peuvent être résolu à cette étape et ils sont plus rapides et moins coûteux à résoudre en conception qu'en implémentation ou après. Cette phase représente de 10 à 15 % du temps de développement.</p>
-<h3 id="3-implementation">3. Implémentation</h3>
-<p>Il s'agit de la réalisation du système conformément à la conception établie. En cas de disparité, il est important de revenir sur la conception (et possiblement l'analyse des besoins) pour assurer une <strong>traçabilité</strong>
-complète entre les différents documents qui décrivent le système. Cette phase représente de 15 à 20 % du temps de développement.</p>
-<h3 id="4-verification-et-validation">4. Vérification et validation</h3>
-<p>Réalisation des opérations centrales d'<strong>assurance qualité</strong>, dont la <strong>vérification</strong> (est-ce que le système fonctionne correctement?) et la <strong>validation</strong> (est-ce que le système fait la bonne chose?). Cette phase inclut non seulement le repérage des erreurs, mais aussi leur correctif. Tout comme dans les changements qui surviennent durant l'implémentation, il est important que les correctifs appliqués prennent en compte la <strong>traçabilité</strong>. Cette phase peut représenter entre 30 % et 50 % du temps de développement.</p>
-<h3 id="5-maintenance-et-evolution">5. Maintenance et évolution</h3>
-<p>Mise à jour du système selon l'évolution et la disponibilité des dépendances, des enjeux de sécurité de l'information et besoins qui changent. Cette étape peut inclure le réusinage de parties de la base de code ainsi que la redéfinition des besoins. Il peut s'agir d'une opération continue ou sporadique selon l'envergure et l'utilisation du système. Comme c'est une phase qui s'étend dans le temps jusqu'à plusieurs années après le déploiement du système, l'utilisation de la documentation établie (analyse, modèles de conception et documentation technique) est cruciale pour parvenir à effectuer les modifications à moindre coût et en limitant les effets de bord (<em>ripple effect</em>). Selon les systèmes, cette phase peut s'étendre pendant plus de 80 % de la durée de vie du système.</p>
-<h3 id="6-mort">6. Mort</h3>
-<p>Bien que la maintenance et l'évolution d'un système allongent considérablement la durée d'utilisation du système où celui-ci demeure pertinent et de qualité, inévitablement le système se dégrade soit parce qu'il ne répond plus au besoin, que la qualité du code est dégradée au point où le système est difficilement utilisable ou que des dépendances majeures (bibliothèques, langages, systèmes d'exploitation) ne sont plus supportées ou elles-mêmes mises à jour. Lorsqu'il n'est plus possible que le système évolue pour s'adapter à ces changements, le système meurt et cesse d'être mis à jour, ce qui cause une cessation complète (ou du moins majeure) de son utilisation. Des bouts du système peuvent être réutilisés vers un système nouveau (nouvelle version).</p>
-<p>D'un point de vue entrepreneurial, cette phase permet aussi le lancement d'un nouveau produit ce qui régénère une entrée importante de revenus. Cependant, avec la stabilisation des technologies (moins de dépréciation rapide des outils et des langages), plusieurs entreprises sont passées dans un mode de paiement par abonnement (on ne permet plus à la personne utilisatrice de posséder le système, on lui «&nbsp;loue&nbsp;») ce qui valorise le temps et les ressources investis dans l'étape de maintenance et d'évolution. </p>
-<h2 id="3-modeles-de-developpement-logiciel">3 modèles de développement logiciel</h2>
-<p>Les 6 phases du développement s'enchaînent en pratique selon différents modèles. Chaque modèle possède des forces et des faiblesses et le choix d'un modèle doit s'appuyer sur des éléments observables tels que :</p>
+<h3 id="modularite">Modularité</h3>
+<p>La modularité facilile l'apport de <strong>modifications</strong> au code tout en augmentant la <strong>lisibilité</strong> et la <strong>compréhensibilité</strong> de celui-ci. La modularité propose le découpage du code en module (en POO, il s'agit des classes) afin de séparer les différentes fonctionnalités. Chaque module devrait communiquer avec <strong>le moins d'autres modules possibles</strong> et, lorsqu'ils doivent échanger, communique <strong>le moins d'informations possible</strong>. C'est deux principes assure que chaque module est aussi pertinent et autonome que possible.</p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
-<li>la prévisibilité des besoins;</li>
-<li>les délais de développement;</li>
-<li>le modèle de financement; et</li>
-<li>la complexité technique du système.</li>
+<li>Types abstraits</li>
+<li>Les modificateurs de visibilité</li>
+<li>Les espaces de nom</li>
+<li>Mise en oeuvre du polymorphisme</li>
 </ul>
-<p><a href="https://infogram.com/approches-de-developpement-logiciels-1hxr4zx8o0v9o6y?live">Infographie illustrant les modèles</a></p>
-<table>
-<thead>
-<tr>
-<th>Modèle</th>
-<th>Réalisation</th>
-<th>Modification</th>
-<th>Livraison</th>
-<th>Exemples de système</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cascade</td>
-<td>Chaque étape est complétée pour l'ensemble des fonctionnalités avant de passer à la suivante</td>
-<td>Pas de modification</td>
-<td>Livraison unique</td>
-<td>Système d'avionique, appareil médical</td>
-</tr>
-<tr>
-<td>Incrémental</td>
-<td>Quelques fonctionnalités sont sélectionnées et développées entièrement à chaque itération</td>
-<td>Pas de modification</td>
-<td>Livraisons partielles avec des fonctionnalités complètes</td>
-<td>Outil comptable, outil de plans architecturaux</td>
-</tr>
-<tr>
-<td>Itératif</td>
-<td>Quelques fonctionnalités sont sélectionnées et développées à chaque itération</td>
-<td>Possibilité de revenir sur les fonctionnalités développées</td>
-<td>Livraisons partielles avec des fonctionnalités partielles</td>
-<td>Média social, outil de traitement de texte</td>
-</tr>
-</tbody>
-</table>
-<p>On peut voir les approches présentées des plus strictes vers les plus flexibles (celles avec la plus grande adaptabilité).</p>
-<h2 id="le-manifeste-agile">Le Manifeste Agile</h2>
-<p>Les approches agiles désignent une philosophie de gestion de projet. Il n'existe pas une approche agile, mais plutôt des approches qui s'appuient sur la philosophie agile. Le document qui présente la philosophie se nomme «Agile Manisfeto» (Beck, 2001). Il présente les 4 énoncés et les 12 principes de l'Agile.</p>
-<p>Les approches agiles se distinguent des approches classiques par l'accent qu'elles mettent sur le résultat et la flexibilité.</p>
-<p>Lire le <a href="../../documents/agile_manifesto.pdf">Agile Manifesto <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></a></p>
-<h3 id="traduction-du-manifeste-agile">Traduction du manifeste agile</h3>
-<blockquote>
-<p>Les individus et les interactions plutôt que les processus et les outils <br>
-Système fonctionnel plutôt que documentation exhaustive <br>
-Collaboration de l'entité cliente plutôt que négociation contractuelle <br>
-S'adapter aux changements plutôt que suivre un plan <br>
-<br>
-Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
-</blockquote>
-<h3 id="les-12-principes-agiles">Les 12 principes agiles</h3>
+<h3 id="reutilisation">Réutilisation</h3>
+<p>La réutilisation permet de reprendre les traitements d'un module et les exploiter dans un autre module. On trouve parmi les sous-concepts de la réutilisation <strong>l'autodocumentation</strong> (chaque module dispose de l'information nécessaire à sa compréhension) et l'<strong>accès uniforme</strong> (les façons d'accéder aux informations sont constantes, idéalement même entre les modules d'un système). </p>
+<p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
+<ul>
+<li>Les interfaces publiques des types</li>
+<li>Types abstraits</li>
+<li>Mise en oeuvre du polymorphisme</li>
+</ul>
+<h2 id="les-patrons-de-conception">Les patrons de conception</h2>
+<p>Un patron de conception est une solution ou un énoncé qui répond adéquatement à un problème ou un questionnement souvent rencontré dans la conception. Parmi les patrons présentés ici, certains sont généraux à tous les types de programmation, d'autres propres à la programmation objet.</p>
+<h3 id="patrons-du-folklore-de-linformatique">Patrons du folklore de l'informatique</h3>
+<p>Les trois premiers patrons sont des énoncés généraux qui devraient guider dans la façon d'approcher les problèmes de conception dans tous les types de programmation.</p>
+<h4 id="dry-dont-repeat-yourself-ne-te-repete-pas">DRY : <em>Don't repeat yourself</em> - Ne te répète pas</h4>
+<p>Il ne faut répéter du code dans un système. Le code répété génère une augmentation de l'effort lié au test, en plus d'augmenter le risque d'erreur. </p>
+<p>Pour éviter de répéter du code, il est possible de :</p>
+<ul>
+<li>Créer une méthode (privée) si les appels multiples ont lieu dans une même classe.</li>
+<li>Créer une classe (privée au système) si les appels multiples ont lieu dans plusieurs classes.</li>
+</ul>
+<h4 id="kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide">KISS : <em>Keep It Stupid Simple</em> - Garde ça si simple que ça en est stupide</h4>
+<p>Le principe <em>KISS</em> prévoit d'éviter les façons de faire complexe au profit des façons simples. Il n'est évidemment pas toujours possible d'éviter les constructions complexes, mais voici quelques exemples :</p>
+<ul>
+<li>Réduire l'imbrication des blocs de code</li>
+<li>Limiter le nombre de paramètres dans les méthodes</li>
+<li>Limiter la longueur des méthodes</li>
+<li>Limiter la longueur des lignes de code</li>
+<li>Utiliser les types de données et les alias adaptés</li>
+<li>Déclarer des variables temporaires et intermédiaires</li>
+</ul>
+<h4 id="yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin">YAGNI : <em>You ain't gonna need it</em> - Tu n'en auras pas besoin</h4>
+<p>En conception, on peut prévoir pour tous les changements potentiels et tous les cas possibles d'extension du système (ou du moins, presque tous les cas). Cette pensée mène à des systèmes incroyablement complexes dans leur définition en raison du haut niveau de flexibilité qu'ils offrent. Le problème est que la plupart de ces ouvertures seront inutilisées, mais l'effet de leur design complexité se fera quand même sentir dans le code. Il faut donc éviter les design qui incluent des ouvertures pour des besoins incertains ou non planifiés.</p>
+<h3 id="le-solid">Le <em>SOLID</em></h3>
+<p>Le <em>SOLID</em> est un acronyme de 5 principes. Les principes en gras sont ceux qui sont le plus couverts dans le cadre du cours.</p>
+<ul>
+<li><strong>Single responsability (responsabilité unique)</strong> : chaque classe sert à traiter une seule responsabilité, elle joue un seul rôle dans le système. En séparant les rôles de façon plus cohésive, on augmente la <strong>modularité</strong> et la <strong>réutilisabilité</strong> du code.</li>
+<li><strong>Open-close principle (ouvert-complet principe)</strong> : les classes sont ouvertes à la réutilisation et complétées face aux modifications. Cet énoncé précise qu'une classe complète doit pouvoir voir son comportement étendu sans que cela n'affecte son code (par l'utilisation de structures abstraites et génériques par exemple), on la qualifie alors de <strong>ouverte</strong>. La classe est qualifiée de complété <strong>close</strong> si elle définit suffisamment d'éléments pour être utilisable de façon autonome.</li>
+<li><strong>Liskov substitution (substitution de Liskov)</strong> : on peut substituer dans une référence d'une classe, une référence d'une de ses spécialisations. Autrement dit, on peut indiquer dans une variable typée une instance de n'importe quel de ses enfants. Les instances ainsi référées sont utilisables seulement au travers de l'interface de leur parent. C'est le principe derrière l'utilisation du <strong>polymorphisme</strong>.  </li>
+<li>Interface segregation (ségrégation par interfaces): le code doit dépendre uniquement des implémentations utilisées. On utilise de plus petites interfaces (application du <em>S</em>), afin de réduire les dépendances vers des méthodes qui ne sont pas utilisées.</li>
+<li>Dependency inversion (inversion de dépendances): il y a une hiérarchie dans l'établissement des dépendances. Les modules et composantes de haut niveau (qui ont un impact sur tout un système) ne doivent dépendre d'implémentation de bas niveau. Chaucuns des modules de haut niveau ne peut se coupler que sur des interfaces des composantes de bas niveau. Ce principe s'applique aussi aux types abstraits qui ne devraient pas dépendre de types concrets : les types concrets eux dépendent des abstractions.</li>
+</ul>
+<h3 id="les-general-responsability-assignment-software-patterns-grasp">Les <em>General Responsability Assignment Software Patterns (GRASP)</em></h3>
+<p>Les patrons GRASP traitent des responsabilités d'un système. On entend par responsabilité tout opération ou traitement élémentaire effectués pour la réalisation d'un CU. On peut voir l'assignation d'une responsabilité comme l'étape où, pour chaque opération identifiée dans un CU, on définit comment le système la réalise. Cette spécification ne se retrouve pas dans l'analyse.</p>
+<div class="admonition tip">
+<p class="admonition-title">La différence entre la conception et l'analyse</p>
+<p>L'analyse définit la portée et les contrats d'un système, mais laisse le champ à libre à leur implémentation sous plusieurs technologies ou à la gestion de l'évolution de ces technologies. La conception répond au <strong>comment</strong> le système s'acquitte des opérations décrites dans les CU. </p>
+</div>
+<p>Les GRASP sont donc des stratégies pour choisir quelles classes du système (ou s'il est nécessaire d'ajouter une nouvelle classe) s'acquitte de la responsabilité. Selon la complexité de la responsabilité, plusieurs classes ou méthodes peuvent être sollicitées pour répondre à une seule responsabilité. </p>
+<div class="admonition warning">
+<p class="admonition-title">Perdre le contrôle avec GRASP</p>
+<p>D'expérience comme enseignant, les modélisations avec GRASP mènent à une explosion du nombre de classes suggérées dans un système. Pour éviter cela, trois éléments à retenir :</p>
 <ol>
-<li>La priorité est de satisfaire l'entité cliente avec des livraisons rapides et régulières de système utilisable.</li>
-<li>Accueillez les changements dans les besoins, et ce, même tard dans le développement. Les processus agiles utilisent le changement pour assurer l'avantage compétitif de l'entité cliente.</li>
-<li>Livrez le système fréquemment, avec des intervalles de quelques semaines à quelques moins. Préférez les planifications plus courtes.</li>
-<li>Les experts du domaine et les programmeurs doivent collaborer sur une base quotidienne pour l'avancement du projet.</li>
-<li>Les projets se construisent autour de gens motivés. Accordez-leur l'environnement et le support dont ils ont besoin et faites leur confiance pour accomplir le travail.</li>
-<li>La façon la plus efficace et efficiente de transmettre de l'information dans une équipe de développement est la conversation face à face.</li>
-<li>La mesure de succès la plus importante est un système fonctionnel.</li>
-<li>Les processus agiles promeuvent le développement à un rythme soutenable. Tous devraient pouvoir travailler indéfiniment sur le projet.</li>
-<li>Un souci continu de la qualité technique et de bonne conception augmente l'agilité.</li>
-<li>Simplicité - l'art de maximiser le travail non fait - est essentiel.</li>
-<li>Les meilleures architectures, analyses de besoins et conceptions proviennent d'équipes auto-organisées.</li>
-<li>À intervalle régulier, l'équipe se questionne sur ses façons de faire, propose des moyens d'être plus efficace et s'ajuste.</li>
+<li>Il faut toujours que les méthodes accomplissent quelque chose. Simplement relayer une information n'est pas accomplir quelque chose. </li>
+<li>Appliquer le YAGNI quand on a tendance à s'emballer.</li>
+<li>Ne pas appliquer le principe de responsabilité unique de façon dogmatique. Les patrons <strong>faible couplage</strong> et <strong>forte cohésion</strong> justifient cette mise en garde. </li>
 </ol>
-<h2 id="le-agile-en-pratique">Le Agile en pratique</h2>
-<p>En pratique la pratique Agile se manifeste dans des méthodes de développement telles le Scrum ou le Kanban, explicité dans les sections... Mettre en action l'ensemble des pratiques Agile s'avère complexe, mais une équipe qui les conserve en tête et les consulte, particulièrement au moment de prendre des décisions, saura appliquer les pratiques Agile. Le danger de passer à côté de l'Agile consiste à tenter de se sécuriser en prévoyant tout et en abordant le projet «&nbsp;défensivement&nbsp;». Souvenvez-vous du quatrième énoncé de l'Agile : « S'adapter aux changements plutôt que suivre un plan », les autres éléments ont tendance à suivre plus naturellement après. </p>
+</div>
+<ul>
+<li><strong>Expert</strong> : </li>
+<li>Créateur :</li>
+<li><strong>Contrôleur</strong> :</li>
+<li>Indirection :</li>
+<li><strong>Faible couplage</strong> : </li>
+<li><strong>Forte cohésion</strong> :</li>
+</ul>
+<h3 id="les-patrons-dela-gang-of-four-gof">Les patrons dela <em>Gang Of Four (GoF)</em></h3>
+<p>Publié en 1994 par «&nbsp;la gang des quatre&nbsp;» : Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides le livre <em>Design Patterns, Elements of Reusable Object-Oriented Software</em> pose les bases de plusieurs des patrons de conception moderne. Avec le temps, certains de leurs patrons ont été modifiés, critiqués ou même rejetés, mais dans l'ensemble leur travail est encore très d'actualité dans la façon de concevoir les systèmes objets.</p>
+<p>Parmi les patrons de la GoF, on retrouve  : </p>
+<ul>
+<li><strong>Création</strong> : fabrique abstraite, monteur, fabrique, prototype et singleton</li>
+<li><strong>Structure</strong> : adaptateur, pont, composite, décorateur, façade, poids-mouche et proxy</li>
+<li><strong>Comportement</strong> : chaîne de responsabilité, commande, interpréteur, itérateur, médiateur, mémento, observateur, état, stratégie, patron de méthode et visiteur</li>
+</ul>
+<h2 id="la-modelisation">La modélisation</h2>
+<blockquote>
+<p>Before the first Unified Modelling LanguageTM (UML) standards were published in the mid1990s, visual software modelling was plagued by the incompatibility of different notations created by different modelling gurus. The absence of a standardised notation deterred potential users, and as an inevitable result the modelling tools market was tiny and fragmented. The few tools that were available suffered from a lack of investment; many only allowed sketching of software designs, lacking facilities for checking the diagrams’ internal consistency or automatically processing the information they held. These early visual diagrams were useful as design aids or documentation, but were rarely integrated into the software development lifecycle. (Watson, 2008)</p>
+</blockquote>
+<p>L'extrait présenté explique l'intérêt et l'engouement qui a entouré le lancement d'UML2 qui est venu régler bien des problèmes de compréhension et d'utilisabilité des langages de modélisation. Cela a permis, entre autres, d'intégrer les langages de modélisation dans le cycle de conception des logiciels.</p>
+<p>Afin d'en apprendre plus sur les différents diagrammes et leurs notations référez-vous au <a href="https://cours-alexandre-ouellet.github.io/guide-uml/">Guide UML <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></span></a>.</p>
+<h2 id="exercices">Exercices</h2>
+<details class="exercice">
+<summary>Exercice 1 - L'usine de trombone</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un jeu de type clicker. Le joueur possède une usine de fabrication de trombones. L'usine possède diverses caractéristiques de production (qualite, quantite de matière consommée, temps de création). Le joueur peut acheter des améliorations qui modifie la valeur de certaines caractéristiques de l'usine. Les améliorations possède un coût et un temps de recherche.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
+<details class="exercice">
+<summary>Exercice 2 - L'itinéraire de voyage</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un système de gestion d'itinéraire de voyages pour une entreprise. Chaque itinéraire se compose de plusieurs destinations. Les destinations peuvent être finale ou intermédiaires. Entre deux destinations, un moyen de transport doit être employé. Chaque moyen de transport possède un coût et une durée. La durée dépend de la distance à parcourir et de la vitesse du moyen de transport.</p>
+<p>Proposez des méthodes qui permettent d'ajouter des destinations et d'obtenir le temps total entre le point de départ d'un parcours et le point d'arrivée. Expliquez comment l'encapsulation de vos opérations permet de réduire le risque d'erreur.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
+<details class="exercice">
+<summary>Exercice 3 - Les stations météo</summary>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous gérez un système de stations météorologiques. Chaque station enregistre la température, l'humiditié et la force du vent à toutes les heures. Les stations possède un nom et une zone. Les zones servent à grouper les stations (par exemple : la zone Centre-du-Québec (centre) regroupe les stations Victoriaville, Warwick, Saint-Albert, Saint-Élizabeth de Warwick, Sainte-Séraphine et Kingsey Falls). Vous devez enregistrer ces données dans une base de données MySQL (attention de bien isoler cette responsabilité).</p>
+<p>Votre système doit aussi pouvoir être interoger pour obtenir la moyenne des dernières données lues pour chaque zone lors de la lecture des informations. Vos données doivent être disponible au format JSON, XML et texte.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</details>
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Beck, K., et al. (2001) The Agile Manifesto. Agile Alliance. http://agilemanifesto.org/</p>
-<p>Sommerville, I. (2019). History of software engineering. Software Engineering 10th edition. https://software-engineering-book.com/web/history/ </p>
+<p>Gamma, E., Helm, R., Johnson, R., Vlissides, J. (1995). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley.</p>
+<p>Larman, C. (2005). UML 2 et les design patterns. Pearson Education.</p>
+<p>Martin, R. C., Martin, M. (2006). Agile Principles, Patterns, and Practices in C#. Pearson Education.</p>
+<p>Meyer, B. (2017). Conception et programmation orientées objet. Eyrolles.</p>
+<p>Watson, A. (2008). Visual Modelling: past, present and future . Object Management Group. https://www.omg.org/UML/Visual_Modeling.pdf</p>
 
 
 
@@ -1226,7 +1289,7 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-16</span>
   </span>
 
     
@@ -1256,7 +1319,7 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../genie_logiciel/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Histoire du génie logiciel et de l&#39;informatique">
+          <a href="../ui/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Interfaces utilisateurs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1266,20 +1329,20 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Histoire du génie logiciel et de l'informatique
+                Interfaces utilisateurs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../redaction_technique/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Éléments de rédaction technique">
+          <a href="../exercice1-conception/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exercice 1 - Les trombones">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Éléments de rédaction technique
+                Exercice 1 - Les trombones
               </div>
             </div>
             <div class="md-footer__button md-icon">
