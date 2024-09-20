@@ -2,65 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/acteurs/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/cu/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/telos/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/conception-objet/</loc>
-         <lastmod>2024-09-17</lastmod>
-<<<<<<< HEAD
-=======
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/exercice1-conception/</loc>
-         <lastmod>2024-09-17</lastmod>
->>>>>>> 6288978f87bf7af2bd9cf3776c602023769ac0e8
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/methodes_pointage/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/approche/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/gabarits/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/genie_logiciel/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/redaction_technique/</loc>
-         <lastmod>2024-09-17</lastmod>
+         <lastmod>2024-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
