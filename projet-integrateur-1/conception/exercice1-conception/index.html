@@ -12,21 +12,21 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/exercice1-conception/">
       
       
-        <link rel="prev" href="../../analyse/cu/">
+        <link rel="prev" href="../conception-objet/">
       
       
-        <link rel="next" href="../conception-objet/">
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>Interfaces utilisateurs - Projet intégrateur 1</title>
+        <title>Exercice 1 - Les trombones - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conception-de-linterface-utilisateur" class="md-skip">
+        <a href="#resolution-de-lexercice-1-lusine-de-trombone" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interfaces utilisateurs
+              Exercice 1 - Les trombones
             
           </span>
         </div>
@@ -233,7 +233,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../ui/" class="md-tabs__link">
           
   
   Conception
@@ -706,30 +706,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Interfaces utilisateurs
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,209 +718,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#interactions-humain-machine-ihm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interactions humain-machine (IHM)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pourquoi-prendre-le-temps-de-penser-aux-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pourquoi prendre le temps de penser aux interfaces ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modele-theorique-de-laction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modèle théorique de l'action
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Modèle théorique de l'action">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#les-deux-ponts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les deux ponts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les deux ponts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pont-de-levaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pont de l'évaluation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-paradigmes-de-conception-dinterface" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 paradigmes de conception d'interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3 paradigmes de conception d'interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quel-paradigme-choisir" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quel paradigme choisir ?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#principes-et-normes-de-conception" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes et normes de conception
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes et normes de conception">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#principes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#accessibilite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessibilité
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#indicateur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indicateur
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contrainte" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contrainte
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#association-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Association (mapping)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retroaction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rétroaction
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#normes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Normes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quoi-faire-avec-tous-ces-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quoi faire avec tous ces concepts ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -967,16 +744,34 @@
 
               
             
-<<<<<<< HEAD
-=======
               
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../exercice1-conception/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercice 1 - Les trombones
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -985,12 +780,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reperer-les-donnees-et-les-classes-metiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repérer les données et les classes métiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#affecter-la-responsabilite-dacheter-lamelioration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Affecter la responsabilité d'acheter l'amélioration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-les-effets-de-lamelioration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter les effets de l'amélioration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-polymorphisme-a-la-rescousse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le polymorphisme à la rescousse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#augmenter-la-reutilisabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Augmenter la réutilisabilité
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
               
             
->>>>>>> 6288978f87bf7af2bd9cf3776c602023769ac0e8
           </ul>
         </nav>
       
@@ -1141,259 +1000,135 @@
                   
 
 
-<h1 id="conception-de-linterface-utilisateur">Conception de l'interface utilisateur</h1>
+<h1 id="resolution-de-lexercice-1-lusine-de-trombone">Résolution de l'exercice 1 - L'usine de trombone</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>1-4 Dessin de maquettes de l'interface principale<br>
-2-5 Normes et concepts des interfaces utilisateur<br>
+<p>3-2 Analyse des données pour concevoir le diagramme de classe <br>
+3-3 Relation entre les différentes classes <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse <br>
+3-9 Développement du projet en cohérence avec la conception établie <br>
+4-1 Établissement du lien entre le diagramme des classes et les cas d'utilisation <br>
 4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>90 minutes</p>
+<p>30 minutes</p>
 </div>
 </div>
-<hr />
-<h2 id="interactions-humain-machine-ihm">Interactions humain-machine (IHM)</h2>
-<p>Au début de l'informatique, on faisait des programmes scientifiques (sans interface). Le code était écrit sur des cartes poinçonnées qui étaient lues par l'ordinateur, exécuté et produisait une sortie imprimée. Ensuite, les ordinateurs ont eu un moniteur qui était d'abord monochrome (une seule couleur), puis avec 8 bits (et seulement 8 couleurs, donc 256 combinaisons d'arrière-plan et d'avant-plan). L'arrivée de la souris a amené l'utilisation d'icône et de boutons cliquables (paradigmes de clic à un bouton, clic gauche, clic droit) et le développement d'une sous-discipline de l'informatique : les <strong>interfaces utilisateur</strong>, référées généralement comme le <em>UI (user interface)</em>. Plus récemment, l'intégration de multiples résolutions (en particulier par les téléphones mobiles) a continué de pousser la discipline à se développer et à se recentrer sur l'<strong>expérience utilisateur</strong> <em>UX</em> (user experience). On ne parle plus de simple disposition de contrôle suivant un ensemble de normes, mais aussi de disposition réduisant la charge de travail et de «&nbsp;relation&nbsp;» entre l'humain et la machine. </p>
-<figure>
-  <a class="glightbox" href="../../images/evolutuion_ui.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/evolutuion_ui.png" /></a>
-  <figcaption>Évolution des différentes interfaces</figcaption>
-</figure>
-<h2 id="pourquoi-prendre-le-temps-de-penser-aux-interfaces">Pourquoi prendre le temps de penser aux interfaces ?</h2>
-<p>En marketing, la réponse à cette question serait fort simple : maximiser l'attractivité du produit pour en vendre le plus possible (ou du moins, lui donner la meilleure réputation possible). L'attractivité du système peut se définir autant en termes d'esthétisme qu'en termes de dépendance et de conditionnement.</p>
-<p>En informatique, notre objectif est un peu différent. On ne prend pas le point de vue de la qualité esthétique de la présentation (quoique ça n'a jamais nui à personne), mais plutôt l'utilisabilité du système. </p>
-<p>Un système utilisable atteint deux qualités :</p>
+<p>Dans cette solution détaillée, nous ferons une conception étape par étape, améliorant à chaque fois la qualité de la conception obtenue.</p>
+<p><ins>Rappel de l'exercice</ins></p>
+<blockquote>
+<p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
+<p>Vous développez un jeu de type clicker. Le joueur possède une usine de fabrication de trombones. L'usine possède diverses caractéristiques de production (qualité, quantité de matière consommée, temps de création). Le joueur peut acheter des améliorations qui modifient la valeur de certaines caractéristiques de l'usine. Les améliorations possèdent un coût et un temps de recherche.</p>
+<p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
+</blockquote>
+<h2 id="reperer-les-donnees-et-les-classes-metiers">Repérer les données et les classes métiers</h2>
+<p>Selon le principe de <strong>correspondance directe</strong> de l'<strong>abstraction</strong>, on souhaite créer par une classe logicielle chaque entité représentée dans le logiciel. À la première lecture, on discerne 3 classes avec chacune un ensemble d'attributs. Le principe de <strong>responsabilité unique</strong> peut aussi être évoqué afin de justifier la décision de créer trois classes.</p>
 <ul>
-<li>Il permet de travailler de façon <strong>efficace</strong> : soit par une vitesse de travail ou utilisation optimale des ressources de production allouées (nombre de personnes, durée des opérations, coût de l'équipement, économies par une meilleure planification des ressources...); et</li>
-<li>Il permet de travailler de façon plus <strong>efficiente</strong> : le rapport entre les ressources utilisées et résultats produits est meilleur grâce à ce produit.</li>
+<li>Joueur</li>
+<li>Usine</li>
+<li>Amelioration</li>
 </ul>
-<div class="admonition ex-projet">
-<p class="admonition-title">Efficacité et efficience dans le système de suivi de projets</p>
-<p>Par exemple, pour être efficace le système de suivi de projet doit permettre d'organiser les tâches pour trouver rapidement celle recherchée, masquer les éléments inutiles facilement, adopter une disposition consistante pour accélérer le travail avec le système. Pour être efficient, le temps investi à utiliser l'interface de suivi de projets doit au moins être égal ou inférieur au temps passé à faire les mêmes tâches manuellement et y ajoutant le coût de rectification des erreurs et l'interface doivent diminuer ou prévenir les erreurs d'inattention dans les manipulations. </p>
-</div>
-<p>Trois éléments, tous très subjectifs, doivent être pris en compte dans l'atteinte de l'efficacité et de l'efficience :</p>
-<ul>
-<li>La gestion des frustrations (dû aux erreurs de manipulation dans l'interface, à la recherche des contrôles ou des opérations...);</li>
-<li>La facilité d'utilisation globale de l'interface (temps associé aux opérations, difficulté d'utilisation des contrôles, repérage des éléments clés); et</li>
-<li>La facilité apprentissage (temps nécessaire à une personne qui connait suffisamment le domaine applicatif pour prendre en main le système).</li>
-</ul>
-<h2 id="modele-theorique-de-laction">Modèle théorique de l'action</h2>
-<p>Afin de comprendre comment nous interagissons avec les machines, nous allons débuter aux fondements théoriques de l'interaction humain-machine (IHM) dans la théorie de l'action de Norman, proposée en 1986. Le modèle admis est un mélange d'empirisme (observation répétée et documentée correctement) et de philosophie (ce n’est pas tout à fait assez empirique comme étude pour tomber dans la psychologie). D'autres modèles peuvent être pris comme référence que celui-ci, mais il a relativement bien traversé les époques.</p>
-<h3 id="les-deux-ponts">Les deux ponts</h3>
-<p>Le modèle théorique prévoit deux ponts qui relient le système à la personne utilisatrice. Le premier pont, appelé <strong>pont de l'exécution</strong> définit l'action accomplie sur le système, tandis que le second, le <strong>pont de l'évaluation</strong> permet d'évaluer l'effet de l'action et l'atteinte (ou non) du but.</p>
-<div class="admonition note">
-<p class="admonition-title">Le terme système</p>
-<p>Dans les notes «&nbsp;système&nbsp;» réfère usuellement à un système informatique, mais dans la théorie de l'action cela porte plutôt sur n'importe quel système mécanique ou électronique. Dans son livre <em>Design of everyday things</em>, Norman discute longuement de l'utilisabilité des portes de réfrigérateur ou d'entrée dans un magasin et des problèmes de design demeurant même après des millénaires d'utilisation. </p>
-</div>
+<p>On voit sur le diagramme ci-dessous les trois classes et leurs attributs. </p>
 <figure>
-    <a class="glightbox" href="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" /></a>
-    <figcaption>Norman et Draper, 1986</figcaption>
+    <a class="glightbox" href="../../images/exemple1-conception-etape1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape1.png" /></a>
 </figure>
-<p>Chacun des ponts peut être divisé en trois segments :</p>
-<p><strong>Pont de l'exécution</strong></p>
-<p>Ce pont amène la personne utilisatrice de son intention (but), vers le système physique en traduisant ce but par une série de manipulations dans le système.</p>
-<ol>
-<li>Intentions : ce que la personne utilisatrice veut accomplir, son intention envers le système;</li>
-<li>Spécification : chemin à prendre pour y arriver, les actions qu'elle souhaite réaliser; et</li>
-<li>Mécanisme de l'interface : les contrôles offerts par le système qu'elle utilise.</li>
-</ol>
-<h4 id="pont-de-levaluation">Pont de l'évaluation</h4>
-<p>Ce pont permet de constater ou non que l'action indiquée au système a produit le résultat souhaité.</p>
-<ol>
-<li>Affichage de l'interface : signal renvoyé par le système (image, son, pop-up, impression);</li>
-<li>Interprétation du signal : signification des couleurs, du son, des symboles, de l'image pour un être humain; et</li>
-<li>Évaluation : est-ce que le signal du système me permet de dire que j'ai atteint mon objectif ?</li>
-</ol>
-<div class="admonition exercice">
-<p class="admonition-title">Les ponts de l'exécution</p>
-<p>En équipes de 2-3 personnes, trouvez un système et analysez deux tâches avec ce système (<em>Word</em>, <em>Excel</em>, <em>IntelliJ</em>, votre navigateur, bloc-notes, <em>paint</em>...)
-Utilisez la théorie des ponts de l'exécution et de l'évaluation pour expliquer votre raisonnement (possiblement inconscient) lors de la réalisation d'une tâche avec le système.</p>
+<h2 id="affecter-la-responsabilite-dacheter-lamelioration">Affecter la responsabilité d'acheter l'amélioration</h2>
+<p>Quelle classe devrait s'occuper de déclencher la recherche et l'application d'une amélioration ? Par le patron du <strong>contrôleur</strong>, le joueur ou l'usine peuvent agir comme contrôleur dans ce cas. Toutefois, placer la responsabilité dans joueur créer une dépendance entre joueur et amélioration, ce qui n'est pas nécessaire au bon fonctionnement du cas. Donc l'usine sera le contrôleur par les patrons <strong>contrôleur</strong> et <strong>faible couplage</strong>.</p>
+<p>Cela force à inverser la dépendance entre le joueur et l'usine pour que l'usine ait un propriétaire et non que le joueur possède une usine. Pour gérer le paiement, on ajoute la responsabilité de payer au Joueur qui possède déjà le total d'argent à cause du patron <strong>expert en information</strong>.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape2.png" /></a>
+</figure>
+<h2 id="ajouter-les-effets-de-lamelioration">Ajouter les effets de l'amélioration</h2>
+<p>Une fois que l'amélioration est achetée, il faut appliquer son effet (l'amélioration apportée) aux valeurs de l'usine. Pour affecter les changements apportés, il faut ajouter cette information quelque part. On peut l'ajouter dans la classe <code>Amelioration</code> comme il s'agit d'information cohésive avec le reste de la classe par les patrons <strong>forte cohésion</strong> et <strong>responsabilité unique</strong>.</p>
+<p>L'usine peut donc lire les informations de l'amélioration et les appliquer sur ses valeurs. De la même façon, l'amélioration devra appliquer successivement chacun de ces effets, ce qui entraîne l'ajout d'une méthode par le patron <strong>expert en information</strong>.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape3.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> effet-amelioration </p>
+<div class="admonition warning">
+<p class="admonition-title">Attention au couplage !</p>
+<p>Cette façon de travailler introduit un fort couplage entre les deux objets <code>Usine</code> et <code>Amelioration</code>. Ajouter une nouvelle caractéristique, comme l'électricité consommée pour la création d'un trombone, vient changer la structure des deux classes. C'est contraire au principes de <strong>modularité</strong>, d'<strong>ouvert-complet</strong> et au patron de <strong>faible couplage</strong>. On devra donc retravailler le système pour tenir compte de ce besoin. </p>
 </div>
-<h2 id="3-paradigmes-de-conception-dinterface">3 paradigmes de conception d'interface</h2>
-<p>Une fois les fondements établies dans le pourquoi est-ce que l'on fait des actions, il faut déterminer un <span class="tooltip hint--top" aria-label="Modèle de pensée. Conception théorique dominante qui a cours à une certaine époque dans une communauté scientifique. (Antidote 9, 2023)">paradigme</span> dans la conception de l'interface : une façon de la réfléchir. Un peu comme lorsqu'on choisit un langage de programmation (entre un paradigme objet et un paradigme fonctionnel), le même choix se pose en conception d'interface. Comme pour les langages de programmation, des éléments tirés de plusieurs paradigmes peuvent coexister dans un même langage. </p>
-<dl>
-<dt><code>Paradigme technologique</code></dt>
-<dd>Dans ce paradigme, l'interface est le miroir de l'organisation du système. Par exemple, chaque fonction du code du système s'appelle à l'aide d'un bouton qui nomme explicitement (ou presque) cette fonction. On retrouve très souvent ce type d'interface dans les programmes consoles ou dans les systèmes techniques. L'interface de Git (ligne de commande et client GUI) est un exemple de système utilisant le paradigme technologique.</dd>
-<dt><code>Paradigme métaphorique</code></dt>
-<dd>Le paradigme métaphorique consiste à utiliser une métaphore (image) pour représenter l'abstraction par un concept analogue du monde réel. Les métaphores sont très utiles pour aider des utilisateurs à prendre en main les systèmes. Par exemple, le site Facebook utilise de nombreuses métaphores (amis, groupes, conversations…)</dd>
-<dt><code>Paradigme idiomatique</code></dt>
-<dd>Le paradigme idiomatique consiste à créer de nouveaux idiomes (expression dont le sens ne correspond pas au sens donné par la collection des mots). On trouve ce paradigme lorsqu'on ne souhaite pas utiliser le paradigme technologique (pour éviter d'augmenter la difficulté d'apprentissage) et qu'il n'y a pas de métaphore existante. Par exemple, le site <em>Facebook</em> utilise des idiomes comme le bouton «&nbsp;j'aime&nbsp;» et le fait de «&nbsp;suivre&nbsp;» une personnalité. </dd>
-</dl>
-<h3 id="quel-paradigme-choisir">Quel paradigme choisir ?</h3>
-<p>S'il s'agit d'un système de soutien (utilitaire), un système avec une seule fonctionnalité ou peu d'entre elles (comme un système scientifique) ou que la personne qui le développe sera aussi la principale utilisatrice, alors le <strong>paradigme technologique</strong> est à prioriser. Dans les autres cas, un bon réflexe est de chercher une <strong>métaphore</strong> adéquate. Si une telle métaphore n'existe pas, alors il faut se tourner vers l'<strong>idiome</strong>. Ce dernier peut aussi être utile pour ajouter une couche d'abstraction à des fonctionnalités ou un concept. </p>
-<div class="admonition bug">
-<p class="admonition-title">Les mauvaises métaphores</p>
-<p>Une mauvaise métaphore est particulièrement nuisible, car en plus de ne pas renseigner correctement sur l'interface, elle peut pousser à commettre plus d'erreurs dans l'utilisation du système.</p>
+<h2 id="le-polymorphisme-a-la-rescousse">Le polymorphisme à la rescousse</h2>
+<p>On doit trouver une façon de sortir l'information de la classe <code>Amelioration</code> pour parvenir à la découpler (où diminuer son couplage) avec <code>Usine</code>. Pour ce faire, on va ajouter une classe dont le rôle sera d'appliquer à l'usine un effet d'amélioration. Nous pourrons rendre cette gestion transparente du point de vue de l'usine grâce au principe de la <strong>substitution de Liskov</strong> ce qui permettra à notre système de mieux respecter la <strong>modularité</strong> et le principe d'<strong>ouvert-complet</strong>.</p>
+<p>La classe abstraite <code>EffetAmelioration</code> spécifie ce qu'un effet d'amélioration doit définir. Nous pouvons ensuite changer la gestion des améliorations pour tenir compte de cette interface et l'implémenter pour chaque type d'effet que l'on peut avoir.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape4.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> classe-effet </p>
+<p>Les trois classes qui hérite de <code>EffetAmelioration</code> implémenteront la méthode <code>AppliquerEffet</code> chacune à leur façon.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">AmeliorationQualite</label><label for="__tabbed_1_2">AmeliorationMatiereConsommee</label><label for="__tabbed_1_3">AmeliorationVitesseProduction</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationQualite</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">Qualite</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 </div>
-<div class="admonition exercice">
-<p class="admonition-title">Trouve des paradigmes</p>
-<p>En équipe de 2 à 3 personnes : </p>
-<ol>
-<li>Dans l'interface du système d'exploitation Windows, trouvez 2 métaphores et 2 idiomes utilisés.</li>
-<li>À partir du système de l'exercice précédent (sur les ponts de l'action), identifiez les métaphores et idiomes utilisés dans l'action choisie, expliquez leur signification et comment ces métaphores / idiomes vous ont aidé. </li>
-</ol>
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationMatiereConsommee</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">MatiereConsommee</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 </div>
-<h2 id="principes-et-normes-de-conception">Principes et normes de conception</h2>
-<p>Les principes de conception sont de grandes règles à suivre dans l'élaboration des interfaces. Sous les principes se trouvent des normes qui sont des règles précises pour chaque média de diffusion ou même pour chaque système. On exprime généralement le respect des principes en respectant les normes qui leur sont associés</p>
-<h3 id="principes">Principes</h3>
-<h4 id="accessibilite">Accessibilité</h4>
-<p>Cela fait référence aux façons qu'il est possible d'utiliser le système. Elles sont intentionnelles si le système est conçu pour être utilisé de cette façon ou accidentelles si le système n'est pas conçu spécifiquement pour cela, mais qu'il est quand même possible de l'utiliser à cette fin. </p>
-<div class="admonition exercice">
-<p class="admonition-title">Accessibilités</p>
-<p>Nommez une accessibilité intentionnelle et une accidentelle du système Google.</p>
+<div class="tabbed-block">
+<div class="language-c# highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="n">AmeliorationVitesseProduction</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EffetAmelioration</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="nf">AppliquerEffet</span><span class="p">(</span><span class="n">Usine</span><span class="w"> </span><span class="n">usine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="n">usine</span><span class="p">.</span><span class="n">VitesseProduction</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 </div>
-<h4 id="indicateur">Indicateur</h4>
-<p>Il s'agit des mécanismes explicites qui permettent à l'utilisateur d'acquérir des informations sur le fonctionnement du système. Ils sont complémentaires aux accessibilités intentionnelles offertes (implémenter la fonctionnalité n'est pas suffisant, il faut le communiquer à l'utilisateur). </p>
-<div class="admonition exercice">
-<p class="admonition-title">Indicateurs</p>
-<p>Nommez trois indicateurs du système Google.</p>
 </div>
-<h4 id="contrainte">Contrainte</h4>
-<p>Il s'agit de limites imposées dans la manipulation du système (indicateur à la négative) afin d'éviter les mauvaises saisies de données. Elles permettent d'assurer la cohérence des données, que la personne utilisatrice dispose des autorisations ou l'ordonnancement correct des opérations.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Contraintes</p>
-<p>Nommez un système qui utilise le mécanisme de contrainte pour limiter les erreurs des personnes utilisatrices.</p>
 </div>
-<h4 id="association-mapping">Association (<em>mapping</em>)</h4>
-<p>Il s'agit de l'établissement d'une relation entre les commandes dans les interfaces du système et les réactions du système. Si les indicateurs sont clairs, l'association se fait facilement et de façon correcte. Une association mal faite amène souvent à se «&nbsp;chercher&nbsp;» dans le système.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Association</p>
-<p>Nommez une association que vous avez faite qui vous a induit en erreur dans la manipulation d'un système.</p>
+<p>Cette nouvelle façon de faire permet de modifier les caractéristiques de l'usine (comme l'électricité consommée) sans modifier d'autres classes que celle de l'usine. Pour les améliorations, il suffira de créer un nouveau type adapté (<code>AmeliorationElectriciteConsommee</code>) et de créer les instances. C'est un exemple d'<strong>ouverture à la réutilisation</strong> tout en étant clos face aux modifications.</p>
+<h2 id="augmenter-la-reutilisabilite">Augmenter la réutilisabilité</h2>
+<p>La dernière étape du processus de réutilisabilité est d'augmenter celle-ci en permettant la modification des caractéristiques seulement par extension du code (ajout de nouvelles classes), sans jamais avoir à réécrire le code de l'usine. Cela constitue un système très versatile, quoiqu’un peu plus complexe. Si le contexte ne se prête pas à rendre les caractéristiques modulaires, le principe <strong>YAGNI</strong> serait à utiliser.</p>
+<p>Pour ajouter une dernière étape, on isolera les caractéristiques dans une classe dédiée. La direction des liens permet de contrôle le couplage (la caractéristique ne voit pas l'amélioration) et permet le maintien d'un <strong>faible couplage</strong> tout en permettant une <strong>réutilisabilité maximale</strong>. La transformation de la classe <code>EffetAmelioration</code> en classe concrète et l'élimination de ses enfants est un exemple de <strong>KISS</strong>. Ces classes ne sont plus nécessaires, alors on les supprime. </p>
+<p>Pour l'application des caractéristiques, l'usine définit une méthode <code>ChangerCaracteristique</code> où elle agit à la fois comme <strong>experte en information</strong>, car elle connait les caractéristiques et <strong>contrôle</strong> de l'accès aux caractéristiques.</p>
+<figure>
+    <a class="glightbox" href="../../images/exemple1-conception-etape5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/exemple1-conception-etape5.png" /></a>
+</figure>
+<p><a href="https://github.com/Cours-Alexandre-Ouellet/exercice-trombone"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Dépôt d'exemple</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.006 3.006 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg></span> carac-isolees </p>
+<p>Les deux constructeurs permettent l'ajout des trois caractéristiques initiales dès la création de l'usine, assurant qu'elles soient toujours disponibles. </p>
+<div class="admonition info">
+<p class="admonition-title">Résumé</p>
+<p>Dans la forme finale la plus modulaire on n’utilise aucune construction abstraite et pourtant on atteint un haut niveau de modularité, réutilisabilité et d'encapsulation. Le code reste simple <em>KISS</em> et n'introduit pas de dépendances ou d'ouvertures inutiles <em>YAGNI</em>. Donc faire une bonne conception objet ne passe pas par être un ninja des langages de programmation et l'utilisation de mécanisme complet, mais plus sur la capacité à dégager des composantes <strong>cohésives</strong> et à gérer correctement les <strong>couplages</strong> (passage d'information) entre les types. </p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Modèle conceptuel</p>
-<p>Le modèle conceptuel est un "sixième principe" de conception plus avancé. Il s'agit d'une représentation que la personne utilisatrice se fait du fonctionnement du système. Ce concept va plus loin que l'association simple, car la personne utilisatrice présume du mode de fonctionnement interne des composantes du système entre elles, et non seulement des liens entre les options de l'interface avec les composantes du système. C'est un concept riche, mais beaucoup plus complexe qui ne sera pas étudié plus avant au collégial.</p>
+<p class="admonition-title">Aller plus loin</p>
+<p>L'utilisation de chaîne de caractères à la dernière étape fera sourciller les puristes. Il serait possible de définir plutôt une classe TypeCaracteristique (qui ne contiendrait qu'une chaîne de caractères, le nom de la caractéristique) pour y faire référence dans le système d'amélioration et éviter les erreurs typographiques.</p>
 </div>
-<h4 id="retroaction">Rétroaction</h4>
-<p>Elle permet aux personnes utilisatrices de suivre les changements dans l'état d'un système, autant pour informer sur des erreurs ou des actions interdites, que pour signaler des succès. Elle doit être fréquente, ciblée et aussi transparente (non bloquante) que possible.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Rétroaction</p>
-<p>Nommez cinq méthodes de rétroaction que vous avez observer dans des logiciels. Identifier parmi ces rétroactions celles qui vont été utiles et pourquoi elles l'ont été.</p>
-</div>
-<h3 id="normes">Normes</h3>
-<p>Plusieurs définitions de normes dans les contrôles sont donnés dans <a href="https://cours-alexandre-ouellet.github.io/normes-interfaces">ce guide</a> <em>À venir</em>.  </p>
-<h2 id="quoi-faire-avec-tous-ces-concepts">Quoi faire avec tous ces concepts ?</h2>
-<p>Trois éléments ont été présentés dans cette section :</p>
-<ul>
-<li>La théorie de l'action de Norman;</li>
-<li>Les paradigmes des interfaces; et</li>
-<li>Les principes de conception</li>
-</ul>
-<p>Lors de la conception d'une interface, on doit permettre à la personne utilisatrice d'accomplir tous les éléments du pont de l'action. De ce fait, on dispose des contrôles (<strong>mécanismes de l'interface</strong>) et des réactions (<strong>affichage de l'interface</strong>). Afin de choisir ces contrôles et réactions, on se base sur un ou plusieurs paradigmes pour leur donner un sens (<strong>interprétation du signal</strong>) et faciliter la projection de la façon d'utiliser le système dans la tête de la personne utilisatrice <strong>spécification du chemin</strong>. Les principes comme l'<strong>accessibilité</strong> et l'<strong>association</strong> définissent comment la <strong>spécification de l'action</strong> s'accomplit concrètement. Les principes comme les <strong>indicateurs</strong>, les <strong>contraintes</strong> et les <strong>rétroactions</strong> sont des composants des interfaces concrets introduits dans le système pour permettre l'<strong>interprétation des signaux</strong> et limiter les <strong>erreurs</strong> qui empêchent la réalisation du <strong>but</strong> initial.</p>
-<!--
-
-# La conception en pratique
-
-Voir le document « Normes de conception d'interface ».
-
----
-
-# Inclusivité et conception universelle
-
-Le principe de conception universelle tire son origine des considérations architecturales, en particulier les rampes d'accès pour fauteuils roulants.
-
-En appliquant ces principes dans la conception des interfaces, on permet à nos interfaces de rejoindre un plus grand nombre de personnes et de les accommoder dans un plus grand nombre de situations.
-
----
-
-## Enjeux visuels
-
-- Taille des caractères
-- Thèmes de couleurs
-- Redondance de l'information (2 codes)
-
-<br/>
-
-
-![](images/7_feux_circulation.png)
-
-![](images/7_slum_1.png)
-
-
-
-## Auditif
-
-- Rendre le son obligatoire seulement si nécessaire
-- Description textuelle des éléments visuels importants
-
-
----
-
-
-## Moteurs et physiologique
-
-- Taille des mains
-- Vitesse de travail
-- Stabilité des mains
-
-
-## Droit à l'erreur
-
-- Système d'annulation
-- Confirmation avant les opérations critiques
-- Confirmation bloquante avant les opérations qu'on ne peut pas annuler
-
-
-
----
-
-
-## Interprétation de l'information
-
-- Niveau de langage et d'éducation
-  - Phrases courtes
-  - Éviter les formulations longues inutiles
-  - Utilisation la redondance des termes
-  - Éviter les syntaxes complexes (reprise d'information distante)
-- Différences culturelles des normes visuelles (couleurs et symboles)
-
-
-
-## Écriture inclusive
-
-- Si la donnée de genre n'est pas pertinente au fonctionnement du système, ne pas la collecter
-- Offrir de multiples choix (champ texte au besoin)
-- Offrir la possibilité de changer l'information (genre et nom)
-- Utiliser une rédaction neutre ou épicène
-
-Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui explique les grandes lignes de l'écriture inclusive.
-
-
----
-
-# Artefacts
-
-
-
-## Diagrammes en fil de fer / Mockup
-- Montrent les principaux contrôles
-- N'inclus aucun élément de mise en forme
-- Utile pour visualiser le « workflow »
-- Souvent joint à la description du cas d'utilisation
-
-
-
-## Prototype cliquable
-
-- Semblable au fil de fer, mais permet de cliquer et naviguer entre les interfaces.
-- Peut inclure des éléments graphiques (couleur, police)
-- Prototype de plus haut niveau, étape suivante => coder le prototype
-- Développez dans un logiciel spécialisé : (bubble, anima...)
-
-
----
--->
-
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Bertram, B. (2023, September 4). Commodore 64. Wikipedia. <a href="https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg">https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg</a> </p>
-<p>Birkinshaw, P. (2023, September 6). Punched card. Wikipedia. <a href="https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg">https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg</a></p>
-<p>Hohho56oy. (2023, July 17). File:windows 95 at first run.png. Wikipedia. <a href="https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png">https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png</a> </p>
-<p>Norman, D. (2013). The Design of Everyday Things: Revised and Expanded Edition. États-Unis: Basic Books.</p>
-<p>Norman, D.A. and Draper, S. (1986) User Centered System Design: New Perspectives on Human-Computer Interaction Lawrence Erlbaum Associates.</p>
-<p>Université de Sherbrooke. (n.d.). Guide de rédaction inclusive de l’Université de Sherbrooke. Sherbrooke. </p>
-<p>Wise, G. B. (1997, January 27). The Psychology of Everyday Actions. Rensselaer Polytechnic Institute. </p>
 
 
 
@@ -1414,7 +1149,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-17</span>
   </span>
 
     
@@ -1444,7 +1179,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../analyse/cu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La méthode des cas d&#39;utilisation">
+          <a href="../conception-objet/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception orientée objet">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1454,20 +1189,20 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
                 Précédent
               </span>
               <div class="md-ellipsis">
-                La méthode des cas d'utilisation
+                Conception orientée objet
               </div>
             </div>
           </a>
         
         
           
-          <a href="../conception-objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception orientée objet">
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Conception orientée objet
+                Méthodes à pointage
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1542,7 +1277,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="../../javascripts/katex.js"></script>
       
