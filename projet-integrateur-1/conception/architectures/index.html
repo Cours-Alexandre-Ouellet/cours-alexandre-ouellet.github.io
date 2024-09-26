@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/cu/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/architectures/">
       
       
-        <link rel="prev" href="../acteurs/">
+        <link rel="prev" href="../exercice1-conception/">
       
       
-        <link rel="next" href="../../conception/ui/">
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>La méthode des cas d'utilisation - Projet intégrateur 1</title>
+        <title>Architectures logicielles - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#la-methode-des-cas-dutilisation" class="md-skip">
+        <a href="#architecture-des-logiciels" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              La méthode des cas d'utilisation
+              Architectures logicielles
             
           </span>
         </div>
@@ -209,13 +209,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../telos/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../analyse/telos/" class="md-tabs__link">
           
   
   Analyse
@@ -229,11 +227,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../conception/ui/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ui/" class="md-tabs__link">
           
   
   Conception
@@ -482,30 +482,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -516,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Analyse
@@ -530,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../telos/" class="md-nav__link">
+      <a href="../../analyse/telos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -551,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acteurs/" class="md-nav__link">
+      <a href="../../analyse/acteurs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -569,30 +564,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    La méthode des cas d'utilisation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../analyse/cu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,125 +576,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-les-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier les cas d'utilisation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier les cas d'utilisation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ne-pas-respecter-les-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ne pas respecter les tests
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#artefacts-des-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Artéfacts des cas d'utilisation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Artéfacts des cas d'utilisation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#liste-des-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Liste des cas d'utilisation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#diagramme-des-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagramme des cas d'utilisation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#description-des-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Description des cas d'utilisation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Description des cas d'utilisation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parties-dun-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parties d'un cas d'utilisation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#trucs-dans-lecriture-des-cas-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-       Trucs dans l'écriture des cas d'utilisation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarit-de-document" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gabarit de document
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -737,20 +593,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -808,25 +661,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -837,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -851,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/ui/" class="md-nav__link">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/conception-objet/" class="md-nav__link">
+      <a href="../conception-objet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -893,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/exercice1-conception/" class="md-nav__link">
+      <a href="../exercice1-conception/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,10 +769,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conception/architectures/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Architectures logicielles
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -923,6 +801,167 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#patrons-de-conception-et-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patrons de conception et architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-place-de-larchitecture-dans-la-conception" class="md-nav__link">
+    <span class="md-ellipsis">
+      La place de l’architecture dans la conception
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quatre-architectures-communes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quatre architectures communes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quatre architectures communes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvc-modele-vue-controleur" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVC : Modèle-vue-contrôleur
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MVC : Modèle-vue-contrôleur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avantages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localisateur-de-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localisateur de services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Localisateur de services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avantages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desavantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Désavantages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-access-object-dao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Access Object (DAO)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Access Object (DAO)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avantages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1078,121 +1117,122 @@
                   
 
 
-<h1 id="la-methode-des-cas-dutilisation">La méthode des cas d'utilisation</h1>
+<h1 id="architecture-des-logiciels">Architecture des logiciels</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>3-4 Production des gabarits contenant des cas d'utilisation ainsi que des diagrammes<br>
-3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
-4-2 Description et explication des cas d'utilisation<br>
-4-4 Compréhension des points importants du dossier de conception<br>
-4-6 Structure d'un document de conception</p>
+<p>3-2 Analyse des données pour concevoir le diagramme de classe <br>
+3-3 Relation entre les différentes classes <br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse <br>
+3-9 Développement du projet en cohérence avec la conception établie <br>
+4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>30 minutes</p>
+<p>120 minutes</p>
 </div>
 </div>
-<h2 id="identifier-les-cas-dutilisation">Identifier les cas d'utilisation</h2>
-<p>La première étape dans une analyse est l'<strong>expression des besoins</strong>. Dans cette étape on vise divers objectifs dont :</p>
+<h2 id="patrons-de-conception-et-architecture">Patrons de conception et architecture</h2>
+<p>Un patron de conception est une <strong>solution réutilisable</strong>, empiriquement validée, pour répondre à un problème dans la conception d’un logiciel <em>(Design pattern)</em>. C’est la conception de l’<strong>organisation</strong> du système (indépendante des problèmes considérés individuellement) et la <strong>structure</strong> pour supporter l’organisation choisie.</p>
+<p>Donc les deux se présente comme des solutions standards à suivre, mais l'une intervient pour résoudre un problème (souvent de gestion du couplage) alors que l'autre sert de ligne directrice dans l'organisation. On ne choisit pas un patron de conception à appliquer, le contexte du développement nous pousse à utiliser un patron, tandis que l'on choisit consciemment et dès le début d'un projet l'architecture à utiliser.</p>
+<h2 id="la-place-de-larchitecture-dans-la-conception">La place de l’architecture dans la conception</h2>
+<p>Là ou la conception des cas d’utilisation en fonctionnalité répond aux besoins du client, la conception de l’architecture répond aux besoins des programmeuses et programmeurs à organiser un système pour être capable de répondre aux besoins du client.</p>
+<p><a class="glightbox" href="../../images/6-design-architecture.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="align" alt="Étapes de la conception" src="../../images/6-design-architecture.png" /></a></p>
+<p>Si l'on revient au manifeste agile présenté précédemment, le 9e principe va comme suit : « Un souci continu de la qualité technique et de bonne conception augmente l'agilité. » L'architecture est l'une des principales pièces sur laquelle asseoir la capacité d'adaptation du système. </p>
+<p>Une bonne architecture logicielle comprend :</p>
+<ul>
+<li>Des mécanismes flexibles pour ajouter des fonctionnalités (stratégie, décorateur, visiteur, composant, état, commande, fabrique)</li>
+<li>Des mécanismes pour limiter la propagation des changements dans le système (adaptateur, façade, observateur)</li>
+<li>Une sémantique d’abstractions pour séparer les types de préoccupations fonctionnelles et non fonctionnelles</li>
+</ul>
+<p>En bref, une architecture augmente la <strong>flexibilité</strong> du système et sa capacité à <strong>s’adapter au changement</strong>.</p>
+<h2 id="quatre-architectures-communes">Quatre architectures communes</h2>
+<h3 id="mvc-modele-vue-controleur">MVC : Modèle-vue-contrôleur</h3>
+<p>L'architecture MVC (<em>MVC : model-view-controller</em>) divise les classes en 3 catégories. Chaque catégorie est associée à un ensemble de responsabilité distinct et l'architecture dicte la nature et la façon dont l'information circule entre les diverses couches. </p>
+<ul>
+<li><strong>Modèle</strong> : représentation des données dans le système. La couche modèle peut effectuer des traitements sur l'intégrité des données ou sur la logique métier. </li>
+<li><strong>Vue</strong> : affichage et saisie des données. La couche vue définie des interfaces desquelles les données ne dépendant pas.</li>
+<li><strong>Contrôleur</strong> : contient la logique applicative et gère les accès aux données par les vues. Tout ce qui ne relève pas directement de la logique métier se trouve dans cette couche. On peut la voir comme le chef d'orchestre du système.</li>
+</ul>
+<p>Il n’y a de changement ou d'indication dans le code source pour utiliser MVC : tout est une question sémantique, de rigueur et de discipline dans l’organisation du code. </p>
+<p><a class="glightbox" href="../../images/6-Architecture-MVC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/6-Architecture-MVC.png" /></a></p>
+<p>À l'appel d'une fonctionnalité dans le système : </p>
 <ol>
-<li>l'identification des cas d'utilisation ou des récits utilisateurs;</li>
-<li>l'identification de besoins non fonctionnels liés à des groupes de personnes utilsatrices (persona); et</li>
-<li>l'identification de critères de validation (qui seront vus dans des sections subséquentes).</li>
+<li>La vue appel le contrôleur associé à la fonctionnalité et lui transmet les données.</li>
+<li>Le contrôleur gère la logique applicative (authentification, validation des données ...).</li>
+<li>Le contrôleur crée les modèles associées aux données (en chargement de la BD ou en initialisant les objets).</li>
+<li>Les modèles appliquent la couche de logique métier sur les données.</li>
+<li>Le contrôleur gère l'enregistrement des données (s'il y a lieu).</li>
+<li>Le contrôleur génère la vue à partir des résultats des traitements.</li>
+<li>La vue s'affiche.</li>
 </ol>
-<p>Pour l'identification des cas d'utilisation, on énumère des <strong>fonctionnalités</strong> que le système doit posséder ou des <strong>actions</strong> que l'on doit pouvoir accomplir avec ce dernier. Pour déterminer si une fonctionnalité ou action constitue un cas d'utilisation (CU), on lui fait subir trois tests : </p>
+<p>On voit clairement dans cet ordre d'opération un cycle : vue <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> contrôleur <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> modèle <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> contrôleur <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span> vue.</p>
+<div class="grid">
+<h4 id="avantages">Avantages</h4>
+<h4 id="limitations">Limitations</h4>
+<div>
 <ul>
-<li><strong>Test du patron</strong> : est-ce que votre patron est content que vous investissiez du temps dans cette tâche ? Ce test rjette bon nombre de cas trop simple comme simplement cocher une case ou remplir un champ. La majorité des CU implique une modification de plusieurs champs ou un utilisation potentielle de plusieurs contrôles.</li>
-<li><strong>Test d'un processus métier élémentaire (PME)</strong> : est-ce le CU est ciblé sur une tâche métier <strong>élémentaire</strong>. Une tâche métier élémentaire est une action pour laquelle on peut observer la réalisation (donc qui exclut les grands énoncés vagues) et se réalise de façon relativement concise et cohérente. Par exemple, «&nbsp;Répondre aux besoins du client&nbsp;» n'est pas un PME, car il s'agit d'un grand énoncé sans résultat toujours observable. L'action de «&nbsp;Gérer le compte d'un client&nbsp;» échoue également le test, car ce n'est pas concis et précis (donc élémentaire), même si toutes les opérations de gestion d'un compte (création, suspension, renouvellement...) produisent un résultat observable. «&nbsp;Effectuer le paiement d'un solde à un compte client&nbsp;» en est un, car c'est observable comme résultat et concis, et ce, même si l'action en elle-même se divise en plus petites actions.</li>
-<li><strong>Test de la taille</strong> : est-ce que votre cas correspond à une opération ? Autrement dit, est-ce que cette action est simple, toujours effectuée en combinaison avec d'autres actions ou représente simplement un cas particulier d'une action plus large. Par exemple «&nbsp;Remplir le prénom&nbsp;» d'un formulaire d'abonnement est une opération, car on l'accomplit toujours en saisissant le formulaire d'abonnement. Il ne s'agit donc pas d'un CU. Par contre, «&nbsp;Payer l'abonnement&nbsp;», même si l'opération s'effectue toujours après avoir saisi le formulaire d'abonnement n'est pas une action simple, donc constitue un cas à part entière. </li>
+<li>Peut s’utiliser dans une variété de systèmes.</li>
+<li>Permet de séparer les responsabilités.</li>
+<li>Permet de changer de plateforme (vue) avec peu de réusinage.</li>
+<li>Facilite les tests unitaires ou d’intégration en séparant les traitements.</li>
+<li>Limitations de l’effet d’ondes (<em>ripple effect</em>) dû aux modifications.</li>
 </ul>
-<div class="admonition extra">
-<p class="admonition-title">Variante du test PME</p>
-<p>Une autre façon de mener le test du PME (méthode plus longue) est d'écrire la description détaillée d'un cas et de vérifier si le scénario principal s'applique à tous les appels du cas d'utilisation. Si la réponse est non, votre opération n'est pas élémentaire. Vous pouvez retravailler la description principale pour répondre oui et après appliquer le test de la taille (il y a des chances que le cas soit rendu trop petit).</p>
-<p>Par exemple, si dans mon cas « Gérer les comptes » on décrit en même temps l'ajout et la suppression, il y a de fortes chances que le scénario principal soit vide! C'est un signe que ces deux opérations n'ont rien en commun et devraient être deux cas distincts. </p>
 </div>
-<h3 id="ne-pas-respecter-les-tests">Ne pas respecter les tests</h3>
-<p>Il arrive qu'il soit pertinent de faire un CU qui ne respecte pas les tests. Cette décision doit s'appuyer sur des éléments raisonnables («&nbsp;c'est trop long, ça ne me tente pas, je manque de temps&nbsp;» ne sont pas des éléments raisonnables).</p>
-<p>Souvent, on utilise comme une raison la possibilité de réutiliser une opération pour justifier des CU qui seraient autrement trop petits. Il faut que la réutilisation soit évidente et qu'elle soit employée (autrement vous allez embourber votre projet de CU trop petits). Le piège dans ce raisonnement est d'isolé une action dans un CU au cas pour pouvoir la réutiliser, mais la réutiliser qu'une seule fois... </p>
-<h2 id="artefacts-des-cas-dutilisation">Artéfacts des cas d'utilisation</h2>
-<p>Les cas d'utilisation sont l'une des techniques les plus utilisées pour exprimer des besoins logiciels. Plusieurs méthodes pour les décrire ont été proposées, certaines plus visuelles, d'autres plus textuelles. Ce qu'il faut retenir c'est que la <strong>description textuelle a toujours plus d'utilité qu'un diagramme</strong>. C'est donc là que l'effort principal doit être mis. Tous les éléments présents sur les diagrammes devraient se retrouver dans la description textuelle. Les diagrammes appuient les textes en synthétisant des informations détaillées sur une seule image; ils appuient le texte et non l'inverse.</p>
-<h3 id="liste-des-cas-dutilisation">Liste des cas d'utilisation</h3>
-<p>La liste des cas, comme son nom l'indique liste tous les CU du système. On regroupe les cas par «&nbsp;proximité&nbsp;» de fonctionnalité afin d'éviter d'avoir une liste désorganisée. Également, pour chaque CU, on lui assigne un code qui peut être aussi simple qu'un numéro séquentiel ou être un système de référencement plus complexe. Les entités actrices intervenant dans le CU sont aussi indiquées.</p>
-<h3 id="diagramme-des-cas-dutilisation">Diagramme des cas d'utilisation</h3>
-<p>Le diagramme des cas d'utilisation permet de représenter graphiquement les CU et les entités actrices, ainsi que les relations qui les lient. On peut, si le système comporte de nombreux CU, limiter la représentation graphique aux CU englobants. </p>
-<h3 id="description-des-cas-dutilisation">Description des cas d'utilisation</h3>
+<div>
 <ul>
-<li>
-<p><strong>Description abrégée</strong> : présente sous la forme d'un paragraphe de texte détaillant uniquement le scénario principal ainsi que les informations d'en-tête. Elle peut être accompagnée ou non d'un prototype d'écran.
-Ce type de description se prête bien à des cas simples et au début de l'analyse. Un cas peut être décrit sommairement dans l'un des premières itérations avant d'être étendu à une description détaillée dans un cas subséquent. </p>
-</li>
-<li>
-<p><strong>Description détaillée</strong> : présente tous les aspects du CU par étapes détaillées. Cette description est plus longue à faire, mais à l'avantage d'être exhaustive et représentative du flux de travail. Si la description d'un cas détaillé n'inclut aucune nouvelle extention ou exception et que son scénario nominal est bref, probablement qu'une description abrégée serait plus approprié.</p>
-</li>
+<li>Ajoute un niveau d’abstraction (complexifie l’organisation du code).</li>
+<li>Augmente le risque de fort couplage (nécessite souvent des patrons comme <strong>Médiateur</strong> ou <strong>Façade</strong>).</li>
+<li>La décomposition en 3 catégories peut entraîner une dispersion ou duplication du code.</li>
+<li>Peut être complexe à synchroniser avec des applications qui réagissent en temps réel.</li>
 </ul>
-<h4 id="parties-dun-cas-dutilisation">Parties d'un cas d'utilisation</h4>
-<dl>
-<dt><code>information d'en-tête</code></dt>
-<dd>Présente les informations principales du cas d'utilisation dont :</dd>
-</dl>
-<ul>
-<li>Son nom</li>
-<li>Son code</li>
-<li>La version dans laquelle il a ét introduit dans les spécifications</li>
-<li>Le nom de la personne autrice de la description </li>
-</ul>
-<dl>
-<dt><code>pré et post conditions</code></dt>
-<dd>Les préconditions sont des conditions vérifiées lors de l'exécution du CU. Aucun des éléments présentés dans les préconditions devrait se retrouver dans la description. Pour les postconditions, il s'agit de conditions vérifiées lors de la conclusion avec succès du scénario nominal.</dd>
-<dt><code>entité actrice principale</code></dt>
-<dd>L'entité actrice principale est l'entité (ou les entités) actrice qui utilise le CU. Il peut s'agir d'entités primaires ou secondaires.</dd>
-<dt><code>déclencheur</code></dt>
-<dd>Le déclencher correspond à une opération qui permet l'accès ou le lancement du CU. On ne répète pas l'opération dans le scénario nominal. </dd>
-<dt><code>description abrégée (uniquement pour les cas abrégés)</code></dt>
-<dd>Présente en un ou deux paragraphes le fonctionnement du CU sous <strong>forme d'un texte continu</strong>. Ce genre de description présente uniquement le scénario de succès et certaines erreurs majeures. Si les erreurs sont nombreuses ou demandent une gestion avancée, on préfère utilier la description longue. </dd>
-<dt><code>scénario nominal (uniquement pour les cas détaillés)</code></dt>
-<dd>C'est le scénario de base, souvent le plus simple, et celui qui se termine par un succès. Toutes ses étapes doivent être exécutées. Pour chaque étape, on identifie les actions de l'entité actrice et les réponses du système. On peut utiliser un tableau ou une liste pour ce faire. Dans tous les cas, on utilise une syntaxe de la forme : [ENTITÉ] + [VERBE D'ACTION] + [ACTION].</dd>
-<dt><code>scénario d'exception (uniquement pour les cas détaillés)</code></dt>
-<dd>
-<p>Ce sont les erreurs qui peuvent survenir ainsi que la façon d'y répondre. Pour chaque erreur, on lui assigne un code basé sur l'étape à laquelle l'erreur peut survenir. Si plusieurs erreurs peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'erreur peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape. </p>
-<p>On décrit ensuite de façon détaillée (souvent en liste) les étapes pour ramener le système dans un état cohérent. Si l'erreur interrompt l'exécution du CU, il faut le préciser clairement.</p>
-</dd>
-<dt><code>scénario d'extension (uniquement pour les cas détaillés)</code></dt>
-<dd>
-<p>Ce sont les étapes facultatives ou alternatives à celles du scénario nominal. Il n'est pas nécessaire de les exécuter pour que le cas s ecomplète avec un succès. Pour chaque extention, on lui assigne un code basé sur l'étape à laquelle l'extension peut s'exécuter. Si plusieurs extensions peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'extension peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape.  On décrit ensuite de façon détaillée (souvent en liste) les étapes pour accomplir l'extention. </p>
-<p>On considère que le scénario nominal continu ensuite avec la prochaine étape. Si ce n'est pas le cas, il faut le préciser clairement. </p>
-</dd>
-<dt><code>spécification non fonctionnel (section optionnelle)</code></dt>
-<dd>On indique les éléments à tenir compte dans la conception du cas, mais qui ne correspondent pas à des étapes du fil d'exécution du système.  On y trouve des particularités sur l'interface du système, des contraintes de temps d'exécution ou de journalisation. Tout autre spécification non fonctionnelle peut s'y retrouver.</dd>
-<dt><code>diagramme de séquence système (section optionnelle)</code></dt>
-<dd>Si le cas présente une structure complexe, on peut ajouter un diagramme de séquence système basé sur le scénario nominal et les extensions. On ne fait pas de diagramme s'il y a peu ou aucune extension ou que le diagramme à l'air d'une échelle. Il faut aussi se souvenir qu'un diagramme demande d'être mis à jour lorsque les spcéfications évoluent.</dd>
-<dt><code>diagramme d'état-transition (section optionnelle)</code></dt>
-<dd>Si le cas présente une structure complexe où l'état d'un objet change selon plusieurs conditions, on peut ajouter un diagramme d'états-transitions pour modéliser ces transition. C'est le genre de diagramme qui s'inclut bien dans un cas englobant. Si les changements d'états sont peu nombreux ou se font selon des conditions simples, il n'est pas nécessaire d'inclure ce diagramme. Il faut aussi se souvenir qu'un diagramme demande d'être mis à jour lorsque les spcéfications évoluent.</dd>
-<dt><code>prototype d'écran ou diagramme en fil de fer</code></dt>
-<dd>Le prorotype d'écran présente les contrôles et le fonctionnement de l'interface (lien entre les boutons et les rétroactions). On n'inclut pas d'élément de mise en forme dans ces prototypes, on se concentre sur l'utilisabilité de l'interface. Il seront décrits en détail dans la section sur les <a href="">interfaces utilisateurs</a>.</dd>
-</dl>
-<hr />
-<div class="admonition ex-projet">
-<p class="admonition-title">Le document d'analyse du système de suivi de projets</p>
-<p>L'exemple <a href="../../documents/Exemple%20dossier%20analyse%20et%20conception.pdf">dossier d'analyse et conception</a> contient des situations où sont utilisés les divers artefacts mentionnés dans cette section. </p>
-<p><strong>Liste des cas d'utilisation</strong> : pages 4 et 5<br>
-<strong>Diagramme des cas d'utilisation</strong> : page 7<br>
-<strong>Description sommaire d'un cas englobant</strong> : page 8<br>
-<strong>Description d'un cas détaillé</strong> : pages 9 et 10 ainsi que pages 14 à 16<br>
-<strong>Description sommaire</strong> : page 12<br> 
-<strong>Diagramme d'état-transition</strong> : page 8</p>
 </div>
-<h2 id="trucs-dans-lecriture-des-cas-dutilisation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27Z"/></svg></span> Trucs dans l'écriture des cas d'utilisation</h2>
-<dl>
-<dt><code>Ne pas copier-coller d'information</code></dt>
-<dd>Le copier-coller d'information entraîne la duplication de l'information et il devient nécessaire de dupliquer chacune des modifications qui occurent. Comme il est impossible de se souvenir de toutes les duplications qui ont été faites, on préfère faire référence en indiquant de façon souligné <ins>le nom du CU</ins>. Cela évite d'avoir plusieurs versions de la même spécifications qui se contredisent entre elles. </dd>
-<dt><code>Éviter de « sauver des étapes »</code></dt>
-<dd>Abréger des CU long en évitant d'écrire des étapes simples peut mener à les oublier (par exemple une validation avant de quitter une page). Donc même si certaines étapes semblent superflues, il faut se souvernir que les descriptions peuvent être consultées des mois après leur écriture. Donc une spécification qui parait superflue aujourd'hui peut rapidement nous sortir de la tête et devenir un oubli quelques semaines plus tard... </dd>
-<dt><code>Rassembler des spécifications ou faire des cas englobant</code></dt>
-<dd>Cette technique d'écriture permet de contourner le problème des copier-coller et des références trop nombreuses. En incluant une section de «&nbsp;spécification non fonctionnelles&nbsp;» globale et en déplaçant certains éléments descriptifs vers un cas englobant, cela simplifie chacun des sous-cas et réduit les redondences.</dd>
-</dl>
-<h2 id="gabarit-de-document">Gabarit de document</h2>
-<p><a href="../../documents/Analyse%20et%20conception%20-%20Gabarit.docx">Gabarit de document d'analyse et de conception</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1S69.2 242.2 73 254.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg></span></p>
+</div>
+<h3 id="localisateur-de-services">Localisateur de services</h3>
+<p>Il regroupe les instances de plusieurs classes qui agissent en support d’autres classes (comme des utilitaires). Des exemples de classes utilitaires sont des classes qui effectuent des calculs (classes de statistiques), qui journalisent des données (logging), qui manipulent des fichiers de données ou qui permettent la connexion à une base de données... </p>
+<p>Le localisateur furnit une interface unique pour accéder à des instances de ces classes sans devoir toujours utiliser le patron <strong>Singleton</strong> ou de créer inutilement plusieurs copies de l’objet. Lorsque combiné adroitement avec l’<strong>architecture MVC</strong>, ce patron permet d’éliminer complètement l’utilisation de classes statiques ou du patron <strong>Singleton</strong>.</p>
+<p><a class="glightbox" href="../../images/6-Architecture-Services.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center" src="../../images/6-Architecture-Services.png" /></a></p>
+<div class="grid">
+<div>
+<h4 id="avantages_1">Avantages</h4>
+<ul>
+<li>Évite le recours aux constructions statiques qui peuvent être accédées de partout dans le programme (renforce l’utilisation de la programmation-objet).</li>
+<li>Réduit le coût d’initialisation à répétition des mêmes classes.</li>
+<li>Permet aussi de gérer les dépendances entre les services et d’encapsuler ces préoccupations dans une partie du système.</li>
+</ul>
+</div>
+<div>
+<h4 id="desavantages">Désavantages</h4>
+<ul>
+<li>Peut être complexe à passer entre les vues ou il demande lui-même d’être un <strong>Singleton</strong> (<em>Un Singleton pour les gouverner tous... </em>).</li>
+<li>La réutilisation d’instances peut entraîner des effets de bord</li>
+<li>La réinitialisation des instances ou la programmation «sans-état» peut impliquer un effort supplémentaire.</li>
+</ul>
+</div>
+</div>
+<h3 id="data-access-object-dao">Data Access Object (DAO)</h3>
+<p>Ce patron isole la gestion du stockage des données en mémoire secondaire (système de fichier, base de données) du reste du système. Facilite la représentation des données dans plusieurs formats.</p>
+<p>Représente une implémentation des patrons <strong>Façade</strong>,  <strong>Adaptateur</strong> et <strong>Fabrique</strong> simultanément pour répondre aux enjeux de stockage des données.</p>
+<p><a class="glightbox" href="../../images/6-Architecture-DAO.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/6-Architecture-DAO.png" /></a></p>
+<div class="grid">
+<div>
+<h4 id="avantages_2">Avantages</h4>
+<ul>
+<li>Interface robuste aux changements de base de données (environnement dev / prod)</li>
+<li>Isole la manipulation des données à une partie du système</li>
+</ul>
+</div>
+<div>
+<h4 id="limitations_1">Limitations</h4>
+<ul>
+<li>Surcharge de traitement comme le DAO risque de travailler sur tout l’objet (lenteur)</li>
+<li>Danger de répétitions de code</li>
+<li>Peut être difficile de charger des objets de façon optimale (risque d’opérations inutiles)</li>
+</ul>
+</div>
+</div>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
+<p>Beck, K., et al. (2001) The Agile Manifesto. Agile Alliance. http://agilemanifesto.org/</p>
 
 
 
@@ -1213,7 +1253,7 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-26</span>
   </span>
 
     
@@ -1243,7 +1283,7 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../acteurs/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Entitée actrices, descriptions et persona">
+          <a href="../exercice1-conception/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Exercice 1 - Les trombones">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1253,20 +1293,20 @@ Ce type de description se prête bien à des cas simples et au début de l'analy
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Entitée actrices, descriptions et persona
+                Exercice 1 - Les trombones
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../conception/ui/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Interfaces utilisateurs">
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Interfaces utilisateurs
+                Méthodes à pointage
               </div>
             </div>
             <div class="md-footer__button md-icon">
