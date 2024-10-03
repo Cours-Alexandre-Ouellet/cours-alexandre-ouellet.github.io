@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/camera/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/classification/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/jeu-simulation/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/bezier/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/deplacements/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/rotations/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/vecteurs_3d/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/coroutines/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/evenements/</loc>
-         <lastmod>2024-10-01</lastmod>
+         <lastmod>2024-10-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

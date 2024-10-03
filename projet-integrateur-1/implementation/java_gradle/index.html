@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/intro/gabarits/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/java_gradle/">
       
       
-        <link rel="prev" href="../redaction_technique/">
+        <link rel="prev" href="../../conception/architectures/">
       
       
-        <link rel="next" href="../../analyse/telos/">
+        <link rel="next" href="../versionnage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Gabarits et exemple - Projet intégrateur 1</title>
+        <title>Java et Gradle - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gabarits-et-exemple" class="md-skip">
+        <a href="#installation-et-configuration-de-java-et-gradle" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gabarits et exemple
+              Java et Gradle
             
           </span>
         </div>
@@ -191,13 +191,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../genie_logiciel/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
           
   
   Introduction et généralités
@@ -247,11 +245,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../implementation/java_gradle/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Implémentation et versionnage
@@ -352,30 +352,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -386,7 +381,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Introduction et généralités
@@ -400,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../genie_logiciel/" class="md-nav__link">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../approche/" class="md-nav__link">
+      <a href="../../intro/approche/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redaction_technique/" class="md-nav__link">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,30 +455,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Gabarits et exemple
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intro/gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,68 +467,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gabarits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gabarits
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exemples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#document-complet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Document complet
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analyse" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analyse
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -880,25 +793,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -909,7 +827,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Implémentation et versionnage
@@ -920,10 +838,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../implementation/java_gradle/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Java et Gradle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -932,6 +870,140 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-langage-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le langage Java
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-de-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma de java
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loutil-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      L'outil Gradle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma Gradle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-bibliotheque-javafx" class="md-nav__link">
+    <span class="md-ellipsis">
+      La bibliothèque JavaFX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-bibliotheque-junit" class="md-nav__link">
+    <span class="md-ellipsis">
+      La bibliothèque JUnit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#travailler-avec-java-gradle-et-javafx-dans-intellij" class="md-nav__link">
+    <span class="md-ellipsis">
+      Travailler avec Java, Gradle et JavaFX dans IntelliJ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Travailler avec Java, Gradle et JavaFX dans IntelliJ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-menu-des-taches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le menu des tâches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changer-la-version-de-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changer la version de Gradle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-dependance-au-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter une dépendance au projet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executer-un-projet-avec-la-configuration-de-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exécuter un projet avec la configuration de Gradle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecter-la-console-dintellij-pour-la-saisie-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecter la console d'IntelliJ pour la saisie de données.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -944,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/versionnage/" class="md-nav__link">
+      <a href="../versionnage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/git_avance.md" class="md-nav__link">
+      <a href="../git_avance.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,25 +1223,160 @@
                   
 
 
-<h1 id="gabarits-et-exemple">Gabarits et exemple</h1>
-<p>Cette page rassemble les exemples et les gabarits présentés dans différentes sections</p>
-<h2 id="gabarits">Gabarits</h2>
-<ul>
-<li><a href="../../documents/TELOS%20-%20Gabarit.docx">Étude de faisabilité - TELOS</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1S69.2 242.2 73 254.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg></span></li>
-<li><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Méthode par point - Poker</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"/></svg></span></li>
-<li><a href="../../documents/Analyse%20et%20conception%20-%20Gabarit.docx">Document d'analyse et de conception</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1S69.2 242.2 73 254.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg></span></li>
-</ul>
-<h2 id="exemples">Exemples</h2>
-<h3 id="document-complet">Document complet</h3>
-<ul>
-<li><a href="../../documents/Exemple%20dossier%20analyse%20et%20conception.pdf">Dossier d'analyse pour le suivi de projets</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></li>
-</ul>
-<h3 id="analyse">Analyse</h3>
-<ul>
-<li><a href="../../documents/%C3%89tude%20de%20faisabilit%C3%A9%20-%20Syst%C3%A8me%20de%20suivi%20de%20projet.pdf">Exemple d'étude de faisabilité TELOS + 5W</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></li>
-<li><a href="../../documents/Exemple%20persona%20long.pdf">Exemple de persona long</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></li>
-<li><a href="../documents/:fontawesome-regular-file-pdf:">Exemple de persona sommaire</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16zm112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span></li>
-</ul>
+<h1 id="installation-et-configuration-de-java-et-gradle">Installation et configuration de Java et Gradle</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p>3-3 Sélection et utilisation des technologies selon le projet et ses contraintes<br>
+3-9 Développement du projet en cohérence avec la conception établie</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>30 minutes</p>
+</div>
+</div>
+<h2 id="le-langage-java">Le langage Java</h2>
+<p>Java est un langage objet développé par la compagnie <em>Oracle</em>. La première version de Java a été déployé pour la première foir en 1995. Après des débuts difficiles, le langage est aujourd'hui utiliser dans une grande variété d'application, allant des systèmes automobiles, des logiciels de gestion au développement de serveurs ou de jeu vidéo (<em>Minecraft</em>, jeux le plus vendu de tous les temps depuis mai 2020, est développé en java). Il a eu une forte influence sur les langages C#, JavaScript, Python et Kotlin.</p>
+<p>Java fonctionne avec la <em>Java Virtual Machine (JVM)</em>. L'installation d'une JVM particulière au système d'exploitation permet l'exécution du même code source dans plusieurs environnement. La JVM est inclue dans l'installation du <em>Java Runtime Environment (JRE)</em>, que chaque utilsateur d'un programme Java doit installer. Cette installation contient un programme appelé « java.exe » qui exécute un programme écrit en Java. Pour développer en Java, en plus de la JRE, il faut installer un <em>Java Development Kit (JDK)</em> qui permet, entres autres, la compilation en java avec le programme « javac.exe ».</p>
+<p>Notons que le langage Kotlin est entièrement basé en java et qu'il est possible d'exécuter du code Java dans un programme Kotlin, car celui-ci s'exécute aussi dans la JVM.</p>
+<h2 id="schema-de-java">Schéma de java</h2>
+<figure>
+    <a class="glightbox" href="../../images/java.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/java.png" /></a>
+</figure>
+<h2 id="loutil-gradle">L'outil <em>Gradle</em></h2>
+<p>Travailler avec Java demande de gérer plusieurs dépendances et tâches dans l'exécution d'un projet. Au fil des ans, plusieurs outils pour assurer cette gestion ont été développés dont <em>Apache Ant</em> et <em>Apache Maven</em>. Ces outils sont remplacés de plus en plus par le gestionnaire <strong><em>Gradle</em></strong>. <em>Gradle</em> utilise un fichier de configuration pour déterminer les dépendances à installer et peut paramètrer les commandes de compilation d'un projet.</p>
+<h2 id="schema-gradle">Schéma Gradle</h2>
+<figure>
+    <a class="glightbox" href="../../images/gradle.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/gradle.png" /></a>
+</figure>
+<h2 id="la-bibliotheque-javafx">La bibliothèque <em>JavaFX</em></h2>
+<p>Java a connu plusieurs bibliothèques majeures pour le développement d'interfaces utilisateurs bureau dont <em>AWT</em>, <em>Swing</em> et <em>JavaFX</em>. Le standard actuel en Java est l'utilisation de <em>JavaFX</em>. Cette bibliothèque fera l'objet d'une page d'information dédiée. Cependant, son intégration est plus simple si, dès le départ, on spécifie son inclusion dans le projet.</p>
+<h2 id="la-bibliotheque-junit">La bibliothèque <em>JUnit</em></h2>
+<p>C'est la bibliothèques qui sert à exécuter des tests unitaires en Java. La version 5 <em>JUnit5</em> intègre souvent un sous-module appelé <em>Jupiter</em> qui redéfinit la façon d'écrire les tests par rapport aux versions antérieures de <em>JUnit</em>. On voit souvent aujourd'hui l'appelation <em>Jupiter</em> lorsqu'on traite avec <em>JUnit5</em>.</p>
+<h2 id="travailler-avec-java-gradle-et-javafx-dans-intellij">Travailler avec Java, <em>Gradle</em> et JavaFX dans <em>IntelliJ</em></h2>
+<p>L'environnement <em>IntelliJ - Community Edition</em> développé par <em>JetBrains</em> intègre le travail avec <em>Gradle</em>. Il suffit de bien préciser les dépendances à la création du projet afin d'intégrer <em>Gradle</em>, <em>JavaFX</em> et <em>JUnit5</em> dans un projet. </p>
+<div class="admonition info">
+<p class="admonition-title">Alternative à IntelliJ</p>
+<p>L'environnement Eclipse (projet libre) est aussi un IDE très populaire pour Java.</p>
+</div>
+<figure>
+<a class="glightbox" href="../../images/creation_projet_intellij.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/creation_projet_intellij.png" /></a>
+</figure>
+<p><strong>Options dans l'interface de création de projet</strong></p>
+<ol>
+<li><em>New project</em> : permet de créer un projet Java vide.</li>
+<li><em>JavaFX</em> : permet de créer un projet avec une interface graphique de JavaFX.</li>
+<li><em>Nom et emplacement du projet</em> : choisi où le projet sera créé.</li>
+<li><em>Create Git repository</em> : exécute la commande <code>git init</code> dans le répertoire. <strong>Décochez cette option</strong>.</li>
+<li><em>Language</em> : sélection du langage du projet. <strong>Choisir Java</strong>.</li>
+<li><em>Build system</em> : sélection du système de compilation. <strong>Choisir Gradle</strong>.</li>
+<li><em>JDK</em> : sélection de la version du JDK. <strong>Utiliser openjdk-23</strong>, il peut être nécessaire de d'abord l'installer avec l'option dans ce menu.</li>
+<li><em>Gradle DSL</em> : langage spécifique pour <em>Gradle</em>. <strong>Utiliser Kotlin</strong>.</li>
+<li><em>Gradle version</em> : version de gradle. <strong>Sélectionner 8.10 si possible, sinon voir la section changer la version de Gradle</strong>.</li>
+<li><em>GroupId et ArtefactId</em> : nom du groupe et de l'artefact. <strong>Le format est [domaine de niveau 1].[nom de la compagnie].[nom du projet]</strong>. Les deux premiers blocs sont le <em>GroupId</em>, le dernier l'<em>ArtefactId</em>.</li>
+</ol>
+<h3 id="le-menu-des-taches">Le menu des tâches</h3>
+<p>Pour lancer des tâches de <em>Gradle</em>, il faut afficher son menu qui contient toutes les tâches définies. Voici une présentation des principales tâches.</p>
+<figure>
+    <a class="glightbox" href="../../images/gradle-menu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/gradle-menu.png" width="200" /></a>
+    <figcaption markdown>Le menu des tâches de <em>Gradle</em></figcaption> 
+</figure>
+<ol>
+<li><strong>application &gt; run</strong> : permet de lancer le programme. <em>Nécessite le plugin application</em>.</li>
+<li><strong>build &gt; build</strong> : construit le programme et ses dépendances. Les erreurs de compilation seront levées par <strong>build</strong>.</li>
+<li><strong>documentation &gt; javadoc</strong> : génère la <em>javadoc</em> sous forme de site web à partir des commentaires.</li>
+<li><strong>verification &gt; test</strong> : exécute les tests unitaires avec le module de test (<em>JUnit</em>). </li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Ouvrir le menu Gradle</p>
+<p>Pour accéder au menu on utilise le chemin suivant :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>View &gt; Tool Windows &gt; Gradle
+</span></code></pre></div>
+</div>
+<h3 id="changer-la-version-de-gradle">Changer la version de <em>Gradle</em></h3>
+<p>Contrairement au <em>JDK</em>, on ne peut installer de nouvelle version de <em>Gradle</em> au lancement du projet. On peut travailler avec une version globale de <em>Gradle</em> (installée sur le disque) ou avec un <em>wrapper</em>. Pour la version globale, il faut télécharger et installer manuellement <em>Gradle</em> dans la version souhaitée. Pour le <em>wrapper</em>, qui est la façon par défaut dans <em>IntelliJ</em>, il faut se rendre, <strong>après la création du projet</strong> dans le fichier suivant :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[nom du projet] &gt; gradle &gt; wrapper &gt; gradle-wrapper.properties
+</span></code></pre></div>
+<p>Le fichier contient le code suivant. La ligne où l'on indique version de <em>Gradle</em> est surlignée, il suffit de remplacer le nombre dans le nom de l'archive par la version souhaitée et l'installation démarre seule.</p>
+<div class="language-properties highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fichier de propriétés de Gradle</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">distributionBase</span><span class="o">=</span><span class="s">GRADLE_USER_HOME</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="na">distributionPath</span><span class="o">=</span><span class="s">wrapper/dists</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll"><span class="na">distributionUrl</span><span class="o">=</span><span class="s">https</span><span class="se">\:</span><span class="s">//services.gradle.org/distributions/gradle-8.10-bin.zip</span>
+</span></span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="na">zipStoreBase</span><span class="o">=</span><span class="s">GRADLE_USER_HOME</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="na">zipStorePath</span><span class="o">=</span><span class="s">wrapper/dists</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="ajouter-une-dependance-au-projet">Ajouter une dépendance au projet</h3>
+<p>Pour modifier la configuration du projet <em>Gradle</em>, il faut se rendre le fichier suivant :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[nom du projet] &gt; build.gradle.kts
+</span></code></pre></div>
+<p>Dans le bloc <em>dependencies</em>, on ajoute une instruction <em>implementation</em> avec le nom de l'artefact à inclure. Pour les bibliothèques distribués en ligne, elles sont habituellement téléchargées du répertoire de <a href="https://mvnrepository.com/">Maven</a>.</p>
+<figure>
+    <a class="glightbox" href="../../images/maven-repertoire.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/maven-repertoire.png" /></a>
+    <figcaption markdown>Répertoire <em>Maven</em> pour MySQLConnector - J</figcaption> 
+</figure>
+<p>Su la page du projet, on sélectionne l'onglet <strong>Gradle (Kotlin)</strong> et on copie-colle la ligne dans le bloc <em>dependencies</em></p>
+<figure>
+    <a class="glightbox" href="../../images/gradle-ligne.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/gradle-ligne.png" /></a>
+    <figcaption markdown>Ligne à inclure dans le fichier <em>Gradle</em></figcaption> 
+</figure>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification du bloc dependencies</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>dependencies {
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>    // Pour les tests (créé avec le projet)
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>    testImplementation(platform(&quot;org.junit:junit-bom:5.9.1&quot;))
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>    testImplementation(&quot;org.junit.jupiter:junit-jupiter&quot;)
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>    // Ma dépendance ajoutée
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="hll">    implementation(&quot;com.mysql:mysql-connector-j:8.0.33&quot;)
+</span></span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a>}
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Utiliser Google</p>
+<p>Souvent la recherche "nom de la dépendance" + "Gradle" vous amène directement à cet endroit.</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Attendre le téléchargement</p>
+<p>Chaque fois que l'on change le fichier de <em>build</em> de <em>Gradle</em>, l'outil déclenche une mise à jour et des téléchargements. Il se peut que le contenu ne soit pas immédiatement accessible. Il faut observer la barre d'état en bas à droite de l'interface pour savoir si le système est en téléchargement ou non. </p>
+</div>
+<h3 id="executer-un-projet-avec-la-configuration-de-gradle">Exécuter un projet avec la configuration de <em>Gradle</em></h3>
+<p>Dans les tâches <em>Gradle</em>, par défaut on ne peut exécuter un projet. Utiliser la configuration par défaut d'<em>IntelliJ</em> ne permettra pas de charger les dépendances et provoquera des erreurs au premier lancement. On doit donc ajouter un <em>plugin</em> dans <em>Gradle</em>. Le lignes surlignées doivent être ajouté au fichier <strong>build.gradle.kts</strong></p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajout du plugin application</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span>
+<span class="normal"><a href="#__codelineno-5-7">7</a></span>
+<span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>plugins {
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    id(&quot;java&quot;)
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="hll">    application
+</span></span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>}
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="hll">application {
+</span></span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="hll">    mainClass = &quot;edu.cegepvicto.application.Application&quot;
+</span></span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="hll">}
+</span></span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">La première exécution</p>
+<p>Seule la première exécution demande d'accéder au menu <em>Gradle</em> et au <em>plugin application</em> pour lancer le système. Au lancement, <em>IntelliJ</em> enregistre la configuration et permet de lancer avec le lanceur intégrer pour les exécutions subséquentes. </p>
+<p>En cas de problèmes, il faut toutefois revenir au menu <em>Gradle</em> pour relancer correctement. </p>
+</div>
+<h3 id="connecter-la-console-dintellij-pour-la-saisie-de-donnees">Connecter la console d'<em>IntelliJ</em> pour la saisie de données.</h3>
+<p>Pour que les projets démarrés dans un tâche <em>Gradle</em> reconnaissent la console d'<em>IntelliJ</em> pour la saisie dans la console, il faut ajouter les lignes suivantes dans le fichier <strong>build.gradle.kts</strong>.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Connexion du System.in comme entrée standard</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>tasks.named&lt;JavaExec&gt;(&quot;run&quot;) {
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>    standardInput = System.`in`
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>}
+</span></code></pre></div></td></tr></table></div>
 
 
 
@@ -1190,7 +1397,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-02</span>
   </span>
 
     
@@ -1220,7 +1427,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../redaction_technique/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Éléments de rédaction technique">
+          <a href="../../conception/architectures/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Architectures logicielles">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1230,20 +1437,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Éléments de rédaction technique
+                Architectures logicielles
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../analyse/telos/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Étude de faisabilité">
+          <a href="../versionnage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Versionnage sémantique">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Étude de faisabilité
+                Versionnage sémantique
               </div>
             </div>
             <div class="md-footer__button md-icon">
