@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/gitflow/">
       
       
-        <link rel="prev" href="../../analyse/cu/">
+        <link rel="prev" href="../versionnage/">
       
       
-        <link rel="next" href="../conception-objet/">
+        <link rel="next" href="../../gestion/methodes_pointage/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Interfaces utilisateurs - Projet intégrateur 1</title>
+        <title>GitFlow - Projet intégrateur 1</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#conception-de-linterface-utilisateur" class="md-skip">
+        <a href="#la-philosophie-gitflow-pour-organiser-un-depot" class="md-skip">
           Aller au contenu
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interfaces utilisateurs
+              GitFlow
             
           </span>
         </div>
@@ -227,13 +227,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../conception/ui/" class="md-tabs__link">
           
   
   Conception
@@ -247,11 +245,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../implementation/java_gradle/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../java_gradle/" class="md-tabs__link">
           
   
   Implémentation et versionnage
@@ -662,30 +662,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -696,7 +691,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Conception
@@ -707,30 +702,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Interfaces utilisateurs
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../conception/ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,209 +714,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#interactions-humain-machine-ihm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interactions humain-machine (IHM)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pourquoi-prendre-le-temps-de-penser-aux-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pourquoi prendre le temps de penser aux interfaces ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modele-theorique-de-laction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modèle théorique de l'action
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Modèle théorique de l'action">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#les-deux-ponts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les deux ponts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les deux ponts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pont-de-levaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pont de l'évaluation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-paradigmes-de-conception-dinterface" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 paradigmes de conception d'interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3 paradigmes de conception d'interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quel-paradigme-choisir" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quel paradigme choisir ?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#principes-et-normes-de-conception" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes et normes de conception
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes et normes de conception">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#principes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#accessibilite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessibilité
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#indicateur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indicateur
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contrainte" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contrainte
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#association-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Association (mapping)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retroaction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rétroaction
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#normes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Normes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quoi-faire-avec-tous-ces-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quoi faire avec tous ces concepts ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -954,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conception-objet/" class="md-nav__link">
+      <a href="../../conception/conception-objet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -975,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercice1-conception/" class="md-nav__link">
+      <a href="../../conception/exercice1-conception/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architectures/" class="md-nav__link">
+      <a href="../../conception/architectures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,25 +793,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1050,7 +827,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Implémentation et versionnage
@@ -1064,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/java_gradle/" class="md-nav__link">
+      <a href="../java_gradle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/versionnage/" class="md-nav__link">
+      <a href="../versionnage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1106,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/git_avance.md" class="md-nav__link">
+      <a href="../git_avance.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1124,10 +901,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../implementation/gitflow/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GitFlow
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1136,6 +933,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1292,259 +1118,40 @@
                   
 
 
-<h1 id="conception-de-linterface-utilisateur">Conception de l'interface utilisateur</h1>
+<h1 id="la-philosophie-gitflow-pour-organiser-un-depot">La philosophie GitFlow pour organiser un dépôt</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>1-4 Dessin de maquettes de l'interface principale<br>
-2-5 Normes et concepts des interfaces utilisateur<br>
-4-7 Outils de schématisation: production de maquettes et de diagrammes</p>
+<p>1-1 Outils de gestion de projet <br></p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>90 minutes</p>
+<p>20 minutes</p>
 </div>
 </div>
-<hr />
-<h2 id="interactions-humain-machine-ihm">Interactions humain-machine (IHM)</h2>
-<p>Au début de l'informatique, on faisait des programmes scientifiques (sans interface). Le code était écrit sur des cartes poinçonnées qui étaient lues par l'ordinateur, exécuté et produisait une sortie imprimée. Ensuite, les ordinateurs ont eu un moniteur qui était d'abord monochrome (une seule couleur), puis avec 8 bits (et seulement 8 couleurs, donc 256 combinaisons d'arrière-plan et d'avant-plan). L'arrivée de la souris a amené l'utilisation d'icône et de boutons cliquables (paradigmes de clic à un bouton, clic gauche, clic droit) et le développement d'une sous-discipline de l'informatique : les <strong>interfaces utilisateur</strong>, référées généralement comme le <em>UI (user interface)</em>. Plus récemment, l'intégration de multiples résolutions (en particulier par les téléphones mobiles) a continué de pousser la discipline à se développer et à se recentrer sur l'<strong>expérience utilisateur</strong> <em>UX</em> (user experience). On ne parle plus de simple disposition de contrôle suivant un ensemble de normes, mais aussi de disposition réduisant la charge de travail et de «&nbsp;relation&nbsp;» entre l'humain et la machine. </p>
+<p>En 2010, la méthode <strong>GitFlow</strong> a été proposée pour organiser le développement des projets et l'intégration des fonctionnalités à la base de code commune du système. Le principe de cette méthode est de séparer le code en trois "branches" :</p>
+<ul>
+<li><span style="color:darkcyan">Une branche principale</span> (<strong>master</strong> ou <strong>main</strong>) pour les versions intégrées du système (version distribuée ou déployée).</li>
+<li><span style="color:gold">Une branche de travail</span> (<strong>développement</strong>) pour l'intégration des fonctionnalités (tests d'intégrations, de régression, de charge et d'acceptation).</li>
+<li><span style="color:DeepPink">Des branches pour les fonctionnalités</span> (<strong>features/</strong>) pour la réalisation des fonctionnalités (programmation et tests unitaires).</li>
+</ul>
+<p>De plus, deux autres branches supportent l'intégration de <em>GitFlow</em></p>
+<ul>
+<li><span style="color:green">Une branche de déploiement</span> (<strong>release</strong>) pour contenir les versions en tests de prédéploiement ou instables.</li>
+<li><span style="color:OrangeRed">Une branche pour régler les bugs</span> (<strong>hotfixes</strong>) pour régler les problèmes mineurs dans les versions déployées.</li>
+</ul>
 <figure>
-  <a class="glightbox" href="../../images/evolutuion_ui.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/evolutuion_ui.png" /></a>
-  <figcaption>Évolution des différentes interfaces</figcaption>
+    <a class="glightbox" href="../../images/gitflow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/gitflow.png" width="350" /></a>
+    <figcaption>Schéma de la structure <em>GitFlow</em> tel que proposé en 2010 par Vincent Driessen</figcaption>
 </figure>
-<h2 id="pourquoi-prendre-le-temps-de-penser-aux-interfaces">Pourquoi prendre le temps de penser aux interfaces ?</h2>
-<p>En marketing, la réponse à cette question serait fort simple : maximiser l'attractivité du produit pour en vendre le plus possible (ou du moins, lui donner la meilleure réputation possible). L'attractivité du système peut se définir autant en termes d'esthétisme qu'en termes de dépendance et de conditionnement.</p>
-<p>En informatique, notre objectif est un peu différent. On ne prend pas le point de vue de la qualité esthétique de la présentation (quoique ça n'a jamais nui à personne), mais plutôt l'utilisabilité du système. </p>
-<p>Un système utilisable atteint deux qualités :</p>
-<ul>
-<li>Il permet de travailler de façon <strong>efficace</strong> : soit par une vitesse de travail ou utilisation optimale des ressources de production allouées (nombre de personnes, durée des opérations, coût de l'équipement, économies par une meilleure planification des ressources...); et</li>
-<li>Il permet de travailler de façon plus <strong>efficiente</strong> : le rapport entre les ressources utilisées et résultats produits est meilleur grâce à ce produit.</li>
-</ul>
-<div class="admonition ex-projet">
-<p class="admonition-title">Efficacité et efficience dans le système de suivi de projets</p>
-<p>Par exemple, pour être efficace le système de suivi de projet doit permettre d'organiser les tâches pour trouver rapidement celle recherchée, masquer les éléments inutiles facilement, adopter une disposition consistante pour accélérer le travail avec le système. Pour être efficient, le temps investi à utiliser l'interface de suivi de projets doit au moins être égal ou inférieur au temps passé à faire les mêmes tâches manuellement et y ajoutant le coût de rectification des erreurs et l'interface doivent diminuer ou prévenir les erreurs d'inattention dans les manipulations. </p>
+<div class="admonition info">
+<p class="admonition-title">Intégration continue</p>
+<p>Certaines critiques du modèles <em>GitFlow</em> sont apparues avec le temps, notamment lorsqu'on ajoute l'<span class="tooltip hint--top" aria-label="Processus où l'on intègre les fonctionnalités en cours de développement à la base de code. On voit cette technique grandement utilisée avec DevOps.">intégration continue</span>. Des alternatives à <em>GitFlow</em> peuvent être utilisées si l'on adopte une stratégie d'intégration continue <a href="https://graphite.dev/guides/git-branching-strategies">(Foster, 2024)</a>.  </p>
 </div>
-<p>Trois éléments, tous très subjectifs, doivent être pris en compte dans l'atteinte de l'efficacité et de l'efficience :</p>
-<ul>
-<li>La gestion des frustrations (dû aux erreurs de manipulation dans l'interface, à la recherche des contrôles ou des opérations...);</li>
-<li>La facilité d'utilisation globale de l'interface (temps associé aux opérations, difficulté d'utilisation des contrôles, repérage des éléments clés); et</li>
-<li>La facilité apprentissage (temps nécessaire à une personne qui connait suffisamment le domaine applicatif pour prendre en main le système).</li>
-</ul>
-<h2 id="modele-theorique-de-laction">Modèle théorique de l'action</h2>
-<p>Afin de comprendre comment nous interagissons avec les machines, nous allons débuter aux fondements théoriques de l'interaction humain-machine (IHM) dans la théorie de l'action de Norman, proposée en 1986. Le modèle admis est un mélange d'empirisme (observation répétée et documentée correctement) et de philosophie (ce n’est pas tout à fait assez empirique comme étude pour tomber dans la psychologie). D'autres modèles peuvent être pris comme référence que celui-ci, mais il a relativement bien traversé les époques.</p>
-<h3 id="les-deux-ponts">Les deux ponts</h3>
-<p>Le modèle théorique prévoit deux ponts qui relient le système à la personne utilisatrice. Le premier pont, appelé <strong>pont de l'exécution</strong> définit l'action accomplie sur le système, tandis que le second, le <strong>pont de l'évaluation</strong> permet d'évaluer l'effet de l'action et l'atteinte (ou non) du but.</p>
-<div class="admonition note">
-<p class="admonition-title">Le terme système</p>
-<p>Dans les notes «&nbsp;système&nbsp;» réfère usuellement à un système informatique, mais dans la théorie de l'action cela porte plutôt sur n'importe quel système mécanique ou électronique. Dans son livre <em>Design of everyday things</em>, Norman discute longuement de l'utilisabilité des portes de réfrigérateur ou d'entrée dans un magasin et des problèmes de design demeurant même après des millénaires d'utilisation. </p>
-</div>
-<figure>
-    <a class="glightbox" href="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/Bridging-the-gulfs-of-execution-and-evaluation-Norman-and-Draper-1986.png" /></a>
-    <figcaption>Norman et Draper, 1986</figcaption>
-</figure>
-<p>Chacun des ponts peut être divisé en trois segments :</p>
-<p><strong>Pont de l'exécution</strong></p>
-<p>Ce pont amène la personne utilisatrice de son intention (but), vers le système physique en traduisant ce but par une série de manipulations dans le système.</p>
-<ol>
-<li>Intentions : ce que la personne utilisatrice veut accomplir, son intention envers le système;</li>
-<li>Spécification : chemin à prendre pour y arriver, les actions qu'elle souhaite réaliser; et</li>
-<li>Mécanisme de l'interface : les contrôles offerts par le système qu'elle utilise.</li>
-</ol>
-<h4 id="pont-de-levaluation">Pont de l'évaluation</h4>
-<p>Ce pont permet de constater ou non que l'action indiquée au système a produit le résultat souhaité.</p>
-<ol>
-<li>Affichage de l'interface : signal renvoyé par le système (image, son, pop-up, impression);</li>
-<li>Interprétation du signal : signification des couleurs, du son, des symboles, de l'image pour un être humain; et</li>
-<li>Évaluation : est-ce que le signal du système me permet de dire que j'ai atteint mon objectif ?</li>
-</ol>
-<div class="admonition exercice">
-<p class="admonition-title">Les ponts de l'exécution</p>
-<p>En équipes de 2-3 personnes, trouvez un système et analysez deux tâches avec ce système (<em>Word</em>, <em>Excel</em>, <em>IntelliJ</em>, votre navigateur, bloc-notes, <em>paint</em>...)
-Utilisez la théorie des ponts de l'exécution et de l'évaluation pour expliquer votre raisonnement (possiblement inconscient) lors de la réalisation d'une tâche avec le système.</p>
-</div>
-<h2 id="3-paradigmes-de-conception-dinterface">3 paradigmes de conception d'interface</h2>
-<p>Une fois les fondements établies dans le pourquoi est-ce que l'on fait des actions, il faut déterminer un <span class="tooltip hint--top" aria-label="Modèle de pensée. Conception théorique dominante qui a cours à une certaine époque dans une communauté scientifique. (Antidote 9, 2023)">paradigme</span> dans la conception de l'interface : une façon de la réfléchir. Un peu comme lorsqu'on choisit un langage de programmation (entre un paradigme objet et un paradigme fonctionnel), le même choix se pose en conception d'interface. Comme pour les langages de programmation, des éléments tirés de plusieurs paradigmes peuvent coexister dans un même langage. </p>
-<dl>
-<dt><code>Paradigme technologique</code></dt>
-<dd>Dans ce paradigme, l'interface est le miroir de l'organisation du système. Par exemple, chaque fonction du code du système s'appelle à l'aide d'un bouton qui nomme explicitement (ou presque) cette fonction. On retrouve très souvent ce type d'interface dans les programmes consoles ou dans les systèmes techniques. L'interface de Git (ligne de commande et client GUI) est un exemple de système utilisant le paradigme technologique.</dd>
-<dt><code>Paradigme métaphorique</code></dt>
-<dd>Le paradigme métaphorique consiste à utiliser une métaphore (image) pour représenter l'abstraction par un concept analogue du monde réel. Les métaphores sont très utiles pour aider des utilisateurs à prendre en main les systèmes. Par exemple, le site Facebook utilise de nombreuses métaphores (amis, groupes, conversations…)</dd>
-<dt><code>Paradigme idiomatique</code></dt>
-<dd>Le paradigme idiomatique consiste à créer de nouveaux idiomes (expression dont le sens ne correspond pas au sens donné par la collection des mots). On trouve ce paradigme lorsqu'on ne souhaite pas utiliser le paradigme technologique (pour éviter d'augmenter la difficulté d'apprentissage) et qu'il n'y a pas de métaphore existante. Par exemple, le site <em>Facebook</em> utilise des idiomes comme le bouton «&nbsp;j'aime&nbsp;» et le fait de «&nbsp;suivre&nbsp;» une personnalité. </dd>
-</dl>
-<h3 id="quel-paradigme-choisir">Quel paradigme choisir ?</h3>
-<p>S'il s'agit d'un système de soutien (utilitaire), un système avec une seule fonctionnalité ou peu d'entre elles (comme un système scientifique) ou que la personne qui le développe sera aussi la principale utilisatrice, alors le <strong>paradigme technologique</strong> est à prioriser. Dans les autres cas, un bon réflexe est de chercher une <strong>métaphore</strong> adéquate. Si une telle métaphore n'existe pas, alors il faut se tourner vers l'<strong>idiome</strong>. Ce dernier peut aussi être utile pour ajouter une couche d'abstraction à des fonctionnalités ou un concept. </p>
-<div class="admonition bug">
-<p class="admonition-title">Les mauvaises métaphores</p>
-<p>Une mauvaise métaphore est particulièrement nuisible, car en plus de ne pas renseigner correctement sur l'interface, elle peut pousser à commettre plus d'erreurs dans l'utilisation du système.</p>
-</div>
-<div class="admonition exercice">
-<p class="admonition-title">Trouve des paradigmes</p>
-<p>En équipe de 2 à 3 personnes : </p>
-<ol>
-<li>Dans l'interface du système d'exploitation Windows, trouvez 2 métaphores et 2 idiomes utilisés.</li>
-<li>À partir du système de l'exercice précédent (sur les ponts de l'action), identifiez les métaphores et idiomes utilisés dans l'action choisie, expliquez leur signification et comment ces métaphores / idiomes vous ont aidé. </li>
-</ol>
-</div>
-<h2 id="principes-et-normes-de-conception">Principes et normes de conception</h2>
-<p>Les principes de conception sont de grandes règles à suivre dans l'élaboration des interfaces. Sous les principes se trouvent des normes qui sont des règles précises pour chaque média de diffusion ou même pour chaque système. On exprime généralement le respect des principes en respectant les normes qui leur sont associés</p>
-<h3 id="principes">Principes</h3>
-<h4 id="accessibilite">Accessibilité</h4>
-<p>Cela fait référence aux façons qu'il est possible d'utiliser le système. Elles sont intentionnelles si le système est conçu pour être utilisé de cette façon ou accidentelles si le système n'est pas conçu spécifiquement pour cela, mais qu'il est quand même possible de l'utiliser à cette fin. </p>
-<div class="admonition exercice">
-<p class="admonition-title">Accessibilités</p>
-<p>Nommez une accessibilité intentionnelle et une accidentelle du système Google.</p>
-</div>
-<h4 id="indicateur">Indicateur</h4>
-<p>Il s'agit des mécanismes explicites qui permettent à l'utilisateur d'acquérir des informations sur le fonctionnement du système. Ils sont complémentaires aux accessibilités intentionnelles offertes (implémenter la fonctionnalité n'est pas suffisant, il faut le communiquer à l'utilisateur). </p>
-<div class="admonition exercice">
-<p class="admonition-title">Indicateurs</p>
-<p>Nommez trois indicateurs du système Google.</p>
-</div>
-<h4 id="contrainte">Contrainte</h4>
-<p>Il s'agit de limites imposées dans la manipulation du système (indicateur à la négative) afin d'éviter les mauvaises saisies de données. Elles permettent d'assurer la cohérence des données, que la personne utilisatrice dispose des autorisations ou l'ordonnancement correct des opérations.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Contraintes</p>
-<p>Nommez un système qui utilise le mécanisme de contrainte pour limiter les erreurs des personnes utilisatrices.</p>
-</div>
-<h4 id="association-mapping">Association (<em>mapping</em>)</h4>
-<p>Il s'agit de l'établissement d'une relation entre les commandes dans les interfaces du système et les réactions du système. Si les indicateurs sont clairs, l'association se fait facilement et de façon correcte. Une association mal faite amène souvent à se «&nbsp;chercher&nbsp;» dans le système.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Association</p>
-<p>Nommez une association que vous avez faite qui vous a induit en erreur dans la manipulation d'un système.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Modèle conceptuel</p>
-<p>Le modèle conceptuel est un "sixième principe" de conception plus avancé. Il s'agit d'une représentation que la personne utilisatrice se fait du fonctionnement du système. Ce concept va plus loin que l'association simple, car la personne utilisatrice présume du mode de fonctionnement interne des composantes du système entre elles, et non seulement des liens entre les options de l'interface avec les composantes du système. C'est un concept riche, mais beaucoup plus complexe qui ne sera pas étudié plus avant au collégial.</p>
-</div>
-<h4 id="retroaction">Rétroaction</h4>
-<p>Elle permet aux personnes utilisatrices de suivre les changements dans l'état d'un système, autant pour informer sur des erreurs ou des actions interdites, que pour signaler des succès. Elle doit être fréquente, ciblée et aussi transparente (non bloquante) que possible.</p>
-<div class="admonition exercice">
-<p class="admonition-title">Rétroaction</p>
-<p>Nommez cinq méthodes de rétroaction que vous avez observer dans des logiciels. Identifier parmi ces rétroactions celles qui vont été utiles et pourquoi elles l'ont été.</p>
-</div>
-<h3 id="normes">Normes</h3>
-<p>Plusieurs définitions de normes dans les contrôles sont donnés dans <a href="https://cours-alexandre-ouellet.github.io/normes-interfaces">ce guide</a> <em>À venir</em>.  </p>
-<h2 id="quoi-faire-avec-tous-ces-concepts">Quoi faire avec tous ces concepts ?</h2>
-<p>Trois éléments ont été présentés dans cette section :</p>
-<ul>
-<li>La théorie de l'action de Norman;</li>
-<li>Les paradigmes des interfaces; et</li>
-<li>Les principes de conception</li>
-</ul>
-<p>Lors de la conception d'une interface, on doit permettre à la personne utilisatrice d'accomplir tous les éléments du pont de l'action. De ce fait, on dispose des contrôles (<strong>mécanismes de l'interface</strong>) et des réactions (<strong>affichage de l'interface</strong>). Afin de choisir ces contrôles et réactions, on se base sur un ou plusieurs paradigmes pour leur donner un sens (<strong>interprétation du signal</strong>) et faciliter la projection de la façon d'utiliser le système dans la tête de la personne utilisatrice <strong>spécification du chemin</strong>. Les principes comme l'<strong>accessibilité</strong> et l'<strong>association</strong> définissent comment la <strong>spécification de l'action</strong> s'accomplit concrètement. Les principes comme les <strong>indicateurs</strong>, les <strong>contraintes</strong> et les <strong>rétroactions</strong> sont des composants des interfaces concrets introduits dans le système pour permettre l'<strong>interprétation des signaux</strong> et limiter les <strong>erreurs</strong> qui empêchent la réalisation du <strong>but</strong> initial.</p>
-<!--
-
-# La conception en pratique
-
-Voir le document « Normes de conception d'interface ».
-
----
-
-# Inclusivité et conception universelle
-
-Le principe de conception universelle tire son origine des considérations architecturales, en particulier les rampes d'accès pour fauteuils roulants.
-
-En appliquant ces principes dans la conception des interfaces, on permet à nos interfaces de rejoindre un plus grand nombre de personnes et de les accommoder dans un plus grand nombre de situations.
-
----
-
-## Enjeux visuels
-
-- Taille des caractères
-- Thèmes de couleurs
-- Redondance de l'information (2 codes)
-
-<br/>
-
-
-![](images/7_feux_circulation.png)
-
-![](images/7_slum_1.png)
-
-
-
-## Auditif
-
-- Rendre le son obligatoire seulement si nécessaire
-- Description textuelle des éléments visuels importants
-
-
----
-
-
-## Moteurs et physiologique
-
-- Taille des mains
-- Vitesse de travail
-- Stabilité des mains
-
-
-## Droit à l'erreur
-
-- Système d'annulation
-- Confirmation avant les opérations critiques
-- Confirmation bloquante avant les opérations qu'on ne peut pas annuler
-
-
-
----
-
-
-## Interprétation de l'information
-
-- Niveau de langage et d'éducation
-  - Phrases courtes
-  - Éviter les formulations longues inutiles
-  - Utilisation la redondance des termes
-  - Éviter les syntaxes complexes (reprise d'information distante)
-- Différences culturelles des normes visuelles (couleurs et symboles)
-
-
-
-## Écriture inclusive
-
-- Si la donnée de genre n'est pas pertinente au fonctionnement du système, ne pas la collecter
-- Offrir de multiples choix (champ texte au besoin)
-- Offrir la possibilité de changer l'information (genre et nom)
-- Utiliser une rédaction neutre ou épicène
-
-Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui explique les grandes lignes de l'écriture inclusive.
-
-
----
-
-# Artefacts
-
-
-
-## Diagrammes en fil de fer / Mockup
-- Montrent les principaux contrôles
-- N'inclus aucun élément de mise en forme
-- Utile pour visualiser le « workflow »
-- Souvent joint à la description du cas d'utilisation
-
-
-
-## Prototype cliquable
-
-- Semblable au fil de fer, mais permet de cliquer et naviguer entre les interfaces.
-- Peut inclure des éléments graphiques (couleur, police)
-- Prototype de plus haut niveau, étape suivante => coder le prototype
-- Développez dans un logiciel spécialisé : (bubble, anima...)
-
-
----
--->
-
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
-<p>Bertram, B. (2023, September 4). Commodore 64. Wikipedia. <a href="https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg">https://en.wikipedia.org/wiki/Commodore_64#/media/File:C64c_system.jpg</a> </p>
-<p>Birkinshaw, P. (2023, September 6). Punched card. Wikipedia. <a href="https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg">https://en.wikipedia.org/wiki/Punched_card#/media/File:Used_Punchcard_(5151286161).jpg</a></p>
-<p>Hohho56oy. (2023, July 17). File:windows 95 at first run.png. Wikipedia. <a href="https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png">https://en.wikipedia.org/wiki/Windows_95#/media/File:Windows_95_at_first_run.png</a> </p>
-<p>Norman, D. (2013). The Design of Everyday Things: Revised and Expanded Edition. États-Unis: Basic Books.</p>
-<p>Norman, D.A. and Draper, S. (1986) User Centered System Design: New Perspectives on Human-Computer Interaction Lawrence Erlbaum Associates.</p>
-<p>Université de Sherbrooke. (n.d.). Guide de rédaction inclusive de l’Université de Sherbrooke. Sherbrooke. </p>
-<p>Wise, G. B. (1997, January 27). The Psychology of Everyday Actions. Rensselaer Polytechnic Institute. </p>
+<p>Atlassian. (s.d.) <em>Gitflow workflow</em>. <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</a> [Repéré le 4 octobre 2024].</p>
+<p>Driessen, V. (2010, 5 janvier). <em>A successful Git branching model</em>. nvie.com. <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a> [Repéré le 4 octobre 2024].</p>
+<p>Foster, G. (2024). <em>Top Git branching strategies 2024</em> Graphite. <a href="https://graphite.dev/guides/git-branching-strategies">https://graphite.dev/guides/git-branching-strategies</a> [Repéré le 4 octobre 2024].</p>
 
 
 
@@ -1565,7 +1172,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-04</span>
   </span>
 
     
@@ -1595,7 +1202,7 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../analyse/cu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La méthode des cas d&#39;utilisation">
+          <a href="../versionnage/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Versionnage sémantique">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1605,20 +1212,20 @@ Voir « Guide de rédaction inclusive de l’Université de Sherbrooke » qui 
                 Précédent
               </span>
               <div class="md-ellipsis">
-                La méthode des cas d'utilisation
+                Versionnage sémantique
               </div>
             </div>
           </a>
         
         
           
-          <a href="../conception-objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception orientée objet">
+          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Conception orientée objet
+                Méthodes à pointage
               </div>
             </div>
             <div class="md-footer__button md-icon">
