@@ -22,11 +22,7 @@
       
       
       <link rel="icon" href="../../images/favicon.svg">
-<<<<<<< HEAD
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
-=======
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
->>>>>>> fea5d0a7e4f1d3bcea4dcf4e6cc9c77dc6ab7a11
     
     
       
@@ -945,9 +941,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemple-de-numero-de-versions" class="md-nav__link">
+  <a href="#exemple-de-numeros-de-version" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemple de numéro de versions
+      Exemple de numéros de version
     </span>
   </a>
   
@@ -1175,13 +1171,13 @@
 <p>15 minutes</p>
 </div>
 </div>
-<p>Bien qu'il n'existe pas de standard universel pour le versionnage (définit par une RFC par exemple), plusieurs forums et bonnes pratiques pointent vers l'utilisation du <a href="https://semver.org/">versionnage sémantique</a>. Ce standard s'applique particulièrement aux systèmes présentant une API publique. On peut toutefois l'utiliser dans tous les contextes de développement logiciels.</p>
+<p>Bien qu'il n'existe pas de standard universel pour le versionnage (défini par un RFC par exemple), plusieurs forums et bonnes pratiques pointent vers l'utilisation du <a href="https://semver.org/">versionnage sémantique</a>. Ce standard s'applique particulièrement aux systèmes présentant une API publique. On peut toutefois l'utiliser dans tous les contextes de développement logiciels.</p>
 <div class="admonition info">
 <p class="admonition-title">Versionnage par date</p>
-<p>On trouve parfois des logiciels avec des dates inclues dans le versionnage. Cette pratique tend à disparaître, car elle est contraingnante au niveau du moment et du rythme des déploiements. On ne veut pas dicter la cadence de développement pour atteindre un objectif au 3 mois par exemple, on souhaite plutôt suivre les fonctionnalités.</p>
+<p>On trouve parfois des logiciels avec des dates incluses dans le versionnage. Cette pratique tend à disparaître, car elle est contraignante au niveau du moment et du rythme des déploiements. On ne veut pas dicter la cadence de développement pour atteindre un objectif aux 3 mois par exemple, on souhaite plutôt suivre les fonctionnalités.</p>
 </div>
 <h2 id="versionnage-standard">Versionnage standard</h2>
-<p>Format de base du versionnage sémantique est </p>
+<p>Le format de base du versionnage sémantique est </p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> majeure.mineure.correctif [x.y.z]
 </span></code></pre></div>
 <p>Les règles d'incrémentation des versions sont :</p>
@@ -1192,25 +1188,25 @@
 </ul>
 </li>
 <li>Ajout ou correctif qui n'est pas rétrocompatible : augmentation du numéro de version majeure [<strong>X</strong>.y.z]<ul>
-<li>Le numéro de version mineur et de correctif sont réinitialisées à 0.</li>
+<li>Les numéros de la version mineure et du correctif sont réinitialisés à 0.</li>
 </ul>
 </li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">En développement</p>
-<p>Si le numérode version majeure est 0 (donc avant le premier déploiement officiel), alors les versions mineures ou de correcifs peuvent inclure des fonctionnalités non rétrocompatibles ou retirer des fonctionnalités obsolètes. Cela permet d'expérimenter dans la création, sans provoquer une cascade de nouvelles versions.</p>
+<p>Si le numéro de version majeure est 0 (donc avant le premier déploiement officiel), alors les versions mineures ou de correctifs peuvent inclure des fonctionnalités non rétrocompatibles ou retirer des fonctionnalités obsolètes. Cela permet d'expérimenter dans la création, sans provoquer une cascade de nouvelles versions.</p>
 </div>
 <h3 id="predeploiement">Prédéploiement</h3>
 <p>Possibilité d'ajouter un élément de prédéploiement (<em>prérelease</em>) en ajoutant un trait d'union (information en lettre et chiffre) après le numéro de correctif. Les trois prédéploiements qui existent sont :</p>
 <ul>
-<li><strong>alpha</strong> : version instable en développement. N'importe quoi peut arriver à cette étap.e</li>
+<li><strong>alpha</strong> : version instable en développement. N'importe quoi peut arriver à cette étape.</li>
 <li><strong>beta</strong> : version instable, mais consolidée par rapport à l'alpha. Les changements ne devraient plus être majeurs à cette étape.</li>
 <li><strong>rc</strong> (release candidate) : version stable et qui est testée avec d'être officiels. Les changements devraient être majoritairement des correctifs de bogues à cette étape. </li>
 </ul>
 <h3 id="numero-de-compilation-build">Numéro de compilation (<em>build</em>)</h3>
-<p>Possibilité d'ajouter les numéros des compilation (<em>build number</em>) avec un signe + après le numéro de correctif ou de prédéploiement (s'il est présent). Les numéros de compilation suivent simplement l'ordre numérique à partir de 0. </p>
-<h2 id="exemple-de-numero-de-versions">Exemple de numéro de versions</h2>
-<p>Voici une série de version d'un logiciels, ordonnées de la plus récente à la plus ancienne (il y a des trous entre les versions pour illustré le fonctionnement du système de versionnage).</p>
+<p>Possibilité d'ajouter les numéros des compilations (<em>build number</em>) avec un signe + après le numéro de correctif ou de prédéploiement (s'il est présent). Les numéros de compilation suivent simplement l'ordre numérique à partir de 0. </p>
+<h2 id="exemple-de-numeros-de-version">Exemple de numéros de version</h2>
+<p>Voici une série de versions d'un logiciel, ordonnées de la plus récente à la plus ancienne (il y a des trous entre les versions pour illustrer le fonctionnement du système de versionnage).</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1.2.1
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>1.2.1-alpha
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>0.2.4-rc
@@ -1372,11 +1368,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-<<<<<<< HEAD
       <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-=======
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
->>>>>>> fea5d0a7e4f1d3bcea4dcf4e6cc9c77dc6ab7a11
       
         <script src="../../javascripts/katex.js"></script>
       
