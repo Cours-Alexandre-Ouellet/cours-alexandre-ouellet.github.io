@@ -1,0 +1,1287 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours 420-5B5-VI Projet intégrateur 1 axé sur la gestion de projet et retour sur les principes de conception objet">
+      
+      
+        <meta name="author" content="Alexandre Ouellet">
+      
+      
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/analyse/cu/">
+      
+      
+        <link rel="prev" href="../acteurs/">
+      
+      
+        <link rel="next" href="../../conception/ui/">
+      
+      
+      <link rel="icon" href="../../images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>La méthode des cas d'utilisation - Projet intégrateur 1</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/hint.min.css">
+    
+      <link rel="stylesheet" href="../../css/override.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#la-methode-des-cas-dutilisation" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+      
+  <img src="../../images/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projet intégrateur 1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              La méthode des cas d'utilisation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
+          
+  
+  Introduction et généralités
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../telos/" class="md-tabs__link">
+          
+  
+  Analyse
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../conception/ui/" class="md-tabs__link">
+          
+  
+  Conception
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../allo.md" class="md-tabs__link">
+        
+  
+    
+  
+  Implémentation et versionnage
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../allo.md" class="md-tabs__link">
+        
+  
+    
+  
+  Qualité logicielle
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../allo.md" class="md-tabs__link">
+        
+  
+    
+  
+  Déploiement et maintenance
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../gestion/methodes_pointage/" class="md-tabs__link">
+          
+  
+  Gestion des projets
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Projet intégrateur 1" class="md-nav__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+      
+  <img src="../../images/favicon.svg" alt="logo">
+
+    </a>
+    Projet intégrateur 1
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction et généralités
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction et généralités
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histoire du génie logiciel et de l'informatique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/approche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approches de développement logiciel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Éléments de rédaction technique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/gabarits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gabarits et exemple
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Étude de faisabilité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acteurs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entitée actrices, descriptions et persona
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    La méthode des cas d'utilisation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    La méthode des cas d'utilisation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-les-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifier les cas d'utilisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier les cas d'utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ne-pas-respecter-les-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ne pas respecter les tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artefacts-des-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artéfacts des cas d'utilisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Artéfacts des cas d'utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#liste-des-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liste des cas d'utilisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagramme-des-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramme des cas d'utilisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description-des-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description des cas d'utilisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description des cas d'utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parties-dun-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parties d'un cas d'utilisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trucs-dans-lecriture-des-cas-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+       Trucs dans l'écriture des cas d'utilisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarit-de-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gabarit de document
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Extra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recits.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Récits utilisateurs dans les méthodes agiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conception
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Conception
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfaces utilisateurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../allo.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implémentation et versionnage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../allo.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../allo.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Déploiement et maintenance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestion des projets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Gestion des projets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/methodes_pointage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Méthodes à pointage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="la-methode-des-cas-dutilisation">La méthode des cas d'utilisation</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p>3-4 Production des gabarits contenant des cas d'utilisation ainsi que des diagrammes<br>
+3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
+4-2 Description et explication des cas d'utilisation<br>
+4-4 Compréhension des points importants du dossier de conception<br>
+4-6 Structure d'un document de conception</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>30 minutes</p>
+</div>
+</div>
+<h2 id="identifier-les-cas-dutilisation">Identifier les cas d'utilisation</h2>
+<p>La première étape dans une analyse est l'<strong>expression des besoins</strong>. Dans cette étape on vise divers objectifs dont :</p>
+<ol>
+<li>l'identification des cas d'utilisation ou des récits utilisateurs;</li>
+<li>l'identification de besoins non fonctionnels liés à des groupes de personnes utilsatrices (persona); et</li>
+<li>l'identification de critères de validation (qui seront vus dans des sections subséquentes).</li>
+</ol>
+<p>Pour l'identification des cas d'utilisation, on énumère des <strong>fonctionnalités</strong> que le système doit posséder ou des <strong>actions</strong> que l'on doit pouvoir accomplir avec ce dernier. Pour déterminer si une fonctionnalité ou action constitue un cas d'utilisation (CU), on lui fait subir trois tests : </p>
+<ul>
+<li><strong>Test du patron</strong> : est-ce que votre patron est content que vous investissiez du temps dans cette tâche ? Ce test rjette bon nombre de cas trop simple comme simplement cocher une case ou remplir un champ. La majorité des CU implique une modification de plusieurs champs ou un utilisation potentielle de plusieurs contrôles.</li>
+<li><strong>Test d'un processus métier élémentaire (PME)</strong> : est-ce le CU est ciblé sur une tâche métier <strong>élémentaire</strong>. Une tâche métier élémentaire est une action pour laquelle on peut observer la réalisation (donc qui exclut les grands énoncés vagues) et se réalise de façon relativement concise et cohérente. Par exemple, «&nbsp;Répondre aux besoins du client&nbsp;» n'est pas un PME, car il s'agit d'un grand énoncé sans résultat toujours observable. L'action de «&nbsp;Gérer le compte d'un client&nbsp;» échoue également le test, car ce n'est pas concis et précis (donc élémentaire), même si toutes les opérations de gestion d'un compte (création, suspension, renouvellement...) produisent un résultat observable. «&nbsp;Effectuer le paiement d'un solde à un compte client&nbsp;» en est un, car c'est observable comme résultat et concis, et ce, même si l'action en elle-même se divise en plus petites actions.</li>
+<li><strong>Test de la taille</strong> : est-ce que votre cas correspond à une opération ? Autrement dit, est-ce que cette action est simple, toujours effectuée en combinaison avec d'autres actions ou représente simplement un cas particulier d'une action plus large. Par exemple «&nbsp;Remplir le prénom&nbsp;» d'un formulaire d'abonnement est une opération, car on l'accomplit toujours en saisissant le formulaire d'abonnement. Il ne s'agit donc pas d'un CU. Par contre, «&nbsp;Payer l'abonnement&nbsp;», même si l'opération s'effectue toujours après avoir saisi le formulaire d'abonnement n'est pas une action simple, donc constitue un cas à part entière. </li>
+</ul>
+<div class="admonition extra">
+<p class="admonition-title">Variante du test PME</p>
+<p>Une autre façon de mener le test du PME (méthode plus longue) est d'écrire la description détaillée d'un cas et de vérifier si le scénario principal s'applique à tous les appels du cas d'utilisation. Si la réponse est non, votre opération n'est pas élémentaire. Vous pouvez retravailler la description principale pour répondre oui et après appliquer le test de la taille (il y a des chances que le cas soit rendu trop petit).</p>
+<p>Par exemple, si dans mon cas « Gérer les comptes » on décrit en même temps l'ajout et la suppression, il y a de fortes chances que le scénario principal soit vide! C'est un signe que ces deux opérations n'ont rien en commun et devraient être deux cas distincts. </p>
+</div>
+<h3 id="ne-pas-respecter-les-tests">Ne pas respecter les tests</h3>
+<p>Il arrive qu'il soit pertinent de faire un CU qui ne respecte pas les tests. Cette décision doit s'appuyer sur des éléments raisonnables («&nbsp;c'est trop long, ça ne me tente pas, je manque de temps&nbsp;» ne sont pas des éléments raisonnables).</p>
+<p>Souvent, on utilise comme une raison la possibilité de réutiliser une opération pour justifier des CU qui seraient autrement trop petits. Il faut que la réutilisation soit évidente et qu'elle soit employée (autrement vous allez embourber votre projet de CU trop petits). Le piège dans ce raisonnement est d'isolé une action dans un CU au cas pour pouvoir la réutiliser, mais la réutiliser qu'une seule fois... </p>
+<h2 id="artefacts-des-cas-dutilisation">Artéfacts des cas d'utilisation</h2>
+<p>Les cas d'utilisation sont l'une des techniques les plus utilisées pour exprimer des besoins logiciels. Plusieurs méthodes pour les décrire ont été proposées, certaines plus visuelles, d'autres plus textuelles. Ce qu'il faut retenir c'est que la <strong>description textuelle a toujours plus d'utilité qu'un diagramme</strong>. C'est donc là que l'effort principal doit être mis. Tous les éléments présents sur les diagrammes devraient se retrouver dans la description textuelle. Les diagrammes appuient les textes en synthétisant des informations détaillées sur une seule image; ils appuient le texte et non l'inverse.</p>
+<h3 id="liste-des-cas-dutilisation">Liste des cas d'utilisation</h3>
+<p>La liste des cas, comme son nom l'indique liste tous les CU du système. On regroupe les cas par «&nbsp;proximité&nbsp;» de fonctionnalité afin d'éviter d'avoir une liste désorganisée. Également, pour chaque CU, on lui assigne un code qui peut être aussi simple qu'un numéro séquentiel ou être un système de référencement plus complexe. Les entités actrices intervenant dans le CU sont aussi indiquées.</p>
+<h3 id="diagramme-des-cas-dutilisation">Diagramme des cas d'utilisation</h3>
+<p>Le diagramme des cas d'utilisation permet de représenter graphiquement les CU et les entités actrices, ainsi que les relations qui les lient. On peut, si le système comporte de nombreux CU, limiter la représentation graphique aux CU englobants. </p>
+<h3 id="description-des-cas-dutilisation">Description des cas d'utilisation</h3>
+<ul>
+<li>
+<p><strong>Description abrégée</strong> : présente sous la forme d'un paragraphe de texte détaillant uniquement le scénario principal ainsi que les informations d'en-tête. Elle peut être accompagnée ou non d'un prototype d'écran.
+Ce type de description se prête bien à des cas simples et au début de l'analyse. Un cas peut être décrit sommairement dans l'un des premières itérations avant d'être étendu à une description détaillée dans un cas subséquent. </p>
+</li>
+<li>
+<p><strong>Description détaillée</strong> : présente tous les aspects du CU par étapes détaillées. Cette description est plus longue à faire, mais à l'avantage d'être exhaustive et représentative du flux de travail. Si la description d'un cas détaillé n'inclut aucune nouvelle extention ou exception et que son scénario nominal est bref, probablement qu'une description abrégée serait plus approprié.</p>
+</li>
+</ul>
+<h4 id="parties-dun-cas-dutilisation">Parties d'un cas d'utilisation</h4>
+<dl>
+<dt><code>information d'en-tête</code></dt>
+<dd>Présente les informations principales du cas d'utilisation dont :
+- Son nom
+- Son code
+- La version dans laquelle il a ét introduit dans les spécifications
+- Le nom de la personne autrice de la description </dd>
+<dt><code>pré et post conditions</code></dt>
+<dd>Les préconditions sont des conditions vérifiées lors de l'exécution du CU. Aucun des éléments présentés dans les préconditions devrait se retrouver dans la description. Pour les postconditions, il s'agit de conditions vérifiées lors de la conclusion avec succès du scénario nominal.</dd>
+<dt><code>entité actrice principale</code></dt>
+<dd>L'entité actrice principale est l'entité (ou les entités) actrice qui utilise le CU. Il peut s'agir d'entités primaires ou secondaires.</dd>
+<dt><code>déclencheur</code></dt>
+<dd>Le déclencher correspond à une opération qui permet l'accès ou le lancement du CU. On ne répète pas l'opération dans le scénario nominal. </dd>
+<dt><code>description abrégée (uniquement pour les cas abrégés)</code></dt>
+<dd>Présente en un ou deux paragraphes le fonctionnement du CU sous <strong>forme d'un texte continu</strong>. Ce genre de description présente uniquement le scénario de succès et certaines erreurs majeures. Si les erreurs sont nombreuses ou demandent une gestion avancée, on préfère utilier la description longue. </dd>
+<dt><code>scénario nominal (uniquement pour les cas détaillés)</code></dt>
+<dd>C'est le scénario de base, souvent le plus simple, et celui qui se termine par un succès. Toutes ses étapes doivent être exécutées. Pour chaque étape, on identifie les actions de l'entité actrice et les réponses du système. On peut utiliser un tableau ou une liste pour ce faire. Dans tous les cas, on utilise une syntaxe de la forme : [ENTITÉ] + [VERBE D'ACTION] + [ACTION].</dd>
+<dt><code>scénario d'exception (uniquement pour les cas détaillés)</code></dt>
+<dd>Ce sont les erreurs qui peuvent survenir ainsi que la façon d'y répondre. Pour chaque erreur, on lui assigne un code basé sur l'étape à laquelle l'erreur peut survenir. Si plusieurs erreurs peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'erreur peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape. </dd>
+</dl>
+<p>On décrit ensuite de façon détaillée (souvent en liste) les étapes pour ramener le système dans un état cohérent. Si l'erreur interrompt l'exécution du CU, il faut le préciser clairement.</p>
+<dl>
+<dt><code>scénario d'extension (uniquement pour les cas détaillés)</code></dt>
+<dd>Ce sont les étapes facultatives ou alternatives à celles du scénario nominal. Il n'est pas nécessaire de les exécuter pour que le cas s ecomplète avec un succès. Pour chaque extention, on lui assigne un code basé sur l'étape à laquelle l'extension peut s'exécuter. Si plusieurs extensions peuvent se produire à la même étape, on ajoute une lettre minuscule, en ordre alphabétique, pour les différencier. Si l'extension peut se produire à plusieurs ou toutes les étapes, on utilise le * plutôt qu'un numéro d'étape.  On décrit ensuite de façon détaillée (souvent en liste) les étapes pour accomplir l'extention. </dd>
+</dl>
+<p>On considère que le scénario nominal continu ensuite avec la prochaine étape. Si ce n'est pas le cas, il faut le préciser clairement. </p>
+<dl>
+<dt><code>spécification non fonctionnel (section optionnelle)</code></dt>
+<dd>On indique les éléments à tenir compte dans la conception du cas, mais qui ne correspondent pas à des étapes du fil d'exécution du système.  On y trouve des particularités sur l'interface du système, des contraintes de temps d'exécution ou de journalisation. Tout autre spécification non fonctionnelle peut s'y retrouver.</dd>
+<dt><code>diagramme de séquence système (section optionnelle)</code></dt>
+<dd>Si le cas présente une structure complexe, on peut ajouter un diagramme de séquence système basé sur le scénario nominal et les extensions. On ne fait pas de diagramme s'il y a peu ou aucune extension ou que le diagramme à l'air d'une échelle. Il faut aussi se souvenir qu'un diagramme demande d'être mis à jour lorsque les spcéfications évoluent.</dd>
+<dt><code>diagramme d'état-transition (section optionnelle)</code></dt>
+<dd>Si le cas présente une structure complexe où l'état d'un objet change selon plusieurs conditions, on peut ajouter un diagramme d'états-transitions pour modéliser ces transition. C'est le genre de diagramme qui s'inclut bien dans un cas englobant. Si les changements d'états sont peu nombreux ou se font selon des conditions simples, il n'est pas nécessaire d'inclure ce diagramme. Il faut aussi se souvenir qu'un diagramme demande d'être mis à jour lorsque les spcéfications évoluent.</dd>
+<dt><code>prototype d'écran ou diagramme en fil de fer</code></dt>
+<dd>Le prorotype d'écran présente les contrôles et le fonctionnement de l'interface (lien entre les boutons et les rétroactions). On n'inclut pas d'élément de mise en forme dans ces prototypes, on se concentre sur l'utilisabilité de l'interface. Il seront décrits en détail dans la section sur les <a href="">interfaces utilisateurs</a>.</dd>
+</dl>
+<hr />
+<div class="admonition ex-projet">
+<p class="admonition-title">Le document d'analyse du système de suivi de projets</p>
+<p>L'exemple <a href="../../documents/Exemple%20dossier%20analyse%20et%20conception.pdf">dossier d'analyse et conception</a> contient des situations où sont utilisés les divers artefacts mentionnés dans cette section. </p>
+<p><strong>Liste des cas d'utilisation</strong> : pages 4 et 5<br>
+<strong>Diagramme des cas d'utilisation</strong> : page 7<br>
+<strong>Description sommaire d'un cas englobant</strong> : page 8<br>
+<strong>Description d'un cas détaillé</strong> : pages 9 et 10 ainsi que pages 14 à 16<br>
+<strong>Description sommaire</strong> : page 12<br> 
+<strong>Diagramme d'état-transition</strong> : page 8</p>
+</div>
+<h2 id="trucs-dans-lecriture-des-cas-dutilisation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27Z"/></svg></span> Trucs dans l'écriture des cas d'utilisation</h2>
+<dl>
+<dt><code>Ne pas copier-coller d'information</code></dt>
+<dd>Le copier-coller d'information entraîne la duplication de l'information et il devient nécessaire de dupliquer chacune des modifications qui occurent. Comme il est impossible de se souvenir de toutes les duplications qui ont été faites, on préfère faire référence en indiquant de façon souligné <ins>le nom du CU</ins>. Cela évite d'avoir plusieurs versions de la même spécifications qui se contredisent entre elles. </dd>
+<dt><code>Éviter de « sauver des étapes »</code></dt>
+<dd>Abréger des CU long en évitant d'écrire des étapes simples peut mener à les oublier (par exemple une validation avant de quitter une page). Donc même si certaines étapes semblent superflues, il faut se souvernir que les descriptions peuvent être consultées des mois après leur écriture. Donc une spécification qui parait superflue aujourd'hui peut rapidement nous sortir de la tête et devenir un oubli quelques semaines plus tard... </dd>
+<dt><code>Rassembler des spécifications ou faire des cas englobant</code></dt>
+<dd>Cette technique d'écriture permet de contourner le problème des copier-coller et des références trop nombreuses. En incluant une section de «&nbsp;spécification non fonctionnelles&nbsp;» globale et en déplaçant certains éléments descriptifs vers un cas englobant, cela simplifie chacun des sous-cas et réduit les redondences.</dd>
+</dl>
+<h2 id="gabarit-de-document">Gabarit de document</h2>
+<p><a href="../../documents/Analyse%20et%20conception%20-%20Gabarit.docx">Gabarit de document d'analyse et de conception</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1S69.2 242.2 73 254.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg></span></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../acteurs/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Entitée actrices, descriptions et persona">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Entitée actrices, descriptions et persona
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../conception/ui/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Interfaces utilisateurs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Interfaces utilisateurs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC BY-NC-SA Alexandre Ouellet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
