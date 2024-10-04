@@ -250,7 +250,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4YgBEhMR4xV-o12uJDV4" name="Page-4">
-    <mxGraphModel dx="1595" dy="1097" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2087" dy="1384" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -465,7 +465,7 @@
           <mxGeometry y="93" width="140" height="35" as="geometry" />
         </mxCell>
         <mxCell id="Coz0Wt7TkBVrxm_GRFFK-8" value="&lt;b&gt;Usine&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-1">
-          <mxGeometry x="236" y="51" width="231" height="177" as="geometry" />
+          <mxGeometry x="236" y="51" width="231" height="221" as="geometry" />
         </mxCell>
         <mxCell id="Coz0Wt7TkBVrxm_GRFFK-9" value="attributs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-8">
           <mxGeometry y="25" width="231" height="20" as="geometry" />
@@ -487,6 +487,9 @@
         </mxCell>
         <mxCell id="Coz0Wt7TkBVrxm_GRFFK-15" value="+ AcheterAmelioration (amelioration : &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Amelioration) : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-8">
           <mxGeometry y="133" width="231" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ArFPZyyCJgEsYnW4l_Ni-1" value="+ ChangerCaracteristique (nom :string, &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;changement : int) : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-8">
+          <mxGeometry y="177" width="231" height="44" as="geometry" />
         </mxCell>
         <mxCell id="Coz0Wt7TkBVrxm_GRFFK-16" value="&lt;b&gt;Amelioration&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-1">
           <mxGeometry x="546" y="51" width="188" height="177" as="geometry" />
@@ -569,7 +572,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rSdaPzJnxsgGd48KvacD-4" value="&lt;b&gt;Caracteristique&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="Coz0Wt7TkBVrxm_GRFFK-1">
-          <mxGeometry x="244" y="276" width="210" height="149" as="geometry" />
+          <mxGeometry x="246.5" y="304" width="210" height="149" as="geometry" />
         </mxCell>
         <mxCell id="rSdaPzJnxsgGd48KvacD-5" value="attributs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="rSdaPzJnxsgGd48KvacD-4">
           <mxGeometry y="25" width="210" height="20" as="geometry" />
