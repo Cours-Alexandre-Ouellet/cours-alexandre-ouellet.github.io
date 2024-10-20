@@ -1,0 +1,1359 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Contenu du cours 360-TC2-VI Réussir en techniques de l'information">
+      
+      
+        <meta name="author" content="Alexandre Ouellet">
+      
+      
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/reussir/recherche/">
+      
+      
+        <link rel="prev" href="../preparation_evaluation/">
+      
+      
+        <link rel="next" href="../presenter_travail/">
+      
+      
+      <link rel="icon" href="../images/siteicon.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+    
+    
+      
+        <title>Rechercher des informations - Réussir en techniques de l'informatique</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/hint.min.css">
+    
+      <link rel="stylesheet" href="../css/override.css">
+    
+      <link rel="stylesheet" href="../css/admonition-extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rechercher-des-informations" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-header__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
+      
+  <img src="../images/siteicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Réussir en techniques de l'informatique
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rechercher des informations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-nav__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
+      
+  <img src="../images/siteicon.svg" alt="logo">
+
+    </a>
+    Réussir en techniques de l'informatique
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environnement_collegial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Environnement collégial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../temps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestion du temps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reussite_scolaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Réussite scolaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objectifs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se fixer des objectifs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparation_evaluation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Réussir ses évaluations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rechercher des informations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Rechercher des informations
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sources-dinformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources d'information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sources d'information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-sources-primaires-et-secondaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les sources primaires et secondaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-des-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Évaluation des sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phenomene-de-la-chambre-decho" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phénomène de la «&nbsp;chambre d'écho&nbsp;»
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forum-didacticiel-et-documentations-officielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forum, didacticiel et documentations officielles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moteurs-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moteurs de recherche
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lencyclopedie-libre-wikipedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      L'encyclopédie libre Wikipédia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L'encyclopédie libre Wikipédia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bien-utiliser-wikipedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bien utiliser Wikipédia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utiliser-un-grand-modele-de-langage-categorie-dintelligence-artificielle-generatrice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utiliser un grand modèle de langage (catégorie d'intelligence artificielle génératrice)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organiser-ses-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organiser ses sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableaux-resumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableaux résumés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tableaux résumés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choisir-le-bon-outil-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choisir le bon outil de recherche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choisir-le-bon-outil-de-recherche-en-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choisir le bon outil de recherche en programmation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citer-ses-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citer ses sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-et-plus-de-lectures-sur-le-sujet" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références et plus de lectures sur le sujet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presenter_travail/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Présenter un travail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Autres ressources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Autres ressources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../se_mettre_en_action/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se mettre en action
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sources-dinformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources d'information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sources d'information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-sources-primaires-et-secondaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les sources primaires et secondaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-des-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Évaluation des sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phenomene-de-la-chambre-decho" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phénomène de la «&nbsp;chambre d'écho&nbsp;»
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forum-didacticiel-et-documentations-officielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forum, didacticiel et documentations officielles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moteurs-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moteurs de recherche
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lencyclopedie-libre-wikipedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      L'encyclopédie libre Wikipédia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L'encyclopédie libre Wikipédia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bien-utiliser-wikipedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bien utiliser Wikipédia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utiliser-un-grand-modele-de-langage-categorie-dintelligence-artificielle-generatrice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utiliser un grand modèle de langage (catégorie d'intelligence artificielle génératrice)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organiser-ses-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organiser ses sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableaux-resumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableaux résumés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tableaux résumés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choisir-le-bon-outil-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choisir le bon outil de recherche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choisir-le-bon-outil-de-recherche-en-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choisir le bon outil de recherche en programmation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citer-ses-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citer ses sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-et-plus-de-lectures-sur-le-sujet" class="md-nav__link">
+    <span class="md-ellipsis">
+       Références et plus de lectures sur le sujet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="rechercher-des-informations">Rechercher des informations</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>1-4 Stratégies d'organisation<br>
+2-1 Forums, documentations officielles et didacticiels<br>
+2-4 Utilisation des outils de recherche</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>45 minutes</p>
+</div>
+</div>
+<hr />
+<h2 id="sources-dinformation">Sources d'information</h2>
+<p>Les sources d'information sont variées et jouent toutes un rôle dans une recherche d'information complète et fiable. Parmi les principales sources d'informations, on retrouve :</p>
+<ul>
+<li>Les sources humaines :<ul>
+<li>Conférences : portent sur un sujet donné et en présente souvent un aspect. Elles peuvent être d'introduction (accessible au grand public) ou spécialisées (porter sur un sujet pointu). La personne experte du contenu décide des sujets abordés.</li>
+<li>Entrevues : rencontre avec une personne experte du contenu qui répond à une série de questions. Contrairement à la conférence, c'est la personne qui demande l'entrevue qui décide de l'orientation.</li>
+<li>Reportages : présentation des faits par une tierce personne qui n'est pas nécessairement experte du domaine. Le reportage offre souvent une pluralité de points de vue sur une même question avec un regard neutre.</li>
+</ul>
+</li>
+<li>Les sources écrites :<ul>
+<li>Encyclopédies : recueil de définitions de concepts liés à un domaine particulier.</li>
+<li>Journaux et périodiques : publication papier de reportages ou d'entrevues. Certains journaux servent aussi aux personnes expertes à présenter leurs travaux et leurs conclusions. La plupart incluent des processus de révisions, donc d'autres personnes expertes ont validé les démarches et les conclusions.</li>
+<li>Livres : ouvrage consacré à traiter ou introduire plusieurs aspects d'un sujet. Contrairement à l'article d'un journal, le livre permet d'aller en détail sur plusieurs aspects. </li>
+</ul>
+</li>
+<li>Les sources numériques :<ul>
+<li>Blogue : publication (souvent d'opinion ou anecdotique) d'une personne qui a de l'intérêt ou un certain niveau d'expertise sur le sujet. Dû à la facilité de publication, et à l'absence de processus de révision, il faut évaluer sérieusement la qualité des informations.</li>
+<li>Documentation officielle : manuel offert avec un logiciel ou une bibliothèque logicielle créé par les personnes autrices du logiciel ou de la bibliothèque. Contient souvent des précisions détaillées sur chacune des fonctionnalités.</li>
+<li>Forum : endroit d'échange et de question-réponse sur un sujet donné. Compte tenu de la nature dépersonnalisée ou anonyme de plusieurs forums, il faut évaluer sérieusement la qualité des informations d'un forum.</li>
+<li>Intelligence artificielle : les grands modèles de langage (GML) tels <em>ChatGPT</em>, <em>Copilot</em> ou <em>Gemini</em> qui permettent à un système automatique de «&nbsp;répondre&nbsp;» à une question directe. Considérant l'inexactitude des GML, il faut évaluer sérieusement la qualité des informations de l'IA.</li>
+<li>Site web : ressources disponibles en ligne et qui fournissent un niveau d'information à divers degrés de complexité et d'exactitude. Comme il est facile de publier un site web et masquer l'origine des informations, il faut évaluer sérieusement la qualité des informations.</li>
+</ul>
+</li>
+</ul>
+<p>L'usage des sources d'information varie selon l'<strong>intention de notre recherche</strong>.</p>
+<div class="admonition exercice">
+<p class="admonition-title">Identifiez les sources d'intérêt</p>
+<p>Dans les situations suivantes, identifiez les sources d'information intéressantes à consulter :</p>
+<ol>
+<li>
+<p>Vous souhaitez en apprendre davantage sur les méthodes de travail dans les entreprises qui emploient de grandes équipes de développement logiciel (ex. <em>Microsoft</em>).</p>
+<details class="success">
+<summary>Réponse</summary>
+<p>On recherche des sources qui relatent des pratiques ou des expériences vécues : </p>
+<ul>
+<li>Une conférence ou une entrevue avec un membre d'équipe ou un responsable d'une grande équipe de travail;</li>
+<li>Un livre sur la gestion de projets dans les grandes équipes de travail;</li>
+<li>Le blogue d'un responsable d'une grande équipe de travail ou d'une grande compagnie.   </li>
+</ul>
+</details>
+</li>
+<li>
+<p>Vous développez un jeu vidéo avec la bibliothèque logicielle <em>Unity</em> et vous cherchez comment contrôler un personnage.</p>
+<details class="success">
+<summary>Réponse</summary>
+<p>On recherche des sources qui introduisent le sujet ou offrent une information exacte :</p>
+<ul>
+<li>La documentation officielle de <em>Unity</em>;</li>
+<li>Des forums de programmation de jeu vidéo;</li>
+<li>Des conférences ou webinaires sur la conception de jeux avec <em>Unity</em>;</li>
+<li>L'intelligence artificielle pour identifier les principales composantes logicielles qui peuvent être utilisées.</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Vous devez présenter un travail qui porte sur les droits des minorités linguistiques en Amérique du Nord.</p>
+<details class="success">
+<summary>Réponse</summary>
+<p>On recherche des sources qui relatent des événements récents ou de grandes tendances : </p>
+<ul>
+<li>Des reportages de situation impliquant la violation ou de législation des droits des minorités linguistiques;</li>
+<li>Des sites web d'organismes gouvernementaux et impliqués dans la défense des droits des minorités linguistiques;</li>
+<li>Un livre sur l'histoire des minorités linguistiques;</li>
+<li>Une encyclopédie des sciences sociales (ou une encyclopédie généraliste comme <em>Wikipédia</em>).</li>
+</ul>
+</details>
+</li>
+</ol>
+</div>
+<h3 id="les-sources-primaires-et-secondaires">Les sources primaires et secondaires</h3>
+<p>On peut diviser les sources d'informations en deux catégories : primaires et secondaires.</p>
+<p>Les sources <strong>primaires</strong> rapportent l'information de première main. C'est-à-dire que les personnes auteurs de la source sont celles qui ont créé ou découvert l'information. On trouve dans ces sources plusieurs contenus de conférence, d'entrevue, les livres , les journaux, les blogues et les documentations officiels. </p>
+<p>Les sources <strong>secondaires</strong> rapportent l'information d'une autre source, comme un reportage, une encyclopédie, les forums. Les sites web peuvent facilement appartenir aux deux catégories, tandis qu'on verra plus loin pourquoi les grands modèles de langage n'appartiennent à aucune des deux catégories.</p>
+<h3 id="evaluation-des-sources">Évaluation des sources</h3>
+<p>À l'époque moderne, une grande quantité d'information sont disponibles, mais plusieurs sont de mauvaise qualité ou inventées.</p>
+<dl>
+<dt><code>Qui a produit le contenu ?</code></dt>
+<dd>
+<p>dans une source de qualité, les personnes qui ont produit le contenu sont identifiées clairement. Également, certaines personnes peuvent avoir des intérêts à manipuler l'information, surtout pour des questions politiques (<em>fake news</em>) ou financières.</p>
+<p>Une bonne marque de qualité est l'utilisation des propos dans des sources secondaires crédibles.</p>
+</dd>
+<dt><code>Est-ce que le propos est exact ?</code></dt>
+<dd>dans une source de qualité, celle-ci présente une méthodologie et cite clairement toutes les affirmations qu'elle ne démontre pas. Également, les sources tendent à être limitées dans les affirmations : une source qui formule trop d'affirmations ou que celles-ci sont trop définitives est probablement fausse ou du moins, peu fiable.</dd>
+<dt><code>Quand le contenu a-t-il été produit ?</code></dt>
+<dd>
+<p>selon la question de recherche, le moment de l'écriture de la source peut avoir un impact. Les sources plus vieilles ne sont pas nécessairement à ignorer, mais elles doivent être traitées adéquatement et l'on doit s'assurer que leurs informations n'ont pas été invalidées.</p>
+<p>Dans plusieurs médias, des bandeaux d'information accompagnent maintenant les articles qui datent de plusieurs années pour mettre en garde vis-à-vis l'actualité des propos rapportés.</p>
+</dd>
+<dt><code>Pourquoi ce contenu a-t-il été produit ?</code></dt>
+<dd>un contenu argumentatif peut être véridique, mais demande une critique supplémentaire afin de s'assurer que les arguments sont robustes et non émis par un groupe d'intérêt avec pour seul but de discréditer ou de confondre un enjeu.</dd>
+</dl>
+<div class="admonition exercice">
+<p class="admonition-title">Trouver les problèmes avec les sources suivantes</p>
+<ol>
+<li>
+<p>Quel est le problème à utiliser cette source d'information ?</p>
+<p>Breton, D. (2016, 4 mai). L’Alberta : « junkie » du pétrole. Roulez électrique.com. <a href="https://roulezelectrique.com/lalberta-junkie-du-petrole/">https://roulezelectrique.com/lalberta-junkie-du-petrole/</a>.</p>
+<details class="success">
+<summary>Réponse</summary>
+<p>Le site est évidemment militant pour les voitures électriques et l'auteur est un ancien ministre de l'environnement notoirement opposé à l'exploitation pétrolière.</p>
+</details>
+</li>
+<li>
+<p>Quels sont les problèmes avec cette source d'information ?</p>
+<p>Ranier S. (2023, 20 novembre). Les bienfaits du chlorure de magnésium sur le corps. Rustica. <a href="https://www.rustica.fr/conseils-sante-bien-etre/bienfaits-chlorure-magnesium-sur-corps,16259.html">https://www.rustica.fr/conseils-sante-bien-etre/bienfaits-chlorure-magnesium-sur-corps,16259.html</a></p>
+<details class="success">
+<summary>Réponse</summary>
+<ul>
+<li>Aucune source d'information n'est citée dans l'article. </li>
+<li>Il semble s'agir d'un remède miracle qui règle tous les problèmes.</li>
+<li>L'article mentionne plusieurs substances (magnésium, chlorure de magnésium, chlorure de sodium).</li>
+<li>Il s'agit d'un oligo-élément, soit un minéral pur (contrairement au chlorure de sodium du premier paragraphe qui est le nom technique du sel.) L'institut national du cancer (en France) mentionne que bien qu'ils soient essentiels, ils sont très faiblement présents dans le corps humain.</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Quel est le problème avec ces deux sites web ?</p>
+<p>Connaissances informatiques. (s.d.) Avantages et inconvénients de la programmation orientée objet. <a href="http://www.ordinateur.cc/programmation/Computer-Programming-Languages/87470.html">http://www.ordinateur.cc/programmation/Computer-Programming-Languages/87470.html</a></p>
+<p>L'avisé. (s.d.) Avantages et inconvénients de la programmation orientée objet. <a href="http://www.lavise.fr/fiches/20643.html">http://www.lavise.fr/fiches/20643.html</a></p>
+<details class="success">
+<summary>Réponse</summary>
+<p>Il s'agit d'un copié-collé l'un de l'autre, donc on peut contester la pertinence du contenu des sites et des personnes qui les composent. De plus, <em>L'avisé</em> traite aussi de décoration de maison, ce qui n'est pas en lien avec la programmation orientée objet.</p>
+</details>
+</li>
+</ol>
+</div>
+<h3 id="phenomene-de-la-chambre-decho">Phénomène de la «&nbsp;chambre d'écho&nbsp;»</h3>
+<p>Dans la plupart des outils en ligne, et particulièrement les médias sociaux, les recherches faites tiennent compte des recherches précédentes et des contenus «&nbsp;aimés&nbsp;» ou même visionnés. La conséquence est que les résultats produisent un effet de validation entre eux, et souvent avec vos propres perceptions. Cet effet, appelé «&nbsp;chambre d'écho&nbsp;» explique pourquoi plusieurs personnes sont convaincues d'avoir raison sur tout, car internet ne leur montre que des contenus qui sont en accord avec leurs perceptions.</p>
+<p>Lorsque vous faites une recherche, en particulier sur un sujet comportant un niveau d'enjeu politique, il est important de rechercher volontairement des informations sur le point de vue opposé afin de tromper les algorithmes et s'assurer de présenter une information complète.</p>
+<h2 id="forum-didacticiel-et-documentations-officielles">Forum, didacticiel et documentations officielles</h2>
+<p>Les forum et les documentations officielles sont très utilisés en informatique et sont <strong>complémentaires</strong>. Voici les cas d'utilisation standard de chacune de ces sources d'information :</p>
+<ul>
+<li>si l'on cherche comment utiliser une fonctionnalité d'un outil, alors la <strong>documentation officielle</strong> est la source indiquée;</li>
+<li>si l'on cherche à découvrir une nouvelle fonctionnalité ou un nouvel outil, alors le <strong>didacticiel</strong> est la source indiquée;</li>
+<li>si l'on rencontre une erreur ou que l'on cherche à savoir si une fonctionnalité existe, alors le <strong>forum</strong> est la source indiquée.</li>
+</ul>
+<p>Il faut toutefois être prudent avec les forums, car il y a plusieurs problèmes possibles :</p>
+<div class="admonition warning">
+<p class="admonition-title">Considérations avec les forums de programmation</p>
+<ul>
+<li>L'information peut être périmée (certaines publications ont plus de 15 ans...);</li>
+<li>L'information peut être fausse (un autre effet dans le système lui permet de fonctionner);</li>
+<li>Les bonnes pratiques (comme la programmation sécuritaire) peuvent ne pas être respectées;</li>
+<li>Une façon plus simple ou plus efficace peut aussi exister;</li>
+<li>La solution peut mal s'intégrer ou ne pas s'intégrer du tout au système construit.</li>
+</ul>
+<p>Souvent, les forums permettent de trouver plus rapidement une piste de solution (extrait de code ou algorithme), mais une vérification dans la documentation officielle avant d'utiliser le code suggéré évite bien de mauvaises surprises. </p>
+</div>
+<h2 id="moteurs-de-recherche">Moteurs de recherche</h2>
+<p>Voici quelques stratégies de recherche. Elles sont vues plus en détail dans le cours <em>Outils informatique</em> : </p>
+<ul>
+<li>Les déterminants et plusieurs mots courts sont ignorés;</li>
+<li>Recherche de tous les termes inscrits dans n'importe quel ordre;</li>
+<li>Connecteur logique;</li>
+<li>Utiliser les guillemets anglais pour une recherche d'expression exacte;</li>
+<li>Plusieurs mots clés disponibles pour faire des recherches spécialisées :<ul>
+<li>Rechercher uniquement dans un site;</li>
+<li>Rechercher un type de document particulier.</li>
+</ul>
+</li>
+</ul>
+<h2 id="lencyclopedie-libre-wikipedia">L'encyclopédie libre <em>Wikipédia</em></h2>
+<p>Il s'agit d'une encyclopédie libre et collaborative où tout le monde peut contribuer en ajoutant ou modifiant du contenu existant. L'encyclopédie Wikipédia porte sur une grande variété de sujets. <em>Wikipédia</em> s'appuie sur de grands principes fondateurs (Principes fondateurs, 2024) :</p>
+<ul>
+<li>Il s'agit d'une encyclopédie, donc elle relate des faits et non des opinions ou des recherches originales. <em>Wikipédia</em> agit toujours comme référence secondaire.</li>
+<li>Le point de vue adopté est neutre, donc parfois plusieurs points de vue peuvent être présentés dans un même article et doivent être interprété comme un tout.</li>
+<li>Les contenus de <em>Wikipédia</em> sont libres, donc ils n'appartiennent à personne, mais les droits d'auteurs doivent être respectés.</li>
+</ul>
+<p>Depuis quelques années, Wikipédia inclut une protection contre le vandalisme, les guerres d'édition et certaines modifications abusives. Bien que ce ne soit pas rencontré fréquemment, cela limite la propagation de fausses informations. De plus, Wikipédia définit plusieurs bandeaux qui mettent en garde les lecteurs :</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Niveaux_de_protection">Niveaux de protection sur Wikipédia</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Aide:Bandeau">Aide:Bandeau sur Wikipédia</a></li>
+</ul>
+<h3 id="bien-utiliser-wikipedia">Bien utiliser <em>Wikipédia</em></h3>
+<p>Comme <em>Wikipédia</em> couvre une variété de sujets et exploite les liens hypertextes afin de lier entre eux les contenus qui y sont présentés. Donc on peut utiliser <em>Wikipédia</em> pour :</p>
+<ul>
+<li>s'initier sur un nouveau sujet;</li>
+<li>rechercher des concepts connexes à un sujet;</li>
+<li>utiliser les références inclut dans les pages Wikipédia pour trouver des sources spécialisées d'information</li>
+<li>connaitre des valeurs ou des lois communes (par exemple, la masse de la terre, les identités trigonométriques ...)</li>
+</ul>
+<h2 id="utiliser-un-grand-modele-de-langage-categorie-dintelligence-artificielle-generatrice">Utiliser un grand modèle de langage (catégorie d'intelligence artificielle génératrice)</h2>
+<p>Les <strong>GML</strong> sont un type de modèle d'intelligence artificielle génératrice de texte basé sur des <strong>probabilités</strong>. Aucun de ces modèles ne connait quoique à proprement dit autre que les chances qu'un mot en suive un autre. En ayant été entraîné sur suffisamment de mots, il donne souvent l'impression de répondre la bonne chose. Certains modèles comme <em>Copilot</em> peuvent intégrer des informations trouvées sur le web, mais peine parfois à distinguer les bonnes sources d'information des moins bonnes.</p>
+<p>On appelle un <strong>prompt</strong> une demande faite à un GLM.</p>
+<p>Quelques trucs pour écrire des bons prompts :</p>
+<ul>
+<li>Donner un contexte dans lequel la demande est faite (public cible, contexte d'utilisation, de travail, niveau de compétence...);</li>
+<li>Utiliser une question de relance pour préciser la réponse initiale;</li>
+<li>Être clair et spécifique pour que le GLM «&nbsp;interprète&nbsp;» correctement les mots reçus;</li>
+<li>Faire preuve de politesse (les réponses des humains sont meilleures lorsque la demande est polie et les GLM semblent avoir appris cette tendance);</li>
+<li>Au besoin reposer la même question, car la réponse peut différer en raison du caractère aléatoire de celles-ci.</li>
+</ul>
+<div class="admonition exercice">
+<p class="admonition-title">Donner un contexte à ses prompts</p>
+<p>Essayez les prompts suivants :</p>
+<ol>
+<li>Comment fonctionnent les tableaux en C# ?</li>
+<li>Je suis un débutant en programmation, comment fonctionnent les tableaux en C# ?</li>
+<li>Tu es Socrate. Comment fonctionnent les tableaux en C# ?</li>
+</ol>
+<p>Que remarquez-vous ?</p>
+</div>
+<div class="admonition exercice">
+<p class="admonition-title">Utiliser une question de relance</p>
+<p>Essayez les prompts suivants (dans l'ordre) :</p>
+<ol>
+<li>Quels sont les types de données en C# ?</li>
+<li>Comment fonctionne les types de données valeurs ?</li>
+<li>Comment fonctionne le passage de paramètre ?</li>
+</ol>
+<p>Que remarquez-vous ?</p>
+</div>
+<div class="admonition exercice">
+<p class="admonition-title">Être clair et spécifique</p>
+<p>Essayez les prompts suivants :</p>
+<ol>
+<li>J'ai un pb avec mon code C#, ma boucle ne marche pas</li>
+<li>Quel est le problème avec le code suivant</li>
+</ol>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">tableau</span><span class="p">.</span><span class="n">Lenght</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{i}) tablau[i]);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Laquelle des deux versions donne la meilleure réponse ?
+Est-ce que Chat-GPT a trouvé toutes les erreurs dans le deuxième code ?</p>
+</div>
+<h2 id="organiser-ses-sources">Organiser ses sources</h2>
+<p>On ne peut souvent pas retenir toutes les lectures que l'on fait, il est donc suggéré de faire des <strong>fiches citations</strong> afin de se retrouver plus facilement dans ses lectures. On présente ici une synthèse de l'idée de Dionne (2018).</p>
+<p>Une fiche citation contient :</p>
+<ul>
+<li>Le sujet traité dans la source</li>
+<li>Le titre du document et sa référence</li>
+<li>Un résumé sous forme de liste à points</li>
+</ul>
+<div class="admonition exemple">
+<p class="admonition-title">Fiche citation</p>
+<p><strong>Sujet : Les bandeaux de Wikipédia</strong></p>
+<p>Référence : https://fr.wikipedia.org/wiki/Aide:Bandeau<br>
+Consulté le 20 octobre 2024</p>
+<p>Informations importantes : </p>
+<ul>
+<li>Mécanisme pour assurer la qualité de Wikipédia</li>
+<li>Plusieurs types de bandeaux adaptés à chaque type de problème</li>
+<li>Éviter l’utilisation d’un trop grand nombre de bandeaux (bandeau de problème multiple)</li>
+</ul>
+</div>
+<h2 id="tableaux-resumes">Tableaux résumés</h2>
+<p>https://forms.office.com/pages/responsepage.aspx?id=JvVsnYGt-EanOqUHqvBs2jn9JFucWzBNknW5ac6kyLZUMkZESFVaMlpZTlFDNzY5OTdDSVdPRFkzSi4u&amp;route=shorturl</p>
+<h3 id="choisir-le-bon-outil-de-recherche">Choisir le bon outil de recherche</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Outil</th>
+<th style="text-align: left;">Information recherchée</th>
+<th style="text-align: left;">Type de résultat</th>
+<th style="text-align: left;">Contexte d’utilisation</th>
+<th style="text-align: left;">Niveau de fiabilité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Koha</td>
+<td style="text-align: left;">Source documentaire : <br>- Livre <br>- Livre électronique <br>- Banque de données</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Approfondissement de sujet<br>Travail de recherche</td>
+<td style="text-align: left;">Généralement élevé</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">Site d’information</td>
+<td style="text-align: left;">Page référencée sur le web <br> Les premières pages sont payantes, puis les plus « pertinente » selon l’algorithme de classement</td>
+<td style="text-align: left;">Connaissance générale <br> Dépannage avec un problème <br> Approfondissement de sujet</td>
+<td style="text-align: left;">Dépend du site web trouvé, une évaluation au cas par cas est nécessaire. <br> Possibilité de trouver d’excellents résultats</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google scholar</td>
+<td style="text-align: left;">Articles scientifiques</td>
+<td style="text-align: left;">Articles scientifiques <br> Publications dans des revues scientifiques</td>
+<td style="text-align: left;">Approfondissement de sujet <br> Travail de recherche</td>
+<td style="text-align: left;">Élevé</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wikipédia</td>
+<td style="text-align: left;">Connaissances générales sur un sujet</td>
+<td style="text-align: left;">Page encyclopédique <br> Peu d’information sur les techniques</td>
+<td style="text-align: left;">Prise en main d’un sujet <br>  Recherche de concepts liés</td>
+<td style="text-align: left;">Moyen à élevé (articles de qualité)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chat-GPT</td>
+<td style="text-align: left;">Explication sur un sujet</td>
+<td style="text-align: left;">Réponse interactive d’une intelligence artificielle</td>
+<td style="text-align: left;">Définition d’un sujet <br> Prise en main d’un sujet <br> Recherche de concepts liés <br> Aide technique</td>
+<td style="text-align: left;">Médiocre à élevé <br> Certaines fois Chat-GPT fournit de fausses informations (œufs de vache) <br> Toujours confirmer avec une seconde source réputée avant d’utiliser l’information.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="choisir-le-bon-outil-de-recherche-en-programmation">Choisir le bon outil de recherche en programmation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type de site </th>
+<th style="text-align: left;">Résultat attendu </th>
+<th style="text-align: left;">Contexte de recherche </th>
+<th style="text-align: left;">Exemples </th>
+<th style="text-align: left;">Niveau de fiabilité </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Forum </td>
+<td style="text-align: left;">Réponse à un problème </td>
+<td style="text-align: left;">Problème rencontré <br> Explication sur une fonction / méthode / concept à utiliser </td>
+<td style="text-align: left;">StackOverflow <br> Developpez <br> OpenClassroom <br> Certains langages / outils ont leur propre forum d’aide</td>
+<td style="text-align: left;">Système de vote <br> Les forums les plus fréquentés sont fiables</td>
+</tr>
+<tr>
+<td style="text-align: left;">Didacticiel </td>
+<td style="text-align: left;">Explication sur des façons de faire, des procédures  </td>
+<td style="text-align: left;">Apprentissage d’un langage, d’un outil ou d’une technique de programmation <br> Introduction à des concepts ou des langages</td>
+<td style="text-align: left;">OpenClassroom <br> Developpez <br> W3School  </td>
+<td style="text-align: left;">Dépend du site web <br> Les sites les plus fréquentés sont fiables </td>
+</tr>
+<tr>
+<td style="text-align: left;">Documentations officielles </td>
+<td style="text-align: left;">Explications précises et détaillées </td>
+<td style="text-align: left;">Apprendre à utiliser une fonctionnalité du langage ou de l’outil <br> Généralement, on sait que cette fonction fait le traitement et l’on cherche à comprendre son utilisation ou son fonctionnement.</td>
+<td style="text-align: left;">MSDN <br> Mozilla Fondation <br> W3C</td>
+<td style="text-align: left;">Très élevé (spécialisé sur un outil) <br> Chaque outil définit habituellement une documentation disponible en ligne</td>
+</tr>
+</tbody>
+</table>
+<h2 id="citer-ses-sources">Citer ses sources</h2>
+<p>Il est important de toujours mentionner l'information puisée dans des sources. Citer une source utilise deux mécanismes, soit l'appel de référence et la bibliographie. La médiagraphie contient l'ensemble des sources utilisées et présente l'information pertinente pour les identifier. L'appel de référence qui indique quelle source d'information est utilisée. Au Cégep on utilise le style APA (7e édition).</p>
+<p>Des détails seront donnés sur la citation dans la section <a href="../presenter_travail/">Présenter un travail</a>.</p>
+<h2 id="exercice">Exercice</h2>
+<p>Un <a href="https://forms.office.com/pages/responsepage.aspx?id=JvVsnYGt-EanOqUHqvBs2jn9JFucWzBNknW5ac6kyLZUMkZESFVaMlpZTlFDNzY5OTdDSVdPRFkzSi4u&amp;route=shorturl">bref exercice</a> vous est proposé pour réviser les contenus en vue du quiz sur les outils de recherche.</p>
+<h2 id="references-et-plus-de-lectures-sur-le-sujet"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références et plus de lectures sur le sujet</h2>
+<p>Dionne, B. (2018). L'essentiel pour réussir ses études. Canada: Chenelière éducation.</p>
+<p>Institut national du cancer, (s.d.). Définition oligoélément. <a href="https://www.e-cancer.fr/Dictionnaire/O/oligoelement#:~:text=Les%20oligo%C3%A9l%C3%A9ments%20se%20distinguent%20des,alimentation%20suffisante%2C%20vari%C3%A9e%20et%20%C3%A9quilibr%C3%A9e.">https://www.e-cancer.fr/Dictionnaire/O/oligoelement#:~:text=Les%20oligo%C3%A9l%C3%A9ments%20se%20distinguent%20des,alimentation%20suffisante%2C%20vari%C3%A9e%20et%20%C3%A9quilibr%C3%A9e.</a>.</p>
+<p>Wikipédia:Principes fondateurs. (2024, 20 octobre). Dans Wikipédia. <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Principes_fondateurs">https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Principes_fondateurs</a></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-20</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../preparation_evaluation/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Réussir ses évaluations">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Réussir ses évaluations
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../presenter_travail/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Présenter un travail">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Présenter un travail
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC BY-NC-SA 4.0 | Alexandre Ouellet, Carine Croteau et Mathieu Fréchette
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -22,7 +22,7 @@
         <mxCell id="mezI6ZfzWDAZcWfunjce-10" value="Date du déplacement" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="139" y="377" width="165" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mezI6ZfzWDAZcWfunjce-11" value="&lt;font color=&quot;#b3b3b3&quot;&gt;jj/mm/aaaa&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#999999;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+        <mxCell id="mezI6ZfzWDAZcWfunjce-11" value="&lt;font color=&quot;#b3b3b3&quot;&gt;aaaa-mm-jj&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#999999;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
           <mxGeometry x="376" y="377" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mezI6ZfzWDAZcWfunjce-12" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#999999;fillColor=#ffffff;" vertex="1" parent="1">
@@ -289,7 +289,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="aKYJ98assW8vGWKDAooJ" name="Page-2">
-    <mxGraphModel dx="1366" dy="796" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1912" dy="1115" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -320,7 +320,7 @@
         <mxCell id="o3ZY7nAiFbSXyeHQSeMh-6" value="Date du déplacement" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="139" y="377" width="165" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="o3ZY7nAiFbSXyeHQSeMh-7" value="&lt;font color=&quot;#b3b3b3&quot;&gt;jj/mm/aaaa&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#999999;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+        <mxCell id="o3ZY7nAiFbSXyeHQSeMh-7" value="&lt;font color=&quot;#b3b3b3&quot;&gt;aaaa-mm-jj&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#999999;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
           <mxGeometry x="376" y="377" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="o3ZY7nAiFbSXyeHQSeMh-8" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#999999;fillColor=#ffffff;" vertex="1" parent="1">
