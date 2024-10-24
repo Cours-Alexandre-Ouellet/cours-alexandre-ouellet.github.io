@@ -1,0 +1,2015 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours 420-5B5-VI Projet intégrateur 1 axé sur la gestion de projet et retour sur les principes de conception objet">
+      
+      
+        <meta name="author" content="Alexandre Ouellet">
+      
+      
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/efficacite/">
+      
+      
+        <link rel="prev" href="../gitflow/">
+      
+      
+        <link rel="next" href="../javafx_intro/">
+      
+      
+      <link rel="icon" href="../../images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Efficacité des algorithmes - Projet intégrateur 1</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/hint.min.css">
+    
+      <link rel="stylesheet" href="../../css/override.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#efficacite-des-algorithmes" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+      
+  <img src="../../images/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projet intégrateur 1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Efficacité des algorithmes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
+          
+  
+  Introduction et généralités
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../analyse/telos/" class="md-tabs__link">
+          
+  
+  Analyse
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../conception/ui/" class="md-tabs__link">
+          
+  
+  Conception
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../java_gradle/" class="md-tabs__link">
+          
+  
+  Implémentation et versionnage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../allo.md" class="md-tabs__link">
+        
+  
+    
+  
+  Qualité logicielle
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../allo.md" class="md-tabs__link">
+        
+  
+    
+  
+  Déploiement et maintenance
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../gestion/methodes_pointage/" class="md-tabs__link">
+          
+  
+  Gestion des projets
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Projet intégrateur 1" class="md-nav__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+      
+  <img src="../../images/favicon.svg" alt="logo">
+
+    </a>
+    Projet intégrateur 1
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction et généralités
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction et généralités
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/genie_logiciel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histoire du génie logiciel et de l'informatique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/approche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Approches de développement logiciel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/redaction_technique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Éléments de rédaction technique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/gabarits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gabarits et exemple
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyse/telos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Étude de faisabilité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyse/acteurs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entitée actrices, descriptions et persona
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analyse/cu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La méthode des cas d'utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Extra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recits.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Récits utilisateurs dans les méthodes agiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conception
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Conception
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfaces utilisateurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/conception-objet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conception orientée objet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/exercice1-conception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 1 - Les trombones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conception/architectures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architectures logicielles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Implémentation et versionnage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Implémentation et versionnage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_gradle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Java et Gradle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versionnage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Versionnage sémantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_avance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git avancé
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitFlow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Efficacité des algorithmes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Efficacité des algorithmes
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#complexite-des-algorithmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexité des algorithmes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexité des algorithmes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methodes-danalyse-en-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthodes d'analyse en temps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-complexite-du-maximum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de complexité du maximum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-complexite-du-tri-par-bulle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de complexité du tri par bulle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-classes-de-complexite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les classes de complexité
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les classes de complexité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordre-des-classes-de-complexite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordre des classes de complexité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effet-de-la-constante-multiplicative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effet de la constante multiplicative
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effet de la constante multiplicative">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-preuve" class="md-nav__link">
+    <span class="md-ellipsis">
+      La preuve
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impact-du-terme-dominant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact du terme dominant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-seuil-defficacite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le seuil d'efficacité
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complexite-de-quelques-algorithmes-communs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexité de quelques algorithmes communs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etude-de-cas-structures-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étude de cas : structures de données
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etude-de-cas-base-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étude de cas : base de données
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Étude de cas : base de données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-dexecution-1-faire-les-jointures-dabord" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma d'exécution 1 : Faire les jointures d'abord
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-dexecution-2-where-dabord-et-reordonnancement-des-jointures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schéma d'exécution 2 : WHERE d'abord et réordonnancement des jointures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schéma d'exécution 2 : WHERE d'abord et réordonnancement des jointures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importance-des-cles-primaires-et-des-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importance des clés primaires et des index
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    JavaFX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            JavaFX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../javafx_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../formulaire_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Créer un formulaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conteneur_javafx.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipuler les conteneurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fenetre_javafx.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se promener entre les fenêtres
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources_javafx.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charger des ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menu_javafx.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Faire des menus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../erreur_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erreurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../allo.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../allo.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Déploiement et maintenance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestion des projets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Gestion des projets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/methodes_pointage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Méthodes à pointage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/clickup.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clickup et Kanban
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="efficacite-des-algorithmes">Efficacité des algorithmes</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p>3-9 Développement du projet en cohérence avec la conception établie</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>60 minutes</p>
+</div>
+</div>
+<p>Au-delà des choix de structures et de l'organisation du projet, les choix d'implémentation tels les algorithmes ont aussi une grande importance sur la vitesse d'exécution du système. Souvent, une vitesse plus rapide s'obtient au dépend de la lisibilité ou de la modularité du code. Le choix d'algorithmes pertinent et la prise en compte de leurs complexité assure permet aussi d'accélérer le système.</p>
+<h2 id="complexite-des-algorithmes">Complexité des algorithmes</h2>
+<p>On effectue l'évaluation de la complexité des algorithmes par rapport à deux facteurs : le temps et l'espace utilisées par l'algorithme.</p>
+<details class="failure">
+<summary>Pourquoi on ne mesure pas le temps en secondes pour les algorithmes ?</summary>
+<p>Parce que la mesure est dépendante de l'environnement d'exécution. Il devient donc impossible d'affirmer qu'un algorithme est systématiquement plus efficace qu'un autre avec cette approche.</p>
+</details>
+<p><strong>Mesure en temps</strong> : le temps d'exécution se mesure en nombre d'étapes. <br>
+<strong>Mesure en espace</strong> : le temps d'exécution se mesure selon le plus grande nombre de bits utilisés à un moment de l'exécution. Attention, un bit peut être réécrit durant l'exécution. Comme ce calcul est plus difficile à réaliser et moins utilisé, cet aspect sera mis de côté pour la suite des notes.</p>
+<h3 id="methodes-danalyse-en-temps">Méthodes d'analyse en temps</h3>
+<p>On utilise une fonction qui exprime le terme dominant dans la relation qui lie le nombre d'éléments au nombres d'étapes nécessaires. Trois analyses peuvent être menées :</p>
+<ul>
+<li><strong>Analyse du pire cas</strong> : au maximum, combien d'étapes sont nécessaires pour réaliser l'algorithme. On utilise la notation <strong>grand O</strong> pour désigner le pire cas.</li>
+<li><strong>Analyse du cas moyen</strong> : en moyenne, combien d'étapes sont nécessaires pour réaliser l'alorithme. Il n'y a pas de notation dédiée et il est difficile d'obtenir une donnée précise pour le cas moyen.</li>
+<li><strong>Analyse du meilleur cas</strong> : au minimum, combien d'étapes sont nécessaire pour réaliser l'algorithme. On utilise la notation <strong>grand <span class="arithmatex">\(\Omega\)</span></strong> pour désigner le meilleur cas. </li>
+</ul>
+<p>La fonction <strong>grand O</strong> et <strong>grand <span class="arithmatex">\(\Omega\)</span></strong> permet une analyse disent <strong>asymptotique</strong>, donc comment ces valeurs se comportent sur les grandes valeurs ou à long terme.</p>
+<h2 id="exemple-de-complexite-du-maximum">Exemple de complexité du maximum</h2>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Algorithme de recherche du maximum</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">tableau</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="p">{...};</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">maximum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">MinValue</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">tableau</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maximum</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="n">maximum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tableau</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<details class="question">
+<summary>Combien d'étapes comportent ce cas d'exécution de l'algorithme ?</summary>
+<ul>
+<li>1 étape pour affecter le maximum à la ligne 2</li>
+<li>1 étape pour affecter 0 à <code>i</code> à la ligne 4</li>
+<li>10 étapes de comparaison à la ligne 4</li>
+<li>10 étapes d'incrémentation à la ligne 4</li>
+<li>10 étapes de comparaison à la ligne 5</li>
+<li>Entre 0 et 10 étapes d'affectation à la ligne 6 (pire cas, 10 étapes)</li>
+</ul>
+<p>Donc au pire cas 42 étapes ou <span class="arithmatex">\(4 \times 10 + 2\)</span>.</p>
+</details>
+<details class="question">
+<summary>Quelle est la la formule en fonction de la taille du tableau ?</summary>
+<p><span class="arithmatex">\(O(4n + 2)\)</span></p>
+</details>
+<div class="admonition tips">
+<p class="admonition-title">Quelles étapes sont considérées dans un calcul de complexité</p>
+<p>Souvent on prend comme exemple la ligne qui risque de s'exécuter le plus souvent et on ignore les «&nbsp;opérations de soutien&nbsp;» comme les opérations internes de la boucle comme la comparaison et l'incrématation du <code>i</code>. </p>
+</div>
+<h2 id="exemple-de-complexite-du-tri-par-bulle">Exemple de complexité du tri par bulle</h2>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Algorithme du tri par bulle</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span>
+<span class="normal"><a href="#__codelineno-1-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">tableau</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="p">{...};</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">      </span><span class="k">if</span><span class="p">(</span><span class="n">tableau</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tableau</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">        </span><span class="n">Echanger</span><span class="p">(</span><span class="n">tableau</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<details class="question">
+<summary>Combien de fois la méthode Echanger est-elle appelée ?</summary>
+<p>La boule de la ligne 3 s'exécute 10 fois et à chaque fois le nombre d'itération de la boucle de la ligne 4 est réduit de 1.</p>
+<p>Donc dans le pire cas, la ligne 6 s'exécute <span class="arithmatex">\(9 + 8 + 7 + ... + 1 + 0\)</span> fois, ce qui vaut <span class="arithmatex">\(45\)</span>.</p>
+</details>
+<div class="admonition tips">
+<p class="admonition-title">Valeur de la somme des <span class="arithmatex">\(n\)</span> premiers entiers</p>
+<div class="arithmatex">\[
+\sum_{i = 1}^{n} i = \frac{n(n+1)}{2}
+\]</div>
+</div>
+<details class="question">
+<summary>Quelle est la la formule en fonction de la taille du tableau ?</summary>
+<div class="arithmatex">\[
+O \left(\frac{(n-1)n}{2}\right)
+\]</div>
+</details>
+<h2 id="les-classes-de-complexite">Les classes de complexité</h2>
+<figure>
+    <a class="glightbox" href="../../images/complexite_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center height:600px" src="../../images/complexite_1.png" width="500" /></a>
+    <figcaption>Comparaison de différentes classes de complexité</figcaption>
+</figure>
+<p>On remarque sur le graphique ci-dessus que certaines fonctions augmentent plus rapidement que d'autres. Comme on étudie le <strong>comportement asymptotique</strong>, il est important de regarder le comportement sur les <strong>grandes valeurs</strong> pour comparer les fonctions. Donc même si la fonction factorielle démarre plus lentement que la fonction exponentielle, un algorithme exponentiel est plus efficace qu'un algorithme factoriel.</p>
+<figure>
+    <a class="glightbox" href="../../images/complexite_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center height:600px" src="../../images/complexite_2.png" width="500" /></a>
+    <figcaption>Comparaison de différentes classes de complexité</figcaption>
+</figure>
+<p>L'échelle logarithmique de ce graphique (chaque unité de l'axe des abcisses correpond à 10 fois plus d'étapes de calcul) illustre bien la complexité grandissante des différentes fonctions.</p>
+<h3 id="ordre-des-classes-de-complexite">Ordre des classes de complexité</h3>
+<p>Les principales fonctions de classe de complexité sont les suivantes et la relation d'ordre entre elles est donnée.</p>
+<p><span class="arithmatex">\(\log^*(n) &lt; log(n) &lt; n &lt; n^2 &lt; n^3 ... &lt; n^p &lt; 2^n &lt; n! &lt; 2^n! &lt; 2^{n!} &lt; ...\)</span></p>
+<h3 id="effet-de-la-constante-multiplicative">Effet de la constante multiplicative</h3>
+<figure>
+    <a class="glightbox" href="../../images/complexite_constante.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center height:600px" src="../../images/complexite_constante.png" width="500" /></a>
+    <figcaption>Effet de la constante multiplicative sur les classes de complexité</figcaption>
+</figure>
+<blockquote></blockquote>
+<p>On remarque que les constantes multiplicatives n'ont pas d'impact à long terme. Lorsque le nombre d'éléments devient suffisamment grand, l'ordre de complexité des fonctions est respectée.</p>
+<h4 id="la-preuve">La preuve</h4>
+<p>Démontrons le cas spécifique que pour <span class="arithmatex">\(n &gt; b_0\)</span>, alors <span class="arithmatex">\(25n &lt; \frac{n^2}{25}\)</span>. Si l'on arrive à trouver le <span class="arithmatex">\(b_0\)</span> qui convient, alors la preuve est faite.</p>
+<div class="arithmatex">\[
+\begin{split}
+n = n &amp; \\
+n &lt; n^2 &amp; \text{ vrai si } n &gt; 1 \\
+625n &lt; n^2 &amp; \text{ vrai si } n &gt; 625 \\
+(25 \times 25)n &lt; n^2 &amp; \text{ vrai si } n &gt; 625 \\
+25n &lt; \frac{n^2}{25} &amp; \text{ vrai si } n &gt; 625 
+\end{split}
+\]</div>
+<p>Donc le <span class="arithmatex">\(b_0\)</span>, point à partir duquel la tendance à long terme devient dominante est <span class="arithmatex">\(625\)</span>. On peut réaliser la même preuve pour des constantes arbitraires et pour n'importe quelle paire de fonction. </p>
+<div class="admonition info">
+<p class="admonition-title">Absence de la constante multiplicative</p>
+<p>C'est pour cette raison qu'on ne voit de constante devant les fonctions. Au lieu d'écrire <span class="arithmatex">\(O(3n)\)</span> par exmeple, on indique seulement <span class="arithmatex">\(O(n)\)</span>, car la constante ne change pas la classe de complexité de l'algorithme.</p>
+</div>
+<h3 id="impact-du-terme-dominant">Impact du terme dominant</h3>
+<p>Lorsqu'on combine les fonctions dans une même évaluation de complexité, on place l'algorithme dans la classe de complexité de la plus grande fonction de l'évaluation. Démontrons le cas spécifique que pour <span class="arithmatex">\(n &gt; b_0\)</span>, alors <span class="arithmatex">\(n^2 + 1000n\)</span> croit à la même vitesse que simplement <span class="arithmatex">\(2n^2\)</span>.</p>
+<p>Pour se faire, on va trouver une constante </p>
+<div class="arithmatex">\[
+\begin{split}
+&amp; n^2 + 1000n &lt; 2n^2 &amp; \\
+\Leftrightarrow &amp; 1000n &lt; n^2 \text{ vrai si } n \neq 0 \\
+\Leftrightarrow &amp; 1000 &lt; n \text{ vrai si } n &gt; 1000
+\end{split}
+\]</div>
+<p>Donc le <span class="arithmatex">\(b_0\)</span>, point à partir duquel la tendance à long terme devient dominante est <span class="arithmatex">\(1000\)</span>. On peut réaliser la même preuve pour des constantes arbitraires et pour n'importe quelle paire de fonction. </p>
+<div class="admonition tips">
+<p class="admonition-title">Oui mais la constante est plus grande que 1! C'est sûr que ça fonctionne</p>
+<p>On peut utiliser les limites pour faire la démonstration du même comportement aymptotique.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Absence des termes non dominant</p>
+<p>C'est pour cette raison qu'on ne voit jamais d'addition de fonction dans les expressions de complexité. Au lieu d'écrire <span class="arithmatex">\(O(3n^2+2n+6)\)</span> par exmeple, on indique seulement <span class="arithmatex">\(O(n^2)\)</span>, car les termes non dominants ne change pas la classe de complexité de l'algorithme.</p>
+</div>
+<hr />
+<h2 id="le-seuil-defficacite">Le seuil d'efficacité</h2>
+<p>La question se pose à savoir ce qui est réellement efficace et ce qui ne l'est pas. En général, une complexité <span class="arithmatex">\(O(n^2)\)</span> ne demande pas de traitement particulier. À partir de <span class="arithmatex">\(O(n^3)\)</span>, il faut considérer la grandeur du <span class="arithmatex">\(n\)</span>. Pour les familles exponentielles ou factorielles, on limite leur usage à des cas précis, ou si l'algorithme est absoluement nécessaire, on renonce souvent à une exécution en temps réel. </p>
+<p>Dans les cas où un algorithme complexe doit s'exécuter en temps réel ou presque, voici des stratégies qui peuvent être utilisées : </p>
+<ul>
+<li><strong>Méthodes numériques d'approximation (heuristiques)</strong> : est-ce que le résultat doit être précis ou on peut utiliser les probabilités pour l'estimer ?</li>
+<li><strong>Simplification du problème (Djikstra <span class="arithmatex">\(\Rightarrow O(V + E \log(V))\)</span>)</strong> : est-ce qu'une variante de l'algorithme qui est plus efficace dans notre siutation existe ? </li>
+<li><strong>Approches semi-assistées</strong> : est-ce que la personne utilisatrice peut saisir des données ou faire des actions qui réduisent la complexité de l'algorithme ?</li>
+<li><strong>Intelligence artificielle</strong> : plusieurs algorithmes d'intelligence artificielle sont en fait des algorithmes complexes. Parfois, utiliser une autre approche permet d'approximer la solution avec une grande précision et une rapidité satisfaisante.</li>
+</ul>
+<h2 id="complexite-de-quelques-algorithmes-communs">Complexité de quelques algorithmes communs</h2>
+<table>
+<thead>
+<tr>
+<th>Algorithme</th>
+<th>Pire cas</th>
+<th>Cas moyen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chercher une valeau dans un tableau</td>
+<td><span class="arithmatex">\(O(n)\)</span></td>
+<td><span class="arithmatex">\(O\left(\frac{n}{2}\right) = O(n)\)</span></td>
+</tr>
+<tr>
+<td>Recherche binaire</td>
+<td><span class="arithmatex">\(O(\log(n))\)</span></td>
+<td><span class="arithmatex">\(O(\log(n))\)</span></td>
+</tr>
+<tr>
+<td>Tri (bulle, sélection, insertion)</td>
+<td><span class="arithmatex">\(O(n^2)\)</span></td>
+<td><span class="arithmatex">\(O(n^2)\)</span></td>
+</tr>
+<tr>
+<td>Tri rapide (quick sort)</td>
+<td><span class="arithmatex">\(O(n^2)\)</span></td>
+<td><span class="arithmatex">\(O(n\log(n))\)</span></td>
+</tr>
+<tr>
+<td>Djikstra (chemin le plus court)</td>
+<td><span class="arithmatex">\(O(n^2)\)</span></td>
+<td><span class="arithmatex">\(O(Cn^2)\)</span></td>
+</tr>
+<tr>
+<td>A* (path finding - 8 directions)</td>
+<td><span class="arithmatex">\(O(8^n)\)</span></td>
+<td><span class="arithmatex">\(O(C8^n)\)</span></td>
+</tr>
+<tr>
+<td>Choisir certains éléments dans une liste (optimal)</td>
+<td><span class="arithmatex">\(O(2^n)\)</span></td>
+<td><span class="arithmatex">\(O(2^n)\)</span></td>
+</tr>
+<tr>
+<td>Trouver le meilleur parcours sans repasser sur ses pas</td>
+<td><span class="arithmatex">\(O(n!)\)</span></td>
+<td><span class="arithmatex">\(O(n!)\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="etude-de-cas-structures-de-donnees">Étude de cas : structures de données</h2>
+<p>Un cas fréquent de choix d'algorithme vient dans la création de structure de données. Voici un tableau de la complexité des algorithmes en fonction nombre d'éléments contenus dans la structure <span class="arithmatex">\(n\)</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Insertion</th>
+<th>Trouver un élément</th>
+<th>Suppression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tableau</td>
+<td><span class="arithmatex">\(O(n)\)</span></td>
+<td><span class="arithmatex">\(O(n)\)</span> [si index connu, O(1)]</td>
+<td><span class="arithmatex">\(O(n)\)</span></td>
+</tr>
+<tr>
+<td>Liste chaînée</td>
+<td><span class="arithmatex">\(O(1)\)</span></td>
+<td><span class="arithmatex">\(O(n)\)</span></td>
+<td><span class="arithmatex">\(O(1)\)</span></td>
+</tr>
+<tr>
+<td>Liste prioritaire</td>
+<td><span class="arithmatex">\(O(log(n))\)</span> [si chaînée, autrement <span class="arithmatex">\(O(n)\)</span>]</td>
+<td><span class="arithmatex">\(O(log(n))\)</span></td>
+<td>Structure sous-jacente</td>
+</tr>
+<tr>
+<td>Arbre binaire équilibré</td>
+<td><span class="arithmatex">\(O(log(n))\)</span></td>
+<td><span class="arithmatex">\(O(log(n)\)</span>)</td>
+<td><span class="arithmatex">\(O(log(n))\)</span></td>
+</tr>
+<tr>
+<td>Tas binaire (Binary heap)</td>
+<td><span class="arithmatex">\(O(log(n))\)</span></td>
+<td><span class="arithmatex">\(O(n)\)</span> [plus petit élément : <span class="arithmatex">\(O(1)\)</span>]</td>
+<td><span class="arithmatex">\(O(log(n))\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="etude-de-cas-base-de-donnees">Étude de cas : base de données</h2>
+<p>Prenons la requête suivante :</p>
+<div class="language-SQL highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Requête avec jointure multiple</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">eleve_nom</span><span class="p">,</span><span class="w"> </span><span class="n">note</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Eleve</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Inscription</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Groupe</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Cours</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="k">Session</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Evaluation</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Evaluation_eleve</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">nom_cours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Projet integrateur 1&#39;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">evaluation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Patrons de conception&#39;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">annee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2023</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Automne&#39;</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Caractéristiques de la base de données</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nb élèves</th>
+<th style="text-align: center;">Nb Inscription</th>
+<th style="text-align: center;">Nb Groupe</th>
+<th style="text-align: center;">Nb cours</th>
+<th style="text-align: center;">Nb Evaluation</th>
+<th style="text-align: center;">Nb Evaluation_eleve</th>
+<th style="text-align: center;">Nb session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">30 000</td>
+<td style="text-align: center;">720 000 000</td>
+<td style="text-align: center;">24 000</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;">72 000</td>
+<td style="text-align: center;">2 160 000 000</td>
+<td style="text-align: center;">45</td>
+</tr>
+</tbody>
+</table>
+<p>La réponse à la requête ne fait que 16 lignes. Comment optimiser la requête pour éviter la génération de données intermédiares inutiles ?</p>
+<h3 id="schema-dexecution-1-faire-les-jointures-dabord">Schéma d'exécution 1 : Faire les jointures d'abord</h3>
+<p>Table avec plus de 50 colonnes (réunion de toutes les colonnes de toutes les tables) avec 2 160 000 000 lignes. On applique ensuite la recherche pour le WHERE sur cette table, ce qui implique de passer chacun des 2 milliards d'enregistrement.</p>
+<h3 id="schema-dexecution-2-where-dabord-et-reordonnancement-des-jointures">Schéma d'exécution 2 : WHERE d'abord et réordonnancement des jointures</h3>
+<p><strong>Caractéristiques de la base de données après l'application de la clause WHERE</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nb élèves</th>
+<th style="text-align: center;">Nb Inscription</th>
+<th style="text-align: center;">Nb Groupe</th>
+<th style="text-align: center;">Nb cours</th>
+<th style="text-align: center;">Nb Evaluation</th>
+<th style="text-align: center;">Nb Evaluation_eleve</th>
+<th style="text-align: center;">Nb session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">30 000</td>
+<td style="text-align: center;">720 000 000</td>
+<td style="text-align: center;">24 000</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2 160 000 000</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p>On exploite ensuite les tables à 1 enregistrement pour diminuer la taille des enregistrements en mémoire.</p>
+<ol>
+<li>Jointure Groupe à Cours <span class="arithmatex">\(\rightarrow\)</span> 3 résultats</li>
+<li>Jointure avec Session <span class="arithmatex">\(\rightarrow\)</span> 1 résultat</li>
+<li>Jointure avec Evaluation <span class="arithmatex">\(\rightarrow\)</span> 1 résultat</li>
+<li>Jointure avec Evaluation_eleve <span class="arithmatex">\(\rightarrow\)</span> maximum de 16 résultats</li>
+<li>Jointure avec Inscription <span class="arithmatex">\(\rightarrow\)</span> 16 résultats</li>
+<li>Jointure avec Élèves <span class="arithmatex">\(\rightarrow\)</span> 16 résultats</li>
+</ol>
+<h4 id="importance-des-cles-primaires-et-des-index">Importance des clés primaires et des index</h4>
+<p>La bonne utilisation des clés pimaires et des index permet de réduire de beaucoup le nombre d'étapes de recherche. On rappelle ici qu'un jointure consiste à pairer des clés, donc implique une opération de recherche.</p>
+<ul>
+<li>Dans le schéma 1, rechercher dans 2 160 000 000 de données demande au pire 2 160 000 000 d'étapes pour chacune des recherches (cette recherche est effectuée 720 000 000 de fois).</li>
+<li>Dans le schéma 1, si l'on ajouter une clé primaire (index) de type arbre binaire, rechercher dans les 2 160 000 000 de données demande au pire 32 étapes pour chacune des recherches (cette recherche est effectuée 720 000 000 de fois).</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-24</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../gitflow/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: GitFlow">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                GitFlow
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../javafx_intro/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Introduction">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      CC BY-NC-SA Alexandre Ouellet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
