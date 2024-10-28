@@ -1212,7 +1212,7 @@
         
   
   <span class="md-ellipsis">
-    Processus de qualité
+    Processus de tests
   </span>
   
 
@@ -1423,21 +1423,21 @@
                   
 
 
-<h1 id="kotlintest">Kotlin.test</h1>
+<div><h1 id="kotlintest">Kotlin.test</h1>
 <p><a href="https://junit.org/junit5/">JUnit</a> est une bibliothèque de test unitaire de Java. La bibliothèque <a href="https://kotlin.test">kotlin.test</a> est basée sur JUnit.</p>
 <h2 id="installation">Installation</h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>// build.gradle.kts
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>dependencies {
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    testImplementation(kotlin(&quot;test&quot;))
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    testImplementation(kotlin("test"))
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    // ...
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>}
 </span></code></pre></div>
-<hr />
+<hr>
 <h1 id="declarer-un-test">Déclarer un test</h1>
 <p>Pour déclarer un test, il faut faire un nouveau fichier de test (classe kotlin) dans le répertoire <strong>test</strong>.</p>
-<p><a class="glightbox" href="images/9-classe%20test.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center" src="images/9-classe%20test.png" /></a></p>
-<hr />
+<p><a class="glightbox" href="images/9-classe%20test.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center" src="images/9-classe%20test.png"></a></p>
+<hr>
 <h1 id="les-annotations">Les annotations</h1>
 <p>3 annotations de méthodes sont disponibles pour gérer l'exécution des tests</p>
 <ol>
@@ -1445,7 +1445,7 @@
 <li>Test : méthode contenant un test</li>
 <li>AfterTest : méthode exécutée après un test</li>
 </ol>
-<hr />
+<hr>
 <h1 id="structure-dun-test">Structure d'un test</h1>
 <div class="language-kotlin highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">class</span><span class="w"> </span><span class="nc">TestConvertisseurFormatHeure</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
@@ -1461,15 +1461,15 @@
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="c1">//...</span>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="p">}</span>
 </span></code></pre></div>
-<hr />
+<hr>
 <h1 id="assertion">Assertion</h1>
 <p>Une <strong>assertion</strong> consiste à vérifier une condition et à lever une erreur en cas de non-respect. Les méthodes prennent la forme :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>assertEquals(valeur attendue, valeur réelle, message en cas d&#39;erreur)
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>assertEquals(valeur attendue, valeur réelle, tolérance, message en cas d&#39;erreur)
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>assertContains(tableau, valeur cherchée, message en cas d&#39;erreur)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>assertEquals(valeur attendue, valeur réelle, message en cas d'erreur)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>assertEquals(valeur attendue, valeur réelle, tolérance, message en cas d'erreur)
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>assertContains(tableau, valeur cherchée, message en cas d'erreur)
 </span></code></pre></div>
 <p><a href="https://kotlinlang.org/api/latest/kotlin.test/kotlin.test/">Documentation complète</a></p>
-<hr />
+<hr>
 <div class="language-kotlin highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">class</span><span class="w"> </span><span class="nc">TestConvertisseurFormatHeure</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">lateinit</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">convertisseur</span><span class="p">:</span><span class="w"> </span><span class="n">ConvertisseurFormatHeure</span>
@@ -1482,10 +1482,10 @@
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nd">@Test</span>
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kd">fun</span><span class="w"> </span><span class="nf">testFormatter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="kd">val</span><span class="w"> </span><span class="nv">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">convertisseur</span><span class="p">.</span><span class="na">formatter</span><span class="p">(</span><span class="m">1.5f</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;h&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="n">assertEquals</span><span class="p">(</span><span class="s">&quot;1h30&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="kd">val</span><span class="w"> </span><span class="nv">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">convertisseur</span><span class="p">.</span><span class="na">formatter</span><span class="p">(</span><span class="m">1.5f</span><span class="p">,</span><span class="w"> </span><span class="s">"h"</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="n">assertEquals</span><span class="p">(</span><span class="s">"1h30"</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="p">)</span>
 </span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="p">}</span>
-</span></code></pre></div>
+</span></code></pre></div></div>
 
 
 
@@ -1536,7 +1536,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../processus_qualite/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Processus de qualité">
+          <a href="../processus_qualite/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Processus de tests">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1546,7 +1546,7 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Processus de qualité
+                Processus de tests
               </div>
             </div>
           </a>

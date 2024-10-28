@@ -11,34 +11,40 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-1" value="Processus de développement du système" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="217" y="77" width="120" height="60" as="geometry" />
+          <mxGeometry x="96" y="144" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-2" value="Adapté de :&amp;nbsp;Sommerville, I. (2016). Software Engineering. Royaume-Uni: Pearson." style="whiteSpace=wrap;html=1;strokeColor=none;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="282" y="360" width="445" height="13" as="geometry" />
+          <mxGeometry x="209" y="548" width="445" height="13" as="geometry" />
         </mxCell>
-        <mxCell id="vwdBF71OjpoYVVglcEnl-12" value="avec les résultats" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-3" target="vwdBF71OjpoYVVglcEnl-4">
+        <mxCell id="vwdBF71OjpoYVVglcEnl-12" value="Se fait avec les résultats" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-3" target="vwdBF71OjpoYVVglcEnl-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-3" value="Mesures de contrôle" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="607" y="274" width="120" height="60" as="geometry" />
+          <mxGeometry x="534" y="464" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-13" value="Ajustement des&lt;div style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;pratiques&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-4" target="vwdBF71OjpoYVVglcEnl-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vwdBF71OjpoYVVglcEnl-15" value="Mise à jour&amp;nbsp;&lt;div style=&quot;font-size: 13px;&quot;&gt;Réinterprétation&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-4" target="vwdBF71OjpoYVVglcEnl-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-4" value="Évaluation de la qualité et des pratiques" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="217" y="274" width="120" height="60" as="geometry" />
+          <mxGeometry x="96" y="464" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-9" value="Processus de tests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-5" target="vwdBF71OjpoYVVglcEnl-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-5" value="Système (code)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="607" y="77" width="120" height="60" as="geometry" />
+          <mxGeometry x="534" y="144" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-10" value="Mesurés avec" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-7" target="vwdBF71OjpoYVVglcEnl-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vwdBF71OjpoYVVglcEnl-14" value="Défini des normes&lt;div style=&quot;font-size: 13px;&quot;&gt;utilisé dans le développement du&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="vwdBF71OjpoYVVglcEnl-7" target="vwdBF71OjpoYVVglcEnl-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vwdBF71OjpoYVVglcEnl-7" value="Critères de qualité" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="414" y="173" width="120" height="60" as="geometry" />
+          <mxGeometry x="314" y="308" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

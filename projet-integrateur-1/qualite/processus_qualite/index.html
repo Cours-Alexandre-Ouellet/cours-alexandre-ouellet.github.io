@@ -26,7 +26,7 @@
     
     
       
-        <title>Processus de qualité - Projet intégrateur 1</title>
+        <title>Processus de tests - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#projet-integrateur-1" class="md-skip">
+        <a href="#processus-de-tests" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Processus de qualité
+              Processus de tests
             
           </span>
         </div>
@@ -1217,15 +1217,69 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Processus de tests
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Processus de qualité
+    Processus de tests
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tests-et-debogage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests et débogage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tests et débogage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-tests-logiciels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les tests logiciels
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1384,94 +1438,31 @@
                   
 
 
-<hr />
-<p>marp : true
-colorSecondary: #995
-paginate : true
-backgroundImage: url('images/fond9.png')
-style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-size: 16:9
-math: mathjax</p>
-<hr />
-<style>
-  section {
-    font-family: 'Trebuchet ms', serif !important;
-    height: 720px;
-    width: 1280px;
-    padding: 70px 80px 70px 80px;
-    font-size: 20pt;
-  }
-  h1 {
-    margin : 0.5em 0 1em 0;
-    color: #AA5439;
-    font-size : 40pt;
-    position: absolute;
-    top: 70px;
-  }
-  h2 {
-    color: #333;
-  }
-  p, li {
-    color : #444
-  }
-  section::after {
-    content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
-    color : #000;
-    bottom: -2px;
-    left:20px;
-  }
-  img[alt~="center"] {
-    display: block;
-    margin: 20px auto;
-  }
-  img[alt~="alone"] {
-      margin-top: 50px;
-  }
-  blockquote {
-    border-left: 8px solid #333; 
-    border-right: 8px solid #333;
-    text-align: center; 
-  }
-</style>
-
-<!-- _paginate: false -->
-
-<p><center></p>
-<p><a class="glightbox" href="images/qualite_logicielle.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="images/qualite_logicielle.jpg" /></a></p>
-<p></center></p>
-<hr />
-<!-- _paginate: false -->
-
-<h1 id="projet-integrateur-1">Projet intégrateur 1</h1>
-<p><strong>Module 9 - Qualité logicielle</strong></p>
+<div><h1 id="processus-de-tests">Processus de tests</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"></path></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p>4-3 Stratégies d'assurance qualité</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"></path></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>45 minutes</p>
+</div>
+</div>
+<figure>
+    <a class="glightbox" href="../../images/qualite_logicielle.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/qualite_logicielle.jpg"></a>
+    <figcaption>Une journée dans une équipe de qualité logicielle</figcaption>
+</figure>
+<h2 id="tests-et-debogage">Tests et débogage</h2>
+<figure>
+    <a class="glightbox" href="../../videos/ourson.mp4" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><div class="video-container"><iframe src="../../videos/ourson.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video" width:300="width:300"></iframe></div></a>
+    <figcaption>Trouver la nature de l'erreur</figcaption>
+</figure>
+<p>Les <strong>tests</strong> sont l'exécution du système pour identifier des zones qui contiennent une erreur. On peut faire des divers types de tests pour rechercher des problèmes pour divers critères de qualité logicielle. Le <strong>débogage</strong> est l'exécution du système pour identifier la nature des erreurs et la façon de les régler. Pour effectuer un débogage efficace il faut d'abord localiser les erreurs et entre en mesure de les reproduire. Il s'agit de deux activités complémentaires.</p>
+<p>Dans la vidéo ci-dessus, le test constitue l'action de la docteure et le débogage serait de recherche les connexions nerveuses (pour le moins inusitées) qui font bouger les oursons.</p>
+<h3 id="les-tests-logiciels">Les tests logiciels</h3>
+<p>Ils constituent une grande partie du processus d'assurance qualité. Il s'agit d'une activité de la catégorie « Validation et vérification (V&amp;V) ».</p>
 <ul>
-<li>Types de test</li>
-<li>Faire un plan de tests</li>
-<li>Mise en place des tests</li>
-<li>Validation </li>
-<li><em>kotlin.test</em></li>
-</ul>
-<footer>
-
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">![height:50](images/rect-by-nc-sa-300x105.png)</a>
-**Alexandre Ouellet**
-</footer>
-
-<hr />
-<h1 id="test-vs-debogage">Test VS Debogage</h1>
-<p>Vidéo des oursons</p>
-<p>Tests :
-* Exécution du système pour identifier des zones qui contiennent une erreur</p>
-<p>Débogage : 
-* Exécution du système pour identifier la nature des erreurs et la façon de les régler</p>
-<p>Remarque :
-* Les deux activités sont complémentaires</p>
-<hr />
-<h1 id="les-tests-logiciels">Les tests logiciels</h1>
-<ul>
-<li>
-<p>Partie du processus d'assurance qualité. Il s'agit d'une activité de la catégorie "Validation et vérification (V&amp;V)".</p>
-</li>
 <li>
 <p>On les utilise pour vérifier le fonctionnement adéquat du système.</p>
 </li>
@@ -1486,7 +1477,7 @@ math: mathjax</p>
 </li>
 <li>Que le système fonctionne adéquatement.</li>
 </ul>
-<hr />
+<hr>
 <h1 id="types-de-test">Types de test</h1>
 <ul>
 <li>Tests d'interface utilisateur</li>
@@ -1499,7 +1490,7 @@ math: mathjax</p>
 <li>Validation</li>
 <li>"Monkey testing"</li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-dinterface-utilisateur">Tests d'interface utilisateur</h1>
 <p><strong>But :</strong> Valider l'utilisabilité du système</p>
 <ul>
@@ -1511,7 +1502,7 @@ math: mathjax</p>
 <li>Mise en situation des utilisateurs</li>
 <li>Questions et entrevues pour les utilisateurs</li>
 </ul>
-<hr />
+<hr>
 <h1 id="exemples-de-criteres-heuristiques">Exemples de critères heuristiques</h1>
 <ul>
 <li>Adéquation à la tâche (fonctionnalité appropriée)</li>
@@ -1524,7 +1515,7 @@ math: mathjax</p>
 <li>Charge de travail (mémorisation minimale, concision et charge mentale)</li>
 </ul>
 <p>Voir document : UI Évaluation heuristique</p>
-<hr />
+<hr>
 <h1 id="tests-unitaires">Tests unitaires</h1>
 <p><strong>But :</strong> Tester une unité du programme</p>
 <ul>
@@ -1539,17 +1530,17 @@ math: mathjax</p>
 </ul>
 </li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-unitaires_1">Tests unitaires</h1>
 <p>Déterminez 3 cas de tests pertinents pour la fonction suivante. Indiquez les entrées et la sortie attendue.</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">Somme</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<hr />
+<hr>
 <h1 id="tests-unitaires_2">Tests unitaires</h1>
 <p><br><br></p>
-<p><center></p>
+<p></p><center>
 <table>
 <thead>
 <tr>
@@ -1588,7 +1579,7 @@ math: mathjax</p>
 </tr>
 </tbody>
 </table>
-<p></center></p>
+<p></p></center>
 <p>Que faire avec le scénario 3 ?</p>
 <ul>
 <li>Lancer une exception de débordement (<em>overflow</em>)</li>
@@ -1596,7 +1587,7 @@ math: mathjax</p>
 <li>Changer la structure d'entier pour utiliser de larges nombres</li>
 <li>Tout cela est guidé par l'analyse de <strong>cas d'exécution plausibles</strong>.</li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-dintegration">Tests d'intégration</h1>
 <p><strong>But :</strong> Tester la combinaison de plusieurs fonctionnalités</p>
 <ul>
@@ -1607,17 +1598,17 @@ math: mathjax</p>
 <li>Écrire un bout de code qui appelle la méthode à tester</li>
 <li>Valider le résultat que plusieurs parties du système ont produit</li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-unitaires-et-dintegration">Tests unitaires et d'intégration</h1>
 <p><strong>Limites :</strong></p>
 <ul>
 <li>Le test comporte du code, donc si l'on fait une erreur dans le code du test, on peut chercher une erreur qui n'existe pas ou en introduire dans le système.</li>
 <li>C'est long et fastidieux à écrire.</li>
 </ul>
-<hr />
+<hr>
 <h1 id="difference-entre-tests-unitaires-et-integrations">Différence entre tests unitaires et intégrations</h1>
 <p>Voir structure test.pdf</p>
-<hr />
+<hr>
 <h1 id="tests-de-regression">Tests de régression</h1>
 <p><strong>But :</strong> Vérifier que les nouvelles fonctionnalités n'introduisent pas de bogues dans les fonctionnalités existantes</p>
 <ul>
@@ -1626,7 +1617,7 @@ math: mathjax</p>
 <li>Comment le test est-il effectué</li>
 <li>Effectuer les tests unitaires et les tests d'intégration déjà utilisés</li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-de-regression_1">Tests de régression</h1>
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -1646,7 +1637,7 @@ math: mathjax</p>
 </div>
 </div>
 
-<hr />
+<hr>
 <h1 id="tests-de-charge-stress-test">Tests de charge (<em>stress test</em>)</h1>
 <p><strong>But :</strong> vérifier que le système supporte la charge de travail qui lui est demandée (nombre d'utilisateurs, concurrence des opérations ou gestion de la mémoire).</p>
 <ul>
@@ -1656,7 +1647,7 @@ math: mathjax</p>
 <li>Simulation d'utilisateurs </li>
 <li>Utilisation sans arrêt (fuites de mémoire)</li>
 </ul>
-<hr />
+<hr>
 <h1 id="tests-de-charge">Tests de charge</h1>
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -1676,7 +1667,7 @@ math: mathjax</p>
 </div>
 </div>
 
-<hr />
+<hr>
 <h1 id="tests-dacceptation-verification">Tests d'acceptation - Vérification</h1>
 <p><strong>But :</strong> Vérifier si le système satisfait aux spécifications établies par le client et qu'il est prêt à être déployé.</p>
 <ul>
@@ -1686,9 +1677,9 @@ math: mathjax</p>
 <li>Utilisation du système par des utilisateurs cobayes</li>
 </ul>
 <p>Une fois les tests d'acceptation complétés, le système est considéré "release-candidate"</p>
-<hr />
+<hr>
 <h1 id="tests-dacceptation-validation">Tests d'acceptation - Validation</h1>
-<p><br/></p>
+<p><br></p>
 <p><strong>But :</strong> Vérifier si le système satisfait aux spécifications établies par le client et qu'il est prêt à être déployé.</p>
 <ul>
 <li>Quoi tester ?</li>
@@ -1699,7 +1690,7 @@ math: mathjax</p>
 <li>Comme il s'agit du seul test pour les spécifications, à chaque rencontre client, une période devrait être utilisée pour confirmer le respect des spécifications.</li>
 </ul>
 <p>Une fois les tests d'acceptation complétés, le système est considéré "release-candidate"</p>
-<hr />
+<hr>
 <h1 id="monkey-testing">Monkey testing</h1>
 <p><strong>But :</strong> Tester le système en utilisant des entrées aléatoires / quelconques / carrément erratique / qui visent à faire saigner du nez les développeurs afin de tester la robustesse du système.</p>
 <ul>
@@ -1709,7 +1700,7 @@ math: mathjax</p>
 <li>Utiliser des outils de génération de données aléatoires</li>
 <li>Le faire dans l'application ou par test unitaire</li>
 </ul>
-<hr />
+<hr>
 <h1 id="monkey-testing_1">Monkey testing</h1>
 <div class="grid grid-cols-2 gap-4">
 <div>
@@ -1727,7 +1718,7 @@ math: mathjax</p>
 </div>
 </div>
 
-<hr />
+<hr>
 <h1 id="faire-un-plan-de-test">Faire un plan de test</h1>
 <ol>
 <li>Définir les tests d'acceptation</li>
@@ -1737,7 +1728,7 @@ math: mathjax</p>
 <li>Tests d'intégration</li>
 <li>Tests de charge</li>
 </ol>
-<hr />
+<hr>
 <h1 id="mettre-en-place-un-plan-de-test">Mettre en place un plan de test</h1>
 <p>De façon régulière :
 1. Choisir un outil de gestion des tests unitaires / d'intégration
@@ -1746,7 +1737,7 @@ math: mathjax</p>
 <p>Avant un déploiement:
 1. Exécuter les tests charges / monkey testing
 2. Exécuter les tests d'acceptation</p>
-<hr />
+<hr>
 <h1 id="que-faut-il-tester">Que faut-il tester ?</h1>
 <ul>
 <li>Éléments de code critiques :</li>
@@ -1756,9 +1747,9 @@ math: mathjax</p>
 <li>Qui ont beaucoup d'enfants</li>
 <li>Souvent utilisés</li>
 </ul>
-<hr />
+<hr>
 <p>Voir document : Résumé tests</p>
-<hr />
+<hr>
 <h1 id="assurance-qualite">Assurance qualité</h1>
 <p>L'assurance qualité va plus loin que les tests :</p>
 <ul>
@@ -1770,7 +1761,7 @@ math: mathjax</p>
 <li>Standard de code</li>
 <li>Respect des qualités logiciels</li>
 </ul>
-<hr />
+<hr></div>
 
 
 
