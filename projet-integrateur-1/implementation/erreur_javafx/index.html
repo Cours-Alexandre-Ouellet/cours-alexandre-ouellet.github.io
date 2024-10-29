@@ -18,7 +18,7 @@
         <link rel="prev" href="../formulaire_javafx/">
       
       
-        <link rel="next" href="../../gestion/methodes_pointage/">
+        <link rel="next" href="../../qualite/critere_qualite/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -264,16 +264,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../allo.md" class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../../qualite/critere_qualite/" class="md-tabs__link">
+          
   
   Qualité logicielle
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -923,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../efficacite.md" class="md-nav__link">
+      <a href="../efficacite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1217,16 +1218,106 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../allo.md" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Qualité logicielle
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Qualité logicielle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qualite/critere_qualite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Critère de qualité
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qualite/processus_qualite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processus de tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qualite/java_junit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outil de test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1355,7 +1446,7 @@
                   
 
 
-<h1 id="erreurs-avec-javafx">Erreurs avec JavaFX</h1>
+<div><h1 id="erreurs-avec-javafx">Erreurs avec JavaFX</h1>
 <p>Voici la liste de quelques erreurs fréquentes et la façon de les régler.</p>
 <h2 id="version-de-java">Version de Java</h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>error: modules are not supported in -source 8 module edu.cegepvicto.itineraire {
@@ -1363,16 +1454,16 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  (use -source 9 or higher to enable modules)
 </span></code></pre></div>
 <p>Dans le fichier <strong>build.gradle</strong> vous pouvez simplement retirer les lignes suivantes :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sourceCompatibility = &#39;8&#39;
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>targetCompatibility = &#39;8&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sourceCompatibility = '8'
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>targetCompatibility = '8'
 </span></code></pre></div>
 <h2 id="ne-trouve-pas-la-classe-de-demarrage">Ne trouve pas la classe de démarrage</h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Could not find or load main class edu.cegepvicto.itineraire.HelloApplication in module edu.cegepvicto.itineraire
 </span></code></pre></div>
 <p>Dans le fichier <strong>build.gradle</strong> assurez vous que le bon nom de classe est indiqué sur cette ligne :</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>application {
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  mainModule = &#39;edu.cegepvicto.itineraire&#39;
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="hll">  mainClass = &#39;edu.cegepvicto.itineraire.HelloApplication&#39;
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  mainModule = 'edu.cegepvicto.itineraire'
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="hll">  mainClass = 'edu.cegepvicto.itineraire.HelloApplication'
 </span></span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>}
 </span></code></pre></div>
 <h2 id="il-manque-des-composantes-pour-lexecution">Il manque des composantes pour l'exécution</h2>
@@ -1380,9 +1471,9 @@
 </span></code></pre></div>
 <p>Assurez vous de lancer <em>JavaFX</em> avec le menu <em>Gradle</em> à droite de l'interface.</p>
 <figure>
-    <a class="glightbox" href="../images/gradle-depart.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/gradle-depart.png" width="200" /></a>
+    <a class="glightbox" href="../../images/gradle-depart.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/gradle-depart.png" width="200"></a>
     <figcaption markdown>Option de démarrage par <em>Gradle</em></figcaption>
-</figure>
+</figure></div>
 
 
 
@@ -1450,13 +1541,13 @@
         
         
           
-          <a href="../../gestion/methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
+          <a href="../../qualite/critere_qualite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Critère de qualité">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Méthodes à pointage
+                Critère de qualité
               </div>
             </div>
             <div class="md-footer__button md-icon">
