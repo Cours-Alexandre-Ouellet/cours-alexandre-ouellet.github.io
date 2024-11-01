@@ -12,13 +12,9 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/rotations/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/machine_a_etats/">
       
       
-        <link rel="prev" href="../vecteurs_3d/">
-      
-      
-        <link rel="next" href="../deplacements/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Rotations et quaternions - Jeux 3D</title>
+        <title>Machine a etats - Jeux 3D</title>
       
     
     
@@ -92,11 +88,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#rotations-et-quaternions" class="md-skip">
-          Aller au contenu
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -126,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Rotations et quaternions
+              Machine a etats
             
           </span>
         </div>
@@ -211,13 +202,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../vecteurs_3d/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../maths/vecteurs_3d/" class="md-tabs__link">
           
   
   Les mathématiques des jeux
@@ -235,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../programmer/evenements/" class="md-tabs__link">
+        <a href="../evenements/" class="md-tabs__link">
           
   
   Programmer avec Unity
@@ -411,30 +400,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -445,7 +429,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Les mathématiques des jeux
@@ -459,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vecteurs_3d/" class="md-nav__link">
+      <a href="../../maths/vecteurs_3d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -477,30 +461,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Rotations et quaternions
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../maths/rotations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,104 +473,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#les-quaternions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les quaternions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-systeme-eulerien" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le système Eulérien
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manipuler-des-rotations-avec-unity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Manipuler des rotations avec Unity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regarder-directement-un-point" class="md-nav__link">
-    <span class="md-ellipsis">
-      Regarder directement un point
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Regarder directement un point">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#la-methode-lookat" class="md-nav__link">
-    <span class="md-ellipsis">
-      La méthode LookAt
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modifier-le-vecteur-forward" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modifier le vecteur forward
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conversions-degres-radians" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversions degrés / radians
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-        Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -619,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deplacements/" class="md-nav__link">
+      <a href="../../maths/deplacements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -640,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intervalle.md" class="md-nav__link">
+      <a href="../../maths/intervalle.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,20 +532,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -704,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bezier/" class="md-nav__link">
+      <a href="../../maths/bezier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -780,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/evenements/" class="md-nav__link">
+      <a href="../evenements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -801,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/input_system/" class="md-nav__link">
+      <a href="../input_system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/coroutines/" class="md-nav__link">
+      <a href="../coroutines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -843,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/audiomixer.md" class="md-nav__link">
+      <a href="../audiomixer.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/exemple_evenement/" class="md-nav__link">
+      <a href="../exemple_evenement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/controleur/" class="md-nav__link">
+      <a href="../controleur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -994,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programmer/volume_effets/" class="md-nav__link">
+      <a href="../volume_effets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,63 +921,9 @@
                   
 
 
-<h1 id="rotations-et-quaternions">Rotations et quaternions</h1>
-<div class="competences">
-<div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>1-1 Déplacement des objets de la simulation dans l'espace tridimensionnel</p>
-</div>
-<div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>15 minutes</p>
-</div>
-</div>
-<p>La rotation s'opère toujours autour d'un axe. La rotation entraîne un changement de perspective dans le plan perpendiculaire à l'axe de rotation. Une rotation autour de l'axe y, entraîne un changement de perspective dans le plan XZ. Du point de vue du joueur, cela signifierait qu'un personnage tourne sur lui-même par exemple. Les rotations positives sont dans le sens horaire dans <em>Unity</em>, contrairement à la référence admise en mathématique où les rotations positives sont en sens antihoraires.</p>
-<p>Comme vous avez sûrement vu en mathématiques, on peut représenter une rotation dans l'espace par une matrice de rotation de coordonnées homogènes de dimensions 4x4. Il existe aussi un objet mathématique, <em>le quaternion</em>, qui peut être utilisé pour représenter des rotations. Le gain de performance observé peut être de l'ordre de 1800 %, soit 18 fois plus performant (Gavilan, 2016).</p>
-<h2 id="les-quaternions">Les quaternions</h2>
-<p>Un quaternion est un nombre en 4 dimensions (1 réel et 3 imaginaires). Il n'est pas important dans le contexte du cours de comprendre la structure des quaternions. Il faut simplement retenir ceci : l'objet quaternion a les composantes <em>w, x, y</em> et <em>z</em> auquel on peut directement accéder. <strong>Les composantes <em>x, y</em> et <em>z</em> ne représentent pas des rotations autour des axes correspondants. Il s'agit de données ayant une autre signification et que vous ne devez jamais modifier directement.</strong></p>
-<h2 id="le-systeme-eulerien">Le système Eulérien</h2>
-<p>Le système des rotations Eulérien permet de représenter une rotation selon les trois axes x, y et z. Chaque valeur de rotation peut se situer entre 0 et 360 (les deux valeurs existent, mais les utiliser les deux peut vous poser problème...). La valeur de rotation de l'axe indique une rotation autour d'un axe.</p>
-<p>Ce sont des valeurs indiquées dans ce système qui sont affichées dans l'éditeur (les conversions en quaternion se font implicitement par l'éditeur).</p>
-<h2 id="manipuler-des-rotations-avec-unity">Manipuler des rotations avec Unity</h2>
-<p>La méthode <code class="language-c# highlight"><span class="n">Rotate</span></code> de <code class="language-c# highlight"><span class="n">transform</span></code> permet de faire une rotation d'un objet. Cette méthode accepte les valeurs des 3 axes, ainsi que l'espace dans lequel faire la rotation.</p>
-<p>La méthode <code class="language-c# highlight"><span class="n">RotateAround</span></code> permet de calculer une rotation autour d'un point autre (exemple : planètes autour du soleil), selon un axe de rotation et un nombre de degrés selon lequel pivoter.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthodes de rotation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w"> </span><span class="c1">// Rotation autour de l&#39;axe des y de 90 en sens anti-horaire</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">Rotate</span><span class="p">(</span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">90f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="n">Space</span><span class="p">.</span><span class="n">World</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w"> </span><span class="c1">// Rotation autour de l&#39;axe x de 15 degrés de plus que le parent en sens horaire</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">Rotate</span><span class="p">(</span><span class="m">15f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="n">Space</span><span class="p">.</span><span class="n">Local</span><span class="p">);</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w"> </span><span class="c1">// Rotation de 90 degrés en sens horaire sur l&#39;axe des y par rapport au point (5, -5, 4)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">RotateAround</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">up</span><span class="p">,</span><span class="w"> </span><span class="m">90f</span><span class="p">);</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="regarder-directement-un-point">Regarder directement un point</h2>
-<h3 id="la-methode-lookat">La méthode LookAt</h3>
-<p>La méthode <code class="language-c# highlight"><span class="n">LookAt</span></code> de <code class="language-c# highlight"><span class="n">transform</span></code> modifie la rotation d'un objet pour que son vecteur <code class="language-c# highlight"><span class="n">forward</span></code> pointe vers le point indiqué. O</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthode LookAt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w"> </span><span class="c1">// Regarde le point d&#39;origine </span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">LookAt</span><span class="p">(</span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<h3 id="modifier-le-vecteur-forward">Modifier le vecteur <code class="language-c# highlight"><span class="n">forward</span></code></h3>
-<p>On peut changer la valeur du vecteur <code class="language-c# highlight"><span class="n">forward</span></code> pour orienter l'objet dans une direction. Si l'on souhaite par exemple regarder le point <em>objectif</em>, on utiliserait le code suivant :</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modifier le vecteur forward</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">transform</span><span class="p">.</span><span class="n">forward</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objectif</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="admonition danger">
-<p class="admonition-title">Modifier la valeur de <code class="language-c# highlight"><span class="n">forward</span></code></p>
-<p>Selon le moment où la modification est prise en compte, la valeur a déjà pu être utilisée, ce n'est donc pas une méthode suggérée.</p>
-</div>
-<h2 id="conversions-degres-radians">Conversions degrés / radians</h2>
-<p>Pour convertir un angle de degrés vers un angle en radian (et vice-versa), deux constantes de <code class="language-c# highlight"><span class="n">Mathf</span></code> sont utiles. La constante <code class="language-c# highlight"><span class="n">Deg2Rad</span></code> convertit de degrés vers radians et <code class="language-c# highlight"><span class="n">Rad2Deg</span></code> effectue la conversion inverse. On doit multiplier les angles par ces constantes pour opérer les conversions. </p>
-<p>Notons que bien que les angles sont exprimés en degrés dans <em>Unity</em>, les fonctions trigonométriques utilisent les valeurs en radians (et les fonctions trigonométriques inverses retournent leur réponse en radians).</p>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span>  Références</h2>
-<p>GAVILAN, David. Performance of quaternions in the GPU, <a href="https://tech.metail.com/performance-quaternions-gpu/">https://tech.metail.com/performance-quaternions-gpu/</a>, publié le 13 septembre 2016 [consulté le 19 août 2022].</p>
+  <h1>Machine a etats</h1>
+
+
 
 
 
@@ -1135,7 +944,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-26</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-01</span>
   </span>
 
     
@@ -1160,44 +969,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-        
-          
-          <a href="../vecteurs_3d/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Rappels sur les vecteurs 3D">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              <div class="md-ellipsis">
-                Rappels sur les vecteurs 3D
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../deplacements/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Déplacement dans l&#39;espace">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Déplacement dans l'espace
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
