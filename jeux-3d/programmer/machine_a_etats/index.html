@@ -22,7 +22,7 @@
     
     
       
-        <title>Machine a etats - Jeux 3D</title>
+        <title>Machine à états finis - Jeux 3D</title>
       
     
     
@@ -88,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#machine-a-etats-finis" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -117,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Machine a etats
+              Machine à états finis
             
           </span>
         </div>
@@ -921,9 +926,38 @@
                   
 
 
-  <h1>Machine a etats</h1>
-
-
+<h1 id="machine-a-etats-finis">Machine à états finis</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>4 Programmer la logique du jeu ou de la simulation</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>30 minutes</p>
+</div>
+</div>
+<p>Une machine à état fini est un type simple d'<a href="https://fr.wikipedia.org/wiki/Automate_fini">automate</a> qui, dans la hiérarchie des automates finis et déterministes se situe juste au-dessus de la logique combinatoire (similaire aux opérateurs logiques avec lesquels vous travaillez depuis votre premier cours de programmation). On utilise ces automates lorsque la gestion des comportements d'un objet devient difficile à effectuer à l'aide seul de conditions logiques.</p>
+<h2 id="la-theorie-de-la-machine-a-etats-finis">La théorie de la machine à états finis</h2>
+<p>Une machine à état est composée de deux parties : </p>
+<ul>
+<li>Des états qui représentent le comportement actuel de l'objet;</li>
+<li>Des transitions qui permettent de passer entre les états.</li>
+</ul>
+<p>On peut représenter une machine à état sous forme d'un diagramme, avec des boîtes pour les états et des flèches pour les transitions. Voici l'exemple d'une machine à états qui gère le comportement d'un arbre.</p>
+<figure>
+    <a class="glightbox" href="../../images/machine-etats.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/machine-etats.png" /></a>
+    <figcaption>Machine à états pour la gestion d'un arbre</figcaption>
+</figure>
+<h2 id="coder-une-machine-a-etats">Coder une machine à états</h2>
+<p>Les idées derrières le code de la machine à états vont être les suivantes :</p>
+<ul>
+<li>Séparer dans des classes distinctes l'exécution de l'état;</li>
+<li>Séparer le déclenchement des transitions vers un autre état;</li>
+<li>Permettre à l'état actif de l'objet d'exécuter du code à chaque frame.</li>
+</ul>
+<p>Afin de permettre le passage entre les </p>
+<h2 id="lier-la-machine-a-la-boucle-de-jeu">Lier la machine à la boucle de jeu</h2>
 
 
 
@@ -944,7 +978,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-04</span>
   </span>
 
     
