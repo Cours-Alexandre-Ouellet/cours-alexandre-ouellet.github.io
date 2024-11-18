@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/scriptable/">
       
       
+        <link rel="prev" href="../machine_a_etats/">
+      
+      
+        <link rel="next" href="../exemple_evenement/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Scriptable - Jeux 3D</title>
+        <title>Scriptable objects - Jeux 3D</title>
       
     
     
@@ -88,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#scriptable-objects" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -117,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Scriptable
+              Scriptable objects
             
           </span>
         </div>
@@ -220,10 +229,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../evenements/" class="md-tabs__link">
           
   
@@ -600,25 +611,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -629,7 +645,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Programmer avec Unity
@@ -724,25 +740,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -753,7 +774,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Organiser le code d'un jeu
@@ -781,6 +802,142 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Scriptable objects
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Scriptable objects
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-un-scriptableobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer un ScriptableObject
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Créer un ScriptableObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-methodes-des-scriptablesobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les méthodes des ScriptablesObjects
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chargement-et-utilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chargement et utilisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comment-utiliser-les-scriptableobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment utiliser les ScriptableObject
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comment utiliser les ScriptableObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alleger-les-donnees-en-regroupant-les-donnees-communes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alléger les données en regroupant les données communes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-des-comportements-dynamiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gérer des comportements dynamiques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utiliser-le-patron-singleton-en-combinaison-avec-le-scriptableobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utiliser le patron singleton en combinaison avec le ScriptableObject
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -801,17 +958,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -891,17 +1051,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -990,9 +1153,169 @@
                   
 
 
-  <h1>Scriptable</h1>
-
-
+<h1 id="scriptable-objects">Scriptable Objects</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>4-4 Classes scriptables </p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>45 minutes</p>
+</div>
+</div>
+<p>Les <code class="language-c# highlight"><span class="n">MonoBehaviour</span></code> qui sont amplement utilisés dans les précédents exemples gèrent le comportement d'un <code class="language-c# highlight"><span class="n">GameObject</span></code> dans le jeu. Ces objets ont un comprotement plus "&nbsp;classique&nbsp;" en contenant des données et des comportements comme une classe standard, de même que plusieurs instances qui sont créées en cours d'exécution.</p>
+<p>Les <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> permettent de définir un type de <strong>Asset</strong> particulier basé sur un script donné. Ils sont structurés par une classe qui hérite de <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> et chaque instance est un <em>asset</em> différent. Leur intégration dans le jeu ressemble plus à celle d'une <strong>énumération</strong> dans un projet standard.</p>
+<h2 id="creer-un-scriptableobject">Créer un <code class="language-c# highlight"><span class="n">ScriptableObject</span></code></h2>
+<p>Un <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> est une classe qui hérite de <code class="language-c# highlight"><span class="n">ScriptableObject</span></code>. Il faut lui ajouter l'attribut de classe <code class="language-c# highlight"><span class="n">CreateAssetMenu</span></code> qui ajoute dans le menu contextuel des <em>assets</em> (clic droit dans la fenêtre <em>Assets</em>) une option pour créer des instance du  <code class="language-c# highlight"><span class="n">ScriptableObject</span></code>. L'attribut de classe comprend trois propriétés.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Propriété</th>
+<th style="text-align: left;">Signification</th>
+<th style="text-align: left;">Type de valeur</th>
+<th style="text-align: left;">Obligatoire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">fileName</td>
+<td style="text-align: left;">Le nom du fichier d'<em>asset</em> créé par défaut</td>
+<td style="text-align: left;">Chaîne de caractères</td>
+<td style="text-align: left;">Oui</td>
+</tr>
+<tr>
+<td style="text-align: left;">menuName</td>
+<td style="text-align: left;">Le nom du menu où l'option se situe (des sous-menus peuvent être créés avec la barre oblique).</td>
+<td style="text-align: left;">Chaîne de caractères</td>
+<td style="text-align: left;">Oui</td>
+</tr>
+<tr>
+<td style="text-align: left;">order</td>
+<td style="text-align: left;">L'ordre d'apparition dans le menu</td>
+<td style="text-align: left;">Entier</td>
+<td style="text-align: left;">Non</td>
+</tr>
+</tbody>
+</table>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Squelette d'un ScriptableObject</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="na">[CreateAssetMenu(fileName=&quot;nom du fichier&quot;, menuName=&quot;Menu/Sous-menu&quot;)]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MonTypeDeScriptableObject</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ScriptableObject</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="p">...</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="les-methodes-des-scriptablesobjects">Les méthodes des ScriptablesObjects</h3>
+<p>Les méthodes suivantes des ScriptableObjects peuvent être appelés par la boucle de jeu.</p>
+<ul>
+<li><code class="language-c# highlight"><span class="n">Awake</span></code> : à la création du ScritpableObject;</li>
+<li><code class="language-c# highlight"><span class="n">OnDestroy</span></code> : à la destruction du ScriptableObject;</li>
+<li><code class="language-c# highlight"><span class="n">OnEnable</span></code> / <code class="language-c# highlight"><span class="n">OnDisable</span></code> : lorsque l'objet est activé ou désactivé.</li>
+</ul>
+<p>Les autres méthodes de la boucle de jeu ne sont pas appelés sur les <code class="language-c# highlight"><span class="n">ScriptableObjects</span></code>, car il ne s'agit pas d'objets dans le jeu. De plus, la méthode <a href="https://docs.unity3d.com/ScriptReference/ScriptableObject.CreateInstance.html"><code class="language-c# highlight"><span class="n">CreateInstance</span></code></a> permet de créer dynamiquement de nouveaux <code class="language-c# highlight"><span class="n">ScriptableObjects</span></code> alors que <code class="language-c# highlight"><span class="n">Instantiate</span></code> permet de dupliquer un <code class="language-c# highlight"><span class="n">ScriptableObjects</span></code> (comme pour les GameObject).</p>
+<h2 id="chargement-et-utilisation">Chargement et utilisation</h2>
+<p>On peut charger les <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> avec une référence comme pour les <code class="language-c# highlight"><span class="n">Prefab</span></code> et les <code class="language-c# highlight"><span class="n">GameObject</span></code> de la hiérarchie. On peut aussi récupérer la liste des instances d'un <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> d'un certain type avec le système des <code class="language-c# highlight"><span class="n">resources</span></code> d'Unity.</p>
+<p>Pour fonctionner, les instances doivent être situées dans un dossier appelé <strong>Resources</strong> (avec ou sans R majuscule). Le dossier n'est pas obligé d'être à la racine des <strong>assets</strong>, il peut contenir des sous-dossiers et il peut y avoir plusieurs dossiers <strong>Resources</strong> dans un même projet.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Utilisation de la classe Resources</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Charge un asset précis du type Type au chemin spécifié (nom d&#39;un fichier)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">Type</span><span class="w"> </span><span class="n">asset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Resources</span><span class="p">.</span><span class="n">Load</span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;chemin à partir de resources/nom de l&#39;asset/pas d&#39;extension&quot;</span><span class="p">);</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1">// Charge tous les assets du type Type dans le chemin spécifié (nom d&#39;un dossier)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">Type</span><span class="p">[]</span><span class="w"> </span><span class="n">assets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Resources</span><span class="p">.</span><span class="n">LoadAll</span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;chemin à partir de resources&quot;</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Chargement dynamique</p>
+<p>La classe <code class="language-c# highlight"><span class="n">Resources</span></code> peut être utilisée avec n'importe quel type d'asset (image, son, texture, materiel... ), sauf pour les <strong>prefabs</strong>. </p>
+</div>
+<h2 id="comment-utiliser-les-scriptableobject">Comment utiliser les <code class="language-c# highlight"><span class="n">ScriptableObject</span></code></h2>
+<p>On utilise les <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> dans plusieurs contexte, dont trois principaux : regroupement de données communes et définition de type de données, gérer un comportement dynamiquement, partager des données entre des objets (singleton).</p>
+<h3 id="alleger-les-donnees-en-regroupant-les-donnees-communes">Alléger les données en regroupant les données communes</h3>
+<p>Prenons l'exemple d'un jeu de course dans lequel le joueur peut choisir différentes options pour sa voiture, comme une finition. Chaque finition change la couleur de la voiture, la teinte des vitres et la présence ou non d'enjoliveur de roues. Il serait inutile de répliquer plusieurs fois chaque <code class="language-c# highlight"><span class="n">GameObject</span></code> de voiture pour tenir compte des variations (et imaginez le nombre à faire s'il y avait aussi des options de moteurs, des extras...).</p>
+<p>Donc chaque <code class="language-c# highlight"><span class="n">GameObject</span></code> de voiture aura un fini qui lui est propre et indépendent du modèle (on peut peindre n'importe quelle voiture en jaune par exemple). Le <code class="language-c# highlight"><span class="n">ScriptableObject</span></code> qui gère cela se définit comme suit.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ScritableObject de finition de voiture</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span>
+<span class="normal"><a href="#__codelineno-2-28">28</a></span>
+<span class="normal"><a href="#__codelineno-2-29">29</a></span>
+<span class="normal"><a href="#__codelineno-2-30">30</a></span>
+<span class="normal"><a href="#__codelineno-2-31">31</a></span>
+<span class="normal"><a href="#__codelineno-2-32">32</a></span>
+<span class="normal"><a href="#__codelineno-2-33">33</a></span>
+<span class="normal"><a href="#__codelineno-2-34">34</a></span>
+<span class="normal"><a href="#__codelineno-2-35">35</a></span>
+<span class="normal"><a href="#__codelineno-2-36">36</a></span>
+<span class="normal"><a href="#__codelineno-2-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="na">[CreateAssetMenu(fileName=&quot;Finition&quot;, menuName=&quot;Jeu/Voiture&quot;)]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MonTypeDeScriptableObject</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ScriptableObject</span><span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="na">[SerializeField]</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">Material</span><span class="w"> </span><span class="n">peinture</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">Material</span><span class="w"> </span><span class="n">Peinture</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">peinture</span><span class="p">;</span><span class="w">   </span><span class="c1">// Permet la lecture seule par l&#39;objet Voiture</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="na">[SerializeField]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">teinteVitre</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">TeinteVitre</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">teinteVitre</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">    </span><span class="na">[SerializeField]</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">enjoliveurs</span><span class="p">;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">Enjoliveurs</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">enjoliveurs</span><span class="p">;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="p">}</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Voiture</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">GameObject</span><span class="w"> </span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="p">{</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">Finition</span><span class="w"> </span><span class="n">finition</span><span class="p">;</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">AppliquerFinition</span><span class="p">(</span><span class="n">Finition</span><span class="w"> </span><span class="n">finition</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="n">finition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">finition</span><span class="p">;</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">        </span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">MeshRenderer</span><span class="o">&gt;</span><span class="p">().</span><span class="n">material</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">finition</span><span class="p">.</span><span class="n">Peinture</span><span class="p">;</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">        </span><span class="n">SetTeinteVitre</span><span class="p">(</span><span class="n">finition</span><span class="p">.</span><span class="n">TeinteVitre</span><span class="p">);</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">finition</span><span class="p">.</span><span class="n">Enjoliveurs</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">            </span><span class="n">AjouterEnjoliveurs</span><span class="p">();</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">        </span><span class="k">else</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">            </span><span class="n">RetirerEnjoliveurs</span><span class="p">();</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="gerer-des-comportements-dynamiques">Gérer des comportements dynamiques</h3>
+<h3 id="utiliser-le-patron-singleton-en-combinaison-avec-le-scriptableobject">Utiliser le patron singleton en combinaison avec le <code class="language-c# highlight"><span class="n">ScriptableObject</span></code></h3>
 
 
 
@@ -1038,6 +1361,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../machine_a_etats/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Machine à états">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Machine à états
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../exemple_evenement/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Événement">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Événement
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
