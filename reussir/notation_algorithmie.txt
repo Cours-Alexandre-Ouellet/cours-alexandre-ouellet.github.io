@@ -1,0 +1,14 @@
+# Notation d'algorithmie
+
+<div class="competences" markdown>
+<div style="flex: 0 0 70%" markdown>
+
+<p class="subtitle" markdown>:octicons-goal-24: <span class="subtitle-content">Contenus de la page</span></p>
+
+</div>
+<div markdown>
+<p class="subtitle" markdown>:fontawesome-regular-hourglass-half: <span class="subtitle-content">Temps requis</span></p>
+120 minutes
+
+</div>
+</div>
