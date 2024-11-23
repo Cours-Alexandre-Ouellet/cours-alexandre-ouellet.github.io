@@ -50,3 +50,8 @@ span.tooltip {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* Titre en noir */
+.md-header{
+    color: black;
+}
