@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/jeu-simulation/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/ecrire-jeu/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../camera/">
       
       
-        <link rel="next" href="../classification/">
+        <link rel="next" href="../maths/vecteurs_3d/">
       
       
       <link rel="icon" href="../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Que sont les simulations et les jeux ? - Jeux 3D</title>
+        <title>Écrire un jeu - Jeux 3D</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#que-sont-les-simulations-et-les-jeux" class="md-skip">
+        <a href="#ecrire-un-jeu" class="md-skip">
           Aller au contenu
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Que sont les simulations et les jeux ?
+              Écrire un jeu
             
           </span>
         </div>
@@ -216,7 +216,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../jeu-simulation/" class="md-tabs__link">
           
   
   Concepts et idéation
@@ -383,30 +383,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Que sont les simulations et les jeux ?
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../jeu-simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,128 +395,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#les-simulations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les simulations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#les-jeux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les jeux
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les jeux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#les-jeux-comme-une-simulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les jeux comme une simulation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#les-jeux-comme-un-probleme" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les jeux comme un problème
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comment-bien-definir-un-probleme-dans-un-jeu-et-les-pieges" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comment bien définir un problème dans un jeu et les pièges
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comment bien définir un problème dans un jeu et les pièges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trouver-une-structure-dans-le-flou" class="md-nav__link">
-    <span class="md-ellipsis">
-      Trouver une structure dans le flou
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#difficulte-du-probleme" class="md-nav__link">
-    <span class="md-ellipsis">
-      Difficulté du problème
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accoutumance-au-probleme" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accoutumance au problème
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tout-devient-un-clou" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tout devient un clou
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -588,6 +446,8 @@
                 
   
   
+    
+  
   
   
     
@@ -602,11 +462,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
@@ -620,7 +480,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Extras
@@ -631,10 +491,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ecrire-jeu/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Écrire un jeu
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -643,6 +523,209 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-realisme-et-ce-qui-nous-fait-reagir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le réalisme et ce qui nous fait réagir
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le réalisme et ce qui nous fait réagir">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-biais-du-surviant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le biais du surviant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-personnages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les personnages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-choix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les choix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-de-laleatoire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation de l'aléatoire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation de l'aléatoire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-nombres-aleatoires-entre-0-et-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les nombres aléatoires entre 0 et 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-generation-en-deux-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      La génération en deux dimensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attendre-apres-quelque-chose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attendre après quelque chose
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-mecaniques-punitives-et-la-fin-du-plaisir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les mécaniques punitives et la fin du plaisir
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-probleme-de-linflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le problème de l'inflation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le problème de l'inflation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reduire-linflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réduire l'inflation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Réduire l'inflation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retirer-des-richesses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retirer des richesses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punir-laccumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Punir l'accumulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utiliser-des-monnaies-multiples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utiliser des monnaies multiples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faire-de-largent-avec-les-jeux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faire de l'argent avec les jeux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Faire de l'argent avec les jeux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ne-bloquez-pas-le-jeu-sil-ny-a-pas-dachat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ne bloquez pas le jeu s'il n'y a pas d'achat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Références
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1278,104 +1361,172 @@
                   
 
 
-<h1 id="que-sont-les-simulations-et-les-jeux">Que sont les simulations et les jeux</h1>
+<h1 id="ecrire-un-jeu">Écrire un jeu</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>1-5 Types de jeu et leurs caractéristiques<br/></p>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> Ce contenu est de l'enrichissement et ne figure pas au contenu du cours. <br/></p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>20 minutes</p>
+<p>60 minutes</p>
 </div>
 </div>
-<h2 id="les-simulations">Les simulations</h2>
-<p>Selon Antitode <img alt="📙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4d9.svg" title=":orange_book:" />, le terme <strong>simuler</strong> est « Imiter (un fonctionnement), reproduire de façon artificielle ». Donc le but d'une simulation informatique est de reproduire le fonctionnement d'un système réel à l'aide d'un système informatique. Les programmes qui accomplissent des simulations se distinguent des autres programmes en respectant les guides suivants :</p>
-<dl>
-<dt><code>Exécution en temps réel</code></dt>
-<dd>
-<p>La simulation doit s'exécuter sur un intervalle de temps semblable à celui réel. La plupart des simulations prendront <strong>au plus</strong> un temps similaire à l'exécution du phénomène réel. On retrouve des exceptions à cette règle notamment dans la simulation visant à représenter des phénomènes avec un grand degré de précision. </p>
-</dd>
-<dt><code>Abstraction (représentation) des concepts</code></dt>
-<dd>
-<p>La simulation traite numériquement des concepts réels (qui sont généralement quantifiés). Cette abstraction permet de respecter ou d'imiter des règles et des phénomènes réels avec un <strong>degré de précision variable</strong>. Dans tous les cas, les concepts du monde réel qui ont un impact sur la simulation doivent être représentés dans cette forme.  </p>
-</dd>
-<dt><code>Définition restreinte des entrées</code></dt>
-<dd>
-<p>Rares sont les systèmes réels qui opèrent en boîte noire (un système constant n'est pas très pertinent à simuler...). Les entrées des systèmes doivent donc aussi être représentées, mais souvent de façon restreinte. C'est-à-dire que seul un sous-ensemble de toutes les opérations possibles peut être effectué dans la simulation. Les actions sont représentées sont souvent choisies en fonction de leur <strong>pertinence</strong> et de la <strong>difficulté d'implémentation</strong>.</p>
-</dd>
-<dt><code>Définition des sorties à partir d'un ensemble de règles</code></dt>
-<dd>
-<p>Les systèmes réels réagissent aux entrées et aux interactions entre les composantes pour produire un résultat (une sortie). Par exemple, en termes d'interactions sociales, on peut difficilement prévoir le résultat exact d'une conversation (les règles qui les régissent sont trop complexes), mais il est facile d'avoir une discussion sans choquer l'autre personne. La simulation ne peut prendre en compte l'ensemble des règles et se restreint encore une fois à des règles généralement quantifiées.   </p>
-</dd>
-</dl>
-<div class="admonition example">
-<p class="admonition-title">Simulation de voiture</p>
-<p>Voici l'application des caractéristiques de la simulation au contexte de la conduite d'une voiture.</p>
+<p>Écrire et balancer un jeu est une tâche très complexe. Les scénarios vivants, les personnages accrochants et la gestion d'un monde autour d'un personnage ou une entité principale (comme un pays pour un jeu de gestion) est souvent au moins aussi complexe que d'écrire le code qui supporte le jeu. Dans ce module extra, certains problèmes et trucs courrants sont présentés. N'hésitez pas à lire les références de la page pour approfondir ce sujet qui ne sera que survolé.</p>
+<h2 id="le-realisme-et-ce-qui-nous-fait-reagir">Le réalisme et ce qui nous fait réagir</h2>
+<p>À la base du réalisme d'un jeu, il y a nos émotions et ce que l'on ressent. Un jeu avec des graphiques avancés aide à l'immersion, mais le monde peut rester aussi plat qu'un écran ! Donc introduire du réalisme dans un jeu implique d'inclure des éléments auxquels les personnes qui y joueront s'identifieront. Cette inclusion peut être faite de façon subtile ou détournée en misant sur certains <strong>biais cognitifs</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Les billets cognitifs</p>
+<blockquote>
+<p>Distorsion que subit une information, lorsqu'elle ne fait pas l'objet d'un raisonnement analytique par le système cognitif d'une personne, et qui va influencer le traitement inconscient que la personne va en faire. (Grand dictionnaire terminologique, 2024).</p>
+</blockquote>
+<p>Plusieurs biais cognitifs seront présentés dans cette page qu'il est possible d'exploiter à différents niveaux.</p>
+</div>
+<h3 id="le-biais-du-surviant">Le biais du surviant</h3>
+<p>Le premier biais est celui du survivant qui consiste à surévalué les chances de succès liés à une action (Wikipédia, 2024). On trouve des exemples positifs de cela : les célébrités qui réussissent, mais qui représentent virtuellement un groupe non représentatif de la population. Pensez au nombre d'actrices et d'acteurs de cinéma que vous pouvez nommer, comparativement au nombre de personnes qui tiennent des rôles dans des films, des séries ou au théatre, en plus de toutes les personnes qui essaient sans succès. On les trouve aussi dans la négatif comme le nombre de personne qui subisse une complication médicale, ce sont ces personnes qui passent dans les média, mais pas les centaines ou millers d'autres qui ne rencontrent pas de problème. </p>
+<p>Donc écrire une histoire qui inclut des éléments du biais du survivant amène qui personne qui joue à notre jeu à s'identifier comme la personne qui «&nbsp;survie&nbsp;» et l'engage davantage. </p>
+<div class="admonition info">
+<p class="admonition-title">La force de ce biais</p>
+<p>Dans <em>Theory of Fun for Game Design</em> (Koster, 2005), il est rapporté que pour qu'un jeu semble juste, il doit permettre de gagner 70&nbsp;% du temps. Cette mesure est évidemment impossible à rencontrer pour les jeux compétitif et explique (en partie), les frustrations vécus par plusieurs. </p>
+</div>
+<p>Le biais doit toutefois être exploité de façon raisonnable ou subtile pour conserver son efficacité. Un biais utilisé trop explicitement rend caricaturale la position du personnage.</p>
+<div class="admonition exercice">
+<p class="admonition-title">Exercice</p>
 <ul>
-<li>Temps d'exécution : la simulation doit s'exécuter en temps réel (ratio de temps 1:1)</li>
-<li>Concepts représentés : déplacement de la voiture, routes, obstacles sur le chemin, accident, environnement</li>
-<li>Entrées possibles : déplacement du véhicule (gauche, droite, avant, arrière), temps de la journée, condition de route, météo...</li>
-<li>Règles : règles de la circulation (certaines seulement), réaction des autres usagers de la route, physique (glace, aquaplanage, dérapage)...</li>
+<li>Nommez un jeu qui utilise adéquatement le biais du survivant.</li>
+<li>Nommez un jeu qui utilise inadéquatement (de façon caricaturale) le biais du survivant.</li>
 </ul>
 </div>
-<div class="admonition question">
-<p class="admonition-title">Simulation de file d'attente d'épicerie</p>
-<p>Identifiez les caractéristiques d'une simulation de file d'attente à l'épicerie à l'aide des questions suivantes.</p>
+<h2 id="les-personnages">Les personnages</h2>
+<p>Stérétotype et préjugés</p>
+<h2 id="les-choix">Les choix</h2>
+<p>Cout irrécupérable, impact sur le monde (dilemme)</p>
+<h2 id="utilisation-de-laleatoire">Utilisation de l'aléatoire</h2>
+<p>Dans plusieurs jeux, un aspect important de la rejouabilité (et parfois même des mécaniques) est la génération aléatoire. Il est essentiel d'en utiliser, mais encore faut-il l'utiliser correctement pour éviter de générer des frustrations ou un monde irréaliste. Voici quelques bases sur la génération aléatoire.</p>
+<h3 id="les-nombres-aleatoires-entre-0-et-1">Les nombres aléatoires entre 0 et 1</h3>
+<p>Les générateurs de base dans un jeu génèrent selon une <strong>loi uniforme</strong>, donc tous les nombres ont la même probabilité d'être retournés. Ça donne l'impression de «&nbsp;vraiment&nbsp;» sélectionner au hasard, mais dans certains cas cela devient aberrant. Prenons l'exemple de température dans un jeu de simulation où nous gérons les saisons. si l'on dit que dans un biôme particulier la température moyenne hivernale est de -15°C, il y aura plus souvent des journées autour de cette température que des journées extrêmes à -40°C ou 10°C (les deux sont situés à 25°C de la moyenne). Il faut donc que la température, bien qu'elle puisse atteindre des extrêmes, soit plus souvent près de la moyenne ce qui correspond à une distribution centrée et symmétrique comme un loi de Laplace-Gauss (<em>loi normale</em>).</p>
+<h3 id="la-generation-en-deux-dimensions">La génération en deux dimensions</h3>
+<h3 id="attendre-apres-quelque-chose">Attendre après quelque chose</h3>
+<p>La loi uniforme. Les bruits et les autres effets statistiques</p>
+<h2 id="les-mecaniques-punitives-et-la-fin-du-plaisir">Les mécaniques punitives et la fin du plaisir</h2>
+<h2 id="le-probleme-de-linflation">Le problème de l'inflation</h2>
+<p>L'inflation est un défi à gérer dans tous jeux ou des ressources s'accumulent, et en particulier pour des jeux multijoueurs. La plupart des jeux contiennent des exploits (<em>exploits</em>) qui, malgré les meilleurs efforts du développement, permettent de contourner les mécaniques du jeu. Dans la plupart des cas, ces exploits utilisent des ressources qui se regénèrent à indéfiniement. Pour les jeux multijeurs, la principale source de problème (en plus des objets générés) est la cohabitation de personnages de différents niveaux dans un même environnement.</p>
+<div class="admonition info">
+<p class="admonition-title">Qu'est-ce que l'inflation ?</p>
+<blockquote>
+<p>Hausse généralisée et durable du niveau moyen des prix des biens et services dans une économie, qui se traduit par une diminution du pouvoir d'achat. (Grand dictionnaire terminologique, 2024)</p>
+</blockquote>
+<p>Donc dans les jeux, plus on avance, plus les éléments coûtent cher et plus le temps entre les avancements ou les achats sont longs.</p>
+</div>
+<p>L'inflation est poussée à la hausse (augmentation plus importe) par la disponibilité de l'argent (ou le concept apparenté) dans une économie. Par exemple, une économie possède 10 pièces, alors un objet qui coûte 5 pièces est un objet dispendieux. Le même objet au même prix dans une économie de 1000 pièces n'est plus aussi dispendieux, et ce, même si son prix demeure constant.</p>
+<p>Dans un jeu, si un personnage gagne 5 pièces par monstre tué et qu'il y a 10 monstres dans le jeu, alors l'économie du jeu est de 50 pièces. Il devient possible de prévoir les coûts des objets pour garder un défi d'acquisition des objets plus rares (avoir des objets dispendieux). Si les monstres du jeu se regénère, alors l'économie est techniquement non plafonnée. Les personnages auront une richesse aussi grande que souhaité en "&nbsp;cultivant&nbsp;" (<em>farming</em> ou <em>grinding</em>) des ressources. Dans un jeu multijoueur, cela peut rendre difficile (ou impossible) l'intégration de nouvelles personnes ou de nouveau mode de jeu.</p>
+<h3 id="reduire-linflation">Réduire l'inflation</h3>
+<p>Beaucoup de tactiques (autres que d'empêcher la cultivation des ressources qui peut être une mécanique) existent pour contrôler l'inflation :</p>
+<h4 id="retirer-des-richesses">Retirer des richesses</h4>
+<p>Lorsque l'argent entre à l'infini dans une économie, l'inflation devient vite écrasante (l'argent perd sa valeur), il faut donc en sortir sans pour autant la redistribuer ou la concentrer. Pour faire "&nbsp;disparaître&nbsp;" de l'argent d'un jeu on peut :</p>
 <ul>
-<li>Quel est le temps d'exécution ?</li>
-<li>Quels sont les principaux concepts à représenter ? Qu'est-ce qu'on utilise pour abstraire ces concepts ?</li>
-<li>Quelles sont les entrées possibles à la simulation ?</li>
-<li>Quelles sont les principales règles de la simulation ? Quelles pourraient être les sorties de la simulation ?</li>
+<li>Proposer des marchés pour acheter des équipement (les marchands digèrent l'argent);</li>
+<li>Proposer des objets consommables (potion de vie, potion de bonus, munitions...);</li>
+<li>Endomager l'équipement et forcer l'entretien de celui-ci (encore une fois ces fameux marchands);</li>
+</ul>
+<h4 id="punir-laccumulation">Punir l'accumulation</h4>
+<p>Dans la plupart des RTS (jeux de stratégie en temps réel), accumuler des ressources se fait de façon périlleuse, car en ne les utilisant pas, les autres avancent plus rapidement. D'autres jeux augmentent la difficulté selon la richesse accumulée ce qui enlève de l'utilité à l'accumulation de ressources (et même dissuade de le faire).</p>
+<h4 id="utiliser-des-monnaies-multiples">Utiliser des monnaies multiples</h4>
+<p>Diversififer les monnaies et les rendre utilisable que pour certains types d'article ou collectables que dans un certain type d'événement permet aussi de gérer l'inflation, car le <em>grinding</em> et les différences de niveau ne sont plus des mécaniques efficaces. On trouve souvent ces monnaies alternatives pour des objets d'événements ou les environnements JcJ.</p>
+<div class="admonition exercice">
+<p class="admonition-title">Exercice</p>
+<ul>
+<li>Nommez un jeu qui présente un problème d'inflation et comment cela ruine-t-il l'expérience.</li>
+<li>Nommez un jeu qui gère l'inflation avec une mécanique bien intégrée au jeu.</li>
 </ul>
 </div>
-<h2 id="les-jeux">Les jeux</h2>
-<div class="admonition note">
-<p class="admonition-title">Mécanique de jeu</p>
-</div>
-<p>Mécanique de jeu (<em>game mechanic</em>) : Ensemble de règles qui définissent la manière de jouer à un jeu vidéo, d'interagir avec l'environnement, lors d'une partie, et qui sont destinées à produire une expérience de jeu agréable (GDT, 2010).</p>
-<p>Le terme <em>gameplay</em> est un peu différent des mécaniques de jeu. Traduit par «&nbsp;jouabilité&nbsp;», il réfère aux règles et mécaniques avec lesquelles la personne joueuse interagit avec le jeu. On peut voir la jouabilité comme des règles externes et les mécaniques par des règles internes. Toutefois, la distinction entre les deux n'est pas toujours facile à faire.</p>
-<h3 id="les-jeux-comme-une-simulation">Les jeux comme une simulation</h3>
-<p>On peut voir les jeux comme une simulation sans la contrainte que les règles (mécaniques) sont calquées du monde réel. Dans ce cas, on réinterprète simplement les mêmes caractéristiques qu'énoncées précédemment.</p>
-<div class="admonition question">
-<p class="admonition-title">Identification des mécaniques de jeu et d'éléments de jouabilité</p>
-<ul>
-<li>Nommez un jeu dont le temps d'exécution est réel, un dont le temps est compressé.</li>
-<li>Nommez deux abstractions de concepts fréquemment utilisés dans les jeux.</li>
-<li>Nommez deux entrées fréquemment utilisées dans les jeux.</li>
-<li>Nommez deux règles que tout le monde connait dans un jeu qui ont peu de sens dans le monde réel.</li>
-</ul>
-</div>
-<p>Toutefois, c'est rarement la qualité de la simulation qui nous incite à jouer à jeu. D'où la motivation peut-elle bien provenir alors ?</p>
-<h3 id="les-jeux-comme-un-probleme">Les jeux comme un problème</h3>
-<p>Le cerveau humain est une machine à résoudre des problèmes et aime particulièrement les résoudre. On peut définir un jeu comme un problème à résoudre auquel l'on ajoute un contexte.</p>
-<div class="admonition quote">
-<p class="admonition-title">Quote</p>
-<p>Let's picture a mass murder game wherein there is a gas chamber shaped like a well. You the player are dropping innocent victims down into the gas chamber, and they come in all shapes and sizes. There are old ones and young ones, fat ones and tall ones. As they fall to the bottom, they grab onto each other and try to from human pyramids to get to the top of the well. Should they manage to get out, the game is over and you lose. But if you pack them in tightly enough, the ones on the bottom succumb to the gas and die (Koster, 2013).</p>
-<hr />
-<p>Imaginons un jeu d'extermination dans lequel il y a une chambre à gaz de la forme d'un puit. Vous, la personne joueuse, lancez d'innocentes victimes dans la chambre gaz; victimes qui prennent diverses formes et tailles. Il y en a des vieilles et des jeunes, des grosses et des grandes. Dans leur chute, elles s'accrochent les unes aux autres et tentent de former une pyramide humaine pour atteindre le dessus du puit. Si elles parviennent à s'échapper, la partie est terminée et vous avez perdu. Cependant, si vous les compactez assez serré, celles dans le bas succombent au gaz et meurent (Koster, 2013. Traduit de l'anglais).</p>
-</div>
-<p>La description de ce jeu semble assez horrible de par son contexte gore et morbide. Cependant les mêmes mécaniques, exploitées dans un contexte différent avec de simples formes géométriques (polyominos de degrés 4), offrent le célèbre jeu de Tetris.</p>
-<h3 id="comment-bien-definir-un-probleme-dans-un-jeu-et-les-pieges">Comment bien définir un problème dans un jeu et les pièges</h3>
-<h4 id="trouver-une-structure-dans-le-flou">Trouver une structure dans le flou</h4>
-<p>La première condition à l'obtention d'un problème intéressant est que la solution au problème ne soit pas évidente. Pour permettre à la personne joueuse de trouver la solution, on présente plusieurs instances du problème et tranquillement elle remarque les similitudes et déduit la solution.</p>
-<p>Par exemple, apprendre dans un jeu la séquence de combat d'un ennemi est le repérage d'une structure dans le flou.</p>
-<h4 id="difficulte-du-probleme">Difficulté du problème</h4>
-<p>La difficulté d'un problème est très <strong>subjective</strong> et notre sensibilité à cette difficulté l'est tout autant. Pour rendre un jeu agréable, il faut donc moduler cette difficulté selon l'avancement du joueur. Généralement, les niveaux de difficulté dans un jeu font appel simplement au changement de valeurs, mais elles pourraient aussi s'appliquer sur des mécaniques de jeu ou la vitesse d'introduction de celles-ci.</p>
-<p>Par exemple, les quatre premiers ennemis pourraient avoir une séquence de combat composé de deux mouvements et le cinquième ennemi introduit un troisième mouvement et ainsi de suite.</p>
-<h4 id="accoutumance-au-probleme">Accoutumance au problème</h4>
-<p>À force de résoudre le même problème, on y devient habitué et alors deux choses se produisent :</p>
-<ul>
-<li>Le problème devient plus simple à résoudre (on s'attend aux mouvements de l'ennemi)</li>
-<li>On peut appliquer la solution à des contextes différents (en repérant un nouvel ennemi, on cherchera d'abord à apprendre sa séquence)</li>
-</ul>
-<h4 id="tout-devient-un-clou">Tout devient un clou</h4>
-<p>À force de combats, on chercherait toujours à apprendre les séquences. Le sentiment de puissance vécu les deux ou trois premières fois que l'on domine un combat car on sait à quoi s'attendre peut être intéressant, mais rapidement le cerveau manque de stimulation : le problème est trop simple. </p>
-<p>C'est à ce moment que l'on déstabilise la personne joueuse en introduisant quelque chose qui change la façon d'aborder le problème. Par exemple au lieu que chaque ennemi ait une séquence propre, les séquences de deux ennemis peuvent interagir ou si le combat devient trop long (on prend le temps d'étudier la séquence avant d'agir) l'ennemi appelle des renforts.</p>
-<p>Le changement de mécanique est très déstabilisant, car la personne joueuse est habituée de régler les problèmes d'une façon particulière (tout est un clou), alors il faut en user avec parcimonie.</p>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références</h2>
-<p>KOSTER, Raph. A Theory of Fun for Game Design. O'Reilly , 2e édition, 2013, 279p.</p>
-<p>Mécanique de jeu. (2010). Dans <em>Grand dictionnaire terminologique</em>. Office québécois de la langue française. <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26502525/mecanique-de-jeu">https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26502525/mecanique-de-jeu</a></p>
+<h2 id="faire-de-largent-avec-les-jeux">Faire de l'argent avec les jeux</h2>
+<p>Pour les jeux distribués sur des plateformes spécialisées comme <em>Steam</em> ou <em>GOG</em>, la réponse est assez simple : asurez-vous que le temps à investir dans votre jeu dépasse la durée pour laquelle il est possible d'obtenir un remboursement (SlurpTech, 2024). Lorsqu'un jeu est remboursé, la cote versée à la compagnie qui l'a développée est réclamée. Certaines compagnies ont vécu des difficultés après avoir publié des jeux qui duraient moins de 2 heures, car les gens se faisaient rembourser après avoir terminer le jeu.</p>
+<p>Pour les jeux dont le financement repose essentiellement sur la vente de consommable ou de forfait, voici quelques trucs pour augmenter vos profits.</p>
+<h3 id="ne-bloquez-pas-le-jeu-sil-ny-a-pas-dachat">Ne bloquez pas le jeu s'il n'y a pas d'achat</h3>
+<p>Si votre jeu devient "&nbsp;injouable&nbsp;" en raison des trop nombreux obstacles qui doivent être résolus avec le portefeuille, les gens décrocheront plutôt que de payer. Il faut donc qu'il soit plus difficile ou lent d'avancer dans le jeu sans nécessairement décourage les gens. Ils doivent restés assez engagés pour vouloir acheter le paquet ou l'option "&nbsp;retirer les publicitées&nbsp;". </p>
+<p>Une façon de parvenir à ce but est de jouer sur les courbes de progression. Imaginons un jeu de type incrémental dans lequel on a une machine à créer des billets qui, lorsqu'on l'améliore, produit plus de billets (ça a l'air plate, mais beaucoup de jeu reposent sur cette mécanique).</p>
+<p>Partons d'une croissance (en pourcentage) du coût des améliorations égale à celle de la production.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Coût de l'amélioration</th>
+<th style="text-align: left;">Production de billet (par seconde)</th>
+<th style="text-align: left;">Temps avant le prochain achat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0,2</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">0,4</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">0,8</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">1,6</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">3,2</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p>On constate que la difficulté du jeu n'augmente pas, donc la pression pour dépenser de l'argent dans le jeu n'augmente pas non plus. Si l'on prend une augmentation identique en terme de valeurs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Coût de l'amélioration</th>
+<th style="text-align: left;">Production de billet (par seconde)</th>
+<th style="text-align: left;">Temps avant le prochain achat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1,5</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1,33</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1,25</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p>On constate que le jeu devient de plus en plus facile, ce qui est contraire à l'objectif. Il faudra donc que l'<strong>augmentation de ressources obtenues soit inférieure à l'augmentation du coût des améliorations</strong>. </p>
+<h2 id="references">Références</h2>
+<p>Biais cognitif. (2024). Dans Grand dictionnaire terminologique. https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26545231/biais-cognitif</p>
+<p>Biais des survivants. (2024, novembre 24). Wikipédia, l'encyclopédie libre. Page consultée le 22:52, novembre 24, 2024 à partir de http://fr.wikipedia.org/w/index.php?title=Biais_des_survivants&amp;oldid=220582509.</p>
+<p>Inflation. (2024). Dans Grand dictionnaire terminologique. https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8379127/inflation</p>
+<p>Koster, R. (2005). Theory of Fun for Game Design. O'Reilly Media.</p>
+<p>SlurpTech. (2024, 8 juin). How to Refund Games on Steam 2024 - Refund a Steam Game [Video file]. YouTube. https://www.youtube.com/watch?v=FTbb-x_Pveg</p>
 
 
 
@@ -1396,7 +1547,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-08-21</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-28</span>
   </span>
 
     
@@ -1426,7 +1577,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Précédent: Accueil">
+          <a href="../camera/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Les types de caméras">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1436,20 +1587,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Accueil
+                Les types de caméras
               </div>
             </div>
           </a>
         
         
           
-          <a href="../classification/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Classification des jeux">
+          <a href="../maths/vecteurs_3d/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Rappels sur les vecteurs 3D">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Classification des jeux
+                Rappels sur les vecteurs 3D
               </div>
             </div>
             <div class="md-footer__button md-icon">
