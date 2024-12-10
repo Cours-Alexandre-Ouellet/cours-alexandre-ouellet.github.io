@@ -12,14 +12,12 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/guide-uml/dss-banque/">
-      
-      
-        <link rel="prev" href="../dss-norme/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/guide-uml/objet/det-banque/">
       
       
       
-      <link rel="icon" href="../images/siteicon.png">
+      
+      <link rel="icon" href="../../images/siteicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
@@ -28,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,22 +48,22 @@
       
     
     
-      <link rel="stylesheet" href="../css/hint.min.css">
+      <link rel="stylesheet" href="../../css/hint.min.css">
     
-      <link rel="stylesheet" href="../css/override.css">
+      <link rel="stylesheet" href="../../css/override.css">
     
-      <link rel="stylesheet" href="../css/admonition-extra.css">
+      <link rel="stylesheet" href="../../css/admonition-extra.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +72,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -90,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#banque-de-depannage" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -100,9 +103,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Guide UML 2.5 et des diagrammes entités-relations" class="md-header__button md-logo" aria-label="Guide UML 2.5 et des diagrammes entités-relations" data-md-component="logo">
+    <a href="../.." title="Guide UML 2.5 et des diagrammes entités-relations" class="md-header__button md-logo" aria-label="Guide UML 2.5 et des diagrammes entités-relations" data-md-component="logo">
       
-  <img src="../images/siteicon.png" alt="logo">
+  <img src="../../images/siteicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -192,7 +195,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -212,7 +215,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../base-donnees/bases-donnees/" class="md-tabs__link">
+        <a href="../../base-donnees/bases-donnees/" class="md-tabs__link">
           
   
     
@@ -232,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../modelisation-objet/" class="md-tabs__link">
+        <a href="../../modelisation-objet/" class="md-tabs__link">
           
   
     
@@ -248,13 +251,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../systemes/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../systemes/" class="md-tabs__link">
           
   
     
@@ -291,9 +292,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Guide UML 2.5 et des diagrammes entités-relations" class="md-nav__button md-logo" aria-label="Guide UML 2.5 et des diagrammes entités-relations" data-md-component="logo">
+    <a href="../.." title="Guide UML 2.5 et des diagrammes entités-relations" class="md-nav__button md-logo" aria-label="Guide UML 2.5 et des diagrammes entités-relations" data-md-component="logo">
       
-  <img src="../images/siteicon.png" alt="logo">
+  <img src="../../images/siteicon.png" alt="logo">
 
     </a>
     Guide UML 2.5 et des diagrammes entités-relations
@@ -337,7 +338,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -370,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/lecture-guide/" class="md-nav__link">
+      <a href="../../intro/lecture-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -391,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/situation/" class="md-nav__link">
+      <a href="../../intro/situation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/correspondance-cours/" class="md-nav__link">
+      <a href="../../intro/correspondance-cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/bases-donnees/" class="md-nav__link">
+      <a href="../../base-donnees/bases-donnees/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -557,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/dc-norme/" class="md-nav__link">
+      <a href="../../base-donnees/dc-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -578,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/dc-exemple/" class="md-nav__link">
+      <a href="../../base-donnees/dc-exemple/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -599,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/dc-banque/" class="md-nav__link">
+      <a href="../../base-donnees/dc-banque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -676,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/der-norme/" class="md-nav__link">
+      <a href="../../base-donnees/der-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -697,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/der-exemple/" class="md-nav__link">
+      <a href="../../base-donnees/der-exemple/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -718,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-donnees/der-banque/" class="md-nav__link">
+      <a href="../../base-donnees/der-banque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -802,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modelisation-objet/" class="md-nav__link">
+      <a href="../../modelisation-objet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -869,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objet/dcc-norme/" class="md-nav__link">
+      <a href="../dcc-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -890,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objet/dcc-exemple/" class="md-nav__link">
+      <a href="../dcc-exemple/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objet/det-norme/" class="md-nav__link">
+      <a href="../det-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -986,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objet/det-exemple/" class="md-nav__link">
+      <a href="../det-exemple/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1019,10 +1020,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1035,22 +1034,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1061,7 +1057,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Modélisation des systèmes
@@ -1075,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../systemes/" class="md-nav__link">
+      <a href="../../systemes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1109,20 +1105,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1147,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dcu-norme/" class="md-nav__link">
+      <a href="../../dcu-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dcu-exemple.md" class="md-nav__link">
+      <a href="../../dcu-exemple.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1189,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dcu-banque/" class="md-nav__link">
+      <a href="../../dcu-banque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1215,10 +1208,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1232,21 +1223,18 @@
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1257,7 +1245,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Diagramme de séquences système
@@ -1271,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dss-norme/" class="md-nav__link">
+      <a href="../../dss-norme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1292,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dss-exemple.md" class="md-nav__link">
+      <a href="../../dss-exemple.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1310,17 +1298,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dss-banque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1329,7 +1310,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1365,22 +1345,11 @@
                   
 
 
-  <h1>Banque de dépannage</h1>
-
-<p><span class="question" markdown>J’ai plusieurs entité actrices humaines sur mon diagramme, est-ce correct ?</span></p>
-<p>Peut-être que oui, peut-être que non. Le <abbr title="Diagramme de séquence">DSS</abbr> sert à indiquer des interactions entre le système et des entité actrices. Le risque à avoir plusieurs entités actrices humaines sur un même diagramme est de représenter les interactions entre les entités actrices. Deux éléments à observer pour répondre à cette question sont :</p>
-<ol>
-<li>Chaque entité actrice doit minimalement interagir <strong><em>directement</em></strong> une fois avec le système indépendamment des autres entités.</li>
-<li>Il ne doit pas y avoir de message allant d’une entité humaine vers une autre entité humaine. Il faut aussi noter qu’il est normal d’avoir plusieurs entité actrices sous-système dans un même <abbr title="Diagramme de séquence">DSS</abbr>.</li>
-</ol>
-<p><span class="question" markdown>Est-ce que je dois représenter toutes les étapes du scénario principal, tous les scénarios d’extension et tous les scénarios d’exception sur mon <abbr title="Diagramme de séquence">DSS</abbr> ?</span></p>
-<p>Non, représenter toutes les étapes mène dans la plupart des cas à un diagramme surchargé et difficile à comprendre, ce qui est contraire à la raison même de faire un diagramme.</p>
-<p>Normalement, toutes les étapes du scénario principal sont représentées, la majorité des extensions devraient l’être également. Les extensions complexes (plus de 5 étapes) pourraient faire l’objet d’un autre diagramme ou même d’un autre <abbr title="Cas d’utilisation">CU</abbr>.</p>
-<p>Pour les <strong>extensions</strong> ou les <strong>exceptions</strong>, on évite de représenter sur le <abbr title="Diagramme de séquence">DSS</abbr> celles qui :</p>
+<h1 id="banque-de-depannage">Banque de dépannage</h1>
+<p><span class="question">Mon objet peut être dans deux états en même temps, comment puis-je représenter cette situation ?</span></p>
 <ul>
-<li>Peuvent se produire à tout moment, car on ne peut pas les inclure à un endroit précis dans le diagramme.</li>
-<li>Provoque la fin du <abbr title="Cas d’utilisation">CU</abbr> parce qu’il s’agit d’une erreur irrécupérable, car elles n’apportent pas d’information sur l’exécution du <abbr title="Cas d’utilisation">CU</abbr>.</li>
-<li>Lié à une erreur d’entrée de donnée (comme un mauvais format de date), car elles ne changent pas le déroulement du <abbr title="Cas d’utilisation">CU</abbr>.</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Tranformer en un superétat l'un des deux états.</li>
+<li>Ajouter un nouvel état qui correspond à la situation où l'objet se retrouve dans les états en même temps .</li>
 </ul>
 
 
@@ -1402,7 +1371,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-10</span>
   </span>
 
     
@@ -1427,28 +1396,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-        
-          
-          <a href="../dss-norme/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Normes">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              <div class="md-ellipsis">
-                Normes
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1511,12 +1458,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "search.suggest", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "navigation.indexes", "content.footnote.tooltips", "toc.integrate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "search.suggest", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "navigation.indexes", "content.footnote.tooltips", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       

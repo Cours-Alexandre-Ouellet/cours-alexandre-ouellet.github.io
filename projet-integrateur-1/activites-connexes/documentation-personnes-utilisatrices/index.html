@@ -1521,16 +1521,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemple-dun-manuel-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemple d'un manuel d'utilisation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exemple d'un manuel d'utilisation">
+    <nav class="md-nav" aria-label="Rédiger la description d'une fenêtre">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1821,19 +1812,26 @@
 <p>Il existe 4 formes principales de documentation destinées aux personnes utilisatrices.</p>
 <dl>
 <dt><code>Manuel d'utilisation</code></dt>
-<dd>Document qui énumère et décrit le fonctionnement de chaque fonctionnalité. Il peut prendre la forme d'une page web distincte ou d'un document partagé avec le système, quoique cette forme tend à disparaître.</dd>
+<dd>Document qui énumère et décrit le fonctionnement de chaque fonctionnalité. Il peut prendre la forme d'une page web distincte ou d'un document partagé avec le système. Le format web est presque exclusivement utilisé de nos jours avec le système. Les manuels sont souvent publiés à même les dépôts Git. Divers outils pour générer une documentation facilement sont disponibles, dont l'outil <em>MkDocs</em> utilisé pour les présentes notes.</dd>
+<dt><code>Aide dans le système</code></dt>
+<dd>Permet d'accéder au manuel directement à partir du système. Idéalement, la ressource d'aide qui s'ouvre est contextuelle à l'état du système. Une intelligence artificielle peut aussi aider à sélectionner la bonne ressource d'aide. C'est une forme courante d'aide dans les systèmes modernes. On trouve également des hybrides ou l'aide du système redirige vers la bonne ressource dans le manuel en ligne.</dd>
+<dt><code>Didactitiel</code></dt>
+<dd>Document, vidéo ou activité qui vise l'apprentissage des fonctionnalités du système. On différencie les formations avec le système (plusieurs heures), des didactitiels axés vers une fonctionnalité. Les didactitiels ont différents publics cibles : </dd>
 </dl>
-<p><code>Aide dans le logiciel</code>
-:</p>
-<p><code>Didactitiel</code>
-:</p>
-<p><code>Aide de débogage rapide (*trouble shooting*)</code>
-:</p>
+<ul>
+<li>Les personnes qui n'ont jamais utilisé le sytème (didatitiel long et généraux). Par exemple, un formation de deux heures sur les bases d'Excel.</li>
+<li>Les personnes qui connaissent le fonctionnement du système (didactitiel court et orienté vers une fonctionnalité). Par exemple, une capsule de 3 minutes sur la formule <code>Sequence</code> dans Excel.</li>
+<li>Les personnes qui connaissent une version antérieur du système. Par exempel, une vidéo intitulée <em>Quoi de neuf dans Excel 2024 ?</em>.</li>
+</ul>
+<dl>
+<dt><code>Aide d'installation ou de débogage rapide (*trouble shooting*)</code></dt>
+<dd>Court document ou foire aux questions (FAQ) qui présent les problèmes fréquemment rencontré et comment y répondre. Un exemple est le document d'installation d'une page qui vient avec un imprimante neuve plutôt que de lire le manuel complet de plusieurs dizaines de pages pour apprendre comment réaliser l'installation.</dd>
+</dl>
 <h2 id="organisation-dun-manuel-dutilisation">Organisation d’un manuel d'utilisation</h2>
 <p>Un manuel d'utilisation contient les sections suivantes</p>
 <ul>
 <li><strong>Page titre</strong> : qui inclut minimalement le nom du système, la version et la date de publication;</li>
-<li><strong>Table des matières</strong></li>
+<li><strong>Table des matières</strong> : liste les titres du documents dans leur ordre d'apparition;</li>
 <li><strong>Table des figures</strong> : elles sont toujours suffisamment nombreuses pour justifier la présence d'une table des figures; </li>
 <li><strong>Introduction</strong> : explique le but général du système. Elle peut aussi décrire certains termes techniques ou propre au système;</li>
 <li><strong>Présentation des fonctionnalités</strong> : le corps du document ou l'utilisation de chaque fonctionnalité est détaillé. Plus de détails sont donnés ci-dessous;</li>
@@ -1845,21 +1843,30 @@
 <p>L'outil gratuit <em>Greenshot</em> permet de faire des capture d'écran et de les éditer (comme ajouter des boîtes, des numéros, des commentaires, flourer des parties de la capture...). C'est cet outil qui est utilisé pour les captures d'écran dans le cadre du cours.</p>
 </div>
 <h2 id="rediger-la-description-dune-fenetre">Rédiger la description d'une fenêtre</h2>
-<h2 id="exemple-dun-manuel-dutilisation">Exemple d'un manuel d'utilisation</h2>
-<p>Voici un extrait de ce qui serait un bon manuel d'utilisation pour créer une rencontre dans <em>Microsoft Teams</em>.</p>
+<p>Pour rédiger la description d'une fenêtre, on doit respecter les points suivants :</p>
+<ul>
+<li>Donner un nom significatif à la fonctionnalité. Il doit être conforme avec les termes utilisés dans le système.</li>
+<li>Expliquer le chemin d'accès à la fonctionnalité.</li>
+<li>Décrire les étapes nécessaires, <strong>de façon séquentielle</strong>, pour réaliser la fonctionnalité.</li>
+<li>Décrire les champs optionnels et donner des compléments d'information au besoin.</li>
+</ul>
+<p>Pour garder une description claire, faites des liens entre la capture d'écran et le texte. L'utilisation de codes (numérique, couleur...) peut faciliter la compréhension de l'interface.</p>
+<p>Également, gardez les contenus courts et précis. C'est plus clair de diviser les éléments en plus petits groupes et de les organiser que de mettre un long paragraphe de texte. Aussi, une liste de plus de 10 éléments est plus difficile à suivre. Limitez donc le nombre d'information par section à ce nombre. </p>
+<div class="admonition example">
+<p class="admonition-title">Manuel d'utilisation pour créer une rencontre dans <em>Microsoft Teams</em></p>
 <h3 id="creation-dune-nouvelle-rencontre">Création d'une nouvelle rencontre</h3>
-<figure>
+<p><figure markdown="span">
    <a class="glightbox" href="../../images/manuel1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/manuel1.png" width="500"></a>
    <figcaption>Création de la nouvelle rencontre à partir de le vue du calendrier</figcaption>
-</figure>
+</figure></p>
 <ol>
 <li>Cliquez sur <strong>Calendrier</strong> dans la barre de menu à gauche;</li>
 <li>Cliquez sur <strong>Nouvelle réunion</strong> en haut à droite de la fenêtre.</li>
 </ol>
-<figure>
+<p><figure markdown="span">
    <a class="glightbox" href="../../images/manuel2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/manuel2.png" width="500"></a>
    <figcaption>Configuration de la réunion dans la fenêtre de rencontre</figcaption>
-</figure>
+</figure></p>
 <ol>
 <li>Indiquez toutes les champs de la rencontre (en rose ce sont des champs optionnels).</li>
 <li>Si la réunion se déroule en ligne, n’indiquez pas de lieu et activez l’option <strong>Réunion en ligne</strong>. Cela permet aux <em>participants</em> de se connecter à l’appel directement dans le calendrier.</li>
@@ -1869,6 +1876,14 @@
 <li>Si l’option <strong>Autoriser le transfert</strong> est coché, les <em>participants</em> pourront à leur tour inviter d’autres personnes.</li>
 <li>Cliquez sur <strong>Enregistrer</strong> pour ajouter la rencontre à votre calendrier et envoyer un courriel d’invitation aux <em>participants</em>.</li>
 </ol>
+</div>
+<p><strong>Autres actions</strong></p>
+<ul>
+<li>Rendre la rencontre récurente : changer la valeur dans la section <strong>ne se répète pas</strong> pour la périodicité de la rencontre.</li>
+<li>Publier une annonce dans un canal : sélectionnez le canal dans lequel publier dans le champ <em>ajoutez un canal</em>.</li>
+<li>Définir le lieu de la rencontre : indiquer une adresse ou un local dans le champ <em>ajouter une position</em>.</li>
+<li>Ajouter des informations à la rencontre : dans la boîte de texte au bas de l'interface, décrivez la rencontre. Le message sera envoyés aux personnes invitées lors de l'enregistrement de la rencontre. Vous pouvez joindre des fichiers et utiliser les outils de mise en forme.</li>
+</ul>
 <h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"></path></svg></span> Références</h2>
 <p><em>Manuals</em>. XKCD. (2014, 17 mars). https://xkcd.com/1343/ </p></div>
 
