@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/input-system/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/maths/intervalle/">
       
       
-        <link rel="prev" href="../evenements/">
+        <link rel="prev" href="../deplacements/">
       
       
-        <link rel="next" href="../coroutines/">
+        <link rel="next" href="../bezier/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Gérer les contrôles avec le InputSystem - Jeux 3D</title>
+        <title>Interpoler, interpolation et aléatoire - Jeux 3D</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gerer-les-controles-avec-le-inputsystem" class="md-skip">
+        <a href="#intervalle-interpolation-et-aleatoire" class="md-skip">
           Aller au contenu
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gérer les contrôles avec le InputSystem
+              Interpoler, interpolation et aléatoire
             
           </span>
         </div>
@@ -228,11 +228,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../maths/vecteurs_3d/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vecteurs_3d/" class="md-tabs__link">
           
   
   Les mathématiques des jeux
@@ -246,13 +248,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../demo/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../programmer/demo/" class="md-tabs__link">
           
   
   Programmer avec Unity
@@ -517,25 +517,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -546,7 +551,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Les mathématiques des jeux
@@ -560,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maths/vecteurs_3d/" class="md-nav__link">
+      <a href="../vecteurs_3d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maths/rotations/" class="md-nav__link">
+      <a href="../rotations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -602,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maths/deplacements/" class="md-nav__link">
+      <a href="../deplacements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,10 +625,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../maths/intervalle/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interpoler, interpolation et aléatoire
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -632,6 +657,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#restriction-a-un-intervalle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restriction à un intervalle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation-dans-un-intervalle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolation dans un intervalle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation-entre-deux-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolation entre deux angles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autres-variantes-dinterpolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres variantes d'interpolation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generer-une-valeur-aleatoire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Générer une valeur aléatoire
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -649,17 +739,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -684,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maths/bezier/" class="md-nav__link">
+      <a href="../bezier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,30 +810,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -751,7 +839,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Programmer avec Unity
@@ -765,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../demo/" class="md-nav__link">
+      <a href="../../programmer/demo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -786,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../evenements/" class="md-nav__link">
+      <a href="../../programmer/evenements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -804,30 +892,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Gérer les contrôles avec le InputSystem
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../programmer/input-system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,95 +904,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#le-fonctionnement-du-inputsystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le fonctionnement du InputSystem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurer-une-action" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurer une action
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurer-les-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurer les actions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#action-de-bouton" class="md-nav__link">
-    <span class="md-ellipsis">
-      Action de bouton
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Action de bouton">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ajouter-un-modificateur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ajouter un modificateur
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#action-de-valeur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Action de valeur
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lire-des-actions-dans-les-scripts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lire des actions dans les scripts
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -937,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coroutines/" class="md-nav__link">
+      <a href="../../programmer/coroutines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -958,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sons/" class="md-nav__link">
+      <a href="../../programmer/sons/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,20 +963,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1022,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../machine-etats/" class="md-nav__link">
+      <a href="../../programmer/machine-etats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1043,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scriptable/" class="md-nav__link">
+      <a href="../../programmer/scriptable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1077,20 +1053,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1115,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exemple-evenement/" class="md-nav__link">
+      <a href="../../programmer/exemple-evenement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../controleur/" class="md-nav__link">
+      <a href="../../programmer/controleur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1170,20 +1143,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1208,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../volume-effets/" class="md-nav__link">
+      <a href="../../programmer/volume-effets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1272,76 +1242,106 @@
                   
 
 
-<h1 id="gerer-les-controles-avec-le-inputsystem">Gérer les contrôles avec le InputSystem</h1>
+<h1 id="intervalle-interpolation-et-aleatoire">Intervalle, interpolation et aléatoire</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>4-1 Gestion des entrées de l'utilisateur.</p>
+<p>Fonctions utilitaires pour la gestion des intervalles</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>30 minutes</p>
+<p>15 minutes</p>
 </div>
 </div>
-<p>L'interaction avec les entrées utilisateurs est une composante importante de l'expérience de jeu. Contrairement à d'autres systèmes, les jeux et les simulations demandent souvent d'interagir avec les composantes directement dans le monde du jeu, ou avec des touches du clavier. Les objets qui gèrent la réception des contrôles sont nombreux et il peut devenir ardu de suivre lequel des objets gère quel contrôle.</p>
-<p>Unity permet de gérer les contrôles dans chaque objet qui a besoin d'en lire l'information, avec la classe statique <code class="language-c# highlight"><span class="n">Input</span></code>. Cette méthode longuement utilisée est de plus en plus remplacée par le «&nbsp;nouveau&nbsp;» <strong>InputSystem</strong> dans Unity. Bien qu'il existe depuis longtemps, il a longtemps un composant séparé, parfois difficile à intégrer, alors que dans les dernières versions il devient mieux intégré. </p>
-<p>L'utilisation du <strong>InputSystem</strong> permet aussi de gérer les contrôles des diverses plateformes et contrôleurs (manettes) à cet endroit, plutôt que cette gestion soit effectuée dans le code. </p>
-<h2 id="le-fonctionnement-du-inputsystem">Le fonctionnement du InputSystem</h2>
-<div class="admonition info">
-<p class="admonition-title">Installation</p>
-<p>Dans Unity 6000, le <strong>InputSystem</strong> est installé d'office. Sinon, il faut l'installer en utilisant le gestionnaire de package et trouver dans le <em>UnityRegistry</em> le package nommé <em>InputSystem</em>.</p>
+<p>On travaille souvent sur des intervalles de valeurs dans les jeux, soit en interpolant sur l'intervalle où en générant des valeurs aléaoires dans celui-ci. </p>
+<h2 id="restriction-a-un-intervalle">Restriction à un intervalle</h2>
+<p>La méthode <code>Mathf.Clamp</code> permet de restreindre les valeurs entre deux bornes. Si la valeur est hors des bornes, alors la valeur minimale ou maximale est retournée.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fonctionnement de Clamp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Code de Mathf.Clamp (vous n&#39;avez pas à copier ce code)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="nf">Clamp</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">valeur</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">valeur</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mininum</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">minimum</span><span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">valeur</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maximum</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">maximum</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="c1">// Appel de Mathf.Clamp</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">valeur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Clamp</span><span class="p">(</span><span class="n">valeur</span><span class="p">,</span><span class="w"> </span><span class="n">minimum</span><span class="p">,</span><span class="w"> </span><span class="n">maximum</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Restreindre entre 0 et 1</p>
+<p>On a souvent à restreindre des valeurs entre 0 et 1. Les développeurs d'Unity pensé à la fonction <code>Mathf.Clamp01</code> qui accepte comme paramètre que la valeur à restreindre.</p>
 </div>
-<p>La gestion des entrées demande la création d'un asset de type <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code> qui définit les relations entre les actions et les touches permettant de réaliser ces actions. Ensuite, un <code class="language-c# highlight"><span class="n">GameObject</span></code> avec un composant <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span></code> sert à lier les actions à des objets du jeu. Il devrait y avoir qu'un <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span></code>par scène, en cas de multijoueur (avec écran séparé), il faut utiliser le composant <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span><span class="w"> </span><span class="n">Manager</span></code>.</p>
-<p><a class="glightbox" href="../../images/ajouter_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ajouter_input_action.png" /></a></p>
-<h2 id="configurer-une-action">Configurer une action</h2>
-<p>Dans la vue de l'asset <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code>, on peut configurer les actions. Un <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code> est composé de <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> qui sont des groupes de <code class="language-c# highlight"><span class="n">Action</span></code>. Chacun des <code class="language-c# highlight"><span class="n">Action</span></code> comporte des <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Properties</span></code> et des <code class="language-c# highlight"><span class="n">Binding</span></code> vers les contrôles. Chaque <code class="language-c# highlight"><span class="n">Binding</span></code> devrait faire référence à une action différente à l'intérieur de son groupe. Par exemple, la touche «&nbsp;A&nbsp;» devrait être liée à au plus une <code class="language-c# highlight"><span class="n">Action</span></code> dans chacune des <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code>.</p>
-<p>Par défaut, deux <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> sont créés, l'une appelée <code class="language-c# highlight"><span class="n">Player</span></code> qui permet la gestion des actions de la personne qui joue au jeu (déplacement, interagir avec des objets, déplacer la souris...) et une appelée <code class="language-c# highlight"><span class="n">UI</span></code> qui gère l'interface utilisateur.</p>
-<div class="admonition warning">
-<p class="admonition-title">`#!c# UI Action Map</p>
-<p>L'<code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Map</span></code> de l'interface (<code class="language-c# highlight"><span class="n">UI</span></code>) est configurée pour s'intégrer avec les composantes d'interface de Unity. De plus, le basculement <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> se fait automatiquement dans ce contexte. Il est donc fortement suggéré ne pas modifier les comportements de cet <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Map</span></code>.</p>
+<h2 id="interpolation-dans-un-intervalle">Interpolation dans un intervalle</h2>
+<p>L'interpolation linéaire consiste à se placer à un certain "&nbsp;pourcentage&nbsp;" d'avancement entre deux valeurs. La méthode <code>Mathf.Lerp</code> accepte trois paramètres, soit une valeur de départ, une valeur de fin et le pourcentage (appelé <code>t</code>) qui est restreinte 0 et 1. </p>
+<p>Par exemple, si l'on interpole entre 1 et 5, la valeur t = 0.25 nous retourne 2, car cette valeur est à 25% de l'axe entre 2 et 5. La formule d'interpolation est :</p>
+<div class="arithmatex">\[
+\text{valeur} = \text{minimum} * (1-t) + \text {maximum} * t
+\]</div>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Interpolation linéaire</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">Mathf</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="n">départ</span><span class="p">,</span><span class="w"> </span><span class="n">fin</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="interpolation-entre-deux-angles">Interpolation entre deux angles</h2>
+<p>La méthode <code>LerpAngle</code> permet d'interpoler entre deux angles en degrés et assure que le point 0 (ou 360) soit correctement traité. La méthode retourne toujours le plus petit angle. La méthode <code>Lerp</code> permet elle d'obtenir le plus grand angle.</p>
+<h2 id="autres-variantes-dinterpolation">Autres variantes d'interpolation</h2>
+<p>Les autres méthodes d'interpolation sont  :</p>
+<p><code>LerpUnclamp</code>: pour laquelle la valeur du paramètre <code>t</code> n'est pas limitée. Si <code>t</code> n'est pas entre 0 et 1, alors la valeur de retour n'est pas entre départ et fin.
+<code>InverseLerp</code> : qui fonctionne comme <code>Lerp</code>, mais qui pour une valeur entre début et fin retourne la valeur de <code>t</code> associée. Autrement dit, retourne le pourcentage d'avancement qui correspond à cette valeur.</p>
+<h2 id="generer-une-valeur-aleatoire">Générer une valeur aléatoire</h2>
+<p>La classe statique <a href="https://docs.unity3d.com/ScriptReference/Random.html"><code>Random</code></a> (de Unity, à ne pas confondre avec celle dans <code>System</code>), permet de faire de la génération aléatoire. Parmi les propriétés et méthodes (statiques) intéressantes, on retrouve :</p>
+<ul>
+<li><code>insideUnitSphere</code> : génère un vecteur tridimentionnel dont la norme est d'au plus 1;</li>
+<li><code>onUnitSphere</code> : génère un vecteur tridimentionnel dont la norme est exactement de 1;</li>
+<li><code>rotation</code> : génère une rotation aléatoire (retourne un quaternion);</li>
+<li><code>value</code> : génère un nombre à virgule flotante entre 0 et 1 (inclus). Similaire au <code>random</code> de <code>System</code>.</li>
+<li><code>Range(minimum, maximum)</code> : génère un nombre entre les deux bornes. Le minimum est inclus et le maximum est exclu. Cette méthode est très utile pour tirer une valeur dans un tableau.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tables de trésors</p>
+<p>On veut souvent générer des trésors aléatoires dans un jeu. Voici deux approches, selon si les trésors ont la même probabilité d'apparition ou non.</p>
+<div class="language-c# highlight"><span class="filename">Table avec probabilité de génération égale</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">tresors</span><span class="p">[</span><span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">tresors</span><span class="p">.</span><span class="n">Lenght</span><span class="p">)];</span>
+</span></code></pre></div>
+<div class="language-c# highlight"><span class="filename">Table avec probabilité de génération inégale</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// On suppose que la somme des probabilités est de 1</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">float</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Random</span><span class="p">.</span><span class="k">value</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">indiceTresor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">// On avance selon la probabilité de générer</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">while</span><span class="p">(</span><span class="n">valeur</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0.0f</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="n">indiceTresor</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="n">valeur</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">tresors</span><span class="p">[</span><span class="n">indiceTresor</span><span class="p">].</span><span class="n">Probabilite</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1">// Instabilité arithmétique sur la dernière probabilité</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">if</span><span class="p">(</span><span class="n">indiceTresor</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">tresors</span><span class="p">.</span><span class="n">Lenght</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="n">indiceTresor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tresors</span><span class="p">.</span><span class="n">Lenght</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">      </span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="p">}</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="k">return</span><span class="w"> </span><span class="n">tresors</span><span class="p">[</span><span class="n">indiceTresor</span><span class="p">];</span>
+</span></code></pre></div>
 </div>
-<p><a class="glightbox" href="../../images/structure_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/structure_input_action.png" /></a></p>
-<p>On remarque dans cette capture d'écran :</p>
-<ol>
-<li>Les <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code>. Dans la capture celle du <code class="language-c# highlight"><span class="n">Player</span></code> (valeurs par défaut) est sélectionnée.</li>
-<li>Les <code class="language-c# highlight"><span class="n">Actions</span></code> sont présentées dans le centre de la fenêtre. En développant l'action on affiche ses <code class="language-c# highlight"><span class="n">Bindings</span></code>. L'<code class="language-c# highlight"><span class="n">Action</span></code> en (2) lie une entrée sur deux axes, en raison de l'icône de cercle à côté</li>
-<li>Les <code class="language-c# highlight"><span class="n">Bindings</span></code> pour chacun des contrôleurs possibles. Il n'est pas nécessaire de définir plusieurs contrôleurs dans le cadre du cours, seulement le clavier et la souris.</li>
-<li>Une <code class="language-c# highlight"><span class="n">Action</span></code> de type bouton pressé, avec l'icône adéquate.</li>
-<li>La vue des <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Properties</span></code>. Lors qu'un <code class="language-c# highlight"><span class="n">Binding</span></code> est sélectionné, alors les paramètres du <code class="language-c# highlight"><span class="n">Binding</span></code> s'affichent dans cette partie de l'interface.</li>
-</ol>
-<div class="admonition tips">
-<p class="admonition-title">Modifier les <code class="language-c# highlight"><span class="n">Action</span></code> et les <code class="language-c# highlight"><span class="n">Binding</span></code></p>
-<p>Un clic droit sur un <code class="language-c# highlight"><span class="n">Action</span></code> ou un <code class="language-c# highlight"><span class="n">Binding</span></code> ouvre un menu contextuel pour ajouter, renommer ou supprimer un élément. Pour l'ajout des <code class="language-c# highlight"><span class="n">Bindings</span></code>, quatre options sont offertes. Pour savoir laquelle choisir, il faut se référer au détail sur les bindings plus loin.</p>
-</div>
-<h2 id="configurer-les-actions">Configurer les actions</h2>
-<p>Cette section présente la manipulation de l'interface pour ajouter un <code class="language-c# highlight"><span class="n">Action</span></code>. Cependant, on travaille souvent à partir de ceux définis de base et on les modifie. Le fonctionnement de l'interface est similaire.</p>
-<h2 id="action-de-bouton">Action de bouton</h2>
-<p>L'action d'un bouton est vérifiée seulement lors d'une interaction avec le contrôle. Unity ne vérifie pas continuellement si ce contrôle a été activé. C'est donc un type efficace pour tous les événements qui ressemblent à ... presser un bouton. Par défaut, l'état du bouton n'est pas vérifié au lancement, mais un paramètre permet de le faire.</p>
-<p>La création d'un <code class="language-c# highlight"><span class="n">Action</span></code> crée un <code class="language-c# highlight"><span class="n">Binding</span></code> vide. Les options d'un <code class="language-c# highlight"><span class="n">Binding</span></code> sont : </p>
-<p><a class="glightbox" href="../../images/binding_parameter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_parameter.png" /></a></p>
-<ol>
-<li>Le chemin vers le contrôle. Il est important de sélectionner le bon type d'entrée. Il est possible de taper dans la barre de sélection pour filtrer les contrôles disponibles.</li>
-<li>Le type de contrôleur (clavier, souris, manette, toucher ...). Cela peut sembler redondant avec la sélection du contrôle, mais il est important de l'indiquer pour gérer le passage entre les types de contrôleurs. </li>
-<li>Les interactions permettent de modifier l'interaction nécessaire avec le contrôle. Par défaut, dès que le bouton est pressé, l'action est activée. Une interaction permet de modifier ce comportement, par exemple, en attendant (bouton tenu enfoncé) un certain délai ou en répétant le pressage (tapoter le bouton).  </li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Types de <code class="language-c# highlight"><span class="n">Binding</span></code></p>
-<p>Les types de <code class="language-c# highlight"><span class="n">Binding</span></code> disponibles varient selon le type d'<code class="language-c# highlight"><span class="n">Action</span></code>.</p>
-</div>
-<h3 id="ajouter-un-modificateur">Ajouter un modificateur</h3>
-<p>Pour ajouter un contrôle à deux ou trois touches (comme un <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-z">Z</kbd></span>), il faut sélectionner le bon type de <code class="language-c# highlight"><span class="n">Binding</span></code>, soit ceux avec un ou deux <code class="language-c# highlight"><span class="n">Modifier</span></code>. Le <code class="language-c# highlight"><span class="n">Modifier</span></code> sera la touche qui vient modifier le contrôle (comme les touches <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <span class="keys"><kbd class="key-alt">Alt</kbd></span> ou <span class="keys"><kbd class="key-shift">Shift</kbd></span>)</p>
-<p><a class="glightbox" href="../../images/binding_modifier.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_modifier.png" /></a>
-<a class="glightbox" href="../../images/binding_annuler.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_annuler.png" /></a></p>
-<h2 id="action-de-valeur">Action de valeur</h2>
-<p>Une action de valeur lit continuellement les entrées et supporte une variété de types de retour. Cela permet, entre autres, de retourner une abstraction des contrôles de plusieurs types. Par exemple, on peut retourner un vecteur en deux dimensions pour les déplacements dans le plan (composante vers la droite et composante vers l'avant) au lieu de lire individuellement les quatre touches <span class="keys"><kbd class="key-w">W</kbd></span> <span class="keys"><kbd class="key-a">A</kbd></span> <span class="keys"><kbd class="key-s">S</kbd></span> et <span class="keys"><kbd class="key-d">D</kbd></span> .</p>
-<p><a class="glightbox" href="../../images/type_controle_valeur.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/type_controle_valeur.png" /></a></p>
-<ol>
-<li>Le contrôle <code class="language-c# highlight"><span class="n">axis</span></code> retourne une valeur (dans un <code class="language-c# highlight"><span class="kt">float</span></code>) sur un axe de -1 à 1. Si le contrôle est analogique (comme un levier de contrôleur), alors la force appliquée est considérée. Donc un levier à moitié de son amplitude retourne 0.5. Au clavier, les valeurs -1 et 1 sont retournées, selon la touche appuyée. Utiliser ce contrôle au clavier inclut deux <code class="language-c# highlight"><span class="n">binding</span></code>, un positif et un négatif.</li>
-<li>Le contrôle <code class="language-c# highlight"><span class="n">integer</span></code> retourne toujours une valeur entière pour le contrôle utilisé.</li>
-<li>Le contrôle <code class="language-c# highlight"><span class="n">vector2</span></code> retourne un vecteur entre deux dimensions, soit la combinaison de deux <code class="language-c# highlight"><span class="n">axis</span></code>. On l'utilise par exemple pour les déplacements. Utiliser ce contrôle au clavier inclut quatre <code class="language-c# highlight"><span class="n">binding</span></code>, un positif et un négatif pour chaque axe.</li>
-</ol>
-<p><a class="glightbox" href="../../images/controle_4_direction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/controle_4_direction.png" /></a></p>
-<h2 id="lire-des-actions-dans-les-scripts">Lire des actions dans les scripts</h2>
 
 
 
@@ -1362,7 +1362,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-25</span>
   </span>
 
     
@@ -1392,7 +1392,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../evenements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Programmation événementielle">
+          <a href="../deplacements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Déplacement dans l&#39;espace">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1402,20 +1402,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Programmation événementielle
+                Déplacement dans l'espace
               </div>
             </div>
           </a>
         
         
           
-          <a href="../coroutines/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Coroutines">
+          <a href="../bezier/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Courbes de Bézier">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Coroutines
+                Courbes de Bézier
               </div>
             </div>
             <div class="md-footer__button md-icon">

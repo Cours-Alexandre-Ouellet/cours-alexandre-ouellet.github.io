@@ -88,3 +88,24 @@ span.tooltip {
     -webkit-mask-image: var(--md-admonition-icon--ia);
             mask-image: var(--md-admonition-icon--ia);
   }
+
+/* adminition agile */
+:root {
+    --md-admonition-icon--agile: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M2.5 10.5a8 8 0 1 1 16 0 .75.75 0 0 0 1.5 0 9.5 9.5 0 1 0-9.5 9.5h10.94l-2.72 2.72a.75.75 0 1 0 1.06 1.06l3.735-3.735c.44-.439.44-1.151 0-1.59L19.78 14.72a.75.75 0 0 0-1.06 1.06l2.72 2.72H10.5a8 8 0 0 1-8-8Z"></path></svg>')
+  }
+  .md-typeset .admonition.agile,
+  .md-typeset details.agile {
+    border-color: rgb(18, 170, 241);
+  }
+  .md-typeset .agile > .admonition-title,
+  .md-typeset .agile > summary {
+    background-color: rgb(17, 14, 168);
+    color: white;;
+  }
+  .md-typeset .agile > .admonition-title::before,
+  .md-typeset .agile > summary::before {
+    background-color: rgb(18, 170, 241);
+    -webkit-mask-image: var(--md-admonition-icon--agile);
+            mask-image: var(--md-admonition-icon--agile);
+  }
+

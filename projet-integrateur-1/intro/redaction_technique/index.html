@@ -534,9 +534,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#la-liste" class="md-nav__link">
+  <a href="#les-listes" class="md-nav__link">
     <span class="md-ellipsis">
-      La liste
+      Les listes
     </span>
   </a>
   
@@ -549,17 +549,17 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Éléments non textuels">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#le-tableau" class="md-nav__link">
+  <a href="#les-tableaux" class="md-nav__link">
     <span class="md-ellipsis">
-      Le tableau
+      Les tableaux
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Les tableaux">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#les-figures" class="md-nav__link">
@@ -1930,17 +1930,17 @@
 <p>Chaque type de rédaction (journalistique, romancé, théâtrale, technique...) propose ses propres styles et règles afin d'assurer qu’elle accomplisse sa fonction première, soit assurer la transmission d'informations. Dans le cadre de la rédaction technique, sa principale fonction est de fournir une description <strong>univoque</strong>, <strong>compréhensible</strong>, <strong>cohérente</strong>,  <strong>complète</strong> et <strong>concise</strong> d'un système. Pour les personnes qui en font la rédaction et la maintenance, les documents techniques peuvent aussi être structurés de façon à faciliter leur maintenance et mise à jour. Le niveau de langage utilisé est le niveau <strong>spécialisé</strong>, il dérive du style neutre et, mis à part les termes techniques, s'appuie sur le niveau de langage usuel.</p>
 <p>Voici quelques trucs à utiliser lors de l'écriture de documents technique pour respecter sa fonction : </p>
 <ol>
-<li>Favoriser l'utilisation de phrases courtes. Scinder l'information en plus petites phrases améliore la lisibilité et force l'organisation plus cohérente du système.</li>
-<li>Utiliser des pronoms «impersonnels» : nous, le système, l'entité cliente... On ne réfère jamais à des personnes directement dans un document technique, on réfère plutôt à leur fonction dans le système ou l'organisation.</li>
-<li>Utiliser des mots et des expressions précis et constants. Par exemple, les termes "élèves" et "étudiants" sont proches de sens, mais dans une documentation technique ils ne devraient pas être utilisés de façon interchangeable. Pour des expressions longues, il est possible d'introduire des acronymes au besoin (on préfère introduire des acronymes plutôt que des abréviations).</li>
+<li>Favoriser l'utilisation de phrases courtes. <strong>Scinder l'information en plus petites phrases</strong> améliore la lisibilité et force l'organisation plus cohérente du système.</li>
+<li>Utiliser des pronoms «impersonnels» : nous, le système, l'entité cliente... <strong>On ne réfère jamais à des personnes</strong> directement dans un document technique, on réfère plutôt à leur fonction dans le système ou l'organisation.</li>
+<li>Utiliser des mots et des expressions précis et constants. Par exemple, les termes "élèves" et "étudiants" sont proches de sens, mais dans une documentation technique <strong>ils ne devraient pas être utilisés de façon interchangeable</strong>. Pour des expressions longues, il est possible d'introduire des acronymes au besoin (on préfère introduire des acronymes plutôt que des abréviations).</li>
 <li>Éviter l'utilisation de figure de style, d'images ou de superlatifs (adjectifs ayant un sens trop fort). </li>
-<li>Éviter les opinions et les jugements de valeur; tous les propos doivent s'appuyer directement sur des éléments observables et des faits démontrables ou observés empiriquement de façon rigoureuse.</li>
-<li>Porter attention aux anglicismes et aux emprunts directs, car ils sont très fréquents dans le domaine de l'informatique, mais considérablement moins connus et utilisés dans d'autres domaines. Dans un document strictement à l'usage de personnes en informatique cela a un impact moindre, mais plusieurs documents techniques peuvent être utilisés par des personnes ayant une fonction différente (design, artiste, marketing...).</li>
+<li>Éviter les opinions et les jugements de valeur; tous les propos doivent s'appuyer directement sur des éléments observables et des faits démontrables ou observés empiriquement.</li>
+<li>Porter attention <strong>aux anglicismes et aux emprunts directs</strong>, car ils sont très fréquents dans le domaine de l'informatique, mais considérablement moins connus et utilisés dans d'autres domaines. Dans un document strictement à l'usage de personnes en informatique cela a un impact moindre, mais plusieurs documents techniques peuvent être utilisés par des personnes ayant une fonction différente (design, artiste, marketing...).</li>
 <li>Limiter l'usage des éléments suivants :
    - les adjectifs et les adverbes, au profit des noms et des verbes;
    - la phrase passive, au profit de la phrase active;
    - la formulation négative, au profit de la formulation positive; et
-   - les incises et inversions de phrase, c'est bout peuvent faire l'objet de phrases distinctes.</li>
+   - les incises et inversions de phrase, ces bouts peuvent faire l'objet de phrases distinctes.</li>
 </ol>
 <div class="admonition abstract">
 <p class="admonition-title">Exercice</p>
@@ -1962,15 +1962,18 @@
 <h3 id="les-pages-annexes">Les pages annexes</h3>
 <p>Les pages annexes sont les pages qui viennent <strong>après</strong> le début du contenu du document. Le format et les pages insérées varient selon le type de document. On retrouve, en rédaction technique, les pages annexes suivantes :</p>
 <ul>
-<li>Bibliographie ou liste des références : liste l'intégralité des documents utilisés comme référence dans le document. On y retrouve souvent des lois et des documents techniques consultés;</li>
 <li>Annexes : partie du document qui complète une section. Souvent, leur contenu n'est pas directement lié à la fonction du document (quoiqu’utile à sa compréhension) ou est utilisé comme référence rapide; </li>
 <li>Glossaire : fournit pour un ensemble de mots techniques leur définition. On la retrouve parfois dans les pages laminaires; et</li>
 <li>Index : référence l'utilisation de certains termes (ordonnés alphabétiquement) et la page où ils occurrent.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Références</p>
+<p>La bibliographie ou liste des références liste l'intégralité des documents utilisés comme référence dans le document. On y retrouve souvent des lois et des documents techniques consultés pour aider l'analyse ou la conception du système. Cette partie se trouve en début de document d'analyse selon les normes IEEE 830 et ISO/IEC/IEEE 29148:{2011,2017} utilisés pour formater un document d'analyse. </p>
+</div>
 <h3 id="les-titres">Les titres</h3>
 <p>Un document technique comporte des titres, généralement numérotés en cascade. Le dernier niveau de titre peut ne pas être numéroté. Tous les titres qui apparaissent dans la table des matières devraient cependant l'être. Les titres doivent être courts, ne pas être des phrases et permettre d'identifier de façon unique un élément (en utilisant toute l'information de la cascade).</p>
-<h3 id="la-liste">La liste</h3>
-<p>La liste organise logiquement et séquentiellement plusieurs éléments qui partagent une fonction commune (sous-élément d'un tout, étapes d'un processus...). Elle peut être ordonnée ou non. Si l'ordre n'a pas d'importance et que l'on n'a pas besoin de référencer les éléments, on choisit la liste non ordonnée. La liste ordonnée l'est généralement en chiffres arabes (1, 2, 3...) tandis que la liste non ordonnée utilise le point comme marqueur usuel (<span class="arithmatex">\(\bullet\)</span>)</p>
+<h3 id="les-listes">Les listes</h3>
+<p>Les listes organisent logiquement et séquentiellement plusieurs éléments qui partagent une fonction commune (sous-élément d'un tout, étapes d'un processus...). Elles peuvent être ordonnées ou non. Si l'ordre n'a pas d'importance et que l'on n'a pas besoin de référencer les éléments, on choisit la liste non ordonnée. La liste ordonnée l'est généralement en chiffres arabes (1, 2, 3...) tandis que la liste non ordonnée utilise le point comme marqueur usuel (<span class="arithmatex">\(\bullet\)</span>). Le tiret est un standard anglais et ne devrait pas être utilisé dans un document français. </p>
 <h3 id="elements-non-textuels">Éléments non textuels</h3>
 <p>On retrouve des éléments non textuels fréquemment dans les documents. Ces éléments doivent être clairement isolés du texte avec une légende composée de :</p>
 <ul>
@@ -1978,8 +1981,8 @@
 <li>Un numéro séquentiel (on préfère les numéros simples, sauf en cas de document très long où il est possible d'inclure des préfixes basés sur le numéro de section); et</li>
 <li>Un titre identifiant de façon unique l'élément.</li>
 </ul>
-<h4 id="le-tableau">Le tableau</h4>
-<p>Le tableau ,et en relation au moins 2 variables ou deux informations. On l'utilise principalement pour offrir une vue résumée et condensée de données numériques en série. Si l'on présente des données textuelles sous forme de tableau, celles-ci doivent être courtes, car un tableau chargé de texte n'est pas aisé à lire. Beaucoup font l'erreur de condenser visuellement l'information dans les tableaux (gain d'espace), tandis que l'aération de ceux-ci facilite leur lisibilité. De même, il faut recourir le moins possible aux bordures verticales, misant sur l'espacement pour former des colonnes. Un tableau ne devrait jamais comporter une seule ligne ou une seule colonne.</p>
+<h3 id="les-tableaux">Les tableaux</h3>
+<p>Les tableaux mettent en relation au moins 2 variables ou deux informations. On les utilise principalement pour offrir une vue résumée et condensée de données numériques en série. Si l'on présente des données textuelles sous forme de tableau, celles-ci doivent être courtes, car un tableau chargé de texte n'est pas aisé à lire. Beaucoup font l'erreur de condenser visuellement l'information dans les tableaux (gain d'espace), tandis que l'aération de ceux-ci facilite leur lisibilité. De même, il faut recourir le moins possible aux bordures verticales, misant sur l'espacement pour former des colonnes. Un tableau ne devrait jamais comporter une seule ligne ou une seule colonne.</p>
 <h4 id="les-figures">Les figures</h4>
 <p>On retrouve souvent des images dans les documents, soit des schémas d'écrans ou des schémas de conception. Dans tous les cas, une image intégrée dans un document doit avoir une résolution suffisante pour être compréhensible. En cas d'image hors dimension, on placera une référence vers un fichier de haute résolution externe.</p>
 <h2 id="les-documents-techniques">Les documents techniques</h2>
@@ -1993,7 +1996,7 @@
 <h3 id="la-documentation-pour-les-personnes-utilisatrices">La documentation pour les personnes utilisatrices</h3>
 <p>Cette documentation n'est pas destinée à des personnes expertes techniques, donc malgré son niveau technique élevé, elle doit rester accessible à un certain niveau de profane. Elle sert à quiconque souhaite utiliser le système. Il faut aussi déterminer si elle est destinée à des personnes ayant une familiarité certaine ou inexistante avec le domaine applicatif et le système lui-même.</p>
 <h3 id="les-licences-et-autres-mentions-legales">Les licences et autres mentions légales</h3>
-<p>Chaque système utilisé comme dépendance ou le système développé lui-même devraient tous disposer de conditions d'utilisation (appelé licence) et possiblement d'autres mentions légales entourant l'utilisation. On trouve ces informations sous forme de droit d'auteur (<em>copyright</em>), de contrat ou de licences non commerciales. La section ... donne plus d'informations sur les types de licences non commerciales logicielles et multimédias.</p>
+<p>Chaque système utilisé comme dépendance ou le système développé lui-même devraient tous disposer de conditions d'utilisation (appelé licence) et possiblement d'autres mentions légales entourant l'utilisation. On trouve ces informations sous forme de droit d'auteur (<em>copyright</em>), de contrat ou de licences non commerciales. La section sur les <a href="../../gestion/aspects_legaux/">aspects légaux des logiciels</a> donne plus d'informations sur les types de licences non commerciales logicielles et multimédias.</p>
 <h2 id="liste-de-termes-frequents-et-qui-manquent-de-precision">Liste de termes fréquents et qui manquent de précision</h2>
 <table>
 <thead>
@@ -2004,16 +2007,36 @@
 </thead>
 <tbody>
 <tr>
+<td>Aéré</td>
+<td>Organisé de façon ...</td>
+</tr>
+<tr>
+<td>Agréable</td>
+<td>Esthétisme soigné, facile d'apprentissage</td>
+</tr>
+<tr>
+<td>Clair</td>
+<td>Proposer des indicateurs ou des infobulles, indiquer des messages de rétroaction</td>
+</tr>
+<tr>
 <td>Convivial</td>
-<td>Prédictible, semblable aux systèmes de même type, aéré</td>
+<td>Prédictible, semblable aux systèmes de même type</td>
 </tr>
 <tr>
 <td>Ergonomique</td>
 <td>Facile d'apprentissage, minimise l'effort</td>
 </tr>
 <tr>
-<td>Agréable</td>
-<td>Esthétisme soigné, facile d'apprentissage</td>
+<td>Facile d'utilisation</td>
+<td>Voir « simple »</td>
+</tr>
+<tr>
+<td>Intuitif</td>
+<td>Facile d'apprentissage, similaire à des systèmes existants</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>Facile d'apprentissage, similaire à des systèmes existants, indiquer son état à chaque opération, minimise l'effort</td>
 </tr>
 </tbody>
 </table>

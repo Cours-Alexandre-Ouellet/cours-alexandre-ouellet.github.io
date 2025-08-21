@@ -1,0 +1,61 @@
+using System;
+
+public class Programme  
+{
+    public static void Main(string[]args) 
+    {
+        string motDePasse = "12345";
+        bool estConnecte = false;
+        
+        Console.WriteLine("Entrez le mot de passe");
+        string motDePasseSaisi = Console.ReadLine();
+
+        while(motDePasse != motDePasseSaisi) {     
+            Console.WriteLine("Erreur");
+            Console.WriteLine("Entrez le mot de passe");
+            motDePasseSaisi = Console.ReadLine();
+        }
+
+        Console.WriteLine("Bienvenue !");
+        estConnecte = true;
+    }
+
+
+    // Implémentation 2 | Meilleur code 
+    public static void Main(string[]args) 
+    {
+        string motDePasse = "12345";
+        bool estConnecte = false;
+        string motDePasseSaisi = motDePasse + "0";
+
+        while(!estConnecte) {
+            Console.WriteLine("Entrez le mot de passe");
+            string motDePasseSaisi = Console.ReadLine();
+
+            if(motDePasse != motDePasseSaisi) 
+            {
+                Console.WriteLine("Erreur");
+            } 
+            else 
+            {
+                Console.WriteLine("Bienvenue !");
+                estConnecte = true;
+            }
+        }
+    }
+}
+
+
+////////////////// JS
+
+function connexion() {
+    const motDePasse = "12345";
+    let motDePasseSaisi = prompt("Entrez le mot de passe");
+
+    while(motDePasse != motDePasseSaisi) {
+        alert("Erreur");
+        motDePasseSaisi = prompt("Entrez le mot de passe");
+    }
+
+    alert("Bienvenue !");
+}
