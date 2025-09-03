@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/input-system/">
       
       
-        <link rel="prev" href="../evenements/">
+        <link rel="prev" href="../demo/">
       
       
-        <link rel="next" href="../coroutines/">
+        <link rel="next" href="../animations/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../evenements/" class="md-tabs__link">
+        <a href="../demo/" class="md-tabs__link">
           
   
   Programmer avec Unity
@@ -765,11 +765,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../evenements/" class="md-nav__link">
+      <a href="../demo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Programmation événementielle
+    Projet démonstration
   </span>
   
 
@@ -916,11 +916,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../coroutines/" class="md-nav__link">
+      <a href="../animations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Coroutines
+    Animations
   </span>
   
 
@@ -957,6 +957,48 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../coroutines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coroutines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evenements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programmation événementielle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -973,10 +1015,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -987,8 +1029,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
             Organiser le code d'un jeu
           </label>
@@ -1066,10 +1108,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1080,8 +1122,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             Exemples et situations fréquentes
           </label>
@@ -1159,10 +1201,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1173,8 +1215,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
             <span class="md-nav__icon md-icon"></span>
             Extra
           </label>
@@ -1293,10 +1335,10 @@
 <p>Un clic droit sur un <code class="language-c# highlight"><span class="n">Action</span></code> ou un <code class="language-c# highlight"><span class="n">Binding</span></code> ouvre un menu contextuel pour ajouter, renommer ou supprimer un élément. Pour l'ajout des <code class="language-c# highlight"><span class="n">Bindings</span></code>, quatre options sont offertes. Pour savoir laquelle choisir, il faut se référer au détail sur les bindings plus loin.</p>
 </div>
 <h2 id="configurer-les-actions">Configurer les actions</h2>
-<p>Cette section présente la manipulation de l'interface pour ajouter un <code class="language-c# highlight"><span class="n">Action</span></code>. Cependant, on travaille souvent à partir de ceux définis de base et on les modifie. Le fonctionnement de l'interface est similaire.</p>
+<p>Cette section présente la manipulation de l'interface pour ajouter une <code class="language-c# highlight"><span class="n">Action</span></code>. Cependant, on travaille souvent à partir de ceux définis de base et on les modifie. Le fonctionnement de l'interface est similaire.</p>
 <h2 id="action-de-bouton">Action de bouton</h2>
 <p>L'action d'un bouton est vérifiée seulement lors d'une interaction avec le contrôle. Unity ne vérifie pas continuellement si ce contrôle a été activé. C'est donc un type efficace pour tous les événements qui ressemblent à ... presser un bouton. Par défaut, l'état du bouton n'est pas vérifié au lancement, mais un paramètre permet de le faire.</p>
-<p>La création d'un <code class="language-c# highlight"><span class="n">Action</span></code> crée un <code class="language-c# highlight"><span class="n">Binding</span></code> vide. Les options d'un <code class="language-c# highlight"><span class="n">Binding</span></code> sont : </p>
+<p>La création d'une <code class="language-c# highlight"><span class="n">Action</span></code> crée un <code class="language-c# highlight"><span class="n">Binding</span></code> vide. Les options d'un <code class="language-c# highlight"><span class="n">Binding</span></code> sont : </p>
 <p><a class="glightbox" href="../../images/binding_parameter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_parameter.png" /></a></p>
 <ol>
 <li>Le chemin vers le contrôle. Il est important de sélectionner le bon type d'entrée. Il est possible de taper dans la barre de sélection pour filtrer les contrôles disponibles.</li>
@@ -1311,6 +1353,10 @@
 <p>Pour ajouter un contrôle à deux ou trois touches (comme un <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-z">Z</kbd></span>), il faut sélectionner le bon type de <code class="language-c# highlight"><span class="n">Binding</span></code>, soit ceux avec un ou deux <code class="language-c# highlight"><span class="n">Modifier</span></code>. Le <code class="language-c# highlight"><span class="n">Modifier</span></code> sera la touche qui vient modifier le contrôle (comme les touches <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <span class="keys"><kbd class="key-alt">Alt</kbd></span> ou <span class="keys"><kbd class="key-shift">Shift</kbd></span>)</p>
 <p><a class="glightbox" href="../../images/binding_modifier.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_modifier.png" /></a>
 <a class="glightbox" href="../../images/binding_annuler.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_annuler.png" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Actions multiples avec le même Binding</p>
+<p>Attention, si une <code class="language-c# highlight"><span class="n">Action</span></code> est lié à une touche et une autre <code class="language-c# highlight"><span class="n">Action</span></code> est liée à la touche avec un modifier, les deux <code class="language-c# highlight"><span class="n">Action</span></code> sont lancées.</p>
+</div>
 <h2 id="action-de-valeur">Action de valeur</h2>
 <p>Une action de valeur lit continuellement les entrées et supporte une variété de types de retour. Cela permet, entre autres, de retourner une abstraction des contrôles de plusieurs types. Par exemple, on peut retourner un vecteur en deux dimensions pour les déplacements dans le plan (composante vers la droite et composante vers l'avant) au lieu de lire individuellement les quatre touches <span class="keys"><kbd class="key-w">W</kbd></span> <span class="keys"><kbd class="key-a">A</kbd></span> <span class="keys"><kbd class="key-s">S</kbd></span> et <span class="keys"><kbd class="key-d">D</kbd></span> .</p>
 <p><a class="glightbox" href="../../images/type_controle_valeur.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/type_controle_valeur.png" /></a></p>
@@ -1321,6 +1367,7 @@
 </ol>
 <p><a class="glightbox" href="../../images/controle_4_direction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/controle_4_direction.png" /></a></p>
 <h2 id="lire-des-actions-dans-les-scripts">Lire des actions dans les scripts</h2>
+<p>Une fois les actions configurées, il faut amener </p>
 
 
 
@@ -1341,7 +1388,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-02</span>
   </span>
 
     
@@ -1371,7 +1418,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../evenements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Programmation événementielle">
+          <a href="../demo/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Projet démonstration">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1381,20 +1428,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Programmation événementielle
+                Projet démonstration
               </div>
             </div>
           </a>
         
         
           
-          <a href="../coroutines/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Coroutines">
+          <a href="../animations/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Animations">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Coroutines
+                Animations
               </div>
             </div>
             <div class="md-footer__button md-icon">

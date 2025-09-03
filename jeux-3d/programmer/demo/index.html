@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/volume-effets/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/demo/">
       
       
-        <link rel="prev" href="../controleur/">
+        <link rel="prev" href="../../maths/bezier/">
       
       
-        <link rel="next" href="../../ressources/">
+        <link rel="next" href="../input-system/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Miroir, volumes et effets visuels - Jeux 3D</title>
+        <title>Projet démonstration - Jeux 3D</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#miroir-volume-et-effets-visuels" class="md-skip">
+        <a href="#demonstration" class="md-skip">
           Aller au contenu
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Miroir, volumes et effets visuels
+              Projet démonstration
             
           </span>
         </div>
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../demo/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   Programmer avec Unity
@@ -762,10 +762,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../demo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -774,6 +783,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1074,8 +1084,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1090,11 +1098,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
         
           
           <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
@@ -1108,7 +1116,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_9">
             <span class="md-nav__icon md-icon"></span>
             Extra
@@ -1119,30 +1127,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Miroir, volumes et effets visuels
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../volume-effets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,92 +1139,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#miroir" class="md-nav__link">
-    <span class="md-ellipsis">
-      Miroir
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Miroir">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reflection-probe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reflection Probe
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#material" class="md-nav__link">
-    <span class="md-ellipsis">
-      Material
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volume-et-effets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Volume et effets
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Volume et effets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#volume" class="md-nav__link">
-    <span class="md-ellipsis">
-      Volume
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#effets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Effets
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1292,112 +1194,10 @@
                   
 
 
-<h1 id="miroir-volume-et-effets-visuels">Miroir, <em>volume</em> et effets visuels</h1>
-<div class="competences">
-<div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> Ce contenu est de l'enrichissement et ne figure pas au contenu du cours.</p>
-</div>
-<div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>20 minutes</p>
-</div>
-</div>
-<p>Pour améliorer l'aspect visuel d'un jeu, on peut utiliser divers effets comme les miroirs, les effets sur la scène tel l'intensification des couleurs, les effets de distorsion ou répliquer une caméra antique par exemple. Finalement, on peut aussi redéfinir la façon dont <em>Unity</em> traite l'information visuelle pour un objet.</p>
-<p>Tous les exemples de ce fascicule sont élaborés à partir du <em>Universal Render Pipeline (URP)</em> et non à partir du moteur graphique de <em>Unity Core</em>. Votre projet doit donc être créé avec <em>URP</em> ou vous devez l'ajouter (avec le <em>PackageManager</em>) et convertir correctement les <em>materials</em> déjà présents.</p>
-<div class="admonition info">
-<p class="admonition-title">Convertir les materials</p>
-<p>On sélectionne les <em>materials</em> à convertir et on utlise l'action : <strong>Edit</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> <strong>Rendering</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span>  <strong>Materials</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> <strong>Convert Selected Built-in Materials to URP</strong></p>
-</div>
-<h2 id="miroir">Miroir</h2>
-<p>Pour faire un miroir, on doit faire deux manipulations sur le système. D'abord, il faut ajouter un composant <em>Reflection Probe</em> à l'objet qui devra agir comme un miroir. Le composant <em>Reflection Probe</em> permet de définir comment le miroir se comporte. Il faut également modifier le <em>Material</em> de l'objet pour lui donner l'aspect réfléchissant.</p>
-<h3 id="reflection-probe"><em>Reflection Probe</em></h3>
-<p>Pour le composant <em>Reflection Probe</em>, il faudra modifier les attributs suivants pour que le miroir ait un aspect réaliste :</p>
-<ul>
-<li>
-<p><em>Type</em> : il doit prendre la valeur <em>Realtime</em> pour s'actualiser à chaque fois que la boucle de jeu rend un écran. La valeur par défaut, <em>Baked</em>, permet d'accélérer le rendu, mais l'image réfléchie ne se modifiera pas pendant l'exécution.
-  En changeant le <em>Type</em>, le champ <em>Refresh Mode</em> devient visible. Pour que le miroir se mettre à jour de façon continue pendant l'exécution du jeu, il faut qu'il ait la valeur <em>Every frame</em>.</p>
-</li>
-<li>
-<p><em>Cubemap Capture Settings</em> :  dans cette section, il faut changer le paramètre <em>Resolution</em> pour qu'il génère un miroir avec la résolution que nous souhaitons afficher.</p>
-</li>
-</ul>
-<figure>
-    <a class="glightbox" href="../../images/miroir.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/miroir.png" /></a>
-    <figcaption markdown>Configuration du component <em>Reflection Probe</em></figcaption>
-</figure>
-<h3 id="material"><em>Material</em></h3>
-<p>Pour le <em>Material</em>, il faut sélectionner le <em>shader</em> de type <em>Universal Render Pipeline/Lit</em> et modifier les valeurs du paramètre <em>metallic</em> à 1 et du paramètre de <em>smothness</em> à 1. Assurez-vous que le paramètre <em>Workflow Mode</em> soit réglé sur <em>Metallic</em> pour avoir accès à tous les paramètres nécessaires.</p>
-<figure>
-    <a class="glightbox" href="../../images/miroir-material.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/miroir-material.png" /></a>
-    <figcaption markdown>Configuration du <em>material</em> associé au miroir</figcaption>
-</figure>
-<h2 id="volume-et-effets"><em>Volume</em> et effets</h2>
-<p>Pour modifier le visuel d'un jeu, on peut appliquer des effets après le rendu visuel, ce que l'on appelle <em>post processing</em>. Ces effets sont calculés après l'application des animations et des <em>shaders</em>, mais avant l'affichage à l'utilisateur. Ceux-ci ne modifient pas les <em>meshes</em> et n'ont pas d'impact sur l'engin physique. Les effets sont appliqués à une zone appelé <em>Volume</em> à l'aide de surcharge du <em>Volume Profile</em></p>
-<h3 id="volume"><em>Volume</em></h3>
-<p>Les <em>Volume</em> s'ajoute comme composant d'un <em>Game object</em>. On utilise un <em>Game object</em> vide afin de correctement organiser le projet. Le composant <em>Volume</em> comporte quatre paramètres à ajuster :</p>
-<ul>
-<li>
-<p><em>Mode</em> : détermine si le <em>Volume</em> s'applique à l'intégralité de la scène (<em>Global</em>) ou à une partie de la scène (<em>Local</em>). Dans le cas où le <em>Volume</em> s'applique à une partie de la scène, il faut préciser celle-ci en ajoutant un <em>BoxCollider</em> au <em>Game object</em>. Les limites du <em>BoxCollider</em> fixent les limites du <em>Volume</em>.</p>
-</li>
-<li>
-<p><em>Weight</em> et <em>Priority</em> : détermine la prépondérance des effets si un même objet se retrouve dans plusieurs <em>Volume</em>. Évidemment, si l'on utilise qu'un seul <em>Volume</em>, il n'est pas nécessaire de modifier ces valeurs.</p>
-</li>
-<li>
-<p><em>Profile</em> : contient un asset de type <em>Volume Profile</em> qui détermine les effets appliqués dans le <em>Volume</em>. Le bouton <strong><em>New</em></strong> permet de créer un nouvel asset de ce type.</p>
-</li>
-</ul>
-<figure>
-    <a class="glightbox" href="../../images/volume.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/volume.png" /></a>
-    <figcaption markdown>Configuration du <em>volume</em> pour y intégrer des effets visuels.</figcaption>
-</figure>
-<h3 id="effets">Effets</h3>
-<p>Les effets sont déterminer par le <em>Volume Profile</em> attaché au <em>Volume</em>. On peut modifier le <em>Volume Profile</em> directement dans l'inspecteur du <em>Volume</em>. Pour ajouter un nouvel effet, on ajoute une surcharge avec le bouton <strong><em>Add Override</em></strong>. </p>
-<p>Chaque effet peut être activé ou désactivé à l'aide de la case à cocher près du nom. En cliquant sur la bord de titre de l'effet, on peut modifier sa configuration. La <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/urp/EffectList.html">liste complète des effets</a>
- peut être retrouvée sur le site d'Unity (version 17 de <em>URP</em>).</p>
-<p>Voici un aperçu de quelques effets.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Nom de l'effet</th>
-<th style="text-align: left;">Changement visuel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Bloom</td>
-<td style="text-align: left;">Ajoute un halo autour des éléments lumineux qui augmente l'apparence de luminosité.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Color Adjustment</td>
-<td style="text-align: left;">Modifie le rendu des couleurs (teinte et saturation).</td>
-</tr>
-<tr>
-<td style="text-align: left;">Depth of Field</td>
-<td style="text-align: left;">Applique un effet qui simule des éléments hors focus à une certaine distance de la caméra.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Film Grain</td>
-<td style="text-align: left;">Simule du grain de caméra que l'on retrouve sur les vieilles caméra.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Lens Distorsion</td>
-<td style="text-align: left;">Simule la déformation par une lentille de caméra.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Motion Blur</td>
-<td style="text-align: left;">Simule le flou causé par une caméra réelle qui bouge plus vite que le temps d'exposition.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Vignette</td>
-<td style="text-align: left;">Simule l'atténuation noire que l'on peut remarquer sur le bord de vieille caméra.</td>
-</tr>
-<tr>
-<td style="text-align: left;">White Balance</td>
-<td style="text-align: left;">Change la définition de la couleur blanc, ce qui change la façon dont toutes les couleurs sont affichées.</td>
-</tr>
-</tbody>
-</table>
+<h1 id="demonstration">Démonstration</h1>
+<p>Durant la session, nous reproduirons des éléments de ce jeu RPG. Vous êtes invités à le télécharger et à repérer les éléments qui vous semblent les plus intéressants pour les approfondir. La liste des dépendances utiliées est disponibles dans le fichier ci-dessous.</p>
+<p><img alt="🎮" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f3ae.svg" title=":video_game:" /> <a href="https://cegepvicto-my.sharepoint.com/:u:/g/personal/ouellet_alexandre_cegepvicto_ca/EU24NMiZ2aVCsDlLxlS4vLIBVvnR4IQFMmcvZFKpvB9U4Q?e=gWdBuW">Télécharger le jeu</a></p>
+<p>:<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64zm384 64H256V0zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368"/></svg></span> <a href="../R%C3%A9f%C3%A9rences.pdf">Dépendances</a></p>
 
 
 
@@ -1418,7 +1218,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-08-24</span>
   </span>
 
     
@@ -1448,7 +1248,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../controleur/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gestion d&#39;actions multiples">
+          <a href="../../maths/bezier/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Courbes de Bézier">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1458,20 +1258,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Gestion d'actions multiples
+                Courbes de Bézier
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../ressources/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Ressources">
+          <a href="../input-system/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Gérer les contrôles avec le InputSystem">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Ressources
+                Gérer les contrôles avec le InputSystem
               </div>
             </div>
             <div class="md-footer__button md-icon">

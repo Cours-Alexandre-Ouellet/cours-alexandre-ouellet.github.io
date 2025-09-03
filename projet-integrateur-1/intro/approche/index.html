@@ -1755,7 +1755,7 @@
         
   
   <span class="md-ellipsis">
-    Techniques de cueillettes de l'information
+    Techniques de collecte de l'information
   </span>
   
 
@@ -1955,10 +1955,10 @@
 </div>
 </div>
 <hr>
+<p>Le développement logicielle est une activité complexe et hautement collaborative. Il est présenté ici un résumé des phases de développement d'un logiciel. Dans la pratique, selon les domaines de développement ou les domaines applicatifs ces phases peuvent varier.</p>
 <h2 id="les-6-phases-du-developpement-logiciel">Les 6 phases du développement logiciel</h2>
-<p>Le développement de logiciel est composé par 6 phases (ou étapes) :</p>
 <h3 id="1-analyse-et-modelisation">1. Analyse et modélisation</h3>
-<p>Cette phase vise à <strong>identifier</strong> et <strong>expliciter</strong> les besoins des entités clientes et des personnes utilisatrices du système. L'information est colligée dans le document d'analyse. Cette collecte d'information se fait à partir de diverses sources dont : </p>
+<p>Cette phase vise à <strong>identifier</strong> et <strong>expliciter</strong> les besoins des entités clientes et des personnes utilisatrices du système. L'information est colligée dans le document d'analyse dans les sections sur les cas d'utilisation (liste et description). Dans une méthodologie agile, on exprime parfois les besoins à l'aide de récits d'utilisation (<em>user story</em>). Cette collecte d'information se fait à partir de diverses sources dont : </p>
 <ul>
 <li>l'entrevue avec les entités clientes et les personnes utilisatrices potentielles;</li>
 <li>les études de marché;</li>
@@ -1967,6 +1967,19 @@
 <li>la référence à des normes et des règlementations.</li>
 </ul>
 <p>Les besoins identifiés peuvent être appelés à changer ou à être raffinés durant le développement du système. Cette phase représente de 10 à 15 % du temps de développement.</p>
+<div class="admonition agile">
+<p class="admonition-title">Les récits d'utilisation</p>
+<p>Les récits d'utilisation sont une méthodes qui permet d'exprimer un besoin à partir d'exemples d'utilisation du système. Cette méthode favorise l'expression des besoins par toutes les catégories d'entités actrices du système, indépendement de leur niveau technique. Ils doivent être ensuite repris par l'équipe de développement afin d'analyser la façon dont un système doit réaliser les étapes du récit.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Erreurs fréquentes lors de la phase d'analyse</p>
+<ul>
+<li>Ne pas réaliser cette étape : cela risque d'augmenter fortement la <a href="../glossaire/#dette-technique">dette technique</a> du système et complexifier la maintenance</li>
+<li>Concevoir le système : à cette étape, il faut traiter le système comme une boîte noire. Toute inférence de caractéristiques techniques comme le détail des implémentations, de la structure des données ou des composantes internes peut mener à des problèmes plus tard. Les spécifications ne doivent pas dépendre d'une technologie particulière.</li>
+<li>Répéter des spécifications ou spécifier des détails : lorsque deux spécifications sont similaires, on peut utiliser le système de référence. De même, une spécification simple ne demande pas d'effort de modélisation. </li>
+</ul>
+</div>
+<p>La première partie du cours est dédiée à l'expression des besoins, à la mise en place du projet et aux artefacts d'analyse.</p>
 <h3 id="2-conception">2. Conception</h3>
 <p>La conception permet de <strong>définir la structure</strong> du système qui sera mis place pour répondre aux besoins. La conception peut être divisée en trois grandes phases :</p>
 <ul>
@@ -1975,11 +1988,31 @@
 <li>la conception des fonctionnalités du système.</li>
 </ul>
 <p>C'est une étape pour laquelle l'on peut avoir envie de faire des coins ronds ou de l'ignorer complètement. Toutefois, plusieurs problèmes d'implémentation peuvent être résolu à cette étape et ils sont plus rapides et moins coûteux à résoudre en conception qu'en implémentation ou après. Cette phase représente de 10 à 15 % du temps de développement.</p>
+<div class="admonition failure">
+<p class="admonition-title">Erreurs fréquentes lors de la phase d'analyse</p>
+<ul>
+<li>Manque de vision des points d'extension du système : si l'on n'ouvre pas la porte aux fonctionnalités futures plausibles, alors on risque d'accumuler rapidement de la dette technique et des problèmes de modélisation.</li>
+<li>Ne pas s'entendre sur une architecture commune : la cohabitation de plusieurs visions dans un projet est souvent bénéfique, mais tant que ces visions cohabitent en harmonie. Il est aussi important d'avoir des interfaces de code uniformes qu'une interface graphique uniforme.</li>
+</ul>
+</div>
 <h3 id="3-implementation">3. Implémentation</h3>
-<p>Il s'agit de la réalisation du système conformément à la conception établie. En cas de disparité, il est important de revenir sur la conception (et possiblement l'analyse des besoins) pour assurer une <strong>traçabilité</strong>
-complète entre les différents documents qui décrivent le système. Cette phase représente de 15 à 20 % du temps de développement.</p>
+<p>Il s'agit de la réalisation du système conformément à la conception établie. En cas de disparité, il est important de revenir sur la conception (et possiblement l'analyse des besoins) pour assurer une <strong>traçabilité</strong> complète entre les différents documents qui décrivent le système. Cette phase représente de 15 à 20 % du temps de développement.</p>
+<div class="admonition failure">
+<p class="admonition-title">Erreurs fréquentes lors de la phase d'implémentation</p>
+<ul>
+<li>Régler les problèmes de modélisation ou d'analyse pendant l'implémentation : cette façon de faire contourne le principe de traçabilité et rend, à moyen terme, la documentation interne inutile. De plus, les solutions de cette étape génère souvent de la dette technique.</li>
+</ul>
+</div>
 <h3 id="4-verification-et-validation">4. Vérification et validation</h3>
 <p>Réalisation des opérations centrales d'<strong>assurance qualité</strong>, dont la <strong>vérification</strong> (est-ce que le système fonctionne correctement?) et la <strong>validation</strong> (est-ce que le système fait la bonne chose?). Cette phase inclut non seulement le repérage des erreurs, mais aussi leur correctif. Tout comme dans les changements qui surviennent durant l'implémentation, il est important que les correctifs appliqués prennent en compte la <strong>traçabilité</strong>. Cette phase peut représenter entre 30 % et 50 % du temps de développement.</p>
+<div class="admonition failure">
+<p class="admonition-title">Erreurs fréquentes</p>
+<ul>
+<li>Se concentrer sur les scénario attendus : les erreurs sont chaotiques, il faut donc sortir des chemins préconçus lors de la vérification du fonctionnement.</li>
+<li>Utiliser des données de mauvaises qualité : de bonnes données de vérification sont des données réelles et des données limites.</li>
+<li>Valider sans cas réel : même si une interface et un système semble répondre à un besoin, l'utilisation en situation réelle révèle toujours des problèmes </li>
+</ul>
+</div>
 <h3 id="5-maintenance-et-evolution">5. Maintenance et évolution</h3>
 <p>Mise à jour du système selon l'évolution et la disponibilité des dépendances, des enjeux de sécurité de l'information et besoins qui changent. Cette étape peut inclure le réusinage de parties de la base de code ainsi que la redéfinition des besoins. Il peut s'agir d'une opération continue ou sporadique selon l'envergure et l'utilisation du système. Comme c'est une phase qui s'étend dans le temps jusqu'à plusieurs années après le déploiement du système, l'utilisation de la documentation établie (analyse, modèles de conception et documentation technique) est cruciale pour parvenir à effectuer les modifications à moindre coût et en limitant les effets de bord (<em>ripple effect</em>). Selon les systèmes, cette phase peut s'étendre pendant plus de 80 % de la durée de vie du système.</p>
 <h3 id="6-mort">6. Mort</h3>
@@ -2028,7 +2061,7 @@ complète entre les différents documents qui décrivent le système. Cette phas
 </tr>
 </tbody>
 </table>
-<p>On peut voir les approches présentées des plus strictes vers les plus flexibles (celles avec la plus grande adaptabilité).</p>
+<p>On peut voir les approches présentées des plus strictes vers les plus flexibles soit celles avec la plus grande adaptabilité.</p>
 <h2 id="le-manifeste-agile">Le Manifeste Agile</h2>
 <p>Les approches agiles désignent une philosophie de gestion de projet. Il n'existe pas une approche agile, mais plutôt des approches qui s'appuient sur la philosophie agile. Le document qui présente la philosophie se nomme «Agile Manisfeto» (Beck, 2001). Il présente les 4 énoncés et les 12 principes de l'Agile.</p>
 <p>Les approches agiles se distinguent des approches classiques par l'accent qu'elles mettent sur le résultat et la flexibilité.</p>
@@ -2082,7 +2115,7 @@ Les éléments de droite ont de la valeur, ceux de gauche sont priorisés.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-08-24</span>
   </span>
 
     
