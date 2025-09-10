@@ -1388,14 +1388,14 @@
 <li><strong><em>Any State</em> (turquoise)</strong> : toutes les transitions sortantes peuvent être exécutées à partir de n'importe quel état. On l'utilise surtout pour alléger le nombre de transitions à gérer. </li>
 </ol>
 <h3 id="ajouter-des-parametres">Ajouter des paramètres</h3>
-<p>Les paramètres sont des points d'accès à la logique de l'animation. L'utilisation des paramètes est présenté dans <a href="#gérer-les-transitions">Gérer les transitions</a> et <a href="#modifier-la-valeur-des-paramètres-avec-le-code">Modifier la valeur des paramètres avec le code</a>.</p>
+<p>Les paramètres sont des points d'accès à la logique de l'animation. L'utilisation des paramètres est présentée dans <a href="#gérer-les-transitions">Gérer les transitions</a> et <a href="#modifier-la-valeur-des-paramètres-avec-le-code">Modifier la valeur des paramètres avec le code</a>.</p>
 <p>Peut ajouter des paramètres avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2Z"/></svg></span> situé dans le haut du panneau. Il y a quatre types de paramètres :</p>
 <ul>
 <li><code class="language-c# highlight"><span class="kt">float</span></code>, <code class="language-c# highlight"><span class="kt">int</span></code> et <code class="language-c# highlight"><span class="kt">bool</span></code> : expose un paramètre du type de la variable éponyme.</li>
-<li><code class="language-c# highlight"><span class="n">trigger</span></code> : expose un paramètre qui permet de simuler un événement subit. Il est dans l'état actif jusqu'à ce qu'il soit utilisé dans une transition et devient alors innactif.</li>
+<li><code class="language-c# highlight"><span class="n">trigger</span></code> : expose un paramètre qui permet de simuler un événement subit. Il est dans l'état actif jusqu'à ce qu'il soit utilisé dans une transition et devient alors inactif.</li>
 </ul>
 <h3 id="gerer-les-transitions">Gérer les transitions</h3>
-<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représenter par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <strong><em>Make Transition</em></strong>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
+<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représentées par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <strong><em>Make Transition</em></strong>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
 <figure>
     <a class="glightbox" href="../../images/parametres_transition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/parametres_transition.png" /></a>
     <figcaption markdown>La fenêtre de l'inspecteur d'une transition du contrôleur d'animation d'un personnage</figcaption>
@@ -1403,7 +1403,7 @@
 <ol>
 <li><strong><em>Has Exit Time</em></strong> : Indique que la transition s'effectue automatiquement après un temps passé dans l'animation plutôt que d'utiliser des conditions pour s'exécuter.</li>
 <li><strong><em>Exit Time</em></strong> : Indique le temps auquel la transition prend fin. Si <strong><em>Fixed Duration</em></strong> est coché, alors il s'agit d'un temps absolu (seconde), dans le cas contraire, il s'agit d'un temps relatif (pourcentage de la durée totale de l'animation). </li>
-<li><strong><em>Interruption Source</em></strong> : Détermine dans quelles conditions est-ce que l'animation peut être interrompue. On choisi généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
+<li><strong><em>Interruption Source</em></strong> : Détermine dans quelles conditions l'animation peut être interrompue. On choisit généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
 <li>
 <p><strong><em>Conditions</em></strong> : les conditions permettent de définir quand la transition doit avoir lieu. On utilise les paramètres pour définir les transitions. Si plusieurs conditions sont définies pour une condition, elles doivent toutes être vérifiées pour que la transition s'active.</p>
 <p>a. Pour les <code class="language-c# highlight"><span class="kt">float</span></code> et <code class="language-c# highlight"><span class="kt">int</span></code> on compare si la valeur est plus petite ou plus grande qu'une valeur de référence.</p>
