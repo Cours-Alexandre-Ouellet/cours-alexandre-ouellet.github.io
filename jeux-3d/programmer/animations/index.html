@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/sons/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/animations/">
       
       
-        <link rel="prev" href="../animations/">
+        <link rel="prev" href="../input-system/">
       
       
-        <link rel="next" href="../coroutines/">
+        <link rel="next" href="../sons/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Gérer les sons - Jeux 3D</title>
+        <title>Animations - Jeux 3D</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gerer-les-sons" class="md-skip">
+        <a href="#animer-des-objets" class="md-skip">
           Aller au contenu
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gérer les sons
+              Animations
             
           </span>
         </div>
@@ -804,27 +804,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../animations/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Animations
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -841,7 +820,7 @@
           
   
   <span class="md-ellipsis">
-    Gérer les sons
+    Animations
   </span>
   
 
@@ -852,7 +831,7 @@
         
   
   <span class="md-ellipsis">
-    Gérer les sons
+    Animations
   </span>
   
 
@@ -874,37 +853,103 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#utiliser-et-configurer-les-audiosource" class="md-nav__link">
+  <a href="#elements-du-systeme-mecanim" class="md-nav__link">
     <span class="md-ellipsis">
-      Utiliser et configurer les AudioSource
+      Éléments du système Mecanim
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#utiliser-et-configurer-laudiomixer" class="md-nav__link">
+  <a href="#animation-controller" class="md-nav__link">
     <span class="md-ellipsis">
-      Utiliser et configurer l'AudioMixer
+      Animation Controller
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Utiliser et configurer l'AudioMixer">
+    <nav class="md-nav" aria-label="Animation Controller">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exposer-les-parametres-et-les-modifier-avec-un-script" class="md-nav__link">
+  <a href="#elements-du-composant-animator" class="md-nav__link">
     <span class="md-ellipsis">
-      Exposer les paramètres et les modifier avec un script
+      Éléments du composant Animator
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#gerer-lintensite-sonore" class="md-nav__link">
+  <a href="#ajouter-des-etats" class="md-nav__link">
     <span class="md-ellipsis">
-      Gérer l'intensité sonore
+      Ajouter des états
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajouter des états">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etats-speciaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      États spéciaux
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-des-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter des paramètres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-les-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gérer les transitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-la-valeur-des-parametres-avec-le-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier la valeur des paramètres avec le code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Clip
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Animation Clip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creer-un-animation-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer un Animation Clip
     </span>
   </a>
   
@@ -919,6 +964,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gérer les sons
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1266,60 +1332,122 @@
                   
 
 
-<h1 id="gerer-les-sons">Gérer les sons</h1>
+<h1 id="animer-des-objets">Animer des objets</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>4-6 Utilisation des composantes modulaires pour les sons</p>
+<p>3-2 Accéder à la boucle de jeu pour les mises à jour des animations</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
 <p>30 minutes</p>
 </div>
 </div>
-<p>L'environnement sonore d'un jeu est très important puisqu'il renforce l'immersion et est utilisé pour donner des indications à la personne qui joue sur le monde et les interactions avec ce dernier. Pour gérer correctement les sons, il est nécessaire d'utiliser deux composants et deux types d'assets dédiés au son :</p>
-<p>Parmi les assets, on trouve le <code>AudioClip</code> qui consiste à un fichier sonore (mp3, wav...) qui peut être joué dans le jeu. Il s'importe comme les autres assets. Le second asset est l'<code>AudioMixer</code> qui permet l'équilibrage des sons. <a href="#utiliser-et-configurer-laudiomixer">Une section lui est dédié pour son utilisation et sa configuration</a>.</p>
-<p>Pour les composants, le composant <code>AudioSource</code> permet de jouer un son dans le jeu, tandis que le composant <code>AudioListener</code> détermine l'endroit où ce son est entendu (les oreilles de la personne qui joue). On utilise plusieurs <code>AudioSource</code> attaché respectivement à chacun des objets responsables de produire un son et qu'un seul <code>AudioListener</code> qui sera soit attaché au personnage contrôlé (pour donner l'impression d'entendre ce que le personnage entendrait) ou à la caméra du jeu dans le cas d'un jeu avec une caméra libre. Par défaut, le <code>AudioListener</code> est attaché à la caméra.</p>
-<p>Il est possible d'avoir plusieurs <code>AudioSource</code> attachés à un même objet.</p>
-<div class="admonition tip">
-<p class="admonition-title">Musique et sons d'ambiance</p>
-<p>La musique et les sons d'ambiance sont constant peu importe la position du personnage ou de la caméra (selon où le <code>AudioListener</code> est attaché). On peut donc utiliser ce même objet comme source. De cette façon, le point d'origine du son paraîtra constant pour la personne qui joue à votre jeu.</p>
-</div>
-<div class="admonition extra">
-<p class="admonition-title">Aller plus loin avec les sons</p>
-<p>Plusieurs autres composants d'effet sonore (comme des zones d'echo) sont disponibles dans <em>Unity</em>, n'hésitez pas à faire des recherche et à en tester dans vos jeux. </p>
-</div>
-<h2 id="utiliser-et-configurer-les-audiosource">Utiliser et configurer les <code>AudioSource</code></h2>
-<h2 id="utiliser-et-configurer-laudiomixer">Utiliser et configurer l'<code>AudioMixer</code></h2>
-<p>L'<code>AudioMixer</code> facilite la gestion de l'équilibrage des sons et des différents groupes de son. Dans l'<code>AudioMixer</code> on peut créer des groupes sonores qui représentent souvent plusieurs sons qui partagent des points communs (effets sonores, musiques, zones dans laquelle ils sont joués, contexte dans lequel ils sont joués...). Pour chaque groupe, il est possible de configurer des paramètres sonores (comme le volume et la hauteur). Chaque <code>AudioSource</code> peut être associé à un groupe de l'<code>AudioMixer</code> et appliquer les configurations de ce groupe. Les groupes permettent donc de contrôler plusieurs <code>AudioSource</code> simultanément.</p>
-<p>On trouve généralement qu'un seul <code>AudioMixer</code> dans un projet simple et l'on évite les groupes de son avec une seule <code>AudioSource</code> gérée (sinon il n'y a pas d'utilité à passer par un <code>AudioMixer</code> plutôt que de gérer chaque <code>AudioSource</code> individuellement).</p>
+<p>Les animations sont un élément important du rendu visuel d'un jeu vidéo. Il peut s'agir d'animations complexes de déplacement d'un personnage ou simplement d'un changement de couleur d'un élément de l'interface. Unity gère les animations avec le <em>Mecanim Animation System</em>. Certains composants <em>legacy</em> sont encore disponibles, mais leur usage est limité comme le système <em>Mecanim</em> est disponible depuis 2015 (Unity 5.0).</p>
+<p>Pour avoir un aperçu du système <em>Mecanim</em>, on peut consulter la <a href="https://docs.unity3d.com/462/Documentation/Manual/MecanimAnimationSystem.html">documentation</a> à ce sujet.</p>
+<h2 id="elements-du-systeme-mecanim">Éléments du système Mecanim</h2>
+<p>Deux élément définissent les animations, soient les <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> et <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
+<ul>
+<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> : contient une séquence d'animation avec les données de l'animation qui se modifient à chaque <em>frame</em>. Dans Unity, les données d'animations ne se limitent pas à des données de position, mais à toutes les données qui peuvent être modifiées procéduralement.</li>
+<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> : contient la logique pour sélectionner le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> à jouer. Permet de gérer les transitions entre les animations et aussi de mélanger plusieurs animations. Nous nous limiterons au cas le plus simple ou chaque objet possède une unique logique d'animation qui s'applique à l'entière de l'objet simultanément.</li>
+</ul>
+<h2 id="animation-controller"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code></h2>
+<p>L'<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> définit la logique entre les animations en adoptant un modèle de <strong>machine à état</strong>. Dans ce modèle, chaque <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> est un état et des règles (appelées <strong>transitions</strong>) permettent de passer d'un état à un autre. On peut créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> avec le menu contextuel dans l'onglet du <em>Project</em> et l'attacher au <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> à animer. Le composant qui permet de lier un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> à un <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> est un <code class="language-c# highlight"><span class="n">Animator</span></code>.</p>
+<p>La <a href="https://docs.unity3d.com/6000.2/Documentation/Manual/AnimationStateMachines.html">documentation complète est disponible sur le site de Unity</a>. Cette page présente un résumé des aspects de base des machines à états pour les animations.</p>
 <figure>
-    <a class="glightbox" href="../../images/audiomixer-vue.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/audiomixer-vue.png" /></a>
-    <figcaption markdown>Paramètres de l'<code>AudioMixer</code></figcaption>
+    <a class="glightbox" href="../../images/component_animator.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/component_animator.png" /></a>
+    <figcaption markdown>Le composant <code class="language-c# highlight"><span class="n">Animator</span></code> attaché à un personnage</figcaption>
+</figure>
+<p>On configure le comportement du <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> dans la fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> accessible dans le menu <code>Window &gt; Animations &gt; Animator</code>.</p>
+<h3 id="elements-du-composant-animator">Éléments du composant <code class="language-c# highlight"><span class="n">Animator</span></code></h3>
+<ul>
+<li><strong>Controller</strong> : lien vers le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> qui gère les animations de ce <code class="language-c# highlight"><span class="n">GameObject</span></code>.</li>
+<li><strong>Avatar</strong> : structure de squelette lors de l'animation d'un personnage. Généralement fourni avec le modèle.</li>
+<li><strong>Apply root motion</strong> : calcule les mouvements en positions relatives à la racine du <code class="language-c# highlight"><span class="n">GameObject</span></code>. Lorsque décoché le mouvement peut se fait en position absolue.</li>
+<li><strong>Animate physics</strong> : met à jour la physique du jeu selon l'animation. Ralenti les performances, on évite de l'utiliser lorsque ce n'est pas nécessaire.</li>
+<li><strong>Update mode</strong> : type de temps utilisé pour l'animation (<em>Normal</em> : suit l'écoulement du temps dans le jeu comme le <em>Update</em>, <em>Fixed</em>: suit l'écoulement du temps de la physique comme le <em>FixedUpdate</em>, <em>Unscaled time</em> : s'écoule avec le temps réel, donc même en pause l'animation est effectuée). </li>
+</ul>
+<figure>
+    <a class="glightbox" href="../../images/fenetre%20animator.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/fenetre%20animator.png" /></a>
+    <figcaption markdown>La fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> du contrôleur d'animation d'un personnage</figcaption>
 </figure>
 <ol>
-<li>Bouton pour ajouter un nouveau groupe</li>
-<li>Vue hiérarchique des groupes. La modification d'un paramètre du groupe parent s'applique sur les <code>AudioSource</code> gérés par le groupe, mais ne modifie par la valeur du groupe enfant.</li>
-<li>Contrôle du paramètre sonore (aussi disponible dans l'inspecteur).</li>
-<li>Ajoute un nouveau paramètre contrôlé par le groupe de l'<code>AudioMixer</code>.</li>
+<li><strong><em>Parameters</em></strong> : permet d'ajouter et de supprimer des paramètres pour contrôler les animations;</li>
+<li><strong>États et transition</strong> : vu des états (chaque état est un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code>) et des transitions (règle pour changer d'état);</li>
+<li><strong>Inspecteur</strong> : affiche les paramètres des états et des transitions; </li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Les paramètres de l'AudioSource</p>
-<p>L'<code>AudioMixer</code> ne remplace pas les paramètres de l'<code>AudioSource</code>, il vient ajouter une couche de gestion. Donc deux <code>AudioSource</code> qui ont des volumes différents, mais sont dans le même groupe d'<code>AudioMixer</code> veront leur volume être modifié par le groupe, mais proportionnellement à leur valeur individuelle.</p>
-</div>
-<h3 id="exposer-les-parametres-et-les-modifier-avec-un-script">Exposer les paramètres et les modifier avec un script</h3>
-<p>Pour modifier dynamiquement un paramètre dans un script, il faut d'abord l'exposer dans le <code>AudioMixer</code> puis le renommer, car l'accès se fait par chaîne de caractères. Pour l'exposer, on clique droit sur le paramètre dans la fenètre de l'inspecteur et l'on choisit la première option (<em>Expose ... to script</em>).</p>
+<h3 id="ajouter-des-etats">Ajouter des états</h3>
+<p>Pour ajouter un état, on clique droit dans l'arrière-plan et l'on sélection "&nbsp;Create State &gt; Empty&nbsp;". Ensuite, peut affecter un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> dans le champ <em>motion</em> de l'inspecteur de l'état (qui s'active en cliquant sur l'état).</p>
+<p>Le paramètre <em>Speed</em> permet de changer la vitesse à laquelle le clip se joue. Le paramètre <em>Multiplier</em> permet de contrôler la vitesse par un script et un <a href="#ajouter-des-paramètres"><em>parameter</em></a>. On rend le champ modifiable en activant la case à cocher <em>parameters</em> et en le liant à un <em>parameter</em> de type <code class="language-c# highlight"><span class="kt">float</span></code>.</p>
+<h4 id="etats-speciaux">États spéciaux</h4>
+<p>Il y a quatre états spéciaux définis pour tous les c<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
+<ol>
+<li><strong><em>Entry</em> (vert)</strong> : la logique d'animation commence à cet état. Il n'y a pas de clip d'associé à cet état, il transitionne automatique vers l'état par défaut.</li>
+<li><strong><em>Default</em> (orange)</strong> : premier état à s'exécuter. On peut le changer en cliquant droit sur un état et en sélectionnant "&nbsp;Set as Default Layer State&nbsp;"</li>
+<li><strong><em>Exit</em> (rouge)</strong> : indique au contrôleur de sortir de l'animation. On l'utilise lorsqu'on imbrique les contrôleurs d'animation (ce qui ne sera pas fait dans le cadre du cours);</li>
+<li><strong><em>Any State</em> (turquoise)</strong> : toutes les transitions sortantes peuvent être exécutées à partir de n'importe quel état. On l'utilise surtout pour alléger le nombre de transitions à gérer. </li>
+</ol>
+<h3 id="ajouter-des-parametres">Ajouter des paramètres</h3>
+<p>Les paramètres sont des points d'accès à la logique de l'animation. L'utilisation des paramètes est présenté dans <a href="#gérer-les-transitions">Gérer les transitions</a> et <a href="#modifier-la-valeur-des-paramètres-avec-le-code">Modifier la valeur des paramètres avec le code</a>.</p>
+<p>Peut ajouter des paramètres avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2Z"/></svg></span> situé dans le haut du panneau. Il y a quatre types de paramètres :</p>
+<ul>
+<li><code class="language-c# highlight"><span class="kt">float</span></code>, <code class="language-c# highlight"><span class="kt">int</span></code> et <code class="language-c# highlight"><span class="kt">bool</span></code> : expose un paramètre du type de la variable éponyme.</li>
+<li><code class="language-c# highlight"><span class="n">trigger</span></code> : expose un paramètre qui permet de simuler un événement subit. Il est dans l'état actif jusqu'à ce qu'il soit utilisé dans une transition et devient alors innactif.</li>
+</ul>
+<h3 id="gerer-les-transitions">Gérer les transitions</h3>
+<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représenter par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <strong><em>Make Transition</em></strong>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
 <figure>
-    <a class="glightbox" href="../../images/audiomixer-exposer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/audiomixer-exposer.png" /></a>
-    <figcaption markdown>Exposer aux scripts un paramètres de l'<code>AudioMixer</code></figcaption>
+    <a class="glightbox" href="../../images/parametres_transition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/parametres_transition.png" /></a>
+    <figcaption markdown>La fenêtre de l'inspecteur d'une transition du contrôleur d'animation d'un personnage</figcaption>
 </figure>
-<p>Pour renommer le paramètres, on doit accéder, dans la vue de l'<code>AudioMixer</code> (que l'on ouvre en double cliquant sur l'asset), sur <strong>Exposed Parameters</strong> en haut à droite de la fenêtre et l'on choisit le paramètre à renommer sur lequel on clique droit et l'on clique sur <em>rename</em>. Le nom donné sera le nom à utiliser dans les scripts pour modifier la valeur de ce paramètre. </p>
-<figure>
-    <a class="glightbox" href="../../images/audiomixer-renommer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/audiomixer-renommer.png" /></a>
-    <figcaption markdown>Renommer un paramètre exposé de l'<code>AudioMixer</code></figcaption>
-</figure>
-<p>Finalement, dans les scripts, on peut maintenant accéder au paramètre pour lire et modifier sa valeur.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modifier un paramètres de l'AudioMixer</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<ol>
+<li><strong><em>Has Exit Time</em></strong> : Indique que la transition s'effectue automatiquement après un temps passé dans l'animation plutôt que d'utiliser des conditions pour s'exécuter.</li>
+<li><strong><em>Exit Time</em></strong> : Indique le temps auquel la transition prend fin. Si <strong><em>Fixed Duration</em></strong> est coché, alors il s'agit d'un temps absolu (seconde), dans le cas contraire, il s'agit d'un temps relatif (pourcentage de la durée totale de l'animation). </li>
+<li><strong><em>Interruption Source</em></strong> : Détermine dans quelles conditions est-ce que l'animation peut être interrompue. On choisi généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
+<li>
+<p><strong><em>Conditions</em></strong> : les conditions permettent de définir quand la transition doit avoir lieu. On utilise les paramètres pour définir les transitions. Si plusieurs conditions sont définies pour une condition, elles doivent toutes être vérifiées pour que la transition s'active.</p>
+<p>a. Pour les <code class="language-c# highlight"><span class="kt">float</span></code> et <code class="language-c# highlight"><span class="kt">int</span></code> on compare si la valeur est plus petite ou plus grande qu'une valeur de référence.</p>
+<p>b. Pour les  <code class="language-c# highlight"><span class="kt">int</span></code> seulement, on peut tester l'égalité ou la différence avec une valeur.</p>
+<p>c .Pour les <code class="language-c# highlight"><span class="kt">bool</span></code>, on compare avec les valeurs <code class="language-c# highlight"><span class="k">true</span></code> et <code class="language-c# highlight"><span class="k">false</span></code>. </p>
+<p>d. Pour les <code class="language-c# highlight"><span class="n">trigger</span></code> la transition est effectué si le <code class="language-c# highlight"><span class="n">trigger</span></code> est déclenché et lu pour provoquer une transition, sa valeur est réinitialisée.</p>
+</li>
+</ol>
+<h3 id="modifier-la-valeur-des-parametres-avec-le-code">Modifier la valeur des paramètres avec le code</h3>
+<p>Pour modifier la valeur d'un paramètre, on doit utiliser son nom et la méthode correspondante à son type sur le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>.</p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type du paramètre</th>
+<th style="text-align: left;">Méthode</th>
+<th style="text-align: left;">Paramètre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">float</span></code></td>
+<td style="text-align: left;">SetFloat</td>
+<td style="text-align: left;">Le nom du paramètre et la valeur du <code class="language-c# highlight"><span class="kt">float</span></code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">int</span></code></td>
+<td style="text-align: left;">SetInteger</td>
+<td style="text-align: left;">Le nom du paramètre et la valeur dy <code class="language-c# highlight"><span class="kt">int</span></code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">bool</span></code></td>
+<td style="text-align: left;">SetBool</td>
+<td style="text-align: left;">Le nom du paramètre et la valeur du <code class="language-c# highlight"><span class="kt">bool</span></code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code class="language-c# highlight"><span class="n">trigger</span></code></td>
+<td style="text-align: left;">SetTrigger</td>
+<td style="text-align: left;">Le nom du paramètre</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemples de modification de paramètre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -1329,59 +1457,76 @@
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="na">[SerializeField]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">private</span><span class="w"> </span><span class="n">AudioMixer</span><span class="w"> </span><span class="n">audioMixer</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ChangementParametre</span><span class="p">()</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">{</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="c1">// Lecture du parametre (tous les paramètres sont des float)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="n">audioMixer</span><span class="p">.</span><span class="n">GetFloat</span><span class="p">(</span><span class="s">&quot;nom du parametre&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">valeur</span><span class="p">);</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="c1">// Assignation du parametre</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="n">audioMixer</span><span class="p">.</span><span class="n">SetFloat</span><span class="p">(</span><span class="s">&quot;nom du parametre&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">valeur</span><span class="p">);</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">}</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Personnage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MonoBehaviour</span><span class="w"> </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">Animator</span><span class="w"> </span><span class="n">animationController</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Awake</span><span class="p">()</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">TryGetComponent</span><span class="o">&lt;</span><span class="n">Animator</span><span class="o">&gt;</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">animationController</span><span class="p">))</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="n">Debug</span><span class="p">.</span><span class="n">LogError</span><span class="p">(</span><span class="s">&quot;Pas de composant Animator sur un personnage&quot;</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="c1">// ...</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Attaquer</span><span class="p">()</span><span class="w"> </span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="c1">//...</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetTrigger</span><span class="p">(</span><span class="s">&quot;Attaquer&quot;</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Courir</span><span class="p">()</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">        </span><span class="c1">//...</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetBool</span><span class="p">(</span><span class="s">&quot;Courir&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Arreter</span><span class="p">()</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">        </span><span class="c1">//...</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetBool</span><span class="p">(</span><span class="s">&quot;Courir&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="gerer-lintensite-sonore">Gérer l'intensité sonore</h3>
-<p>Le volume dans le <code>AudioMixer</code> est sur l'échelle des décibels (db) qui est une échelle logarithmique en base 10 multiplée par 10. C'est-à-dire que l'augementation de 10 db multiplie par 10 le volume entendu (et une diminution par 10, divise en fait le volume entendu par 10). L'échelle de décibels va de -80 (seuil minimum d'audition) à 0 (soit 100 000 000 plus fort).</p>
-<p>L'impact de l'échelle de décibel est lorsque l'on contrôleur par un bouton à glissière (<em>slider</em>) qui lui évolue sur une échelle linéaire. À moitié du curseur, un son aurait été divisé par 10 000, donc presque inaudible. Le code suivant permet de convertir la valeur reçue d'un curseur</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Intensité sonore</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">/// &lt;summary&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">/// Convertit le pourcentage linéaire du bouton vers le bon niveau de décibels afin que l&#39;effet du contrôle</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1">/// corresponde au volume entendu.</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1">/// &lt;/summary&gt;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1">/// &lt;param name=&quot;volumeLineaire&quot;&gt;Le pourcentage de puissance sonore à affecter.&lt;/param&gt;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">/// &lt;returns&gt;Le nombre de décibels qui correspond à cet effet.&lt;/returns&gt;</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">private</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="nf">ConvertirLineaireVersExponentiel</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">volumeLineaire</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="p">{</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">minDb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minVolumeDecibel</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">10.0f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">12.0f</span><span class="p">;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">maxDb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxVolumeDecibel</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">10.0f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">12.0f</span><span class="p">;</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">etenduDb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxDb</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">minDb</span><span class="p">;</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">echelleExponentielle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="m">1.0f</span><span class="p">,</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Pow</span><span class="p">(</span><span class="m">3.321928f</span><span class="p">,</span><span class="w"> </span><span class="n">etenduDb</span><span class="p">),</span><span class="w"> </span><span class="n">volumeLineaire</span><span class="p">);</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">pourcentageLog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">echelleExponentielle</span><span class="p">,</span><span class="w"> </span><span class="m">3.321928f</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">etenduDb</span><span class="p">;</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">volumeDB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Lerp</span><span class="p">(</span><span class="n">minVolumeDecibel</span><span class="p">,</span><span class="w"> </span><span class="n">maxVolumeDecibel</span><span class="p">,</span><span class="w"> </span><span class="n">pourcentageLog</span><span class="p">);</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">volumeDB</span><span class="p">;</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="admonition info">
-<p class="admonition-title">Mais d'où sort le -12 et 3.321928 ?</p>
-<p>Le -12 sort directement de la défnition de l'échelle décibel ou le son minimal a une puissance de <span class="arithmatex">\(10^{-12}W\)</span>. La valeur 3.321928 est le logarithme en base 10 de 2, soit l'exposant qu'il faut donner à 10 obtenir 2.</p>
-</div>
+<h2 id="animation-clip"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h2>
+<p>Un clip est lié à un game object ou un prefab particulier et définit des changements dans l'état de l'objet à chaque frame. On peut créer des clips directement dans Unity ou les importer en animant l'objet dans un autre éditeur (comme Blender ou Maya). La seconde approche est celle préférée pour animations complexes, mais pour les tâches simples l'éditeur suffit. </p>
+<h3 id="creer-un-animation-clip">Créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h3>
+<p><em>À venir</em></p>
 
 
 
@@ -1402,7 +1547,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-02</span>
   </span>
 
     
@@ -1432,7 +1577,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../animations/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Animations">
+          <a href="../input-system/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gérer les contrôles avec le InputSystem">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1442,20 +1587,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Animations
+                Gérer les contrôles avec le InputSystem
               </div>
             </div>
           </a>
         
         
           
-          <a href="../coroutines/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Coroutines">
+          <a href="../sons/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Gérer les sons">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Coroutines
+                Gérer les sons
               </div>
             </div>
             <div class="md-footer__button md-icon">
