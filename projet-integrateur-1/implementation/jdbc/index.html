@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/cueillette_information/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/jdbc/">
       
       
-        <link rel="prev" href="../cadrage/">
+        <link rel="prev" href="../erreur_javafx/">
       
       
-        <link rel="next" href="../methodes_pointage/">
+        <link rel="next" href="../../qualite/critere_qualite/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Techniques de collecte de l'information - Projet intégrateur 1</title>
+        <title>Interfacer une base de données avec JDBC - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#collecte-de-linformation" class="md-skip">
+        <a href="#interfacer-une-base-de-donnees-avec-jdbc" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Techniques de collecte de l'information
+              Interfacer une base de données avec JDBC
             
           </span>
         </div>
@@ -243,11 +243,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../implementation/java_gradle/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../java_gradle/" class="md-tabs__link">
           
   
   Implémentation et versionnage
@@ -297,13 +299,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../cadrage/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../gestion/cadrage/" class="md-tabs__link">
           
   
   Gestion des projets
@@ -883,25 +883,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -912,7 +917,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Implémentation et versionnage
@@ -926,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/java_gradle/" class="md-nav__link">
+      <a href="../java_gradle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -947,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/versionnage/" class="md-nav__link">
+      <a href="../versionnage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -968,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/git_avance/" class="md-nav__link">
+      <a href="../git_avance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -989,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/gitflow/" class="md-nav__link">
+      <a href="../gitflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1010,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/efficacite/" class="md-nav__link">
+      <a href="../efficacite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/programmation_securitaire/" class="md-nav__link">
+      <a href="../programmation_securitaire/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1057,17 +1062,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1092,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/javafx_intro/" class="md-nav__link">
+      <a href="../javafx_intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1113,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/formulaire_javafx/" class="md-nav__link">
+      <a href="../formulaire_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/conteneur_javafx.md" class="md-nav__link">
+      <a href="../conteneur_javafx.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1155,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/fenetre_javafx/" class="md-nav__link">
+      <a href="../fenetre_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1176,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/resources_javafx.md" class="md-nav__link">
+      <a href="../resources_javafx.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/listes_javafx.md" class="md-nav__link">
+      <a href="../listes_javafx.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1218,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/erreur_javafx/" class="md-nav__link">
+      <a href="../erreur_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1244,10 +1252,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../implementation/jdbc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interfacer une base de données avec JDBC
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1256,6 +1284,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-de-jdbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation de JDBC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts de base
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#se-connecter-a-la-base-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Se connecter à la base de données
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requete-preparee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requête préparée
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lire-des-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lire des données
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1534,30 +1627,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1568,7 +1656,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Gestion des projets
@@ -1582,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cadrage/" class="md-nav__link">
+      <a href="../../gestion/cadrage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1600,30 +1688,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Techniques de collecte de l'information
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../gestion/cueillette_information/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1632,86 +1700,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#detail-des-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      Détail des techniques
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Détail des techniques">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#observation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Observation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entretien" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entretien
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groupes-de-discussion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Groupes de discussion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sondages-et-etudes-de-marche" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sondages et études de marché
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analyse-de-donnees-secondaires" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analyse de données secondaires
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1724,7 +1712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../methodes_pointage/" class="md-nav__link">
+      <a href="../../gestion/methodes_pointage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1745,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clickup.md" class="md-nav__link">
+      <a href="../../gestion/clickup.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1766,7 +1754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aspects_legaux/" class="md-nav__link">
+      <a href="../../gestion/aspects_legaux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,7 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../entrepreunariat/" class="md-nav__link">
+      <a href="../../gestion/entrepreunariat/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1813,20 +1801,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
         
           
-          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1851,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scrum/" class="md-nav__link">
+      <a href="../../gestion/scrum/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1895,205 +1880,184 @@
                   
 
 
-<div><h1 id="collecte-de-linformation">Collecte de l'information</h1>
+<div><h1 id="interfacer-une-base-de-donnees-avec-jdbc">Interfacer une base de données avec JDBC</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"></path></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>1-2 Techniques de collecte de l'information</p>
+<p>3-3 Sélection et utilisation des technologies selon le projet et ses contraintes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"></path></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>20 minutes</p>
+<p>30 minutes</p>
 </div>
 </div>
-<hr>
-<p>Pour récolter de l'information afin de concevoir un nouveau système, plusieurs techniques existent. Parmi ces techniques on retrouve :</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.5 6.08s-6.84 1.71-3.56 5.48c.97 1.11-.25 2.11-.25 2.11s2.45-1.25 1.31-2.85c-1.06-1.47-1.86-2.2 2.5-4.74m-4.47 1.2C16.08 4.08 14 2 14 2c.84 3.3-2.96 4.3-4.33 6.36-.94 1.4.46 2.91 2.33 4.64-.71-1.7-3.22-3.16.03-5.72M9.37 17.47c-3.08.86 1.88 2.63 5.79.96-.38-.15-.75-.33-1.1-.54-1.36.31-2.76.37-4.14.18-1.31-.16-.55-.6-.55-.6m5.32-1.68c-1.75.38-3.56.47-5.34.26-1.31-.13-.45-.77-.45-.77-3.4 1.13 1.88 2.4 6.6 1.02-.29-.11-.57-.3-.81-.51m3.42 3.3s.57.47-.61.83c-2.28.68-9.43.89-11.41.03-.71-.31.63-.74 1.05-.83.23-.06.46-.08.69-.08-.79-.54-5.13 1.1-2.19 1.56 7.97 1.3 14.54-.6 12.47-1.51m-2.74-4.86c.29-.19.6-.35.92-.49 0 0-1.51.26-3.02.4-1.6.16-3.21.18-4.81.06-2.35-.31 1.29-1.2 1.29-1.2-1.1 0-2.18.26-3.16.75-2.05 1 5.1 1.45 8.78.48m.9 2.42c-.02.04-.04.07-.08.1 5.01-1.31 3.17-4.64.77-3.81-.13.06-.24.14-.31.25.14-.05.28-.09.43-.12 1.2-.24 2.92 1.63-.81 3.58m.13 4.61c-3.01.52-6.09.56-9.12.14 0 0 .46.38 2.81.53 3.6.23 9.13-.13 9.26-1.83.03.01-.23.65-2.95 1.16"></path></svg></span> | <a href="https://github.com/Cours-Alexandre-Ouellet/architectures-java">L'exemple complet du code final</a> </p>
+<p>Dans cette section, nous verrrons comment connecter une base de données MySQL avec la bibliothèque <em>Java Database Connectivity</em> (JDBC). Le code de la section sur <a href="../../conception/architectures/">les architectures</a> et l'exemple de système de voyage. Les modèle DAO est utilisé pour organiser le code. Bien qu'il ne soit pas nécessaire de l'utiliser, il aide particulièrement avec l'organisation du code.</p>
+<h2 id="installation-de-jdbc">Installation de JDBC</h2>
+<div class="language-text highlight"><span class="filename">build.gradle</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>dependencies {
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    //...
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    implementation("com.mysql:mysql-connector-j:8.0.33")
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>}
+</span></code></pre></div>
+<p>Le connecteur peut changer selon le type de base de donnée utilisés. </p>
+<h2 id="concepts-de-base">Concepts de base</h2>
+<p>JDBC propose plusieurs interfaces pour manipuler les bases de données :</p>
 <ul>
-<li>L'observation;</li>
-<li>Les entretiens (structurés, semi-structurés, non structurés);</li>
-<li>Les groupes de discussion (<em>focus groups</em>);</li>
-<li>Les sondages et études de marché;</li>
-<li>L'analyse des données secondaires.</li>
+<li><code>Connection</code> : gère la connexion à la base de données;</li>
+<li><code>PreparedStatement</code>: permet de faire des opérations du CRUD avec une requête préparée (ce que vous devriez <strong>toujours</strong> faire);</li>
+<li><code>ResultSet</code> : contient les résultats de la requête (réponse du SGBD).</li>
 </ul>
-<p>Chacune de ces techniques vise des objectifs différents et apporte un lot de défis, mais aussi d'avantages. Pour sélectionner une technique de collecte d'information, on considère les facteurs suivants :</p>
-<dl>
-<dt><code>Objectifs de la collecte</code></dt>
-<dd>
-<p>Quelles sont les questions auxquelles la collecte doit répondre ? Comment ces objectifs permettront-ils l'atteinte des objectifs du système ? </p>
-</dd>
-<dt><code>Population cible</code> :</dt>
-<dd>
-<p>Qui sont les personnes à interroger ou à observer ?  Pourquoi ces personnes sont-elles celles qui permettront à la collecte d'atteindre son objectif ?</p>
-</dd>
-<dt><code>Ressources disponibles</code> </dt>
-<dd>
-<p>Quel est le budget et le temps alloués à la collecte ? Ces ressources sont-elles disponibles ? Est-ce que le rapport en l'<strong>apport informationnel</strong> et <strong>l'investissement de ressource</strong> est plus grand que 1 ? </p>
-</dd>
-<dt><code>Nature de l'information</code></dt>
-<dd>
-<p>Avez-vous besoin de données quantitatives (chiffres) ou qualitatives (opinions, perceptions) ? Comment ces données peuvent-elles être utilisées pour répondre aux questions ?</p>
-</dd>
-</dl>
-<h2 id="detail-des-techniques">Détail des techniques</h2>
-<h3 id="observation">Observation</h3>
-<p>Consiste à observer dans l'environnement l'utilisation du système (version d'essai ou de démonstration), l'utilisation d'un système équivalent ou les processus opérationnels de l'entreprise qui seront gérés par le système. Une grille d'observation doit être établie avant la période d'information afin de se concentrer sur les aspects recherchés. Toutefois, cette grille ne doit pas être trop rigide, car dans un moment expérientiel, il est possible que de nouvelles questions ou de nouveaux constats émergent.</p>
-<p></p><center>
-<table>
-<thead>
-<tr>
-<th>Facteur</th>
-<th>Considérations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Objectif</em></td>
-<td>Cadrer les limites du système, déterminer le flux de travail</td>
-</tr>
-<tr>
-<td><em>Population cible</em></td>
-<td>Personnes utilisatrices</td>
-</tr>
-<tr>
-<td><em>Ressources nécessaires</em></td>
-<td>Coût monétaire faible, coût en temps variable</td>
-</tr>
-<tr>
-<td><em>Nature de l'information</em></td>
-<td>Quantitative et qualitative</td>
-</tr>
-</tbody>
-</table>
-<p></p></center>
-<h3 id="entretien">Entretien</h3>
-<p>Technique fréquemment utilisée où l'on discute avec diverses parties prenantes du projet<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. L'entretien peut être plus ou moins structuré selon l'objectif de la rencontre. Dans des rencontres initiales où l'on établit les objectifs et les besoins, il est important d'être moins directifs dans ces réunions quant aux éléments de discussion et de laisser la place aux échanges spontanés. D'autre part, lorsqu'on valide le projet ou que l'on détaille les parties du système, adopter alors une approche très structurée permettra d'extraire l'information utile à l'équipe de développement. Dans tous les cas, les rencontres doivent être préparées et animées de façon à occuper le temps qui leur est alloué. La nuance repose dans la rigidité et le détail de la structure proposée.</p>
-<p></p><center>
-<table>
-<thead>
-<tr>
-<th>Facteur</th>
-<th>Considérations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Objectif</em></td>
-<td>Obtenir des détails sur des éléments du système, valider un travail accompli, collecter l'opinion d'un groupe particulier</td>
-</tr>
-<tr>
-<td><em>Population cible</em></td>
-<td>N'importe quel groupe de parties prenantes, ensembles ou séparés</td>
-</tr>
-<tr>
-<td><em>Ressources nécessaires</em></td>
-<td>Coût monétaire souvent faible, coût en temps variable ou important</td>
-</tr>
-<tr>
-<td><em>Nature de l'information</em></td>
-<td>Majoritairement qualitative</td>
-</tr>
-</tbody>
-</table>
-<p></p></center>
-<p>L'entretien est souvent la technique par défaut, en raison de la simplicité de sa mise en place. Toutefois, elle n'est pas nécessairement la plus utile et la multiplication des entretiens dans un projet peut mener au phénomène de <em>reunion creep</em>.</p>
-<h3 id="groupes-de-discussion">Groupes de discussion</h3>
-<p>Les groupes de discussion (<em>focus group</em>) consistent à une séance de question, de discussion et d'ateliers entre des parties prenantes du système, le plus souvent de potentielles personnes utilisatrices. L'équipe de développement joue un rôle d'observation et de guidage dans les échanges, mais contrairement à l'entretien ne donne pas la réplique dans les échanges. C’est une technique qui est aussi très utilisée dans le marketing.</p>
-<p></p><center>
-<table>
-<thead>
-<tr>
-<th>Facteur</th>
-<th>Considérations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Objectif</em></td>
-<td>Exprimer des besoins, collecter l'opinion d'un groupe particulier</td>
-</tr>
-<tr>
-<td><em>Population cible</em></td>
-<td>N'importe quel groupe d'intérêt, de potentielles personnes utilisatrices</td>
-</tr>
-<tr>
-<td><em>Ressources nécessaires</em></td>
-<td>Coût monétaire souvent faible, coût en temps variable ou important</td>
-</tr>
-<tr>
-<td><em>Nature de l'information</em></td>
-<td>Majoritairement qualitative</td>
-</tr>
-</tbody>
-</table>
-<p></p></center>
-<h3 id="sondages-et-etudes-de-marche">Sondages et études de marché</h3>
-<p>Les sondages et études de marché servent à valider les besoins d'un groupe projeté de personnes utilisatrices. On l'utilise peu dans les systèmes de gestion conçus pour 
-de petites ou moyennes entreprises (&lt; 500 employés). Ce type d'outil de collecte est par contre très présent lorsqu'on connaît une base utilisatrice large. </p>
-<p></p><center>
-<table>
-<thead>
-<tr>
-<th>Facteur</th>
-<th>Considérations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Objectif</em></td>
-<td>Collecter l'opinion d'une strate de la population ou de la population générale</td>
-</tr>
-<tr>
-<td><em>Population cible</em></td>
-<td>N'importe quel groupe d'intérêt</td>
-</tr>
-<tr>
-<td><em>Ressources nécessaires</em></td>
-<td>Coût monétaire souvent élevé, souvent sous-traité</td>
-</tr>
-<tr>
-<td><em>Nature de l'information</em></td>
-<td>Majoritairement quantitative, peut aussi être qualitative</td>
-</tr>
-</tbody>
-</table>
-<p></p></center>
-<h3 id="analyse-de-donnees-secondaires">Analyse de données secondaires</h3>
-<p>L'analyse de données secondaires consiste à s'informer auprès de données existantes qui concernent les intérêts ou les personnes utilisatrices du système. Cela va de la consultation de rapports et d'études à l'analyse légale. Les sources secondaires pouvant être considérées sont nombreuses et dépendent bien souvent du contexte d'application du système. Par exemple, la collecte de données pour un système de jeu sérieux pourra inclure les mécanismes de récompenses et la documentation sur le design de jeu général, alors que pour un système de stationnement cela pourrait inclure l'analyse des normes d'immatriculation de la SAAQ (par exemple pour ne pas refuser de plaques valides).</p>
-<p></p><center>
-<table>
-<thead>
-<tr>
-<th>Facteur</th>
-<th>Considérations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Objectif</em></td>
-<td>Collecter des informations sur un aspect précis, public ou à faible coût</td>
-</tr>
-<tr>
-<td><em>Population cible</em></td>
-<td>Non défini</td>
-</tr>
-<tr>
-<td><em>Ressources nécessaires</em></td>
-<td>Coût monétaire souvent faible s'il s'agit de données publiques, l'utilisation d'expert ou le temps investi à trouver les sources lui peut être important.</td>
-</tr>
-<tr>
-<td><em>Nature de l'information</em></td>
-<td>Majoritairement qualitative, peut aussi être quantitative</td>
-</tr>
-</tbody>
-</table>
-<p></p></center>
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn:1">
-<p>Toutes les entités actrices sont nécessairement au moins des parties prenantes dans un projet. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-</ol>
+<h2 id="se-connecter-a-la-base-de-donnees">Se connecter à la base de données</h2>
+<p>Le code ci-dessous permet d'obtenir une connexion à la base de données. Notez qu'avoir plusieurs connexions simultanné risque de provoquer des problèmes,dont le fameux <em>death-lock</em>.</p>
+<div class="language-java highlight"><span class="filename">Obtenir une connexion</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">    </span><span class="n">connexion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">        </span><span class="o">&lt;</span><span class="n">nom</span><span class="o">-</span><span class="n">hote</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">nom</span><span class="o">-</span><span class="n">utilisateur</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">mot</span><span class="o">-</span><span class="n">de</span><span class="o">-</span><span class="n">passe</span><span class="o">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="n">connexion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="s">"jdbc:mysql://127.0.0.1:3306/nomBD"</span><span class="p">,</span><span class="w"> </span><span class="s">"root"</span><span class="p">,</span><span class="w"> </span><span class="s">"mysql"</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">);</span>
+</span></code></pre></div>
+<p>Évidemment, vous ne devriez pas passer directement les valeurs, mais plutôt utiliser des constantes ou un fichier de configuration.</p>
+<div class="admonition info">
+<p class="admonition-title">Le nom d'hôte</p>
+<p>Le nom d'hôte doit suivre le format suivant : jdbc:&lt;type connecteur&gt;://&lt;ip&gt;/&lt;nomBD&gt;</p>
+</div>
+<h2 id="requete-preparee">Requête préparée</h2>
+<p>Les requêtes préparée sont utilisées pour toutes les opérations du CRUD. On doit les utiliser même s'il n'y a pas de paramètre à préparer, car elles protègent contre des failles de sécurité standard.</p>
+<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Requête préparée</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">Connection</span><span class="w"> </span><span class="n">connexion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="s">"jdbc:mysql://127.0.0.1:3306/nomBD"</span><span class="p">,</span><span class="w"> </span><span class="s">"root"</span><span class="p">,</span><span class="w"> </span><span class="s">"mysql"</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">requete</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="c1">// Création de la requête</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="n">requete</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connexion</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">            </span><span class="s">"INSERT INTO Deplacement (destination, moyenTransport) VALUES (?, ?);"</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">            </span><span class="n">Statement</span><span class="p">.</span><span class="na">RETURN_GENERATED_KEYS</span><span class="p">);</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="c1">// Affectation des paramètres</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">    </span><span class="n">requete</span><span class="p">.</span><span class="na">setInt</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">getId</span><span class="p">(</span><span class="n">deplacement</span><span class="p">.</span><span class="na">getDestination</span><span class="p">()));</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">    </span><span class="n">requete</span><span class="p">.</span><span class="na">setInt</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">getId</span><span class="p">(</span><span class="n">deplacement</span><span class="p">.</span><span class="na">getMoyenTransport</span><span class="p">()));</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">    </span><span class="c1">// Exécute la requête préparée</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">    </span><span class="n">requete</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">();</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">    </span><span class="c1">// Actions de lecture</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">exception</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Exception</span><span class="p">(</span><span class="s">"Impossible d'enregistrer l'objet "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">deplacement</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Dans la requête préparée (ligne 7), les <code>?</code> indique des valeurs à remplacer. Les lignes 11 et 12 affectent ses paramètres. D'autres méthodes existent selon le type de données comme <code>setBool</code>, <code>setString</code>, <code>setFloat</code>, <code>setDouble</code>, <code>setDate</code>, <code>setTime</code>, <code>setTimestamp</code>. Les paramètres sont numérotés dans l'ordre d'ajout en commençant à <strong>1</strong>.</p>
+<div class="admonition ia">
+<p class="admonition-title">Liste complète</p>
+<p>Le prompt suivant vous présente une grande variété de paramètres utilisables : 
+    *In JDBC with MYSQL, what are the types of parameters that can be assigned in a PreparedStatment (methods such as setInt, setString...)</p>
+</div>
+<p>L'instruction <code>Statement.RETURN_GENERATED_KEYS</code> permet de récupérer les clés primaires générées par MySQL lors de l'insertion. La requête peut donc être lue pour récupérer l'information. </p>
+<p>L'instruction <code>executeUpdate</code> (ligne 15) permet de faire une requête qui modifie la structure de la base données (C_UD).</p>
+<div class="admonition important">
+<p class="admonition-title">Try with resources</p>
+<p>La syntaxe <code class="language-java highlight"><span class="k">try</span><span class="p">(...)</span></code>est appelée <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html">try with resources</a> et assure que la ressource est fermée avec l'interface <code class="language-java highlight"><span class="n">java</span><span class="p">.</span><span class="na">io</span><span class="p">.</span><span class="na">Closeable</span></code> à la fin du bloc, qu'une exception soit levée ou non. Si vous n'utilisez pas cette syntaxe vous devez appeler <code class="language-java highlight"><span class="n">requete</span><span class="p">.</span><span class="na">close</span><span class="p">();</span></code> à la fin des opérations dans le bloc <code>finally</code>.</p>
+</div>
+<h2 id="lire-des-donnees">Lire des données</h2>
+<p>Pour lire des données, </p>
+<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Lire des données de MySQL</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">Connection</span><span class="w"> </span><span class="n">connexion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="s">"jdbc:mysql://127.0.0.1:3306/nomBD"</span><span class="p">,</span><span class="w"> </span><span class="s">"root"</span><span class="p">,</span><span class="w"> </span><span class="s">"mysql"</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">requete</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connexion</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="s">"SELECT id, destination, moyenTransport, ordre FROM Deplacement"</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="n">ResultSet</span><span class="w"> </span><span class="n">resultats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">requete</span><span class="p">.</span><span class="na">executeQuery</span><span class="p">();</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">    </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">DeplacementBrut</span><span class="o">&gt;</span><span class="w"> </span><span class="n">donneesDeplacements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="c1">// Accumulation des données</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">resultats</span><span class="p">.</span><span class="na">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">        </span><span class="n">DeplacementBrut</span><span class="w"> </span><span class="n">donneesDeplacement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DeplacementBrut</span><span class="p">(</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">                </span><span class="n">resultats</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">"id"</span><span class="p">),</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">                </span><span class="n">resultats</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">"destination"</span><span class="p">),</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">                </span><span class="n">resultats</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">"moyenTransport"</span><span class="p">),</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">                </span><span class="n">resultats</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">"ordre"</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">        </span><span class="n">donneesDeplacements</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">donneesDeplacement</span><span class="p">);</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">    </span><span class="c1">// Résolution des liens vers les autres objets</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">exception</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Exception</span><span class="p">(</span><span class="s">"Impossible de charger la collection de deplacement."</span><span class="p">);</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>On remarque à la ligne 3 l'instruction <code>executeQuery</code> qui récupère les données de la base de données. Elle joue le même rôle que  <code>executeUpdate</code>. La méthode retourne un <code>ResultSet</code> que l'on peut parcourir pour récupérer les données. Le <code>ResultSet</code> est structuré sur le modèle d'un <strong>itérateur</strong>.</p>
+<div class="admonition tips">
+<p class="admonition-title">Pourquoi un objet DeplacementBrut ?</p>
+<p>En Java, lorsque deux objets sont dépendants, on affecte une référence d'un objet à l'autre. En base de donnée, on stocke plutôt une copie de la clé primaire. Donc lorsqu'on crée les objets du côté Java, il faut aussi charger les dépendances de la bd. Comme on ne peut pas avoir deux connexions simultanées, il faut stocker temporairement les relations sous forme de clé étrangère, puis après charger les dépendances. <code>DeplacementBrut</code>, comme classe locale, permet ed s'acquitter de cette tâche.</p>
+</div>
+<p>Chacun des champs est chargé avec <code>getInt</code>, comme on charge des identifiants. On doit utiliser la méthode propre au type de données comme pour l'assignation vue à la <a href="#requ%C3%AAte-pr%C3%A9par%C3%A9e">section précédente</a>.</p>
+<p>Le code ci-dessous montre la résolution des liens pour le passage d'une représentation en base de données à une représentation dans un système objet.</p>
+<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Chargement des dépendances</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">// Résolution des liens vers les autres objets</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Deplacement</span><span class="o">&gt;</span><span class="w"> </span><span class="n">deplacements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="n">DestinationDAO</span><span class="w"> </span><span class="n">destinationDAO</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DestinationDAO_SQL</span><span class="p">();</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="n">MoyenTransportDAO</span><span class="w"> </span><span class="n">moyenTransportDAO</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MoyenTransportDAO_SQL</span><span class="p">();</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">DeplacementBrut</span><span class="w"> </span><span class="n">donneesDeplacement</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">donneesDeplacements</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="n">deplacements</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Deplacement</span><span class="p">(</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">        </span><span class="n">donneesDeplacement</span><span class="p">.</span><span class="na">id</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">        </span><span class="n">destinationDAO</span><span class="p">.</span><span class="na">chargerParId</span><span class="p">(</span><span class="n">donneesDeplacement</span><span class="p">.</span><span class="na">idDestination</span><span class="p">),</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">        </span><span class="n">moyenTransportDAO</span><span class="p">.</span><span class="na">chargerParId</span><span class="p">(</span><span class="n">donneesDeplacement</span><span class="p">.</span><span class="na">idMoyenTransport</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">    </span><span class="p">));</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="footer">
+<div class="language-text highlight"><pre><span></span><code>:book: [Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) |
+</code></pre></div>
 </div></div>
 
 
@@ -2115,7 +2079,7 @@ de petites ou moyennes entreprises (&lt; 500 employés). Ce type d'outil de coll
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-26</span>
   </span>
 
     
@@ -2145,7 +2109,7 @@ de petites ou moyennes entreprises (&lt; 500 employés). Ce type d'outil de coll
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../cadrage/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Démarrer un projet">
+          <a href="../erreur_javafx/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Erreurs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2155,20 +2119,20 @@ de petites ou moyennes entreprises (&lt; 500 employés). Ce type d'outil de coll
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Démarrer un projet
+                Erreurs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../methodes_pointage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthodes à pointage">
+          <a href="../../qualite/critere_qualite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Critère de qualité">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Méthodes à pointage
+                Critère de qualité
               </div>
             </div>
             <div class="md-footer__button md-icon">
