@@ -50,6 +50,13 @@ span.tooltip {
     padding-right: 10px;
 }
 
+
+.footer {
+  text-align: center;
+  font-size: smaller;
+  border-top: solid 1.5px darkslategray;
+}
+
 /* Admonition exemple - code */
 
 :root {

@@ -1038,9 +1038,51 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#strategie-de-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stratégie de fusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projet-dequipe-et-gestion-des-fusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projet d'équipe et gestion des fusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#la-requete-de-tirage-pull-request" class="md-nav__link">
     <span class="md-ellipsis">
       La requête de tirage (pull-request)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La requête de tirage (pull-request)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valider-une-requete-de-tirage-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valider une requête de tirage (pull-request)
     </span>
   </a>
   
@@ -1287,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conteneur_javafx.md" class="md-nav__link">
+      <a href="../conteneurs_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2054,15 +2096,174 @@
 </tbody>
 </table>
 <h2 id="la-fusion-des-branches">La fusion des branches</h2>
+<p>Fusionner des branches permet d'amener l'état du système d'une branche vers une autre. Lors de la fusion, les modifications sont intégrées selon le différentiel entre les deux versions, géré par l'algorithme <a href="https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge">ORT</a>. La commande utilisée est <code>git merge &lt;nom branche&gt;</code>. La fusion consiste à amener les changements de la branche indiquée sur la branche où la commande est exécutée. L'algorithme ORT fait une fusion entre trois sources. Dans la figure ci-dessous, le commit A (en bleu) de la branche <em>dev</em> représente la version de la branche active; le commit B (en rouge) de la branche <em>feat</em> est celle de laquelle on apporte les changements; C (en vert) le commit d'ancêtre commun (le point dernier point avant la séparation de la branche <em>feat</em> de <em>dev</em>) et D (en jaune) le commit créé sur <em>dev</em> qui incorpore les changements de <em>feat</em>. </p>
+<figure>
+    <a class="glightbox" href="../../images/merge.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/merge.png" width="600"></a>
+    <figcaption markdown>Fusion de la branche <em>feat</em> vers <em>dev</em><figcaption>
+</figcaption></figcaption></figure>
+<p>La commande utilisée pour lancer cette fusion seraient les suivantes :</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fusion de deux branches</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>git checkout dev        // On se positionne sur dev
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>git merge feat          // On fusionne feat
+</span></code></pre></div></td></tr></table></div>
+<p>Ce qui se passe c'est que les versions A, B et C se comparent entre elles. Si A et C sont identiques, mais pas B, alors la version B a apporté une modification par raport à l'original et ce sera le contenu de B qui se retrouve dans le résultat D. De façon similaire, si B et C sont identiques, mais est différente, alors ce sera la version de A qui se retrouve dans le résultat D. Dans le cas où A, B et C sont tous différents, cela signifie que A et B ont modifié la même ligne ce qui crée un <a href="#la-gestion-des-conflits"><strong>conflit</strong></a>. Évidemment, si A, B et C sont identiques, rien n'a été modifié et la version de C est celle dans le résultat D. </p>
 <div class="admonition info">
 <p class="admonition-title">git pull</p>
+<p>La fusion ne s'effectue pas uniquement enter des branches parallèles, mais c'est aussi ce qui permet de fusionner la branche associée du distant sur une version locale (fusionner <em>dev</em> avec <em>origin/dev</em>). La commande <code>git pull</code> n'est autre qu'un <code>git fetch</code> de la branche distante associée à la branche suivie sur le distant, puis un <code>git merge</code> pour fusionner la version distante avec la locale. Le fait que deux personnes aient travailler sur la même branche peut donc induire des conflits.  </p>
 </div>
+<h3 id="strategie-de-fusion">Stratégie de fusion</h3>
+<p><a href="https://git-scm.com/docs/merge-strategies">Deux principales stratégies de fusion</a> existent pour limiter les générations de conflit. Ces stratégies forces l'utilisation de soit la version de la branche en cours (<code>ours</code>), soit <em>dev</em> dans l'exemple ou la version de la branche intégrée (<code>theirs</code>), soit <em>feat</em> dans l'exemple. Concrètement, si l'on exécute plutôt que la commande suivante :</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Fusion de deux branches</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>git checkout dev            // On se positionne sur dev
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>git merge feat -s ours      // On fusionne feat, en cas de conflit on garde dev
+</span></code></pre></div></td></tr></table></div>
+<p>Alors lorsque A, B et C sont différents, la version A (qui provient de <em>dev</em>) sera utilisée plutôt que de provoquer un conflit.</p>
+<h3 id="projet-dequipe-et-gestion-des-fusions">Projet d'équipe et gestion des fusions</h3>
+<p>Dans un projet d'équipe, on accomplit la fusion de deux façons, soit avec la commande <code>git merge</code> ou avec une requête de tirage (<em>Pull-Request</em>). Le contexte d'utilisation de chacun des méthodes est présenté dans la page <a href="../gitflow/">GitFlow</a>, la présente page se concentre sur la mécanique de la commande. </p>
 <h3 id="la-requete-de-tirage-pull-request">La requête de tirage (<em>pull-request</em>)</h3>
+<p>La requête de tirage permet d'instaurer un processus de révision de code avant la fusion. On s'en sert pour éviter d'intégrer du code qui ne fonctionne pas ou n'est pas aux standards dans la base de code du système. La publication de pull-request se fait habituellement dans l'outil de visualisation du distant (GitHub). </p>
+<figure>
+    <a class="glightbox" href="../../images/pull-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request.png"></a>
+    <figcaption markdown>Interface des <em>pull-request</em></figcaption>
+</figure>
+<ol>
+<li>Le bouton pour accéder au menu des <em>pull-requests</em>;</li>
+<li>Les filtres pour trouver les <em>pull-request</em> (voir <a href="#filtres"></a>);</li>
+<li>Le bouton pour créer une nouvelle <em>pull-request</em>.</li>
+</ol>
+<figure>
+    <a class="glightbox" href="../../images/pull-request-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request-2.png"></a>
+    <figcaption markdown>Création d'une nouvelle <em>pull-request</em></figcaption>
+</figure>
+<p>1 et 2. Sélectionner quelle branche (2) fusionner vers quelle autre branche (1) [autrement dit, on fusionne 2 vers 1];
+3. La liste des <em>commits</em> impliqués dans la <em>pull-request</em>; 
+4. Le bouton de validation de la création de la <em>pull-request</em>;</p>
+<figure>
+    <a class="glightbox" href="../../images/pull-request-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request-3.png"></a>
+    <figcaption markdown>Création d'une nouvelle <em>pull-request</em></figcaption>
+</figure>
+<ol>
+<li>Sélectionner quelle branche fusionner vers quelle autre branche (peut être modifié de la précédente interface);</li>
+<li>Ajouter un titre significatif à la <em>pull-request</em>;</li>
+<li>Décrire les changements de la <em>pull-request</em>. La syntaxe markdown est supportée pour la mise en forme de la description; </li>
+<li>Assigner un ou plusieurs <em>reviewers</em> pour réviser la pull-request;</li>
+<li>Assigner l'auteur du code dans <em>assignee</em>;</li>
+<li>Permet d'affecter une étiquette au contenu de la <em>pull-request</em>. Les étiquettes permettent de distinguer le type de modification apportée;</li>
+<li>Permet d'affecter la <em>pull-request</em> à un objectif du projet (<em>milestone</em>);</li>
+<li>Valide la création de la pull-request;</li>
+</ol>
+<h4 id="filtres">Filtres</h4>
+<p>Les filtres suivants permettent de parcourir les <em>pull-request</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Filtre</th>
+<th style="text-align: left;">Valeur</th>
+<th style="text-align: left;">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">is</td>
+<td style="text-align: left;">pr</td>
+<td style="text-align: left;">Restreint la recherche au <em>pull-request</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">is</td>
+<td style="text-align: left;">open | closed</td>
+<td style="text-align: left;">Statut de la <em>pull-request</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">author | involves | assignee</td>
+<td style="text-align: left;">nom d'utilisateur</td>
+<td style="text-align: left;">Recherche les instances où l'utilisateur est auteur, impliqué dans le processus ou à qui l'on a assigné la <em>pull-request</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="valider-une-requete-de-tirage-pull-request">Valider une requête de tirage (<em>pull-request</em>)</h3>
+<p>Une fois la <em>pull-request</em> créée, il faut qu'elle soit révisée et validée par le <em>reviewer</em>.</p>
+<figure>
+    <a class="glightbox" href="../../images/pull-request-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request-4.png"></a>
+    <figcaption markdown>Fenêtre de validation d'une <em>pull-request</em></figcaption>
+</figure>
+<ol>
+<li>L'onglet <em>Conversation</em> permet d'afficher les commentaires de l'auteur et des révisions. C'est souvent là qu'on documente les échanges sur le code. Les commentaires ajoutés directement au code (section suivante), s'y retrouvent également.</li>
+<li>L'onglet <em>Commits</em> permet de parcourir la liste des commits inclus dans la <em>pull-request</em>.</li>
+<li>L'onglet <em>Files changed</em> permet de son côté de lister tous les fichiers qui ont été modifiés et de les commenter directement.</li>
+</ol>
+<figure>
+    <a class="glightbox" href="../../images/pull-request-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request-5.png"></a>
+    <figcaption markdown>Fenêtre de révision des fichiers d'une <em>pull-request</em></figcaption>
+</figure>
+<ol>
+<li>Liste des fichiers</li>
+<li>Menu d'acceptation des changements (voir capture suivante)</li>
+<li>Code modifié. Les lignes vertes sont des ajouts et les rouges des suppressions. En survolant une ligne de la souris, un plus bleu apparaît et permet d'ajouter un <strong>commentaire directement liée à la ligne de code</strong>. Ces commentaires sont très utiles dans le processus de révision.</li>
+</ol>
+<figure>
+    <a class="glightbox" href="../../images/pull-request-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pull-request-6.png"></a>
+    <figcaption markdown>Fenêtre de revue des fichiers d'une <em>pull-request</em></figcaption>
+</figure>
+<ol>
+<li>Commentaire général sur la <em>pull-request</em>. On évite de répéter tous les commentaires individuels.</li>
+<li>Statut de la révision : 
+    a. <strong><em>comment</em></strong> : commentaire pour révision seulement sans validation
+    b. <strong><em>approve</em></strong> : validation de la <em>pull-request</em>, le code est de qualité et prêt à intégrer au reste du système
+    c. <strong><em>request changes</em></strong> : demande des changements (commentaires nécessaires) avant d'être prêt à valider</li>
+<li>Soumission de la révision  </li>
+</ol>
+<p>Si des modifications doivent être apportées, on les fait directement dans le code, puis on <em>push</em> le tout sur la branche dans laquelle on a demandé la fusion par <em>pull-request</em>. Les changements seront intégrés à la <em>pull-request</em> automatiquement. De plus, un même personne peut faire plusieurs révisions dans le temps. Une fois que tout est approuvé, alors la personne qui a demandé la <em>pull-request</em> peut en faire la fusion.</p>
+<div class="admonition extra">
+<p class="admonition-title">Protection des branches</p>
+<p>Dans plusieurs projets <em>open source</em> ou de grande evergure, les branches sont protégées de sorte que seul un petit nombre d'utilisateurs sont en mesure de valider l'intégration d'une branche par <em>pull-request</em> aux branches principales (dev ou main) du projet.</p>
+</div>
 <h3 id="la-gestion-des-conflits">La gestion des conflits</h3>
+<p>La gestion des conflits se résoud habituellement avec un plugin inclut dans l'IDE ou avec un outil de résolution des conflits (Meld, P4Merge...). Pour résoudre les conflits, il faut accéder à chacun d'entre eux et sélectionner quelle version est retenue.</p>
 <h2 id="le-repositionnement-de-branches">Le repositionnement de branches</h2>
 <h3 id="le-deplacement-de-lorigine-rebase">Le déplacement de l'origine (<em>rebase</em>)</h3>
 <h3 id="remettre-une-version-anterieure-a-lavant-cherry-picking">Remettre une version antérieure à l'avant (<em>cherry-picking</em>)</h3>
-<h2 id="la-gestion-de-la-pile-stash">La gestion de la pile (<em>stash</em>)</h2></div>
+<h2 id="la-gestion-de-la-pile-stash">La gestion de la pile (<em>stash</em>)</h2>
+<p>Lorsque l'on souhaite changer de branche, il faut ne faut pas qu'il y ait des changements en cours sur la branche qu'on quitte. Pour ce faire, trois options s'offrent :</p>
+<ul>
+<li><em>Commit</em> les changements sur la branche</li>
+<li>Effacer les changements faits depuis le dernier <em>commit</em> avec <code>git reset --hard</code></li>
+<li>Mettre les changements dans la réserve (<em>stash</em>)</li>
+</ul>
+<p>La réserve permet de stocker temporairement des changements et de les déplacer entre les branches. Cette fonctionnalité est très utile lorsqu'on se rend compte que l'on a travaillé sur la mauvaise branche AVANT d'avoir <em>commit</em> les changements. Notez que git vous laisse changer de branche si les changements qui ne sont pas <em>commit</em> ne provoquent pas de conflit avec la nouvelle branche. Les commandes avec la stash sont les suivantes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Commande</th>
+<th style="text-align: left;">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>git stash</code></td>
+<td style="text-align: left;">Envoie les changements qui ne sont pas commit sur le dessus de la pile.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git stash list</code></td>
+<td style="text-align: left;">Liste tous les changements qui sont sur la pile.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git stash apply</code></td>
+<td style="text-align: left;">Applique les changements du dessus de la pile sans les sortir de la pile.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git stash drop</code></td>
+<td style="text-align: left;">Retire les changements du dessus de la pile.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git stash pop</code></td>
+<td style="text-align: left;">Retire et applique les changements du dessus de la pile <code>git stash apply &amp; git stash drop</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git stash clear</code></td>
+<td style="text-align: left;">Retire tous les éléments de la pile.</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
@@ -2083,7 +2284,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-10-03</span>
   </span>
 
     
