@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/javafx_intro/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/developpement_securitaire/">
       
       
-        <link rel="prev" href="../developpement_securitaire/">
+        <link rel="prev" href="../efficacite/">
       
       
-        <link rel="next" href="../creer_projet_2025/">
+        <link rel="next" href="../javafx_intro/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Introduction - Projet intégrateur 1</title>
+        <title>Gestion de la sécurité - Projet intégrateur 1</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-a-javafx" class="md-skip">
+        <a href="#developpement-securitaire" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Gestion de la sécurité
             
           </span>
         </div>
@@ -1033,72 +1033,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../developpement_securitaire/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gestion de la sécurité
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    JavaFX
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_7">
-            <span class="md-nav__icon md-icon"></span>
-            JavaFX
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
     
   
   
@@ -1115,7 +1049,7 @@
           
   
   <span class="md-ellipsis">
-    Introduction
+    Gestion de la sécurité
   </span>
   
 
@@ -1126,7 +1060,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Gestion de la sécurité
   </span>
   
 
@@ -1148,18 +1082,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creation-dun-projet" class="md-nav__link">
+  <a href="#mesures-et-failles-possibles" class="md-nav__link">
     <span class="md-ellipsis">
-      Création d'un projet
+      Mesures et failles possibles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mesures et failles possibles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mesures-de-securite-dans-le-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mesures de sécurité dans le code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesures-de-securite-aux-personnes-utilisatrices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mesures de sécurité aux personnes utilisatrices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environnement-de-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environnement de production
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#securite-dans-les-procedes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sécurité dans les procédés
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recuperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Récupération
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#organisation-dun-projet" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Organisation d'un projet
+      Références
     </span>
   </a>
   
@@ -1169,6 +1154,70 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    JavaFX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            JavaFX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../javafx_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1927,162 +1976,102 @@
                   
 
 
-<div><h1 id="introduction-a-javafx">Introduction à JavaFX</h1>
+<div><h1 id="developpement-securitaire">Développement sécuritaire</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"></path></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
-<p>3-3 Sélection et utilisation des technologies selon le projet et ses contraintes<br>
-3-9 Développement du projet en cohérence avec la conception établie</p>
+<p>2-6 Mesures de sécurité</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"></path></svg></span> <span class="subtitle-content">Temps requis</span></p>
 <p>20 minutes</p>
 </div>
 </div>
-<p>La bibliothèque <em>JavaFX</em> permet le développement d'application avec une interface graphique dans le langage Java. <em>JavaFX</em> travaille avec l'architecture MVC :</p>
+<p>Les mesures de sécurité dans le développement d'un système doivent être appliquées à plusieurs niveaux :</p>
 <ul>
-<li>Modèle : ils ne sont pas gérés par <em>JavaFX</em>, car ils n'ont pas d'impact sur la vue.</li>
-<li>Vue : des objets qui représentent les contrôles. On utilise le langage de balise FXML qui est un « cousin » de HTML et qui supporte les styles dans un syntaxe proche du CSS.</li>
-<li>Contrôleur : une classe Java qui gère les contenus de la vue. </li>
+<li>Mesures de sécurité dans le code;</li>
+<li>Mesures de sécurité aux personnes utilisatrices;</li>
+<li>Mesures de sécurité dans les environnements de production;</li>
+<li>Mesures de sécurité dans les procédés, les méthodes de travail et l'infrastructure </li>
 </ul>
-<h2 id="creation-dun-projet">Création d'un projet</h2>
-<figure>
-    <a class="glightbox" href="../../images/creation-projet-fx.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/creation-projet-fx.png" width="400"></a>
-    <figcaption markdown>Création d'un projet de type <em>JavaFX</em></figcaption>
-</figure>
+<p>Les failles de sécurité sont inévitables. La grande question en sécurité n'est pas si un problème va arriver, mais quand il va arriver. Des mesures préventives ou de mitigation peuvent être mises en place pour limiter les impacts et diminuer la fréquence des attaques couronnées de succès.</p>
+<h2 id="mesures-et-failles-possibles">Mesures et failles possibles</h2>
+<p>Une faille de sécurité peut survenir à n'importe quel niveau et avoir des répercussions majeures sur l'ensemble du projet. Voici des exemples d'incidents de sécurité qui impliquent des failles dans les mesures de sécurité à un ou plusieurs niveaux :</p>
+<ul>
+<li>Code : cassage de mot de passe, injections SQL, versement de données malveillantes ou qui causent des bogues volontaires, accès aux commandes machines par processus IO</li>
+<li>Personnes utilisatrices : obtention des mots de passe, affichage de données personnelles, erreur ou surcharge de l'interface (mauvaise gestion de la surutilisation)</li>
+<li>Environnement de production : injections bash, accès à la machine ou au serveur de données, utilisation de configuration standard ou de développement (mot de passe ou clés faibles), attaque par déni de service, attaque XSS</li>
+<li>Sécurité dans les procédés, les méthodes de travail et l'infrastructure : diffusion de données confidentielles ou sensibles, publication de données confidentielles (clé privée dans le dépôt git...), flux de travail qui est propice aux erreurs</li>
+</ul>
+<p>Développer un <em>pipeline</em> de production implique une mise en place systématique des mesures de sécurité. Il s'agit d'un des éléments de l'assurance qualité des logiciels (thème de la prochaine section).</p>
+<h3 id="mesures-de-securite-dans-le-code">Mesures de sécurité dans le code</h3>
 <ol>
-<li>Sélectionner le type de projet comme <em>JavaFX</em>;</li>
-<li>Modifier le <em>group</em> pour un identifiant unique (qui a la forme d'un nom de domaine « à l'envers »);</li>
-<li>Sélectionner la version 23 de Java.</li>
+<li>Valider et nettoyer les entrées du côté client et serveur ce qui inclut les vides et caractères dangereux;</li>
+<li>Dans la gestion des erreurs, on ne doit jamais exposer les détails techniques dans les messages d’erreur <strong>lorsqu'on passe à l'environnement de production</strong>;</li>
+<li>Implémenter des mécanismes robustes (OAuth2, JWT, etc.) pour l'authentification;</li>
+<li>Appliquer le principe du moindre privilège pour les autorisations, soit qu'on ne peut avoir accès qu’à ce qui est nécessaire.</li>
+<li>Chiffrer ou hasher les données sensibles avec des algorithmes sécurisés (ex. bcrypt, SHA512...). </li>
+<li>Utiliser des tokens anti-CSRF</li>
+<li>Échapper les contenus dynamiques et utiliser des Content Security Policy (CSP).</li>
+<li>Ne jamais exposer des fichiers de configuration ou des clés API dans le code source.</li>
+<li>Journaliser et surveiller en mettant en place des logs d’accès et d’activité. Attention, vos logs ne doivent pas devenir une vulnérabilité.</li>
 </ol>
-<p>La deuxième page de la création propose divers complément à JavaFX pour augmenter ses fonctionnalités. Le seul qui dans le contexte du cours pourrait être utile est <em>ControlsFX</em> qui propose plus de contrôles de formulaire. Il est plus simple d'ajouter la dépendance à la génération du projet, quitte à la retirer par la suite.</p>
-<figure>
-    <a class="glightbox" href="../../images/creation-projet-fx-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/creation-projet-fx-2.png" width="400"></a>
-    <figcaption markdown>Sélection de compléments de <em>JavaFX</em></figcaption>
-</figure>
-<h2 id="organisation-dun-projet">Organisation d'un projet</h2>
-<figure>
-    <a class="glightbox" href="../../images/structure-javafx.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/structure-javafx.png" width="400"></a>
-    <figcaption markdown>Organisation d'un projet <em>JavaFX</em></figcaption>
-</figure>
-<p>Les projets sont organisés en deux parties : </p>
+<h3 id="mesures-de-securite-aux-personnes-utilisatrices">Mesures de sécurité aux personnes utilisatrices</h3>
 <ol>
-<li>Le dossier « java » qui contient le code source (fichiers .java);</li>
-<li>Le dossier « resources » qui contient les fichiers utilisés par java (FXML, CSS, images...).</li>
+<li>Forcer l'usage de mot de passe complexe :</li>
 </ol>
-<p>Les 3 fichiers créés par défaut sont les suivants :</p>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HelloApplication.java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">edu.cegepvicto.itineraire</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.application.Application</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.fxml.FXMLLoader</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.scene.Scene</span><span class="p">;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.stage.Stage</span><span class="p">;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloApplication</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="nd">@Override</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="n">Stage</span><span class="w"> </span><span class="n">stage</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="n">FXMLLoader</span><span class="w"> </span><span class="n">fxmlLoader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FXMLLoader</span><span class="p">(</span><span class="n">HelloController</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">getResource</span><span class="p">(</span><span class="s">"hello-view.fxml"</span><span class="p">));</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">        </span><span class="n">Scene</span><span class="w"> </span><span class="n">scene</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scene</span><span class="p">(</span><span class="n">fxmlLoader</span><span class="p">.</span><span class="na">load</span><span class="p">(),</span><span class="w"> </span><span class="mi">320</span><span class="p">,</span><span class="w"> </span><span class="mi">240</span><span class="p">);</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="n">stage</span><span class="p">.</span><span class="na">setTitle</span><span class="p">(</span><span class="s">"Hello!"</span><span class="p">);</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">        </span><span class="n">stage</span><span class="p">.</span><span class="na">setScene</span><span class="p">(</span><span class="n">scene</span><span class="p">);</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="n">stage</span><span class="p">.</span><span class="na">show</span><span class="p">();</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">        </span><span class="n">launch</span><span class="p">();</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>La classe <code class="language-java highlight"><span class="n">Application</span></code> est responsable du démarrage de <em>JavaFX</em> et est appelée seulement au début du programme. La classe <code class="language-java highlight"><span class="n">Stage</span></code> représente une fenêtre (qui ici est automatiquement créé, passée en paramètre de la méthode <code class="language-java highlight"><span class="n">start</span></code> qui sert, comme son nom l'indique, à démarrer l'application). La fenêtre (l'instance de <code class="language-java highlight"><span class="n">Stage</span></code>) doit contenir exactement une <code class="language-java highlight"><span class="n">Scene</span></code> qui représente le contenu de la fenêtre. On associe souvent le contenu d'une <code class="language-java highlight"><span class="n">Scene</span></code> à un fichier FXML. </p>
-<p>Durant l'exécution, si l'on change le contenu d'une fenêtre sans changer de fenêtre, on remplacera le contenu de la <code class="language-java highlight"><span class="n">Scene</span></code> dans le <code class="language-java highlight"><span class="n">Stage</span></code>. Créer un nouveau <code class="language-java highlight"><span class="n">Stage</span></code> consiste à créer une seconde fenêtre pour la même application. </p>
-<p>La class <code class="language-java highlight"><span class="n">FXMLLoader</span></code> permet de charger un fichier FXML pour créer la scène avec ses informations. La méthode <code class="language-java highlight"><span class="n">getResource</span></code> fonctionne que si l'élément <strong>est au même endroit hiérarchique dans le dossier resource</strong>. Donc les deux projets doivent être organisés en <strong>miroir</strong>. La classe <code class="language-java highlight"><span class="n">HelloController</span></code> est situé dans <strong>edu/cegepvicto/itineraire</strong> dans le dossier <strong>java</strong>, alors le fichier <code>hello-view.fxml</code> doit être situé dans <strong>edu/cegepvicto/itineraire</strong> dans le dossier <strong>resources</strong>.</p>
-<div class="language-xml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">hello-view.fxml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="cp">&lt;?import javafx.geometry.Insets?&gt;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="cp">&lt;?import javafx.scene.control.Label?&gt;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="cp">&lt;?import javafx.scene.layout.VBox?&gt;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="cp">&lt;?import javafx.scene.control.Button?&gt;</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="nt">&lt;VBox</span><span class="w"> </span><span class="na">alignment=</span><span class="s">"CENTER"</span><span class="w"> </span><span class="na">spacing=</span><span class="s">"20.0"</span><span class="w"> </span><span class="na">xmlns:fx=</span><span class="s">"http://javafx.com/fxml"</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">      </span><span class="na">fx:controller=</span><span class="s">"edu.cegepvicto.itineraire.HelloController"</span><span class="nt">&gt;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="nt">&lt;padding&gt;</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="nt">&lt;Insets</span><span class="w"> </span><span class="na">bottom=</span><span class="s">"20.0"</span><span class="w"> </span><span class="na">left=</span><span class="s">"20.0"</span><span class="w"> </span><span class="na">right=</span><span class="s">"20.0"</span><span class="w"> </span><span class="na">top=</span><span class="s">"20.0"</span><span class="nt">/&gt;</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="nt">&lt;/padding&gt;</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="nt">&lt;Label</span><span class="w"> </span><span class="na">fx:id=</span><span class="s">"welcomeText"</span><span class="nt">/&gt;</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="nt">&lt;Button</span><span class="w"> </span><span class="na">text=</span><span class="s">"Hello!"</span><span class="w"> </span><span class="na">onAction=</span><span class="s">"#onHelloButtonClick"</span><span class="nt">/&gt;</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="nt">&lt;/VBox&gt;</span>
-</span></code></pre></div></td></tr></table></div>
-<p>La contenu graphique commence avec un <a href="...">conteneur (<em>layout</em>)</a> de type <code class="language-java highlight"><span class="n">VBox</span></code>. Tous les mots qui commencent par une majuscule en FXML sont des classes de java alors que les mots en minuscule sont des attributs de ces classes. Pour les attributs complexes (comme <code class="language-java highlight"><span class="n">padding</span></code> qui contient un objet <code class="language-java highlight"><span class="n">Insets</span></code>) on peut les indiquer comme des balises à par entière, inclues dans la balise de la classe (on les place toujours au début). Les objets JavaFX, comme tout fichier XML, doit être structuré en arbre. </p>
-<p>Dans le conteneur <strong>parent</strong> (la racine de l'arbre) contient l'attribut <code class="language-java highlight"><span class="nl">fx</span><span class="p">:</span><span class="n">controller</span></code> qui indique quelle classe agira comme contrôleur de cette <code class="language-java highlight"><span class="n">Scene</span></code>. Dans l'objet <code class="language-java highlight"><span class="n">Label</span></code> on retrouve la propriété <code class="language-java highlight"><span class="nl">fx</span><span class="p">:</span><span class="n">id</span></code> qui permet de nommer l'objet et de lui accéder (<strong>avec ce nom</strong>) dans le contrôleur associé. Même chose pour l'objet <code class="language-java highlight"><span class="n">Button</span></code> son événement <code class="language-java highlight"><span class="n">onAction</span></code> (lorsqu'on le clique) déclenche la méthode <code class="language-java highlight"><span class="n">onHelloButtonClick</span></code> dans le contrôleur. Le <code>#</code> est important pour indiquer qu'il s'agit d'une méthode qui est appelée.</p>
-<div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">HelloController.java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">edu.cegepvicto.itineraire</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.fxml.FXML</span><span class="p">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javafx.scene.control.Label</span><span class="p">;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloController</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="nd">@FXML</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Label</span><span class="w"> </span><span class="n">welcomeText</span><span class="p">;</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="nd">@FXML</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onHelloButtonClick</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">        </span><span class="n">welcomeText</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">"Welcome to JavaFX Application!"</span><span class="p">);</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Le contrôleur <code class="language-java highlight"><span class="n">HelloController</span></code> contient le champs <code class="language-java highlight"><span class="n">welcomeText</span></code> décoré de l'annotation <code class="language-java highlight"><span class="nd">@FXML</span></code> pour indiquer qu'un élément dans le FXML possède un <code class="language-java highlight"><span class="nl">fx</span><span class="p">:</span><span class="n">id</span></code> du nom de l'attribut. Il en va de même pour la méthode <code class="language-java highlight"><span class="n">onHelloButtonClick</span></code> (qui aurait pu être privée sans problème).</p></div>
+<details class="tip">
+<summary>Forcer le changement de mot de passe</summary>
+<p>Forcer le changement de mot de passe n'est pas une solution à mettre en place systématiquement, il faut procéder à l'évaluation des risques et que la surveillance passive soit un risque important.</p>
+</details>
+<ol start="2">
+<li>
+<p>Multipler les indications de sécurité : </p>
+<ul>
+<li>Informations provenant de l'extérieur;</li>
+<li>Téléchargement et diffusion des informations stockées dans le système;</li>
+<li>Téléversement de fichiers;</li>
+<li>Partage de mot de passe (rendre simple ou modulaire l'accès aux fonctionnalités);</li>
+</ul>
+</li>
+<li>
+<p>Ajouter des en-têtes HTTP comme <em>X-Frame-Options</em> pour prévenir contre le clickjacking.</p>
+</li>
+</ol>
+<h3 id="environnement-de-production">Environnement de production</h3>
+<ol>
+<li>Appliquer les mises à jour sur l'environnement du serveur;</li>
+<li>Surveiller les comportements suspects et les tentatives d’intrusion;</li>
+<li>Utiliser un déploiement automatique pour limiter les erreurs;</li>
+<li>Sécurisation des fichiers et des accès.</li>
+</ol>
+<h3 id="securite-dans-les-procedes">Sécurité dans les procédés</h3>
+<ol>
+<li>Mettre à jour régulièrement les bibliothèques et cadriciels;</li>
+<li>Appliquer une stratégie de gestion des accès dans l'équipe de travail;</li>
+<li>Journalisation et surveillance des opérations de développement.</li>
+</ol>
+<h2 id="recuperation">Récupération</h2>
+<p>Un plan de récupération après attaque doit être mis en place. Une attaque prend en moyenne 194 jours pour être découverte et 66 jours pour être endiguée (IDM, 2024). Il va sans dire que pour des opérations aussi longues la récupération doit être planifiée et permettre aux opérations de continuer.</p>
+<p>Parmi les opérations à prévoir normalement dans un processus de récupération :</p>
+<ul>
+<li>Coupure d'accès au système (on ne peut plus simplement débrancher la machine...);</li>
+<li>Réinitialisation massive de mot de passe;</li>
+<li>Identification des corruptions ou irrégularités dans les données;</li>
+<li>Identification des données compromises;</li>
+<li>Isoler des fonctionnalités ou permettre au système de fonctionner en mode restreint (par exemple en connexion locale seulement);</li>
+<li>Permettre la restauration des données de sauvegarde;</li>
+<li>Rôle et responsabilité de chaque partie dans le processus (interne et sous-traitance).</li>
+</ul>
+<p>Le processus doit être testé périodiquement, car un processus désuet ou une sauvegarde qu'on n'est pas en mesure de restaurer n'est pas utile, et parfois même nuisible.</p>
+<p>Les opérations normales ne devraient reprendre qu'après la découverte et la sécurisation du mécanisme d'accès.</p>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"></path></svg></span> Références</h2>
+<p>IBM (2024). Rapport sur le coût d’une violation de données en 2024. https://www.ibm.com/reports/data-breach</p>
+<div class="footer">
+
+    <img alt="📖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4d6.svg" title=":book:"> <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/">Documentation</a> | <span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_AIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_AIA.png"></a> </span> | <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"></path></svg></span> <a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a>
+
+</div></div>
 
 
 
@@ -2103,7 +2092,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-10-24</span>
   </span>
 
     
@@ -2133,7 +2122,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../developpement_securitaire/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gestion de la sécurité">
+          <a href="../efficacite/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Efficacité des algorithmes">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2143,20 +2132,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Gestion de la sécurité
+                Efficacité des algorithmes
               </div>
             </div>
           </a>
         
         
           
-          <a href="../creer_projet_2025/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Configurer son projet (cohorte 2025)">
+          <a href="../javafx_intro/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Introduction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Configurer son projet (cohorte 2025)
+                Introduction
               </div>
             </div>
             <div class="md-footer__button md-icon">

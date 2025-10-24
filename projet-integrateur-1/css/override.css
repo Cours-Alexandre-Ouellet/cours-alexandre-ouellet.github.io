@@ -56,6 +56,10 @@ span.tooltip {
   font-size: smaller;
   border-top: solid 1.5px darkslategray;
 }
+.img-ia img {
+  width: 48px;
+  vertical-align: middle;
+}
 
 /* Admonition exemple - code */
 
