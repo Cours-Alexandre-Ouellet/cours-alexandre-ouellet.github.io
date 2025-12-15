@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/guide-uml/objet/det-banque/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/guide-uml/objet/dcc-banque/">
       
       
-        <link rel="prev" href="../det-exemple/">
+        <link rel="prev" href="../dcc-exemple/">
       
       
-        <link rel="next" href="../../systeme/systemes/">
+        <link rel="next" href="../det-norme/">
       
       
       <link rel="icon" href="../../images/siteicon.png">
@@ -658,8 +658,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -674,11 +676,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -692,7 +694,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Diagramme de classes de conception
@@ -745,10 +747,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../dcc-banque/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -757,6 +768,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -774,10 +786,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -792,11 +802,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -810,7 +820,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Diagramme d'états-transitions
@@ -863,19 +873,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../det-banque/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +885,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1229,14 +1229,20 @@
 
 
 <h1 id="banque-de-depannage">Banque de dépannage</h1>
-<p><span class="question">Mon objet peut être dans deux états en même temps, comment puis-je représenter cette situation ?</span></p>
+<p><span class="question">Est-ce que je dois représenter les accesseurs et mutateurs (get, set et is)</span></p>
 <ul>
-<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Tranformer en un superétat l'un des deux états.</li>
-<li>Ajouter un nouvel état qui correspond à la situation où l'objet se retrouve dans les états en même temps .</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Non, on ne représente pas ce type de méthode sur un diagramme.</li>
 </ul>
-<div class="footer">
-<p><a href="https://www.omg.org/spec/UML/2.5.1/About-UML"><img alt="🔖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f516.svg" title=":bookmark:" /> Documentation</a> | <span class="img-ia" markdown><a class="glightbox" href="../../images/IA_NIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_NIA.png" /></a></span> | <a href="https://forms.office.com/r/ccF1FGKW25"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg></span> Signaler une erreur</a></p>
-</div>
+<p><span class="question">Le guide dit qu'on doit représenter de grandes parties du système sur un même diagramme. Qu'est-ce qu'une grande partie ?</span></p>
+<ul>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Tout le système idéalement. Un système bien conçu devrait admettre un faible niveau de couplage entre des types qui ne sont pas dans le même module. Donc, naturellement les liens devraient se disposer de façon à garder le schéma organisé.</li>
+<li>On peut aussi faire des paquets (concept de conception assimilable au espace de noms) et modéliser l'intérieur des paquets : il faut simplement s'assurer que ceux-ci soient raissonnablement importants (&gt; 20 types)</li>
+<li>Ultimement, on peut séparer le diagramme, mais cela se fait au coût de son utilité, il faut donc le découper de façon à minimiser les pertes d'informations. Aussi, chaque type doit se retrouver que dans <strong>une section</strong>. Disperser l'information d'un type mène à des erreurs et des incohérences.</li>
+</ul>
+<p><span class="question">Mon diagramme ressemble à un spaghetti, que puis-je faire ?</span></p>
+<ul>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Cela révèle un problème, dans la conception des liens entre les types. Pour y remédier, il est suggéré d'ajouter des interfaces et rendre les types plus cohésif en séparant les responsabilités multiples dans un type à plusieurs types ayant chacun une responsabilité unique.</li>
+</ul>
 
 
 
@@ -1257,7 +1263,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-01-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-12-15</span>
   </span>
 
     
@@ -1287,7 +1293,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../det-exemple/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Exemples">
+          <a href="../dcc-exemple/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Exemples">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1304,13 +1310,13 @@
         
         
           
-          <a href="../../systeme/systemes/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Modélisation des systèmes">
+          <a href="../det-norme/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Normes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Modélisation des systèmes
+                Normes
               </div>
             </div>
             <div class="md-footer__button md-icon">

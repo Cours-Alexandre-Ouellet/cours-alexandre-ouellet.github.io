@@ -1506,6 +1506,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ajouter-le-module-repertoire-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajouter le module / répertoire des tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-un-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Déclarer un test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-dun-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure d'un test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assertion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancer des tests
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1934,11 +1988,13 @@
 <div class="language-kotlin highlight"><span class="filename">Utilisation de la dépendance JUnit</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">testImplementation</span><span class="p">(</span><span class="n">platform</span><span class="p">(</span><span class="s">"org.junit:junit-bom:5.9.1"</span><span class="p">))</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">testImplementation</span><span class="p">(</span><span class="s">"org.junit.jupiter:junit-jupiter"</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">testRuntimeOnly</span><span class="p">(</span><span class="s">"org.junit.platform:junit-platform-launcher"</span><span class="p">)</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">tasks</span><span class="p">.</span><span class="na">test</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="n">useJUnitPlatform</span><span class="p">()</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">tasks</span><span class="p">.</span><span class="na">test</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">useJUnitPlatform</span><span class="p">()</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1949,21 +2005,26 @@
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">testImplementation</span><span class="p">(</span><span class="s">"org.junit.jupiter:junit-jupiter-api:</span><span class="si">${</span><span class="n">junitVersion</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">testRuntimeOnly</span><span class="p">(</span><span class="s">"org.junit.jupiter:junit-jupiter-engine:</span><span class="si">${</span><span class="n">junitVersion</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">test</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">useJUnitPlatform</span><span class="p">()</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">testRuntimeOnly</span><span class="w"> </span><span class="p">(</span><span class="s">"org.junit.platform:junit-platform-launcher"</span><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">test</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="n">useJUnitPlatform</span><span class="p">()</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<p>De plus, il faut ajouter un module dans le projet java pour contenir les tests</p>
-<h1 id="declarer-un-test">Déclarer un test</h1>
+<h2 id="ajouter-le-module-repertoire-des-tests">Ajouter le module / répertoire des tests</h2>
+<p>Vos tests doivent être rassemblés dans un dossier pour contenir tous les tests. Vous pouvez le créer en sélectionnant l'option "test/java". Votre projet devrait être organisé de la sorte. Vos classes vont dans <code>main/java</code> tandis que les tests vont dans <code>test/java</code>. </p>
+<figure>
+<a class="glightbox" href="../../images/structure-test.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/structure-test.png"></a>
+</figure>
+<h2 id="declarer-un-test">Déclarer un test</h2>
 <p>Pour déclarer un test, il faut faire un nouveau fichier de test (classe kotlin) dans le répertoire <strong>test</strong>.</p>
 <p><a class="glightbox" href="../../images/9-classe%20test.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="center" src="../../images/9-classe%20test.png"></a></p>
 <hr>
-<h1 id="les-annotations">Les annotations</h1>
+<h2 id="les-annotations">Les annotations</h2>
 <p>4 annotations de méthodes sont disponibles pour gérer l'exécution des tests</p>
 <ol>
 <li><code>BeforeAll</code> : méthode exécutée une fois avant tous les tests.</li>
@@ -1972,7 +2033,7 @@
 <li><code>AfterEach</code> : méthode exécutée après un test</li>
 </ol>
 <hr>
-<h1 id="structure-dun-test">Structure d'un test</h1>
+<h2 id="structure-dun-test">Structure d'un test</h2>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">class</span> <span class="nc">TestConvertisseurFormatHeure</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ConvertisseurFormatHeure</span><span class="w"> </span><span class="n">convertisseur</span><span class="p">;</span><span class="w"> </span>
@@ -1988,7 +2049,7 @@
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
 </span></code></pre></div>
 <hr>
-<h1 id="assertion">Assertion</h1>
+<h2 id="assertion">Assertion</h2>
 <p>Une <strong>assertion</strong> consiste à vérifier une condition et à lever une erreur en cas de non-respect. Les méthodes prennent la forme :</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>assertEquals(valeur attendue, valeur réelle, message en cas d'erreur)
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>assertEquals(valeur attendue, valeur réelle, tolérance, message en cas d'erreur)
@@ -2011,7 +2072,9 @@
 </span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="n">val</span><span class="w"> </span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">convertisseur</span><span class="p">.</span><span class="na">formatter</span><span class="p">(</span><span class="mf">1.5f</span><span class="p">,</span><span class="w"> </span><span class="s">"h"</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
 </span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="n">assertEquals</span><span class="p">(</span><span class="s">"1h30"</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="p">)</span>
 </span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="p">}</span>
-</span></code></pre></div></div>
+</span></code></pre></div>
+<h2 id="lancer-des-tests">Lancer des tests</h2>
+<p>Pour lancer les tests, il faut aller dans le menu <em>gradle</em> et sélectionner l'option <code>verification/test</code>.</p></div>
 
 
 
