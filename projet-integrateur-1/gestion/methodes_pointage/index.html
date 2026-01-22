@@ -1031,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/programmation_securitaire/" class="md-nav__link">
+      <a href="../../implementation/developpement_securitaire/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1113,6 +1113,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../implementation/creer_projet_2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurer son projet (cohorte 2025)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../implementation/formulaire_javafx/" class="md-nav__link">
         
   
@@ -1134,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/conteneur_javafx.md" class="md-nav__link">
+      <a href="../../implementation/conteneurs_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,11 +1218,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/menu_javafx.md" class="md-nav__link">
+      <a href="../../implementation/listes_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Faire des menus
+    Afficher des listes de données
   </span>
   
 
@@ -1223,6 +1244,75 @@
   
   <span class="md-ellipsis">
     Erreurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Autres ressources de code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Autres ressources de code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/jdbc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfacer une base de données avec JDBC
   </span>
   
 
@@ -1913,12 +2003,12 @@
 <h2 id="methodes-a-pointage_1">Méthodes à pointage</h2>
 <p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles sont qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retire se biais en comparant les CU entre eux. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
 <dl>
-<dt><code>Impact sur l'architecture du système</code></dt>
+<dt><code>Impact sur l'architecture du système (A)</code></dt>
 <dd>Considère à quel point les CU ont un impact sur la structure du système. Un CU avec un fort impact de l'architecture est un CU dont les composantes on un fort degré de <span class="tooltip hint--top" aria-label="de nombreuses composantes dépendent des données de ce CU">dépendances sortantes</span>. Également, les CU qui manipulent beaucoup de données (car on optimisera pour les larges ensembles de données) où que l'on sait instable (à risque d'évoluer) seront considérées comme ayant un impact élevé sur l'architecture du système.</dd>
-<dt><code>Importance du cas</code></dt>
+<dt><code>Importance du cas (I)</code></dt>
 <dd>L'importance se définit par rapport au besoin de l'entité cliente. Une fonctionnalité importante sera développée plus rapidement (score d'importance plus élevé), car ces CU ont plus de valeurs pour permettre des déploiments rapides d'un système utilisable et utile.</dd>
-<dt><code>Complexité de développement</code></dt>
-<dd>Un CU complexe peut être complexe lors qu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asychrone), effectue un traitement parallèle ou tout autre tâche qui présente un défi d'implémentation. De façon général, les fonctionnalités complexes seront développées plus rapidement, car cela permet une meilleure assurance qualité de ces fonctionnalités complexes et permet de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</dd>
+<dt><code>Complexité de développement (C)</code></dt>
+<dd>Un CU complexe peut être complexe lors qu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asychrone), effectue un traitement parallèle ou tout autre tâche qui présente un défi d'implémentation. Développer les fonctionnalités complexes rapidement permet une meilleure assurance qualité de ces fonctionnalités complexes. Cela permet aussi de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</dd>
 </dl>
 <details class="ex-projet" open="open">
 <summary>Classification de 3 CU</summary>
@@ -2126,7 +2216,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-18</span>
   </span>
 
     

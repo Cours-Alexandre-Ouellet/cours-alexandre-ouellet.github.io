@@ -50,6 +50,17 @@ span.tooltip {
     padding-right: 10px;
 }
 
+
+.footer {
+  text-align: center;
+  font-size: smaller;
+  border-top: solid 1.5px darkslategray;
+}
+.img-ia img {
+  width: 48px;
+  vertical-align: middle;
+}
+
 /* Admonition exemple - code */
 
 :root {

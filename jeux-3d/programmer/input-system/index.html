@@ -898,6 +898,72 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Lire des actions dans les scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-comportements-behaviour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les comportements (behaviour)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les comportements (behaviour)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-trois-invocations-de-levenement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les trois invocations de l'événement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-avec-send-messages-ou-broadcast-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestion avec Send Messages ou Broadcast Messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-avec-invoke-unity-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestion avec Invoke Unity Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestion-avec-invoke-c-sharp-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestion avec Invoke C Sharp Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilise-le-callbackcontext" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilise le CallbackContext
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1310,10 +1376,14 @@
 <h2 id="le-fonctionnement-du-inputsystem">Le fonctionnement du InputSystem</h2>
 <div class="admonition info">
 <p class="admonition-title">Installation</p>
-<p>Dans Unity 6000, le <strong>InputSystem</strong> est installé d'office. Sinon, il faut l'installer en utilisant le gestionnaire de package et trouver dans le <em>UnityRegistry</em> le package nommé <em>InputSystem</em>.</p>
+<p>Dans Unity 6, le <strong>InputSystem</strong> est installé d'office. Sinon, il faut l'installer en utilisant le gestionnaire de package et trouver dans le <em>UnityRegistry</em> le package nommé <em>InputSystem</em>.</p>
 </div>
 <p>La gestion des entrées demande la création d'un asset de type <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code> qui définit les relations entre les actions et les touches permettant de réaliser ces actions. Ensuite, un <code class="language-c# highlight"><span class="n">GameObject</span></code> avec un composant <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span></code> sert à lier les actions à des objets du jeu. Il devrait y avoir qu'un <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span></code>par scène, en cas de multijoueur (avec écran séparé), il faut utiliser le composant <code class="language-c# highlight"><span class="n">Player</span><span class="w"> </span><span class="n">Input</span><span class="w"> </span><span class="n">Manager</span></code>.</p>
-<p><a class="glightbox" href="../../images/ajouter_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ajouter_input_action.png" /></a></p>
+<figure>
+
+<a class="glightbox" href="../../images/ajouter_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ajouter_input_action.png" /></a>
+
+</figure>
 <h2 id="configurer-une-action">Configurer une action</h2>
 <p>Dans la vue de l'asset <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code>, on peut configurer les actions. Un <code class="language-c# highlight"><span class="n">Input</span><span class="w"> </span><span class="n">Action</span></code> est composé de <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> qui sont des groupes de <code class="language-c# highlight"><span class="n">Action</span></code>. Chacun des <code class="language-c# highlight"><span class="n">Action</span></code> comporte des <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Properties</span></code> et des <code class="language-c# highlight"><span class="n">Binding</span></code> vers les contrôles. Chaque <code class="language-c# highlight"><span class="n">Binding</span></code> devrait faire référence à une action différente à l'intérieur de son groupe. Par exemple, la touche «&nbsp;A&nbsp;» devrait être liée à au plus une <code class="language-c# highlight"><span class="n">Action</span></code> dans chacune des <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code>.</p>
 <p>Par défaut, deux <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> sont créés, l'une appelée <code class="language-c# highlight"><span class="n">Player</span></code> qui permet la gestion des actions de la personne qui joue au jeu (déplacement, interagir avec des objets, déplacer la souris...) et une appelée <code class="language-c# highlight"><span class="n">UI</span></code> qui gère l'interface utilisateur.</p>
@@ -1321,7 +1391,11 @@
 <p class="admonition-title">`#!c# UI Action Map</p>
 <p>L'<code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Map</span></code> de l'interface (<code class="language-c# highlight"><span class="n">UI</span></code>) est configurée pour s'intégrer avec les composantes d'interface de Unity. De plus, le basculement <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code> se fait automatiquement dans ce contexte. Il est donc fortement suggéré ne pas modifier les comportements de cet <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Map</span></code>.</p>
 </div>
-<p><a class="glightbox" href="../../images/structure_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/structure_input_action.png" /></a></p>
+<figure>
+
+<a class="glightbox" href="../../images/structure_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/structure_input_action.png" /></a>
+
+</figure>
 <p>On remarque dans cette capture d'écran :</p>
 <ol>
 <li>Les <code class="language-c# highlight"><span class="n">Action</span><span class="w"> </span><span class="n">Maps</span></code>. Dans la capture celle du <code class="language-c# highlight"><span class="n">Player</span></code> (valeurs par défaut) est sélectionnée.</li>
@@ -1339,7 +1413,11 @@
 <h2 id="action-de-bouton">Action de bouton</h2>
 <p>L'action d'un bouton est vérifiée seulement lors d'une interaction avec le contrôle. Unity ne vérifie pas continuellement si ce contrôle a été activé. C'est donc un type efficace pour tous les événements qui ressemblent à ... presser un bouton. Par défaut, l'état du bouton n'est pas vérifié au lancement, mais un paramètre permet de le faire.</p>
 <p>La création d'une <code class="language-c# highlight"><span class="n">Action</span></code> crée un <code class="language-c# highlight"><span class="n">Binding</span></code> vide. Les options d'un <code class="language-c# highlight"><span class="n">Binding</span></code> sont : </p>
-<p><a class="glightbox" href="../../images/binding_parameter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_parameter.png" /></a></p>
+<figure>
+
+<a class="glightbox" href="../../images/binding_parameter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/binding_parameter.png" /></a>
+
+</figure>
 <ol>
 <li>Le chemin vers le contrôle. Il est important de sélectionner le bon type d'entrée. Il est possible de taper dans la barre de sélection pour filtrer les contrôles disponibles.</li>
 <li>Le type de contrôleur (clavier, souris, manette, toucher ...). Cela peut sembler redondant avec la sélection du contrôle, mais il est important de l'indiquer pour gérer le passage entre les types de contrôleurs. </li>
@@ -1359,15 +1437,225 @@
 </div>
 <h2 id="action-de-valeur">Action de valeur</h2>
 <p>Une action de valeur lit continuellement les entrées et supporte une variété de types de retour. Cela permet, entre autres, de retourner une abstraction des contrôles de plusieurs types. Par exemple, on peut retourner un vecteur en deux dimensions pour les déplacements dans le plan (composante vers la droite et composante vers l'avant) au lieu de lire individuellement les quatre touches <span class="keys"><kbd class="key-w">W</kbd></span> <span class="keys"><kbd class="key-a">A</kbd></span> <span class="keys"><kbd class="key-s">S</kbd></span> et <span class="keys"><kbd class="key-d">D</kbd></span> .</p>
-<p><a class="glightbox" href="../../images/type_controle_valeur.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/type_controle_valeur.png" /></a></p>
+<figure>
+
+<a class="glightbox" href="../../images/type_controle_valeur.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/type_controle_valeur.png" /></a>
+
+</figure>
 <ol>
 <li>Le contrôle <code class="language-c# highlight"><span class="n">axis</span></code> retourne une valeur (dans un <code class="language-c# highlight"><span class="kt">float</span></code>) sur un axe de -1 à 1. Si le contrôle est analogique (comme un levier de contrôleur), alors la force appliquée est considérée. Donc un levier à moitié de son amplitude retourne 0.5. Au clavier, les valeurs -1 et 1 sont retournées, selon la touche appuyée. Utiliser ce contrôle au clavier inclut deux <code class="language-c# highlight"><span class="n">binding</span></code>, un positif et un négatif.</li>
 <li>Le contrôle <code class="language-c# highlight"><span class="n">integer</span></code> retourne toujours une valeur entière pour le contrôle utilisé.</li>
 <li>Le contrôle <code class="language-c# highlight"><span class="n">vector2</span></code> retourne un vecteur entre deux dimensions, soit la combinaison de deux <code class="language-c# highlight"><span class="n">axis</span></code>. On l'utilise par exemple pour les déplacements. Utiliser ce contrôle au clavier inclut quatre <code class="language-c# highlight"><span class="n">binding</span></code>, un positif et un négatif pour chaque axe.</li>
 </ol>
-<p><a class="glightbox" href="../../images/controle_4_direction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/controle_4_direction.png" /></a></p>
+<figure>
+
+<a class="glightbox" href="../../images/controle_4_direction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/controle_4_direction.png" /></a>
+
+</figure>
 <h2 id="lire-des-actions-dans-les-scripts">Lire des actions dans les scripts</h2>
-<p>Une fois les actions configurées, il faut amener </p>
+<p>Une fois les actions configurées, il faut lier l'<em>asset</em> des <code class="language-c# highlight"><span class="n">InputActions</span></code> avec le jeu. Pour ce faire, on utilise un composant <code class="language-c# highlight"><span class="n">PlayerInput</span></code> que l'on ajoute normalement à un <code class="language-c# highlight"><span class="n">GameObject</span></code> vide.</p>
+<figure>
+
+<a class="glightbox" href="../../images/player-input.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/player-input.png" width="400" /></a>
+
+</figure>
+<ol>
+<li><strong><em>Actions</em></strong> : L'<em>asset</em> des <code class="language-c# highlight"><span class="n">InputActions</span></code> qui définit les des <code class="language-c# highlight"><span class="n">actions</span></code> possibles du jeu;</li>
+<li><strong>Paramètres par défaut</strong> : l'entrée par défaut lorsque le jeu est lancé;</li>
+<li><strong><em>UI Input Module</em></strong> : le module de gestionnaire d'événements (le <em>game object EventSystem</em>). Il est généralement créé automatiquement lorsqu'on crée le permier <code class="language-c# highlight"><span class="n">Canvas</span></code> du jeu et devrait se lier automatiquement si le <code class="language-c# highlight"><span class="n">PlayerInput</span></code> est déjà en place;</li>
+<li><strong><em>Behaviour</em></strong> : le comportement pour envoyer les messages vers les autres <code class="language-c# highlight"><span class="n">GameObject</span></code>. Les différents comportement sont détaillés ci-dessous.;</li>
+<li><strong><em>Events</em></strong> : les gestionnaires d'événements pour les <code class="language-c# highlight"><span class="n">ActionMaps</span></code>. Peut varier selon le type de <em>behaviour</em> sélectionné;</li>
+<li>*<em>Événements de gestion des contrôles</em> : liste d'événement universels comme la perte d'un dispositif d'entrée ou un changement de contrôleur (ex. passage du clavier à un manette).</li>
+</ol>
+<h3 id="les-comportements-behaviour">Les comportements (<em>behaviour</em>)</h3>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/PlayerInput.html#notification-behaviors">4 comportements</a> pour la gestion des messages entre le <code class="language-c# highlight"><span class="n">InputSystem</span></code> et les <code class="language-c# highlight"><span class="n">GameObject</span></code> sont possibles :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comportement</th>
+<th style="text-align: left;">Fonctionnement</th>
+<th style="text-align: left;">Avantage</th>
+<th style="text-align: left;">Incovénient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>Send Messages</em></td>
+<td style="text-align: left;">Transmet un message en utilisant l'une des fonctions indiqué dans le message au <code class="language-c# highlight"><span class="n">GameObject</span></code> auquel le  <code class="language-c# highlight"><span class="n">PlayerInput</span></code> est attaché.</td>
+<td style="text-align: left;">Léger, utile lorsque toutes les entrés sont gérés par le même <code class="language-c# highlight"><span class="n">GameObject</span></code></td>
+<td style="text-align: left;">Centralise tous les message, prévient la croissance du jeu</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Broadcast Messages</em></td>
+<td style="text-align: left;">Transmet un message en utilisant l'une des fonctions indiqué dans le message au <code class="language-c# highlight"><span class="n">GameObject</span></code> auquel le  <code class="language-c# highlight"><span class="n">PlayerInput</span></code> est attaché. Le message descend dans la hiérarchie, donc un des enfants peut aussi le recevoir.</td>
+<td style="text-align: left;">Léger, utile lorsque toutes les entrées sont gérées par la même hiérarchie de <code class="language-c# highlight"><span class="n">GameObject</span></code></td>
+<td style="text-align: left;">Centralise tous les message, prévient la croissance du jeu</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Invoke Unity Events</em></td>
+<td style="text-align: left;">Invoque un événement sur n'importe quel <code class="language-c# highlight"><span class="n">GameObject</span></code> abonné avec le <em>wrapper</em>  <code class="language-c# highlight"><span class="n">UnityEvent</span></code></td>
+<td style="text-align: left;">Offre de la flexibilité dans la gestion des contrôles, permet l'assignation dans l'interface de <em>Unity</em></td>
+<td style="text-align: left;">L'appel des <em>UnityEvent</em> est lente, peut être plus difficile de trouver les récepteurs d'événement</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Invoke C Sharp Events</em></td>
+<td style="text-align: left;">Invoque un événement sur n'importe quel <code class="language-c# highlight"><span class="n">GameObject</span></code> abonné</td>
+<td style="text-align: left;">Offre de la flexibilité dans la gestion des contrôles</td>
+<td style="text-align: left;">Peut être plus difficile de trouver les récepteurs d'événement</td>
+</tr>
+</tbody>
+</table>
+<p>Dans le cadre du cours, on utilise <em>Invoke Unity Events</em>, mais beaucoup préfèrent la flexibilité et la rapidité de <em>Invoke C Sharp Events</em> pour les jeux plus complexes.</p>
+<div class="admonition extra">
+<p class="admonition-title">Utiliser entièrement des scripts</p>
+<p>Dans un jeu volumineux, on préfèrera faire un ou plusieurs scripts dédiés à la liaison des contrôles avec l'ajout manuel des événements.</p>
+</div>
+<h4 id="les-trois-invocations-de-levenement">Les trois invocations de l'événement</h4>
+<p>Une <code class="language-c# highlight"><span class="n">InputAction</span></code> sera évoquée trois fois à chaque fois que le contrôle associé est utilisé :</p>
+<ul>
+<li><em>started</em> : lorsque l'interaction avec le contrôle commence (on commence à appuyer sur la touche)</li>
+<li><em>performed</em> : lorsque l'interaction avec le contrôle se complète (par exemple, si on configure l'événement pour qu'on doive appuyer sur la touche 0.2 secondes). Il peut être en même temps que <em>started</em> pour les contrôles instannés</li>
+<li><em>canceled</em> : lorsque l'interaction avec le contrôle se termine (on relâche la touche)</li>
+</ul>
+<div class="admonition error">
+<p class="admonition-title">Erreur fréquente</p>
+<p>Si vos événements se comportent bizarrement, il se peut simplement que votre logique de contrôle ne prenne pas en compte que votre méthode de gestion d'événement est appelée trois fois. Dans la section sur <a href="#utilise-le-c-callbackcontext">le <code class="language-c# highlight"><span class="n">CallbackContext</span></code></a>, on verra comment régler ce problème. </p>
+</div>
+<h4 id="gestion-avec-send-messages-ou-broadcast-messages">Gestion avec <em>Send Messages</em> ou <em>Broadcast Messages</em></h4>
+<p>Supposons que l'on a créé un <code class="language-c# highlight"><span class="n">InputAction</span></code> nommé <strong>Deplacement</strong> qui devrait déplacer le personnage. La structure du projet devrait contenir un <code class="language-c# highlight"><span class="n">GameObject</span></code> personnage auquel on attache Le <code class="language-c# highlight"><span class="n">PlayerInput</span></code> et un script de gestion du personnage <code>Personnage</code>.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Personnage.cs</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span>
+<span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">UnityEngine.InputSystem</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Personnage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MonoBehaviour</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnDeplacement</span><span class="p">(</span><span class="n">InputAction</span><span class="p">.</span><span class="n">CallbackContext</span><span class="w"> </span><span class="n">contexte</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="c1">// Code appelé lorsque les contrôles du déplacement sont activités</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Si on utilise <em>Broadcast Messages</em>, alors le script <code>Personnage</code> peut être attaché à un  <code class="language-c# highlight"><span class="n">GameObject</span></code> enfant de celui qui a le  <code class="language-c# highlight"><span class="n">PlayerInput</span></code></p>
+<h4 id="gestion-avec-invoke-unity-events">Gestion avec <em>Invoke Unity Events</em></h4>
+<p>Avec les <em>UnityEvent</em> on peut lier l'événement directement dans l'interface. Auquel cas, on utilise le contrôle tel qu'expliqué dans la section des <a href="../evenements/#unityevent"><em>UnityEvent</em></a>. L'événement est lancé aux trois moments d'invocation. Le nom de la méthode qui gère l'événement n'a pas d'importance. </p>
+<p>Toutes les méthodes uitlisée pour gérer un événement peuvent accepter un seul paramètre de type <code class="language-c# highlight"><span class="n">CallbackContext</span></code>.</p>
+<p>Dans le contexte de l'exemple précédent, sous le bloc <em>player</em> dans le <code class="language-c# highlight"><span class="n">PlayerInput</span></code>, on trouverait l'événement <strong>Deplacement</strong> et l'on pourrait y ajouter un gestionnaire d'événement.</p>
+<figure>
+    <a class="glightbox" href="../../images/unity_event_input_action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/unity_event_input_action.png" /></a>
+</figure>
+<h4 id="gestion-avec-invoke-c-sharp-events">Gestion avec <em>Invoke C Sharp Events</em></h4>
+<p>Cette méthode la plus versatile demande un peu plus de code à mettre en place. Il faut manuellement abonner l'objet qui doit répondre à l'événement. On fait cette affectation dans le <code class="language-c# highlight"><span class="n">Start</span></code>. Cela peut demander à ce que le <code class="language-c# highlight"><span class="n">PlayerInput</span></code> soit un Singleton ou soit référé dans l'objet géré. On doit affecter le gestionnaire à chacune des invocations que l'on souhaite gérer. C'est la seule méthode qui permet d'assigner un gestionnaire différent selon le moment de l'exécution de l'action. </p>
+<p>Il faut se référer à la page des <a href="../evenements/">événements</a> pour les syntaxes utilisés.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Personnage.cs</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span>
+<span class="normal"><a href="#__codelineno-1-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">UnityEngine.InputSystem</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Personnage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MonoBehaviour</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="c1">// Référence sur l&#39;objet qui contient le PlayerInput</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">PlayerInput</span><span class="w"> </span><span class="n">controles</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Start</span><span class="p">()</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">        </span><span class="c1">// Récupère l&#39;InputAction avec le format InputMap/InputAction</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">        </span><span class="n">InputAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">controles</span><span class="p">.</span><span class="n">FindAction</span><span class="p">(</span><span class="s">&quot;player/Deplacement&quot;</span><span class="p">);</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">        </span><span class="n">action</span><span class="p">.</span><span class="n">started</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">CommencerDeplacement</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="n">action</span><span class="p">.</span><span class="n">canceled</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">Arreter</span><span class="p">;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Destroy</span><span class="p">()</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">        </span><span class="n">InputAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">controles</span><span class="p">.</span><span class="n">FindAction</span><span class="p">(</span><span class="s">&quot;player/Deplacement&quot;</span><span class="p">);</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">        </span><span class="n">action</span><span class="p">.</span><span class="n">started</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">CommencerDeplacement</span><span class="p">;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">        </span><span class="n">action</span><span class="p">.</span><span class="n">canceled</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">Arreter</span><span class="p">;</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">CommencerDeplacement</span><span class="p">(</span><span class="n">InputAction</span><span class="p">.</span><span class="n">CallbackContext</span><span class="w"> </span><span class="n">contexte</span><span class="p">)</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">        </span><span class="c1">// Le personnage commence à se déplacer</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ArreterDeplacement</span><span class="p">(</span><span class="n">InputAction</span><span class="p">.</span><span class="n">CallbackContext</span><span class="w"> </span><span class="n">contexte</span><span class="p">)</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">        </span><span class="c1">// Permet au personnage d&#39;arrêter de se déplacer</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="utilise-le-callbackcontext">Utilise le <code class="language-c# highlight"><span class="n">CallbackContext</span></code></h3>
+<p>Le <code class="language-c# highlight"><span class="n">CallbackContext</span></code> permet d'obtenir des informations sur l'événement dans la méthode qui gère la réponse au contrôle. On peut connaître le moment du cycle d'invocation (<em>started</em>, <em>performed</em> ou <em>canceled</em>) avec les propritétés boolééennes du même nom de l'objet <code class="language-c# highlight"><span class="n">CallbackContext</span></code>. On peut obtenir les valeurs passés par le contrôles (dans un contrôle <code>axis</code> ou <code>vector2</code> par exemple) avec la méthode générique <code class="language-c# highlight"><span class="n">ReadValue</span></code>.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Personnage.cs</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">UnityEngine.InputSystem</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Personnage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MonoBehaviour</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Deplacement</span><span class="p">(</span><span class="n">InputAction</span><span class="p">.</span><span class="n">CallbackContext</span><span class="w"> </span><span class="n">contexte</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">        </span><span class="c1">// Récupération des axes du déplacement</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="n">Vector2</span><span class="w"> </span><span class="n">deplacement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">contexte</span><span class="p">.</span><span class="n">ReadValue</span><span class="o">&lt;</span><span class="n">Vector2</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">contexte</span><span class="p">.</span><span class="n">started</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">            </span><span class="c1">// On commence le déplacement</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">contexte</span><span class="p">.</span><span class="n">canceled</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">            </span><span class="c1">// On arrête le déplacement</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 
 
 
@@ -1388,7 +1676,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-09-18</span>
   </span>
 
     
