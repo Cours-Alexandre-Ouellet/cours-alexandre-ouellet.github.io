@@ -24,7 +24,7 @@
     
     
       
-        <title>Révision Numpy et collections - Simulations en astrophysique</title>
+        <title>Révision Python - liste, numpy et matplotlib - Simulations en astrophysique</title>
       
     
     
@@ -86,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#revision-python-liste-numpy-et-matplotlib" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Révision Numpy et collections
+              Révision Python - liste, numpy et matplotlib
             
           </span>
         </div>
@@ -366,12 +371,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Révision Numpy et collections
+    Révision Python - liste, numpy et matplotlib
   </span>
   
 
@@ -445,9 +452,7 @@
                   
 
 
-  <h1>Révision Numpy et collections</h1>
-
-<p>Révision python</p>
+<h1 id="revision-python-liste-numpy-et-matplotlib">Révision Python - liste, numpy et matplotlib</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
@@ -458,11 +463,45 @@
 <p>120 minutes</p>
 </div>
 </div>
-<p>Cette page contient des exercices de révision sur le langage de programmation Python en particulier l'utilisation des conteneurs de données et de la bibliothèque <em>Numpy</em>. Certains problèmes font appel à des notions de physique ou mathématiques que vous pourriez ne pas avoir vu, selon votre parcours scolaire. N'hésitez pas à demander de l'aide pour ces notions.</p>
+<p>Cette page contient des exercices de révision sur le langage de programmation Python en particulier l'utilisation des conteneurs de données et de la bibliothèque <em>Numpy</em>. Certains problèmes font appel à des notions de physique ou mathématiques que vous pourriez ne pas avoir vues, selon votre parcours scolaire. N'hésitez pas à demander de l'aide pour ces notions.</p>
 <p>Pour référence : <a href="https://programmation-en-sciences.github.io/">notes de cours de programmation en science</a></p>
 <ol>
 <li>On souhaite tester empiriquement le <a href="https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires">paradoxe des anniversaires</a>. Faites une simulation où l'on sélectionne une date d'anniversaire (un nombre entre 0 et 364 inclus) aléatoire dans un groupe de 23 personnes. Répétez la simulation 50 fois et calculez quelle proportion des groupes possède au moins deux individus qui ont la même date d'anniversaire.</li>
-<li>On souhaite mesurer des positions d'un objet en chute libre (initialement au repos) pendant un certain intervalle de temps. Les mesures se prennent à interval régulier de 0.1 secondes. On mesure lance l'objet d'un masse de 3kg d'une hauteur de 50m. Vous devez mesurer jusqu'à ce que l'objet atteigne le sol (hauteur de 0). Vous devez ensuite lire à la console un choix de temps à afficher et afficher la position de l'objet à ce moment.</li>
+<li>
+<p>Importez les fonctions de l'exercice 1 dans un nouveau fichier <a href="https://programmation-en-sciences.github.io/bases-de-programmation/fonctions/#structurer-un-programme">revoir cette section</a>. À partir de cela, calculez, avec 100 répétitions de l'exécution :</p>
+<ol>
+<li>La plus petite proportion observée et le numéro de la simulation associée</li>
+<li>La plus grande proportion observée et le numéro de la simulation associée</li>
+<li>La moyenne et l'écart-type</li>
+<li>L'intervalle de confiance à 5% (<span class="arithmatex">\(z_{0.975}=1.96\)</span>)</li>
+<li>Tous les résultats en ordre croissant</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Intervalle de confiance</p>
+<p>L'intervalle de confiance pour une moyenne est donné par </p>
+<div class="arithmatex">\[
+\left[\bar{x} - z_{0.975}\frac{\sigma}{\sqrt{n}}; \bar{x} + z_{0.975}\frac{\sigma}{\sqrt{n}} \right]
+\]</div>
+</div>
+</li>
+<li>
+<p>On souhaite mesurer des positions d'un objet en chute libre (initialement au repos) pendant un certain intervalle de temps. Les mesures se prennent à intervalle régulier de 0.1 seconde. On lance l'objet d'une masse de 3kg d'une hauteur de 50m. Vous devez mesurer jusqu'à ce que l'objet atteigne le sol (hauteur de 0). Vous devez ensuite lire à la console un choix de temps à afficher et afficher la position de l'objet à ce moment.</p>
+</li>
+<li>Tracez le graphique de la hauteur de l'objet en fonction du temps écoulé. Faites-le pour un intervalle de temps entre 0 et 4 secondes par intervalle de 0.1 seconde. Faites générer un graphique de type nuage de points et un graphique avec la courbe. En extra, gérez le fait que le sol est à 0m et que l'objet ne peut descendre sous cette limite.</li>
+<li>
+<p>Évaluez les expressions suivantes :</p>
+<ol>
+<li><span class="arithmatex">\(log(5)\)</span></li>
+<li><span class="arithmatex">\(log_4(91)\)</span></li>
+<li><span class="arithmatex">\(ln(7)\)</span></li>
+<li><span class="arithmatex">\(e^8\)</span></li>
+<li><span class="arithmatex">\(|-6|\)</span></li>
+<li><span class="arithmatex">\(\sqrt[3]475\)</span>    </li>
+<li><span class="arithmatex">\(sin(\frac{\pi}{4})\)</span></li>
+<li><span class="arithmatex">\(sec(\frac{\pi}{2})\)</span></li>
+<li><span class="arithmatex">\(arctan(0.1)\)</span></li>
+</ol>
+</li>
 </ol>
 <div class="footer">
 
