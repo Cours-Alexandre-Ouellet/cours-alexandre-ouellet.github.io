@@ -665,16 +665,18 @@ y_2 &amp;= y_0 + h \times y'_1 \\\\
 <span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">nb_etapes</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">nb_etapes</span><span class="p">):</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">y_i</span> <span class="o">=</span> <span class="mi">2</span>                             
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">nb_etapes</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_etapes</span><span class="p">):</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="n">y_i</span> <span class="o">=</span> <span class="n">y_i</span> <span class="o">+</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">y_i</span><span class="p">)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="k">return</span> <span class="n">y_i</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">euler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="n">y_i1</span> <span class="o">=</span> <span class="n">y_i</span> <span class="o">+</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">y_i</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>        <span class="n">y_i</span> <span class="o">=</span> <span class="n">y_i1</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="k">return</span> <span class="n">y_i</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">euler</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 <p>La variable <code>y_i</code> prend les différentes valeurs d'approximation. On l'initialise à 2 à cause de la condition initiale du problème. On calcule ensuite le pas avec le nombre d'étapes et l'intervalle. Ensuite, on boucle pour le nombre d'étapes déterminées.</p>
 <p>La ligne 6 représente la formule de la méthode d'Euler. À droite du égal, on a le calcul de la prochaine étape. Comme un ordinateur travaille de façon séquentielle, toute la partie de droite est calculée <strong>avant</strong> l'affectation. On voit donc l'usage de la valeur précédente et du pas. On a remplacé la pente de la dérivée de l'étape précédente par son approximation (<code>0.5 * y_i</code>) dû à l'équation différentielle donnée.</p>
@@ -684,7 +686,7 @@ y_2 &amp;= y_0 + h \times y'_1 \\\\
 </ol>
 <details class="success">
 <summary>Solution</summary>
-<p>24.7525</p>
+<p>125.7624</p>
 </details>
 <ol start="2">
 <li>Résolver le problème  <span class="arithmatex">\(y'(x) = x \times y(x)\)</span> avec <span class="arithmatex">\(y(0) = 1\)</span> comme condition initiale. Trouvez la valeur de <span class="arithmatex">\(y(1)\)</span> avec un pas de 0.01.</li>
