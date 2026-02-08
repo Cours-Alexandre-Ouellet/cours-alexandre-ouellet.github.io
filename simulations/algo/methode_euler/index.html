@@ -18,6 +18,8 @@
         <link rel="prev" href="../methodes_numeriques/">
       
       
+        <link rel="next" href="../methode_euler_2_eq/">
+      
       
       <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
@@ -87,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methode-deuler-explicite" class="md-skip">
+        <a href="#methode-deuler" class="md-skip">
           Aller au contenu
         </a>
       
@@ -566,6 +568,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methode_euler_2_eq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Méthode d'Euler avec deux équations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../erreur_euler.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erreur théorique de la méthode d'Euler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -588,7 +632,7 @@
                   
 
 
-<h1 id="methode-deuler-explicite">Méthode d'Euler explicite</h1>
+<h1 id="methode-deuler">Méthode d'Euler</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
@@ -699,7 +743,7 @@ y_2 &amp;= y_0 + h \times y'_1 \\\\
 <li>Soit un objet dont la vitesse varie dans le temps. La vitesse (m/s) est égale au produit du cosinus du temps écoulé par la position. L'équation régissant la vitesse <code>v</code> en fonction de la position <code>p</code> est :</li>
 </ol>
 <div class="arithmatex">\[
-v = cos(t)p(t) \Leftarrow p'(t) = cos(t)p(t)
+v = cos(t)p(t) \Rightarrow p'(t) = cos(t)p(t)
 \]</div>
 <p>Sachant que l'objet est initialement à la position 5 en <span class="arithmatex">\(t=0\)</span> (soit <span class="arithmatex">\(p(0) = 5\)</span>), trouvez quelle sera sa position à t = 2 avec un pas de 0.01. </p>
 <details class="success">
@@ -750,6 +794,22 @@ v = cos(t)p(t) \Leftarrow p'(t) = cos(t)p(t)
             </div>
           </a>
         
+        
+          
+          <a href="../methode_euler_2_eq/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthode d&#39;Euler avec deux équations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Méthode d'Euler avec deux équations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
