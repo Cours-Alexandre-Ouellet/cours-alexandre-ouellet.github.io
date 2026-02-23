@@ -1,0 +1,37 @@
+plugins {
+    id("java")
+    id("application")
+    id("org.openjfx.javafxplugin") version "0.1.0"
+}
+
+group = "edu.cegepvicto"    // Remplacer par groupId de votre projet
+version = "1.0-SNAPSHOT"    // Remplacer par versionnage sémantique
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    // Remplacer par votre classe qui hérite de Application
+    mainClass.set("edu.cegepvicto.ApplicationDemo")
+}
+
+javafx {
+    version = "25"
+    modules = listOf("javafx.controls", "javafx.fxml")
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
+    }
+}
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
