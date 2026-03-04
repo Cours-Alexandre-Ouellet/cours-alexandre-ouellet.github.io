@@ -88,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#exemple-1-reutiliser-les-scripts-et-changer-le-pivot-de-rotation" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -715,6 +720,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Réutiliser un script
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -725,6 +743,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reutiliser-les-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Réutiliser les scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bouger-le-centre-de-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bouger le centre de rotation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bouger le centre de rotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduire-une-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduire une référence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure du projet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -803,9 +882,91 @@
                   
 
 
-  <h1>Réutiliser un script</h1>
-
-
+<h1 id="exemple-1-reutiliser-les-scripts-et-changer-le-pivot-de-rotation">Exemple 1 : Réutiliser les scripts et changer le pivot de rotation</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>Utilisation d'un moteur de jeu <br/>
+Programmation orientée objet</p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>20 minutes</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<div>
+<p><span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_NIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_NIA.png" /></a></span></p>
+</div>
+<div>
+<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
+</div>
+</div>
+</div>
+</div>
+<p>Cette page présente la solution à l'<a href="../exemple1_mouvement_venus/#exercice-2">exercice de la section précédente</a>.</p>
+<h2 id="reutiliser-les-scripts">Réutiliser les scripts</h2>
+<p>Pour intégrer la Terre et la Lune dans le système, il faut d'abord créer leur hiérarchie d'objets, ce que l'on peut faire en copiant-collant Vénus et en modifiant la couleur. Ensuite, on pourrait faire un script pour chaque astre, mais on répliquerait beaucoup de code. L'idée va être de réutiliser le script de Vénus. On va donc d'abord commencer par le renommer <strong>astre</strong>. Ensuite, en sélectionnant l'objet Terre et Lune, on peut leur ajouter un script dans le bas de la page, dans la section <strong>Node</strong> de l'inspecteur.</p>
+<figure>
+    <a class="glightbox" href="../../images/godot_ajouter_script.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_ajouter_script.png" /></a>
+    <figcaption>Ajouter un script à un noeud</figcaption>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">Retirer un script</p>
+<p>Si vous ajoutez un script qui n'est plus nécessaire, vous pouvez le retirer avec l'option <strong>vider</strong> dans le menu du champs de script. Le menu est accessible par les 3 points.</p>
+</div>
+<p>En attachant le même script à plusieurs noeuds, chaque noeud exécute <strong>sa propre version du script</strong>, que l'on appelle instance. Donc chaque orbite sera gérée indépendamment. Les valeurs réglées dans l'inspecteur peuvent être personnalisées pour chaque instance du script.</p>
+<p>Voici les 3 configurations utilisées pour chacun des astres. Note : le champ <code>centre rotation</code> sera ajouté à la prochaine étape.</p>
+<div style="display: flex; align-items: center; gap: 0.5rem;">
+<figure>
+    <a class="glightbox" href="../../images/godot_config_venus.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_config_venus.png" /></a>
+    <figcaption>Configuration du script astre pour Vénus</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/godot_config_terre.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_config_terre.png" /></a>
+    <figcaption>Configuration du script astre pour la Terre</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/godot_config_lune.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_config_lune.png" /></a>
+    <figcaption>Configuration du script astre pour la Lune</figcaption>
+</figure>
+</div>
+<p>Les périodes de rotation sont ajustées de façon relative les unes aux autres. On verra le pourquoi de ce choix à la prochaine section.</p>
+<h2 id="bouger-le-centre-de-rotation">Bouger le centre de rotation</h2>
+<p>Pour changer le centre de rotation, il suffit de gérer la rotation comme se faisant autour de l'origine, puis de décaler le centre de rotation après avoir fait les calculs. Pour connaître la position d'un centre de rotation mobile, il faut utiliser une référence vers un autre des objets de la scène.</p>
+<h3 id="introduire-une-reference">Introduire une référence</h3>
+<p>Pour référer à un autre objet, il faut déclarer une variable du type auquel l'on souhaite faire référence. Dans notre cas, les astres sont des <code>Node</code>, mais aussi des <code>RigidBody3D</code>. Nous utiliserons ce second type dans cet exemple. Avec la référence, l'on peut accéder aux propriétés en appelant avec un point (.) entre la référence sur le noeud et sa propriété. </p>
+<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajout de la gestion du centre de rotation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Variable pour contenir la référence</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="err">@</span><span class="k">export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">centre_rotation</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">RigidBody3D</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">(</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">        </span><span class="n">rayon</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">cos</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="bp">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">periode</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">temps</span><span class="p">),</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="mf">0.0</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="n">rayon</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">sin</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="bp">PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">periode</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">temps</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="c1"># Instruction pour déplacer l&#39;objet avec son centre de rotation</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">centre_rotation</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="n">position</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">centre_rotation</span><span class="o">.</span><span class="n">position</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="c1"># ...</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="structure-du-projet">Structure du projet</h2>
+<p>Vous pouvez récupérer le projet dans l'état d'avancement de la fin cette page de notes ici : <a href="https://github.com/simulations-astrophysique/orbite-analytique-venus"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75"/></svg></span> Afficher le projet sur GitHub</a>.</p>
 
 
 
