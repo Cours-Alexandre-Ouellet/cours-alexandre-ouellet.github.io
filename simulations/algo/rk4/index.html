@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/simulations/algo/methodes_numeriques/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/simulations/algo/rk4/">
       
       
-        <link rel="prev" href="../../programmer/revision_numpy_collection/">
+        <link rel="prev" href="../methode_euler_2_eq/">
       
       
-        <link rel="next" href="../methode_euler/">
+        <link rel="next" href="../../godot/interface/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Algorithmes numériques - Simulations en astrophysique</title>
+        <title>Méthode de Runge-Kutta d'ordre 4 - Simulations en astrophysique</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methodes-numeriques" class="md-skip">
+        <a href="#runge-kutta-dordre-4" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Algorithmes numériques
+              Méthode de Runge-Kutta d'ordre 4
             
           </span>
         </div>
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../methodes_numeriques/" class="md-tabs__link">
           
   
   Méthodes numériques
@@ -472,30 +472,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Algorithmes numériques
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../methodes_numeriques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,86 +484,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#la-convergence-numerique-et-analytique" class="md-nav__link">
-    <span class="md-ellipsis">
-      La convergence numérique et analytique
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#les-iterations-et-les-erreurs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les itérations et les erreurs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les itérations et les erreurs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#efficacite-des-calculs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Efficacité des calculs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#les-erreurs-de-la-machine-et-les-limites-des-ordinateurs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les erreurs de la machine et les limites des ordinateurs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#les-pas-de-calcul" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les pas de calcul
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercice
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -656,10 +556,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../rk4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Méthode de Runge-Kutta d'ordre 4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -668,6 +588,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#methode-de-runge-kutta-dordre-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Méthode de Runge-Kutta d'ordre 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthode de Runge-Kutta d'ordre 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#premiere-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Première estimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seconde-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seconde estimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troisième estimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quatrieme-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quatrième estimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caluler-lestimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caluler l'estimation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume-des-equations-des-estimations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résumé des équations des estimations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-numerique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple numérique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemple numérique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteration-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Itération 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Itération 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -979,7 +1030,7 @@
                   
 
 
-<h1 id="methodes-numeriques">Méthodes numériques</h1>
+<h1 id="runge-kutta-dordre-4">Runge-Kutta d'ordre 4</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
@@ -999,316 +1050,107 @@
 </div>
 </div>
 </div>
-<p>L'informatique permet d'effectuer une multitude de calculs et de simultations numériques qui donne une solution appelée numérique. À la différence des solutions analytiques, les solutions numériques sont souvent des approximations avec une erreur (que l'on peut rendre aussi petite que souhaitée), mais permettent d'approximer tous les problèmes calculables (oui, il existe des fonctions non calculables...). Les solutions analytiques elles sont exactes, mais demandent beaucoup de travail humain pour être calculées. Dans de nombreuses circonstances, on peut traduire un problème sous forme d'algorithme et y trouver une solution numérique, sans pour autant être en mesure de le résoudre analytiquement.</p>
-<p>Habituellement les algorithmes numériques donnent une suite <span class="arithmatex">\({x_n}\)</span> de points qui convergent (s'approche) vers une limite donnée, pour des <span class="arithmatex">\(n\)</span> suffisamment grands. Vous avez sûrement étudié ce concept de limite et convergence dans les cours de calcul différentiel et intégral.</p>
-<h2 id="la-convergence-numerique-et-analytique">La convergence numérique et analytique</h2>
-<p>La convergence d'une suite de points <span class="arithmatex">\({x_n}\)</span> vers une limite <span class="arithmatex">\(L\)</span> permet d'obtenir le résultat d'une méthode de calcul numérique. Nous verrons l'effet des étapes de calcul dans les prochaines sections. Prenons l'exemple de calculer la valeur de <span class="arithmatex">\(\pi\)</span>. On peut utiliser la suite de <a href="https://fr.wikipedia.org/wiki/Formule_de_Leibniz_pour_%CF%80">Madhava-Leibniz</a> pour y arriver.</p>
-<div class="arithmatex">\[ 
-\frac{\pi}{4} = \sum_{k=0}^{\infty}\frac{(-1)^k}{2x+1} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} + \cdots
-\]</div>
-<div class="admonition tips">
-<p class="admonition-title">Pas super efficace</p>
-<p>Cette méthode n'est pas très efficace, mais est simple à comprendre. Pour une méthode plus efficace, vous pouvez utiliser la <a href="https://fr.wikipedia.org/wiki/Approximation_de_%CF%80">formule de Ramanujan</a></p>
-</div>
-<p>Voici la valeur calculer pour différentes valeurs de k</p>
-<p><center></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">k</th>
-<th style="text-align: left;">Approximation de <span class="arithmatex">\(\pi\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">4.000000</td>
-</tr>
-<tr>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">2.666666</td>
-</tr>
-<tr>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">3.466666</td>
-</tr>
-<tr>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">2.976046</td>
-</tr>
-<tr>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">3.232316</td>
-</tr>
-<tr>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">3.151493</td>
-</tr>
-<tr>
-<td style="text-align: left;">1 000</td>
-<td style="text-align: left;">3.142592</td>
-</tr>
-<tr>
-<td style="text-align: left;">2 500</td>
-<td style="text-align: left;">3.141992</td>
-</tr>
-<tr>
-<td style="text-align: left;">10 000</td>
-<td style="text-align: left;">3.141693</td>
-</tr>
-<tr>
-<td style="text-align: left;">100 000</td>
-<td style="text-align: left;">3.141603</td>
-</tr>
-<tr>
-<td style="text-align: left;">1 000 000</td>
-<td style="text-align: left;">3.141594</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
-<p>Donc dans cet exemple, on peut voir que les décimales de <span class="arithmatex">\(\pi\)</span> sont de plus en plus précises selon la valeur de <span class="arithmatex">\(k\)</span>.</p>
-<div class="admonition info">
-<p class="admonition-title">Suite de Cauchy</p>
-<p>Une suite est dite de Cauchy s'il existe une valeur à partir de laquelle la différence en valeur absolue entre deux termes consécutifs forme une suite strictement décroissante.</p>
-<p>D'un point de vue analytique, être de Cauchy est nécessaire, mais non suffisant pour conclure à une convergence. Dans le cas numérique, dès qu'une suite est de Cauchy, nous risquons d'observer ou de conclure à un résultat de convergence numérique. Cependant, il faut rester prudent, car être de Cauchy n'indique pas que la suite est convergente.</p>
-</div>
-<h2 id="les-iterations-et-les-erreurs">Les itérations et les erreurs</h2>
-<p>Dans le cas d'un algorithme de calcul numérique, on s'intéresse à la notion d'erreur afin de déterminer le niveau de précision atteint. Par exemple, voici quelques valeurs de l'approximation de <span class="arithmatex">\(\pi\)</span> avec leur valeur d'erreur.</p>
-<p><center></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">k</th>
-<th style="text-align: left;">Approximation de <span class="arithmatex">\(\pi\)</span></th>
-<th style="text-align: left;">Erreur (arrondie à 6 chiffres)</th>
-<th style="text-align: left;">Nombre de chiffres précis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">4.000000</td>
-<td style="text-align: left;">-0.588407</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">2.666666</td>
-<td style="text-align: left;">0.474927</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">3.232316</td>
-<td style="text-align: left;">-0.090723</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">3.151493</td>
-<td style="text-align: left;">-0.009900</td>
-<td style="text-align: left;">2</td>
-</tr>
-<tr>
-<td style="text-align: left;">1 000</td>
-<td style="text-align: left;">3.142592</td>
-<td style="text-align: left;">-0.000999</td>
-<td style="text-align: left;">3</td>
-</tr>
-<tr>
-<td style="text-align: left;">10 000</td>
-<td style="text-align: left;">3.141693</td>
-<td style="text-align: left;">-0.000100</td>
-<td style="text-align: left;">3</td>
-</tr>
-<tr>
-<td style="text-align: left;">100 000</td>
-<td style="text-align: left;">3.141603</td>
-<td style="text-align: left;">-0.000010</td>
-<td style="text-align: left;">4</td>
-</tr>
-<tr>
-<td style="text-align: left;">1 000 000</td>
-<td style="text-align: left;">3.141594</td>
-<td style="text-align: left;">-0.000001</td>
-<td style="text-align: left;">5</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
-<p>L'erreur est calculée en soustrayant la valeur approximée à la valeur réelle (<span class="arithmatex">\(valeur réelle - valeur approximée\)</span>). On peut généralement travailler avec la valeur absolue de cette erreur comme c'est ça grandeur qui est intéressante et non son signe. </p>
-<h3 id="efficacite-des-calculs">Efficacité des calculs</h3>
-<p>Certains algorithmes sont plus efficace que d'autres pour parvenir au calcul. Par exemple l'algorithme d'héron pour la racine carré prend la forme de la suite suivante pour la racine de <span class="arithmatex">\(a\)</span> :</p>
+<p>Dans l'estimation par la méthode d'Euler, l'erreur s'accumule rapidement et il est difficile de maintenir un système stable pour de grandes valeurs. La méthode de Runge-Kutta permet de résoudre le même type de problème que la méthode d'Euler, mais utilise une technique différente qui réduit grandement les erreurs.</p>
+<p>L'idée de base est la même que celle d'Euler, c'est-à-dire un processus itératif qui utilise l'estimation de la valeur de la fonction par la dérivée.</p>
 <div class="arithmatex">\[
-x_{k+1} = \frac{x_{k} + \frac{a}{x_k}}{2}
+y'(x) \approx y(x)
 \]</div>
-<p>L'efficacité de l'algorithme dépend du terme <span class="arithmatex">\(x_0 &gt; 0\)</span> choisi. Plus il est près de <span class="arithmatex">\(a\)</span>, plus efficace sera l'algorithme.</p>
-<p><center></p>
-<p><strong>Approximation de <span class="arithmatex">\(\sqrt{101}\)</span></strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">k</th>
-<th style="text-align: left;">Approximation avec <span class="arithmatex">\(x_0 = 1\)</span></th>
-<th style="text-align: left;">Erreur (arrondie à 4 chiffres)</th>
-<th style="text-align: left;">Approximation avec <span class="arithmatex">\(x_0 = 10\)</span></th>
-<th style="text-align: left;">Erreur (arrondie à 4 chiffres)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">51</td>
-<td style="text-align: left;">40,9501</td>
-<td style="text-align: left;">10,05</td>
-<td style="text-align: left;">0,0001</td>
-</tr>
-<tr>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">26,4901961</td>
-<td style="text-align: left;">16,4403</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">7,6966E-10</td>
-</tr>
-<tr>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">15,1514637</td>
-<td style="text-align: left;">5,1016</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">10,9087432</td>
-<td style="text-align: left;">0,8589</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">10,0836858</td>
-<td style="text-align: left;">0,0338</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">10,0499323</td>
-<td style="text-align: left;">5,6682E-05</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;">7</td>
-<td style="text-align: left;">10,0498756</td>
-<td style="text-align: left;">1,5985E-10</td>
-<td style="text-align: left;">10,0499</td>
-<td style="text-align: left;">0</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
-<h3 id="les-erreurs-de-la-machine-et-les-limites-des-ordinateurs">Les erreurs de la machine et les limites des ordinateurs</h3>
-<p>Les ordianteurs peuvent calculer un nombre maximal de décimales, ce qui cause une limitation dans la précision des calculs et l'accumulation d'<a href="https://programmation-en-sciences.github.io/bases-de-programmation/types-numeriques-variables-constantes/#le-cas-des-nombres-a-virgule">erreurs arithmétiques</a>. </p>
-<p>Donc le 0 qui apparaît dans l'exemple sur les racines n'est pas un réel 0, car il y a une infinité de décimale au développement numérique de la racine de 101. C'est simplement que le programme utiliser ne considère pas assez de décimales pour remarquer une erreur numérique.</p>
-<h2 id="les-pas-de-calcul">Les pas de calcul</h2>
-<p>Certains algorithmes numériques calculent la valeur d'une fonction sur un intervalle donné. Dans ces cas, on n'étudie pas le nombre d'itérations, mais plutôt une valeur appelé «&nbsp;pas&nbsp;» qui permet de subdiviser l'intervalle en plus petite zones. Plus le pas est petit, plus le calcul est précis, mais plus il faut d'itérations. Un exemple d'utilisation du pas est dans l'exercice 3 de la révision avec le MRUA.</p>
-<p>Un exemple d'utilisation du pas est dans le calcul d'intégrales numériques, comme avec la méthodes des trapèzes. Soit une fonction <span class="arithmatex">\(f(x)\)</span> et un intervalle <span class="arithmatex">\([a, b]\)</span> sur lequel <span class="arithmatex">\(f\)</span> est continue, on cherche à calculer :</p>
+<p>lorsque l'on est prêt de <span class="arithmatex">\(x\)</span>. </p>
+<h2 id="methode-de-runge-kutta-dordre-4">Méthode de Runge-Kutta d'ordre 4</h2>
+<p>La méthode de Runge-Kutta approche la valeur de la dérivée <span class="arithmatex">\(y'(x)\)</span> par 4 points. Soit un équation différentielle de la forme : </p>
 <div class="arithmatex">\[
-\int_{a}^{b}f(x)dx
+\frac{dy}{dx} = f(x, y), \text{ et } y(x_0) = y_0
 \]</div>
-<p>Par exemple, cherchons l'intégrale de <span class="arithmatex">\(f(x) = x^3\)</span> pour l'intervalle [2, 4] en connaissance f(0) = 0. L'idée est de recouvrir l'intervalle à intégrer de trapèzes pour approximer l'intégrale.</p>
+<p>On cherche à calculer de <span class="arithmatex">\(y(x_n)\)</span>. Il faudra d'abord fixer un pas <span class="arithmatex">\(h\)</span> tel quel <span class="arithmatex">\(x_0 + nh = x_n\)</span>.</p>
+<h3 id="premiere-estimation">Première estimation</h3>
+<p>La première estimation <span class="arithmatex">\(k_1\)</span> est la valeur de la dérivée en <span class="arithmatex">\(t_i\)</span>. </p>
 <figure>
-    <a class="glightbox" href="../../images/nombre_trapezes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/nombre_trapezes.png" /></a>
-    <figcaption markdown>Approximation avec 3 et 12 trapèzes</figcaption>
+
+    <a class="glightbox" href="../../images/rk1_etape1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rk1_etape1.png" width="600" /></a>
+    <figcaption>Première étape de l'approximation de RK4</figcaption>
+
 </figure>
-<p>Donc l'algorithme numérique consiste simplement à additionner la valeur de l'aire de chaque trapèze. On note <span class="arithmatex">\(h\)</span> le pas de l'algorithme. L'aire du trapèze est alors donnée par :</p>
 <div class="arithmatex">\[
-A = \frac{h(f(x) + f(x+h))}{2} = \frac{h(x^3 + (x+h)^3)}{2}
+k_1 = f(x_i, y_i)
 \]</div>
-<p><center></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Nombre de trapèze</th>
-<th style="text-align: left;">Valeur de <span class="arithmatex">\(h\)</span></th>
-<th style="text-align: left;">Valeur approximée</th>
-<th style="text-align: left;">Erreur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">72</td>
-<td style="text-align: left;">12</td>
-</tr>
-<tr>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">0.66667</td>
-<td style="text-align: left;">61.33333</td>
-<td style="text-align: left;">1.33333</td>
-</tr>
-<tr>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">0.16667</td>
-<td style="text-align: left;">60.08333</td>
-<td style="text-align: left;">0.08333</td>
-</tr>
-<tr>
-<td style="text-align: left;">20</td>
-<td style="text-align: left;">0.1</td>
-<td style="text-align: left;">60.03</td>
-<td style="text-align: left;">0.03</td>
-</tr>
-<tr>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">0.01</td>
-<td style="text-align: left;">60.0012</td>
-<td style="text-align: left;">0.0012</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Implémentation de la méthode des trapèzes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">def</span> <span class="nf">methode_trapeze</span><span class="p">(</span><span class="n">nb_trapezes</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="n">nb_trapezes</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="n">integrale</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_trapezes</span><span class="p">):</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>        <span class="n">x_i</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="n">h</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>        <span class="n">x_i_plus_1</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">+</span> <span class="n">h</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>        <span class="n">integrale</span> <span class="o">+=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_i</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">x_i_plus_1</span><span class="p">))</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="k">return</span> <span class="n">integrale</span> 
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="c1"># Pour l&#39;affichage</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">methode_trapeze</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-</span></code></pre></div></td></tr></table></div>
+<h3 id="seconde-estimation">Seconde estimation</h3>
+<p>La seconde estimation <span class="arithmatex">\(k_2\)</span> est la première valeur d'estimation de la dérivée en <span class="arithmatex">\(t_i + \frac{h}{2}\)</span> (milieu de l'interface). Comme on ne connait pas la valeur de <span class="arithmatex">\(y_n(t_i + \frac{h}{2})\)</span>, on l'estime en utilisant l'information de <span class="arithmatex">\(k_1\)</span>. Il s'agit de l'estimation de la méthode d'Euler.</p>
+<figure>
+
+    <a class="glightbox" href="../../images/rk1_etape2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rk1_etape2.png" width="600" /></a>
+    <figcaption>Deuxième étape de l'approximation de RK4</figcaption>
+
+</figure>
+<div class="arithmatex">\[
+k_2 = f(x_i + \frac{h}{2}, y_i + k_1\frac{h}{2})
+\]</div>
+<h3 id="troisieme-estimation">Troisième estimation</h3>
+<p>La troisième estimation <span class="arithmatex">\(k_3\)</span> est la deuxième valeur d'estimation la dérivée en <span class="arithmatex">\(t_i + \frac{h}{2}\)</span>. Comme on ne connait pas la valeur de <span class="arithmatex">\(y_n(t_i + \frac{h}{2})\)</span>, on l'estime en utilisant l'information de <span class="arithmatex">\(k_2\)</span>. Cette seconde estimation vient généralement entourer la fonction de sorte qu'on a une surestimation et une sous-estimation.</p>
+<figure>
+
+    <a class="glightbox" href="../../images/rk1_etape3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rk1_etape3.png" width="600" /></a>
+    <figcaption>Troisième étape de l'approximation de RK4</figcaption>
+
+</figure>
+<div class="arithmatex">\[
+k_3 = f(x_i + \frac{h}{2}, y_i + k_2\frac{h}{2})
+\]</div>
+<h3 id="quatrieme-estimation">Quatrième estimation</h3>
+<p>La quatrième estimation <span class="arithmatex">\(k_4\)</span> est l'estimation la dérivée à la fin de l'intervalle <span class="arithmatex">\(t_i + h\)</span>. Comme on ne connait pas la valeur de <span class="arithmatex">\(y_n(t_i + h)\)</span>, on l'estime en utilisant l'information de <span class="arithmatex">\(k_3\)</span>. Cette estimation repose sur le dernier point, alors que la première estimation (<span class="arithmatex">\(k_1\)</span>) repose sur le premier point.  </p>
+<figure>
+
+    <a class="glightbox" href="../../images/rk1_etape4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rk1_etape4.png" width="600" /></a>
+    <figcaption>Quatrième étape de l'approximation de RK4</figcaption>
+
+</figure>
+<div class="arithmatex">\[
+k_4 = f(x_i + h, y_i + h k_3)
+\]</div>
+<h3 id="caluler-lestimation">Caluler l'estimation</h3>
+<p>y_{i+1} = y_n + \frac{1}{6} \frac{k_1 + 2k_2 + 2k_3 + k_4}{2}</p>
+<h2 id="resume-des-equations-des-estimations">Résumé des équations des estimations</h2>
+<div class="arithmatex">\[
+\begin{align*}
+k_1 &amp;= f(x_i, y_i) \\
+k_2 &amp;= f(x_i + \frac{h}{2}, y_i + k_1\frac{h}{2}) \\
+k_3 &amp;= f(x_i + \frac{h}{2}, y_i + k_2\frac{h}{2}) \\
+k_4 &amp;= f(x_i + h, y_i + h k_3) \\
+y_{i+1} &amp;= y_n + \frac{h}{6} \frac{k_1 + 2k_2 + 2k_3 + k_4}{2}
+\end{align*}
+\]</div>
+<h2 id="exemple-numerique">Exemple numérique</h2>
+<p>Prenons le système suivant</p>
+<div class="arithmatex">\[
+\frac{dy}{dx}=2y,\ y(0) = 1
+\]</div>
+<p>alors <span class="arithmatex">\(f(x,y) = 2y\)</span> et utilison <span class="arithmatex">\(h=1\)</span> pour calculer <span class="arithmatex">\(y(2)\)</span>.</p>
+<h3 id="iteration-1">Itération 1</h3>
+<div class="arithmatex">\[
+\begin{align*}
+k_1 &amp;= f(x_0, y_0) = 2y_0 = 2\\
+k_2 &amp;= f(x_0 + \frac{h}{2}, y_0 + k_1\frac{h}{2}) = f(0.5, 1 + 2 \times  0.5) = f(0.5, 2) = 2 \times 2 = 4\\
+k_3 &amp;= f(x_0 + \frac{h}{2}, y_0 + k_2\frac{h}{2}) = f(0.5, 1 + 4 * 0.5) = f(0.5, 3) = 2 \times 3 = 6\\
+k_4 &amp;= f(x_0 + h, y_0 + h k_3) = f(1, 1 + 1 * 6) = f(1, 7) = 2 \times 7 = 14\\
+y_{1} &amp;= y_0 + \frac{h}{6} (k_1 + 2k_2 + 2k_3 + k_4) = 1 + \frac{1}{6} (2 + 2 \times 4 + 2 \times 6 + 14) = 7
+\end{align*}
+\]</div>
+<h3 id="iteration-2">Itération 2</h3>
+<div class="arithmatex">\[
+\begin{align*}
+k_1 &amp;= f(x_1, y_1) = 2y_1 = 14\\
+k_2 &amp;= f(x_1 + \frac{h}{2}, y_1 + k_1\frac{h}{2}) = f(1.5, 7 + 14 \times 0.5) = f(0.5, 14) = 2 \times 14 = 28\\
+k_3 &amp;= f(x_1 + \frac{h}{2}, y_1 + k_2\frac{h}{2}) = f(1.5, 7 + 28 * 0.5) = f(0.5, 21) = 2 \times 21 = 42\\
+k_4 &amp;= f(x_1 + h, y_1 + h k_3) = f(1, 7 + 1 * 42) = f(1, 49) = 2 \times 49 = 98\\
+y_{2} &amp;= y_1 + \frac{h}{6} (k_1 + 2k_2 + 2k_3 + k_4) = 7 + \frac{1}{6} (14 + 2 \times 28 + 2 \times 42 + 98) = 49
+\end{align*}
+\]</div>
 <h2 id="exercice">Exercice</h2>
+<p>À l'aide d'un programme Python réalisé les estimations suivantes :</p>
 <ol>
-<li>Faites le programme qui permet de calculer la valeur de <span class="arithmatex">\(\pi\)</span>. Approximez <span class="arithmatex">\(\pi\)</span> en utilisant 100 000 itérations.</li>
-<li>Calculez la racine, avec la formule d'Héron, de 6247 en utilisant 50 comme valeur initiale.</li>
-<li>Pour les itérations entre 1 et 5, calculez l'erreur de la méthode avec 4 décimales de précision.</li>
-<li>Le ratio entre deux termes de la suite de Fibonacci approxime le nombre d'or <span class="arithmatex">\(\phi = \frac{1+\sqrt{5}}{2} \approx 1.618034\)</span>. À l'aide de l'exercice 7 de la première série d'exercice, déterminez combien de termes sont nécessaires pour obtenir une approximation exacte à 4 chiffres de la valeur de <span class="arithmatex">\(\phi\)</span>.</li>
+<li><span class="arithmatex">\(\frac{dy}{dx} = 2y\)</span> avec <span class="arithmatex">\(y(0) = 1\)</span> comme condition initiale. Trouvez la valeur de <span class="arithmatex">\(y(1)\)</span> avec un pas de 0.5.</li>
+<li><span class="arithmatex">\(\frac{dy}{dx} = 2y\)</span> avec <span class="arithmatex">\(y(0) = 1\)</span> comme condition initiale. Trouvez la valeur de <span class="arithmatex">\(y(1)\)</span> avec un pas de 0.01.</li>
+<li>y'(x) = 4y(x) + 2$ avec <span class="arithmatex">\(y(0) = 2\)</span> comme condition initiale. Trouvez la valeur de <span class="arithmatex">\(y(1)\)</span> avec un pas de 0.01.</li>
+<li>Résolver le problème  <span class="arithmatex">\(y'(x) = x \times y(x)\)</span> avec <span class="arithmatex">\(y(0) = 1\)</span> comme condition initiale. Trouvez la valeur de <span class="arithmatex">\(y(1)\)</span> avec un pas de 0.01.</li>
 </ol>
 
 
@@ -1339,7 +1181,7 @@ A = \frac{h(f(x) + f(x+h))}{2} = \frac{h(x^3 + (x+h)^3)}{2}
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../programmer/revision_numpy_collection/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Révision Python - liste, numpy et matplotlib">
+          <a href="../methode_euler_2_eq/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Méthode d&#39;Euler avec deux équations">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1349,20 +1191,20 @@ A = \frac{h(f(x) + f(x+h))}{2} = \frac{h(x^3 + (x+h)^3)}{2}
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Révision Python - liste, numpy et matplotlib
+                Méthode d'Euler avec deux équations
               </div>
             </div>
           </a>
         
         
           
-          <a href="../methode_euler/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Méthode d&#39;Euler">
+          <a href="../../godot/interface/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Interface et concepts de base">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Méthode d'Euler
+                Interface et concepts de base
               </div>
             </div>
             <div class="md-footer__button md-icon">
