@@ -12,13 +12,11 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/simulations/godot/exemple_dispositifs_saisie/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/simulations/godot/exemple_scene_heritee/">
       
       
-        <link rel="prev" href="../exemple_comportement_interface/">
+        <link rel="prev" href="../exemple_dispositifs_saisie/">
       
-      
-        <link rel="next" href="../exemple_scene_heritee/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Dispositifs de saisie - Simulations en astrophysique</title>
+        <title>Héritage de scène - Simulations en astrophysique</title>
       
     
     
@@ -89,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dispositif-de-saisie" class="md-skip">
+        <a href="#exemple-utiliser-des-scenes-heritees" class="md-skip">
           Aller au contenu
         </a>
       
@@ -122,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dispositifs de saisie
+              Héritage de scène
             
           </span>
         </div>
@@ -837,6 +835,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../exemple_dispositifs_saisie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dispositifs de saisie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -853,7 +872,7 @@
           
   
   <span class="md-ellipsis">
-    Dispositifs de saisie
+    Héritage de scène
   </span>
   
 
@@ -864,7 +883,7 @@
         
   
   <span class="md-ellipsis">
-    Dispositifs de saisie
+    Héritage de scène
   </span>
   
 
@@ -886,62 +905,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#touches-du-clavier" class="md-nav__link">
+  <a href="#personnaliser-les-cubes" class="md-nav__link">
     <span class="md-ellipsis">
-      Touches du clavier
+      Personnaliser les cubes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#utiliser-la-souris-pour-cliquer-sur-un-objet" class="md-nav__link">
+  <a href="#modifier-les-cubes" class="md-nav__link">
     <span class="md-ellipsis">
-      Utiliser la souris pour cliquer sur un objet
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Utiliser la souris pour cliquer sur un objet">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reorganiser-la-scene" class="md-nav__link">
-    <span class="md-ellipsis">
-      Réorganiser la scène
+      Modifier les cubes
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#exploiter-les-signaux" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
     <span class="md-ellipsis">
-      Exploiter les signaux
+      Structure du projet
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#laisser-les-evenements-traverser-le-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      Laisser les événements traverser le UI
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definir-la-condition-pour-recuperer-le-clic-gauche" class="md-nav__link">
-    <span class="md-ellipsis">
-      Définir la condition pour récupérer le clic gauche
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -949,27 +935,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exemple_scene_heritee/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Héritage de scène
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1005,13 +970,14 @@
                   
 
 
-<h1 id="dispositif-de-saisie">Dispositif de saisie</h1>
+<h1 id="exemple-utiliser-des-scenes-heritees">Exemple : Utiliser des scènes héritées</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>Utilisation d'un moteur de jeu <br/></p>
+<p>Utilisation d’un moteur de jeu <br/>
+Programmation orientée objet</p>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>45 minutes</p>
+<p>20 minutes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14V4.5m8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04l6.13-6.13Z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
@@ -1025,102 +991,59 @@
 </div>
 </div>
 </div>
-<p>Dans ce module, nous verrons 3 façons d'interagir avec le monde de simulation : </p>
-<ul>
-<li>Touches du clavier;</li>
-<li>Clic sur les objets; et </li>
-<li>Saisie de texte dans les contrôles de l'interface.</li>
-</ul>
-<h2 id="touches-du-clavier">Touches du clavier</h2>
-<p>On peut configurer les touches pour agir comme raccourci lors de l'exécution d'un système. On associe généralement les flèches ou les touches WASD par exemple pour un déplacement.</p>
-<p>On va ajouter la touche d'espace pour contrôler aussi la pause ou la reprise de la simulation. Pour commencer, il faut accéder à la fenêtre des contrôles situés dans le menu <strong>Projet</strong> &gt; <strong>Paramètres du projet</strong> &gt; <strong>Contrôles</strong>. Les contrôles sont gérés par des «&nbsp;actions&nbsp;» qui peuvent être récupérées dans les scripts.</p>
+<hr />
+<p>Dans cet exemple, nous partirons d’un projet vide afin de démontrer l’utilisation des scènes héritées. Les scènes héritées permettent de construire plusieurs scènes qui ont une base commune, mais dont on peut personnaliser certaines parties.</p>
+<p>Imaginons un exemple où l’on veut présenter deux formes, deux cubes de différente couleur. Par souci d’organisation chaque cube doit être défini dans une scène. On peut commencer en définissant une scène <strong>demo</strong> pour contenir les deux cubes et une scène <strong>cube</strong> qui définit un cube. On crée ensuite deux cubes dans la scène <strong>demo</strong>. Chacun des cubes est une instance de la scène <strong>cube</strong>.</p>
 <figure>
-    <a class="glightbox" href="../../images/godot_ajouter_controle.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_ajouter_controle.png" width="750" /></a>
-    <figcaption>Permet d'ajouter un contrôle dans la simulation</figcaption>
+    <a class="glightbox" href="../../images/scene_cube_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/scene_cube_1.png" width="600" /></a>
+    <figcaption>Structure de la scène cube</figcaption>
 </figure>
-<p>Pour ajouter le contrôle, il faut d'abord lui donner un nom, puis sélectionner la touche à laquelle ce contrôle est lié.</p>
 <figure>
-    <a class="glightbox" href="../../images/godot_ajouter_controle_exemple.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_ajouter_controle_exemple.png" width="750" /></a>
-    <figcaption>Permet d'ajouter un contrôle dans la simulation</figcaption>
+    <a class="glightbox" href="../../images/scene_base_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/scene_base_1.png" width="600" /></a>
+    <figcaption>Structure de la scène de démonstration avec les deux cubes</figcaption>
 </figure>
-<ol>
-<li>Entrez le nom de l'action souhaitée (ici «&nbsp;Pause&nbsp;»);</li>
-<li>Appuyez sur <strong>Ajouter</strong> pour créer l'action;</li>
-<li>Appuyez sur le <strong>+</strong> au bout de la ligne pour associer un contrôle à cette action;</li>
-<li>Recherchez le nom de la touche (tous les noms sont en anglais);</li>
-<li>Au besoin, ajoutez une touche modificatrice; et</li>
-<li>Appuyez sur <strong>Ok</strong> pour compléter l'ajout.</li>
-</ol>
-<p>Ensuite du côté du code, nous irons récupérer cette action dans le script <strong>bouton_pause</strong> afin de mettre à jour correctement la simulation. L'idée est d'écouter continuellement, dans la fonction <code>__process</code> si l'action a été réalisée.</p>
-<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">bouton_pause.gd</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<p>On souhaite maintenant colorer les cubes en bleu. La propriété de sélection du matériel n’est pas disponible dans l’instance de cube de la scène <strong>demo</strong>. Il faudra donc modifier directement dans la scène <strong>cube</strong> pour y ajouter ce script.</p>
+<figure>
+    <a class="glightbox" href="../../images/scene_base_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/scene_base_2.png" width="600" /></a>
+    <figcaption>Structure de la scène de démonstration avec les deux cubes colorés en bleu</figcaption>
+</figure>
+<h2 id="personnaliser-les-cubes">Personnaliser les cubes</h2>
+<p>On souhaite maintenant afficher un cube rouge et un cube bleu. Par contre, on ne veut pas créer une deuxième scène et dupliquer notre cube, car si l’on veut modifier son comportement plus tard (ajouter un script par exemple), on souhaite que les deux cubes aient le même comportement. On va donc créer des <strong>scènes héritées</strong>. Une scène héritée est une copie de la scène de base, sauf pour les éléments que l’on décide de modifier. L’avantage est que les modifications dans la scène de base (celle dont on hérite) se répercutent automatiquement dans toutes les scènes héritées (appelé scènes enfants).</p>
+<p>Pour commencer, on va retirer la couleur du cube et renommer cette scène <strong>cube_base</strong>. Ensuite, on va créer une scène héritée, <strong>cube_rouge</strong> et une scène héritée <strong>cube_bleu</strong>. </p>
+<figure>
+    <a class="glightbox" href="../../images/creation_scene_heritee.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/creation_scene_heritee.png" /></a>
+    <figcaption>Menu de création de la scène héritée</figcaption>
+</figure>
+<p>Dans chacune des scènes enfants, on va modifier la couleur du matériel. Ensuite, on crée une instance de chaque scène enfant dans la scène de démo.</p>
+<figure>
+    <a class="glightbox" href="../../images/scene_base_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/scene_base_3.png" width="600" /></a>
+    <figcaption>Structure de la scène de démonstration avec les deux cubes enfants colorés</figcaption>
+</figure>
+<h2 id="modifier-les-cubes">Modifier les cubes</h2>
+<p>On souhaite maintenant que les cubes tournent lentement sur eux-mêmes. Pour ce faire, on va ajouter un script <strong>cube</strong>. Comme les deux cubes doivent avoir ce script, on va l’ajouter directement dans la scène <strong>cube_base</strong>.</p>
+<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">cube</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Mettre en pause lorsque l&#39;action Pause est réalisée </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">_delta</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="p">:</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">Input</span><span class="o">.</span><span class="n">is_action_just_pressed</span><span class="p">(</span><span class="s2">&quot;Pause&quot;</span><span class="p">):</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="n">changer_etat_pause</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">extends</span><span class="w"> </span><span class="n">Node3D</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="err">@</span><span class="k">export</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">vitesse_rotation</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">func</span><span class="w"> </span><span class="n">_process</span><span class="p">(</span><span class="n">delta</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="n">rotation</span><span class="o">.</span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">deg_to_rad</span><span class="p">(</span><span class="n">delta</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">vitesse_rotation</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="admonition info">
-<p class="admonition-title">is_action_just_pressed</p>
-<p>Cette fonction retourne <code class="language-gdscript highlight"><span class="bp">true</span></code> seulement la frame où l'action est accomplie. Cela permet d'obtenir une action qui se produit qu'une seule fois. La fonction <code class="language-gdscript highlight"><span class="n">is_action_pressed</span></code> retourne <code class="language-gdscript highlight"><span class="bp">true</span></code> toutes les frames où l'action est accomplie. </p>
-</div>
-<h2 id="utiliser-la-souris-pour-cliquer-sur-un-objet">Utiliser la souris pour cliquer sur un objet</h2>
-<p>Pour rendre les objets cliquables, il est nécessaire de faire des modifications à la structure de la scène et d'exploiter les signaux et de définir une action.</p>
-<h3 id="reorganiser-la-scene">Réorganiser la scène</h3>
-<p>La première chose que nous devrons faire est de <em>réorganiser la scène</em>. En effet, habituellement dans Godot, une scène est une unité très petite. Le problème dans notre structure actuelle est que chaque astre est défini dans la même scène, alors qu'on ne devrait définir qu'un seul astre et réutiliser la scène. Le plus simple est de glisser-déposer un des astres dans la zone <strong>Système de fichiers</strong>, puis de supprimer les 3 astres de la scène.</p>
-<figure>
-    <a class="glightbox" href="../../images/godot_scene_astre.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_scene_astre.png" width="500" /></a>
-    <figcaption>Création de la scène astre</figcaption>
-</figure>
-<p>Après, on peut ajouter 1 scène enfant, Vénus avec la commande <strong>Instancier une scène enfant</strong> et reconfigurer les paramètres dans l'inspecteur, ainsi que réassigner les contrôles de l'interface. Pour éviter les problèmes, on peut affecter Vénus à chacun des astres (on règlera ce problème plus tard). Normalement, si on lance la simulation, le comportement de Vénus devrait être le même qu'avant la modification.</p>
-<div class="admonition tips">
-<p class="admonition-title">Faire de petites scènes</p>
-<p>À partir de maintenant, tout sera décomposé en plus petites scènes et il est attendu que vous utilisez ces techniques dans votre travail. </p>
-</div>
-<h3 id="exploiter-les-signaux">Exploiter les signaux</h3>
 <div class="admonition warning">
-<p class="admonition-title">Position dans le projet</p>
-<p>Assurez-vous d'être dans la scène <strong>Astre</strong> pour faire ces manipulations.</p>
+<p class="admonition-title">Script invisible</p>
+<p>Si vous avez déjà créer l'instance de la scène enfant avant d'ajouter le script dans le parent, vous ne verrez pas le script s'afficher dans la scène <strong>demo</strong>. Vous devrez supprimer les instances des scènes enfants et les créer de nouveau dans la scène <strong>demo</strong>.</p>
 </div>
-<p>La technique pour récupérer le clic est différente et demande de passer par les signaux. D'abord, on doit s'assurer que l'objet peut recevoir une collision. D'abord les objets doivent avoir un <code>Rigidbody3D</code> et un <code>CollisionShape3D</code> pour réagir aux collisions. Ensuite, le paramètre <strong>Ray Pickable</strong> doit être activé.</p>
-<p>Ensuite, dans l'interface Signaux (à côté de l’Inspecteur), il faudra sélectionner <strong>input_event</strong> avec un double clic. Cela va permettre d'associer ce signal à une fonction dans le code.</p>
+<p>Il ne reste après qu’à indiquer les vitesses de rotation, à ajouter une caméra et une lumière.</p>
 <figure>
-    <a class="glightbox" href="../../images/godot_input.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_input.png" width="400" /></a>
-    <figcaption>Création sélection du signal à connecter</figcaption>
+    <a class="glightbox" href="../../images/scene_finale.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/scene_finale.png" width="600" /></a>
+    <figcaption>Scène finale avec les deux cubes enfants colorés en rotation</figcaption>
 </figure>
-<figure>
-    <a class="glightbox" href="../../images/godot_connecter_signal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_connecter_signal.png" width="600" /></a>
-    <figcaption>Connexion du signal à une fonction</figcaption>
-</figure>
-<ol>
-<li>Assurez-vous que l'objet qui doit recevoir le signal soit bien sélectionné;</li>
-<li>Le récepteur est le nom de la fonction qui sera appelée lorsque le signal est lancé (renommé en <em>_on_clic</em> dans l'exemple); et</li>
-<li>Une fois la configuration complétée, il faut cliquer sur <strong>Connecter</strong>.</li>
-</ol>
-<p>La fonction suivante est ajoutée au script Astre. On peut ensuite changer la fonction pour réagir au clic.</p>
-<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Astre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">func</span><span class="w"> </span><span class="n">_on_clic</span><span class="p">(</span><span class="n">camera</span><span class="p">:</span><span class="w"> </span><span class="n">Node</span><span class="p">,</span><span class="w"> </span><span class="n">event</span><span class="p">:</span><span class="w"> </span><span class="n">InputEvent</span><span class="p">,</span><span class="w"> </span><span class="n">event_position</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">,</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">     </span><span class="n">normal</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">,</span><span class="w"> </span><span class="n">shape_idx</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="p">:</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="k">pass</span><span class="w"> </span><span class="c1"># Replace with function body.</span>
-</span></code></pre></div></td></tr></table></div>
-<h3 id="laisser-les-evenements-traverser-le-ui">Laisser les événements traverser le UI</h3>
-<p>Si vous utilisez le code dans l'état actuel, vous ne serez pas capable de cliquer sur Vénus. Il est nécessaire d'indiquer au nœud de l'interface de laisser passer les événements. Pour ce faire, il faut changer la façon dont l'interface traite les événements de la souris.</p>
-<p>En sélectionnant le nœud de l'interface, dans l'inspecteur <strong>Control</strong> &gt; <strong>Mouse</strong> &gt; <strong>Filter</strong>, il faut changer la valeur pour <strong>Pass (Propagate Up)</strong>.</p>
-<figure>
-    <a class="glightbox" href="../../images/godot_traverser_interface.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/godot_traverser_interface.png" width="500" /></a>
-    <figcaption>Permet aux événements de clic de traverser l'interface</figcaption>
-</figure>
-<h3 id="definir-la-condition-pour-recuperer-le-clic-gauche">Définir la condition pour récupérer le clic gauche</h3>
-<p>Pour récupérer uniquement le clic gauche de la souris, il faut filtrer tous les événements reçus avec la condition suivante. Elle permet de recevoir les événements de type <em>MouseButton</em>, lorsque le bouton impliqué est celui de gauche et quand il est appuyé (<em>pressed</em>), et non lorsqu'il est relâché.</p>
-<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Astre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">func</span><span class="w"> </span><span class="n">_on_clic</span><span class="p">(</span><span class="n">camera</span><span class="p">:</span><span class="w"> </span><span class="n">Node</span><span class="p">,</span><span class="w"> </span><span class="n">event</span><span class="p">:</span><span class="w"> </span><span class="n">InputEvent</span><span class="p">,</span><span class="w"> </span><span class="n">event_position</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">,</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">     </span><span class="n">normal</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">Vector3</span><span class="p">,</span><span class="w"> </span><span class="n">shape_idx</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="p">:</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">InputEventMouseButton</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">event</span><span class="o">.</span><span class="n">button_index</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">MOUSE_BUTTON_LEFT</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">event</span><span class="o">.</span><span class="n">pressed</span><span class="p">:</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Clic sur &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
+<h2 id="structure-du-projet">Structure du projet</h2>
+<p>Vous pouvez récupérer l'état final de la démonstration ici : <a href="https://github.com/simulations-astrophysique/demo-scene-heritee">:octicons-mark-github-24: Afficher le projet sur GitHub</a>.</p>
 
 
 
@@ -1150,7 +1073,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../exemple_comportement_interface/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Comportement de l&#39;interface">
+          <a href="../exemple_dispositifs_saisie/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Dispositifs de saisie">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1160,27 +1083,11 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Comportement de l'interface
+                Dispositifs de saisie
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../exemple_scene_heritee/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Héritage de scène">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Héritage de scène
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
