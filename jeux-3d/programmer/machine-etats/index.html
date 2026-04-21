@@ -1510,7 +1510,7 @@
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">    </span><span class="c1">/// &lt;return&gt;L&#39;état de l&#39;arbre à la prochaine frame.&lt;/return&gt;</span>
 </span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="n">EtatArbre</span><span class="w"> </span><span class="nf">OnExecuter</span><span class="p">(</span><span class="n">Arbre</span><span class="w"> </span><span class="n">arbre</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">        </span><span class="c1">// Les feuilles sont prêtes</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">Mathf</span><span class="p">.</span><span class="n">Approximately</span><span class="p">(</span><span class="n">arbre</span><span class="p">.</span><span class="n">CroissanceFeuille</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">Mathf</span><span class="p">.</span><span class="n">Approximately</span><span class="p">(</span><span class="n">arbre</span><span class="p">.</span><span class="n">CroissanceFeuille</span><span class="p">,</span><span class="w"> </span><span class="m">1.0f</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">EtatFeuillu</span><span class="p">();</span>
 </span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">        </span><span class="p">}</span>
 </span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a>
@@ -1619,7 +1619,7 @@
     <a class="glightbox" href="../../images/machine-etat-update.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/machine-etat-update.png" /></a>
     <figcaption markdown>Déroulement de la méthode <code>Update</code> de l'objet contrôlé par la machine à états</figcaption>
 </figure>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Code de l&#x27;objet arbre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Code de l'objet arbre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
@@ -1681,7 +1681,7 @@
 </span></code></pre></div></td></tr></table></div>
 <h2 id="des-etats-generiques">Des états génériques</h2>
 <p>Si plusieurs objets sont gérés par des machines à état, on peut utiliser le concept de génériques pour avoir une seule classe de base d'état. Le générique est le type géré par l'état.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Classe générique d&#x27;états</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Classe générique d'états</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-5-4"> 4</a></span>

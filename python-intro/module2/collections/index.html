@@ -1226,7 +1226,7 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
 <h2 id="descriptions-des-collections-de-donnees-natives">Descriptions des collections de données natives</h2>
 <h3 id="liste">Liste</h3>
 <p>Une liste entrepose séquentiellement des données : les données sont toujours présentées dans le même ordre. On utilise les crochets carrés (<em>square brackets</em>) pour déclarer une liste et l'on place les éléments de la liste dans les crochets carrés en les séparant par des virgules.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Déclaration d&#x27;une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Déclaration d'une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
 </span></code></pre></div></td></tr></table></div>
 <p>À chaque donnée lui est associé un indice (<em>index</em>) qui permet d'accéder à l'élément dans la liste. Les éléments sont numérotés <strong>à partir de 0</strong>. On indique entre crochets carrés l'indice de la valeur à laquelle l'on veut accéder. Par exemple, pour accéder à la première valeur (5.0), on indique entre crochets la valeur 0.</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Accéder à des éléments</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
@@ -1305,7 +1305,7 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
 <h4 id="modifier-une-liste">Modifier une liste</h4>
 <h5 id="modifier-les-elements">Modifier les éléments</h5>
 <p>On peut modifier un élément d'une liste simplement en affectant une valeur à l'élément en utilisant le système d'indice. Par exemple, après relecture on réalise que l'avant-dernière donnée (5.1 avec l'indice 8) a été mal saisie et qu'elle aurait dû être 5.2.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification d&#x27;un élément d&#x27;une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification d'un élément d'une liste</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span>
 <span class="normal"><a href="#__codelineno-5-4">4</a></span>
@@ -1506,7 +1506,7 @@ Utiliser les collections de données : listes, n-uplet, ensembles et dictionnair
 <span class="normal"><a href="#__codelineno-15-4">4</a></span>
 <span class="normal"><a href="#__codelineno-15-5">5</a></span>
 <span class="normal"><a href="#__codelineno-15-6">6</a></span>
-<span class="normal"><a href="#__codelineno-15-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">moyenne</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">def</span> <span class="nf">moyenne</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule et retourne la moyenne de la liste</span>
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a>
 </span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="sd">    Keywords arguments:</span>
@@ -1672,7 +1672,7 @@ dans un deuxième temps.</p>
 <h3 id="n-uplet">N-uplet</h3>
 <p>Pour traiter des collections de données immuables, il est possible d'utiliser les n-uplets (<em>tuples</em>). On les déclare en utilisant des parenthèses et l'on accède aux éléments de la même façon que pour les listes (toujours des crochets carrés et le système des indices).</p>
 <p>Il est aussi possible d'appeler les fonctions arithmétiques ainsi que les opérateurs + et * sur les n-uplets. Cependant, <strong>les éléments d'un n-uplet sont immuables et on ne peut pas ajouter ou retirer des éléments</strong> d'un n-uplet.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple d&#x27;utilisation des n-uplets</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple d'utilisation des n-uplets</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
 <span class="normal"><a href="#__codelineno-20-2">2</a></span>
 <span class="normal"><a href="#__codelineno-20-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="n">point</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>      <span class="c1"># On déclare un point du plan cartésien</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Les coordonnées du point sont (&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
@@ -1925,7 +1925,7 @@ dans un deuxième temps.</p>
 <span class="normal"><a href="#__codelineno-29-35">35</a></span>
 <span class="normal"><a href="#__codelineno-29-36">36</a></span>
 <span class="normal"><a href="#__codelineno-29-37">37</a></span>
-<span class="normal"><a href="#__codelineno-29-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-29-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">):</span>
 </span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule la distance entre deux points (longueur d&#39;un segment) et la retourne.</span>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a>
 </span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a><span class="sd">    Keywords arguments:</span>
@@ -1934,7 +1934,7 @@ dans un deuxième temps.</p>
 </span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8"></a>    <span class="k">return</span> <span class="n">sqrt</span><span class="p">((</span><span class="n">p0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9"></a>
-</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">info_triangle</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="k">def</span> <span class="nf">info_triangle</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
 </span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule l&#39;aire, le périmètre et la longueur des côtés d&#39;un triangle et retourne</span>
 </span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12"></a><span class="sd">    un dictionnaire avec les informations.</span>
 </span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13"></a>
@@ -1968,7 +1968,7 @@ dans un deuxième temps.</p>
 <p>On peut modifier les dictionnaires en changeant leur valeur, en ajoutant une valeur ou en retirant une valeur. Tout comme les autres conteneurs, on ne peut pas retirer de valeurs pendant que l'on itère dans un dictionnaire. Une contrainte supplémentaire s'impose, il n'est pas possible de modifier une clé. Pour changer la clé d'un élément, il faut plutôt dupliquer l'élément en lui affectant la nouvelle clé et supprimer la copie qui est associée à la version de la clé avant la modification. </p>
 <h5 id="changer-une-valeur">Changer une valeur</h5>
 <p>Tout comme pour les listes, on peut simplement écrire par-dessus un élément comme l'on affecterait une variable normale.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification du nom d&#x27;un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Modification du nom d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
 <span class="normal"><a href="#__codelineno-30-2">2</a></span>
 <span class="normal"><a href="#__codelineno-30-3">3</a></span>
 <span class="normal"><a href="#__codelineno-30-4">4</a></span>
@@ -1982,7 +1982,7 @@ dans un deuxième temps.</p>
 </span></code></pre></div></td></tr></table></div>
 <h5 id="ajouter-une-valeur">Ajouter une valeur</h5>
 <p>Pour ajouter une valeur, c'est la même syntaxe que pour la modification, mais on indique entre les crochets une clé qui n'est pas utilisée.</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajout d&#x27;un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Ajout d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
 <span class="normal"><a href="#__codelineno-31-2">2</a></span>
 <span class="normal"><a href="#__codelineno-31-3">3</a></span>
 <span class="normal"><a href="#__codelineno-31-4">4</a></span>
@@ -1996,7 +1996,7 @@ dans un deuxième temps.</p>
 </span></code></pre></div></td></tr></table></div>
 <h5 id="retirer-une-valeur">Retirer une valeur</h5>
 <p>Pour retirer une valeur d'un dictionnaire il faut utiliser l'opérateur de suppression <code class="language-py highlight"><span class="k">del</span></code> suivi du dictionnaire et de la clé à supprimer entre crochets carrés. (Note personnelle : pourquoi ce n'est pas une fonction comme tout le reste je l'ignore !).</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Retrait d&#x27;un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Retrait d'un élément chimique</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
 <span class="normal"><a href="#__codelineno-32-2">2</a></span>
 <span class="normal"><a href="#__codelineno-32-3">3</a></span>
 <span class="normal"><a href="#__codelineno-32-4">4</a></span>

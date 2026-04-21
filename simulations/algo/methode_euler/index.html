@@ -614,11 +614,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../erreur_euler.md" class="md-nav__link">
+      <a href="../rk4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Erreur théorique de la méthode d'Euler
+    Méthode de Runge-Kutta d'ordre 4
   </span>
   
 
@@ -635,11 +635,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../rk4.md" class="md-nav__link">
+      <a href="../erreurs_methodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Méthode de Runge-Kutta d'ordre 4
+    Erreurs théoriques des méthodes
   </span>
   
 
@@ -1044,7 +1044,7 @@ y_2 &amp;= y_0 + h \times y'_1 \\\\
 </details>
 <h2 id="en-code">En code</h2>
 <p>La méthode d'Euler peut être implémentée de la façon suivante pour le problème précédent.</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Calcul de la méthode d&#x27;Euler</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Calcul de la méthode d'Euler</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -1054,7 +1054,7 @@ y_2 &amp;= y_0 + h \times y'_1 \\\\
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">euler</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">nb_etapes</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">nb_etapes</span><span class="p">):</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">y_i</span> <span class="o">=</span> <span class="mi">2</span>                             
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">nb_etapes</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>

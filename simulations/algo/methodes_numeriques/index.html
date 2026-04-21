@@ -638,11 +638,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../erreur_euler.md" class="md-nav__link">
+      <a href="../rk4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Erreur théorique de la méthode d'Euler
+    Méthode de Runge-Kutta d'ordre 4
   </span>
   
 
@@ -659,11 +659,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../rk4.md" class="md-nav__link">
+      <a href="../erreurs_methodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Méthode de Runge-Kutta d'ordre 4
+    Erreurs théoriques des méthodes
   </span>
   
 
@@ -1032,24 +1032,62 @@
 <p>Cette méthode n'est pas très efficace, mais est simple à comprendre. Pour une méthode plus efficace, vous pouvez utiliser la <a href="https://fr.wikipedia.org/wiki/Approximation_de_%CF%80">formule de Ramanujan</a></p>
 </div>
 <p>Voici la valeur calculer pour différentes valeurs de k</p>
-<center>
-
-|k|Approximation de $\pi$|
-|:--|:--|
-|0|4.000000|
-|1|2.666666|
-|2|3.466666|
-|5|2.976046|
-|10|3.232316|
-|100|3.151493|
-|1 000|3.142592|
-|2 500|3.141992|
-|10 000|3.141693|
-|100 000|3.141603|
-|1 000 000|3.141594|
-
-</center>
-
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">k</th>
+<th style="text-align: left;">Approximation de <span class="arithmatex">\(\pi\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">4.000000</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2.666666</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3.466666</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">2.976046</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">3.232316</td>
+</tr>
+<tr>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">3.151493</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000</td>
+<td style="text-align: left;">3.142592</td>
+</tr>
+<tr>
+<td style="text-align: left;">2 500</td>
+<td style="text-align: left;">3.141992</td>
+</tr>
+<tr>
+<td style="text-align: left;">10 000</td>
+<td style="text-align: left;">3.141693</td>
+</tr>
+<tr>
+<td style="text-align: left;">100 000</td>
+<td style="text-align: left;">3.141603</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000 000</td>
+<td style="text-align: left;">3.141594</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
 <p>Donc dans cet exemple, on peut voir que les décimales de <span class="arithmatex">\(\pi\)</span> sont de plus en plus précises selon la valeur de <span class="arithmatex">\(k\)</span>.</p>
 <div class="admonition info">
 <p class="admonition-title">Suite de Cauchy</p>
@@ -1058,21 +1096,68 @@
 </div>
 <h2 id="les-iterations-et-les-erreurs">Les itérations et les erreurs</h2>
 <p>Dans le cas d'un algorithme de calcul numérique, on s'intéresse à la notion d'erreur afin de déterminer le niveau de précision atteint. Par exemple, voici quelques valeurs de l'approximation de <span class="arithmatex">\(\pi\)</span> avec leur valeur d'erreur.</p>
-<center>
-
-|k|Approximation de $\pi$|Erreur (arrondie à 6 chiffres)|Nombre de chiffres précis|
-|:--|:--|:--|:--|
-|0|4.000000|-0.588407|0|
-|1|2.666666|0.474927|0|
-|10|3.232316|-0.090723|1|
-|100|3.151493|-0.009900|2|
-|1 000|3.142592|-0.000999|3|
-|10 000|3.141693|-0.000100|3|
-|100 000|3.141603|-0.000010|4|
-|1 000 000|3.141594|-0.000001|5|
-
-</center>
-
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">k</th>
+<th style="text-align: left;">Approximation de <span class="arithmatex">\(\pi\)</span></th>
+<th style="text-align: left;">Erreur (arrondie à 6 chiffres)</th>
+<th style="text-align: left;">Nombre de chiffres précis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">4.000000</td>
+<td style="text-align: left;">-0.588407</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2.666666</td>
+<td style="text-align: left;">0.474927</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">3.232316</td>
+<td style="text-align: left;">-0.090723</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">3.151493</td>
+<td style="text-align: left;">-0.009900</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000</td>
+<td style="text-align: left;">3.142592</td>
+<td style="text-align: left;">-0.000999</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">10 000</td>
+<td style="text-align: left;">3.141693</td>
+<td style="text-align: left;">-0.000100</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">100 000</td>
+<td style="text-align: left;">3.141603</td>
+<td style="text-align: left;">-0.000010</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000 000</td>
+<td style="text-align: left;">3.141594</td>
+<td style="text-align: left;">-0.000001</td>
+<td style="text-align: left;">5</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
 <p>L'erreur est calculée en soustrayant la valeur approximée à la valeur réelle (<span class="arithmatex">\(valeur réelle - valeur approximée\)</span>). On peut généralement travailler avec la valeur absolue de cette erreur comme c'est ça grandeur qui est intéressante et non son signe. </p>
 <h3 id="efficacite-des-calculs">Efficacité des calculs</h3>
 <p>Certains algorithmes sont plus efficace que d'autres pour parvenir au calcul. Par exemple l'algorithme d'héron pour la racine carré prend la forme de la suite suivante pour la racine de <span class="arithmatex">\(a\)</span> :</p>
@@ -1080,22 +1165,71 @@
 x_{k+1} = \frac{x_{k} + \frac{a}{x_k}}{2}
 \]</div>
 <p>L'efficacité de l'algorithme dépend du terme <span class="arithmatex">\(x_0 &gt; 0\)</span> choisi. Plus il est près de <span class="arithmatex">\(a\)</span>, plus efficace sera l'algorithme.</p>
-<center>
-
-**Approximation de $\sqrt{101}$**
-
-|k|Approximation avec $x_0 = 1$|Erreur (arrondie à 4 chiffres)|Approximation avec $x_0 = 10$|Erreur (arrondie à 4 chiffres)|
-|:--|:--|:--|:--|:--|
-| 1       | 51         | 40,9501    | 10,05   | 0,0001     |
-| 2       | 26,4901961 | 16,4403    | 10,0499 | 7,6966E-10 |
-| 3       | 15,1514637 | 5,1016     | 10,0499 | 0          |
-| 4       | 10,9087432 | 0,8589     | 10,0499 | 0          |
-| 5       | 10,0836858 | 0,0338     | 10,0499 | 0          |
-| 6       | 10,0499323 | 5,6682E-05 | 10,0499 | 0          |
-| 7       | 10,0498756 | 1,5985E-10 | 10,0499 | 0          |
-
-</center>
-
+<p><center></p>
+<p><strong>Approximation de <span class="arithmatex">\(\sqrt{101}\)</span></strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">k</th>
+<th style="text-align: left;">Approximation avec <span class="arithmatex">\(x_0 = 1\)</span></th>
+<th style="text-align: left;">Erreur (arrondie à 4 chiffres)</th>
+<th style="text-align: left;">Approximation avec <span class="arithmatex">\(x_0 = 10\)</span></th>
+<th style="text-align: left;">Erreur (arrondie à 4 chiffres)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">51</td>
+<td style="text-align: left;">40,9501</td>
+<td style="text-align: left;">10,05</td>
+<td style="text-align: left;">0,0001</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">26,4901961</td>
+<td style="text-align: left;">16,4403</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">7,6966E-10</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">15,1514637</td>
+<td style="text-align: left;">5,1016</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">10,9087432</td>
+<td style="text-align: left;">0,8589</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">10,0836858</td>
+<td style="text-align: left;">0,0338</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">10,0499323</td>
+<td style="text-align: left;">5,6682E-05</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">10,0498756</td>
+<td style="text-align: left;">1,5985E-10</td>
+<td style="text-align: left;">10,0499</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
 <h3 id="les-erreurs-de-la-machine-et-les-limites-des-ordinateurs">Les erreurs de la machine et les limites des ordinateurs</h3>
 <p>Les ordianteurs peuvent calculer un nombre maximal de décimales, ce qui cause une limitation dans la précision des calculs et l'accumulation d'<a href="https://programmation-en-sciences.github.io/bases-de-programmation/types-numeriques-variables-constantes/#le-cas-des-nombres-a-virgule">erreurs arithmétiques</a>. </p>
 <p>Donc le 0 qui apparaît dans l'exemple sur les racines n'est pas un réel 0, car il y a une infinité de décimale au développement numérique de la racine de 101. C'est simplement que le programme utiliser ne considère pas assez de décimales pour remarquer une erreur numérique.</p>
@@ -1114,18 +1248,50 @@ x_{k+1} = \frac{x_{k} + \frac{a}{x_k}}{2}
 <div class="arithmatex">\[
 A = \frac{h(f(x) + f(x+h))}{2} = \frac{h(x^3 + (x+h)^3)}{2}
 \]</div>
-<center>
-
-|Nombre de trapèze|Valeur de $h$|Valeur approximée|Erreur|
-|:--|:--|:--|:--|
-|1|2|72|12|
-|3|0.66667|61.33333|1.33333|
-|12|0.16667|60.08333|0.08333|
-|20|0.1|60.03|0.03|
-|100|0.01|60.0012|0.0012|
-
-</center>
-
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nombre de trapèze</th>
+<th style="text-align: left;">Valeur de <span class="arithmatex">\(h\)</span></th>
+<th style="text-align: left;">Valeur approximée</th>
+<th style="text-align: left;">Erreur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">72</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">0.66667</td>
+<td style="text-align: left;">61.33333</td>
+<td style="text-align: left;">1.33333</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">0.16667</td>
+<td style="text-align: left;">60.08333</td>
+<td style="text-align: left;">0.08333</td>
+</tr>
+<tr>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">0.1</td>
+<td style="text-align: left;">60.03</td>
+<td style="text-align: left;">0.03</td>
+</tr>
+<tr>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">0.01</td>
+<td style="text-align: left;">60.0012</td>
+<td style="text-align: left;">0.0012</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
 <div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Implémentation de la méthode des trapèzes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1141,10 +1307,10 @@ A = \frac{h(f(x) + f(x+h))}{2} = \frac{h(x^3 + (x+h)^3)}{2}
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">methode_trapeze</span><span class="p">(</span><span class="n">nb_trapezes</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">def</span> <span class="nf">methode_trapeze</span><span class="p">(</span><span class="n">nb_trapezes</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="n">nb_trapezes</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="n">integrale</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>

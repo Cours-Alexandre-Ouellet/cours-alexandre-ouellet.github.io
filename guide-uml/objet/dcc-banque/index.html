@@ -1231,17 +1231,17 @@
 <h1 id="banque-de-depannage">Banque de dépannage</h1>
 <p><span class="question">Est-ce que je dois représenter les accesseurs et mutateurs (get, set et is)</span></p>
 <ul>
-<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> Non, on ne représente pas ce type de méthode sur un diagramme.</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Non, on ne représente pas ce type de méthode sur un diagramme.</li>
 </ul>
 <p><span class="question">Le guide dit qu'on doit représenter de grandes parties du système sur un même diagramme. Qu'est-ce qu'une grande partie ?</span></p>
 <ul>
-<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> Tout le système idéalement. Un système bien conçu devrait admettre un faible niveau de couplage entre des types qui ne sont pas dans le même module. Donc, naturellement les liens devraient se disposer de façon à garder le schéma organisé.</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Tout le système idéalement. Un système bien conçu devrait admettre un faible niveau de couplage entre des types qui ne sont pas dans le même module. Donc, naturellement les liens devraient se disposer de façon à garder le schéma organisé.</li>
 <li>On peut aussi faire des paquets (concept de conception assimilable au espace de noms) et modéliser l'intérieur des paquets : il faut simplement s'assurer que ceux-ci soient raissonnablement importants (&gt; 20 types)</li>
 <li>Ultimement, on peut séparer le diagramme, mais cela se fait au coût de son utilité, il faut donc le découper de façon à minimiser les pertes d'informations. Aussi, chaque type doit se retrouver que dans <strong>une section</strong>. Disperser l'information d'un type mène à des erreurs et des incohérences.</li>
 </ul>
 <p><span class="question">Mon diagramme ressemble à un spaghetti, que puis-je faire ?</span></p>
 <ul>
-<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> Cela révèle un problème, dans la conception des liens entre les types. Pour y remédier, il est suggéré d'ajouter des interfaces et rendre les types plus cohésif en séparant les responsabilités multiples dans un type à plusieurs types ayant chacun une responsabilité unique.</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b50.svg" title=":star:" /> Cela révèle un problème, dans la conception des liens entre les types. Pour y remédier, il est suggéré d'ajouter des interfaces et rendre les types plus cohésif en séparant les responsabilités multiples dans un type à plusieurs types ayant chacun une responsabilité unique.</li>
 </ul>
 
 

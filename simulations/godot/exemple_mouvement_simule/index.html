@@ -533,11 +533,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algo/erreur_euler.md" class="md-nav__link">
+      <a href="../../algo/rk4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Erreur théorique de la méthode d'Euler
+    Méthode de Runge-Kutta d'ordre 4
   </span>
   
 
@@ -554,11 +554,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algo/rk4.md" class="md-nav__link">
+      <a href="../../algo/erreurs_methodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Méthode de Runge-Kutta d'ordre 4
+    Erreurs théoriques des méthodes
   </span>
   
 
@@ -1108,7 +1108,7 @@ subit selon sa position réelle. Il est important de corriger la force de l'acc�
 </span></code></pre></div>
 <h2 id="etape-4-appeler-la-methode-deuler-et-utiliser-le-resultat-pour-laffichage-des-objets-de-la-simulation">Étape 4 - Appeler la méthode d'Euler et utiliser le résultat pour l'affichage des objets de la simulation</h2>
 <p>On appelle la fonction <code>appliquer_euler</code> à chaque écran avec le paramètre de temps écoulé. Cela modifie la fonction <code>_process</code>.</p>
-<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Application de la méthode d&#x27;Euler</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<div class="language-gdscript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Application de la méthode d'Euler</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
@@ -1142,18 +1142,43 @@ subit selon sa position réelle. Il est important de corriger la force de l'acc�
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="n">periode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="bp">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rayon_initial</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">vitesse_initiale</span>
 </span></code></pre></div></td></tr></table></div>
-<center>
-
-Valeurs initiales de la simulation
-
-|Corps|Masse|Masse corps rotation|Rayon initial|Période relative|
-|:--|:--|:--|:--|:--|
-|Vénus|$4,868 \times 10^{24}$|$1,988 \times 10^{30}$| $1,0815 \times 10^{11}$ m|6.16|
-|Terre|$5,972 \times 10^{24}$ kg|$1,988 \times 10^{30}$| $1,469 \times 10^{11}$ m|10|
-|Lune|$7,35 \times 10^{22}$ kg|$5,972 \times 10^{24}$ kg|$3,84 \times 10^{8}$ m|0.75|
-
-</center>
-
+<p><center></p>
+<p>Valeurs initiales de la simulation</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Corps</th>
+<th style="text-align: left;">Masse</th>
+<th style="text-align: left;">Masse corps rotation</th>
+<th style="text-align: left;">Rayon initial</th>
+<th style="text-align: left;">Période relative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Vénus</td>
+<td style="text-align: left;"><span class="arithmatex">\(4,868 \times 10^{24}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(1,988 \times 10^{30}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(1,0815 \times 10^{11}\)</span> m</td>
+<td style="text-align: left;">6.16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Terre</td>
+<td style="text-align: left;"><span class="arithmatex">\(5,972 \times 10^{24}\)</span> kg</td>
+<td style="text-align: left;"><span class="arithmatex">\(1,988 \times 10^{30}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(1,469 \times 10^{11}\)</span> m</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lune</td>
+<td style="text-align: left;"><span class="arithmatex">\(7,35 \times 10^{22}\)</span> kg</td>
+<td style="text-align: left;"><span class="arithmatex">\(5,972 \times 10^{24}\)</span> kg</td>
+<td style="text-align: left;"><span class="arithmatex">\(3,84 \times 10^{8}\)</span> m</td>
+<td style="text-align: left;">0.75</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
 <p>On utilise une période relative de 10 pour la Terre pour ralentir la simulation. Dans la prochaine section sur les interfaces utilisateurs, nous verrons comment amener ce paramètre dans la simulation directement.</p>
 <h2 id="structure-du-projet">Structure du projet</h2>
 <p>Vous pouvez récupérer le projet dans l'état d'avancement de la fin de cette page de notes ici : <a href="https://github.com/simulations-astrophysique/orbite-simulee-venus">:octicons-mark-github-24: Afficher le projet sur GitHub</a>.</p>
