@@ -1,0 +1,57 @@
+:root {
+    --md-admonition-icon--ui-desktop: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M8.954 17H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h18.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.565-1.243c.964-1.105 1.598-2.382 1.769-3.757ZM21.5 3.75a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25ZM13.537 17h-3.074c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.659-1.055-1.098-2.234-1.223-3.5Z"></path></svg>')
+    }
+  .md-typeset .admonition.ui-desktop,
+  .md-typeset details.ui-desktop {
+    border-color: rgb(168, 166, 20);
+  }
+  .md-typeset .ui-desktop > .admonition-title,
+  .md-typeset .ui-desktop > summary {
+    background-color: rgba(168, 166, 20, 0.1);
+  }
+  .md-typeset .ui-desktop > .admonition-title::before,
+  .md-typeset .ui-desktop > summary::before {
+    background-color: rgb(168, 166, 20);
+    -webkit-mask-image: var(--md-admonition-icon--ui-desktop);
+            mask-image: var(--md-admonition-icon--ui-desktop);
+  }
+
+  :root {
+    --md-admonition-icon--ui-mobile: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"></path></svg>')
+  }
+  .md-typeset .admonition.ui-mobile,
+  .md-typeset details.ui-mobile {
+    border-color: rgb(51, 21, 136);
+  }
+  .md-typeset .ui-mobile > .admonition-title,
+  .md-typeset .ui-mobile > summary {
+    background-color: rgba(51, 21, 136, 0.1);
+  }
+  .md-typeset .ui-mobile > .admonition-title::before,
+  .md-typeset .ui-mobile > summary::before {
+    background-color: rgb(51, 21, 136);
+    -webkit-mask-image: var(--md-admonition-icon--ui-mobile);
+            mask-image: var(--md-admonition-icon--ui-mobile);
+  }
+
+  :root {
+    --md-admonition-icon--ui-web: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M10.25 5.25A.75.75 0 0 1 11 4.5h2A.75.75 0 0 1 13 6h-2a.75.75 0 0 1-.75-.75ZM12 19.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path d="M4 2.75C4 1.784 4.784 1 5.75 1h12.5c.966 0 1.75.784 1.75 1.75v18.5A1.75 1.75 0 0 1 18.25 23H5.75A1.75 1.75 0 0 1 4 21.25Zm1.75-.25a.25.25 0 0 0-.25.25v18.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25Z"></path></svg>')
+  }
+  .md-typeset .admonition.ui-web,
+  .md-typeset details.ui-web {
+    border-color: rgb(31, 224, 89);
+  }
+  .md-typeset .ui-web > .admonition-title,
+  .md-typeset .ui-web > summary {
+    background-color: rgba(31, 224, 89, 0.1);
+  }
+  .md-typeset .ui-web > .admonition-title::before,
+  .md-typeset .ui-web > summary::before {
+    background-color: rgb(31, 224, 89);
+    -webkit-mask-image: var(--md-admonition-icon--ui-web);
+            mask-image: var(--md-admonition-icon--ui-web);
+  }
+
+  .block-header {
+    margin-top:0px;
+  }
