@@ -15,10 +15,6 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/conception/ui/">
       
       
-        <link rel="prev" href="../../analyse/cu/">
-      
-      
-        <link rel="next" href="../conception-objet/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Interfaces utilisateurs - Projet intégrateur 1</title>
+        <title>Conception de l'interface utilisateur - Projet intégrateur 1</title>
       
     
     
@@ -101,7 +97,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
       
@@ -122,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interfaces utilisateurs
+              Conception de l'interface utilisateur
             
           </span>
         </div>
@@ -174,14 +172,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -193,10 +185,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../intro/genie_logiciel/" class="md-tabs__link">
+        <a href="../../concepts/historique/" class="md-tabs__link">
           
   
-  Introduction et généralités
+  Concepts théoriques
 
         </a>
       </li>
@@ -211,30 +203,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../analyse/telos/" class="md-tabs__link">
+        <a href="../../iteration0/objectifs/" class="md-tabs__link">
           
   
-  Analyse
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  Conception
+  Itération 0
 
         </a>
       </li>
@@ -249,10 +221,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../implementation/java_gradle/" class="md-tabs__link">
+        <a href="../../iteration1/objectifs/" class="md-tabs__link">
           
   
-  Implémentation et versionnage
+  Itération 1
 
         </a>
       </li>
@@ -267,10 +239,55 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../qualite/critere_qualite/" class="md-tabs__link">
+        <a href="../../iterationN/documentation.md" class="md-tabs__link">
           
   
-  Qualité logicielle
+  Iteration N
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../implementation/creer_projet_2025/" class="md-tabs__link">
+          
+  
+  Implémentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../git.md" class="md-tabs__link">
+          
+  
+  Gestion de projet et collaboration
 
         </a>
       </li>
@@ -285,10 +302,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../activites-connexes/evolution-reusinage/" class="md-tabs__link">
+        <a href="../../xyz.md" class="md-tabs__link">
           
   
-  Activités connexes au développement
+  Exercices
 
         </a>
       </li>
@@ -300,24 +317,29 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../gestion/cadrage/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../../references/glossaire/" class="md-tabs__link">
+        
   
-  Gestion des projets
-
-        </a>
-      </li>
     
+  
+  Glossaire
+
+      </a>
+    </li>
   
 
       
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -374,7 +396,7 @@
             
   
   <span class="md-ellipsis">
-    Introduction et généralités
+    Concepts théoriques
   </span>
   
 
@@ -384,7 +406,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Introduction et généralités
+            Concepts théoriques
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -395,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/genie_logiciel/" class="md-nav__link">
+      <a href="../../concepts/historique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -416,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/approche/" class="md-nav__link">
+      <a href="../../concepts/approches/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -436,8 +458,243 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Les phases du développement logiciel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Les phases du développement logiciel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../intro/redaction_technique/" class="md-nav__link">
+      <a href="../../concepts/analyse.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'analyse des logiciels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/conception.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La conception des logiciels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/implémentation.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'implémentation des logiciels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/assurance-qualite.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le processus d'assurance qualité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/maintenance.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le processus de maintenance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/mise-en-service.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le déploiement et mise en service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Rédaction technique
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Rédaction technique
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/types-documents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de documents techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/redaction_technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -458,7 +715,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/dossier_analyse/" class="md-nav__link">
+      <a href="../../concepts/termes-a-eviter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Liste des termes à éviter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/dossier_analyse/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -479,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/gabarits/" class="md-nav__link">
+      <a href="../../concepts/gabarits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,6 +766,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -526,7 +812,7 @@
             
   
   <span class="md-ellipsis">
-    Analyse
+    Itération 0
   </span>
   
 
@@ -536,7 +822,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Analyse
+            Itération 0
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -547,11 +833,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../analyse/telos/" class="md-nav__link">
+      <a href="../../iteration0/objectifs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Étude de faisabilité
+    Objectifs
   </span>
   
 
@@ -568,11 +854,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../analyse/acteurs/" class="md-nav__link">
+      <a href="../../iteration0/rencontre-cadrage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Entitée actrices, descriptions et persona
+    Rencontre de cadrage
   </span>
   
 
@@ -589,11 +875,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../analyse/cu/" class="md-nav__link">
+      <a href="../../iteration0/dimensions-projet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    La méthode des cas d'utilisation
+    Dimensions d'un projet informatique
   </span>
   
 
@@ -605,6 +891,202 @@
             
               
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/entites-actrices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Entité actrice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/recits-utilisation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Récits d'utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/liste-fonctionnalites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Liste des fonctionnalités et des cas d'utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/technologies.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Choix de technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/securite.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Besoins de sécurité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/conformite-legale.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Conformité légale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/ressources" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Prévision des ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/standards-normes.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conception | Standards et normes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/criteres-qualite.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle | Critères de qualité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
   
   
   
@@ -622,105 +1104,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Extra
+    Itération 1
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
-            <span class="md-nav__icon md-icon"></span>
-            Extra
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../recits.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Récits utilisateurs dans les méthodes agiles
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Conception
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Conception
+            Itération 1
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -728,258 +1129,14 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Interfaces utilisateurs
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Interfaces utilisateurs
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#interactions-humain-machine-ihm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interactions humain-machine (IHM)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pourquoi-prendre-le-temps-de-penser-aux-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pourquoi prendre le temps de penser aux interfaces ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modele-theorique-de-laction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modèle théorique de l'action
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Modèle théorique de l'action">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#les-deux-ponts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Les deux ponts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les deux ponts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pont-de-levaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pont de l'évaluation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-paradigmes-de-conception-dinterface" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 paradigmes de conception d'interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3 paradigmes de conception d'interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quel-paradigme-choisir" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quel paradigme choisir ?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#principes-et-normes-de-conception" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes et normes de conception
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes et normes de conception">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#principes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Principes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Principes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#accessibilite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessibilité
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#indicateur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indicateur
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contrainte" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contrainte
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#association-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Association (mapping)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retroaction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rétroaction
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#normes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Normes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quoi-faire-avec-tous-ces-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quoi faire avec tous ces concepts ?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-       Références
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../conception-objet/" class="md-nav__link">
+      <a href="../../iteration1/objectifs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Conception orientée objet
+    Objectifs
   </span>
   
 
@@ -996,11 +1153,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercice1-conception/" class="md-nav__link">
+      <a href="../../iteration1/cas-utilisation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercice 1 - Les trombones
+    Analyse | Cas d'utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iterations1/interfaces.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse | Concevoir des interfaces
   </span>
   
 
@@ -1021,7 +1199,7 @@
         
   
   <span class="md-ellipsis">
-    Architectures logicielles
+    Conception | Choix architecture
   </span>
   
 
@@ -1030,49 +1208,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Extra
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
-            <span class="md-nav__icon md-icon"></span>
-            Extra
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1081,11 +1216,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accessibilité.md" class="md-nav__link">
+      <a href="../modele_donnees.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessibilité dans les interfaces
+    Conception | Modèle des données
   </span>
   
 
@@ -1095,9 +1230,127 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conception-objet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conception | Diagramme de classe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/ecrire-code.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implémentation | Écrire du code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/algorithme.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implémentation | Complexité des algorithmes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/documenter.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implémentation | Documenter du code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/plan-test.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle | Plan de test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/realiser-tests.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle | Réaliser des tests
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1136,7 +1389,7 @@
             
   
   <span class="md-ellipsis">
-    Implémentation et versionnage
+    Iteration N
   </span>
   
 
@@ -1146,7 +1399,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Implémentation et versionnage
+            Iteration N
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1157,11 +1410,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/java_gradle/" class="md-nav__link">
+      <a href="../../iterationN/documentation.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Java et Gradle
+    Analyse | Maintenir à jour la documentation
   </span>
   
 
@@ -1178,11 +1431,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/versionnage/" class="md-nav__link">
+      <a href="../../iterationN/implementation.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Versionnage sémantique
+    Implémentation | Continuer et réutiliser le code existant
   </span>
   
 
@@ -1199,11 +1452,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/git_avance/" class="md-nav__link">
+      <a href="../../iterationN/reusinage.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Git avancé
+    Implémentation | Réusiner du code
   </span>
   
 
@@ -1220,11 +1473,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/gitflow/" class="md-nav__link">
+      <a href="../../iterationN/maintenance.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GitFlow
+    Maintenance | Mise à jour et correction de bogues
   </span>
   
 
@@ -1241,11 +1494,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/efficacite/" class="md-nav__link">
+      <a href="../../iterationN/deploiement.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Efficacité des algorithmes
+    Déploiement | Préparer et déployer un système
   </span>
   
 
@@ -1262,300 +1515,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/developpement_securitaire/" class="md-nav__link">
+      <a href="../../iterationN/test-deploiement.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gestion de la sécurité
+    Déploiement | Tester la version déployer
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    JavaFX
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7">
-            <span class="md-nav__icon md-icon"></span>
-            JavaFX
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/javafx_intro/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/creer_projet_2025/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Configurer son projet (cohorte 2025)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/formulaire_javafx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Créer un formulaire
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/conteneurs_javafx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Manipuler les conteneurs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/fenetre_javafx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gestion des fenêtres
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/resources_javafx.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Charger des ressources
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/listes_javafx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Afficher des listes de données
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/erreur_javafx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Erreurs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Autres ressources de code
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_8">
-            <span class="md-nav__icon md-icon"></span>
-            Autres ressources de code
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/jdbc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Interfacer une base de données avec JDBC
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1594,7 +1562,7 @@
             
   
   <span class="md-ellipsis">
-    Qualité logicielle
+    Implémentation
   </span>
   
 
@@ -1604,7 +1572,47 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Qualité logicielle
+            Implémentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JavaFX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            JavaFX
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1615,11 +1623,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qualite/critere_qualite/" class="md-nav__link">
+      <a href="../../implementation/creer_projet_2025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Critère de qualité
+    Créer projet JavaFX (fusionner avec intro à Java)
   </span>
   
 
@@ -1636,11 +1644,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qualite/processus_qualite/" class="md-nav__link">
+      <a href="../../implementation/java_gradle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Processus de tests
+    Introduction à l'environnement Java
   </span>
   
 
@@ -1657,11 +1665,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qualite/assurance_qualite/" class="md-nav__link">
+      <a href="../../implementation/javafx_intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Assurance qualité
+    Introduction à JavaFX
   </span>
   
 
@@ -1678,15 +1686,308 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qualite/java_junit/" class="md-nav__link">
+      <a href="../../implementation/conteneurs_javafx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Outil de test
+    Conteneurs JavaFX
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/formulaire_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Créer un formulaire avec JavaFX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/listes_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listes de données
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/fenetre_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestions des fenêtres avec JavaFX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/erreur_javafx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erreurs fréquentes en JavaFX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JDBC
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            JDBC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/jdbc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Se connecter à une BD avec JDBC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sujets connexes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sujets connexes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/developpement_securitaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Développement sécuritaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/efficacite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Efficacité des algorithmes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/git_avance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utilisation avancée de Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/gitflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La philosophie GitFlow pour organiser un dépôt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1725,7 +2026,7 @@
             
   
   <span class="md-ellipsis">
-    Activités connexes au développement
+    Gestion de projet et collaboration
   </span>
   
 
@@ -1735,7 +2036,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Activités connexes au développement
+            Gestion de projet et collaboration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1746,163 +2047,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../activites-connexes/evolution-reusinage/" class="md-nav__link">
+      <a href="../../git.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Maintenance, évolution et réusinage
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../activites-connexes/documentation-personnes-utilisatrices/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Documentation pour les personnes utilisatrices
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../activites-connexes/documentation-technique/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Documentation technique
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../activites-connexes/deploiement/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Déploiement
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Gestion des projets
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Gestion des projets
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gestion/cadrage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Démarrer un projet
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gestion/cueillette_information/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Techniques de collecte de l'information
+    Utiliser Git
   </span>
   
 
@@ -2015,10 +2164,79 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
         
           
-          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    En rappel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            En rappel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/cueillette_information/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Techniques de collecte de l'information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2029,8 +2247,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
             <span class="md-nav__icon md-icon"></span>
             Projet intégrateur 2
           </label>
@@ -2072,6 +2290,94 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Exercices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xyz.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/glossaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2105,7 +2411,8 @@
 <p>Au début de l'informatique, on faisait des programmes scientifiques (sans interface). Le code était écrit sur des cartes poinçonnées qui étaient lues par l'ordinateur, exécuté et produisait une sortie imprimée. Ensuite, les ordinateurs ont eu un moniteur qui était d'abord monochrome (une seule couleur), puis avec 8 bits (et seulement 8 couleurs, donc 256 combinaisons d'arrière-plan et d'avant-plan). L'arrivée de la souris a amené l'utilisation d'icône et de boutons cliquables (paradigmes de clic à un bouton, clic gauche, clic droit) et le développement d'une sous-discipline de l'informatique : les <strong>interfaces utilisateur</strong>, référées généralement comme le <em>UI (user interface)</em>. Plus récemment, l'intégration de multiples résolutions (en particulier par les téléphones mobiles) a continué de pousser la discipline à se développer et à se recentrer sur l'<strong>expérience utilisateur</strong> <em>UX</em> (user experience). On ne parle plus de simple disposition de contrôle suivant un ensemble de normes, mais aussi de disposition réduisant la charge de travail et de « relation » entre l'humain et la machine. </p>
 <figure>
   <a class="glightbox" href="../../images/evolutuion_ui.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/evolutuion_ui.png"></a>
-  <figcaption>Évolution des différentes interfaces</figcaption>
+<br>
+<figcaption>Évolution des différentes interfaces</figcaption>
 </figure>
 <h2 id="pourquoi-prendre-le-temps-de-penser-aux-interfaces">Pourquoi prendre le temps de penser aux interfaces ?</h2>
 <p>En marketing, la réponse à cette question serait fort simple : maximiser l'attractivité du produit pour en vendre le plus possible (ou du moins, lui donner la meilleure réputation possible). L'attractivité du système peut se définir autant en termes d'esthétisme qu'en termes de dépendance et de conditionnement.</p>
@@ -2158,7 +2465,7 @@
 Utilisez la théorie des ponts de l'exécution et de l'évaluation pour expliquer votre raisonnement (possiblement inconscient) lors de la réalisation d'une tâche avec le système.</p>
 </div>
 <h2 id="3-paradigmes-de-conception-dinterface">3 paradigmes de conception d'interface</h2>
-<p>Une fois les fondements établies dans le pourquoi est-ce que l'on fait des actions, il faut déterminer un <span class="tooltip hint--top" aria-label="Modèle de pensée. Conception théorique dominante qui a cours à une certaine époque dans une communauté scientifique. (Antidote 9, 2023)">paradigme</span> dans la conception de l'interface : une façon de la réfléchir. Un peu comme lorsqu'on choisit un langage de programmation (entre un paradigme objet et un paradigme fonctionnel), le même choix se pose en conception d'interface. Comme pour les langages de programmation, des éléments tirés de plusieurs paradigmes peuvent coexister dans un même langage. </p>
+<p>Une fois les fondements établies dans le pourquoi est-ce que l'on fait des actions, il faut déterminer un [paradigme]{Modèle de pensée. Conception théorique dominante qui a cours à une certaine époque dans une communauté scientifique. (Antidote 9, 2023)} dans la conception de l'interface : une façon de la réfléchir. Un peu comme lorsqu'on choisit un langage de programmation (entre un paradigme objet et un paradigme fonctionnel), le même choix se pose en conception d'interface. Comme pour les langages de programmation, des éléments tirés de plusieurs paradigmes peuvent coexister dans un même langage. </p>
 <dl>
 <dt><code>Paradigme technologique</code></dt>
 <dd>Dans ce paradigme, l'interface est le miroir de l'organisation du système. Par exemple, chaque fonction du code du système s'appelle à l'aide d'un bouton qui nomme explicitement (ou presque) cette fonction. On retrouve très souvent ce type d'interface dans les programmes consoles ou dans les systèmes techniques. L'interface de Git (ligne de commande et client GUI) est un exemple de système utilisant le paradigme technologique.</dd>
@@ -2256,7 +2563,7 @@ Utilisez la théorie des ponts de l'exécution et de l'évaluation pour explique
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-11</span>
   </span>
 
     
@@ -2281,44 +2588,6 @@ Utilisez la théorie des ponts de l'exécution et de l'évaluation pour explique
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-        
-          
-          <a href="../../analyse/cu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La méthode des cas d&#39;utilisation">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              <div class="md-ellipsis">
-                La méthode des cas d'utilisation
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../conception-objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception orientée objet">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Conception orientée objet
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -2381,7 +2650,7 @@ Utilisez la théorie des ponts de l'exécution et de l'évaluation pour explique
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.stikcy", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>

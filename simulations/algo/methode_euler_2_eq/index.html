@@ -596,11 +596,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../erreur_euler.md" class="md-nav__link">
+      <a href="../rk4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Erreur théorique de la méthode d'Euler
+    Méthode de Runge-Kutta d'ordre 4
   </span>
   
 
@@ -617,11 +617,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../rk4/" class="md-nav__link">
+      <a href="../erreurs_methodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Méthode de Runge-Kutta d'ordre 4
+    Erreurs théoriques des méthodes
   </span>
   
 
@@ -746,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_creer_scene.md" class="md-nav__link">
+      <a href="../../godot/exemple_creer_scene/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -767,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_mouvement_venus.md" class="md-nav__link">
+      <a href="../../godot/exemple_mouvement_venus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_reutiliser_script.md" class="md-nav__link">
+      <a href="../../godot/exemple_reutiliser_script/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_mise_a_lechelle.md" class="md-nav__link">
+      <a href="../../godot/exemple_mise_a_lechelle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_mouvement_simule.md" class="md-nav__link">
+      <a href="../../godot/exemple_mouvement_simule/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -851,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_interface.md" class="md-nav__link">
+      <a href="../../godot/exemple_interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_comportement_interface.md" class="md-nav__link">
+      <a href="../../godot/exemple_comportement_interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -893,11 +893,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../godot/exemple_dispositifs_saisie.md" class="md-nav__link">
+      <a href="../../godot/exemple_dispositifs_saisie/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Dispositifs de saisie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../godot/exemple_scene_heritee/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Héritage de scène
   </span>
   
 
@@ -1038,7 +1059,7 @@ p_4 &amp;= p_3 + h \times v_3 \\\\
 </div>
 <h2 id="implementation">Implémentation</h2>
 <p>L'implémentation en python se fait de façon analogue à celle pour une équation, car <strong>tous les membres de droites utilisent l'information de l'itération précédente.</strong> </p>
-<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthode d'Euler à deux équations</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Méthode d&#x27;Euler à deux équations</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -1053,7 +1074,7 @@ p_4 &amp;= p_3 + h \times v_3 \\\\
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span> <span class="nf">euler_2eq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">euler_2eq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">p_i</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">v_i</span> <span class="o">=</span> <span class="mi">1</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="n">t_i</span> <span class="o">=</span> <span class="n">a</span>
