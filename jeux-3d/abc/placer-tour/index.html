@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/placer-tour/">
       
       
-        <link rel="prev" href="../gestion-camera/">
+        <link rel="prev" href="../faire-tirer-tour/">
       
       
         <link rel="next" href="../../ressources/">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Placer tour - Jeux 3D</title>
+        <title>Gérer le placement des tours - Jeux 3D</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gerer-le-placement-des-tours" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -121,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Placer tour
+              Gérer le placement des tours
             
           </span>
         </div>
@@ -857,6 +862,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../programmer/collisions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestion des collisions et la physique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../programmer/animations/" class="md-nav__link">
         
   
@@ -953,10 +979,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -967,8 +993,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             Organiser le code d'un jeu
           </label>
@@ -1043,10 +1069,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
         
           
-          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1057,8 +1083,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
             <span class="md-nav__icon md-icon"></span>
             Exemples et situations fréquentes
           </label>
@@ -1133,10 +1159,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
         
           
-          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1147,8 +1173,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_12">
             <span class="md-nav__icon md-icon"></span>
             Extra
           </label>
@@ -1281,26 +1307,18 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faire-tirer-tour/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Placer tour
+    Permettre aux tours de tirer
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -1313,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../structure-machine-etat.md" class="md-nav__link">
+      <a href="../gestion-etats-tour.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1406,6 +1424,112 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gérer le placement des tours
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Gérer le placement des tours
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-les-zones-de-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer les zones de construction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-le-controleur-de-jeu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer le contrôleur de jeu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#populer-les-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Populer les variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detecter-le-clic-sur-un-objets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Détecter le clic sur un objets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instancier-la-tour" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instancier la tour
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1523,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../enregistrer-score.md" class="md-nav__link">
+      <a href="../fin-partie-score.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1579,19 +1703,34 @@
                   
 
 
-  <h1>Placer tour</h1>
-
+<h1 id="gerer-le-placement-des-tours">Gérer le placement des tours</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Pages de référence</span></p>
 <ul>
-<li>Créer les zones de construction</li>
-<li>Créer le contrôleur de jeu</li>
-<li>
-<p>Populer les variables</p>
-</li>
-<li>
-<p>Détecter le clic sur un objets</p>
-</li>
-<li>Instancier la tour</li>
+<li><a href="../../programmer/input-system/">Gérer les contrôles avec le InputSystem</a></li>
+<li><a href="../programmer/ui.md">Créer des interfaces utilisateurs</a></li>
 </ul>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>50 minutes</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14V4.5m8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04l6.13-6.13Z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<div>
+<p><span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_NIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_NIA.png" width="48" /></a></span></p>
+</div>
+<div>
+<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="creer-les-zones-de-construction">Créer les zones de construction</h2>
+<h2 id="creer-le-controleur-de-jeu">Créer le contrôleur de jeu</h2>
+<h2 id="populer-les-variables">Populer les variables</h2>
+<h2 id="detecter-le-clic-sur-un-objets">Détecter le clic sur un objets</h2>
+<h2 id="instancier-la-tour">Instancier la tour</h2>
 
 
 
@@ -1612,7 +1751,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-28</span>
   </span>
 
     
@@ -1642,7 +1781,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../gestion-camera/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gestion de la caméra">
+          <a href="../faire-tirer-tour/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Permettre aux tours de tirer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1652,7 +1791,7 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Gestion de la caméra
+                Permettre aux tours de tirer
               </div>
             </div>
           </a>
