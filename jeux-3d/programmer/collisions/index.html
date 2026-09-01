@@ -1847,7 +1847,17 @@
 <p>Pour chaque <em>collider</em> ou <em>rigidbody</em> il est aussi possible d'inclure ou d'exclure des <em>layers</em> pour configurer précisement les collisions qui doivent être détectées.</p>
 <h2 id="qualite-des-collisions">Qualité des collisions</h2>
 <h2 id="parametres-physiques">Paramètres physiques</h2>
+<p>Plusieurs paramètres physiques peuvent être gérés avec les composants de Unity. On détaille dans les sections suivantes la gestion des forces, de la gravité, de l'aérodynamisme (simple), de la friction et de l'élasticité.</p>
+<p>Unity permet aussi une gestion avancée de la <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/WheelColliderTutorial.html">physique des véhicules</a></p>
 <h3 id="gerer-les-forces">Gérer les forces</h3>
+<p>Pour appliquer une force dans Unity, on appelle la méthode <code>AddForce</code> sur un <em>rigidbody</em>. Cette méthode applique une certaine «&nbsp;force&nbsp;» sur l'objet. La quantité physique représentée par la «&nbsp;force&nbsp;» appliquée dépend du type d'application.</p>
+<ul>
+<li><strong>Impulse</strong> : une force d'impulsion correspond à un coup donné pour un instant, soit une seule <em>frame</em>. Cette force correspond à un vecteur d'une quantité de mouvement (<em>momentum</em>), soit <span class="arithmatex">\(p = mv\)</span>. Donc, une quantité de mouvement de 5 appliqué à un objet d'une masse de 2.5 permet d'obtenir un déplacement de 2 m/s. Son effet est instantané.</li>
+<li><strong>VelocityChange</strong> : applique un changement dans la vélocité de l'objet. La vélocité est une vitesse à laquelle on a donné une direction. Le vecteur fourni à la méthode est la nouvelle vélocité. Son effet est instantané.</li>
+<li><strong>Force</strong> : applique une force de façon continue sur un objet, comme un champ de force ou du vent. Cela correspond à la véritable définition physique d'une force. Il n'est pas nécessaire d'appeler <code>fixedDeltaTime</code>, Unity fait adéquatement les calculs. Donc, une force de 1 Newton, appliqué à un objet d'une masse de 2 kg génère une accélération de 0.5 m/s^2.</li>
+<li><strong>Acceleration</strong> : applique une force, mais sans tenir compte de la masse. Cela peut correspondre à un mouvement de personnage, par exemple. La force applique seulement une différence de vitesse. Donc une valeur de 0.5 d'accélération indique qu'après 1 seconde, la vitesse sera de 0.5, après 2 secondes de 1 et ainsi de suite.</li>
+</ul>
+<p>La démonstration de chaque type de force est présenté dans le projet <a href="https://github.com/420-5A4-VI-Jeux-3D/Demo-Application-Physique"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></span> Demo application physique</a>.</p>
 <h3 id="gravite">Gravité</h3>
 <h3 id="aerodynamisme">Aérodynamisme</h3>
 <h3 id="physics-material">Physics material</h3>
@@ -1871,7 +1881,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-01</span>
   </span>
 
     
