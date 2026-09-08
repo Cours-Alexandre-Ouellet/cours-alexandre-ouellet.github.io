@@ -37,6 +37,12 @@
       
       
 
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-12 6 6-6-6-6-1.4 1.4 4.6 4.6-4.6 4.6L10 18Z"/></svg>');}</style>
+
 
     
     
@@ -547,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/implémentation.md" class="md-nav__link">
+      <a href="../../concepts/implementation.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/assurance-qualite.md" class="md-nav__link">
+      <a href="../../concepts/assurance-qualite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,27 +753,6 @@
   
   <span class="md-ellipsis">
     Présenter un dossier d'analyse
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../concepts/gabarits/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gabarits et exemple
   </span>
   
 
@@ -986,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteration0/developpement-securitaire/" class="md-nav__link">
+      <a href="../../iteration0/developpement_securitaire.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,11 +1013,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteration0/ressources.md" class="md-nav__link">
+      <a href="../../iteration0/planification-ressources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Analyse | Prévision des ressources
+    Analyse | Planification des ressources
   </span>
   
 
@@ -1070,7 +1055,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteration0/criteres-qualite.md" class="md-nav__link">
+      <a href="../../iteration0/pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conception | Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration0/criteres-qualite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2125,15 +2131,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#impact-des-erreurs-de-prediction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Impact des erreurs de prédiction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#methodes-a-pointage_1" class="md-nav__link">
     <span class="md-ellipsis">
       Méthodes à pointage
@@ -2164,36 +2161,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Estimation en temps">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#effet-ringelmann" class="md-nav__link">
-    <span class="md-ellipsis">
-      Effet Ringelmann
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
   <a href="#methode-poker" class="md-nav__link">
     <span class="md-ellipsis">
       Méthode Poker
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      Références
     </span>
   </a>
   
@@ -2560,13 +2533,6 @@
 </div>
 </div>
 <hr>
-<p>Deux des tâches difficile dans la planification des projets est la prédiction de la durée et l'ordonnancement des tâches dans la réalisation d'un projet. Ce sont deux tâches qui s'apprennent par la pratique, tous manquant invariablement de précision dans l'accomplissement de ces tâches, parfois même avec une grande expérience. Des méthodes ont été développées, en particulier dnas la pratique de l'Agile afin d'adresser ces enjeux. Ces approches ne rendent pas les prédictions parfaites et ne garantissent pas une priorisation optimale, mais aide grandement à améliorer la qualité de ces dernières.</p>
-<h2 id="impact-des-erreurs-de-prediction">Impact des erreurs de prédiction</h2>
-<p>Avant de décrire la méthode en pratique, petit détour sur l'impact des erreurs de prédiction en temps (quoiqu'une analyse analogue peut être faite pour les coûts) sur l'avancement d'un projet. Le graphique présente une ligne <em>réaliste</em> qui montre la prévision faite pour le projet. Une ligne <em>pessimiste</em> indique l'avancement du projet avec un retard de 15% dans l'avancement du projet, tandis que la ligne <em>optimiste</em> indique un avancement plus rapide par 15%. <em>Le nombre de 15% a été choisi arbitrairement à des fins d'illustrations</em>.</p>
-<figure>
-    <a class="glightbox" href="../../images/graphique_prevision.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/graphique_prevision.png"></a>
-    <figcaption>Impact des divers types de prévision dans le temps</figcaption>
-</figure>
 <h2 id="methodes-a-pointage_1">Méthodes à pointage</h2>
 <p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles sont qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retire se biais en comparant les CU entre eux. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
 <dl>
@@ -2750,20 +2716,10 @@
 <p>Par exemple, on considère que le développement du système de gestion de projet demande 480 points pour la première livraison. On engage deux personnes pour réaliser le développement. Au rythme de 20 points par semaine, on estime à 12 semaines le temps qu'il faudra pour la première livraison. Après 4 semaines, nos ressources financières permettent l'embauche d'une 3e personne. Combien de temps faudra-t-il alors pour compléter le projet ? </p>
 <p>La réponse est plus rapide et avec un peu d'algèbre, on arrive à un peu plus de 5 semaines de travail restantes. Si par exemple pour un CU on avait réalisé la prédiction en terme de temps, comme 10 jours (à deux), on aurait du le convertir en 6,66 jours (à 3). Cette conversion aurait été faite avec chacun de CU, ce qui prend un temps considérable.</p>
 </div>
-<h3 id="effet-ringelmann">Effet Ringelmann</h3>
-<p>Une blague de gestion de projet va comme suit : « un gestionnaire de projet est quelqu'un qui pense que si une femme peut faire un enfant en 9 mois, 9 femmes peuvent faire un enfant en 1 mois. ». Évidemment, nous réalisons toute de suite le non sens dans cette blague. Cependant, elle contient quand même un fond de vérité : quand on ajoute des gens dans un processus (augmenter la taille d'une équipe), on ne peut pas systématiquement diviser le travail enter le nombre de personne. D'autres mécanismes apparaissent souvent comme le temps de rencontre (plus il y a de gens, plus l'effort de coordination est grand), le temps pour prendre connaissance des travaux des autres, le temps perdu en distraction... Tout cela est connu sous le nom de l'<strong>Effet Ringelmann</strong>.</p>
-<figure>
-  <a class="glightbox" href="../../images/ringelmann%20effect%20for%20productivity.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="height=250px" src="../../images/ringelmann%20effect%20for%20productivity.png"></a>
-<br>
-<figcaption>Effet Ringelmann, tiré de Ayen, 2016.</figcaption>
-</figure>
-<p>Comme on le voit sur la figure, la ligne pointillé représente le « potentiel », soit le produit du nombre de personnes impliquées dans le projet par une mesure de performance (ici chaque personne a un potentiel de performance de 100). La ligne pleine « actual » suit une courbe logarithmique montrant que l'apport de chaque personne, bien qu'augmentant la performance est, [marginalement]{dans un modèle à plusieurs variables, on appelle « marginal » l'effet isolé d'une des variables}, de moins en moins important. La perte de productivité occasionnée est illustrée par la zone grise « Process loss ».</p>
 <h2 id="methode-poker">Méthode <em>Poker</em></h2>
 <p>La méthode du <em>poker</em> se réalise avec un jeu de cartes. La liste des tâches doit être préalablement établie. Chaque personne possède un ensemble de cartes numéroté, souvent selon la suite de Fibonacci. L'utilisation de cette suite permet de tenir compte de l'erreur grandissante d'estimation. À chaque tour, une tâche est sélectionnée et chaque personne choisit immédiatement et en silence une carte correspondant au nombre de points à assigner à la tâche et elle place la carte, face cachée, devant elle. Lorsque toutes les cartes sont placées, elles sont toutes révélées en même temps. L'équipe discute ensuite pour obtenir un <strong>consensus</strong> sur le nombre de points. <strong>Il ne faut pas utiliser des mesures de tendance centrale comme la moyenne pour sauver des débats</strong> La liste des tâches peut être clarifiée, bonifiée ou simplifiée selon l'interprétation de la tâche par tout un chacun durant le processus.</p>
 <p>Les cartes disponibles pour le pointage sont : <strong>1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100</strong>. La carte 100 indique souvent un élément trop élevé et peut mener à scinder ou préciser le CU en question. Une carte <strong>pause café</strong> permet de signaler qu'il est le temps d'arrêter et une carte d'<strong>interrogation</strong> permet de demander des clarifications le CU, car il est impossible de l'évaluer dans l'état actuel de sa formulation.</p>
-<p><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Gabarit méthodes par point</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"></path></svg></span></p>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"></path></svg></span> Références</h2>
-<p>Ayen, E. M. (2016, 21 Février). Ringelmann effect. <a href="https://www.slideshare.net/ellaabyou/ringelmann-effect">https://www.slideshare.net/ellaabyou/ringelmann-effect</a>.</p></div>
+<p><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Gabarit méthodes par point</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"></path></svg></span></p></div>
 
 
 
