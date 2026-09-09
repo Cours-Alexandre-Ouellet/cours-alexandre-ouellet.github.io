@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/gestion/methodes_pointage/">
       
       
-        <link rel="prev" href="../../implementation/gitflow/">
+        <link rel="prev" href="../versionnage/">
       
       
-        <link rel="next" href="../versionnage/">
+        <link rel="next" href="../entrepreunariat/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -295,14 +295,25 @@
   
     
     
+      
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../git.md" class="md-tabs__link">
+        <a href="../cueillette_information/" class="md-tabs__link">
           
   
   Gestion de projet et collaboration
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -2045,12 +2056,84 @@
   
   
   
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    En rappel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            En rappel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../git.md" class="md-nav__link">
+      <a href="../cueillette_information/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Utiliser Git
+    Techniques de collecte de l'information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versionnage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Versionnage sémantique
   </span>
   
 
@@ -2123,6 +2206,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#impact-sur-larchitecture-du-systeme-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact sur l'architecture du système (A)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importance-du-cas-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importance du cas (I)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexite-de-developpement-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexité de développement (C)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ponderation-des-aspects" class="md-nav__link">
     <span class="md-ellipsis">
       Pondération des aspects
@@ -2170,11 +2280,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../versionnage/" class="md-nav__link">
+      <a href="../../git.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Versionnage sémantique
+    Utiliser Git
   </span>
   
 
@@ -2221,78 +2331,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    En rappel
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_6">
-            <span class="md-nav__icon md-icon"></span>
-            En rappel
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cueillette_information/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Techniques de collecte de l'information
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2427,20 +2465,21 @@
 </div>
 <hr>
 <h2 id="methodes-a-pointage_1">Méthodes à pointage</h2>
-<p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles sont qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retire se biais en comparant les CU entre eux. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
-<dl>
-<dt><code>Impact sur l'architecture du système (A)</code></dt>
-<dd>Considère à quel point les CU ont un impact sur la structure du système. Un CU avec un fort impact de l'architecture est un CU dont les composantes on un fort degré de [dépendances sortantes]{de nombreuses composantes dépendent des données de ce CU}. Également, les CU qui manipulent beaucoup de données (car on optimisera pour les larges ensembles de données) où que l'on sait instable (à risque d'évoluer) seront considérées comme ayant un impact élevé sur l'architecture du système.</dd>
-<dt><code>Importance du cas (I)</code></dt>
-<dd>L'importance se définit par rapport au besoin de l'entité cliente. Une fonctionnalité importante sera développée plus rapidement (score d'importance plus élevé), car ces CU ont plus de valeurs pour permettre des déploiments rapides d'un système utilisable et utile.</dd>
-<dt><code>Complexité de développement (C)</code></dt>
-<dd>Un CU complexe peut être complexe lors qu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asychrone), effectue un traitement parallèle ou tout autre tâche qui présente un défi d'implémentation. Développer les fonctionnalités complexes rapidement permet une meilleure assurance qualité de ces fonctionnalités complexes. Cela permet aussi de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</dd>
-</dl>
+<p>Le but des méthodes à pointage est d'assigner une difficulté (ou effort) aux CU sans devoir composer avec une échelle réelle. Le défaut des échelles réelles est qu'elle tienne compte de notre propre biais de perception face à la vitesse du travail. Les méthodes à pointage retirent ce biais en comparant les CU. Pour obtenir une vue d'ensemble sur le CU, on l'évalue selon 3 aspects :</p>
+<h3 id="impact-sur-larchitecture-du-systeme-a">Impact sur l'architecture du système (A)</h3>
+<p class="annotate">Considère à quel point les CU ont un impact sur la structure du système. Un CU avec un fort impact de l'architecture est un CU dont les composantes ont un fort degré de dépendances sortantes (1). Également, les CU qui manipulent beaucoup de données (car on optimisera les traitements pour les larges ensembles de données) ou que l'on sait instables (à risque d'évoluer) seront considérées comme ayant un impact élevé sur l'architecture du système.</p>
+<ol>
+<li>de nombreuses composantes dépendent des données de ce CU</li>
+</ol>
+<h3 id="importance-du-cas-i">Importance du cas (I)</h3>
+<p>L'importance se définit par rapport au besoin de l'entité cliente. Une fonctionnalité importante sera développée plus rapidement (score d'importance plus élevé), car ces CU ont plus de valeurs pour permettre des déploiements rapides d'un système utilisable et utile.</p>
+<h3 id="complexite-de-developpement-c">Complexité de développement (C)</h3>
+<p>Un CU complexe peut être complexe lorsqu'il contient des algorithmes complexes, traite un grand volume de données, interagit avec des dispositifs (souvent de façon asynchrone), effectue un traitement parallèle ou toute autre tâche qui présente un défi d'implémentation. Développer les fonctionnalités complexes rapidement permet une meilleure assurance qualité de ces fonctionnalités complexes. Cela permet aussi de mieux ajuster le temps de développement si les difficultés techniques sont plus grandes qu'anticipées.</p>
 <details class="ex-projet" open="open">
 <summary>Classification de 3 CU</summary>
-<p><em>Certains nombres entre 0 et 100 sont utilisés dans cet exemple. Nous verrons lesquels et pourquoi ceux là à la section <a href="./#m%C3%A9thode-poker">Méthode <em>Poker</em></a>.</em></p>
+<p><em>Certains nombres entre 0 et 100 sont utilisés dans cet exemple. Nous verrons lesquels et la raison pour laquelle ces nombres ont été choisis à la section <a href="./#m%C3%A9thode-poker">Méthode <em>Poker</em></a>.</em></p>
 <hr>
-<p><strong>CU-A01-A - Créer un nouveau projet</strong></p>
+<p><strong>CU-A01-A - Créer un nouveau groupe</strong></p>
 <table>
 <thead>
 <tr>
@@ -2457,9 +2496,10 @@
 </tr>
 </tbody>
 </table>
-<p>Le CU a un haut impact sur l'architecture, car toutes les tâches et paramètres du projet dépendent de la structure des projets qui est défini dans leur création. Le cas a aussi une grande importance, car sans la structure de projet, le système ne présente que peu d'intérêt d'utilisation. Finalement, le cas ne présente que peu de complexité puisque qu'il s'agit d'initialiser un projet vide, donc avec peu ou pas de dépendances à d'autres données.</p>
+<p>Le CU a un haut impact sur l'architecture, car tous les liens vers le groupe (élèves inscrits, personne enseignante, local, horaire, travaux...) dépendent de la structure des groupes qui est définie dans leur création. Le cas a aussi une grande importance, car sans la structure de groupe, le système ne présente que peu d'intérêt d'utilisation. Finalement, le cas ne présente que peu de complexité puisque qu'il s'agit d'initialiser un groupe vide, donc avec peu ou pas de dépendances à d'autres données.</p>
+<p><strong>Attention</strong> : dans l'analyse de l'architecture, on regarde les dépendances aux structures et non aux données.</p>
 <hr>
-<p><strong>CU-A02-A Ajouter un état de tâche</strong></p>
+<p><strong>CU-A02-A Ajouter une évaluation</strong></p>
 <table>
 <thead>
 <tr>
@@ -2472,13 +2512,13 @@
 <tr>
 <td style="text-align: left;">8</td>
 <td style="text-align: left;">13</td>
-<td style="text-align: left;">40</td>
+<td style="text-align: left;">20</td>
 </tr>
 </tbody>
 </table>
-<p>Le CU a un impact moyen sur l'architecture, car les états de tâches permettent au projet de cheminer vers sa réalisation, mais certains états sont déjà définis à la création des projet, donc l'ajout d'un état ne devrait pas changer de façon majeure le fonctionnement du système. C'est un cas avec une certaine importance pour adapter le flux de travail aux pratiques de l'entreprise réalisant le projet. Finalement, le cas a une haute complexité, car il peut avoir un impact sur toutes les tâches d'un projet, par exemple en modifiant leur progression, car ces tâches ont maintenant des étapes de plus à accomplir.</p>
+<p>Le CU a un impact moyen sur l'architecture, car les évaluations prennent plusieurs formes et sont liées à des élèves ou des groupes d'élèves. C'est un cas avec une certaine importance, car il demande d'introduire les exigences de chacune des personnes enseignantes au système. De plus, sans cette fonctionnalité, le système perd en valeur. Finalement, le cas a une haute complexité, car il y a beaucoup de configuration possible dans les données.</p>
 <hr>
-<p><strong>CU-B06 Générer un rapport d’avancement de projet</strong></p>
+<p><strong>CU-B06 Générer un rapport de présence</strong></p>
 <table>
 <thead>
 <tr>
@@ -2495,10 +2535,10 @@
 </tr>
 </tbody>
 </table>
-<p>Le CU n'a aucun impact sur l'architecture, car il consulte des données sans les modifier. Donc qu'importe comment les données sont organisées, ce CU les interrogera et extraira l'information pertinente. Le cas a une importance stratégique pour le suivi des projets, mais il s'agit d'une vue condensée; l'information peut être extraite manuellement des diverses interfaces. Le cas aussi présente peu de complexité, car il s'agit que de récupérer et agréger des données.</p>
+<p>Le CU n'a aucun impact sur l'architecture, car il consulte des données sans les modifier. Donc qu'importe comment les données sont organisées, ce CU les interrogera et extraira l'information pertinente. Le cas a une importance pour le suivi des présences, mais il s'agit somme toute de cas qui seront rarement problématiques. Le cas aussi présente peu de complexité, car il s'agit que de récupérer et agréger des données.</p>
 </details>
 <h3 id="ponderation-des-aspects">Pondération des aspects</h3>
-<p>Chacun des trois aspects reçoit une pondération entre 1 et 3 qui agit comme un <strong>facteur multiplicateur</strong> pour cet aspect. Cela permet de faire ressortir un aspect au-devant des autres ou de les ordonnées. Autant que possible, l'on souhaite éviter une égalité dans les coefficients, car sinon les objetifs de développement deviennent moins clairs (on travaille à la fois en priorisant par exemple les éléments importants et complexes, donc autrement dit un peu tout...).</p>
+<p>Chacun des trois aspects reçoit une pondération entre 1 et 3 qui agit comme un <strong>facteur multiplicateur</strong> pour cet aspect. Cela permet de faire ressortir un aspect au-devant des autres ou de les ordonner. Autant que possible, l'on souhaite éviter une égalité dans les coefficients, car sinon les objectifs de développement deviennent moins clairs (on travaille à la fois en priorisant par exemple les éléments importants et complexes, autrement dit un peu tout...).</p>
 <div class="admonition exercice">
 <p class="admonition-title">Types de systèmes et priorités</p>
 <p>Complétez le tableau suivant des coefficients (3 plus important, 1 le moins important)</p>
@@ -2603,15 +2643,22 @@
 </details>
 </div>
 <h2 id="estimation-en-temps">Estimation en temps</h2>
-<p>Après avoir déterminer le niveau de complexité des CU et d'avoir déterminer leur ordonnancement, il faut estimer le temps nécessaire à leur complétion. Encore une fois, on utilise un système de pointage, mais cette fois-ci il est assit sur une conversion en temps réel. Par exemple, on peut fixer (arbitrairement), qu'une personne travaille 20 points par semaine. Donc si l'on croit que le développement d'un CU prend deux semaines, on assigne 40 points à ce CU. L'avantage de travailler par point (plutôt qu'avec des heures ou des jours), est qu'en cas de changement dans le rythme du projet (ajout ou retrait de ressources), les estimations demeurent utilisables, il suffit que de changer le rythme (nombre de points par semaine) que l'on peut accomplir. On peut voir les points comme étant une mesure équivalente aux heures-personnes ou jours-personnes selon la conversion faite.  </p>
+<p>Après avoir déterminé le niveau de complexité des CU et avoir déterminé leur ordonnancement, il faut estimer le temps nécessaire à leur complétion. On veut obtenir une estimation en heure-personne ou en jour-personne, ce qui correspond à la quantité de travail faite par une <strong>personne moyenne</strong> pour une heure. Un piège à cette étape du projet est de planifier le temps de développement en fonction de la personne qui devrait faire la tâche. Votre travail ne devrait pas être réparti à ce stade. </p>
+<div class="admonition ex-projet">
+<p class="admonition-title">Unités de temps</p>
+<p>Pour un projet court comme le projet intégrateur 1 ou 2, il est suggéré de prendre l'unité des heures-personnes. Les jours-personnes seront intéressants si le projet s'échelonne sur plusieurs mois et on peut même atteindre des planifications en mois ou année-personne pour des projets de grande envergure.</p>
+</div>
+<p>On peut réaliser l'estimation en temps directement à partir des scores des énoncés, en accordant plus de temps aux éléments complexes. Autrement, on peut utiliser un système de pointage, mais cette fois-ci il est assis sur une conversion en temps réel. Par exemple, on peut fixer (arbitrairement), qu'une personne travaille 20 points par semaine. Donc si l'on croit que le développement d'un CU prend deux semaines, on assigne 40 points à ce CU. L'avantage de travailler par point (plutôt qu'avec des heures ou des jours), est qu'en cas de changement dans le rythme du projet (ajout ou retrait de ressources), les estimations demeurent utilisables, il suffit que de changer le rythme (nombre de points par semaine) que l'on peut accomplir. </p>
+<p>On peut voir les points comme étant une mesure équivalente aux heures-personnes ou jours-personnes selon la conversion faite.  </p>
 <div class="admonition ex-projet">
 <p class="admonition-title">Ex-projet</p>
-<p>Par exemple, on considère que le développement du système de gestion de projet demande 480 points pour la première livraison. On engage deux personnes pour réaliser le développement. Au rythme de 20 points par semaine, on estime à 12 semaines le temps qu'il faudra pour la première livraison. Après 4 semaines, nos ressources financières permettent l'embauche d'une 3e personne. Combien de temps faudra-t-il alors pour compléter le projet ? </p>
-<p>La réponse est plus rapide et avec un peu d'algèbre, on arrive à un peu plus de 5 semaines de travail restantes. Si par exemple pour un CU on avait réalisé la prédiction en terme de temps, comme 10 jours (à deux), on aurait du le convertir en 6,66 jours (à 3). Cette conversion aurait été faite avec chacun de CU, ce qui prend un temps considérable.</p>
+<p>Par exemple, on considère que le développement du système de gestion de système scolaire demande 480 points pour la première livraison. On engage deux personnes pour réaliser le développement. Au rythme de 20 points par semaine, on estime à 12 semaines le temps qu'il faudra pour la première livraison. Après 4 semaines, nos ressources financières permettent l'embauche d'une 3e personne. Combien de temps faudra-t-il alors pour compléter le projet ? </p>
+<p>La réponse est plus rapide et avec un peu d'algèbre, on arrive à un peu plus de 5 semaines de travail restantes. Si par exemple pour un CU on avait réalisé la prédiction en termes de temps, comme 10 jours (à deux), on aurait dû le convertir en 6,66 jours (à 3). Cette conversion aurait été faite avec chacun de CU, ce qui prend un temps considérable. De même, si on avait dit que ça prend 8 jours à la personne A parce qu'on avait prévu que ce serait elle qui ferait le CU X, il aurait fallu prévoir tous les CU pour introduire la nouvelle personne.</p>
+<p>On peut prendre en compte de la vitesse de travail des gens dans le nombre de points réalisé par semaine.</p>
 </div>
 <h2 id="methode-poker">Méthode <em>Poker</em></h2>
-<p>La méthode du <em>poker</em> se réalise avec un jeu de cartes. La liste des tâches doit être préalablement établie. Chaque personne possède un ensemble de cartes numéroté, souvent selon la suite de Fibonacci. L'utilisation de cette suite permet de tenir compte de l'erreur grandissante d'estimation. À chaque tour, une tâche est sélectionnée et chaque personne choisit immédiatement et en silence une carte correspondant au nombre de points à assigner à la tâche et elle place la carte, face cachée, devant elle. Lorsque toutes les cartes sont placées, elles sont toutes révélées en même temps. L'équipe discute ensuite pour obtenir un <strong>consensus</strong> sur le nombre de points. <strong>Il ne faut pas utiliser des mesures de tendance centrale comme la moyenne pour sauver des débats</strong> La liste des tâches peut être clarifiée, bonifiée ou simplifiée selon l'interprétation de la tâche par tout un chacun durant le processus.</p>
-<p>Les cartes disponibles pour le pointage sont : <strong>1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100</strong>. La carte 100 indique souvent un élément trop élevé et peut mener à scinder ou préciser le CU en question. Une carte <strong>pause café</strong> permet de signaler qu'il est le temps d'arrêter et une carte d'<strong>interrogation</strong> permet de demander des clarifications le CU, car il est impossible de l'évaluer dans l'état actuel de sa formulation.</p>
+<p>La méthode du <em>poker</em> se réalise avec un jeu de cartes. La liste des tâches doit être préalablement établie. Chaque personne possède un ensemble de cartes numéroté, souvent selon la suite de Fibonacci. L'utilisation de cette suite permet de tenir compte de l'erreur grandissante d'estimation. À chaque tour, une tâche est sélectionnée et chaque personne choisit immédiatement et en silence une carte correspondant au nombre de points à assigner à la tâche et elle place la carte, face cachée, devant elle. Lorsque toutes les cartes sont placées, elles sont toutes révélées en même temps. L'équipe discute ensuite pour obtenir un <strong>consensus</strong> sur le nombre de points. <strong>Il ne faut pas utiliser des mesures de tendance centrale comme la moyenne pour se ménager des débats</strong> La liste des tâches peut être clarifiée, bonifiée ou simplifiée selon l'interprétation de la tâche par tout un chacun durant le processus.</p>
+<p>Les cartes disponibles pour le pointage sont : <strong>1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100</strong>. La carte 100 (parfois remplacée par une carte d'infini) indique souvent un élément trop élevé et peut mener à scinder ou préciser le CU en question. Une carte <strong>pause café</strong> permet de signaler qu'il est le temps d'arrêter et une carte d'<strong>interrogation</strong> permet de demander des clarifications le CU, car il est impossible de l'évaluer dans l'état actuel de sa formulation.</p>
 <p><a href="../../documents/Gabarit%20m%C3%A9thodes%20par%20point%20-%20Poker.xlsx">Gabarit méthodes par point</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 448V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0H64zm90.9 233.3c-8.1-10.5-23.2-12.3-33.7-4.2s-12.3 23.2-4.2 33.7l44.6 57.2-44.5 57.3c-8.1 10.5-6.3 25.5 4.2 33.7s25.5 6.3 33.7-4.2l37-47.7 37.1 47.6c8.1 10.5 23.2 12.3 33.7 4.2s12.3-23.2 4.2-33.7L222.4 320l44.5-57.3c8.1-10.5 6.3-25.5-4.2-33.7s-25.5-6.3-33.7 4.2l-37 47.7-37.1-47.6z"></path></svg></span></p></div>
 
 
@@ -2633,7 +2680,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-08</span>
   </span>
 
     
@@ -2663,7 +2710,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../../implementation/gitflow/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: La philosophie GitFlow pour organiser un dépôt">
+          <a href="../versionnage/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Versionnage sémantique">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2673,20 +2720,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                La philosophie GitFlow pour organiser un dépôt
+                Versionnage sémantique
               </div>
             </div>
           </a>
         
         
           
-          <a href="../versionnage/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Versionnage sémantique">
+          <a href="../entrepreunariat/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Entrepreunariat">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Versionnage sémantique
+                Entrepreunariat
               </div>
             </div>
             <div class="md-footer__button md-icon">
