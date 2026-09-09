@@ -1026,6 +1026,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pool d'objets
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1035,6 +1046,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structurer-les-objets-du-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structurer les objets du pool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerer-de-multiples-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gérer de multiples pools
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1701,7 +1749,75 @@
 </div>
 </div>
 </div>
-<p>Le pool d'objets est un patron de conception qui permet de réutiliser des instances existantes au lieu de constamment créer de nouvelles instances des mêmes objets</p>
+<p>Le pool d'objets est un patron de conception qui permet de réutiliser des instances existantes au lieu de constamment créer de nouvelles instances des mêmes objets.</p>
+<figure>
+    <a class="glightbox" href="../../images/pool-objets-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-1.png" width="600" /></a>
+    <figcaption markdown>Structure d'un pool d'objets</figcaption>
+</figure>
+<p>Le pool est responsable de la création des objets. Sa méthode <strong>GetObjet</strong> permet d'encapsuler cette gestion. L'algorithme de la méthode est simple.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GetObjet</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="n">ObjetGere</span><span class="w"> </span><span class="nf">GetObjet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">instancesDisponible</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nf">Instantiate</span><span class="p">(</span><span class="n">prefabObjetGere</span><span class="p">,</span><span class="w"> </span><span class="n">transform</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">else</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="n">ObjetGere</span><span class="w"> </span><span class="n">objet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instancesDisponible</span><span class="p">[</span><span class="m">0</span><span class="p">]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="n">instancesDisponibles</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">Reinitialiser</span><span class="p">();</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">objet</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Pour la méthode <code>Recycler</code>, elle désactive l'objet qu'elle reçoit et l'ajoute à la liste des objets gérés. La méthode <code>Reinitialiser</code> de l'objet géré restaure les valeurs initiales aux attributs. Selon la complexité du traitement, il peut être complexe de réinitiliser leur état.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Réinitialiser un Rigidbody</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Réinitialiser un rigidbody demande l&#39;application de ces lignes de code. Une réactivation trop hative peut générer un comportement innatendu. </span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">// 1. Retire les mouvements</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">angularVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">// 2. Retire les forces et les calculs</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">Sleep</span><span class="p">();</span><span class="w"> </span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Limiter les instances</p>
+<p>Certains pool peuvent gérer un nombre important d'objets qui ont peu d'influence sur le jeu. Par exemple, imaginez des branches qui tombent d'un arbre quand on le coupe. Pour éviter de trop gérer d'objets on pourrait limiter le nombres d'instances de branche qui peuvent être générés dans le jeu.</p>
+</div>
+<h2 id="structurer-les-objets-du-pool">Structurer les objets du pool</h2>
+<p>Le pool d'objets risque de créer beaucoup d'instances. Pour éviter la dispersion des instances, on va tendre à les regrouper sous l'objet du pool. Si l'objet a besoin d'avoir un parent particulier pour suivre un mouvement, alors il devra être assigné à son parent pendant son utilisation et revenir sous le pool lorsqu'il est innactif.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Changer de parent</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">gameObject</span><span class="p">.</span><span class="n">SetParent</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">transform</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="gerer-de-multiples-pools">Gérer de multiples pools</h2>
+<p>Lorsque les pools deviennent nombreux, on peut écrire un code générique pour gérer les pool en exploitant les traitements communs pour réduire le code à écrire. On peut utiliser deux approches :</p>
+<ol>
+<li><strong>Utiliser l'héritage</strong> : le code est plus simple à personnaliser, mais il faut faire une sous-classe pour chaque type de données à gérer.</li>
+<li><strong>Utiliser la généricité</strong> : on peut ajouter le pool sur n'importe quel type d'objet qui définit une interface commune, mais le code est plus complexe et légèrement plus lent. Cette technique pourrait poser des ralentissements avec un pool utilisé intensivement.</li>
+</ol>
+<figure>
+    <a class="glightbox" href="../../images/pool-objets-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-2.png" width="600" /></a>
+    <figcaption markdown>Structure d'un pool d'objets qui permet la gestion de pool multiples avec l'héritage</figcaption>
+</figure>
 
 
 
@@ -1722,7 +1838,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-09</span>
   </span>
 
     
