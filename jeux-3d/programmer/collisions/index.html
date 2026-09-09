@@ -967,6 +967,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#interpolation-graphique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolation graphique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parametres-physiques" class="md-nav__link">
     <span class="md-ellipsis">
       Paramètres physiques
@@ -1004,9 +1013,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#physics-material" class="md-nav__link">
+  <a href="#physic-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Physics material
+      Physic materials
     </span>
   </a>
   
@@ -1152,6 +1161,27 @@
             Organiser le code d'un jeu
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pool-objets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pool d'objets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1485,6 +1515,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../abc/ameliorations-code-tour/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amélioration du code des tour
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../abc/gestion-etats-tour.md" class="md-nav__link">
         
   
@@ -1797,27 +1848,27 @@
 <p>Les <em>colliders</em> utilisés en 3D sont :</p>
 <ul>
 <li><code>BoxCollider</code> : <em>collider</em> de forme rectangulaire. On utilise ce <em>collider</em> aussi souvent que possible.</li>
-<li><code>CapsuleCollider</code> : <em>collider</em> de forme de pillule ou d'oeuf. On utilise souvent ce <em>collider</em> pour approximer des personnages.</li>
+<li><code>CapsuleCollider</code> : <em>collider</em> de forme de pilule ou d'œuf. On utilise souvent ce <em>collider</em> pour approximer des personnages.</li>
 <li><code>SphereCollider</code> : <em>collider</em> de la forme d'une sphère.</li>
 <li><code>MeshCollider</code> : utilise les données d'un <em>mesh</em> pour gérer les collisions. Ce <em>collider</em> demande beaucoup plus de ressources que les autres, donc on l'utilise seulement lorsqu'un haut niveau de précision est nécessaire.</li>
 </ul>
 <p>Les <em>colliders</em> ont les paramètres suivants :</p>
 <ul>
 <li><strong><em>Is Triggers</em></strong> : change le comportement vers le mode <a href="#les-triggers"><em>trigger</em></a>;</li>
-<li><strong>*Material</strong> : affecte un materiel physique;</li>
+<li><em><strong>Material</strong> : affecte un </em>physic material*;</li>
 <li><strong>Paramètres de forme</strong> : ajuste la taille du <em>collider</em> si différente de la boîte limite du <em>game object</em>; et</li>
 <li><strong><em>Layers overrides</em></strong> : effectue une gestion personnalisée des <a href="#layers"><em>layers</em></a> pour cet objet.</li>
 </ul>
-<p>Pour agir dans le code lorsqu'un collision se produit les trois méthodes peuvent être appelées dans un script appliqué sur le <em>game oject</em> qui possède le <em>collider</em>.</p>
+<p>Pour agir dans le code lorsqu'une collision se produit, les trois méthodes peuvent être appelées dans un script appliqué sur le <em>game oject</em> qui possède le <em>collider</em>.</p>
 <ul>
 <li><code class="language-c# highlight"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnCollisionEnter</span><span class="p">(</span><span class="n">Collision</span><span class="w"> </span><span class="n">collision</span><span class="p">)</span></code> : lorsqu'une collision commence entre deux objets;</li>
 <li><code class="language-c# highlight"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnCollisionStay</span><span class="p">(</span><span class="n">Collision</span><span class="w"> </span><span class="n">collision</span><span class="p">)</span></code> : chaque <em>frame</em> lorsque deux objets sont en contact; et</li>
 <li><code class="language-c# highlight"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnCollisionExit</span><span class="p">(</span><span class="n">Collision</span><span class="w"> </span><span class="n">collision</span><span class="p">)</span></code> : lorsqu'une collision se termine entre deux objets.</li>
 </ul>
 <p>Le paramètre <code>collision</code> contient les informations sur la collision, comme une référence à l'autre <em>game object</em>.</p>
-<p>Pour les <em>rigidbody</em>, ils sont souvent utilisables sans configuration particulière, sauf changer la masse pour avoir des collisions et une échelle de valeurs réaliste. Également, si un <em>rigidbody</em> est immobile, il peut arrêter d'enregistrer les collisions. C'est une optimisation interne de Unity. </p>
+<p>Pour les <em>rigidbody</em>, ils sont souvent utilisables sans configuration particulière, sauf changer la masse pour avoir des collisions et une échelle de valeurs réaliste. De plus, si un <em>rigidbody</em> est immobile, il peut arrêter d'enregistrer les collisions. C'est une optimisation interne de Unity. </p>
 <h2 id="les-triggers">Les <em>triggers</em></h2>
-<p>Les <em>triggers</em> sont un type de <em>collider</em> qui au lieu de fournir une zone de collision rigide, agissent plutôt comme une zone de détection. On les active en cochant la case <strong><em>Is Trigger</em></strong> dans l'interface. Par défaut, il ne peut pas y avoir de collision entre deux <em><em>colliders</em> </em>trigger* dans Unity.</p>
+<p>Les <em>triggers</em> sont un type de <em>collider</em> qui, au lieu de fournir une zone de collision rigide, agissent plutôt comme une zone de détection. On les active en cochant la case <strong><em>Is Trigger</em></strong> dans l'interface. Par défaut, il ne peut pas y avoir de collision entre deux <em><em>colliders</em> </em>trigger* dans Unity.</p>
 <p>Les méthodes pour réagir dans le code sont différentes si le <em>collider</em> est marqué <em>trigger</em> :</p>
 <ul>
 <li><code class="language-c# highlight"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnTriggerEnter</span><span class="p">(</span><span class="n">Collider</span><span class="w"> </span><span class="n">other</span><span class="p">)</span></code> : lorsqu'un autre <em>collider</em> entre dans la zone;</li>
@@ -1844,8 +1895,26 @@
 <p><a class="glightbox" href="../../images/parametres_physique.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img :=":" alt="" src="../../images/parametres_physique.png" style="display: block; margin: 0 auto;" width="300" /></a></p>
 <figcaption>Contrôle pour la matrice de collision des <em>layers</em></figcaption>
 </figure>
-<p>Pour chaque <em>collider</em> ou <em>rigidbody</em> il est aussi possible d'inclure ou d'exclure des <em>layers</em> pour configurer précisement les collisions qui doivent être détectées.</p>
+<p>Pour chaque <em>collider</em> ou <em>rigidbody</em> il est aussi possible d'inclure ou d'exclure des <em>layers</em> pour configurer précisément les collisions qui doivent être détectées.</p>
+<figure>
+<p><a class="glightbox" href="../../images/gestion-layer-perso.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img :=":" alt="" src="../../images/gestion-layer-perso.png" style="display: block; margin: 0 auto;" width="300" /></a></p>
+<figcaption>Gestion des <em>layers</em> personnalisée pour chaque objet.</figcaption>
+</figure>
 <h2 id="qualite-des-collisions">Qualité des collisions</h2>
+<p>La qualité des collisions permet de mieux gérer les collisions qui surviennent avec des objets qui se déplacent à grande vitesse. Par contre plus une collision est précise, plus il faut de ressources de calcul.</p>
+<p>D'abord, il faut essayer le mode <strong><em>discrete</em></strong> qui consomme le moins de ressources et fonctionnera pour les collisions à basse vitesse. Si des collisions sont manquées, alors le mode <strong><em>continuous speculative</em></strong> devrait repérer ces collisions à haute vitesse. Ensuite, si la collision n'est toujours pas détectée :</p>
+<ol>
+<li>Si la collision est entre un objet dynamique et un objet statique, on utilise le mode <strong><em>continuous</em></strong>;</li>
+<li>Si la collision est entre deux objets dynamiques, on utilise le mode <strong><em>continuous dynamic</em></strong>; et</li>
+<li>Si la collision est le résultat d'une rotation, alors le mode <strong><em>continuous speculative</em></strong> est le meilleur, même lorsqu'il n'est pas parfait.</li>
+</ol>
+<h2 id="interpolation-graphique">Interpolation graphique</h2>
+<p>Le paramètre <em>interpolation</em> permet de définir comment le rendu graphique va s'adapter à la prédiction du mouvement. Cela peut être utile pour éviter d'avoir le visuel d'un objet qui pénètre dans un autre pour la <em>frame</em> où la collision est détectée. Trois modes existent pour les interpolations. Ils sont présentés de celui qui consomme le moins de ressources à celui qui en consomme le plus :</p>
+<ol>
+<li><strong><em>None</em></strong> : l'objet se téléporte de position en position lors du <code>FixedUpdate</code>, cela peut causer du <em>jitter</em> si la caméra suit cet objet;</li>
+<li><strong><em>Interpolate</em></strong> : lisse le mouvement en utilisant la dernière position connue, cause exactement 1 <em>frame</em> de latence entre la position physique et la position affichée; et </li>
+<li><strong><em>Extrapolate</em></strong> : utilise la prédiction du mouvement pour lisser le mouvement. Si une collision se produit en milieu de <em>frame</em>, l'objet peut graphiquement pénétrer la surface avant que le moteur ne corrige. Cette valeur est utilisée pour les objets rapides qui se déplacent en ligne droite.</li>
+</ol>
 <h2 id="parametres-physiques">Paramètres physiques</h2>
 <p>Plusieurs paramètres physiques peuvent être gérés avec les composants de Unity. On détaille dans les sections suivantes la gestion des forces, de la gravité, de l'aérodynamisme (simple), de la friction et de l'élasticité.</p>
 <p>Unity permet aussi une gestion avancée de la <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/WheelColliderTutorial.html">physique des véhicules</a></p>
@@ -1857,10 +1926,19 @@
 <li><strong>Force</strong> : applique une force de façon continue sur un objet, comme un champ de force ou du vent. Cela correspond à la véritable définition physique d'une force. Il n'est pas nécessaire d'appeler <code>fixedDeltaTime</code>, Unity fait adéquatement les calculs. Donc, une force de 1 Newton, appliqué à un objet d'une masse de 2 kg génère une accélération de 0.5 m/s^2.</li>
 <li><strong>Acceleration</strong> : applique une force, mais sans tenir compte de la masse. Cela peut correspondre à un mouvement de personnage, par exemple. La force applique seulement une différence de vitesse. Donc une valeur de 0.5 d'accélération indique qu'après 1 seconde, la vitesse sera de 0.5, après 2 secondes de 1 et ainsi de suite.</li>
 </ul>
-<p>La démonstration de chaque type de force est présenté dans le projet <a href="https://github.com/420-5A4-VI-Jeux-3D/Demo-Application-Physique"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></span> Demo application physique</a>.</p>
+<p>La démonstration de chaque type de force est présentée dans le projet <a href="https://github.com/420-5A4-VI-Jeux-3D/Demo-Application-Physique"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></span> Demo application physique</a>.</p>
 <h3 id="gravite">Gravité</h3>
+<p>La gravité peut être activée ou désactivée pour chaque objet. Donc, un objet peut être dynamique sans subir la gravité. Pour modifier la valeur globale de la gravité, on peut modifier les paramètres de physique dans : <strong>Edit &gt; Project Settings &gt; Physics &gt; Settings &gt; Shared</strong>. Par défaut la valeur est de -9.81 m/s^2 en y, soit la gravité terrestre.</p>
 <h3 id="aerodynamisme">Aérodynamisme</h3>
-<h3 id="physics-material">Physics material</h3>
+<p>Dans Unity on résume les paramètres aérodynamisme avec le <em>damping</em> (amortissement). Plus une valeur de <em>damping</em> est grande, plus l'objet résistera au mouvement. Il y a un paramètre pour le mouvement (<em>linear</em>) et un pour la rotation (<em>angular</em>).</p>
+<h3 id="physic-materials">Physic materials</h3>
+<p>Les <em>physic materials</em> s'appliquent sur les <em>colliders</em> et permettent de définir comment ils se comportent lors d'une collision. Par défaut, une surface est molle et rugueuse. Les paramètres du <em>physics material</em> sont :</p>
+<ul>
+<li><strong><em>Dynamic friction</em></strong> : friction appliquée lors du mouvement. Une friction de 0 indique aucune friction (glace), alors qu'une friction de 1 indique une surface rugueuse comme du caoutchouc. La valeur par défaut est 0.6.</li>
+<li><strong><em>Static friction</em></strong> : friction appliquée lorsqu'un objet n'est pas en mouvement. Pour se mettre en mouvement, il est nécessaire d'excéder ce point de friction initial pour se mettre en mouvement. Il utilise la même échelle de valeurs que la <em>dynamic friction</em>. La valeur par défaut est 0.6.</li>
+<li><strong><em>Bounciness</em></strong> : définit l'élasticité de la surface. Plus une surface est élastique, moins qu'il y a d'énergie perdue lors d'une collision. Une élasticité de 0 indique une surface molle comme un matelas qui absorbe le mouvement et 1 indique une surface rebondissante, comme un trampoline. La simulation peut ajouter de l'énergie dans un rebond, donc permettre le mouvement perpétuel ou même augmenter le rebond. La valeur par défaut est 0.</li>
+<li><strong><em>Friction combine</em></strong> et <strong><em>bounce combine</em></strong> : définissent comme les valeurs de chaque <em>physic material</em> se combinent lors d'une collision. Les valeurs possibles sont : <em>maixmum</em>, <em>multiply</em>, <em>minimum</em> et <em>average</em> (valeur par défaut). Les valeurs sont considérées dans cet ordre de priorité. Donc, dans une collision entre deux objets, l'un en mode <em>multiply</em> et l'autre en mode <em>average</em>, la collision est gérée comme <em>multiply</em>.</li>
+</ul>
 
 
 
@@ -1881,7 +1959,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-04</span>
   </span>
 
     
