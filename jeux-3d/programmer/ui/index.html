@@ -12,13 +12,9 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/pool-objets/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/ui/">
       
       
-        <link rel="prev" href="../evenements/">
-      
-      
-        <link rel="next" href="../machine-etats/">
       
       
       <link rel="icon" href="../../images/favicon.svg">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Pool d'objets - Jeux 3D</title>
+        <title>Interface utilisateur - Jeux 3D</title>
       
     
     
@@ -93,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#machine-a-etats-finis" class="md-skip">
+        <a href="#interface-utilisateur" class="md-skip">
           Aller au contenu
         </a>
       
@@ -126,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pool d'objets
+              Interface utilisateur
             
           </span>
         </div>
@@ -246,12 +242,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../installer-unity/" class="md-tabs__link">
           
   
@@ -735,30 +729,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -769,7 +758,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Concepts avec Unity
@@ -969,30 +958,25 @@
                 
   
   
-    
   
   
-  
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1003,7 +987,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             Organiser le code d'un jeu
@@ -1014,30 +998,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Pool d'objets
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pool-objets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1046,44 +1010,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#structurer-les-objets-du-pool" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structurer les objets du pool
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gerer-de-multiples-pools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gérer de multiples pools
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1151,20 +1077,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
         
           
-          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1244,20 +1167,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
         
           
-          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1729,95 +1649,13 @@
                   
 
 
-<h1 id="machine-a-etats-finis">Machine à états finis</h1>
-<div class="competences">
-<div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>4 Programmer la logique du jeu ou de la simulation</p>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>15 minutes</p>
-</div>
-<div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14V4.5m8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04l6.13-6.13Z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
-<div style="display: flex; align-items: center; gap: 1rem;">
-<div>
-<p><span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_NIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_NIA.png" width="48" /></a></span></p>
-</div>
-<div>
-<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
-</div>
-</div>
-</div>
-</div>
-<p>Le pool d'objets est un patron de conception qui permet de réutiliser des instances existantes au lieu de constamment créer de nouvelles instances des mêmes objets.</p>
-<figure>
-    <a class="glightbox" href="../../images/pool-objets-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-1.png" width="600" /></a>
-    <figcaption markdown>Structure d'un pool d'objets</figcaption>
-</figure>
-<p>Le pool est responsable de la création des objets. Sa méthode <strong>GetObjet</strong> permet d'encapsuler cette gestion. L'algorithme de la méthode est simple.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GetObjet</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="n">ObjetGere</span><span class="w"> </span><span class="nf">GetObjet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">instancesDisponible</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nf">Instantiate</span><span class="p">(</span><span class="n">prefabObjetGere</span><span class="p">,</span><span class="w"> </span><span class="n">transform</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">else</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="n">ObjetGere</span><span class="w"> </span><span class="n">objet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instancesDisponible</span><span class="p">[</span><span class="m">0</span><span class="p">]</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="n">instancesDisponibles</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">Reinitialiser</span><span class="p">();</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">objet</span><span class="p">;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Pour la méthode <code>Recycler</code>, elle désactive l'objet qu'elle reçoit et l'ajoute à la liste des objets gérés. La méthode <code>Reinitialiser</code> de l'objet géré restaure les valeurs initiales aux attributs. Selon la complexité du traitement, il peut être complexe de réinitiliser leur état.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Réinitialiser un Rigidbody</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span>
-<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Réinitialiser un rigidbody demande l&#39;application de ces lignes de code. Une réactivation trop hative peut générer un comportement innatendu. </span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">// 1. Retire les mouvements</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">angularVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">// 2. Retire les forces et les calculs</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">Sleep</span><span class="p">();</span><span class="w"> </span>
-</span></code></pre></div></td></tr></table></div>
-<div class="admonition tip">
-<p class="admonition-title">Limiter les instances</p>
-<p>Certains pool peuvent gérer un nombre important d'objets qui ont peu d'influence sur le jeu. Par exemple, imaginez des branches qui tombent d'un arbre quand on le coupe. Pour éviter de trop gérer d'objets on pourrait limiter le nombres d'instances de branche qui peuvent être générés dans le jeu.</p>
-</div>
-<h2 id="structurer-les-objets-du-pool">Structurer les objets du pool</h2>
-<p>Le pool d'objets risque de créer beaucoup d'instances. Pour éviter la dispersion des instances, on va tendre à les regrouper sous l'objet du pool. Si l'objet a besoin d'avoir un parent particulier pour suivre un mouvement, alors il devra être assigné à son parent pendant son utilisation et revenir sous le pool lorsqu'il est innactif.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Changer de parent</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">gameObject</span><span class="p">.</span><span class="n">SetParent</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">transform</span><span class="p">);</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="gerer-de-multiples-pools">Gérer de multiples pools</h2>
-<p>Lorsque les pools deviennent nombreux, on peut écrire un code générique pour gérer les pool en exploitant les traitements communs pour réduire le code à écrire. On peut utiliser deux approches :</p>
-<ol>
-<li><strong>Utiliser l'héritage</strong> : le code est plus simple à personnaliser, mais il faut faire une sous-classe pour chaque type de données à gérer.</li>
-<li><strong>Utiliser la généricité</strong> : on peut ajouter le pool sur n'importe quel type d'objet qui définit une interface commune, mais le code est plus complexe et légèrement plus lent. Cette technique pourrait poser des ralentissements avec un pool utilisé intensivement.</li>
-</ol>
-<figure>
-    <a class="glightbox" href="../../images/pool-objets-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-2.png" width="600" /></a>
-    <figcaption markdown>Structure d'un pool d'objets qui permet la gestion de pool multiples avec l'héritage</figcaption>
-</figure>
+<h1 id="interface-utilisateur">Interface utilisateur</h1>
+<h2 id="les-canvas">Les canvas</h2>
+<h2 id="placer-un-element">Placer un élément</h2>
+<h3 id="les-ancres">Les ancres</h3>
+<h3 id="les-layouts">Les layouts</h3>
+<h2 id="gerer-les-evenements">Gérer les événements</h2>
+<h2 id="masquer-et-afficher-linterface">Masquer et afficher l'interface</h2>
 
 
 
@@ -1838,7 +1676,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-15</span>
   </span>
 
     
@@ -1863,44 +1701,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-        
-          
-          <a href="../evenements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Programmation événementielle">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              <div class="md-ellipsis">
-                Programmation événementielle
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../machine-etats/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Machine à états">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              <div class="md-ellipsis">
-                Machine à états
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
