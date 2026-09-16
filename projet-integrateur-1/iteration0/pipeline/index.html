@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/iteration0/pipeline/">
       
       
-        <link rel="prev" href="../planification-ressources/">
+        <link rel="prev" href="../standards-normes/">
       
       
         <link rel="next" href="../criteres-qualite/">
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faire-un-plan-de-test" class="md-skip">
+        <a href="#pipeline-de-developpement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -494,69 +494,6 @@
             Les phases du développement logiciel
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../concepts/analyse/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    L'analyse des logiciels
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../concepts/conception.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    La conception des logiciels
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../concepts/implementation.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    L'implémentation des logiciels
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -967,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developpement_securitaire.md" class="md-nav__link">
+      <a href="../developpement-securitaire/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1030,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../standards-normes.md" class="md-nav__link">
+      <a href="../standards-normes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,6 +993,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1085,6 +1024,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1093,37 +1034,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#faire-un-plan-de-test" class="md-nav__link">
+  <a href="#exemple-de-pipeline-typique-et-simple" class="md-nav__link">
     <span class="md-ellipsis">
-      Faire un plan de test
+      Exemple de pipeline typique et simple
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Faire un plan de test">
+    <nav class="md-nav" aria-label="Exemple de pipeline typique et simple">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#partie-1-definition-du-processus" class="md-nav__link">
+  <a href="#1-compilation-locale-avec-gradle" class="md-nav__link">
     <span class="md-ellipsis">
-      Partie 1 - Définition du processus
+      1. Compilation locale avec Gradle
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-2-processus-de-test-regulier" class="md-nav__link">
+  <a href="#2-tests-avec-gradle" class="md-nav__link">
     <span class="md-ellipsis">
-      Partie 2 - Processus de test régulier
+      2. Tests avec Gradle
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-3-processus-au-deploiement" class="md-nav__link">
+  <a href="#3-commit" class="md-nav__link">
     <span class="md-ellipsis">
-      Partie 3 - Processus au déploiement
+      3. Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-la-pull-request-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. La pull-request (PR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-tests-distants-et-automatisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Tests distants et automatisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Déploiement
     </span>
   </a>
   
@@ -1131,6 +1099,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajustements-au-pipeline-et-autres-taches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajustements au pipeline et autres tâches
+    </span>
+  </a>
   
 </li>
       
@@ -1155,6 +1132,27 @@
   
   <span class="md-ellipsis">
     Qualité logicielle | Critères de qualité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qualité logicielle | Types de test
   </span>
   
 
@@ -1953,67 +1951,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Sujets connexes
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3">
-            <span class="md-nav__icon md-icon"></span>
-            Sujets connexes
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/developpement_securitaire.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    None
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../implementation/efficacite/" class="md-nav__link">
         
@@ -2024,56 +1961,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/git_avance/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Utilisation avancée de Git
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../implementation/gitflow/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    La philosophie GitFlow pour organiser un dépôt
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -2243,12 +2130,52 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utiliser Git et Git Hub
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Utiliser Git et Git Hub
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../git.md" class="md-nav__link">
+      <a href="../../gestion/git.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Utiliser Git
+    Travailler avec Git
   </span>
   
 
@@ -2265,11 +2192,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gestion/clickup.md" class="md-nav__link">
+      <a href="../../gestion/gitflow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Clickup et Kanban
+    La stratégie GitFlow
   </span>
   
 
@@ -2286,15 +2213,65 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gestion/entrepreunariat/" class="md-nav__link">
+      <a href="../../gestion/pull-requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Entrepreunariat
+    Pull-requests
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/github-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion/automatisations.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automatisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2319,10 +2296,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
         
           
-          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2333,8 +2310,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
             Projet intégrateur 2
           </label>
@@ -2411,36 +2388,56 @@
                   
 
 
-  <h1>Conception | Pipeline</h1>
-
-<div><p>Hello</p>
-<h2 id="faire-un-plan-de-test">Faire un plan de test</h2>
-<p>Le formats de plan de test varient selon les besoins et la nature du système développé. Voici un exemple de structure de plan de test en trois parties :</p>
-<h3 id="partie-1-definition-du-processus">Partie 1 - Définition du processus</h3>
-<ol>
-<li>Définir les tests d'acceptation (validation et vérification);</li>
-<li>Séparer les critères du test d'acceptation en catégories (unitaire, intégration, charge);</li>
-<li>Définir les entrées des tests et résultats attendus:</li>
-<li>Tests unitaires;</li>
-<li>Tests d'intégration;</li>
-<li>Tests de charge.</li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Aller plus loin que les tests d'acceptation</p>
-<p>Les tests d'acceptation sont le critère minimal à atteindre pour déployer un système. Souvent, les tests plus précis (comme les tests unitaires), peuvent être ajoutés, et ce, même s'ils ne correspondent pas à un critère du test d'acceptation.</p>
+<div><h1 id="pipeline-de-developpement">Pipeline de développement</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
+3-8 Étapes de développement d'un projet<br></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"></path></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>20 minutes</p>
 </div>
-<h3 id="partie-2-processus-de-test-regulier">Partie 2 - Processus de test régulier</h3>
-<ol>
-<li>Choisir et intégrer aux processus un outil de gestion des tests unitaires et d'intégration;</li>
-<li>Exécuter tests unitaires et intégrations à étape importante, comme l'ajout d'une fonctionnalité à la base de code;</li>
-<li>Exécuter, au besoin, les tests de régression pertinents.</li>
-</ol>
-<h3 id="partie-3-processus-au-deploiement">Partie 3 - Processus au déploiement</h3>
-<ol>
-<li>Exécuter les tests charges / monkey testing</li>
-<li>Exécuter les tests d'acceptation</li>
-</ol>
-<p>Les trois étapes, et leur pertinence, devraient être sommairement présentées dans le document d'analyse à la section portant sur la qualité logicielle.</p></div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14V4.5m8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04l6.13-6.13Z"></path></svg></span> <span class="subtitle-content">À propos de la page</span></p>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<div>
+<p><span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_AIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_AIA.png"></a></span></p>
+</div>
+<div>
+<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br></p>
+</div>
+</div>
+</div>
+</div>
+<p>L'usage d'un <em>pipeline</em> de développement permet d'automatiser les activités connexes au développement en augmentant la vitesse de travail par l'éliminitation des opérations répétitives. </p>
+<figure>
+    <a class="glightbox" href="../../images/pipeline.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pipeline.png" width="600"></a>
+    <figcaption markdown>Exemple de pipeline de développement du cours de projet intégrateur</figcaption>
+</figure>
+<p>Avec un pipeline comme celui-ci, quelques clics permettent d'avoir un système prêt à l'emploi. Si par exemple on avait un site web, on pourrait simplement ajouter une étape pour effectuer une mise à jour du serveur. On appelle le développement de ces <em>pipelines</em> le <em>devops</em> (collaboration développement et opération).</p>
+<p>Toutefois, la détermination des étapes et souvent la configuration des outils demeurent un travail humain. Les IA agentiques supportent de mieux en mieux les processus, mais comme toutes les tâches de haut niveau, dès que vous vous éloignez d'une solution toute faite ou qu'il y a des changements récents, les IA sont moins performantes. Dans de grandes équipes, il peut y avoir des personnes dont l'unique travail est de gérer le <em>devops</em>.</p>
+<h2 id="exemple-de-pipeline-typique-et-simple">Exemple de pipeline typique et simple</h2>
+<p>Analysons le <em>pipeline</em> proposé :</p>
+<h3 id="1-compilation-locale-avec-gradle">1. Compilation locale avec Gradle</h3>
+<p>Gradle est un système d'automatisation avec les technologies Java, il remplit un rôle similaire à celui que remplit NPM. Avec ce système, il est possible de standardiser la configuration de compilation et gérer les dépendances. Les fichiers Gradle ne sont habituellement pas partagés, toutefois il faut s'assurer que les configurations sont communes.</p>
+<p><a href="../activites-connexes/gradle.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M22.695 4.297a3.807 3.807 0 0 0-5.29-.09.368.368 0 0 0 0 .533l.46.47a.363.363 0 0 0 .474.032 2.182 2.182 0 0 1 2.86 3.291c-3.023 3.02-7.056-5.447-16.211-1.083a1.24 1.24 0 0 0-.534 1.745l1.571 2.713a1.238 1.238 0 0 0 1.681.461l.037-.02-.029.02.688-.384a16.083 16.083 0 0 0 2.193-1.635.384.384 0 0 1 .499-.016.357.357 0 0 1 .016.534 16.435 16.435 0 0 1-2.316 1.741H8.77l-.696.39a1.958 1.958 0 0 1-.963.25 1.987 1.987 0 0 1-1.726-.989L3.9 9.696C1.06 11.72-.686 15.603.26 20.522a.363.363 0 0 0 .354.296h1.675a.363.363 0 0 0 .37-.331 2.478 2.478 0 0 1 4.915 0 .36.36 0 0 0 .357.317h1.638a.363.363 0 0 0 .357-.317 2.478 2.478 0 0 1 4.914 0 .363.363 0 0 0 .358.317h1.627a.363.363 0 0 0 .363-.357c.037-2.294.656-4.93 2.42-6.25 6.108-4.57 4.502-8.486 3.088-9.9zm-6.229 6.901-1.165-.584a.73.73 0 1 1 1.165.587z"></path></svg></span> En savoir plus sur Gradle</a>.</p>
+<h3 id="2-tests-avec-gradle">2. Tests avec Gradle</h3>
+<p>Selon la tâche Gradle effectuée, il est possible d'effectuer tous les tests chargés dans l'environnement local. C'est une bonne pratique pour éviter de publier des versions contenant des bogues. Toutefois, tous les bogues ne se manifestent pas nécessairement dans l'environnement local.</p>
+<h3 id="3-commit">3. Commit</h3>
+<p>Une fois qu'une version est fonctionnelle on la publie sur Git, d'abord en locale puis on peut la partager sur le distant. Afin d'assurer un versionnage clair, il est important que les versions avec des commits publiés soient exemptes d'erreurs.</p>
+<h3 id="4-la-pull-request-pr">4. La <em>pull-request</em> (PR)</h3>
+<p>Ensuite, lorsqu'une fonctionnalité est prête à être intégrée au projet, donc qu'elle est <strong>exempte d'erreur, mais pas nécessairement complétée</strong>. La PR idéale fait entre 200 et 400 lignes de code. Plus une équipe est performante, plus ses PR sont de petite taille.</p>
+<p><a href="../activites-connexes/pull-requests.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></span> En savoir plus sur Git Hub et les <em>pull-requests</em></a>.</p>
+<div class="admonition ia">
+<p class="admonition-title">Revue de code par IA</p>
+<p>De plus en plus on ajoute l'IA comme revue de code à l'étape de la PR. Cette pratique permet entre autres de révéler des standards de code non respecté et certaines failles de sécurité. Toutefois, l'alignement des objectifs du projet n'est pas toujours bien compris par l'IA, donc il faut rester vigilant sur les changements proposés pour ne pas dégrader le projet.</p>
+</div>
+<h3 id="5-tests-distants-et-automatisation">5. Tests distants et automatisation</h3>
+<p>Ensuite, une série de tâches préprogrammées, dont l'exécution des tests, s'effectue sur le code afin d'assurer sa validité. Les tests sont les mêmes que ceux en locaux, mais parfois l'exécution sur le serveur permet de révéler certaines erreurs. Également, ça empêche le code d'être intégré tant qu'il brise quelque chose dans le projet.</p>
+<h3 id="6-deploiement">6. Déploiement</h3>
+<p>Finalement, par automatisation on déploie automatiquement la nouvelle version du projet. Dans le cadre du cours, cela sera simplement l'ajout d'un tag qui augmente le numéro de <em>build</em> du projet.</p>
+<h2 id="ajustements-au-pipeline-et-autres-taches">Ajustements au pipeline et autres tâches</h2>
+<p>Un <em>pipeline</em> n'est efficace que s'il répond aux besoins de l'équipe. Dans ce cas, il est important de l'adapter aux opérations que l'on fait au fur et à mesure. Aussi, d'autres tâches peuvent intervenir dans le <em>pipeline</em>, par exemple celles pour maintenir à jour l'information du tableau de bord du projet. </p></div>
 
 
 
@@ -2461,7 +2458,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-09-15</span>
   </span>
 
     
@@ -2491,7 +2488,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../planification-ressources/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Analyse | Planification des ressources">
+          <a href="../standards-normes/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception | Standards et normes">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2501,7 +2498,7 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Analyse | Planification des ressources
+                Conception | Standards et normes
               </div>
             </div>
           </a>
