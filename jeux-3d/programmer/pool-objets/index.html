@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/coroutines/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/pool-objets/">
       
       
-        <link rel="prev" href="../sons/">
+        <link rel="prev" href="../evenements/">
       
       
-        <link rel="next" href="../evenements/">
+        <link rel="next" href="../machine-etats/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Coroutines - Jeux 3D</title>
+        <title>Pool d'objets - Jeux 3D</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coroutines" class="md-skip">
+        <a href="#machine-a-etats-finis" class="md-skip">
           Aller au contenu
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Coroutines
+              Pool d'objets
             
           </span>
         </div>
@@ -1123,37 +1123,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Coroutines
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../coroutines/" class="md-nav__link">
         
   
   
@@ -1169,76 +1142,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#iterateurs-et-yield" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Itérateurs et yield
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pourquoi-utiliser-des-iterateurs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pourquoi utiliser des itérateurs ?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#coroutine-unity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Coroutine Unity
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Coroutine Unity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemples-dattente-par-les-coroutines" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemples d'attente par les coroutines
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1276,6 +1179,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1291,11 +1196,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" checked>
         
           
           <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
@@ -1316,7 +1221,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1331,10 +1236,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pool-objets/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pool d'objets
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1350,6 +1282,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structurer-les-objets-du-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structurer les objets du pool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerer-de-multiples-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer de multiples pools
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2225,6 +2199,24 @@
   
 
       
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Organiser le code d'un jeu
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
     </ol>
   </nav>
 
@@ -2235,13 +2227,13 @@
 
 
 
-<h1 id="coroutines">Coroutines</h1>
+<h1 id="machine-a-etats-finis">Machine à états finis</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>4-3 Accéder à la boucle de jeu pour les mises à jour du contrôle de la simulation</p>
+<p>4 Programmer la logique du jeu ou de la simulation</p>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>20 minutes</p>
+<p>15 minutes</p>
 </div>
 <div>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
@@ -2255,11 +2247,13 @@
 </div>
 </div>
 </div>
-<hr />
-<p>Le code d'exemple de cette section est disponible sur <a href="https://github.com/Cours-Alexandre-Ouellet/ExempleIterateurCSharp.git">GitHub <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span></a>.</p>
-<h2 id="iterateurs-et-yield">Itérateurs et yield</h2>
-<p>La notion d'itérateur se retrouve dans plusieurs langages de programmation. Les itérateurs permettent de contrôler la façon de parcourir une collection de données. En C#, ils sont implémentés par l'interface <code>IEnumerator</code> définie dans l'espace de noms <code>System.Collection</code>.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Quelques éléments de l'interface IEnumerator</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<p>Le pool d'objets est un patron de conception qui permet de réutiliser des instances existantes au lieu de constamment créer de nouvelles instances des mêmes objets.</p>
+<figure>
+    <a class="glightbox" href="../../images/pool-objets-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-1.png" width="600" /></a>
+    <figcaption markdown>Structure d'un pool d'objets</figcaption>
+</figure>
+<p>Le pool est responsable de la création des objets. Sa méthode <strong>GetObjet</strong> permet d'encapsuler cette gestion. L'algorithme de la méthode est simple.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GetObjet</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -2270,164 +2264,58 @@
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
 <span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">IEnumerator</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="n">Current</span><span class="p">;</span><span class="w">              </span><span class="c1">// Élément pointé par l&#39;itérateur (par défaut null)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">MoveNext</span><span class="p">();</span><span class="w">        </span><span class="c1">// Déplace l&#39;élément pointé sur le prochain. Retourne TRUE si c&#39;est possible </span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">                            </span><span class="c1">// et FALSE s&#39;il n&#39;y a pas d&#39;autres éléments</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">Reset</span><span class="p">();</span><span class="w">           </span><span class="c1">// Repositionne l&#39;itérateur au début</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">Dispose</span><span class="p">();</span><span class="w">         </span><span class="c1">// Libère les ressources de l&#39;itérateur. Directement hérité de l&#39;interface </span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">                            </span><span class="c1">// IDisposable</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">}</span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="n">ObjetGere</span><span class="w"> </span><span class="nf">GetObjet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">instancesDisponible</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nf">Instantiate</span><span class="p">(</span><span class="n">prefabObjetGere</span><span class="p">,</span><span class="w"> </span><span class="n">transform</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">else</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="n">ObjetGere</span><span class="w"> </span><span class="n">objet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instancesDisponible</span><span class="p">[</span><span class="m">0</span><span class="p">]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="n">instancesDisponibles</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">Reinitialiser</span><span class="p">();</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">        </span><span class="n">objet</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">objet</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<p>Regardez la classe <code>IterateurCompteur</code> pour un exemple d'itérateur de nombre de 1 à 20. On voit que la méthode <code>MoveNext</code> est la plus important, car elle contrôle la logique d'itération de notre itérateur.</p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Itérateur qui incrémente un compteur</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">/// &lt;summary&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">/// Avance le pointeur de l&#39;itérateur vers le prochain élément</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1">/// &lt;/summary&gt;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1">/// &lt;returns&gt;True si un autre élément existe ou false si l&#39;itérateur est arrivé à terme.&lt;/returns&gt;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">MoveNext</span><span class="p">()</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Current</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">MAX_VALEUR</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">        </span><span class="n">Current</span><span class="o">++</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">}</span>
+<p>Pour la méthode <code>Recycler</code>, elle désactive l'objet qu'elle reçoit et l'ajoute à la liste des objets gérés. La méthode <code>Reinitialiser</code> de l'objet géré restaure les valeurs initiales aux attributs. Selon la complexité du traitement, il peut être complexe de réinitiliser leur état.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Réinitialiser un Rigidbody</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Réinitialiser un rigidbody demande l&#39;application de ces lignes de code. Une réactivation trop hative peut générer un comportement innatendu. </span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">// 1. Retire les mouvements</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">angularVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">// 2. Retire les forces et les calculs</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">rigidbody</span><span class="p">.</span><span class="n">Sleep</span><span class="p">();</span><span class="w"> </span>
 </span></code></pre></div></td></tr></table></div>
-<p>L'utilisation directe de l'interface <code class="language-c# highlight"><span class="n">IEnumerator</span></code> par son implémentation dans un classe concrète (ou une lambda expression) peut devenir lourd et fastidieux. Il y a plusieurs méthodes à définir et généralement la logique d'itération est propre à une situation spécifique, ce qui amène à définir une nouvelle classe chaque fois que l'utilisation d'un itérateur est nécessaire.</p>
-<p>Le mot-clé <code class="language-c# highlight"><span class="k">yield</span></code> de C# nous permet de définir implicitement un itérateur. Ce mot-clé permet d'indiquer à quel moment est-ce que l'itérateur doit avancer vers un nouvel élément.</p>
-<p>Prenons l'exemple de la classe <code>AfficheurNombresCarres</code>. Nous pourrions faire un itérateur qui avance à chaque fois qu'une touche est pressée. En utilisant <code class="language-c# highlight"><span class="k">yield</span></code> on se retrouve avec une seule méthode qui est statique. Comme la méthode est statique, on pourrait, selon le contexte de l'application, déplacer ce code dans la classe utilisant la valeur des carrés.</p>
-<div class="language-C# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Generation des nombres carrés avec un itérateur</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="n">IEnumerator</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetSequence</span><span class="p">(</span><span class="n">ConsoleKey</span><span class="w"> </span><span class="n">toucheContinuer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ConsoleKey</span><span class="p">.</span><span class="n">Tab</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Appuyez sur {toucheContinuer} pour afficher des carres. Appuyez sur n&#39;importe&quot;</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="s">$&quot;quelle autre touche pour arreter.&quot;</span><span class="p">);</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="c1">// Tant que la touche est la touche continuer</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">().</span><span class="n">Key</span><span class="p">.</span><span class="n">Equals</span><span class="p">(</span><span class="n">toucheContinuer</span><span class="p">))</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">        </span><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">nombre</span><span class="p">;</span><span class="w">           </span><span class="c1">// Équivalent de MoveNext</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">        </span><span class="n">nombre</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Et la méthode <code>GetSequence</code> est appelée de la façon suivante (voir classe <code>Application</code>).</p>
-<div class="language-C# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exeécution d'un itérateur</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="n">sequenceCarres</span><span class="p">.</span><span class="n">MoveNext</span><span class="p">())</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">sequenceCarres</span><span class="p">.</span><span class="n">Current</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="p">);</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w"> </span><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Donc le <code>MoveNext</code> permet d'exécuter la fonction jusqu'à la ligne qui contient le <code class="language-c# highlight"><span class="k">yield</span><span class="w"> </span><span class="k">return</span></code>. La valeur de <code>Current</code> est alors mise à jour et <code>MoveNext</code> retourne <code class="language-c# highlight"><span class="k">true</span></code>. Si l'exécution de la fonction n'atteint pas la ligne <code class="language-c# highlight"><span class="k">yield</span></code> avant la fin de la méthode(par exemple la condition du <code class="language-c# highlight"><span class="k">while</span></code> n'est pas vérifiée), <code>MoveNext</code> retourne <code class="language-c# highlight"><span class="k">false</span></code>.</p>
-<p>La classe <code>GenerateurFibonacci</code> montre l'utilisation de plusieurs <code class="language-c# highlight"><span class="k">yield</span></code> dans une même méthode.</p>
 <div class="admonition tip">
-<p class="admonition-title">yield ou yield return ?</p>
-<p>On parle du mot-clé <code>yield</code>, mais en pratique <code>yield</code> n'apparaît jamais sans un <code>return</code>.</p>
+<p class="admonition-title">Limiter les instances</p>
+<p>Certains pool peuvent gérer un nombre important d'objets qui ont peu d'influence sur le jeu. Par exemple, imaginez des branches qui tombent d'un arbre quand on le coupe. Pour éviter de trop gérer d'objets on pourrait limiter le nombres d'instances de branche qui peuvent être générés dans le jeu.</p>
 </div>
-<h2 id="pourquoi-utiliser-des-iterateurs">Pourquoi utiliser des itérateurs ?</h2>
-<p>Les itérateurs sont généralement utilisés dans trois contextes :</p>
-<p>1)  Pour parcourir des collections non ordonnées comme un tas (<em>HashMap</em>, <em>HashSet</em>, <em>Dictionary</em>... ).
-2) Pour éviter de générer une large collection de données. Comme on peut générer à chaque passage la valeur à utiliser, on ne garde jamais en mémoire plus d'une valeur.
-3) Quand on veut contrôler le moment où les éléments sont reçus. Par exemple, en réseautique, on peut attendre une confirmation avant l'envoie du prochain segment de données. Un itérateur permet de parcourir une longue chaîne binaire en plus courtes séquences et d'attendre la confirmation de la précédente avant l'envoie de la suivante.</p>
-<p>Avec <em>Unity</em>, nous sommes vraiment dans le 3e cas d'utilisation où l'on veut une information par <em>frame</em> lorsqu'on utilise les itérateurs dans le contexte d'une coroutine.</p>
-<h2 id="coroutine-unity">Coroutine Unity</h2>
-<p>Dans le contexte d'une coroutine, on veut exécuter une méthode sur plusieurs <em>frames</em>. On doit donc y définir un point d'arrêt pour attendre la prochaine <em>frame</em>. On utilise alors un itérateur (qui ne parcours non pas une liste de données classique, mais une liste de <em>frames</em>). On manipule les coroutines de la façon suivante.</p>
-<div class="language-C# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">déclaration de coroutine</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-4-10">10</a></span>
-<span class="normal"><a href="#__codelineno-4-11">11</a></span>
-<span class="normal"><a href="#__codelineno-4-12">12</a></span>
-<span class="normal"><a href="#__codelineno-4-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">// ...</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="n">Coroutine</span><span class="w"> </span><span class="n">maCoroutine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StartCoroutine</span><span class="p">(</span><span class="n">MethodeCoroutine</span><span class="p">());</span><span class="w">     </span><span class="c1">// Démarre la coroutine</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="n">StopCoroutine</span><span class="p">(</span><span class="n">maCoroutine</span><span class="p">);</span><span class="w">                                     </span><span class="c1">// Interrompt la coroutine</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="c1">// ...</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1">// Coroutine</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="k">private</span><span class="w"> </span><span class="n">IEnumerator</span><span class="w"> </span><span class="nf">MethodeCoroutine</span><span class="p">()</span><span class="w"> </span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="p">{</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">    </span><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">...</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="p">}</span>
+<h2 id="structurer-les-objets-du-pool">Structurer les objets du pool</h2>
+<p>Le pool d'objets risque de créer beaucoup d'instances. Pour éviter la dispersion des instances, on va tendre à les regrouper sous l'objet du pool. Si l'objet a besoin d'avoir un parent particulier pour suivre un mouvement, alors il devra être assigné à son parent pendant son utilisation et revenir sous le pool lorsqu'il est innactif.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Changer de parent</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">gameObject</span><span class="p">.</span><span class="n">SetParent</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">transform</span><span class="p">);</span>
 </span></code></pre></div></td></tr></table></div>
-<p>Dans la coroutine, on peut utiliser 4 types de <code class="language-c# highlight"><span class="k">return</span></code></p>
+<h2 id="gerer-de-multiples-pools">Gérer de multiples pools</h2>
+<p>Lorsque les pools deviennent nombreux, on peut écrire un code générique pour gérer les pool en exploitant les traitements communs pour réduire le code à écrire. On peut utiliser deux approches :</p>
 <ol>
-<li><code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="k">null</span></code> ou <code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="m">0</span></code> : attend la prochaine frame de la coroutine avant de poursuivre l'exécution.</li>
-<li><code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitForSeconds</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span></code> : attend pour le nombre de secondes écoulées dans le jeu.</li>
-<li><code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitForSecondsRealtime</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span></code> : attend pour un nombre de secondes écoulées dans le monde réel.</li>
-<li><code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitUntil</span><span class="p">(</span><span class="n">lambda</span><span class="p">)</span></code> ou <code class="language-c# highlight"><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitWhile</span><span class="p">(</span><span class="n">lambda</span><span class="p">)</span></code> : attend selon une lambda tant qu'elle est fausse (<em>until</em>) ou tant qu'elle est vraie (<em>while</em>)</li>
+<li><strong>Utiliser l'héritage</strong> : le code est plus simple à personnaliser, mais il faut faire une sous-classe pour chaque type de données à gérer.</li>
+<li><strong>Utiliser la généricité</strong> : on peut ajouter le pool sur n'importe quel type d'objet qui définit une interface commune, mais le code est plus complexe et légèrement plus lent. Cette technique pourrait poser des ralentissements avec un pool utilisé intensivement.</li>
 </ol>
-<h4 id="exemples-dattente-par-les-coroutines">Exemples d'attente par les coroutines</h4>
-<div class="language-C# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Instruction de coroutine dans Unity</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span>
-<span class="normal"><a href="#__codelineno-5-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">// Attend une frame</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w">              </span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1">// Attend 3 secondes dans le jeu</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitForSeconds</span><span class="p">(</span><span class="m">3.0f</span><span class="p">);</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1">// Attend 5 secondes dans la vraie vie</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitForSecondsRealtime</span><span class="p">(</span><span class="m">5.0f</span><span class="p">);</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="c1">// Attend tant que la vie du personnage est strictement positive</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitWhile</span><span class="p">(()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">personnage</span><span class="p">.</span><span class="n">Vie</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">);</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="c1">// Attend que le personnage meurt</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="k">yield</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">WaitUntil</span><span class="p">(()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">personnage</span><span class="p">.</span><span class="n">Vie</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">0</span><span class="p">);</span>
-</span></code></pre></div></td></tr></table></div>
+<figure>
+    <a class="glightbox" href="../../images/pool-objets-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/pool-objets-2.png" width="600" /></a>
+    <figcaption markdown>Structure d'un pool d'objets qui permet la gestion de pool multiples avec l'héritage</figcaption>
+</figure>
 
 
 
@@ -2448,7 +2336,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="20 août 2026 13:56:18 UTC">2026-08-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="13 septembre 2026 18:20:30 UTC">2026-09-13</span>
   </span>
 
     
@@ -2478,7 +2366,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../sons/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gérer les sons">
+          <a href="../evenements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Programmation événementielle">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2488,20 +2376,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Gérer les sons
+                Programmation événementielle
               </div>
             </div>
           </a>
         
         
           
-          <a href="../evenements/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Programmation événementielle">
+          <a href="../machine-etats/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Machine à états">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Programmation événementielle
+                Machine à états
               </div>
             </div>
             <div class="md-footer__button md-icon">
