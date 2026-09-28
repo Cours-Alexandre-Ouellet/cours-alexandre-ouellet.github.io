@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/ui/">
       
       
+        <link rel="prev" href="../collisions/">
+      
+      
+        <link rel="next" href="../navmesh/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Interface utilisateur - Jeux 3D</title>
+        <title>Création des interfaces utilisateurs - Jeux 3D</title>
       
     
     
@@ -124,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interface utilisateur
+              Création des interfaces utilisateurs
             
           </span>
         </div>
@@ -254,10 +258,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../installer-unity/" class="md-tabs__link">
           
   
@@ -864,26 +870,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -901,7 +912,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1047,6 +1058,326 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création des interfaces utilisateurs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création des interfaces utilisateurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les canvas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-canvasscaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant CanvasScaler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-graphicraycaster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant GraphicRaycaster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-eventsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le EventSystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placer-un-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placer un élément
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Placer un élément">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-ancres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les ancres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etirer-les-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étirer les éléments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-positionnement-manuel-les-rotations-et-la-mise-a-lechelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le positionnement manuel, les rotations et la mise à l'échelle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le positionnement manuel, les rotations et la mise à l&#39;échelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empilement-des-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empilement des éléments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les layouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-elements-de-linterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les éléments de l'interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-textes-tmpro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les textes - TMPro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les textes - TMPro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importer-une-police-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importer une police de caractères
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-barres-de-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les barres de progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les contrôles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les contrôles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gerer-les-evenements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer les événements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masquer-et-afficher-linterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masquer et afficher l'interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1205,17 +1536,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
         
           
-          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="">
             
   
   
@@ -1233,8 +1567,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_12">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1349,17 +1683,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_13" >
         
           
-          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="">
             
   
   
@@ -1377,8 +1714,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1465,17 +1802,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14" >
         
           
-          <label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="">
             
   
   
@@ -1493,8 +1833,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_14">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1690,14 +2030,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/ameliorations-code-tour/" class="md-nav__link">
+      <a href="../../abc/ameliorations-code-tour-1/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Amélioration du code des tours
+    Amélioration du code des tours 1
   
 
     
@@ -1802,7 +2142,63 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/systeme-vie.md" class="md-nav__link">
+      <a href="../../abc/systeme-vie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Système de vie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abc/ameliorations-code-tour-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amélioration du code des tours 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abc/systeme-elements.md" class="md-nav__link">
         
   
   
@@ -1887,34 +2283,6 @@
   
     <li class="md-nav__item">
       <a href="../../abc/vagues.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../abc/systeme-elements.md" class="md-nav__link">
         
   
   
@@ -2099,6 +2467,46 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../installer-unity/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Concepts avec Unity
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -2107,11 +2515,166 @@
 
 
 <h1 id="interface-utilisateur">Interface utilisateur</h1>
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>3-3 Interface utilisateur réactive
+3-4 Patron de conception observateur</p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>60 minutes</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<div>
+<p><span class="img-ia" markdown> <a class="glightbox" href="../../images/IA_NIA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/IA_NIA.png" width="48" /></a></span></p>
+</div>
+<div>
+<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
+</div>
+</div>
+</div>
+</div>
+<p>L'intégration des interfaces dans Unity se fait à l'aide d'un ensemble distinct de <em>game objects</em> qui peuvent être positionnés dans un espace 2D. Ils possèdent des caractéristiques différentes et doivent habituellement être utilisés qu'au sein de la partie dédiée aux interfaces.</p>
+<p>Page de références de la documentation : <a href="https://docs.unity3d.com/Packages/com.unity.ugui@2.7/manual/index.html">Système uGUI</a>.</p>
 <h2 id="les-canvas">Les canvas</h2>
+<p>Les <em>canvas</em> sont les éléments de base des interfaces. Ce sont eux qui contiennent tous les autres éléments qui peuvent s'afficher dans une interface. Lorsqu'on ajoute un <em>canvas</em> (menu <strong>UI (canvas) &gt; canvas</strong>), un <em>game object</em> avec trois composants est ajouté. Selon le mode du <em>canvas</em>, il peut se comporter comme un <em>game object</em> standard, avec un <em>transform</em> pour le positionner dans le monde ou avoir un composant <code>RectTransform</code> pour le positionner dans l'espace 2D de l'interface.</p>
+<h3 id="le-composant-canvas">Le composant Canvas</h3>
+<p>Plusieurs types de <code>Canvas</code> existent pour gérer différentes façons de présenter l'interface utilisateur.</p>
+<p><center markdown></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mode</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Exemple d'utilisation</th>
+<th style="text-align: left;">Paramètre supplémentaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>Screen space - Overlay</em></td>
+<td style="text-align: left;">Affiche par-dessus le monde, cette interface définit les systèmes visibles à la personne joueuse qui ne sont pas dans le monde du jeu.</td>
+<td style="text-align: left;">Menu, barre de vie, inventaire, fenêtre de quête...</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Screen space - World</em></td>
+<td style="text-align: left;">Semblable à <em>Overlay</em>, mais il s'affiche par rapport à une caméra en particulier et reçoit les effets visuels appliqués à cette caméra.</td>
+<td style="text-align: left;">Similaire à <em>Overlay</em>, mais considère l'ambiance du jeu</td>
+<td style="text-align: left;"><em>Render camera</em> : quelle caméra fait le rendu de l'interface</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>World Space</em></td>
+<td style="text-align: left;">Affiche le <em>canvas</em> dans le monde comme s'il s'agit d'un <em>game object</em> régulier.</td>
+<td style="text-align: left;">Barre de vie, nom de personnage, bulle de dialogue...</td>
+<td style="text-align: left;"><em>Event camera</em> : quelle caméra doit gérer les événements sur le UI (comme un clic de la souris).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<div class="admonition tip">
+<p class="admonition-title">Travailler avec plusieurs canvas</p>
+<p>Lorsqu'il y a plusieurs <em>canvas</em>, on peut choisir comment il se superpose avec les paramètres <em>Sort Order</em> (<em>Screen Space Overlay</em>), <em>Order in layer</em> (<em>Screen space - Camera</em>) et les <em>sorting layers</em> (<em>World Space</em>).</p>
+</div>
+<h3 id="le-composant-canvasscaler">Le composant CanvasScaler</h3>
+<p>Le composant <code>CanvasScaler</code> définit comment l'interface se redimensionne lorsqu'elle est présentée dans une résolution différente de celle dans laquelle elle a été conçue. Son paramètre <em>UI Scale Mode</em> permet de choisir comme l'interface est redimensionnée dans un changement de résolution,</p>
+<p><center markdown></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mode</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Paramètres supplémentaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>Constant pixel size</em></td>
+<td style="text-align: left;">Le même nombre de pixels est utilisé, peu importe la résolution. Par exemple, un élément d'une largeur de 100px sur un écran de résolution 800px occupera 1/8 de l'espace, alors que sur un écran de 1920px,  il en occupera environ 1/20. Les éléments rapetissent donc avec le changement de résolution.</td>
+<td style="text-align: left;"><em>Reference pixel per unit</em> permet de configurer la largeur de référence en pixel des éléments graphiques.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Scale with Screen Size</em></td>
+<td style="text-align: left;">Applique une mise à l'échelle pour conserver la même grandeur relative d'élément en appliquant une règle de 3 pour convertir la taille</td>
+<td style="text-align: left;">La <em>Reference Resolution</em> est la résolution dans laquelle l'interface est développée et le <em>Screen Match Mode</em> permet de sélectionner la façon dont la mise à l'échelle est faite. Voir la documentation pour des détails sur chaque technique.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Constant Physical Size</em></td>
+<td style="text-align: left;">Assure que le contrôle est rendu avec la même taille en unité réelle (par exemple 1 cm), peu importe la résolution.</td>
+<td style="text-align: left;">Les paramètres affichés déterminent la référence du système sur lequel l'interface est conçue.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<h3 id="le-composant-graphicraycaster">Le composant GraphicRaycaster</h3>
+<p>Le composant <code>GraphicRaycaster</code> permet à Unity de détecter quel élément de l'interface est cliqué. Il n'y a de configuration particulière. Toutefois, si vos clics de souris ne sont pas détectés, l'absence de ce composant est une cause d'erreur fréquente. </p>
+<h3 id="le-eventsystem">Le EventSystem</h3>
+<p>Un autre <em>game object</em> appelée <em>EventSystem</em> est ajouté lorsque vous créez le premier <em>canvas</em>. Contrairement aux autres composants, il doit être présent qu'une seule fois dans le jeu. Il permet de faire le lien entre les contrôles de l'interface définis dans les <em>Actions Maps</em> et l'interface. Si vous utilisez des contrôles pour le focus ou des touches pour parcourir les différents contrôles, il est essentiel d'avoir ce composant. Il devrait se configurer automatiquement si vous n'avez pas modifier le <em>Action Map</em> UI.</p>
 <h2 id="placer-un-element">Placer un élément</h2>
+<p>Le positionnement d'un élément se fait avec le composant <code>RectTransform</code> qui a des paramètres différents de celui d'un <code>Transform</code>. Si le <em>canvas</em> est en mode <em>Screen Space</em> les unités sont des pixels; en mode <em>World Space</em>, les unités sont des mètres.</p>
+<figure>
+    <a class="glightbox" href="../../images/rect-transform.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rect-transform.png" width="300" /></a>
+    <figcaption markdown>Le composant <code>RectTransform</code></figcaption>
+</figure>
+<ol>
+<li>Le système d'ancrage et de pivot rapide des composants : permet de modifier la position de l'ancre, du pivot et de l'objet selon un ensemble de valeurs rapides.</li>
+<li>La configuration manuelle des ancres : ajuste les valeurs d'ancre et de pivot à d'autres valeurs que celles déterminées.</li>
+<li>Le positionnement des éléments : ajuste manuellement les valeurs de position et de dimension.</li>
+<li>La rotation des éléments : permet d'appliquer une rotation à l'élément (comme le <code>Transform</code>).</li>
+<li>La mise à l'échelle : met à l'échelle l'élément (comme le <code>Transform</code>).</li>
+</ol>
 <h3 id="les-ancres">Les ancres</h3>
+<p>La position des éléments de Unity se calcule à partir du pivot de l'élément et de sa position d'ancrage. Un pivot est le point (le pixel) qui est utilisé pour définir la position de l'objet. L'ancrage est la façon dont le pivot d'un élément se positionne par rapport à son parent. Par défaut, le pivot et l'ancre sont centrés et la position est celle par défaut. Le système de coordonnées du UI a comme point de référence le coin inférieur gauche de l'écran.</p>
+<figure>
+    <a class="glightbox" href="../../images/ancres.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ancres.png" width="300" /></a>
+    <figcaption markdown>Le contrôle pour les ancres</figcaption>
+</figure>
+<p>Pour modifier l'ancre, on clique sur la valeur à utiliser. Pour modifier le pivot on appuie sur la touche <em>Shift</em>. Pour modifier la position, on appuie sur la touche <em>Alt</em>.</p>
+<p>Prenons une image centrée et changeons seulement l'ancre pour utiliser le coin supérieur gauche de l'écran. L'objet ne se déplace pas, mais ses valeurs de positions elles sont modifiées.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_defaut.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_defaut.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage au centre du parent</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Maintenant, si l'on change aussi le pivot de l'image (touche <em>Shift</em>) pour qu'il soit dans le coin supérieur gauche également. La position de l'objet sera la même, mais les valeurs de référence sont différentes puisque la distance se calcule maintenant par rapport au coin gauche supérieur gauche.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_pivot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_pivot.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Maintenant, l'on modifier aussi la position de l'objet (touche <em>Alt</em>) pour déplacer l'objet vers le coin supérieur gauche. </p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_position.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_position.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Et finalement, en déplaçant à la fois le pivot, l'ancre et la position (<em>Shift</em> + <em>Alt</em>) on obtient aussi un positionnement dans le coin supérieur gauche, mais cette fois-ci avec une position nulle.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_position_pivot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_position_pivot.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<h3 id="etirer-les-elements">Étirer les éléments</h3>
+<p>La dernière colonne de définir un comportement étiré, soit que l'enfant utilise la pleine largeur de son parent. Le fait d'avoir un objet étiré modifie les paramètres de positionnement des éléments.</p>
+<ul>
+<li>Lorsque l'objet est étiré horizontalement, le paramètre <em>X</em> et <em>Width</em> deviennent une marge à gauche et à droite avec les paramètres <em>Left</em> et <em>Right</em>.</li>
+<li>Lorsque l'objet est étiré verticalement , le paramètre <em>Y</em> et <em>Height</em> deviennent une marge en haut et en bas avec les paramètres <em>Top</em> et <em>Bottom</em>.</li>
+</ul>
+<h3 id="le-positionnement-manuel-les-rotations-et-la-mise-a-lechelle">Le positionnement manuel, les rotations et la mise à l'échelle</h3>
+<p>Il est possible de régler au pixel près les positions des éléments avec le positionnement manuel. Si certaines valeurs sont grisés, c'est qu'elle sont contrôlés par un autre composant. Les valeurs disponibles varient aussi selon l'ancrage de l'élément.</p>
+<p>Les rotation sont possibles dans les 3 axes, mais seulement celui du Z aura un effet de rotation. Les autres axes placeront l'objet en obliqué.</p>
+<p>La mise à l'échelle fonctionne comme le composant <code>Transform</code>.</p>
+<h4 id="empilement-des-elements">Empilement des éléments</h4>
+<p>Les éléments s'empilent selon l'ordre de la hiérarchie. La position en Z n'est pas prise en compte. Il existe des méthodes pour déplacer l'ordre des éléments par rapport à leur parent (le monter ou le descendre dans la fraterie).</p>
 <h3 id="les-layouts">Les layouts</h3>
-<h2 id="gerer-les-evenements">Gérer les événements</h2>
+<h2 id="les-elements-de-linterface">Les éléments de l'interface</h2>
+<h2 id="les-textes-tmpro">Les textes - TMPro</h2>
+<h3 id="importer-une-police-de-caracteres">Importer une police de caractères</h3>
+<h2 id="les-images">Les images</h2>
+<h3 id="les-barres-de-progression">Les barres de progression</h3>
+<h2 id="les-controles">Les contrôles</h2>
+<h3 id="gerer-les-evenements">Gérer les événements</h3>
 <h2 id="masquer-et-afficher-linterface">Masquer et afficher l'interface</h2>
 
 
@@ -2133,7 +2696,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="15 septembre 2026 15:56:50 UTC">2026-09-15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 septembre 2026 16:00:31 UTC">2026-09-28</span>
   </span>
 
     
@@ -2158,6 +2721,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../collisions/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gestion des collisions et la physique">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Gestion des collisions et la physique
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../navmesh/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Utiliser un NavMesh">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Utiliser un NavMesh
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
