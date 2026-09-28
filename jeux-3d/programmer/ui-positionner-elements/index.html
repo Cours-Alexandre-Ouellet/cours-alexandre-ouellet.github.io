@@ -12,13 +12,13 @@
         <meta name="author" content="Alexandre Ouellet">
       
       
-        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/animations/">
+        <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/ui-positionner-elements/">
       
       
-        <link rel="prev" href="../navmesh/">
+        <link rel="prev" href="../collisions/">
       
       
-        <link rel="next" href="../sons/">
+        <link rel="next" href="../ui-types-elements/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Animations - Jeux 3D</title>
+        <title>Positionner des éléments dans les interfaces utilisateurs - Jeux 3D</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#animer-des-objets" class="md-skip">
+        <a href="#positionner-des-elements-dans-linterface-utilisateur" class="md-skip">
           Aller au contenu
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Animations
+              Positionner des éléments dans les interfaces utilisateurs
             
           </span>
         </div>
@@ -1067,10 +1067,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ui-positionner-elements/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Positionner des éléments dans les interfaces utilisateurs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1086,6 +1113,204 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les canvas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-canvasscaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant CanvasScaler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-composant-graphicraycaster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le composant GraphicRaycaster
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-eventsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le EventSystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placer-un-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placer un élément
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Placer un élément">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-ancres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les ancres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etirer-les-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étirer les éléments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-positionnement-manuel-les-rotations-et-la-mise-a-lechelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le positionnement manuel, les rotations et la mise à l'échelle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le positionnement manuel, les rotations et la mise à l&#39;échelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empilement-des-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empilement des éléments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les layouts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les layouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-horizontallayoutgroup-et-verticallayoutgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le HorizontalLayoutGroup et VerticalLayoutGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faire-un-parent-dynamique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faire un parent dynamique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignorer-le-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignorer le layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1179,37 +1404,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Animations
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../animations/" class="md-nav__link">
         
   
   
@@ -1225,154 +1423,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#elements-du-systeme-mecanim" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Éléments du système Mecanim
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#animation-controller" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Animation Controller
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Animation Controller">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#elements-du-composant-animator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Éléments du composant Animator
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ajouter-des-etats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ajouter des états
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ajouter des états">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#etats-speciaux" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        États spéciaux
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ajouter-des-parametres" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ajouter des paramètres
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gerer-les-transitions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gérer les transitions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modifier-la-valeur-des-parametres-avec-le-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modifier la valeur des paramètres avec le code
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#animation-clip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Animation Clip
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Animation Clip">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creer-un-animation-clip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Créer un Animation Clip
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2453,11 +2503,12 @@
 
 
 
-<h1 id="animer-des-objets">Animer des objets</h1>
+<h1 id="positionner-des-elements-dans-linterface-utilisateur">Positionner des éléments dans l'interface utilisateur</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>3-2 Accéder à la boucle de jeu pour les mises à jour des animations</p>
+<p>3-3 Interface utilisateur réactive
+4 Programmer la logique du jeu ou de la simulation</p>
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
 <p>30 minutes</p>
 </div>
@@ -2473,190 +2524,195 @@
 </div>
 </div>
 </div>
-<p>Les animations sont un élément important du rendu visuel d'un jeu vidéo. Il peut s'agir d'animations complexes de déplacement d'un personnage ou simplement d'un changement de couleur d'un élément de l'interface. Unity gère les animations avec le <em>Mecanim Animation System</em>. Certains composants <em>legacy</em> sont encore disponibles, mais leur usage est limité comme le système <em>Mecanim</em> est disponible depuis 2015 (Unity 5.0).</p>
-<p>Pour avoir un aperçu du système <em>Mecanim</em>, on peut consulter la <a href="https://docs.unity3d.com/462/Documentation/Manual/MecanimAnimationSystem.html">documentation</a> à ce sujet.</p>
-<h2 id="elements-du-systeme-mecanim">Éléments du système Mecanim</h2>
-<p>Deux élément définissent les animations, soient les <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> et <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
-<ul>
-<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> : contient une séquence d'animation avec les données de l'animation qui se modifient à chaque <em>frame</em>. Dans Unity, les données d'animations ne se limitent pas à des données de position, mais à toutes les données qui peuvent être modifiées procéduralement.</li>
-<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> : contient la logique pour sélectionner le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> à jouer. Permet de gérer les transitions entre les animations et aussi de mélanger plusieurs animations. Nous nous limiterons au cas le plus simple ou chaque objet possède une unique logique d'animation qui s'applique à l'entière de l'objet simultanément.</li>
-</ul>
-<h2 id="animation-controller"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code></h2>
-<p>L'<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> définit la logique entre les animations en adoptant un modèle de <strong>machine à état</strong>. Dans ce modèle, chaque <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> est un état et des règles (appelées <strong>transitions</strong>) permettent de passer d'un état à un autre. On peut créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> avec le menu contextuel dans l'onglet du <em>Project</em> et l'attacher au <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> à animer. Le composant qui permet de lier un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> à un <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> est un <code class="language-c# highlight"><span class="n">Animator</span></code>.</p>
-<p>La <a href="https://docs.unity3d.com/6000.2/Documentation/Manual/AnimationStateMachines.html">documentation complète est disponible sur le site de Unity</a>. Cette page présente un résumé des aspects de base des machines à états pour les animations.</p>
-<figure>
-    <a class="glightbox" href="../../images/component_animator.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/component_animator.png" /></a>
-    <figcaption markdown>Le composant <code class="language-c# highlight"><span class="n">Animator</span></code> attaché à un personnage</figcaption>
-</figure>
-<p>On configure le comportement du <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> dans la fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> accessible dans le menu <code>Window &gt; Animations &gt; Animator</code>.</p>
-<h3 id="elements-du-composant-animator">Éléments du composant <code class="language-c# highlight"><span class="n">Animator</span></code></h3>
-<ul>
-<li><strong>Controller</strong> : lien vers le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> qui gère les animations de ce <code class="language-c# highlight"><span class="n">GameObject</span></code>.</li>
-<li><strong>Avatar</strong> : structure de squelette lors de l'animation d'un personnage. Généralement fourni avec le modèle.</li>
-<li><strong>Apply root motion</strong> : calcule les mouvements en positions relatives à la racine du <code class="language-c# highlight"><span class="n">GameObject</span></code>. Lorsque décoché le mouvement peut se fait en position absolue.</li>
-<li><strong>Animate physics</strong> : met à jour la physique du jeu selon l'animation. Ralenti les performances, on évite de l'utiliser lorsque ce n'est pas nécessaire.</li>
-<li><strong>Update mode</strong> : type de temps utilisé pour l'animation (<em>Normal</em> : suit l'écoulement du temps dans le jeu comme le <em>Update</em>, <em>Fixed</em>: suit l'écoulement du temps de la physique comme le <em>FixedUpdate</em>, <em>Unscaled time</em> : s'écoule avec le temps réel, donc même en pause l'animation est effectuée). </li>
-</ul>
-<figure>
-    <a class="glightbox" href="../../images/fenetre%20animator.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/fenetre%20animator.png" /></a>
-    <figcaption markdown>La fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> du contrôleur d'animation d'un personnage</figcaption>
-</figure>
-<ol>
-<li><strong><em>Parameters</em></strong> : permet d'ajouter et de supprimer des paramètres pour contrôler les animations;</li>
-<li><strong>États et transition</strong> : vu des états (chaque état est un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code>) et des transitions (règle pour changer d'état);</li>
-<li><strong>Inspecteur</strong> : affiche les paramètres des états et des transitions; </li>
-</ol>
-<h3 id="ajouter-des-etats">Ajouter des états</h3>
-<p>Pour ajouter un état, on clique droit dans l'arrière-plan et l'on sélection "&nbsp;Create State &gt; Empty&nbsp;". Ensuite, peut affecter un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> dans le champ <em>motion</em> de l'inspecteur de l'état (qui s'active en cliquant sur l'état).</p>
-<p>Le paramètre <em>Speed</em> permet de changer la vitesse à laquelle le clip se joue. Le paramètre <em>Multiplier</em> permet de contrôler la vitesse par un script et un <a href="#ajouter-des-paramètres"><em>parameter</em></a>. On rend le champ modifiable en activant la case à cocher <em>parameters</em> et en le liant à un <em>parameter</em> de type <code class="language-c# highlight"><span class="kt">float</span></code>.</p>
-<h4 id="etats-speciaux">États spéciaux</h4>
-<p>Il y a quatre états spéciaux définis pour tous les c<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
-<ol>
-<li><strong><em>Entry</em> (vert)</strong> : la logique d'animation commence à cet état. Il n'y a pas de clip d'associé à cet état, il transitionne automatique vers l'état par défaut.</li>
-<li><strong><em>Default</em> (orange)</strong> : premier état à s'exécuter. On peut le changer en cliquant droit sur un état et en sélectionnant "&nbsp;Set as Default Layer State&nbsp;"</li>
-<li><strong><em>Exit</em> (rouge)</strong> : indique au contrôleur de sortir de l'animation. On l'utilise lorsqu'on imbrique les contrôleurs d'animation (ce qui ne sera pas fait dans le cadre du cours);</li>
-<li><strong><em>Any State</em> (turquoise)</strong> : toutes les transitions sortantes peuvent être exécutées à partir de n'importe quel état. On l'utilise surtout pour alléger le nombre de transitions à gérer. </li>
-</ol>
-<h3 id="ajouter-des-parametres">Ajouter des paramètres</h3>
-<p>Les paramètres sont des points d'accès à la logique de l'animation. L'utilisation des paramètres est présentée dans <a href="#gérer-les-transitions">Gérer les transitions</a> et <a href="#modifier-la-valeur-des-paramètres-avec-le-code">Modifier la valeur des paramètres avec le code</a>.</p>
-<p>Peut ajouter des paramètres avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg></span> situé dans le haut du panneau. Il y a quatre types de paramètres :</p>
-<ul>
-<li><code class="language-c# highlight"><span class="kt">float</span></code>, <code class="language-c# highlight"><span class="kt">int</span></code> et <code class="language-c# highlight"><span class="kt">bool</span></code> : expose un paramètre du type de la variable éponyme.</li>
-<li><code class="language-c# highlight"><span class="n">trigger</span></code> : expose un paramètre qui permet de simuler un événement subit. Il est dans l'état actif jusqu'à ce qu'il soit utilisé dans une transition et devient alors inactif.</li>
-</ul>
-<h3 id="gerer-les-transitions">Gérer les transitions</h3>
-<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représentées par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <strong><em>Make Transition</em></strong>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
-<figure>
-    <a class="glightbox" href="../../images/parametres_transition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/parametres_transition.png" /></a>
-    <figcaption markdown>La fenêtre de l'inspecteur d'une transition du contrôleur d'animation d'un personnage</figcaption>
-</figure>
-<ol>
-<li><strong><em>Has Exit Time</em></strong> : Indique que la transition s'effectue automatiquement après un temps passé dans l'animation plutôt que d'utiliser des conditions pour s'exécuter.</li>
-<li><strong><em>Exit Time</em></strong> : Indique le temps auquel la transition prend fin. Si <strong><em>Fixed Duration</em></strong> est coché, alors il s'agit d'un temps absolu (seconde), dans le cas contraire, il s'agit d'un temps relatif (pourcentage de la durée totale de l'animation). </li>
-<li><strong><em>Interruption Source</em></strong> : Détermine dans quelles conditions l'animation peut être interrompue. On choisit généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
-<li>
-<p><strong><em>Conditions</em></strong> : les conditions permettent de définir quand la transition doit avoir lieu. On utilise les paramètres pour définir les transitions. Si plusieurs conditions sont définies pour une condition, elles doivent toutes être vérifiées pour que la transition s'active.</p>
-<p>a. Pour les <code class="language-c# highlight"><span class="kt">float</span></code> et <code class="language-c# highlight"><span class="kt">int</span></code> on compare si la valeur est plus petite ou plus grande qu'une valeur de référence.</p>
-<p>b. Pour les  <code class="language-c# highlight"><span class="kt">int</span></code> seulement, on peut tester l'égalité ou la différence avec une valeur.</p>
-<p>c .Pour les <code class="language-c# highlight"><span class="kt">bool</span></code>, on compare avec les valeurs <code class="language-c# highlight"><span class="k">true</span></code> et <code class="language-c# highlight"><span class="k">false</span></code>. </p>
-<p>d. Pour les <code class="language-c# highlight"><span class="n">trigger</span></code> la transition est effectué si le <code class="language-c# highlight"><span class="n">trigger</span></code> est déclenché et lu pour provoquer une transition, sa valeur est réinitialisée.</p>
-</li>
-</ol>
-<h3 id="modifier-la-valeur-des-parametres-avec-le-code">Modifier la valeur des paramètres avec le code</h3>
-<p>Pour modifier la valeur d'un paramètre, on doit utiliser son nom et la méthode correspondante à son type sur le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>.</p>
-<p><center></p>
+<p>L'intégration des interfaces dans Unity se fait à l'aide d'un ensemble distinct de <em>game objects</em> qui peuvent être positionnés dans un espace 2D. Ils possèdent des caractéristiques différentes et doivent habituellement être utilisés qu'au sein de la partie dédiée aux interfaces.</p>
+<p>Page de références de la documentation : <a href="https://docs.unity3d.com/Packages/com.unity.ugui@2.7/manual/index.html">Système uGUI</a>.</p>
+<h2 id="les-canvas">Les canvas</h2>
+<p>Les <em>canvas</em> sont les éléments de base des interfaces. Ce sont eux qui contiennent tous les autres éléments qui peuvent s'afficher dans une interface. Lorsqu'on ajoute un <em>canvas</em> (menu <strong>UI (canvas) &gt; canvas</strong>), un <em>game object</em> avec trois composants est ajouté. Selon le mode du <em>canvas</em>, il peut se comporter comme un <em>game object</em> standard, avec un <em>transform</em> pour le positionner dans le monde ou avoir un composant <code>RectTransform</code> pour le positionner dans l'espace 2D de l'interface.</p>
+<h3 id="le-composant-canvas">Le composant Canvas</h3>
+<p>Plusieurs types de <code>Canvas</code> existent pour gérer différentes façons de présenter l'interface utilisateur.</p>
+<p><center markdown></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Type du paramètre</th>
-<th style="text-align: left;">Méthode</th>
-<th style="text-align: left;">Paramètre</th>
+<th style="text-align: left;">Mode</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Exemple d'utilisation</th>
+<th style="text-align: left;">Paramètre supplémentaire</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">float</span></code></td>
-<td style="text-align: left;">SetFloat</td>
-<td style="text-align: left;">Le nom du paramètre et la valeur du <code class="language-c# highlight"><span class="kt">float</span></code></td>
+<td style="text-align: left;"><em>Screen space - Overlay</em></td>
+<td style="text-align: left;">Affiche par-dessus le monde, cette interface définit les systèmes visibles à la personne joueuse qui ne sont pas dans le monde du jeu.</td>
+<td style="text-align: left;">Menu, barre de vie, inventaire, fenêtre de quête...</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">int</span></code></td>
-<td style="text-align: left;">SetInteger</td>
-<td style="text-align: left;">Le nom du paramètre et la valeur dy <code class="language-c# highlight"><span class="kt">int</span></code></td>
+<td style="text-align: left;"><em>Screen space - World</em></td>
+<td style="text-align: left;">Semblable à <em>Overlay</em>, mais il s'affiche par rapport à une caméra en particulier et reçoit les effets visuels appliqués à cette caméra.</td>
+<td style="text-align: left;">Similaire à <em>Overlay</em>, mais considère l'ambiance du jeu</td>
+<td style="text-align: left;"><em>Render camera</em> : quelle caméra fait le rendu de l'interface</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code class="language-c# highlight"><span class="kt">bool</span></code></td>
-<td style="text-align: left;">SetBool</td>
-<td style="text-align: left;">Le nom du paramètre et la valeur du <code class="language-c# highlight"><span class="kt">bool</span></code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code class="language-c# highlight"><span class="n">trigger</span></code></td>
-<td style="text-align: left;">SetTrigger</td>
-<td style="text-align: left;">Le nom du paramètre</td>
+<td style="text-align: left;"><em>World Space</em></td>
+<td style="text-align: left;">Affiche le <em>canvas</em> dans le monde comme s'il s'agit d'un <em>game object</em> régulier.</td>
+<td style="text-align: left;">Barre de vie, nom de personnage, bulle de dialogue...</td>
+<td style="text-align: left;"><em>Event camera</em> : quelle caméra doit gérer les événements sur le UI (comme un clic de la souris).</td>
 </tr>
 </tbody>
 </table>
 <p></center></p>
-<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemples de modification de paramètre</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Personnage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MonoBehaviour</span><span class="w"> </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">Animator</span><span class="w"> </span><span class="n">animationController</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Awake</span><span class="p">()</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">TryGetComponent</span><span class="o">&lt;</span><span class="n">Animator</span><span class="o">&gt;</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">animationController</span><span class="p">))</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="n">Debug</span><span class="p">.</span><span class="n">LogError</span><span class="p">(</span><span class="s">&quot;Pas de composant Animator sur un personnage&quot;</span><span class="p">);</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Attaquer</span><span class="p">()</span><span class="w"> </span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="c1">//...</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetTrigger</span><span class="p">(</span><span class="s">&quot;Attaquer&quot;</span><span class="p">)</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Courir</span><span class="p">()</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">        </span><span class="c1">//...</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetBool</span><span class="p">(</span><span class="s">&quot;Courir&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">)</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Arreter</span><span class="p">()</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">        </span><span class="c1">//...</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">animationController</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="n">animationController</span><span class="p">.</span><span class="n">SetBool</span><span class="p">(</span><span class="s">&quot;Courir&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">)</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="animation-clip"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h2>
-<p>Un clip est lié à un game object ou un prefab particulier et définit des changements dans l'état de l'objet à chaque frame. On peut créer des clips directement dans Unity ou les importer en animant l'objet dans un autre éditeur (comme Blender ou Maya). La seconde approche est celle préférée pour animations complexes, mais pour les tâches simples l'éditeur suffit. </p>
-<h3 id="creer-un-animation-clip">Créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h3>
-<p><em>À venir</em></p>
+<div class="admonition tip">
+<p class="admonition-title">Travailler avec plusieurs canvas</p>
+<p>Lorsqu'il y a plusieurs <em>canvas</em>, on peut choisir comment il se superpose avec les paramètres <em>Sort Order</em> (<em>Screen Space Overlay</em>), <em>Order in layer</em> (<em>Screen space - Camera</em>) et les <em>sorting layers</em> (<em>World Space</em>).</p>
+</div>
+<h3 id="le-composant-canvasscaler">Le composant CanvasScaler</h3>
+<p>Le composant <code>CanvasScaler</code> définit comment l'interface se redimensionne lorsqu'elle est présentée dans une résolution différente de celle dans laquelle elle a été conçue. Son paramètre <em>UI Scale Mode</em> permet de choisir comme l'interface est redimensionnée dans un changement de résolution,</p>
+<p><center markdown></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mode</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Paramètres supplémentaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>Constant pixel size</em></td>
+<td style="text-align: left;">Le même nombre de pixels est utilisé, peu importe la résolution. Par exemple, un élément d'une largeur de 100px sur un écran de résolution 800px occupera 1/8 de l'espace, alors que sur un écran de 1920px,  il en occupera environ 1/20. Les éléments rapetissent donc avec le changement de résolution.</td>
+<td style="text-align: left;"><em>Reference pixel per unit</em> permet de configurer la largeur de référence en pixel des éléments graphiques.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Scale with Screen Size</em></td>
+<td style="text-align: left;">Applique une mise à l'échelle pour conserver la même grandeur relative d'élément en appliquant une règle de 3 pour convertir la taille</td>
+<td style="text-align: left;">La <em>Reference Resolution</em> est la résolution dans laquelle l'interface est développée et le <em>Screen Match Mode</em> permet de sélectionner la façon dont la mise à l'échelle est faite. Voir la documentation pour des détails sur chaque technique.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>Constant Physical Size</em></td>
+<td style="text-align: left;">Assure que le contrôle est rendu avec la même taille en unité réelle (par exemple 1 cm), peu importe la résolution.</td>
+<td style="text-align: left;">Les paramètres affichés déterminent la référence du système sur lequel l'interface est conçue.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<h3 id="le-composant-graphicraycaster">Le composant GraphicRaycaster</h3>
+<p>Le composant <code>GraphicRaycaster</code> permet à Unity de détecter quel élément de l'interface est cliqué. Il n'y a de configuration particulière. Toutefois, si vos clics de souris ne sont pas détectés, l'absence de ce composant est une cause d'erreur fréquente. </p>
+<h3 id="le-eventsystem">Le EventSystem</h3>
+<p>Un autre <em>game object</em> appelée <em>EventSystem</em> est ajouté lorsque vous créez le premier <em>canvas</em>. Contrairement aux autres composants, il doit être présent qu'une seule fois dans le jeu. Il permet de faire le lien entre les contrôles de l'interface définis dans les <em>Actions Maps</em> et l'interface. Si vous utilisez des contrôles pour le focus ou des touches pour parcourir les différents contrôles, il est essentiel d'avoir ce composant. Il devrait se configurer automatiquement si vous n'avez pas modifié le <em>Action Map</em> UI.</p>
+<h2 id="placer-un-element">Placer un élément</h2>
+<p>Le positionnement d'un élément se fait avec le composant <code>RectTransform</code> qui a des paramètres différents de celui d'un <code>Transform</code>. Si le <em>canvas</em> est en mode <em>Screen Space</em> les unités sont des pixels; en mode <em>World Space</em>, les unités sont des mètres.</p>
+<figure>
+    <a class="glightbox" href="../../images/rect-transform.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/rect-transform.png" width="300" /></a>
+    <figcaption markdown>Le composant <code>RectTransform</code></figcaption>
+</figure>
+<ol>
+<li>Le système d'ancrage et de pivot rapide des composants : permet de modifier la position de l'ancre, du pivot et de l'objet selon un ensemble de valeurs rapides.</li>
+<li>La configuration manuelle des ancres : ajuste les valeurs d'ancre et de pivot à d'autres valeurs que celles déterminées.</li>
+<li>Le positionnement des éléments : ajuste manuellement les valeurs de position et de dimension.</li>
+<li>La rotation des éléments : permet d'appliquer une rotation à l'élément (comme le <code>Transform</code>).</li>
+<li>La mise à l'échelle : met à l'échelle l'élément (comme le <code>Transform</code>).</li>
+</ol>
+<h3 id="les-ancres">Les ancres</h3>
+<p>La position des éléments de Unity se calcule à partir du pivot de l'élément et de sa position d'ancrage. Un pivot est le point (le pixel) qui est utilisé pour définir la position de l'objet. L'ancrage est la façon dont le pivot d'un élément se positionne par rapport à son parent. Par défaut, le pivot et l'ancre sont centrés et la position est celle par défaut. Le système de coordonnées du UI a comme point de référence le coin inférieur gauche de l'écran.</p>
+<figure>
+    <a class="glightbox" href="../../images/ancres.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ancres.png" width="300" /></a>
+    <figcaption markdown>Le contrôle pour les ancres</figcaption>
+</figure>
+<p>Pour modifier l'ancre, on clique sur la valeur à utiliser. Pour modifier le pivot, on appuie sur la touche <em>Shift</em>. Pour modifier la position, on appuie sur la touche <em>Alt</em>.</p>
+<p>Prenons une image centrée et changeons seulement l'ancre pour utiliser le coin supérieur gauche de l'écran. L'objet ne se déplace pas, mais ses valeurs de positions sont modifiées.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_defaut.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_defaut.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage au centre du parent</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Maintenant, si l'on change aussi le pivot de l'image (touche <em>Shift</em>) pour qu'il soit dans le coin supérieur gauche également. La position de l'objet sera la même, mais les valeurs de référence sont différentes, puisque la distance se calcule maintenant par rapport au coin gauche supérieur gauche.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_pivot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_pivot.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Maintenant, l'on modifie aussi la position de l'objet (touche <em>Alt</em>) pour déplacer l'objet vers le coin supérieur gauche. </p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_position.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_position.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<p>Et finalement, en déplaçant à la fois le pivot, l'ancre et la position (<em>Shift</em> + <em>Alt</em>) on obtient aussi un positionnement dans le coin supérieur gauche, mais cette fois-ci avec une position nulle.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui_ancre_haut_gauche_position_pivot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui_ancre_haut_gauche_position_pivot.png" width="600" /></a>
+    <figcaption markdown>Une image centrée avec un ancrage par rapport au coin haut et gauche du parent</figcaption>
+</figure>
+<h3 id="etirer-les-elements">Étirer les éléments</h3>
+<p>La dernière colonne et la dernière ligne du menu d'ancrage permettent de définir un comportement étiré, soit que l'enfant utilise la pleine largeur de son parent. Le fait d'avoir un objet étiré modifie les paramètres de positionnement des éléments.</p>
+<ul>
+<li>Lorsque l'objet est étiré horizontalement, le paramètre <em>X</em> et <em>Width</em> deviennent une marge à gauche et à droite avec les paramètres <em>Left</em> et <em>Right</em>.</li>
+<li>Lorsque l'objet est étiré verticalement, le paramètre <em>Y</em> et <em>Height</em> deviennent une marge en haut et en bas avec les paramètres <em>Top</em> et <em>Bottom</em>.</li>
+</ul>
+<h3 id="le-positionnement-manuel-les-rotations-et-la-mise-a-lechelle">Le positionnement manuel, les rotations et la mise à l'échelle</h3>
+<p>Il est possible de régler au pixel près les positions des éléments avec le positionnement manuel. Si certaines valeurs sont grisées, c'est qu'elles sont contrôlées par un autre composant. Les valeurs disponibles varient aussi selon l'ancrage de l'élément.</p>
+<p>Les rotations sont possibles dans les 3 axes, mais seul celui du Z aura un effet de rotation. Les autres axes placeront l'objet en oblique.</p>
+<p>La mise à l'échelle fonctionne comme le composant <code>Transform</code>.</p>
+<h4 id="empilement-des-elements">Empilement des éléments</h4>
+<p>Les éléments s'empilent selon l'ordre de la hiérarchie. La position en Z n'est pas prise en compte. Il existe des méthodes pour déplacer l'ordre des éléments par rapport à leur parent (le monter ou le descendre dans la fratrie).</p>
+<h3 id="les-layouts">Les layouts</h3>
+<p>Des composants existent pour organiser automatiquement les interfaces, les <em>layouts</em>. Sans ceux-ci, chaque élément doit être positionné individuellement ce qui est difficile pour les interfaces dynamiques ou comportant beaucoup d'éléments.</p>
+<p>Il existe 3 composants de <em>layouts</em> dans Unity : </p>
+<ul>
+<li>Le <code>VerticalLayoutGroup</code> qui positionne verticalement plusieurs éléments;</li>
+<li>Le <code>HorizontalLayoutGroup</code>qui positionne horizontalement plusieurs éléments;</li>
+<li>Le <code>GridLayoutGroup</code> qui organise dans un grille dont toutes les cellules sont identiques les éléments.</li>
+</ul>
+<h4 id="le-horizontallayoutgroup-et-verticallayoutgroup">Le <code>HorizontalLayoutGroup</code> et <code>VerticalLayoutGroup</code></h4>
+<p>Ces deux <em>layouts</em> ont les même paramètres :</p>
+<ul>
+<li><strong>Padding</strong> : espacement entre la bordure du <em>layout</em> et l'élément;</li>
+<li><strong>Spacing</strong> : espacement entre les éléments du <em>layout</em>;</li>
+<li><strong>Child Alignement</strong> : emplacement par lequel le <em>layout</em> est rempli;</li>
+<li><strong>Reverse Arrangement</strong> : organise les enfants du layout dans l'ordre inverse : les derniers enfants sont affichés en premier;</li>
+<li><strong>Control Child Size</strong>, <strong>Use Child Scale</strong> et <strong>Child Force Expand</strong> contrôle l'interaction entre la taille du <em>layout</em> parent et la taille des enfants.</li>
+</ul>
+<p>Dans la série de démonstration suivante 3 éléments de 100 px (rouge, vert, bleu) sont placés dans un layout horizontal de 500 px de large (blanc). Aucun espacement n'est placé entre les éléments.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments dans un layout avec tous les paramètres désactivés.</figcaption>
+</figure>
+<p><strong>Control Child Size</strong> permet au parent de contrôler la largeur des enfants. Il réduit les enfants à leur largeur par défaut. Si la taille totale des enfants excède celle du parent, alors les enfants sont réduits. Tous les enfants ont la même taille.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_size.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_size.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec <strong>Control Child Size</strong> sur l'axe horizontal, donc les enfants sont réduits à leur largeur par défaut soit 64px.</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_size_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_size_2.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec <strong>Control Child Size</strong> sur l'axe horizontal dans un layout de 150px, donc les enfants sont réduits 50px pour ne pas excéder le parent.</figcaption>
+</figure>
+<p><strong>Use Child Scale</strong> détermine si la mise à l'échelle de l'enfant (<em>scale</em>) est utilisée ou non lorsque l'espace qui lui est alloué est calculé.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_scale_0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_scale_0.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec une échelle de 1.5 en largeur sans le paramètres <strong>Use Child Scale</strong> sur l'axe horizontal, donc les enfants empiètent les uns sur les autres.</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_scale_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_scale_1.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec une échelle de 1.5 en largeur avec le paramètres <strong>Use Child Scale</strong> sur l'axe horizontal, donc l'espace pour chaque enfant est augmenté.</figcaption>
+</figure>
+<p><strong>Child Force Expand</strong> oblige les éléments enfants à occuper toute la place du du parent en ajoutant de l'espace entre les enfants.</p>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_force_0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_force_0.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec le paramètres <strong>Child Force Expand</strong> sur l'axe horizontal, donc l'espace entre chaque enfant est augmenté.</figcaption>
+</figure>
+<figure>
+    <a class="glightbox" href="../../images/ui-layout-3elements_child_force_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/ui-layout-3elements_child_force_1.png" width="400" /></a>
+    <figcaption markdown>Disposition de 3 éléments avec le paramètres <strong>Child Force Expand</strong> sur l'axe horizontal, donc l'espace entre chaque enfant est augmenté. On aligne par le centre pour que les éléments soient centrés</figcaption>
+</figure>
+<h4 id="faire-un-parent-dynamique">Faire un parent dynamique</h4>
+<p>On peut forcer un parent à se redimensionner selon son contenu. Pour ce faire, on doit utiliser les composants <code>ContentSizeFitter</code> et <code>LayoutElement</code>. </p>
+<ul>
+<li>Le composant <code>ContentSizeFitter</code> est appliqué sur le parent et il définit comme l'objet se redimensionne horizontalement et verticalement. Il est possible d'utiliser la taille minimale des objets (<em>min size</em>) ou la taille préférée des objets (<em>preferred size</em>). Il peut y avoir qu'un seul composant <code>ContentSizeFitter</code> dans une hiérarchie d'objets.</li>
+<li>Le composant <code>LayoutElement</code> permet de définir la taille minimale (<em>Min Width</em> et <em>Min Height</em>), ainsi que le taille préférée (<em>Preferred Width</em> et <em>Preferred Height</em>). Les paramètres de taille flexible (<em>Flexible Width</em> et <em>Flexible Height</em>) permettent de définir, en termes relatifs, combien d'espace devrait être alloué à l'objet si de l'espace excédentaire est disponible.</li>
+</ul>
+<h4 id="ignorer-le-layout">Ignorer le layout</h4>
+<p>Le composant <code>LayoutElement</code> comporte le paramètre <em>Ignore Layout</em> qui permet à un enfant d'ignorer complètement le layout dans lequel il est placé.</p>
 
 
 
@@ -2677,7 +2733,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="20 août 2026 13:56:18 UTC">2026-08-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 septembre 2026 20:25:03 UTC">2026-09-28</span>
   </span>
 
     
@@ -2707,7 +2763,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../navmesh/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Utiliser un NavMesh">
+          <a href="../collisions/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Gestion des collisions et la physique">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2717,20 +2773,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Utiliser un NavMesh
+                Gestion des collisions et la physique
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sons/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Gérer les sons">
+          <a href="../ui-types-elements/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Éléments des interfaces utilisateurs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Gérer les sons
+                Éléments des interfaces utilisateurs
               </div>
             </div>
             <div class="md-footer__button md-icon">
