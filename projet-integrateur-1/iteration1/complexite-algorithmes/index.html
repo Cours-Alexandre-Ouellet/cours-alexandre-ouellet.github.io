@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/iteration1/complexite-algorithmes/">
       
       
+        <link rel="prev" href="../conception-objet/">
+      
+      
+        <link rel="next" href="../conception-objet/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Complexité des algorithmes - Projet intégrateur 1</title>
+        <title>Implémentation | Complexité des algorithmes - Projet intégrateur 1</title>
       
     
     
@@ -128,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Complexité des algorithmes
+              Implémentation | Complexité des algorithmes
             
           </span>
         </div>
@@ -233,10 +237,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../objectifs/" class="md-tabs__link">
           
   
@@ -1274,26 +1280,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -1311,7 +1322,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1469,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conception/modele_donnees.md" class="md-nav__link">
+      <a href="../../conception/modele-donnees.md" class="md-nav__link">
         
   
   
@@ -1522,10 +1533,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../efficacite-algorithmes.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implémentation | Complexité des algorithmes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1541,6 +1579,187 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#methodes-danalyse-en-temps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthodes d'analyse en temps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthodes d&#39;analyse en temps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-de-complexite-du-maximum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple de complexité du maximum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-de-complexite-du-tri-par-bulle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple de complexité du tri par bulle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-classes-de-complexite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les classes de complexité
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les classes de complexité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordre-des-classes-de-complexite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordre des classes de complexité
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effet-de-la-constante-multiplicative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effet de la constante multiplicative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impact-du-terme-dominant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact du terme dominant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-seuil-defficacite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le seuil d'efficacité
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complexite-de-quelques-algorithmes-communs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complexité de quelques algorithmes communs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etude-de-cas-structures-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étude de cas : structures de données
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etude-de-cas-base-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étude de cas : base de données
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Étude de cas : base de données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-dexecution-1-faire-les-jointures-dabord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schéma d'exécution 1 : Faire les jointures d'abord
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-dexecution-2-where-dabord-et-reordonnancement-des-jointures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schéma d'exécution 2 : WHERE d'abord et réordonnancement des jointures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1643,17 +1862,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
             
   
   
@@ -1689,14 +1911,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/ iteration1/conception-objet.md" class="md-nav__link">
+      <a href="../conception-objet/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Solution exercice 1 de conception
+    Conception | Diagramme de classe
   
 
     
@@ -3294,6 +3516,44 @@ n &lt; n^2 &amp; \text{ vrai si } n &gt; 1 \\
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../conception-objet/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception | Diagramme de classe">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Conception | Diagramme de classe
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../conception-objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception | Diagramme de classe">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Conception | Diagramme de classe
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
