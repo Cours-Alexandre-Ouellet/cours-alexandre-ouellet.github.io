@@ -1,37 +1,52 @@
 plugins {
-    id("java")
-    id("application")
+    java
+    application
     id("org.openjfx.javafxplugin") version "0.1.0"
+    id("org.beryx.jlink") version "2.25.0"
 }
 
-group = "edu.cegepvicto"    // Remplacer par groupId de votre projet
-version = "1.0-SNAPSHOT"    // Remplacer par versionnage sémantique
+group = "edu.cegepvicto"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
-application {
-    // Remplacer par votre classe qui hérite de Application
-    mainClass.set("edu.cegepvicto.ApplicationDemo")
-}
-
-javafx {
-    version = "25"
-    modules = listOf("javafx.controls", "javafx.fxml")
-}
+val junitVersion = "5.12.1"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion = JavaLanguageVersion.of(27)
     }
 }
 
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
 }
 
-tasks.test {
+application {
+    mainClass.set("edu.cegepvicto.testprojet.HelloApplication")
+    applicationDefaultJvmArgs = listOf("--enable-native-access=javafx.graphics")
+}
+
+javafx {
+    version = "27"
+    modules = listOf("javafx.controls", "javafx.fxml")
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+jlink {
+    imageZip.set(layout.buildDirectory.file("/distributions/app-${javafx.platform.classifier}.zip"))
+    options.set(listOf("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages"))
+    launcher {
+        name = "app"
+    }
 }
