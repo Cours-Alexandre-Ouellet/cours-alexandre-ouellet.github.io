@@ -21,8 +21,11 @@
         <link rel="next" href="../personnalite/">
       
       
+        
+      
+      
       <link rel="icon" href="../images/siteicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+      <meta name="generator" content="zensical-0.0.69">
     
     
       
@@ -30,10 +33,15 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.e15858d4.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
 
@@ -47,8 +55,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -60,26 +68,18 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
     
     
-    
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  </head>
   
   
     
+    
+      
     
     
     
@@ -89,14 +89,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#presenter-un-travail" class="md-skip">
-          Aller au contenu
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Aller au contenu
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -109,14 +106,14 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-header__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
+    <a href="./.." title="Réussir en techniques de l&#x27;informatique" class="md-header__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
       
-  <img src="../images/siteicon.svg" alt="logo">
+  <img src="../images/siteicon.svg" alt="Réussir en techniques de l'informatique">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -136,50 +133,38 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
     
     
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Recherche">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Recherche">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initialisation de la recherche
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Recherche">
+  <button type="button" class="md-search__button">
+    Recherche
+  </button>
 </div>
+      
     
-    
+    <div class="md-header__source">
+      
+    </div>
   </nav>
   
 </header>
@@ -205,9 +190,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Réussir en techniques de l&#39;informatique" class="md-nav__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
+    <a href="./.." title="Réussir en techniques de l&#x27;informatique" class="md-nav__button md-logo" aria-label="Réussir en techniques de l'informatique" data-md-component="logo">
       
-  <img src="../images/siteicon.svg" alt="logo">
+  <img src="../images/siteicon.svg" alt="Réussir en techniques de l'informatique">
 
     </a>
     Réussir en techniques de l'informatique
@@ -222,12 +207,18 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="./.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Accueil
+    
+  
+  Accueil
+
+    
   </span>
+  
   
 
       </a>
@@ -245,9 +236,15 @@
       <a href="../environnement_collegial/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Environnement collégial
+    
+  
+  Environnement collégial
+
+    
   </span>
+  
   
 
       </a>
@@ -265,9 +262,15 @@
       <a href="../temps/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Gestion du temps
+    
+  
+  Gestion du temps
+
+    
   </span>
+  
   
 
       </a>
@@ -285,9 +288,15 @@
       <a href="../reussite_scolaire/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Réussite scolaire
+    
+  
+  Réussite scolaire
+
+    
   </span>
+  
   
 
       </a>
@@ -305,9 +314,15 @@
       <a href="../objectifs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Se fixer des objectifs
+    
+  
+  Se fixer des objectifs
+
+    
   </span>
+  
   
 
       </a>
@@ -325,9 +340,15 @@
       <a href="../preparation_evaluation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Réussir ses évaluations
+    
+  
+  Réussir ses évaluations
+
+    
   </span>
+  
   
 
       </a>
@@ -345,9 +366,15 @@
       <a href="../recherche/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Rechercher des informations
+    
+  
+  Rechercher des informations
+
+    
   </span>
+  
   
 
       </a>
@@ -365,7 +392,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -374,25 +401,38 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
-    Présenter un travail
+    
+  
+  Présenter un travail
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
-    Présenter un travail
+    
+  
+  Présenter un travail
+
+    
   </span>
+  
   
 
       </a>
       
         
+
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -410,7 +450,9 @@
         <li class="md-nav__item">
   <a href="#structure-dun-travail-ecrit" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure d'un travail écrit
+      <span class="md-typeset">
+        Structure d'un travail écrit
+      </span>
     </span>
   </a>
   
@@ -419,7 +461,9 @@
         <li class="md-nav__item">
   <a href="#organiser-le-contenu-dun-travail" class="md-nav__link">
     <span class="md-ellipsis">
-      Organiser le contenu d'un travail
+      <span class="md-typeset">
+        Organiser le contenu d'un travail
+      </span>
     </span>
   </a>
   
@@ -428,7 +472,9 @@
         <li class="md-nav__item">
   <a href="#presenter-des-donnees-correctement" class="md-nav__link">
     <span class="md-ellipsis">
-      Présenter des données correctement
+      <span class="md-typeset">
+        Présenter des données correctement
+      </span>
     </span>
   </a>
   
@@ -437,7 +483,9 @@
         <li class="md-nav__item">
   <a href="#citer-ses-sources-dans-un-travail-ecrit" class="md-nav__link">
     <span class="md-ellipsis">
-      Citer ses sources dans un travail écrit
+      <span class="md-typeset">
+        Citer ses sources dans un travail écrit
+      </span>
     </span>
   </a>
   
@@ -447,7 +495,9 @@
           <li class="md-nav__item">
   <a href="#les-mecanismes-de-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Les mécanismes de citation
+      <span class="md-typeset">
+        Les mécanismes de citation
+      </span>
     </span>
   </a>
   
@@ -457,7 +507,9 @@
           <li class="md-nav__item">
   <a href="#la-mediagraphie" class="md-nav__link">
     <span class="md-ellipsis">
-      La médiagraphie
+      <span class="md-typeset">
+        La médiagraphie
+      </span>
     </span>
   </a>
   
@@ -466,7 +518,9 @@
           <li class="md-nav__item">
   <a href="#lappel-de-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      L'appel de référence
+      <span class="md-typeset">
+        L'appel de référence
+      </span>
     </span>
   </a>
   
@@ -480,7 +534,9 @@
           <li class="md-nav__item">
   <a href="#types-de-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Types de citation
+      <span class="md-typeset">
+        Types de citation
+      </span>
     </span>
   </a>
   
@@ -490,7 +546,9 @@
           <li class="md-nav__item">
   <a href="#extrait-dun-document" class="md-nav__link">
     <span class="md-ellipsis">
-      Extrait d'un document
+      <span class="md-typeset">
+        Extrait d'un document
+      </span>
     </span>
   </a>
   
@@ -499,7 +557,9 @@
           <li class="md-nav__item">
   <a href="#paraphrase-citation-didee" class="md-nav__link">
     <span class="md-ellipsis">
-      Paraphrase (citation d'idée)
+      <span class="md-typeset">
+        Paraphrase (citation d'idée)
+      </span>
     </span>
   </a>
   
@@ -513,7 +573,9 @@
           <li class="md-nav__item">
   <a href="#quand-citer-des-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      Quand citer des sources ?
+      <span class="md-typeset">
+        Quand citer des sources ?
+      </span>
     </span>
   </a>
   
@@ -527,7 +589,9 @@
         <li class="md-nav__item">
   <a href="#citer-ces-sources-dans-le-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Citer ces sources dans le code
+      <span class="md-typeset">
+        Citer ces sources dans le code
+      </span>
     </span>
   </a>
   
@@ -536,7 +600,9 @@
         <li class="md-nav__item">
   <a href="#des-questions-sur-la-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Des questions sur la citation ?
+      <span class="md-typeset">
+        Des questions sur la citation ?
+      </span>
     </span>
   </a>
   
@@ -545,7 +611,9 @@
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Références
+      <span class="md-typeset">
+        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références
+      </span>
     </span>
   </a>
   
@@ -569,9 +637,15 @@
       <a href="../personnalite/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Personnalité et travail d'équipe
+    
+  
+  Personnalité et travail d'équipe
+
+    
   </span>
+  
   
 
       </a>
@@ -589,9 +663,15 @@
       <a href="../apprentissage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Styles d'apprentissage
+    
+  
+  Styles d'apprentissage
+
+    
   </span>
+  
   
 
       </a>
@@ -609,9 +689,15 @@
       <a href="../notation_algorithmie/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Notations d'algorithmes
+    
+  
+  Notations d'algorithmes
+
+    
   </span>
+  
   
 
       </a>
@@ -625,6 +711,7 @@
   
   
   
+    
     
     
     
@@ -639,23 +726,33 @@
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    Autres ressources
+    
+  
+  Autres ressources
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
-            <span class="md-nav__icon md-icon"></span>
-            Autres ressources
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_12">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Autres ressources
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -664,19 +761,26 @@
       <a href="../se_mettre_en_action/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Se mettre en action
+    
+  
+  Se mettre en action
+
+    
   </span>
+  
   
 
       </a>
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -692,9 +796,15 @@
       <a href="../references/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Références
+    
+  
+  Références
+
+    
   </span>
+  
   
 
       </a>
@@ -712,8 +822,22 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
                   <div class="md-sidebar__inner">
                     
+
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -731,7 +855,9 @@
         <li class="md-nav__item">
   <a href="#structure-dun-travail-ecrit" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure d'un travail écrit
+      <span class="md-typeset">
+        Structure d'un travail écrit
+      </span>
     </span>
   </a>
   
@@ -740,7 +866,9 @@
         <li class="md-nav__item">
   <a href="#organiser-le-contenu-dun-travail" class="md-nav__link">
     <span class="md-ellipsis">
-      Organiser le contenu d'un travail
+      <span class="md-typeset">
+        Organiser le contenu d'un travail
+      </span>
     </span>
   </a>
   
@@ -749,7 +877,9 @@
         <li class="md-nav__item">
   <a href="#presenter-des-donnees-correctement" class="md-nav__link">
     <span class="md-ellipsis">
-      Présenter des données correctement
+      <span class="md-typeset">
+        Présenter des données correctement
+      </span>
     </span>
   </a>
   
@@ -758,7 +888,9 @@
         <li class="md-nav__item">
   <a href="#citer-ses-sources-dans-un-travail-ecrit" class="md-nav__link">
     <span class="md-ellipsis">
-      Citer ses sources dans un travail écrit
+      <span class="md-typeset">
+        Citer ses sources dans un travail écrit
+      </span>
     </span>
   </a>
   
@@ -768,7 +900,9 @@
           <li class="md-nav__item">
   <a href="#les-mecanismes-de-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Les mécanismes de citation
+      <span class="md-typeset">
+        Les mécanismes de citation
+      </span>
     </span>
   </a>
   
@@ -778,7 +912,9 @@
           <li class="md-nav__item">
   <a href="#la-mediagraphie" class="md-nav__link">
     <span class="md-ellipsis">
-      La médiagraphie
+      <span class="md-typeset">
+        La médiagraphie
+      </span>
     </span>
   </a>
   
@@ -787,7 +923,9 @@
           <li class="md-nav__item">
   <a href="#lappel-de-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      L'appel de référence
+      <span class="md-typeset">
+        L'appel de référence
+      </span>
     </span>
   </a>
   
@@ -801,7 +939,9 @@
           <li class="md-nav__item">
   <a href="#types-de-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Types de citation
+      <span class="md-typeset">
+        Types de citation
+      </span>
     </span>
   </a>
   
@@ -811,7 +951,9 @@
           <li class="md-nav__item">
   <a href="#extrait-dun-document" class="md-nav__link">
     <span class="md-ellipsis">
-      Extrait d'un document
+      <span class="md-typeset">
+        Extrait d'un document
+      </span>
     </span>
   </a>
   
@@ -820,7 +962,9 @@
           <li class="md-nav__item">
   <a href="#paraphrase-citation-didee" class="md-nav__link">
     <span class="md-ellipsis">
-      Paraphrase (citation d'idée)
+      <span class="md-typeset">
+        Paraphrase (citation d'idée)
+      </span>
     </span>
   </a>
   
@@ -834,7 +978,9 @@
           <li class="md-nav__item">
   <a href="#quand-citer-des-sources" class="md-nav__link">
     <span class="md-ellipsis">
-      Quand citer des sources ?
+      <span class="md-typeset">
+        Quand citer des sources ?
+      </span>
     </span>
   </a>
   
@@ -848,7 +994,9 @@
         <li class="md-nav__item">
   <a href="#citer-ces-sources-dans-le-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Citer ces sources dans le code
+      <span class="md-typeset">
+        Citer ces sources dans le code
+      </span>
     </span>
   </a>
   
@@ -857,7 +1005,9 @@
         <li class="md-nav__item">
   <a href="#des-questions-sur-la-citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Des questions sur la citation ?
+      <span class="md-typeset">
+        Des questions sur la citation ?
+      </span>
     </span>
   </a>
   
@@ -866,7 +1016,9 @@
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Références
+      <span class="md-typeset">
+        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références
+      </span>
     </span>
   </a>
   
@@ -882,7 +1034,9 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
 
@@ -890,14 +1044,14 @@
 <h1 id="presenter-un-travail">Présenter un travail</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
 <p>3-1 Organisation d'un travail écrit long<br>
 3-2 Méthodes de présentation des propos<br>
 3-3 Méthodes de présentation des résultats<br>
 3-4 Règles de présentation matérielle des travaux</p>
 </div>
 <div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5l81.6-81.5-81.6-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24zm110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80v19c0 22.1 7 43.4 19.8 61h184.4z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
 <p>60 minutes</p>
 </div>
 </div>
@@ -949,8 +1103,8 @@
 <p>Il arrive que l'on doive présenter des données multiples dans un travail. Les quatre modes de présentation sont :</p>
 <ul>
 <li><strong>La liste</strong> : présente des éléments qui ont un lien entre eux. On utilise une liste numérotée lorsque (et seulement lorsque) l'ordre des éléments est important. En français, la puce est la marque typographique correcte pour la liste (et non le tiret);</li>
-<li><strong>Le tableau</strong> : présente une séquence d'élément organisé par au moins 2 caractéristiques (lignes et colonnes). Chaque tableau doit être accompagné d'une <span class="tooltip hint--top" aria-label=" Titre de l'élément">légende</span> pour en préciser le sens. On doit faire référence au tableau dans le texte. On ne fait jamais de tableau avec une seule ligne ou colonne de données. De plus, l'on évite les tableaux chargés de texte.</li>
-<li><strong>L'image</strong> : aussi appelée <em>figure</em>, elle sert à représenter un élément visuel. Chaque image doit être accompagnée d'une <span class="tooltip hint--top" aria-label=" Titre de l'élément">légende</span> pour en préciser le sens. On doit faire référence à l'image dans le texte.</li>
+<li><strong>Le tableau</strong> : présente une séquence d'élément organisé par au moins 2 caractéristiques (lignes et colonnes). Chaque tableau doit être accompagné d'une [légende]{ Titre de l'élément} pour en préciser le sens. On doit faire référence au tableau dans le texte. On ne fait jamais de tableau avec une seule ligne ou colonne de données. De plus, l'on évite les tableaux chargés de texte.</li>
+<li><strong>L'image</strong> : aussi appelée <em>figure</em>, elle sert à représenter un élément visuel. Chaque image doit être accompagnée d'une [légende]{ Titre de l'élément} pour en préciser le sens. On doit faire référence à l'image dans le texte.</li>
 <li><strong>Le graphique</strong> : présente des données sous forme visuelle. Les éléments clés d'un graphique (comme les titres des axes, les graduations et la légende du graphique) doivent être présents. De plus, chaque graphique doit être accompagné d'un titre. On doit faire référence au graphique dans le texte. </li>
 </ul>
 <div class="admonition tips">
@@ -964,11 +1118,11 @@
 <li>Privilégier des colonnes qui utilisent la pleine largeur de la page plutôt que de développer en hauteur.</li>
 </ul>
 <p><figure markdown="span">
-    <a class="glightbox" href="../images/mauvais_tableau.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/mauvais_tableau.PNG" /></a>
+    <a class="glightbox" data-type="image" href="../images/mauvais_tableau.PNG"><img alt="" src="../images/mauvais_tableau.PNG" /></a>
     <figcaption>Tableau à retravailler</figcaption>
 </figure></p>
 <p><figure markdown="span">
-    <a class="glightbox" href="../images/bon_tableau.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/bon_tableau.PNG" /></a>
+    <a class="glightbox" data-type="image" href="../images/bon_tableau.PNG"><img alt="" src="../images/bon_tableau.PNG" /></a>
     <figcaption>Tableau qui respecte les trucs de mise en forme</figcaption>
 </figure></p>
 </div>
@@ -998,7 +1152,7 @@
 <li>Citer un article scientifique : si vous trouvez l'article dans <em>Google Scholar</em>, vous verrez un bouton <strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 6v8h1.88l-2 4h5.74L21 13.24V6m-6 2h4v4.76L17.38 16h-1.26l2-4H15M3 6v8h1.88l-2 4h5.74L11 13.24V6M5 8h4v4.76L7.38 16H6.12l2-4H5Z"/></svg></span> Citer</strong> sous la vedette de chaque article.</li>
 </ul>
 <figure>
-    <a class="glightbox" href="../images/citation-books.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/citation-books.png" /></a>
+    <a class="glightbox" data-type="image" href="../images/citation-books.png"><img alt="" src="../images/citation-books.png" /></a>
     <figcaption markdown>Générer une citation APA avec Google Books</figcaption>
 </figure>
 <h4 id="lappel-de-reference">L'appel de référence</h4>
@@ -1047,12 +1201,12 @@
 </ul>
 <div class="admonition tips">
 <p class="admonition-title">Citer les intelligences artificielles</p>
-<p>Comme la plupart des sites qui génèrent les médiagraphies n'incluent pas encore de façon de citer les IA, le département a préparé le document <a href="../fichiers/Citer%20intelligences%20artificielles.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368z"/></svg></span> Citer les intelligences artificielles</a></p>
+<p>Comme la plupart des sites qui génèrent les médiagraphies n'incluent pas encore de façon de citer les IA, le département a préparé le document <a href="../fichiers/Citer%20intelligences%20artificielles.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20"/></svg></span> Citer les intelligences artificielles</a></p>
 </div>
 <h2 id="des-questions-sur-la-citation">Des questions sur la citation ?</h2>
 <p><span style="font-size:18pt">Souvenez-vous, tant que votre travail n'est pas remis, vous pouvez demander à la personne enseignante si vous respectez les exigences en matière d'intégrité intellectuelle et de citation adéquate des sources ! Une fois votre travail remis, si la personne enseignante voit des éléments empruntés et qui ne sont pas référencés, alors cela peut mener à un signalement pour plagiat :'( </span> </p>
 <hr />
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25Z"/></svg></span> Références</h2>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références</h2>
 <p>Département d'informatique (2023). Citer des intelligences artificielles. <em>Accessible dans l'équipe Teams Étudiants 420 &gt; Fichiers &gt; Ressources</em>.</p>
 <p>Dionne, B., &amp; Ouellette, C. (2023). Pour réussir: guide méthodologique pour les études et la recherche. Beauchemin/Chenelière éducation.</p>
 
@@ -1062,27 +1216,8 @@
 
 
 
-  
-    
-  
-  
 
 
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Dernière mise à jour">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2026-08-17</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
 
 
 
@@ -1108,7 +1243,7 @@
           <a href="../recherche/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Rechercher des informations">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1122,7 +1257,7 @@
         
         
           
-          <a href="../personnalite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Personnalité et travail d&#39;équipe">
+          <a href="../personnalite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Personnalité et travail d&#x27;équipe">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
@@ -1133,7 +1268,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
         
@@ -1150,13 +1285,14 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -1166,7 +1302,7 @@
       
     
     <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -1177,7 +1313,7 @@
       
     
     <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -1185,7 +1321,7 @@
     
     
     <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
     </a>
   
 </div>
@@ -1195,20 +1331,27 @@
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","search.suggest"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  </body>
 </html>
