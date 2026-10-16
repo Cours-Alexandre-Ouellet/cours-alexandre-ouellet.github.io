@@ -49,3 +49,22 @@ span.tooltip {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.img-ia img {
+    width: 48px;
+}
+
+/* Ajout du fond de couleur pour l'en-tête */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Optionnel : Assure que le texte et les icônes de navigation de l'en-tête restent lisibles */
+.md-header__button, .md-header__topic, .md-header__title {
+  color: inherit;
+}
+
+.competences li {
+    margin-bottom: 0px !important;
+}
