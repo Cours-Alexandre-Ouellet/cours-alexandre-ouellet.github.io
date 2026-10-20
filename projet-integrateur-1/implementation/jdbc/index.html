@@ -2844,7 +2844,7 @@
 <p class="admonition-title">Pourquoi un objet DeplacementBrut ?</p>
 <p>En Java, lorsque deux objets sont dépendants, on affecte une référence d'un objet à l'autre. En base de donnée, on stocke plutôt une copie de la clé primaire. Donc lorsqu'on crée les objets du côté Java, il faut aussi charger les dépendances de la bd. Comme on ne peut pas avoir deux connexions simultanées, il faut stocker temporairement les relations sous forme de clé étrangère, puis après charger les dépendances. <code>DeplacementBrut</code>, comme classe locale, permet ed s'acquitter de cette tâche.</p>
 </div>
-<p>Chacun des champs est chargé avec <code>getInt</code>, comme on charge des identifiants. On doit utiliser la méthode propre au type de données comme pour l'assignation vue à la <a href=".././jdbc/#requête-préparée">section précédente</a>.</p>
+<p>Chacun des champs est chargé avec <code>getInt</code>, comme on charge des identifiants. On doit utiliser la méthode propre au type de données comme pour l'assignation vue à la <a href=".././jdbc/#requete-preparee">section précédente</a>.</p>
 <p>Le code ci-dessous montre la résolution des liens pour le passage d'une représentation en base de données à une représentation dans un système objet.</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Chargement des dépendances</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
