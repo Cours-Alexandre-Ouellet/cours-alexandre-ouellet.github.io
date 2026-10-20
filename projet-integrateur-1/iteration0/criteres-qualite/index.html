@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="zensical-0.0.69">
     
     
       
@@ -33,10 +33,15 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.e15858d4.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
 
@@ -56,8 +61,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -65,25 +70,18 @@
     
       <link rel="stylesheet" href="../../css/override.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  </head>
   
   
     
+    
+      
     
     
     
@@ -93,14 +91,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#criteres-de-qualite-logicielle" class="md-skip">
-          Aller au contenu
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Aller au contenu
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -115,12 +110,12 @@
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="logo">
+  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -140,51 +135,38 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" aria-label="Recherche">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Recherche">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initialisation de la recherche
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Recherche">
+  <button type="button" class="md-search__button">
+    Recherche
+  </button>
 </div>
       
     
-    
+    <div class="md-header__source">
+      
+    </div>
   </nav>
   
     
@@ -199,11 +181,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item">
         <a href="../../concepts/historique/" class="md-tabs__link">
           
-  
   
   Concepts théoriques
 
@@ -221,11 +205,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../objectifs/" class="md-tabs__link">
           
-  
   
   Itération 0
 
@@ -241,11 +227,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item">
         <a href="../../iteration1/objectifs/" class="md-tabs__link">
           
-  
   
   Itération 1
 
@@ -261,11 +249,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item">
         <a href="../../iterationN/documentation.md" class="md-tabs__link">
           
-  
   
   Iteration N
 
@@ -281,6 +271,9 @@
   
   
     
+      
+    
+    
     
       
   
@@ -288,11 +281,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item">
-        <a href="../../implementation/java-gradle/" class="md-tabs__link">
+        <a href="../../implementation/java-gradle.md" class="md-tabs__link">
           
-  
   
   Implémentation
 
@@ -311,6 +306,9 @@
   
   
     
+      
+    
+    
     
       
   
@@ -318,11 +316,13 @@
   
   
     
+      
+    
+    
     
       <li class="md-tabs__item">
         <a href="../../gestion/cueillette-information/" class="md-tabs__link">
           
-  
   
   Gestion de projet et collaboration
 
@@ -343,9 +343,6 @@
     <li class="md-tabs__item">
       <a href="../../references/glossaire/" class="md-tabs__link">
         
-  
-  
-    
   
   Glossaire
 
@@ -386,7 +383,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Projet intégrateur 1" class="md-nav__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="logo">
+  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
 
     </a>
     Projet intégrateur 1
@@ -424,8 +421,7 @@
   <span class="md-ellipsis">
     
   
-    Concepts théoriques
-  
+  Concepts théoriques
 
     
   </span>
@@ -435,19 +431,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Concepts théoriques
-  
+  Concepts théoriques
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -460,8 +456,7 @@
   <span class="md-ellipsis">
     
   
-    Histoire du génie logiciel et de l'informatique
-  
+  Histoire du génie logiciel et de l'informatique
 
     
   </span>
@@ -472,10 +467,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -488,8 +483,7 @@
   <span class="md-ellipsis">
     
   
-    Approches de développement logiciel
-  
+  Approches de développement logiciel
 
     
   </span>
@@ -500,10 +494,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -532,8 +526,7 @@
   <span class="md-ellipsis">
     
   
-    Les phases du développement logiciel
-  
+  Les phases du développement logiciel
 
     
   </span>
@@ -543,19 +536,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Les phases du développement logiciel
-  
+  Les phases du développement logiciel
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -568,8 +561,7 @@
   <span class="md-ellipsis">
     
   
-    Le processus d'assurance qualité
-  
+  Le processus d'assurance qualité
 
     
   </span>
@@ -580,10 +572,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -596,8 +588,7 @@
   <span class="md-ellipsis">
     
   
-    Le processus de maintenance
-  
+  Le processus de maintenance
 
     
   </span>
@@ -608,10 +599,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -624,8 +615,7 @@
   <span class="md-ellipsis">
     
   
-    Le déploiement et mise en service
-  
+  Le déploiement et mise en service
 
     
   </span>
@@ -636,18 +626,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -676,8 +667,7 @@
   <span class="md-ellipsis">
     
   
-    Rédaction technique
-  
+  Rédaction technique
 
     
   </span>
@@ -687,19 +677,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Rédaction technique
-  
+  Rédaction technique
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -712,8 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Types de documents techniques
-  
+  Types de documents techniques
 
     
   </span>
@@ -724,10 +713,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -740,8 +729,7 @@
   <span class="md-ellipsis">
     
   
-    Éléments de rédaction technique
-  
+  Éléments de rédaction technique
 
     
   </span>
@@ -752,10 +740,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -768,8 +756,7 @@
   <span class="md-ellipsis">
     
   
-    Liste des termes à éviter
-  
+  Liste des termes à éviter
 
     
   </span>
@@ -780,10 +767,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -796,8 +783,7 @@
   <span class="md-ellipsis">
     
   
-    Présenter un dossier d'analyse
-  
+  Présenter un dossier d'analyse
 
     
   </span>
@@ -808,18 +794,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -860,8 +848,7 @@
   <span class="md-ellipsis">
     
   
-    Itération 0
-  
+  Itération 0
 
     
   </span>
@@ -871,19 +858,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Itération 0
-  
+  Itération 0
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -896,8 +883,7 @@
   <span class="md-ellipsis">
     
   
-    Objectifs
-  
+  Objectifs
 
     
   </span>
@@ -908,10 +894,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -924,8 +910,7 @@
   <span class="md-ellipsis">
     
   
-    Rencontre de cadrage
-  
+  Rencontre de cadrage
 
     
   </span>
@@ -936,10 +921,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -952,8 +937,7 @@
   <span class="md-ellipsis">
     
   
-    Dimensions d'un projet informatique
-  
+  Dimensions d'un projet informatique
 
     
   </span>
@@ -964,10 +948,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -980,8 +964,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Entité actrice
-  
+  Analyse | Entité actrice
 
     
   </span>
@@ -992,10 +975,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1008,8 +991,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Récits d'utilisation
-  
+  Analyse | Récits d'utilisation
 
     
   </span>
@@ -1020,10 +1002,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1036,8 +1018,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Liste des fonctionnalités et des cas d'utilisation
-  
+  Analyse | Liste des fonctionnalités et des cas d'utilisation
 
     
   </span>
@@ -1048,10 +1029,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1064,8 +1045,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Choix de technologies
-  
+  Analyse | Choix de technologies
 
     
   </span>
@@ -1076,10 +1056,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1092,8 +1072,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Besoins de sécurité
-  
+  Analyse | Besoins de sécurité
 
     
   </span>
@@ -1104,10 +1083,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1120,8 +1099,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Conformité légale
-  
+  Analyse | Conformité légale
 
     
   </span>
@@ -1132,10 +1110,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1148,8 +1126,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Planification des ressources
-  
+  Analyse | Planification des ressources
 
     
   </span>
@@ -1160,10 +1137,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1176,8 +1153,7 @@
   <span class="md-ellipsis">
     
   
-    Conception | Standards et normes
-  
+  Conception | Standards et normes
 
     
   </span>
@@ -1188,10 +1164,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1204,8 +1180,7 @@
   <span class="md-ellipsis">
     
   
-    Conception | Pipeline
-  
+  Conception | Pipeline
 
     
   </span>
@@ -1216,10 +1191,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -1228,7 +1203,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -1241,8 +1216,7 @@
   <span class="md-ellipsis">
     
   
-    Qualité logicielle | Critères de qualité
-  
+  Qualité logicielle | Critères de qualité
 
     
   </span>
@@ -1252,15 +1226,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Qualité logicielle | Critères de qualité
-  
+  Qualité logicielle | Critères de qualité
 
     
   </span>
@@ -1270,6 +1243,7 @@
       </a>
       
         
+
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -1287,9 +1261,9 @@
         <li class="md-nav__item">
   <a href="#mesurer-les-criteres-de-qualite" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Mesurer les critères de qualité
-      
+      </span>
     </span>
   </a>
   
@@ -1298,9 +1272,9 @@
         <li class="md-nav__item">
   <a href="#les-criteres-de-qualite" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Les critères de qualité
-      
+      </span>
     </span>
   </a>
   
@@ -1310,9 +1284,9 @@
           <li class="md-nav__item">
   <a href="#la-qualite-du-code" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         La qualité du code
-      
+      </span>
     </span>
   </a>
   
@@ -1321,9 +1295,9 @@
           <li class="md-nav__item">
   <a href="#la-qualite-du-produit" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         La qualité du produit
-      
+      </span>
     </span>
   </a>
   
@@ -1332,9 +1306,9 @@
           <li class="md-nav__item">
   <a href="#la-qualite-du-processus" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         La qualité du processus
-      
+      </span>
     </span>
   </a>
   
@@ -1348,9 +1322,9 @@
         <li class="md-nav__item">
   <a href="#taille-du-projet-et-criteres-de-qualite" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Taille du projet et critères de qualité
-      
+      </span>
     </span>
   </a>
   
@@ -1359,9 +1333,9 @@
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      
-         Références
-      
+      <span class="md-typeset">
+        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références
+      </span>
     </span>
   </a>
   
@@ -1374,10 +1348,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1390,8 +1364,7 @@
   <span class="md-ellipsis">
     
   
-    Qualité logicielle | Types de test
-  
+  Qualité logicielle | Types de test
 
     
   </span>
@@ -1402,10 +1375,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1441,8 +1415,7 @@
   <span class="md-ellipsis">
     
   
-    Itération 1
-  
+  Itération 1
 
     
   </span>
@@ -1452,19 +1425,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Itération 1
-  
+  Itération 1
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1477,8 +1450,7 @@
   <span class="md-ellipsis">
     
   
-    Objectifs
-  
+  Objectifs
 
     
   </span>
@@ -1489,10 +1461,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1505,8 +1477,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Cas d'utilisation
-  
+  Analyse | Cas d'utilisation
 
     
   </span>
@@ -1517,10 +1488,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1533,8 +1504,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Concevoir des interfaces
-  
+  Analyse | Concevoir des interfaces
 
     
   </span>
@@ -1545,10 +1515,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1561,8 +1531,7 @@
   <span class="md-ellipsis">
     
   
-    Conception | Choix architecture
-  
+  Conception | Choix architecture
 
     
   </span>
@@ -1573,10 +1542,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1589,8 +1558,7 @@
   <span class="md-ellipsis">
     
   
-    Conception | Diagramme de classe
-  
+  Conception | Diagramme de classe
 
     
   </span>
@@ -1601,10 +1569,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1617,8 +1585,7 @@
   <span class="md-ellipsis">
     
   
-    Conception | Modèle des données
-  
+  Conception | Modèle des données
 
     
   </span>
@@ -1629,10 +1596,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1645,8 +1612,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation | Écrire du code
-  
+  Implémentation | Écrire du code
 
     
   </span>
@@ -1657,10 +1623,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1673,8 +1639,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation | Complexité des algorithmes
-  
+  Implémentation | Complexité des algorithmes
 
     
   </span>
@@ -1685,10 +1650,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1701,8 +1666,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation | Documenter du code
-  
+  Implémentation | Documenter du code
 
     
   </span>
@@ -1713,10 +1677,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1729,8 +1693,7 @@
   <span class="md-ellipsis">
     
   
-    Qualité logicielle | Plan de test
-  
+  Qualité logicielle | Plan de test
 
     
   </span>
@@ -1741,10 +1704,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1757,8 +1720,7 @@
   <span class="md-ellipsis">
     
   
-    Qualité logicielle | Réaliser des tests
-  
+  Qualité logicielle | Réaliser des tests
 
     
   </span>
@@ -1769,10 +1731,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1801,8 +1763,7 @@
   <span class="md-ellipsis">
     
   
-    Autres ressources
-  
+  Autres ressources
 
     
   </span>
@@ -1812,33 +1773,32 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_12">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Autres ressources
-  
+  Autres ressources
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../iteration1/conception-objet/" class="md-nav__link">
+      <a href="../../iteration1/exercice1-conception/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Conception | Diagramme de classe
-  
+  Solution exercice 1 de conception
 
     
   </span>
@@ -1849,18 +1809,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1896,8 +1858,7 @@
   <span class="md-ellipsis">
     
   
-    Iteration N
-  
+  Iteration N
 
     
   </span>
@@ -1907,19 +1868,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Iteration N
-  
+  Iteration N
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1932,8 +1893,7 @@
   <span class="md-ellipsis">
     
   
-    Analyse | Maintenir à jour la documentation
-  
+  Analyse | Maintenir à jour la documentation
 
     
   </span>
@@ -1944,10 +1904,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1960,8 +1920,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation | Continuer et réutiliser le code existant
-  
+  Implémentation | Continuer et réutiliser le code existant
 
     
   </span>
@@ -1972,10 +1931,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1988,8 +1947,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation | Réusiner du code
-  
+  Implémentation | Réusiner du code
 
     
   </span>
@@ -2000,10 +1958,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2016,8 +1974,7 @@
   <span class="md-ellipsis">
     
   
-    Maintenance | Mise à jour et correction de bogues
-  
+  Maintenance | Mise à jour et correction de bogues
 
     
   </span>
@@ -2028,10 +1985,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2044,8 +2001,7 @@
   <span class="md-ellipsis">
     
   
-    Déploiement | Préparer et déployer un système
-  
+  Déploiement | Préparer et déployer un système
 
     
   </span>
@@ -2056,10 +2012,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2072,8 +2028,7 @@
   <span class="md-ellipsis">
     
   
-    Déploiement | Tester la version déployer
-  
+  Déploiement | Tester la version déployer
 
     
   </span>
@@ -2084,10 +2039,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2123,8 +2079,7 @@
   <span class="md-ellipsis">
     
   
-    Implémentation
-  
+  Implémentation
 
     
   </span>
@@ -2134,19 +2089,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Implémentation
-  
+  Implémentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2175,8 +2130,7 @@
   <span class="md-ellipsis">
     
   
-    JavaFX
-  
+  JavaFX
 
     
   </span>
@@ -2186,33 +2140,32 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    JavaFX
-  
+  JavaFX
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/java-gradle/" class="md-nav__link">
+      <a href="../../implementation/java-gradle.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Introduction à l'environnement Java
-  
+  Introduction à l'environnement Java
 
     
   </span>
@@ -2223,24 +2176,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/javafx-intro/" class="md-nav__link">
+      <a href="../../implementation/javafx-intro.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Introduction à JavaFX
-  
+  Introduction à JavaFX
 
     
   </span>
@@ -2251,24 +2203,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/conteneurs-javafx/" class="md-nav__link">
+      <a href="../../implementation/conteneurs-javafx.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Conteneurs JavaFX
-  
+  Conteneurs JavaFX
 
     
   </span>
@@ -2279,24 +2230,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/formulaire-javafx/" class="md-nav__link">
+      <a href="../../implementation/formulaire-javafx.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Créer un formulaire avec JavaFX
-  
+  Créer un formulaire avec JavaFX
 
     
   </span>
@@ -2307,24 +2257,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/listes-javafx/" class="md-nav__link">
+      <a href="../../implementation/listes-javafx.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Listes de données
-  
+  Listes de données
 
     
   </span>
@@ -2335,24 +2284,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/fenetre-javafx/" class="md-nav__link">
+      <a href="../../implementation/fenetre-javafx.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Gestions des fenêtres avec JavaFX
-  
+  Gestions des fenêtres avec JavaFX
 
     
   </span>
@@ -2363,24 +2311,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/erreur-javafx/" class="md-nav__link">
+      <a href="../../implementation/erreur-javafx.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Erreurs fréquentes en JavaFX
-  
+  Erreurs fréquentes en JavaFX
 
     
   </span>
@@ -2391,18 +2338,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2431,8 +2379,7 @@
   <span class="md-ellipsis">
     
   
-    JDBC
-  
+  JDBC
 
     
   </span>
@@ -2442,33 +2389,32 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    JDBC
-  
+  JDBC
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/jdbc/" class="md-nav__link">
+      <a href="../../implementation/jdbc.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Se connecter à une BD avec JDBC
-  
+  Se connecter à une BD avec JDBC
 
     
   </span>
@@ -2479,18 +2425,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2526,8 +2474,7 @@
   <span class="md-ellipsis">
     
   
-    Gestion de projet et collaboration
-  
+  Gestion de projet et collaboration
 
     
   </span>
@@ -2537,19 +2484,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Gestion de projet et collaboration
-  
+  Gestion de projet et collaboration
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2578,8 +2525,7 @@
   <span class="md-ellipsis">
     
   
-    En rappel
-  
+  En rappel
 
     
   </span>
@@ -2589,19 +2535,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    En rappel
-  
+  En rappel
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2614,8 +2560,7 @@
   <span class="md-ellipsis">
     
   
-    Techniques de collecte de l'information
-  
+  Techniques de collecte de l'information
 
     
   </span>
@@ -2626,18 +2571,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2650,8 +2596,7 @@
   <span class="md-ellipsis">
     
   
-    Versionnage sémantique
-  
+  Versionnage sémantique
 
     
   </span>
@@ -2662,10 +2607,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2678,8 +2623,7 @@
   <span class="md-ellipsis">
     
   
-    Méthodes à pointage
-  
+  Méthodes à pointage
 
     
   </span>
@@ -2690,10 +2634,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2722,8 +2666,7 @@
   <span class="md-ellipsis">
     
   
-    Utiliser Git et Git Hub
-  
+  Utiliser Git et Git Hub
 
     
   </span>
@@ -2733,19 +2676,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Utiliser Git et Git Hub
-  
+  Utiliser Git et Git Hub
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2758,8 +2701,7 @@
   <span class="md-ellipsis">
     
   
-    Travailler avec Git
-  
+  Travailler avec Git
 
     
   </span>
@@ -2770,10 +2712,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2786,8 +2728,7 @@
   <span class="md-ellipsis">
     
   
-    La stratégie GitFlow
-  
+  La stratégie GitFlow
 
     
   </span>
@@ -2798,10 +2739,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2814,8 +2755,7 @@
   <span class="md-ellipsis">
     
   
-    Pull-requests
-  
+  Pull-requests
 
     
   </span>
@@ -2826,10 +2766,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2842,8 +2782,7 @@
   <span class="md-ellipsis">
     
   
-    GitHub Project
-  
+  GitHub Project
 
     
   </span>
@@ -2854,10 +2793,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2870,8 +2809,7 @@
   <span class="md-ellipsis">
     
   
-    Automatisation
-  
+  Automatisation
 
     
   </span>
@@ -2882,18 +2820,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2922,8 +2861,7 @@
   <span class="md-ellipsis">
     
   
-    Projet intégrateur 2
-  
+  Projet intégrateur 2
 
     
   </span>
@@ -2933,19 +2871,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-    Projet intégrateur 2
-  
+  Projet intégrateur 2
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2958,8 +2896,7 @@
   <span class="md-ellipsis">
     
   
-    Scrum
-  
+  Scrum
 
     
   </span>
@@ -2970,18 +2907,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3001,8 +2940,7 @@
   <span class="md-ellipsis">
     
   
-    Glossaire
-  
+  Glossaire
 
     
   </span>
@@ -3029,43 +2967,90 @@
 
 
 
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../objectifs/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Itération 0
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
 
 
-
-<div><h1 id="criteres-de-qualite-logicielle">Critères de qualité logicielle</h1>
+<h1 id="criteres-de-qualite-logicielle">Critères de qualité logicielle</h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"></path></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
 <p>3-7 Mise en application pratique de l'ensemble des principes d’une méthode d’analyse<br>
 3-9 Développement du projet en cohérence avec la conception établie<br>
 4-3 Stratégies d'assurance qualité</p>
 </div>
 <div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"></path></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
 <p>90 minutes</p>
 </div>
 </div>
 <p>Les questions qu'est-ce qu'un bon code ? Qu'est-ce qu'un logiciel de qualité ? Comment permettre l'évolution et la maintenance d'un logiciel ? sont des questions posées depuis longtemps auxquelles nous n'avons toujours pas de réponse définitive. </p>
-<p>Explorons certains de ces thèmes dans la lecture d'un premier texte : <a href="../../documents/The%20book%20of%20Programming.pdf">Le livre de la programmation <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20"></path></svg></span></a>. Ce texte, bien que ne provenant pas d'universitaire et de grandes recherches, contient un certain nombre de réflexions pertinentes sur la question d'un « bon logiciel ».</p>
+<p>Explorons certains de ces thèmes dans la lecture d'un premier texte : <a href="../../documents/The%20book%20of%20Programming.pdf">Le livre de la programmation <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20"/></svg></span></a>. Ce texte, bien que ne provenant pas d'universitaire et de grandes recherches, contient un certain nombre de réflexions pertinentes sur la question d'un «&nbsp;bon logiciel&nbsp;».</p>
 <h2 id="mesurer-les-criteres-de-qualite">Mesurer les critères de qualité</h2>
 <p>Les critères de qualité sont généraux et applicables à tous (ou presque tous) les systèmes. Il s'agit de grands concepts que l'on souhaite tous respecter, mais dont l'évaluation réelle du suivi n'est pas simple. Pourtant cette information est essentielle pour permettre d'ajuster nos pratiques de développement afin de répondre aux critères de qualité.</p>
 <figure>
-    <a class="glightbox" href="../../images/processus_qualite.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../images/processus_qualite.png"></a>
+    <a class="glightbox" data-type="image" href="../../images/processus_qualite.png"><img alt="" src="../../images/processus_qualite.png" /></a>
     <figcaption markdown>Opérations du cycle de qualité des systèmes logiciels</figcaption>
 </figure>
-<p>Les types de mesures de contrôle et la façon de les obtenir seront vus dans la section sur les <a href="processus_qualite.md#processus-de-tests">processus de tests</a>.</p>
+<p>Les types de mesures de contrôle et la façon de les obtenir seront vus dans la section sur les <a href="../processus_qualite/#processus-de-tests">processus de tests</a>.</p>
 <h2 id="les-criteres-de-qualite">Les critères de qualité</h2>
 <p>On peut diviser les critères en trois catégories, bien que celles-ci ne soient pas toujours disjointes. Ces qualités, comme il est mentionné plus haut, sont des grands principes que l'on vise à respecter. Pour chacun, divers indicateurs ou mesures <em>possibles</em> sont donnés.</p>
 <h3 id="la-qualite-du-code">La qualité du code</h3>
 <h4 id="securite">Sécurité</h4>
 <p>La sécurité du système se divise, entre autres, dans la sécurité de ses données, de ses transactions, de l'accès aux périphériques et la gestion des paramètres de confidentialité et d'accès. Un code de grande qualité assurera la confidentialité des informatiques. </p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Quels sont les traitements des données mis en place ?</li>
 <li>Y a-t-il un plan pour les mises à jour ? Est-il respecté ? Est-il actuel ?</li>
@@ -3077,7 +3062,7 @@
 <h4 id="adaptabilite">Adaptabilité</h4>
 <p>L'adaptabilité est la capacité du code à évoluer sans causer des cascades d'erreurs ou des cascades de mise à jour. Les besoins du système risquent de ne pas être constant tout au long de la vie du système et celui doit pouvoir y faire face .</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Quelles sont les fonctionnalités à risque d'évoluer ?</li>
 <li>Comment introduire les nouvelles fonctionnalités dans le système ?</li>
@@ -3088,7 +3073,7 @@
 <h4 id="modularite">Modularité</h4>
 <p>La modularité est la capacité du code à agir comme une entité complète en elle-même. On peut configurer de l'utilisation des composantes de code sans modifier le contenu des composantes. Elle permet, entre autres, la réutilisation du code et évite les duplications (dont nous traiterons dans la section sur la maintenance).</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que mes classes, mes packages, mes modules ... peuvent compléter les opérations par elles-mêmes ?</li>
 <li>Est-ce que les interfaces de mes composantes sont assez générales pour les réutiliser dans d'autres parties de code ? </li>
@@ -3099,7 +3084,7 @@
 <h4 id="complexite">Complexité</h4>
 <p>Un code complexe cache souvent des besoins mal identifiés ou dont la réponse fournie n'est pas adéquate. Parfois c'est un mal nécessaire, pour accommoder une dépendance ou un code existant, d'autres fois c'est la conséquence d'un mauvais design. Dans tous les cas, un code complexe est plus sujet à contenir des erreurs et, par conséquent, doit être évité (certains compléments sont présentés dans la section sur la maintenance).</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que les responsabilités de chaque classe sont claires et uniques ?</li>
 <li>Est-ce que j'ai des méthodes longues ou avec beaucoup de paramètres ? C'est souvent un signe de complexité excessive.</li>
@@ -3112,7 +3097,7 @@
 <h4 id="disponibilite">Disponibilité</h4>
 <p>La disponibilité du service est un aspect majeur dans la qualité du point de vue de la personne utilisatrice. En effet, un produit indisponible est cause de frustration et soulève la question même de l'utilité du système (pourquoi payerais-je si ne peux même pas y avoir accès ?).</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Avons-nous la capacité de supporter les formats de données utilisés ?</li>
 <li>Quel est le mécanisme de report de problèmes ?</li>
@@ -3122,7 +3107,7 @@
 <h4 id="resilience">Résilience</h4>
 <p>La résilience complémente la disponibilité, car il s'agit de la capacité du système à résister à des erreurs. On peut la distinguer de la disponibilité en la définissant comme la sensibilité aux situations qui affectent la disponibilité. Un système résilient à une faible sensibilité aux situations qui causent des erreurs.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Si la personne utilisatrice ne suit pas la séquence des opérations, est-ce que le système est capable de continuer son exécution ? D'indiquer l'erreur ? D'indiquer le correctif ? De corriger l'erreur ?</li>
 <li>Est-ce que les formats de données sont stricts ou flexibles ? (par exemple, est-ce que le point doit être utilisé pour les nombres décimaux ou la virgule ? Est-ce que les deux sont supportés ?)</li>
@@ -3133,7 +3118,7 @@
 <h4 id="portabilite">Portabilité</h4>
 <p>La portabilité est la possibilité d'un système à s'exécuter dans divers environnements. La portabilité peut être recherchée dans certains systèmes, d'autres font le choix de tirer pleinement profit de la puissance d'un type d'environnement.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Quel degré de modification est nécessaire pour exécuter le système dans un autre environnement ?</li>
 <li>Est-ce que le gain de performance gagné par la spécialisation vaut l'impact sur le développement multiplateforme ?</li>
@@ -3142,7 +3127,7 @@
 <h4 id="utilisabilite">Utilisabilité</h4>
 <p>L'utilisabilité est le degré de fonctionnalités disponibles dans le système. Un système hautement utilisable présente plusieurs fonctionnalités utiles pour que la personne utilisatrice réponde à ses besoins. Ces fonctionnalités doivent adopter un mode de fonctionnement proche de celui qui est attendu.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que les fonctionnalités proposées répondent aux demandes des personnes clientes ?</li>
 <li>Est-ce que les interfaces proposent des contrôles pertinents et adaptés ?</li>
@@ -3150,9 +3135,9 @@
 </ul>
 </details>
 <h4 id="efficience">Efficience</h4>
-<p>L'efficience représente le rapport entre les ressources consommées pour le fonctionnement et le résultat obtenu. Une efficience élevée représente l'idée de « faire beaucoup avec peu ». Contrairement à l'efficacité, l'efficience prend en compte la quantité de ressources investies.</p>
+<p>L'efficience représente le rapport entre les ressources consommées pour le fonctionnement et le résultat obtenu. Une efficience élevée représente l'idée de «&nbsp;faire beaucoup avec peu&nbsp;». Contrairement à l'efficacité, l'efficience prend en compte la quantité de ressources investies.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que le rapport coût et fonctionnalités est favorable ?</li>
 <li>Est-ce que l'environnement et les spécifications requises correspondent au niveau de production attendue ?</li>
@@ -3164,7 +3149,7 @@
 <h4 id="facilite-dapprentissage">Facilité d'apprentissage</h4>
 <p>Détermine l'effort à fournir par la personne utilisatrice (réputée connaître le domaine applicatif) pour apprendre à utiliser le système et se retrouver dans la navigation. </p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce qu'une fenêtre d'aide est disponible en cas de besoin ? Des suggestions contextuelles ? Un guide utilisateur ?</li>
 <li>Est-ce que la disposition des éléments est consistante entre les interfaces ? Entre des systèmes comparables ? Avec les normes de l'environnement d'exécution ?</li>
@@ -3177,7 +3162,7 @@
 <h4 id="adaptabilite_1">Adaptabilité</h4>
 <p>Le processus de développement doit permettre la prise en compte des besoins changeants. Même si la base de code est pensée de façon évolutive, il faut que la capacité l'adaptation soit présente dans tout le processus de développement. </p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Comment les avis sont-ils sollicités ? Est-ce un processus automatique (questionnaire) ? Par des entrevues ?</li>
 <li>Comment les avis sont-ils évalués ? Comment s'assurer de l'ouverture au changement de l'équipe d'évaluation ?</li>
@@ -3186,9 +3171,9 @@
 </ul>
 </details>
 <h4 id="difficulte-de-developpement">Difficulté de développement</h4>
-<p>Le niveau de difficulté technique demandé par les opérations réalisées dans le développement du système a un impact direct sur le processus. Une équipe qui juge constamment faire des développements difficiles risque de s'épuiser ou de se décourager. Le rythme et les ambitions doivent pouvoir être maintenus « indéfiniemment » selon le manifeste Agile.</p>
+<p>Le niveau de difficulté technique demandé par les opérations réalisées dans le développement du système a un impact direct sur le processus. Une équipe qui juge constamment faire des développements difficiles risque de s'épuiser ou de se décourager. Le rythme et les ambitions doivent pouvoir être maintenus «&nbsp;indéfiniemment&nbsp;» selon le manifeste Agile.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que l'on possède l'expertise pour les fonctionnalités à développer ?</li>
 <li>Est-ce que la division du travail nous permet de distribuer les difficultés à travers les opérations ?</li>
@@ -3199,7 +3184,7 @@
 <h4 id="qualite-des-artefacts">Qualité des artefacts</h4>
 <p>Les artefacts des différentes opérations de développements (diagrammes, descriptions, prototypes d'interface ...) doivent avoir une valeur ajoutée et aider, significativement, à atteindre d'autres objectifs de la qualité des systèmes. Les méthodes agiles mettent l'accent sur le développement d'un système fonctionnel plutôt que la production de documentation exhaustive.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que l'information de mes artefacts de développement est utilisée dans les opérations subséquentes ? Est-ce que ces informations sont maintenues à jour ?</li>
 <li>Est-ce que les artefacts sont produits au bon moment pour maximiser leur utilité ?</li>
@@ -3209,7 +3194,7 @@
 <h4 id="agrealibilite-du-processus">Agréalibilité du processus</h4>
 <p>Un processus qui est difficile à suivre ou désagréable ne suscite pas l'engagement des membres de l'équipe dans le développement du système, alors que c'est un élément clé du succès des projets structurés par une méthode agile.</p>
 <details class="info">
-<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"></path></svg></span> Questions à se poser pour évaluer ce critère</summary>
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> Questions à se poser pour évaluer ce critère</summary>
 <ul>
 <li>Est-ce que le travail est réparti équitablement (effort, intérêt, compétences) entre les membres de l'équipe ?</li>
 <li>Est-ce que la collaboration et le soutien sont disponibles pour les membres de l'équipe ? Qu'est-ce qui est fait pour rendre les membres de l'équipe à l'aise de demander de l'aide ?</li>
@@ -3219,9 +3204,9 @@
 </details>
 <h2 id="taille-du-projet-et-criteres-de-qualite">Taille du projet et critères de qualité</h2>
 <p>La complexité et le niveau de détail à fournir dans chacune de ces réponses dépendent de la taille du projet. Un projet de faible taille, avec peu de personnes utilisatrices ou une petite équipe de développement aura des critères de qualités exprimées plus simplement. </p>
-<p>La seule réponse universellement mauvaise à fournir à ces questions est : « on ne veut pas en entendre parler ». Les préoccupations de qualité des systèmes ne doivent pas être ignorées. Cependant, en fonction du contexte du développement, certains aspects peuvent être mis de côté <strong>volontairement</strong>, car ils ne s'appliquent pas au contexte ou que les ressources pour évaluer ces critères ne sont pas disponibles. Il faut prendre le temps d'avoir une réflexion sur les critères de qualité avant d'en exclure de la portée de la stratégie d'assurance qualité.</p>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"></path></svg></span> Références</h2>
-<p>Sommerville, I. (2016). Software Engineering. Royaume-Uni: Pearson.</p></div>
+<p>La seule réponse universellement mauvaise à fournir à ces questions est : «&nbsp;on ne veut pas en entendre parler&nbsp;». Les préoccupations de qualité des systèmes ne doivent pas être ignorées. Cependant, en fonction du contexte du développement, certains aspects peuvent être mis de côté <strong>volontairement</strong>, car ils ne s'appliquent pas au contexte ou que les ressources pour évaluer ces critères ne sont pas disponibles. Il faut prendre le temps d'avoir une réflexion sur les critères de qualité avant d'en exclure de la portée de la stratégie d'assurance qualité.</p>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références</h2>
+<p>Sommerville, I. (2016). Software Engineering. Royaume-Uni: Pearson.</p>
 
 
 
@@ -3229,27 +3214,8 @@
 
 
 
-  
-    
-  
-  
 
 
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Dernière mise à jour">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="16 septembre 2026 14:11:10 UTC">2026-09-16</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
 
 
 
@@ -3275,7 +3241,7 @@
           <a href="../pipeline/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception | Pipeline">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -3300,7 +3266,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
         
@@ -3317,8 +3283,8 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
@@ -3334,7 +3300,7 @@
       
     
     <a href="https://www.linkedin.com/in/alexandre-ouellet-b7420295/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -3345,7 +3311,7 @@
       
     
     <a href="https://github.com/thecakeisreal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -3353,7 +3319,7 @@
     
     
     <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
     </a>
   
 </div>
@@ -3363,7 +3329,7 @@
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -3371,15 +3337,19 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.path","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  </body>
 </html>
