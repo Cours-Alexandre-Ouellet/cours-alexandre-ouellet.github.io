@@ -131,6 +131,10 @@ span.tooltip {
   color: var(--md-primary-bg-color);
 }
 
+.md-header .md-tabs li {
+  color: whitesmoke;
+}
+
 /* Optionnel : Assure que le texte et les icônes de navigation de l'en-tête restent lisibles */
 .md-header__button, .md-header__topic, .md-header__title {
   color: inherit;
