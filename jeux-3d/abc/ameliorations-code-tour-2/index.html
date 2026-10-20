@@ -18,7 +18,7 @@
         <link rel="prev" href="../systeme-vie/">
       
       
-        <link rel="next" href="../systeme-elements.md">
+        <link rel="next" href="../gestion-etats-tour/">
       
       
         
@@ -1967,7 +1967,34 @@
   
   
     <li class="md-nav__item">
-      <a href="../systeme-elements.md" class="md-nav__link">
+      <a href="../gestion-etats-tour/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Gestion des états de la tour
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systeme-ameliorations-tour.md" class="md-nav__link">
         
   
   
@@ -1994,7 +2021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gestion-etats-tour.md" class="md-nav__link">
+      <a href="../systeme-elements.md" class="md-nav__link">
         
   
   
@@ -2075,60 +2102,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../systeme-ameliorations-tour.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  none
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ameliorations=visuelles.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  none
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../ajouter-son.md" class="md-nav__link">
         
   
@@ -2157,6 +2130,33 @@
   
     <li class="md-nav__item">
       <a href="../fin-partie-score.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  none
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ameliorations-visuelles.md" class="md-nav__link">
         
   
   
@@ -2369,28 +2369,34 @@
 <span class="normal"><a href="#__codelineno-1-18">18</a></span>
 <span class="normal"><a href="#__codelineno-1-19">19</a></span>
 <span class="normal"><a href="#__codelineno-1-20">20</a></span>
-<span class="normal"><a href="#__codelineno-1-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Awake</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Awake</span><span class="p">()</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">{</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="n">cibles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Ennemi</span><span class="o">&gt;</span><span class="p">();</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="hll"><span class="w">    </span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
-</span></span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="hll"><span class="w">    </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
-</span></span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ActiverLanceur</span><span class="p">(</span><span class="n">Tour</span><span class="w"> </span><span class="n">tour</span><span class="p">)</span>
-</span></span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll"><span class="p">{</span>
-</span></span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll"><span class="w">    </span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
-</span></span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll"><span class="w">    </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
-</span></span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll"><span class="p">}</span>
-</span></span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnDestroy</span><span class="p">()</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="p">{</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tour</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">        </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">}</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="hll"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Start</span><span class="p">()</span>
+</span></span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="hll"><span class="p">{</span>
+</span></span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="hll"><span class="w">    </span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+</span></span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll"><span class="w">    </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
+</span></span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll"><span class="p">}</span>
+</span></span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ActiverLanceur</span><span class="p">(</span><span class="n">Tour</span><span class="w"> </span><span class="n">tour</span><span class="p">)</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">{</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="n">gameObject</span><span class="p">.</span><span class="n">SetActive</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">    </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="p">}</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="hll"><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnDestroy</span><span class="p">()</span>
+</span></span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="hll"><span class="p">{</span>
+</span></span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="hll"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tour</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+</span></span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="hll"><span class="w">    </span><span class="p">{</span>
+</span></span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="hll"><span class="w">        </span><span class="n">tour</span><span class="p">.</span><span class="n">TourPlacee</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">ActiverLanceur</span><span class="p">;</span>
+</span></span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="hll"><span class="w">    </span><span class="p">}</span>
+</span></span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="hll"><span class="p">}</span>
+</span></span></code></pre></div></td></tr></table></div>
 <p>La fabrique est responsable d'indiquer à la tour qu'elle a été placée. Ici la fabrique possède une visibilité sur la tour (c'est elle qui l'instancie), alors il n'est pas pertinent d'utiliser un événement.</p>
 <div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">FabriqueTour</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
@@ -2692,13 +2698,13 @@
         
         
           
-          <a href="../systeme-elements.md" class="md-footer__link md-footer__link--next" aria-label="Suivant: none">
+          <a href="../gestion-etats-tour/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Gestion des états de la tour">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                none
+                Gestion des états de la tour
               </div>
             </div>
             <div class="md-footer__button md-icon">
