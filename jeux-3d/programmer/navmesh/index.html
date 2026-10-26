@@ -1153,6 +1153,23 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Utiliser un NavMesh
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -1168,6 +1185,135 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principe-du-navmesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Principe du navmesh
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-des-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuration des agents
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration des agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-dun-type-dagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuration d'un type d'agent
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-de-la-surface" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuration de la surface
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-dun-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gestion d'un agent
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obstacles-dynamiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Obstacles dynamiques
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changer-laccessibilite-dune-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Changer l'accessibilité d'une zone
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changer l&#x27;accessibilité d&#x27;une zone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-des-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuration des zones
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sauts-et-liens-entre-les-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sauts et liens entre les surfaces
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1996,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/ameliorations-tours-donnees/" class="md-nav__link">
+      <a href="../../abc/ameliorations-tour-donnees/" class="md-nav__link">
         
   
   
@@ -2023,7 +2169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/ameliorations-tours-animations.md" class="md-nav__link">
+      <a href="../../abc/ameliorations-tour-animations/" class="md-nav__link">
         
   
   
@@ -2031,6 +2177,33 @@
     
   
   Amélioration des tours - animations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abc/animation-attaque/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Animation des attaques
 
     
   </span>
@@ -2132,6 +2305,33 @@
   
     <li class="md-nav__item">
       <a href="../../abc/ameliorations-visuelles.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  none
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../absc/animation-ui.md" class="md-nav__link">
         
   
   
@@ -2257,7 +2457,95 @@
 
   <h1>Utiliser un NavMesh</h1>
 
-
+<div class="competences">
+<div style="flex: 0 0 70%">
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
+<p>4-6c Utilisation des composantes modulaires pour la recherche de chemins<br></p>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
+<p>20 minutes</p>
+</div>
+<div>
+<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<div>
+<p><span class="img-ia" markdown> <a class="glightbox" data-type="image" href="../../images/IA_AIA.png"><img alt="" src="../../images/IA_AIA.png" width="48" /></a></span></p>
+</div>
+<div>
+<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="principe-du-navmesh">Principe du navmesh</h2>
+<p>Le principe du <em>navmesh</em> est de définir une surface accessible pas ses agents. La surface est plane et composée de plusieurs polygones connectés entre eux, permettant aux agents de naviguer dans l'environnement. Les agents sont les éléments qui peuvent se déplacer sur cette surface. Contrairement à la gestion des déplacements faite jusqu'à présent, le <em>navmesh</em> demande de connaître un point de destination final et non la direction à suivre. Cela rend le <em>navmesh</em> adapté aux situations où l'on déplace des éléments de manière autonome dans un espace complexe. </p>
+<p>Par exemple, un personnage contrôlé par l'IA peut utiliser le <em>navmesh</em> pour se déplacer de manière autonome dans un niveau de jeu. De même, un personnage joueur peut être sur un <em>navmesh</em> si on clique sur le point de la destination et qu'il trouve le chemin pour s'y rendre. Pour un personnage à la première personne (contrôlé avec WASD), le <em>navmesh</em> n'est pas adapté.</p>
+<h2 id="configuration-des-agents">Configuration des agents</h2>
+<p>Un agent est un game object auquel on applique le composant <code>NavMeshAgent</code>. Le game object sera dirigé et positionné par cet agent.</p>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../images/nav-mesh-agent.png"><img alt="Configuration d'un agent" src="../../images/nav-mesh-agent.png" width="600" /></a></p>
+<figcaption>La configuration du composant `NavMeshAgent` pour un agent.</figcaption>
+</figure>
+<p>Pour chaque agent, on doit préciser 4 groupes de paramètre :</p>
+<ol>
+<li>Le type d'agent qui détermine la forme et la façon dont il parcourt le <em>navmesh</em>. Le <em>base offset</em> permet de corriger la hauteur pour une instance particulière de l'agent.</li>
+<li>Le groupe <strong><em>Steering</em></strong> possède les paramètres pour gérer la façon dont le déplacement se fait (vitesse, accélération) et le comportement quand l'agent approche de la destination, à savoir, s'il s'arrête seul et à quelle distance il le fait.</li>
+<li>Le groupe <strong><em>Obstacle Avoidance</em></strong> détermine la précision de calcul pour les obstacles dynamiques. Plus les paramètres sont précis, moins le risque de collision est grand, mais plus le système consomme de ressources de calcul.</li>
+<li>Le groupe <strong><em>Path finding</em></strong> permet de configurer si l'agent peut changer de <em>navmesh</em> ou s'il y a certaines zones qui lui sont inaccessibles. Ce denier paramètre est davantage exploré dans la configuration de la surface.</li>
+</ol>
+<h3 id="configuration-dun-type-dagent">Configuration d'un type d'agent</h3>
+<p>Un type d'agent est une famille d'objet qui se déplace de la même façon, par exemple un humanoïde. Même si certains personnages sont plus grands ou plus petits, ils utiliseront tous le même agent comme ces différences de grandeur ont peu d'impact sur le jeu. </p>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../images/nav-mesh-agent-type.png"><img alt="Configuration d'un agent" src="../../images/nav-mesh-agent-type.png" width="300" /></a></p>
+<figcaption>La configuration d'un type d'agent.</figcaption>
+</figure>
+<ol>
+<li>Sélecteur entre la configuration des agents et des surfaces (voir Configuration des zones).</li>
+<li>Définition des types d'agents. On peut changer l'agent configurer, ajouter des types ou retirer des types</li>
+<li>Caractéristiques de l'agent</li>
+<li>Paramètre que l'agent utilise pour changer de surface</li>
+</ol>
+<h2 id="configuration-de-la-surface">Configuration de la surface</h2>
+<p>Une surface de navigation est un espace défini où un type d'agent peut se déplacer. On définit un gestionnaire de la surface en ajoutant un composant <code>NavMeshSurface</code>. Pour des types d'agents différents, il est nécessaire de générer une surface par type. On doit procéder ainsi, car l'inclinaison et la hauteur de marche changent.  </p>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../images/nav-mesh-surface.png"><img alt="Configuration d'un agent" src="../../images/nav-mesh-surface.png" width="400" /></a></p>
+<figcaption>La configuration du composant `NavMeshSurface`.</figcaption>
+</figure>
+<ol>
+<li><strong><em>Agent Type</em></strong> : Le type d'agent pour lequel la surface est générée</li>
+<li><strong><em>Default Area</em></strong> : Le type de surface par défaut pour le déplacement</li>
+<li><strong><em>Generate Link</em></strong> : Est-ce que les liens vers d'autres surfaces doivent être générés</li>
+<li><strong><em>Use Geometry</em></strong> : Détermine la façon dont la surface est déterminée. La valeur <strong>Render Meshes</strong> utilise l'information des <em>mesh</em>, indépendamment de leur contribution à la physique du jeu. <strong>Physics Collider</strong> utilise seulement les boîtes à collision physique des objets pour déterminer ce qui est une surface. Un <em>mesh</em> sans <em>collider</em> est ignoré.</li>
+<li><strong><em>Object collection</em></strong> : Détermine quels objets sont inclus dans cette surface, soit selon la disposition de la scène (hiérarchie) ou le <em>layer</em>.</li>
+</ol>
+<p>Une fois la surface configurée, il faut appuyer sur <strong>Bake</strong> pour générer la surface. On peut faire cette opération dans le code, mais il est long de modifier une surface, donc on évite généralement de le faire pendant l'exécution du jeu.</p>
+<h2 id="gestion-dun-agent">Gestion d'un agent</h2>
+<p>Pour utiliser un agent, son <em>game object</em> doit être placé près de la surface. Si l'objet commence trop loin, Unity génère un message d'erreur. Dans le code, on peut effectuer certaines opérations pour gérer un agent.</p>
+<div class="language-c# highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Gestion d&#x27;un agent</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">NavMeshAgent</span><span class="w"> </span><span class="n">agent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">NavMeshAgent</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1">// Change la destination - l'agent se met en mouvement</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1">// Il ne faut pas affecter la même distination à plusieurs reprises, seulement lorsqu'elle change </span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">agent</span><span class="p">.</span><span class="n">destination</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector3</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1">// Vérifie s'il y a un chemin actif </span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">agent</span><span class="p">.</span><span class="n">PathPending</span><span class="w"> </span><span class="c1">// booléen</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1">// Accède à la distance à parcourir</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">agent</span><span class="p">.</span><span class="n">remainingDistance</span><span class="w"> </span><span class="c1">// float</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="obstacles-dynamiques">Obstacles dynamiques</h2>
+<h2 id="changer-laccessibilite-dune-zone">Changer l'accessibilité d'une zone</h2>
+<h3 id="configuration-des-zones">Configuration des zones</h3>
+<h2 id="sauts-et-liens-entre-les-surfaces">Sauts et liens entre les surfaces</h2>
 
 
 

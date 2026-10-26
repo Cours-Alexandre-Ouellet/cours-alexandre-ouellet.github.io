@@ -10,10 +10,16 @@
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-code-tour-2/</loc>
       </url>
       <url>
-        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-tours-donnees/</loc>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-tour-animations/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-tour-donnees/</loc>
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorer-tour/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/animation-attaque/</loc>
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/deplacement-ennemis/</loc>
@@ -101,9 +107,6 @@
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/machine-etats/</loc>
-      </url>
-      <url>
-        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/nav-mesh/</loc>
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/navmesh/</loc>
