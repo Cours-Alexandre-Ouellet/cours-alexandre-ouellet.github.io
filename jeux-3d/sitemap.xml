@@ -10,6 +10,18 @@
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-code-tour-2/</loc>
       </url>
       <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-tour-animations/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorations-tour-donnees/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/ameliorer-tour/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/animation-attaque/</loc>
+      </url>
+      <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/deplacement-ennemis/</loc>
       </url>
       <url>
@@ -26,6 +38,9 @@
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/initialisation/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/mise-en-place-ameliorations-tour/</loc>
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/abc/placer-tour/</loc>
@@ -64,6 +79,9 @@
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/animations/</loc>
       </url>
       <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/animer-interface/</loc>
+      </url>
+      <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/collisions/</loc>
       </url>
       <url>
@@ -100,7 +118,10 @@
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/pool-objets/</loc>
       </url>
       <url>
-        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/scriptable/</loc>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/raycast/</loc>
+      </url>
+      <url>
+        <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/scriptable-objects/</loc>
       </url>
       <url>
         <loc>https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/sons/</loc>
