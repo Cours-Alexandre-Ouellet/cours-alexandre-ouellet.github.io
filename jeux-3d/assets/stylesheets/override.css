@@ -1,0 +1,80 @@
+
+/* Section des compétences */
+.competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: space-between;
+}
+.competences .subtitle {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    font-size: medium !important;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: inherit;
+    color: #333;
+}
+.competences .subtitle-content {
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-decoration-thickness: .75pt;
+    text-decoration-color: #333;
+}
+.competences p {
+    margin-bottom: 6px;
+    margin-top: 0px;
+    font-size: smaller;
+}
+
+
+/* Ajout d'une bordure autour des tab contents */
+.md-typeset .tabbed-content {
+    border: solid 1.5px lightgrey;
+    border-radius: 0px 12px 12px 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Ajout du fond de couleur pour l'en-tête */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Optionnel : Assure que le texte et les icônes de navigation de l'en-tête restent lisibles */
+.md-header__button, .md-header__topic, .md-header__title {
+  color: inherit;
+}
+
+/* Section des compétences - liste, compacte les éléments */
+.competences li {
+    margin-bottom: 0px !important;
+}
+
+/* Aligne la barre de recherche à droite */
+@media screen and (min-width: 60em) {
+    .md-header__source {
+        display: none !important;}}
+
+/* Admonition GitHub */
+:root {
+    --md-admonition-icon--github: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNic+PHBhdGggZmlsbD0nYmxhY2snIGQ9J004IDBDMy41OCAwIDAgMy41OCAwIDhjMCAzLjU0IDIuMjkgNi41MyA1LjQ3IDcuNTkuNC4wNy41NS0uMTcuNTUtLjM4IDAtLjE5LS4wMS0uODItLjAxLTEuNDktMi4wMS4zNy0yLjUzLS40OS0yLjY5LS45NC0uMDktLjIzLS40OC0uOTQtLjgyLTEuMTMtLjI4LS4xNS0uNjgtLjUyLS4wMS0uNTMuNjMtLjAxIDEuMDguNTggMS4yMy44Mi43MiAxLjIxIDEuODcuODcgMi4zMy42Ni4wNy0uNTIuMjgtLjg3LjUxLTEuMDctMS43OC0uMi0zLjY0LS44OS0zLjY0LTMuOTUgMC0uODcuMzEtMS41OS44Mi0yLjE1LS4wOC0uMi0uMzYtMS4wMi4wOC0yLjEyIDAgMCAuNjctLjIxIDIuMi44MmE3LjY1IDcuNjUgMCAwIDEgNCAwYzEuNTMtMS4wNCAyLjItLjgyIDIuMi0uODIuNDQgMS4xLjE2IDEuOTIuMDggMi4xMi41MS41Ni44MiAxLjI3LjgyIDIuMTUgMCAzLjA3LTEuODcgMy43NS0zLjY1IDMuOTUuMjkuMjUuNTQuNzMuNTQgMS40OCAwIDEuMDctLjAxIDEuOTMtLjAxIDIuMiAwIC4yMS4xNS40Ni41NS4zOEE4LjAxMyA4LjAxMyAwIDAgMCAxNiA4YzAtNC40Mi0zLjU4LTgtOC04eicvPjwvc3ZnPg==");
+}
+
+.md-typeset .admonition.github,
+.md-typeset details.github {
+    border-color: #1f6feb;
+}
+
+.md-typeset .github > .admonition-title,
+.md-typeset .github > summary {
+    border-color: #1f6feb;
+}
+
+.md-typeset .github > .admonition-title::before,
+.md-typeset .github > summary::before {
+    background-color: #1f6feb;
+    -webkit-mask-image: var(--md-admonition-icon--github);
+    mask-image: var(--md-admonition-icon--github);
+}

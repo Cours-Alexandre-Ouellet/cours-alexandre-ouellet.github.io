@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Cours de jeux 3d pour Unity">
+        <meta name="description" content="Notes de cours du cours de 420-5A4-VI Jeux 3D pour Unity">
       
       
         <meta name="author" content="Alexandre Ouellet">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/jeux-3d/programmer/animations/">
       
       
-        <link rel="prev" href="../animer-interfaces.md">
+        <link rel="prev" href="../ui-types-elements/">
       
       
         <link rel="next" href="../navmesh/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Animations - Jeux 3D</title>
+        <title>Animations - 420-5A4-VI Jeux 3D</title>
       
     
     
@@ -60,11 +60,13 @@
       
     
     
-      <link rel="stylesheet" href="../../css/hint.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/course-header.css">
     
-      <link rel="stylesheet" href="../../css/override.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/hint.min.css">
     
-      <link rel="stylesheet" href="../../css/card-genre.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/card-genre.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
@@ -104,9 +106,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Jeux 3D" class="md-header__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="../.." title="420-5A4-VI Jeux 3D" class="md-header__button md-logo" aria-label="420-5A4-VI Jeux 3D" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Jeux 3D">
+  <img src="../../images/favicon.svg" alt="420-5A4-VI Jeux 3D">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -117,7 +119,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Jeux 3D
+            420-5A4-VI Jeux 3D
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -136,7 +138,31 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
     
   
 </form>
@@ -200,6 +226,16 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -222,6 +258,18 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -246,6 +294,40 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -268,6 +350,42 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -323,12 +441,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Jeux 3D" class="md-nav__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="../.." title="420-5A4-VI Jeux 3D" class="md-nav__button md-logo" aria-label="420-5A4-VI Jeux 3D" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Jeux 3D">
+  <img src="../../images/favicon.svg" alt="420-5A4-VI Jeux 3D">
 
     </a>
-    Jeux 3D
+    420-5A4-VI Jeux 3D
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -367,6 +485,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -379,7 +507,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -499,6 +629,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -511,7 +645,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -594,6 +730,18 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -606,7 +754,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -753,6 +903,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -765,7 +919,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -849,6 +1005,40 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1089,33 +1279,6 @@
                   
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../animer-interfaces.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Animer des interfaces utilisateurs
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
     
   
   
@@ -1124,8 +1287,6 @@
       
       
       
-      
-        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1167,8 +1328,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1375,14 +1534,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../eclairages.md" class="md-nav__link">
+      <a href="../eclairage/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Éclairages
+  Éclairage
 
     
   </span>
@@ -1457,6 +1616,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1472,10 +1639,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_14" >
         
           
-          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="">
             
   
   
@@ -1493,8 +1662,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_15">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_14">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1601,6 +1770,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1616,17 +1791,19 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_15" >
         
           
-          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-  Exemples et situations fréquentes
+  Programmation événementielle
 
     
   </span>
@@ -1637,12 +1814,12 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_16">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_15">
               <span class="md-nav__icon md-icon"></span>
               
   
-  Exemples et situations fréquentes
+  Programmation événementielle
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
@@ -1718,6 +1895,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -1733,10 +1914,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_16" >
         
           
-          <label class="md-nav__link" for="__nav_4_17" id="__nav_4_17_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="">
             
   
   
@@ -1754,8 +1937,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_17">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_16">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1816,6 +1999,42 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1828,7 +2047,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -2244,33 +2465,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/application-scriptable-objects.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Application des scriptable objects
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../abc/ajouter-son.md" class="md-nav__link">
         
   
@@ -2278,7 +2472,7 @@
   <span class="md-ellipsis">
     
   
-  none
+  Ajouter son
 
     
   </span>
@@ -2298,14 +2492,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/fin-partie-score.md" class="md-nav__link">
+      <a href="../../abc/ajuster-eclairage.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  none
+  Ajuster l'éclairage
 
     
   </span>
@@ -2325,41 +2519,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../abc/ameliorations-visuelles.md" class="md-nav__link">
+      <a href="../../abc/application-scriptable-objects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  none
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../absc/animation-ui.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  none
+  Application des scriptable objects
 
     
   </span>
@@ -2449,6 +2616,40 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -2473,66 +2674,122 @@
               <article class="md-content__inner md-typeset">
                 <a id="__skip" tabindex="-1"></a>
                 
+
+
+    <div class="course-page-header">
+<h1 class="course-title">Animations</h1>
+
+
+
+
+
+
+<details class="info course-info">
+<summary>Information sur la page</summary>
+
+<div class="course-header">
+
+  <div class="course-header-left">
+    <strong>📚 Contenus</strong>
+
+    <ul>
+      
+      <li>
+        
+          
+            3-2 Accéder à la boucle de jeu pour les mises à jour des animations
+          
+        
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="course-header-right">
+
+    <div>
+      ⏱️ <strong>Temps de lecture :</strong> 30 minutes
+    </div>
+
+    <div class="course-header-actions">
+      <div class="ai-indicator">
+        <img
+          src="../../assets/images/ia/IA_NIA.png"
+          alt="Niveau d'utilisation de l'intelligence artificielle"
+        >
+      </div>
+
+      <a
+        class="report-link"
+        href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=JvVsnYGt-EanOqUHqvBs2oXbBpSMLaBPo07mc7psbeJURjRHWkJVUEc4VlgxVThORkZQTk5KSTBLQS4u"
+        target="_blank"
+        rel="noopener noreferrer">
+        🐞 Signaler une erreur
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</details>
+
+
+<div class="course-summary">
+  <strong>Résumé</strong>
+  <p>Description du système Mecanim, création de clips d&#x27;animation et de contrôleur d&#x27;animation, et intégration des animations au reste du jeu.</p>
+</div>
+<hr/>
+
+
+
+
+
+</div>
+
+
+
                   
 
 
-<h1 id="animer-des-objets">Animer des objets</h1>
-<div class="competences">
-<div style="flex: 0 0 70%">
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
-<p>3-2 Accéder à la boucle de jeu pour les mises à jour des animations</p>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0h336c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v19c0 40.3-16 79-44.5 107.5L226 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8v-19c0-40.3 16-79 44.5-107.5L158 256l-81.5-81.5C48 146 32 107.3 32 67V48h-8C10.7 48 0 37.3 0 24m110.5 347.5c-3.9 3.9-7.5 8.1-10.7 12.5h184.4c-3.2-4.4-6.8-8.6-10.7-12.5L192 290zM80.8 432c-.5 4.3-.8 8.6-.8 13v19h224v-19c0-4.4-.3-8.7-.8-13zm173.3-272H130l62.1 62.1 62.1-62.1zm39.7-48c6.6-13.9 10.2-29.3 10.2-45V48H80v19c0 15.7 3.6 31.1 10.2 45h203.5z"/></svg></span> <span class="subtitle-content">Temps requis</span></p>
-<p>30 minutes</p>
-</div>
-<div>
-<p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
-<div style="display: flex; align-items: center; gap: 1rem;">
-<div>
-<p><span class="img-ia" markdown> <a class="glightbox" data-type="image" href="../../images/IA_NIA.png"><img alt="" src="../../images/IA_NIA.png" width="48" /></a></span></p>
-</div>
-<div>
-<p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
-</div>
-</div>
-</div>
-</div>
-<p>Les animations sont un élément important du rendu visuel d'un jeu vidéo. Il peut s'agir d'animations complexes de déplacement d'un personnage ou simplement d'un changement de couleur d'un élément de l'interface. Unity gère les animations avec le <em>Mecanim Animation System</em>. Certains composants <em>legacy</em> sont encore disponibles, mais leur usage est limité comme le système <em>Mecanim</em> est disponible depuis 2015 (Unity 5.0).</p>
+  <h1>Animations</h1>
+
+<p>Les animations sont un élément important du rendu visuel d'un jeu vidéo. Il peut s'agir d'animations complexes de déplacement d'un personnage ou simplement d'un changement de couleur d'un élément de l'interface. Unity gère les animations avec le <em>Mecanim Animation System</em>. Certains composants <em>legacy</em> sont encore disponibles, mais leur usage est limité, comme le système <em>Mecanim</em> est disponible depuis 2015 (Unity 5.0).</p>
 <p>Pour avoir un aperçu du système <em>Mecanim</em>, on peut consulter la <a href="https://docs.unity3d.com/462/Documentation/Manual/MecanimAnimationSystem.html">documentation</a> à ce sujet.</p>
-<h2 id="elements-du-systeme-mecanim">Éléments du système Mecanim</h2>
-<p>Deux élément définissent les animations, soient les <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> et <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
+<h2 id="elements-du-systeme-mecanim">Éléments du système Mecanim<a class="headerlink" href="#elements-du-systeme-mecanim" title="Permanent link">&para;</a></h2>
+<p>Deux éléments définissent les animations, soient les <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> et <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
 <ul>
 <li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> : contient une séquence d'animation avec les données de l'animation qui se modifient à chaque <em>frame</em>. Dans Unity, les données d'animations ne se limitent pas à des données de position, mais à toutes les données qui peuvent être modifiées procéduralement.</li>
-<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> : contient la logique pour sélectionner le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> à jouer. Permet de gérer les transitions entre les animations et aussi de mélanger plusieurs animations. Nous nous limiterons au cas le plus simple ou chaque objet possède une unique logique d'animation qui s'applique à l'entière de l'objet simultanément.</li>
+<li><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> : contient la logique pour sélectionner le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> à jouer. Permet de gérer les transitions entre les animations et aussi de mélanger plusieurs animations. Nous nous limiterons au cas le plus simple où chaque objet possède une unique logique d'animation qui s'applique à l'entièreté de l'objet.</li>
 </ul>
-<h2 id="animation-controller"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code></h2>
+<h2 id="animation-controller"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code><a class="headerlink" href="#animation-controller" title="Permanent link">&para;</a></h2>
 <p>L'<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> définit la logique entre les animations en adoptant un modèle de <strong>machine à état</strong>. Dans ce modèle, chaque <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> est un état et des règles (appelées <strong>transitions</strong>) permettent de passer d'un état à un autre. On peut créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> avec le menu contextuel dans l'onglet du <em>Project</em> et l'attacher au <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> à animer. Le composant qui permet de lier un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> à un <code class="language-c# highlight"><span class="n">Game</span><span class="w"> </span><span class="n">Object</span></code> est un <code class="language-c# highlight"><span class="n">Animator</span></code>.</p>
 <p>La <a href="https://docs.unity3d.com/6000.2/Documentation/Manual/AnimationStateMachines.html">documentation complète est disponible sur le site de Unity</a>. Cette page présente un résumé des aspects de base des machines à états pour les animations.</p>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/component_animator.png"><img alt="" src="../../images/component_animator.png" /></a>
+    <img alt="" src="../../images/component_animator.png" />
     <figcaption markdown>Le composant <code class="language-c# highlight"><span class="n">Animator</span></code> attaché à un personnage</figcaption>
 </figure>
 <p>On configure le comportement du <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> dans la fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> accessible dans le menu <code>Window &gt; Animations &gt; Animator</code>.</p>
-<h3 id="elements-du-composant-animator">Éléments du composant <code class="language-c# highlight"><span class="n">Animator</span></code></h3>
+<h3 id="elements-du-composant-animator">Éléments du composant <code class="language-c# highlight"><span class="n">Animator</span></code><a class="headerlink" href="#elements-du-composant-animator" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Controller</strong> : lien vers le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> qui gère les animations de ce <code class="language-c# highlight"><span class="n">GameObject</span></code>.</li>
 <li><strong>Avatar</strong> : structure de squelette lors de l'animation d'un personnage. Généralement fourni avec le modèle.</li>
-<li><strong>Apply root motion</strong> : calcule les mouvements en positions relatives à la racine du <code class="language-c# highlight"><span class="n">GameObject</span></code>. Lorsque décoché le mouvement peut se fait en position absolue.</li>
-<li><strong>Animate physics</strong> : met à jour la physique du jeu selon l'animation. Ralenti les performances, on évite de l'utiliser lorsque ce n'est pas nécessaire.</li>
+<li><strong>Apply root motion</strong> : calcule les mouvements en positions relatives à la racine du <code class="language-c# highlight"><span class="n">GameObject</span></code>. Lorsque cette option est décochée, le mouvement se fait en position absolue.</li>
+<li><strong>Animate physics</strong> : met à jour la physique du jeu selon l'animation. Cette option ralentit les performances, on évite de l'utiliser lorsque ce n'est pas nécessaire.</li>
 <li><strong>Update mode</strong> : type de temps utilisé pour l'animation (<em>Normal</em> : suit l'écoulement du temps dans le jeu comme le <em>Update</em>, <em>Fixed</em>: suit l'écoulement du temps de la physique comme le <em>FixedUpdate</em>, <em>Unscaled time</em> : s'écoule avec le temps réel, donc même en pause l'animation est effectuée). </li>
 </ul>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/fenetre%20animator.png"><img alt="" src="../../images/fenetre%20animator.png" /></a>
+    <img alt="" src="../../images/fenetre%20animator.png" />
     <figcaption markdown>La fenêtre <code class="language-c# highlight"><span class="n">Animator</span></code> du contrôleur d'animation d'un personnage</figcaption>
 </figure>
 <ol>
-<li><strong><em>Parameters</em></strong> : permet d'ajouter et de supprimer des paramètres pour contrôler les animations;</li>
+<li><em><strong>Parameters</strong></em> : permet d'ajouter et de supprimer des paramètres pour contrôler les animations;</li>
 <li><strong>États et transition</strong> : vu des états (chaque état est un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code>) et des transitions (règle pour changer d'état);</li>
 <li><strong>Inspecteur</strong> : affiche les paramètres des états et des transitions; </li>
 </ol>
-<h3 id="ajouter-des-etats">Ajouter des états</h3>
-<p>Pour ajouter un état, on clique droit dans l'arrière-plan et l'on sélection "&nbsp;Create State &gt; Empty&nbsp;". Ensuite, peut affecter un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> dans le champ <em>motion</em> de l'inspecteur de l'état (qui s'active en cliquant sur l'état).</p>
+<h3 id="ajouter-des-etats">Ajouter des états<a class="headerlink" href="#ajouter-des-etats" title="Permanent link">&para;</a></h3>
+<p>Pour ajouter un état, on clique droit dans l'arrière-plan et l'on sélectionne "&nbsp;Create State &gt; Empty&nbsp;". Ensuite, peut affecter un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code> dans le champ <em>motion</em> de l'inspecteur de l'état (qui s'active en cliquant sur l'état).</p>
 <p>Le paramètre <em>Speed</em> permet de changer la vitesse à laquelle le clip se joue. Le paramètre <em>Multiplier</em> permet de contrôler la vitesse par un script et un <a href="#ajouter-des-parametres"><em>parameter</em></a>. On rend le champ modifiable en activant la case à cocher <em>parameters</em> et en le liant à un <em>parameter</em> de type <code class="language-c# highlight"><span class="kt">float</span></code>.</p>
-<h4 id="etats-speciaux">États spéciaux</h4>
+<h4 id="etats-speciaux">États spéciaux<a class="headerlink" href="#etats-speciaux" title="Permanent link">&para;</a></h4>
 <p>Il y a quatre états spéciaux définis pour tous les c<code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code> :</p>
 <ol>
 <li><strong><em>Entry</em> (vert)</strong> : la logique d'animation commence à cet état. Il n'y a pas de clip d'associé à cet état, il transitionne automatique vers l'état par défaut.</li>
@@ -2540,32 +2797,32 @@
 <li><strong><em>Exit</em> (rouge)</strong> : indique au contrôleur de sortir de l'animation. On l'utilise lorsqu'on imbrique les contrôleurs d'animation (ce qui ne sera pas fait dans le cadre du cours);</li>
 <li><strong><em>Any State</em> (turquoise)</strong> : toutes les transitions sortantes peuvent être exécutées à partir de n'importe quel état. On l'utilise surtout pour alléger le nombre de transitions à gérer. </li>
 </ol>
-<h3 id="ajouter-des-parametres">Ajouter des paramètres</h3>
+<h3 id="ajouter-des-parametres">Ajouter des paramètres<a class="headerlink" href="#ajouter-des-parametres" title="Permanent link">&para;</a></h3>
 <p>Les paramètres sont des points d'accès à la logique de l'animation. L'utilisation des paramètres est présentée dans <a href="#gerer-les-transitions">Gérer les transitions</a> et <a href="#modifier-la-valeur-des-parametres-avec-le-code">Modifier la valeur des paramètres avec le code</a>.</p>
-<p>Peut ajouter des paramètres avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg></span> situé dans le haut du panneau. Il y a quatre types de paramètres :</p>
+<p>On peut ajouter des paramètres avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg></span> situé dans le haut du panneau. Il y a quatre types de paramètres :</p>
 <ul>
 <li><code class="language-c# highlight"><span class="kt">float</span></code>, <code class="language-c# highlight"><span class="kt">int</span></code> et <code class="language-c# highlight"><span class="kt">bool</span></code> : expose un paramètre du type de la variable éponyme.</li>
 <li><code class="language-c# highlight"><span class="n">trigger</span></code> : expose un paramètre qui permet de simuler un événement subit. Il est dans l'état actif jusqu'à ce qu'il soit utilisé dans une transition et devient alors inactif.</li>
 </ul>
-<h3 id="gerer-les-transitions">Gérer les transitions</h3>
-<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représentées par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <strong><em>Make Transition</em></strong>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
+<h3 id="gerer-les-transitions">Gérer les transitions<a class="headerlink" href="#gerer-les-transitions" title="Permanent link">&para;</a></h3>
+<p>Les transitions permettent de changer l'état (donc l'animation jouée) lorsqu'une ou plusieurs conditions sont remplies. Elles sont représentées par des flèches dans le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>. Pour ajouter une transition, on clique droit sur l'état initial et on sélectionne <em><strong>Make Transition</strong></em>, puis on clique sur l'état vers lequel on veut transiter. Par la suite, en cliquant sur l'état, on peut modifier ses paramètres dans l'inspecteur.</p>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/parametres_transition.png"><img alt="" src="../../images/parametres_transition.png" /></a>
+    <img alt="" src="../../images/parametres_transition.png" />
     <figcaption markdown>La fenêtre de l'inspecteur d'une transition du contrôleur d'animation d'un personnage</figcaption>
 </figure>
 <ol>
-<li><strong><em>Has Exit Time</em></strong> : Indique que la transition s'effectue automatiquement après un temps passé dans l'animation plutôt que d'utiliser des conditions pour s'exécuter.</li>
-<li><strong><em>Exit Time</em></strong> : Indique le temps auquel la transition prend fin. Si <strong><em>Fixed Duration</em></strong> est coché, alors il s'agit d'un temps absolu (seconde), dans le cas contraire, il s'agit d'un temps relatif (pourcentage de la durée totale de l'animation). </li>
-<li><strong><em>Interruption Source</em></strong> : Détermine dans quelles conditions l'animation peut être interrompue. On choisit généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
+<li><em><strong>Has Exit Time</strong></em> : Indique que la transition s'effectue automatiquement après un temps passé dans l'animation plutôt que d'utiliser des conditions pour s'exécuter.</li>
+<li><em><strong>Exit Time</strong></em> : Indique le temps auquel la transition prend fin. Si <em><strong>Fixed Duration</strong></em> est coché, alors il s'agit d'un temps absolu (seconde), dans le cas contraire, il s'agit d'un temps relatif (pourcentage de la durée totale de l'animation). </li>
+<li><em><strong>Interruption Source</strong></em> : Détermine dans quelles conditions l'animation peut être interrompue. On choisit généralement la valeur <em>Next State</em>, qui enfile l'animation du prochain état. D'<a href="https://docs.unity3d.com/6000.2/Documentation/Manual/class-Transition.html#TransitionInterruption">autres options</a> sont disponibles.</li>
 <li>
-<p><strong><em>Conditions</em></strong> : les conditions permettent de définir quand la transition doit avoir lieu. On utilise les paramètres pour définir les transitions. Si plusieurs conditions sont définies pour une condition, elles doivent toutes être vérifiées pour que la transition s'active.</p>
-<p>a. Pour les <code class="language-c# highlight"><span class="kt">float</span></code> et <code class="language-c# highlight"><span class="kt">int</span></code> on compare si la valeur est plus petite ou plus grande qu'une valeur de référence.</p>
+<p><em><strong>Conditions</strong></em> : les conditions permettent de définir quand la transition doit avoir lieu. On utilise les paramètres pour définir les transitions. Si plusieurs conditions sont définies pour une condition, elles doivent toutes être vérifiées pour que la transition s'active.</p>
+<p>a. Pour les <code class="language-c# highlight"><span class="kt">float</span></code> et <code class="language-c# highlight"><span class="kt">int</span></code> on compare la valeur à une valeur de référence.</p>
 <p>b. Pour les  <code class="language-c# highlight"><span class="kt">int</span></code> seulement, on peut tester l'égalité ou la différence avec une valeur.</p>
 <p>c .Pour les <code class="language-c# highlight"><span class="kt">bool</span></code>, on compare avec les valeurs <code class="language-c# highlight"><span class="k">true</span></code> et <code class="language-c# highlight"><span class="k">false</span></code>. </p>
-<p>d. Pour les <code class="language-c# highlight"><span class="n">trigger</span></code> la transition est effectué si le <code class="language-c# highlight"><span class="n">trigger</span></code> est déclenché et lu pour provoquer une transition, sa valeur est réinitialisée.</p>
+<p>d. Pour les <code class="language-c# highlight"><span class="n">trigger</span></code> la transition est effectuée si le <code class="language-c# highlight"><span class="n">trigger</span></code> est déclenché. Lorsqu'il est lu et a provoqué une transition, sa valeur est réinitialisée.</p>
 </li>
 </ol>
-<h3 id="modifier-la-valeur-des-parametres-avec-le-code">Modifier la valeur des paramètres avec le code</h3>
+<h3 id="modifier-la-valeur-des-parametres-avec-le-code">Modifier la valeur des paramètres avec le code<a class="headerlink" href="#modifier-la-valeur-des-parametres-avec-le-code" title="Permanent link">&para;</a></h3>
 <p>Pour modifier la valeur d'un paramètre, on doit utiliser son nom et la méthode correspondante à son type sur le <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Controller</span></code>.</p>
 <center>
 <table>
@@ -2676,9 +2933,9 @@
 </span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h2 id="animation-clip"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h2>
-<p>Un clip est lié à un game object ou un prefab particulier et définit des changements dans l'état de l'objet à chaque frame. On peut créer des clips directement dans Unity ou les importer en animant l'objet dans un autre éditeur (comme Blender ou Maya). La seconde approche est celle préférée pour animations complexes, mais pour les tâches simples l'éditeur suffit. </p>
-<h3 id="creer-un-animation-clip">Créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code></h3>
+<h2 id="animation-clip"><code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code><a class="headerlink" href="#animation-clip" title="Permanent link">&para;</a></h2>
+<p>Un clip est lié à un <em>game object</em> ou un <em>prefab</em> particulier et définit des changements dans l'état de l'objet à chaque <em>frame</em>. On peut créer des clips directement dans Unity ou les importer en animant l'objet dans un autre éditeur (comme Blender ou Maya). La seconde approche est celle préférée pour animations complexes, mais pour les tâches simples, l'éditeur suffit. </p>
+<h3 id="creer-un-animation-clip">Créer un <code class="language-c# highlight"><span class="n">Animation</span><span class="w"> </span><span class="n">Clip</span></code><a class="headerlink" href="#creer-un-animation-clip" title="Permanent link">&para;</a></h3>
 <p><em>À venir</em></p>
 
 
@@ -2689,18 +2946,31 @@
 
 
 
+  
+  
+
 
 
 
 
 
                 
+
+
               </article>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Retour en haut de la page
+</button>
         
       </main>
       
@@ -2711,7 +2981,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../animer-interfaces.md" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Animer des interfaces utilisateurs">
+          <a href="../ui-types-elements/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Éléments des interfaces utilisateurs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -2721,7 +2991,7 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Animer des interfaces utilisateurs
+                Éléments des interfaces utilisateurs
               </div>
             </div>
           </a>
@@ -2751,7 +3021,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC BY-NC-SA Alexandre Ouellet
+      CC BY-SA-NC | 2026 | Alexandre Ouellet
     </div>
   
   
@@ -2787,14 +3057,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
-    
-    
-    
-    
-    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
-    </a>
-  
 </div>
       
     </div>
@@ -2814,7 +3076,7 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","navigation.sections","navigation.tabs","navigation.tabs.stikcy","navigation.path","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.8b1c90bd.min.js"></script>
