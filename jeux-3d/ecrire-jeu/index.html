@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Cours de jeux 3d pour Unity">
+        <meta name="description" content="Notes de cours du cours de 420-5A4-VI Jeux 3D pour Unity">
       
       
         <meta name="author" content="Alexandre Ouellet">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Écrire un jeu - Jeux 3D</title>
+        <title>Écrire un jeu - 420-5A4-VI Jeux 3D</title>
       
     
     
@@ -60,11 +60,13 @@
       
     
     
-      <link rel="stylesheet" href="../css/hint.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/course-header.css">
     
-      <link rel="stylesheet" href="../css/override.css">
+      <link rel="stylesheet" href="../assets/stylesheets/hint.min.css">
     
-      <link rel="stylesheet" href="../css/card-genre.css">
+      <link rel="stylesheet" href="../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/card-genre.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
@@ -104,9 +106,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="./.." title="Jeux 3D" class="md-header__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="./.." title="420-5A4-VI Jeux 3D" class="md-header__button md-logo" aria-label="420-5A4-VI Jeux 3D" data-md-component="logo">
       
-  <img src="../images/favicon.svg" alt="Jeux 3D">
+  <img src="../images/favicon.svg" alt="420-5A4-VI Jeux 3D">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -117,7 +119,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Jeux 3D
+            420-5A4-VI Jeux 3D
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -136,7 +138,31 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
     
   
 </form>
@@ -202,6 +228,16 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -224,6 +260,18 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -246,6 +294,40 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -268,6 +350,42 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -323,12 +441,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="./.." title="Jeux 3D" class="md-nav__button md-logo" aria-label="Jeux 3D" data-md-component="logo">
+    <a href="./.." title="420-5A4-VI Jeux 3D" class="md-nav__button md-logo" aria-label="420-5A4-VI Jeux 3D" data-md-component="logo">
       
-  <img src="../images/favicon.svg" alt="Jeux 3D">
+  <img src="../images/favicon.svg" alt="420-5A4-VI Jeux 3D">
 
     </a>
-    Jeux 3D
+    420-5A4-VI Jeux 3D
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -368,6 +486,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -505,6 +633,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -935,6 +1067,18 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -947,7 +1091,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -1094,6 +1240,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -1106,7 +1256,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1189,6 +1341,40 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1201,7 +1387,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1428,33 +1616,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../programmer/animer-interfaces.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Animer des interfaces utilisateurs
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../programmer/animations/" class="md-nav__link">
         
   
@@ -1618,6 +1779,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1630,10 +1799,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_14" >
         
           
-          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
             
   
   
@@ -1651,8 +1822,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_15">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_14">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1759,6 +1930,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1771,10 +1948,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_15" >
         
           
-          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
             
   
   
@@ -1792,8 +1971,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_16">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_15">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1873,6 +2052,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -1885,10 +2068,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_16" >
         
           
-          <label class="md-nav__link" for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
             
   
   
@@ -1906,8 +2091,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4_17">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_16">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1968,6 +2153,42 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1980,7 +2201,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -2396,33 +2619,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../abc/application-scriptable-objects.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Application des scriptable objects
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../abc/ajouter-son.md" class="md-nav__link">
         
   
@@ -2430,7 +2626,7 @@
   <span class="md-ellipsis">
     
   
-  none
+  Ajouter son
 
     
   </span>
@@ -2450,14 +2646,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../abc/fin-partie-score.md" class="md-nav__link">
+      <a href="../abc/ajuster-eclairage.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  none
+  Ajuster l'éclairage
 
     
   </span>
@@ -2477,41 +2673,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../abc/ameliorations-visuelles.md" class="md-nav__link">
+      <a href="../abc/application-scriptable-objects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  none
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../absc/animation-ui.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  none
+  Application des scriptable objects
 
     
   </span>
@@ -2601,6 +2770,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -2622,6 +2801,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -2647,10 +2830,14 @@
               <article class="md-content__inner md-typeset">
                 <a id="__skip" tabindex="-1"></a>
                 
+
+
+
+
                   
 
 
-<h1 id="ecrire-un-jeu">Écrire un jeu</h1>
+<h1 id="ecrire-un-jeu">Écrire un jeu<a class="headerlink" href="#ecrire-un-jeu" title="Permanent link">&para;</a></h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
@@ -2662,7 +2849,7 @@
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
 <div style="display: flex; align-items: center; gap: 1rem;">
 <div>
-<p><span class="img-ia" markdown> <a class="glightbox" data-type="image" href=".././images/IA_NIA.png"><img alt="" src=".././images/IA_NIA.png" /></a></span></p>
+<p><span class="img-ia" markdown> <img alt="" src=".././images/IA_NIA.png" /></span></p>
 </div>
 <div>
 <p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
@@ -2671,7 +2858,7 @@
 </div>
 </div>
 <p>Écrire et balancer un jeu est une tâche très complexe. Les scénarios vivants, les personnages mémorables et la gestion d'un monde autour d'un personnage ou d'entité principale (comme un pays pour un jeu de gestion) sont souvent au moins aussi complexes que d'écrire le code qui prend en charge le jeu. Dans ce module extra, certains problèmes et trucs courants sont présentés. N'hésitez pas à lire les références de la page pour approfondir ce sujet qui ne sera que survolé.</p>
-<h2 id="le-realisme-et-ce-qui-nous-fait-reagir">Le réalisme et ce qui nous fait réagir</h2>
+<h2 id="le-realisme-et-ce-qui-nous-fait-reagir">Le réalisme et ce qui nous fait réagir<a class="headerlink" href="#le-realisme-et-ce-qui-nous-fait-reagir" title="Permanent link">&para;</a></h2>
 <p>À la base du réalisme d'un jeu, il y a nos émotions et ce que l'on ressent. Un jeu avec des graphiques avancés aide à l'immersion, mais le monde peut rester aussi plat qu'un écran ! Donc introduire du réalisme dans un jeu implique d'inclure des éléments auxquels les personnes qui y joueront s'identifieront. Cette inclusion peut être faite de façon subtile ou détournée en misant sur certains <strong>biais cognitifs</strong>.</p>
 <div class="admonition info">
 <p class="admonition-title">Les billets cognitifs</p>
@@ -2680,7 +2867,7 @@
 </blockquote>
 <p>Plusieurs biais cognitifs seront présentés dans cette page qu'il est possible d'exploiter à différents niveaux.</p>
 </div>
-<h3 id="le-biais-du-survivant">Le biais du survivant</h3>
+<h3 id="le-biais-du-survivant">Le biais du survivant<a class="headerlink" href="#le-biais-du-survivant" title="Permanent link">&para;</a></h3>
 <p>Le premier biais est celui du survivant qui consiste à surévaluer les chances de succès liés à une action (Wikipédia, 2024). On trouve des exemples positifs de cela : les célébrités qui réussissent, mais qui représentent virtuellement un groupe non représentatif de la population. Pensez au nombre d'actrices et d'acteurs de cinéma que vous pouvez nommer, comparativement au nombre de personnes qui tiennent des rôles dans des films, des séries ou au théâtre, en plus de toutes les personnes qui essaient sans succès. On les trouve aussi dans la négative comme le nombre de personnes qui subissent une complication médicale, ce sont ces personnes qui passent dans les médias, mais pas les centaines ou milliers d'autres qui ne rencontrent pas de problème. </p>
 <p>Donc écrire une histoire qui inclut des éléments du biais du survivant amène la personne qui joue à notre jeu à s'identifier comme la personne qui «&nbsp;survie&nbsp;» et l'engage davantage. </p>
 <div class="admonition info">
@@ -2695,16 +2882,16 @@
 <li>Nommez un jeu qui utilise inadéquatement (de façon caricaturale) le biais du survivant.</li>
 </ul>
 </div>
-<h2 id="les-personnages">Les personnages</h2>
+<h2 id="les-personnages">Les personnages<a class="headerlink" href="#les-personnages" title="Permanent link">&para;</a></h2>
 <p>Écrire des personnages auquel les personnes qui jouent s'identifient est difficile. Parmi les traits des personnages qui les rendent remarquables, on retrouve les stéréotypes et les défauts des personnages. </p>
-<h3 id="stereotypes">Stéréotypes</h3>
+<h3 id="stereotypes">Stéréotypes<a class="headerlink" href="#stereotypes" title="Permanent link">&para;</a></h3>
 <p>Les stéréotypes sont des opinions prédéterminées sur un sujet qui sont souvent caricaturales. Plusieurs stéréotypes sont pratiques (ce n'est pas que négatif) et ils ont une utilité sociale. Le problème est que le stéréotype, bien que prenant souvent racine dans un fait vrai (ou vrai quelque part dans l'histoire), est tellement poussé qu'il en devient exagéré. On peut recourir au stéréotype pour communiquer une information ou définir un personnage (en adoptant ou repoussant le stéréotype). Dans tous les cas, cela risque de sembler caricatural. </p>
 <p>Étudions un stéréotype de genre très classique : les personnages féminins et les standards de beauté. N'importe quelle époque, des œuvres artistiques représentent des femmes qui rencontrent un standard de beauté. Avoir un personnage féminin qui répond au standard de beauté de l'époque est-il mauvais ? Et qu'en est-il d'un personnage qui ne répond pas au standard de beauté ?</p>
 <p>Cette question est odieusement biaisée, car elle ne définit pas le personnage : elle définit la perception du monde de ce personnage. Chaque personne cherche à se trouver belle et à présenter sa personnalité - ou sa quête peut être aussi d'arriver à ce constat. Un personnage féminin avec une personnalité assumée pourra facilement se distancier du standard ou au contraire choisir d'y adhérer pour certaines circonstances. </p>
 <p>De plus, pour éviter de tomber dans le stéréotype inverse, la personnalité assumée doit se faire ressentir dans les interactions. Forcer artificiellement l'éloignement du stéréotype (par exemple avec un personnage féminin qui se dit assumé, mais obéit à toutes les consignes d'un homme) ne produit pas non plus des personnages crédibles et est souvent perçu comme du <em>washing</em>. C'est l'exemple d'un personnage qui conteste systématiquement et fait des choix irrationnels simplement pour montrer qu'elle est capable de le faire. </p>
 <p>Prenons l'exemple d'un personnage féminin qui a connu son lot de controverse dans sa représentation : Lara Croft de la série <em>Tomb Raider</em>. On peut constater une évolution du physique (et pas seulement qu'en nombre de polygones) et sa tenue. Les tenues adoptées dans les premières éditions sont hautement discutables pour explorer la jungle. Il suffit de regarder la tenue d'Indiana Jones pour s'en convaincre ou même celle d'un personnage féminin plus crédible comme la Pr Ellie Sattler du premier <em>Jurassic Park</em>. </p>
 <figure>
-    <a class="glightbox" data-type="image" href="../images/lara_croft_evolution.jpg"><img alt="" src="../images/lara_croft_evolution.jpg" /></a>
+    <img alt="" src="../images/lara_croft_evolution.jpg" />
     <figcaption>Représentations de Lara Croft de 1996 à 2010 (Stellalune, 2010).</figcaption>
 </figure>
 <p>Au-delà de l'aspect physique passé, il y a une autre contrainte qui témoigne mieux (et non de façon parfaite) de la présence juste de personnage féminin : le test de Bechdel.</p>
@@ -2726,46 +2913,46 @@
 </div>
 <p>Pour en revenir à la question précédente, sur l'adhésion des standards dans les oeuvres il y a aussi une question de représentation de la diversité, de rigueur historique ou d'effet artistique recherché. C'est donc une réponse très complexe à formuler si cela devrait ou non. </p>
 <p>Ce qui est sûr, c'est que le choix de s'y conformer ne devrait pas être la réponse par défaut - cela devrait émerger de la démarche artistique ou du contexte. Par exemple, le jeu <em>This Bed We Made</em> qui se déroule dans un hôtel montréalais des années 50 où tous les personnages adhèrent aux standards de bauté, en raison de la nature de leur travail et de l'atmosphère de l'époque. Toutefois, le jeu met en scène beaucoup de personnages féminins diversifiés dont la personnalité ne s'arrête pas à ces standards.</p>
-<h3 id="les-defauts">Les défauts</h3>
+<h3 id="les-defauts">Les défauts<a class="headerlink" href="#les-defauts" title="Permanent link">&para;</a></h3>
 <p>Les défauts sont une caractéristique importante pour entrer en relation avec un personnage. En plus d’ajouter une profondeur intéressante au jeu et des motivations aux personnages, les défauts nous permettent plus facilement d’entrer en relation et de nous identifier dans le personnage. Cette tendance peut même expliquer le succès de plusieurs antihéros (comme le succès de plusieurs antihéros de la trilogie originale <em>Star Wars</em> par exemple). Les défauts, qui n’ont pas besoin d’être nombreux, doivent simplement s’intégrer au narratif de l’histoire et parfois même empêcher l’histoire de progresser ou se conclure (sans tomber dans les boucles infinies des <em>soap opera</em>). Quelques exemples de défaut célèbre chez les superhéros :</p>
 <ul>
 <li>Batman (DC Comics) : difficulté à travailler en équipe, il prend en main seul la justice dans son rôle de justicier. </li>
 <li>Anakin Skywalker/Dark Vader (<em>Star Wars</em>) : sa peur l’amène à vouloir tout contrôler, ce qui cause les situations qu’il cherchait à éviter. Quand il confronte son maître et surmonte ce défaut, l’histoire prend fin.</li>
 <li>Eddard «&nbsp;Ned&nbsp;» Stark (Le Trône de fer) : croit au côté honorable des gens (même son bâtard n’en est pas un!), ce qui l’amène à faire confiance aux mauvaises personnes et mène à sa mort.</li>
 </ul>
-<h2 id="les-choix">Les choix</h2>
+<h2 id="les-choix">Les choix<a class="headerlink" href="#les-choix" title="Permanent link">&para;</a></h2>
 <p>Avoir un choix dans un jeu est toujours agréable pour la personne qui y joue, sauf lorsque toutes les options mènent au même résultat. La mécanique de choix perd alors son utilité. L'autre extrême n'est pas mieux : si chaque choix qui semble banal bouleverse tout le jeu, la personne ne saura pas comment ses interactions et ses choix influencent le monde. Pour qu'un choix soit intéressant, il doit être fait avec un lien de cause à effet clair. </p>
 <p>En plus d'exploiter les caractéristiques des personnages décrites plus haut, les choix peuvent être intéressants en exploitant le biais du coût irrécupérable, des dilemmes classiques ou une information incomplète.</p>
-<h3 id="le-biais-du-cout-irrecuperable">Le biais du coût irrécupérable</h3>
+<h3 id="le-biais-du-cout-irrecuperable">Le biais du coût irrécupérable<a class="headerlink" href="#le-biais-du-cout-irrecuperable" title="Permanent link">&para;</a></h3>
 <p>Imaginons que vous avez réservé une activité de ski et acheté vos billets pour la journée d'avance au coût de 100&#65284;. Le billet est attaché à la date précise et il est non remboursable. La journée venue, vous n'avez pas envie de réaliser cette activité, vous souhaitez plutôt sortir avec des amis. Qu'est-ce que vous faites ? Allez-vous faire du ski ou sortez-vous avec vos amis ? Plusieurs répondraient qu'ils iraient faire du ski pour ne pas perdre les 100&#65284; déjà dépensés.</p>
 <p>Dans les faits, ces 100&#65284; seront dépensés, qu'importe la décision prise : il s'agit d'un coût irrécupérable. L'erreur de raisonnement ici est d'inclure un coût dans l'analyse des options sur lequel la décision n'a pas d'effet (ScienceEtonnate, 2016). </p>
 <p>Dans les jeux, on utilise cet effet en proposant des échappatoires au personnage juste après un revirement (par exemple, un ennemi se dévoile). Le personnage a investi par exemple pour forger des relations et doit maintenant y renoncer et recommencer ou rester, mais commettre des actions qu'il aurait préféré éviter.</p>
-<h3 id="le-dilemme">Le dilemme</h3>
+<h3 id="le-dilemme">Le dilemme<a class="headerlink" href="#le-dilemme" title="Permanent link">&para;</a></h3>
 <p>Un dilemme est une confrontation entre deux propositions insatisfaisantes et dans lequel il faut faire un choix. Ce sont souvent des choix déchirants à faire et ils renforcissent le lien émotionnel avec le jeu, car le personnage prendra souvent les valeurs morales de la personne qui joue ou du moins renforcera l'image que l'on se fait du personnage interprété.</p>
-<h3 id="information-incomplete">Information incomplète</h3>
+<h3 id="information-incomplete">Information incomplète<a class="headerlink" href="#information-incomplete" title="Permanent link">&para;</a></h3>
 <p>Prendre une décision est difficile lorsque l'on n’a pas toute l'information, et elle n'en devient que plus signifiante. Il faut cependant être prudent avec l'information incomplète : elle propose un revirement de situation intéressante lorsqu'elle est dévoilée, mais si l'on s'éloigne trop ou que l'on insère un élément incohérent avec le reste alors elle éloigne la personne qui joue de l'histoire. Une façon de garder l'information incomplète crédible est que la majorité des personnages aient un défaut ou une situation dans laquelle il peut se faire piéger.</p>
-<h2 id="utilisation-de-laleatoire">Utilisation de l'aléatoire</h2>
+<h2 id="utilisation-de-laleatoire">Utilisation de l'aléatoire<a class="headerlink" href="#utilisation-de-laleatoire" title="Permanent link">&para;</a></h2>
 <p>Dans plusieurs jeux, un aspect important de la rejouabilité (et parfois même des mécaniques) est la génération aléatoire. Il est essentiel d'en utiliser, mais encore faut-il l'utiliser correctement pour éviter de générer des frustrations ou un monde irréaliste. Voici quelques bases sur la génération aléatoire.</p>
-<h3 id="les-nombres-aleatoires-entre-0-et-1">Les nombres aléatoires entre 0 et 1</h3>
+<h3 id="les-nombres-aleatoires-entre-0-et-1">Les nombres aléatoires entre 0 et 1<a class="headerlink" href="#les-nombres-aleatoires-entre-0-et-1" title="Permanent link">&para;</a></h3>
 <p>Les générateurs de base dans un jeu génèrent selon une <strong>loi uniforme</strong>, donc tous les nombres ont la même probabilité d'être retournés. Ça donne l'impression d'être «&nbsp;vraiment&nbsp;» sélectionné au hasard, mais dans certains cas cela devient aberrant. Prenons l'exemple de température dans un jeu de simulation où nous gérons les saisons. Si l'on dit que dans un biome particulier la température moyenne hivernale est de -15°C, il y aura plus souvent des journées autour de cette température que des journées extrêmes à -40°C ou 10°C (les deux sont situés à 25°C de la moyenne). Il faut donc que la température, bien qu'elle puisse atteindre des extrêmes, soit plus souvent près de la moyenne, ce qui correspond à une distribution centrée et symétrique comme une loi de Laplace-Gauss (<em>loi normale</em>).</p>
 <p>Un autre exemple où la génération de loi uniforme s'applique mal est la génération d'ennemis aléatoires. Bien qu'il soit intéressant de faire varier leurs caractéristiques (certains plus forts et d'autres moins forts), une majorité devrait se situer à un niveau équilibré par rapport à la difficulté du jeu. Une loi uniforme produit autant d'ennemis forts que de moyens et de faibles, donnant une expérience plus chaotique et imprévisible au jeu. S</p>
-<h3 id="la-generation-en-deux-dimensions">La génération en deux dimensions</h3>
+<h3 id="la-generation-en-deux-dimensions">La génération en deux dimensions<a class="headerlink" href="#la-generation-en-deux-dimensions" title="Permanent link">&para;</a></h3>
 <p>Le problème avec une génération indépendante sur deux dimensions, lorsqu'on l'approche comme situation en une dimension est les sauts obtenus. Deux cases adjacentes peuvent avoir des valeurs extrêmes oppposées. Dans la plupart des cas, ce n'est pas un phénomène que l'on souhaite obtenir, car il est «&nbsp;trop aléatoire&nbsp;».</p>
 <figure>
-    <a class="glightbox" data-type="image" href=".././images/bruit.png"><img alt="" src=".././images/bruit.png" width="300" /></a>
+    <img alt="" src=".././images/bruit.png" width="300" />
     <figcaption markdown>Génération d'un bruit aléatoire</figcaption>
 </figure>
 <p>Le bruit de Perlin (<em>Perlin noise</em>) utilise la norme des vecteurs et réalise des interpolations entre des points de la grille pour maintenir un aspect lisse. Il comporte plusieurs paramètres pour ajuster le niveau de lissage aux besoins. Vous pouvez le tester sur <a href="http://kitfox.com/projects/perlinNoiseMaker/">ce générateur</a>. </p>
 <figure>
-    <a class="glightbox" data-type="image" href=".././images/perlin.png"><img alt="" src=".././images/perlin.png" width="300" /></a>
+    <img alt="" src=".././images/perlin.png" width="300" />
     <figcaption markdown>Génération d'un bruit de Perlin</figcaption>
 </figure>
 <p>Le bruit de Voronoi ressemble à un système de cellules plus ou moins groupées. En fait, le bruit est issu d'une génération de points aléatoires dans le plan. Pour chacun de ces points, on trace une région qui correspond aux points qui sont le plus près d'un des points aléatoires. <a href="https://alexbeutel.com/webgl/voronoi.html">Ce générateur</a> permet de créer des diagrammes de Voronoi dynamiques.</p>
 <figure>
-    <a class="glightbox" data-type="image" href=".././images/Voronoi.png"><img alt="" src=".././images/Voronoi.png" width="300" /></a>
+    <img alt="" src=".././images/Voronoi.png" width="300" />
     <figcaption markdown>Génération d'un bruit de Voronoi</figcaption>
 </figure>
-<h3 id="attendre-apres-quelque-chose">Attendre après quelque chose</h3>
+<h3 id="attendre-apres-quelque-chose">Attendre après quelque chose<a class="headerlink" href="#attendre-apres-quelque-chose" title="Permanent link">&para;</a></h3>
 <p>Un fait étonnant avec la modélisation des temps d'attentes en statistique est la propriété <em>sans mémoire</em> de la loi régissant ce phénomène. Imaginons que vous attendiez pendant une heure au téléphone pour parler avec une personne d'un service à la clientèle. Après cette heure d'attente, vous vous demandez qu'elle ait la probabilité qu'on vous réponde dans les <strong>5 prochaines  minutes</strong>. Est-ce que cette probabilité est plus ou moins élevée que celle de vous faire répondre dans les <strong>5 premières minutes de votre appel</strong> ?</p>
 <details class="solution">
 <summary>Réponse</summary>
@@ -2778,7 +2965,7 @@
 <li>Il faut 21 essais pour que 99% des personnes aient obtenu l'objet.  </li>
 </ul>
 <p>Donc oui on peut utiliser l'aléatoire, mais c'est important de tenir compte de ces phénomènes statistiques et de dire qu'aux 8<sup>e</sup> ou 10<sup>e</sup> essais l'objet est obtenu automatiquement.</p>
-<h2 id="les-mecaniques-punitives-et-la-fin-du-plaisir">Les mécaniques punitives et la fin du plaisir</h2>
+<h2 id="les-mecaniques-punitives-et-la-fin-du-plaisir">Les mécaniques punitives et la fin du plaisir<a class="headerlink" href="#les-mecaniques-punitives-et-la-fin-du-plaisir" title="Permanent link">&para;</a></h2>
 <p>Imposer une difficulté et donner un défi ne doit pas devenir une mécanique qui punit la personne qui joue. Une mécanique est dite punitive lorsqu'au lieu d'ajouter à l'expérience de jeu ou au monde, elle pénalise la personne qui joue «&nbsp;mal&nbsp;» au jeu. À la différence des défis, elles ne s'appliquent pas de façon universelle à toutes les personnes dans une circonstance.</p>
 <div class="admonition question">
 <p class="admonition-title">Impact des mécaniques punitives</p>
@@ -2794,7 +2981,7 @@
 <li>Nommer une mécanique d'un jeu qui vous a enlevé le plaisir de jouer et sans laquelle le jeu aurait offert la <strong>même expérience</strong>.</li>
 </ul>
 </div>
-<h2 id="le-probleme-de-linflation">Le problème de l'inflation</h2>
+<h2 id="le-probleme-de-linflation">Le problème de l'inflation<a class="headerlink" href="#le-probleme-de-linflation" title="Permanent link">&para;</a></h2>
 <p>L'inflation est un défi à gérer dans tous jeux ou des ressources s'accumulent, et en particulier pour des jeux multijoueurs. La plupart des jeux contiennent des exploits (<em>exploits</em>) qui, malgré les meilleurs efforts du développement, permettent de contourner les mécaniques du jeu. Dans la plupart des cas, ces exploits utilisent des ressources qui se régénèrent indéfiniment. Pour les jeux multijoueurs, la principale source de problème (en plus des objets générés) est la cohabitation de personnages de différents niveaux dans un même environnement.</p>
 <div class="admonition info">
 <p class="admonition-title">Qu'est-ce que l'inflation ?</p>
@@ -2805,18 +2992,18 @@
 </div>
 <p>L'inflation est poussée à la hausse, augmentation plus importante de la disponibilité de l'argent (ou le concept apparenté) dans une économie. Par exemple, une économie possède 10 pièces, alors un objet qui coûte 5 pièces est un objet dispendieux. Le même objet au même prix dans une économie de 1000 pièces n'est plus aussi dispendieux, et ce, même si son prix demeure constant.</p>
 <p>Dans un jeu, si un personnage gagne 5 pièces par monstre tué et qu'il y a 10 monstres dans le jeu, alors l'économie du jeu est de 50 pièces. Il devient possible de prévoir les coûts des objets pour garder un défi d'acquisition des objets plus rares (avoir des objets dispendieux). Si les monstres du jeu se régénèrent, alors l'économie est techniquement non plafonnée. Les personnages auront une richesse aussi grande que souhaité en «&nbsp;cultivant&nbsp;» (<em>farming</em> ou <em>grinding</em>) des ressources. Dans un jeu multijoueur, cela peut rendre difficile (ou impossible) l'intégration de nouvelles personnes ou de nouveau mode de jeu.</p>
-<h3 id="reduire-linflation">Réduire l'inflation</h3>
+<h3 id="reduire-linflation">Réduire l'inflation<a class="headerlink" href="#reduire-linflation" title="Permanent link">&para;</a></h3>
 <p>Beaucoup de tactiques (autres que d'empêcher la cultivation des ressources qui peut être une mécanique) existent pour contrôler l'inflation :</p>
-<h4 id="retirer-des-richesses">Retirer des richesses</h4>
+<h4 id="retirer-des-richesses">Retirer des richesses<a class="headerlink" href="#retirer-des-richesses" title="Permanent link">&para;</a></h4>
 <p>Lorsque l'argent entre à l'infini dans une économie, l'inflation devient vite écrasante (l'argent perd sa valeur), il faut donc en sortir sans pour autant la redistribuer ou la concentrer. Pour faire «&nbsp;disparaître&nbsp;» de l'argent d'un jeu on peut :</p>
 <ul>
 <li>Proposer des marchés pour acheter des équipements (les marchands digèrent l'argent);</li>
 <li>Proposer des objets consommables (potion de vie, potion de bonus, munitions...);</li>
 <li>Endommager l'équipement et forcer l'entretien de celui-ci (encore une fois ces fameux marchands);</li>
 </ul>
-<h4 id="punir-laccumulation">Punir l'accumulation</h4>
+<h4 id="punir-laccumulation">Punir l'accumulation<a class="headerlink" href="#punir-laccumulation" title="Permanent link">&para;</a></h4>
 <p>Dans la plupart des RTS (jeux de stratégie en temps réel), accumuler des ressources se fait de façon périlleuse, car en ne les utilisant pas, les autres avancent plus rapidement. D'autres jeux augmentent la difficulté selon la richesse accumulée, ce qui enlève de l'utilité à l'accumulation de ressources (et même dissuade de le faire).</p>
-<h4 id="utiliser-des-monnaies-multiples">Utiliser des monnaies multiples</h4>
+<h4 id="utiliser-des-monnaies-multiples">Utiliser des monnaies multiples<a class="headerlink" href="#utiliser-des-monnaies-multiples" title="Permanent link">&para;</a></h4>
 <p>Diversifier les monnaies et les rendre utilisables que pour certains types d'items ou qu'elles puissent être trouvées que dans un certain type d'événement permet aussi de gérer l'inflation, car le <em>grinding</em> et les différences de niveau ne sont plus des mécaniques efficaces. On trouve souvent ces monnaies alternatives pour des objets d'événements ou les environnements JcJ.</p>
 <div class="admonition exercice">
 <p class="admonition-title">Exercice</p>
@@ -2825,10 +3012,10 @@
 <li>Nommez un jeu qui gère l'inflation avec une mécanique bien intégrée au jeu.</li>
 </ul>
 </div>
-<h2 id="faire-de-largent-avec-les-jeux">Faire de l'argent avec les jeux</h2>
+<h2 id="faire-de-largent-avec-les-jeux">Faire de l'argent avec les jeux<a class="headerlink" href="#faire-de-largent-avec-les-jeux" title="Permanent link">&para;</a></h2>
 <p>Pour les jeux distribués sur des plateformes spécialisées comme <em>Steam</em> ou <em>GOG</em>, la réponse est assez simple : assurez-vous que le temps à investir dans votre jeu dépasse la durée pour laquelle il est possible d'obtenir un remboursement (SlurpTech, 2024). Lorsqu'un jeu est remboursé, la cote versée à la compagnie qui l'a développée est réclamée. Certaines compagnies ont vécu des difficultés après avoir publié des jeux qui duraient moins de 2 heures, car les gens se faisaient rembourser après avoir terminé le jeu.</p>
 <p>Pour les jeux dont le financement repose essentiellement sur la vente de consommable ou de forfait, voici quelques trucs pour augmenter vos profits.</p>
-<h3 id="ne-bloquez-pas-le-jeu-sil-ny-a-pas-dachat">Ne bloquez pas le jeu s'il n'y a pas d'achat</h3>
+<h3 id="ne-bloquez-pas-le-jeu-sil-ny-a-pas-dachat">Ne bloquez pas le jeu s'il n'y a pas d'achat<a class="headerlink" href="#ne-bloquez-pas-le-jeu-sil-ny-a-pas-dachat" title="Permanent link">&para;</a></h3>
 <p>Si votre jeu devient «&nbsp;injouable&nbsp;» en raison des trop nombreux obstacles qui doivent être résolus avec le portefeuille, les gens décrocheront plutôt que de payer. Il faut donc qu'il soit plus difficile ou lent d'avancer dans le jeu sans nécessairement décourage les gens. Ils doivent rester assez engagés pour vouloir acheter le paquet ou l'option «&nbsp;retirer les publicitées&nbsp;».</p>
 <p>Une façon de parvenir à ce but est de jouer sur les courbes de progression. Imaginons un jeu de type incrémental dans lequel on a une machine à créer des billets qui, lorsqu'on l'améliore, produit plus de billets (ça a l'air plate, mais beaucoup de jeux reposent sur cette mécanique).</p>
 <p>Partons d'une croissance (en pourcentage) du coût des améliorations égale à celle de la production.</p>
@@ -2884,16 +3071,16 @@
 </center>
 
 <p>On remarque que les 100 premiers niveaux peuvent être agréables à jouer, tandis que la progression au niveau 250 prend 1 minute entre chaque clic. Un exemple intéressant d'effet d'acheter un paquet payant serait de changer <span class="arithmatex">\(a_p\)</span> pour 4,8%. Sans rien acheter, il faut 18 heures 10 minutes pour compléter le jeu (moyenne de 2 minutes et 11 secondes par niveau), tandis qu'avec le paquet payant il n'en faut que 1 heure 13 minutes (moyenne de 8,78 secondes par niveau). On ne ruine pas l'expérience de jeu, mais la progression ne semble pas impossible à partir d'un certain point.</p>
-<h2 id="references">Références</h2>
-<p>Bechdel Test Movie List. (2024). Page consultée le 17:43, 29 novembre 2024 à partir de https://bechdeltest.com/statistics/</p>
-<p>Biais cognitif. (2024). Dans Grand dictionnaire terminologique. https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26545231/biais-cognitif</p>
-<p>Biais des survivants. (2024, novembre 24). Wikipédia, l'encyclopédie libre. Page consultée le 22:52, novembre 24, 2024 à partir de http://fr.wikipedia.org/w/index.php?title=Biais_des_survivants&amp;oldid=220582509.</p>
-<p>Inflation. (2024). Dans Grand dictionnaire terminologique. https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8379127/inflation</p>
+<h2 id="references">Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<p>Bechdel Test Movie List. (2024). Page consultée le 17:43, 29 novembre 2024 à partir de <a href="https://bechdeltest.com/statistics/">https://bechdeltest.com/statistics/</a></p>
+<p>Biais cognitif. (2024). Dans Grand dictionnaire terminologique. <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26545231/biais-cognitif">https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26545231/biais-cognitif</a></p>
+<p>Biais des survivants. (2024, novembre 24). Wikipédia, l'encyclopédie libre. Page consultée le 22:52, novembre 24, 2024 à partir de <a href="http://fr.wikipedia.org/w/index.php?title=Biais_des_survivants&amp;oldid=220582509">http://fr.wikipedia.org/w/index.php?title=Biais_des_survivants&amp;oldid=220582509</a>.</p>
+<p>Inflation. (2024). Dans Grand dictionnaire terminologique. <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8379127/inflation">https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8379127/inflation</a></p>
 <p>Koster, R. (2005). Theory of Fun for Game Design. O'Reilly Media.</p>
-<p>ScienceEtonnate. (2016, 20 mai). L'effet de Halo — Crétin de cerveau ! #1. Youtube. https://www.youtube.com/watch?v=xJO5GstqTSY</p>
-<p>ScienceEtonnate. (2016, 8 juillet). Les coûts irrécupérables — Crétin de cerveau #3. Youtube. https://www.youtube.com/watch?v=GCmfXMMhRzk</p>
-<p>SlurpTech. (2024, 8 juin). How to Refund Games on Steam 2024 - Refund a Steam Game [Video file]. YouTube. https://www.youtube.com/watch?v=FTbb-x_Pveg</p>
-<p>Stellalune. (2010, 3 juillet).Tomb Raider Timeline. Page consultée le 17:25, 29 novembre 2024 à partir de https://blog.tombraiders.net/2010/07/tomb-raider-timeline.html</p>
+<p>ScienceEtonnate. (2016, 20 mai). L'effet de Halo — Crétin de cerveau ! #1. Youtube. <a href="https://www.youtube.com/watch?v=xJO5GstqTSY">https://www.youtube.com/watch?v=xJO5GstqTSY</a></p>
+<p>ScienceEtonnate. (2016, 8 juillet). Les coûts irrécupérables — Crétin de cerveau #3. Youtube. <a href="https://www.youtube.com/watch?v=GCmfXMMhRzk">https://www.youtube.com/watch?v=GCmfXMMhRzk</a></p>
+<p>SlurpTech. (2024, 8 juin). How to Refund Games on Steam 2024 - Refund a Steam Game [Video file]. YouTube. <a href="https://www.youtube.com/watch?v=FTbb-x_Pveg">https://www.youtube.com/watch?v=FTbb-x_Pveg</a></p>
+<p>Stellalune. (2010, 3 juillet).Tomb Raider Timeline. Page consultée le 17:25, 29 novembre 2024 à partir de <a href="https://blog.tombraiders.net/2010/07/tomb-raider-timeline.html">https://blog.tombraiders.net/2010/07/tomb-raider-timeline.html</a></p>
 
 
 
@@ -2909,12 +3096,22 @@
 
 
                 
+
+
               </article>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Retour en haut de la page
+</button>
         
       </main>
       
@@ -2965,7 +3162,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC BY-NC-SA Alexandre Ouellet
+      CC BY-SA-NC | 2026 | Alexandre Ouellet
     </div>
   
   
@@ -3001,14 +3198,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
-    
-    
-    
-    
-    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
-    </a>
-  
 </div>
       
     </div>
@@ -3028,7 +3217,7 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","navigation.sections","navigation.tabs","navigation.tabs.stikcy","navigation.path","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.8b1c90bd.min.js"></script>
