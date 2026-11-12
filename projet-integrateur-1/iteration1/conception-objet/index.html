@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Cours 420-5B5-VI Projet intégrateur 1 axé sur la gestion de projet et retour sur les principes de conception objet">
+        <meta name="description" content="Notes de cours du cours de 420-5B5-VI Projet intégrateur 1">
       
       
         <meta name="author" content="Alexandre Ouellet">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Conception | Diagramme de classe - Projet intégrateur 1</title>
+        <title>Diagramme de classe - 420-5B5-VI Projet intégrateur 1</title>
       
     
     
@@ -44,12 +44,6 @@
         <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
-
-  
-  
-  
-  
-  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010m-12%206%206-6-6-6-1.4%201.4%204.6%204.6-4.6%204.6z%22/%3E%3C/svg%3E');}</style>
 
 
     
@@ -66,9 +60,15 @@
       
     
     
-      <link rel="stylesheet" href="../../css/hint.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/course-header.css">
     
-      <link rel="stylesheet" href="../../css/override.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/hint.min.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/card-genre.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
@@ -104,13 +104,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+    <a href="../.." title="420-5B5-VI Projet intégrateur 1" class="md-header__button md-logo" aria-label="420-5B5-VI Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
+  <img src="../../images/favicon.svg" alt="420-5B5-VI Projet intégrateur 1">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -121,13 +119,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Projet intégrateur 1
+            420-5B5-VI Projet intégrateur 1
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conception | Diagramme de classe
+              Diagramme de classe
             
           </span>
         </div>
@@ -140,7 +138,31 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
     
   
 </form>
@@ -169,8 +191,14 @@
     </div>
   </nav>
   
+</header>
     
+    <div class="md-container" data-md-component="container">
       
+      
+        
+          
+            
 <nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -180,8 +208,32 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
     
       
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -204,6 +256,20 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -228,6 +294,20 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -250,11 +330,21 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
       <li class="md-tabs__item">
-        <a href="../../iterationN/documentation.md" class="md-tabs__link">
+        <a href="../../iterationN/reusinage.md" class="md-tabs__link">
           
   
   Iteration N
@@ -272,6 +362,14 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -282,6 +380,22 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -307,6 +421,68 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../patrons/commande/" class="md-tabs__link">
+          
+  
+  Patrons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -317,6 +493,10 @@
   
     
       
+      
+        
+      
+    
     
     
     
@@ -354,13 +534,7 @@
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -381,12 +555,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Projet intégrateur 1" class="md-nav__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+    <a href="../.." title="420-5B5-VI Projet intégrateur 1" class="md-nav__button md-logo" aria-label="420-5B5-VI Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
+  <img src="../../images/favicon.svg" alt="420-5B5-VI Projet intégrateur 1">
 
     </a>
-    Projet intégrateur 1
+    420-5B5-VI Projet intégrateur 1
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -397,7 +571,41 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     
+  
+  Accueil
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -411,10 +619,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -432,8 +642,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_1">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -504,6 +714,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -516,10 +736,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -537,8 +759,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_1_3">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -680,6 +902,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -692,10 +928,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -713,8 +951,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_2">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -810,6 +1048,75 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Analyse
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Analyse
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../iteration0/entites-actrices/" class="md-nav__link">
         
@@ -818,7 +1125,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Entité actrice
+  Entité actrice
 
     
   </span>
@@ -845,7 +1152,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Récits d'utilisation
+  Récits d'utilisation
 
     
   </span>
@@ -872,7 +1179,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Liste des fonctionnalités et des cas d'utilisation
+  Liste des fonctionnalités et des cas d'utilisation
 
     
   </span>
@@ -899,7 +1206,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Choix de technologies
+  Choix de technologies
 
     
   </span>
@@ -926,7 +1233,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Besoins de sécurité
+  Besoins de sécurité
 
     
   </span>
@@ -953,7 +1260,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Conformité légale
+  Conformité légale
 
     
   </span>
@@ -980,7 +1287,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Planification des ressources
+  Planification des ressources
 
     
   </span>
@@ -992,6 +1299,74 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Conception
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Conception
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1007,7 +1382,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Standards et normes
+  Standards et normes
 
     
   </span>
@@ -1034,7 +1409,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Pipeline
+  Pipeline
 
     
   </span>
@@ -1046,6 +1421,74 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Qualité logicielle
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Qualité logicielle
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1061,7 +1504,7 @@
   <span class="md-ellipsis">
     
   
-  Qualité logicielle | Critères de qualité
+  Critères de qualité
 
     
   </span>
@@ -1088,7 +1531,7 @@
   <span class="md-ellipsis">
     
   
-  Qualité logicielle | Types de test
+  Types de test
 
     
   </span>
@@ -1096,6 +1539,15 @@
   
 
       </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
     </li>
   
 
@@ -1119,6 +1571,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1134,10 +1600,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1155,8 +1621,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-            <label class="md-nav__title" for="__nav_3">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1199,6 +1665,95 @@
   
   
     <li class="md-nav__item">
+      <a href="../documentation-personnes-utilisatrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documentation pour les personnes utilisatrices
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Analyse
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Analyse
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../cas-utilisation/" class="md-nav__link">
         
   
@@ -1206,7 +1761,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Cas d'utilisation
+  Cas d'utilisation
 
     
   </span>
@@ -1233,7 +1788,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Concevoir des interfaces
+  Concevoir des interfaces
 
     
   </span>
@@ -1245,6 +1800,81 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Conception
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_4_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Conception
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1260,7 +1890,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Choix architecture
+  Choix architecture
 
     
   </span>
@@ -1296,7 +1926,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Diagramme de classe
+  Diagramme de classe
 
     
   </span>
@@ -1313,7 +1943,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Diagramme de classe
+  Diagramme de classe
 
     
   </span>
@@ -1420,6 +2050,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Patrons du folklore de l&#x27;informatique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dry-dont-repeat-yourself-ne-te-repete-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        DRY : <em>Don't repeat yourself</em> - Ne te répète pas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        KISS : <em>Keep It Stupid Simple</em> - Garde ça si simple que ça en est stupide
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        YAGNI : <em>You ain't gonna need it</em> - Tu n'en auras pas besoin
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1516,7 +2185,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Modèle des données
+  Modèle des données
 
     
   </span>
@@ -1528,168 +2197,6 @@
   
 
                 
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../complexite-algorithmes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Complexité des algorithmes
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../documentation-technique/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Documenter du code
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../documentation-personnes-utilisatrices/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Autres activités | Documentation pour les personnes utilisatrices
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plan-test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Qualité logicielle | Plan de test
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Autres ressources
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_3_11">
-              <span class="md-nav__icon md-icon"></span>
-              
-  
-  Autres ressources
-
-            </label>
-            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1727,6 +2234,227 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Implémentation
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Implémentation
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complexite-algorithmes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Complexité des algorithmes
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation-technique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documenter du code
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Qualité logicielle
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Qualité logicielle
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plan-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Plan de test
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -1743,6 +2471,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1755,10 +2493,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1776,8 +2516,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1785,60 +2525,6 @@
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iterationN/documentation.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Analyse | Maintenir à jour la documentation
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iterationN/implementation.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Continuer et réutiliser le code existant
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
               
                 
                   
@@ -1964,6 +2650,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1976,10 +2670,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1997,8 +2693,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2015,6 +2711,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2027,10 +2739,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
         
           
-          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
             
   
   
@@ -2048,8 +2762,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5_1">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_1">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2092,7 +2806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/javafx-intro.md" class="md-nav__link">
+      <a href="../../implementation/javafx-intro/" class="md-nav__link">
         
   
   
@@ -2119,7 +2833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/conteneurs-javafx.md" class="md-nav__link">
+      <a href="../../implementation/conteneurs-javafx/" class="md-nav__link">
         
   
   
@@ -2146,7 +2860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/formulaire-javafx.md" class="md-nav__link">
+      <a href="../../implementation/formulaire-javafx/" class="md-nav__link">
         
   
   
@@ -2173,7 +2887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/listes-javafx.md" class="md-nav__link">
+      <a href="../../implementation/listes-javafx/" class="md-nav__link">
         
   
   
@@ -2200,7 +2914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/fenetre-javafx.md" class="md-nav__link">
+      <a href="../../implementation/fenetre-javafx/" class="md-nav__link">
         
   
   
@@ -2227,7 +2941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implementation/erreur-javafx.md" class="md-nav__link">
+      <a href="../../implementation/erreur-javafx/" class="md-nav__link">
         
   
   
@@ -2264,6 +2978,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -2276,10 +2994,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
             
   
   
@@ -2297,8 +3017,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5_2">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_2">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2343,6 +3063,99 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  JUnit
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  JUnit
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../implementation/junit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Bibliothèque de tests unitaire JUnit
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -2359,6 +3172,34 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2371,10 +3212,436 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Patrons
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Patrons
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/commande/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Commande
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/composite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Composite
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/decorateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Décorateur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/etat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  États
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/fabrique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Fabrique
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/fabrique-abstraite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Fabrique abstraite
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/mediateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Médiateur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/memento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Mémento
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/monteur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Monteur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/flyweight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Poids-mouche
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Prototype
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/strategie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Stratégie
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/visiteur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Visiteur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2392,8 +3659,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2410,6 +3677,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -2422,10 +3693,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
             
   
   
@@ -2443,8 +3716,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_1">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_1">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2551,6 +3824,18 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2563,10 +3848,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
         
           
-          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
             
   
   
@@ -2584,8 +3871,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_4">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_4">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2746,6 +4033,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -2758,10 +4049,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_5" >
         
           
-          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
             
   
   
@@ -2779,8 +4072,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_5">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_5">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2902,6 +4195,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -2919,6 +4226,38 @@
   
 
       
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../architectures/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Conception
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
     </ol>
   </nav>
 
@@ -2926,10 +4265,14 @@
               <article class="md-content__inner md-typeset">
                 <a id="__skip" tabindex="-1"></a>
                 
+
+
+
+
                   
 
 
-<h1 id="conception-orientee-objet">Conception orientée objet</h1>
+<h1 id="conception-orientee-objet">Conception orientée objet<a class="headerlink" href="#conception-orientee-objet" title="Permanent link">&para;</a></h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la page</span></p>
@@ -2946,7 +4289,7 @@
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5 5.5 5.5H14zm8.85 9.69-.98.98-2.04-2.04.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36 2.04 2.04L15.04 22H13v-2.04z"/></svg></span> <span class="subtitle-content">À propos de la page</span></p>
 <div style="display: flex; align-items: center; gap: 1rem;">
 <div>
-<p><span class="img-ia" markdown> <a class="glightbox" data-type="image" href="../../images/IA_NIA.png"><img alt="" src="../../images/IA_NIA.png" /></a></span></p>
+<p><span class="img-ia" markdown> <img alt="" src="../../images/IA_NIA.png" /></span></p>
 </div>
 <div>
 <p><a href="https://forms.office.com/r/ccF1FGKW25">Signaler une erreur</a> <br/></p>
@@ -2954,13 +4297,13 @@
 </div>
 </div>
 </div>
-<h2 id="retour-sur-les-concepts-et-constructions-de-loriente-objet">Retour sur les concepts et constructions de l'orienté objet</h2>
+<h2 id="retour-sur-les-concepts-et-constructions-de-loriente-objet">Retour sur les concepts et constructions de l'orienté objet<a class="headerlink" href="#retour-sur-les-concepts-et-constructions-de-loriente-objet" title="Permanent link">&para;</a></h2>
 <p>Voici quelques grands principes de la programmation orientée objet (POO) et le lien avec les constructions «&nbsp;usuelles&nbsp;» des langages objets.</p>
 <div class="admonition info">
 <p class="admonition-title">Constructions usuelles</p>
 <p>Certains langages proposent des mécanismes explicitent (comme des mots-clés) dans la construction du langage pour représenter ou mettre en action certains concepts. D'autres langages ne proposent pas de mécanismes, mais certaines pratiques permettent d'arriver au même résultat (pensons à l'absence de modificateur de visibilité en <em>Python</em>). Donc les constructions «&nbsp;usuelles&nbsp;» peuvent ne pas se retrouver dans tous les langages objets : cela ne doit pas être utilisé pour qualifier un langage d'orienté objet ou non. </p>
 </div>
-<h3 id="abstraction">Abstraction</h3>
+<h3 id="abstraction">Abstraction<a class="headerlink" href="#abstraction" title="Permanent link">&para;</a></h3>
 <p>Le conception d'abstraction consiste à représenter les concepts du monde réel à l'aide de construction d'un langage de programmation. On trouve le sous-concept de la <strong>correspondance directe</strong> qui consiste à faire correspondre la structure du logiciel avec celle du monde réel. Il est généralement possible de le faire, surtout pour les classes métiers.</p>
 <p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
@@ -2968,7 +4311,7 @@
 <li>Les méthodes</li>
 <li>Les attributs</li>
 </ul>
-<h3 id="encapsulation">Encapsulation</h3>
+<h3 id="encapsulation">Encapsulation<a class="headerlink" href="#encapsulation" title="Permanent link">&para;</a></h3>
 <p>L'encapsulation consiste à regrouper des informations cohésives dans un même type de données. Cela permet de contrôler l'accès aux données et aux comportements de l'extérieur d'un type. Cela améliore l'<strong>intégrité</strong> des données traitées par le système.</p>
 <p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
@@ -2976,7 +4319,7 @@
 <li>Les espaces de nom</li>
 <li>Les modificateurs de visibilité (ils ne sont pas essentiels)</li>
 </ul>
-<h3 id="modularite">Modularité</h3>
+<h3 id="modularite">Modularité<a class="headerlink" href="#modularite" title="Permanent link">&para;</a></h3>
 <p>La modularité facilile l'apport de <strong>modifications</strong> au code tout en augmentant la <strong>lisibilité</strong> et la <strong>compréhensibilité</strong> de celui-ci. La modularité propose le découpage du code en module (en POO, il s'agit des classes) afin de séparer les différentes fonctionnalités. Chaque module devrait communiquer avec <strong>le moins d'autres modules possibles</strong> et, lorsqu'ils doivent échanger, communique <strong>le moins d'informations possible</strong>. C'est deux principes assure que chaque module est aussi pertinent et autonome que possible.</p>
 <p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
@@ -2985,7 +4328,7 @@
 <li>Les espaces de nom</li>
 <li>Mise en oeuvre du polymorphisme</li>
 </ul>
-<h3 id="reutilisation">Réutilisation</h3>
+<h3 id="reutilisation">Réutilisation<a class="headerlink" href="#reutilisation" title="Permanent link">&para;</a></h3>
 <p>La réutilisation permet de reprendre les traitements d'un module et les exploiter dans un autre module. On trouve parmi les sous-concepts de la réutilisation <strong>l'autodocumentation</strong> (chaque module dispose de l'information nécessaire à sa compréhension) et l'<strong>accès uniforme</strong> (les façons d'accéder aux informations sont constantes, idéalement même entre les modules d'un système). </p>
 <p>Les constructions des langages qui permettent l'atteinte de cet objectif sont : </p>
 <ul>
@@ -2993,18 +4336,18 @@
 <li>Types abstraits</li>
 <li>Mise en oeuvre du polymorphisme</li>
 </ul>
-<h2 id="les-patrons-de-conception">Les patrons de conception</h2>
+<h2 id="les-patrons-de-conception">Les patrons de conception<a class="headerlink" href="#les-patrons-de-conception" title="Permanent link">&para;</a></h2>
 <p>Un patron de conception est une solution ou un énoncé qui répond adéquatement à un problème ou un questionnement souvent rencontré dans la conception. Parmi les patrons présentés ici, certains sont généraux à tous les types de programmation, d'autres propres à la programmation objet.</p>
-<h3 id="patrons-du-folklore-de-linformatique">Patrons du folklore de l'informatique</h3>
+<h3 id="patrons-du-folklore-de-linformatique">Patrons du folklore de l'informatique<a class="headerlink" href="#patrons-du-folklore-de-linformatique" title="Permanent link">&para;</a></h3>
 <p>Les trois premiers patrons sont des énoncés généraux qui devraient guider dans la façon d'approcher les problèmes de conception dans tous les types de programmation.</p>
-<h4 id="dry-dont-repeat-yourself-ne-te-repete-pas">DRY : <em>Don't repeat yourself</em> - Ne te répète pas</h4>
+<h4 id="dry-dont-repeat-yourself-ne-te-repete-pas">DRY : <em>Don't repeat yourself</em> - Ne te répète pas<a class="headerlink" href="#dry-dont-repeat-yourself-ne-te-repete-pas" title="Permanent link">&para;</a></h4>
 <p>Il ne faut répéter du code dans un système. Le code répété génère une augmentation de l'effort lié au test, en plus d'augmenter le risque d'erreur. </p>
 <p>Pour éviter de répéter du code, il est possible de :</p>
 <ul>
 <li>Créer une méthode (privée) si les appels multiples ont lieu dans une même classe.</li>
 <li>Créer une classe (privée au système) si les appels multiples ont lieu dans plusieurs classes.</li>
 </ul>
-<h4 id="kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide">KISS : <em>Keep It Stupid Simple</em> - Garde ça si simple que ça en est stupide</h4>
+<h4 id="kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide">KISS : <em>Keep It Stupid Simple</em> - Garde ça si simple que ça en est stupide<a class="headerlink" href="#kiss-keep-it-stupid-simple-garde-ca-si-simple-que-ca-en-est-stupide" title="Permanent link">&para;</a></h4>
 <p>Le principe <em>KISS</em> prévoit d'éviter les façons de faire complexe au profit des façons simples. Il n'est évidemment pas toujours possible d'éviter les constructions complexes, mais voici quelques exemples :</p>
 <ul>
 <li>Réduire l'imbrication des blocs de code</li>
@@ -3014,9 +4357,9 @@
 <li>Utiliser les types de données et les alias adaptés</li>
 <li>Déclarer des variables temporaires et intermédiaires</li>
 </ul>
-<h4 id="yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin">YAGNI : <em>You ain't gonna need it</em> - Tu n'en auras pas besoin</h4>
+<h4 id="yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin">YAGNI : <em>You ain't gonna need it</em> - Tu n'en auras pas besoin<a class="headerlink" href="#yagni-you-aint-gonna-need-it-tu-nen-auras-pas-besoin" title="Permanent link">&para;</a></h4>
 <p>En conception, on peut prévoir pour tous les changements potentiels et tous les cas possibles d'extension du système (ou du moins, presque tous les cas). Cette pensée mène à des systèmes incroyablement complexes dans leur définition en raison du haut niveau de flexibilité qu'ils offrent. Le problème est que la plupart de ces ouvertures seront inutilisées, mais l'effet de leur design complexité se fera quand même sentir dans le code. Il faut donc éviter les design qui incluent des ouvertures pour des besoins incertains ou non planifiés.</p>
-<h3 id="le-solid">Le <em>SOLID</em></h3>
+<h3 id="le-solid">Le <em>SOLID</em><a class="headerlink" href="#le-solid" title="Permanent link">&para;</a></h3>
 <p>Le <em>SOLID</em> est un acronyme de 5 principes. Les principes en gras sont ceux qui sont le plus couverts dans le cadre du cours.</p>
 <ul>
 <li><strong>Single responsability (responsabilité unique)</strong> : chaque classe sert à traiter une seule responsabilité, elle joue un seul rôle dans le système. En séparant les rôles de façon plus cohésive, on augmente la <strong>modularité</strong> et la <strong>réutilisabilité</strong> du code.</li>
@@ -3025,7 +4368,7 @@
 <li>Interface segregation (ségrégation par interfaces): le code doit dépendre uniquement des implémentations utilisées. On utilise de plus petites interfaces (application du <em>S</em>), afin de réduire les dépendances vers des méthodes qui ne sont pas utilisées.</li>
 <li>Dependency inversion (inversion de dépendances): il y a une hiérarchie dans l'établissement des dépendances. Les modules et composantes de haut niveau (qui ont un impact sur tout un système) ne doivent dépendre d'implémentation de bas niveau. Chaucuns des modules de haut niveau ne peut se coupler que sur des interfaces des composantes de bas niveau. Ce principe s'applique aussi aux types abstraits qui ne devraient pas dépendre de types concrets : les types concrets eux dépendent des abstractions.</li>
 </ul>
-<h3 id="les-general-responsability-assignment-software-patterns-grasp">Les <em>General Responsability Assignment Software Patterns (GRASP)</em></h3>
+<h3 id="les-general-responsability-assignment-software-patterns-grasp">Les <em>General Responsability Assignment Software Patterns (GRASP)</em><a class="headerlink" href="#les-general-responsability-assignment-software-patterns-grasp" title="Permanent link">&para;</a></h3>
 <p>Les patrons GRASP traitent des responsabilités d'un système. On entend par responsabilité tout opération ou traitement élémentaire effectués pour la réalisation d'un CU. On peut voir l'assignation d'une responsabilité comme l'étape où, pour chaque opération identifiée dans un CU, on définit comment le système la réalise. Cette spécification ne se retrouve pas dans l'analyse.</p>
 <div class="admonition tip">
 <p class="admonition-title">La différence entre la conception et l'analyse</p>
@@ -3049,7 +4392,7 @@
 <li><strong>Faible couplage</strong> : on assigne la responsabilité à la classe pour laquelle l'ajout de cette responsabilité génère le moins de nouveaux couplages ou de couplages forts.</li>
 <li><strong>Forte cohésion</strong> : on assigne la responsabilité à la classe qui possède déjà des responsabilités similaires afin de ne pas générer de nouveaux couplages.</li>
 </ul>
-<h3 id="les-patrons-dela-gang-of-four-gof">Les patrons dela <em>Gang Of Four (GoF)</em></h3>
+<h3 id="les-patrons-dela-gang-of-four-gof">Les patrons dela <em>Gang Of Four (GoF)</em><a class="headerlink" href="#les-patrons-dela-gang-of-four-gof" title="Permanent link">&para;</a></h3>
 <p>Publié en 1994 par «&nbsp;la gang des quatre&nbsp;» : Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides le livre <em>Design Patterns, Elements of Reusable Object-Oriented Software</em> pose les bases de plusieurs des patrons de conception moderne. Avec le temps, certains de leurs patrons ont été modifiés, critiqués ou même rejetés, mais dans l'ensemble leur travail est encore très d'actualité dans la façon de concevoir les systèmes objets.</p>
 <p>Parmi les patrons de la GoF, on retrouve  : </p>
 <ul>
@@ -3057,13 +4400,13 @@
 <li><strong>Structure</strong> : adaptateur, pont, composite, décorateur, façade, poids-mouche et proxy</li>
 <li><strong>Comportement</strong> : chaîne de responsabilité, commande, interpréteur, itérateur, médiateur, mémento, observateur, état, stratégie, patron de méthode et visiteur</li>
 </ul>
-<h2 id="la-modelisation">La modélisation</h2>
+<h2 id="la-modelisation">La modélisation<a class="headerlink" href="#la-modelisation" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Before the first Unified Modelling LanguageTM (UML) standards were published in the mid1990s, visual software modelling was plagued by the incompatibility of different notations created by different modelling gurus. The absence of a standardised notation deterred potential users, and as an inevitable result the modelling tools market was tiny and fragmented. The few tools that were available suffered from a lack of investment; many only allowed sketching of software designs, lacking facilities for checking the diagrams’ internal consistency or automatically processing the information they held. These early visual diagrams were useful as design aids or documentation, but were rarely integrated into the software development lifecycle. (Watson, 2008)</p>
 </blockquote>
 <p>L'extrait présenté explique l'intérêt et l'engouement qui a entouré le lancement d'UML2 qui est venu régler bien des problèmes de compréhension et d'utilisabilité des langages de modélisation. Cela a permis, entre autres, d'intégrer les langages de modélisation dans le cycle de conception des logiciels.</p>
 <p>Afin d'en apprendre plus sur les différents diagrammes et leurs notations référez-vous au <a href="https://cours-alexandre-ouellet.github.io/guide-uml/">Guide UML <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>.</p>
-<h2 id="exercices">Exercices</h2>
+<h2 id="exercices">Exercices<a class="headerlink" href="#exercices" title="Permanent link">&para;</a></h2>
 <details class="exercice">
 <summary>Exercice 1 - L'usine de trombone</summary>
 <p>Modélisez le système suivant en utilisant le paradigme orienté objet et la notation UML.</p>
@@ -3084,12 +4427,12 @@
 <p>Votre système doit aussi pouvoir être interoger pour obtenir la moyenne des dernières données lues pour chaque zone lors de la lecture des informations. Vos données doivent être disponible au format JSON, XML et texte.</p>
 <p>Nommez les principes utilisés au fur et à mesure qu'ils sont employés.</p>
 </details>
-<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références</h2>
+<h2 id="references"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 3.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 13H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 14.543V13H2.75A1.75 1.75 0 0 1 1 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5ZM16 1.25v4.146a.25.25 0 0 1-.427.177L14.03 4.03l-3.75 3.75a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l3.75-3.75-1.543-1.543A.25.25 0 0 1 11.604 1h4.146a.25.25 0 0 1 .25.25"/></svg></span> Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>Gamma, E., Helm, R., Johnson, R., Vlissides, J. (1995). Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley.</p>
 <p>Larman, C. (2005). UML 2 et les design patterns. Pearson Education.</p>
 <p>Martin, R. C., Martin, M. (2006). Agile Principles, Patterns, and Practices in C#. Pearson Education.</p>
 <p>Meyer, B. (2017). Conception et programmation orientées objet. Eyrolles.</p>
-<p>Watson, A. (2008). Visual Modelling: past, present and future . Object Management Group. https://www.omg.org/UML/Visual_Modeling.pdf</p>
+<p>Watson, A. (2008). Visual Modelling: past, present and future . Object Management Group. <a href="https://www.omg.org/UML/Visual_Modeling.pdf">https://www.omg.org/UML/Visual_Modeling.pdf</a></p>
 
 
 
@@ -3105,12 +4448,22 @@
 
 
                 
+
+
               </article>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Retour en haut de la page
+</button>
         
       </main>
       
@@ -3121,7 +4474,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../architectures/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conception | Choix architecture">
+          <a href="../architectures/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Choix architecture">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3131,20 +4484,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Conception | Choix architecture
+                Choix architecture
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modele-donnees/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Conception | Modèle des données">
+          <a href="../modele-donnees/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Modèle des données">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Conception | Modèle des données
+                Modèle des données
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3161,7 +4514,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC BY-NC-SA Alexandre Ouellet
+      CC BY-NC-SA | 2026 | Alexandre Ouellet
     </div>
   
   
@@ -3197,14 +4550,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
-    
-    
-    
-    
-    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
-    </a>
-  
 </div>
       
     </div>
@@ -3224,14 +4569,16 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.path","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>

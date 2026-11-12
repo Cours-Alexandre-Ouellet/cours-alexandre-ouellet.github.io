@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Cours 420-5B5-VI Projet intégrateur 1 axé sur la gestion de projet et retour sur les principes de conception objet">
+        <meta name="description" content="Notes de cours du cours de 420-5B5-VI Projet intégrateur 1">
       
       
         <meta name="author" content="Alexandre Ouellet">
@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://github.com/Cours-Alexandre-Ouellet/projet-integrateur-1/implementation/formulaire-javafx/">
       
       
+        <link rel="prev" href="../conteneurs-javafx/">
+      
+      
+        <link rel="next" href="../listes-javafx/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Créer un formulaire avec JavaFX - Projet intégrateur 1</title>
+        <title>Créer un formulaire avec JavaFX - 420-5B5-VI Projet intégrateur 1</title>
       
     
     
@@ -40,12 +44,6 @@
         <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b27955a4.min.css">
       
       
-
-  
-  
-  
-  
-  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010m-12%206%206-6-6-6-1.4%201.4%204.6%204.6-4.6%204.6z%22/%3E%3C/svg%3E');}</style>
 
 
     
@@ -62,9 +60,15 @@
       
     
     
-      <link rel="stylesheet" href="../../css/hint.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/course-header.css">
     
-      <link rel="stylesheet" href="../../css/override.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/hint.min.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/card-genre.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
@@ -100,13 +104,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Projet intégrateur 1" class="md-header__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+    <a href="../.." title="420-5B5-VI Projet intégrateur 1" class="md-header__button md-logo" aria-label="420-5B5-VI Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
+  <img src="../../images/favicon.svg" alt="420-5B5-VI Projet intégrateur 1">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -117,7 +119,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Projet intégrateur 1
+            420-5B5-VI Projet intégrateur 1
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -136,7 +138,31 @@
     
     
     
-    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
     
   
 </form>
@@ -165,8 +191,14 @@
     </div>
   </nav>
   
+</header>
     
+    <div class="md-container" data-md-component="container">
       
+      
+        
+          
+            
 <nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -176,8 +208,32 @@
   
   
   
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
     
       
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -200,6 +256,20 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -222,6 +292,20 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -244,11 +328,21 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
       <li class="md-tabs__item">
-        <a href="../../iterationN/documentation.md" class="md-tabs__link">
+        <a href="../../iterationN/reusinage.md" class="md-tabs__link">
           
   
   Iteration N
@@ -263,23 +357,51 @@
   
   
   
-  
     
-      
-    
-    
-    
-      
-  
-  
   
   
     
       
+      
+        
+      
+        
+      
+        
+      
     
     
     
-      <li class="md-tabs__item">
+    
+      
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../java-gradle/" class="md-tabs__link">
           
   
@@ -301,6 +423,68 @@
   
     
       
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../patrons/commande/" class="md-tabs__link">
+          
+  
+  Patrons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
     
@@ -311,6 +495,10 @@
   
     
       
+      
+        
+      
+    
     
     
     
@@ -348,13 +536,7 @@
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -375,12 +557,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Projet intégrateur 1" class="md-nav__button md-logo" aria-label="Projet intégrateur 1" data-md-component="logo">
+    <a href="../.." title="420-5B5-VI Projet intégrateur 1" class="md-nav__button md-logo" aria-label="420-5B5-VI Projet intégrateur 1" data-md-component="logo">
       
-  <img src="../../images/favicon.svg" alt="Projet intégrateur 1">
+  <img src="../../images/favicon.svg" alt="420-5B5-VI Projet intégrateur 1">
 
     </a>
-    Projet intégrateur 1
+    420-5B5-VI Projet intégrateur 1
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -391,7 +573,41 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
     
+  
+  Accueil
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -405,10 +621,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -426,8 +644,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_1">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -498,6 +716,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -510,10 +738,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -531,8 +761,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_1_3">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -674,6 +904,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -686,10 +930,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -707,8 +953,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_2">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -804,6 +1050,75 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Analyse
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Analyse
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../iteration0/entites-actrices/" class="md-nav__link">
         
@@ -812,7 +1127,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Entité actrice
+  Entité actrice
 
     
   </span>
@@ -839,7 +1154,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Récits d'utilisation
+  Récits d'utilisation
 
     
   </span>
@@ -866,7 +1181,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Liste des fonctionnalités et des cas d'utilisation
+  Liste des fonctionnalités et des cas d'utilisation
 
     
   </span>
@@ -893,7 +1208,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Choix de technologies
+  Choix de technologies
 
     
   </span>
@@ -920,7 +1235,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Besoins de sécurité
+  Besoins de sécurité
 
     
   </span>
@@ -947,7 +1262,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Conformité légale
+  Conformité légale
 
     
   </span>
@@ -974,7 +1289,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Planification des ressources
+  Planification des ressources
 
     
   </span>
@@ -986,6 +1301,74 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Conception
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Conception
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1001,7 +1384,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Standards et normes
+  Standards et normes
 
     
   </span>
@@ -1028,7 +1411,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Pipeline
+  Pipeline
 
     
   </span>
@@ -1040,6 +1423,74 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Qualité logicielle
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Qualité logicielle
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1055,7 +1506,7 @@
   <span class="md-ellipsis">
     
   
-  Qualité logicielle | Critères de qualité
+  Critères de qualité
 
     
   </span>
@@ -1082,7 +1533,7 @@
   <span class="md-ellipsis">
     
   
-  Qualité logicielle | Types de test
+  Types de test
 
     
   </span>
@@ -1090,6 +1541,15 @@
   
 
       </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
     </li>
   
 
@@ -1111,6 +1571,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1123,10 +1597,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -1144,8 +1620,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_3">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1188,6 +1664,92 @@
   
   
     <li class="md-nav__item">
+      <a href="../../iteration1/documentation-personnes-utilisatrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documentation pour les personnes utilisatrices
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Analyse
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Analyse
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../iteration1/cas-utilisation/" class="md-nav__link">
         
   
@@ -1195,7 +1757,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Cas d'utilisation
+  Cas d'utilisation
 
     
   </span>
@@ -1222,7 +1784,7 @@
   <span class="md-ellipsis">
     
   
-  Analyse | Concevoir des interfaces
+  Concevoir des interfaces
 
     
   </span>
@@ -1234,6 +1796,78 @@
   
 
                 
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Conception
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Conception
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1249,7 +1883,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Choix architecture
+  Choix architecture
 
     
   </span>
@@ -1276,7 +1910,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Diagramme de classe
+  Diagramme de classe
 
     
   </span>
@@ -1303,7 +1937,7 @@
   <span class="md-ellipsis">
     
   
-  Conception | Modèle des données
+  Modèle des données
 
     
   </span>
@@ -1315,165 +1949,6 @@
   
 
                 
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iteration1/complexite-algorithmes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Complexité des algorithmes
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iteration1/documentation-technique/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Documenter du code
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iteration1/documentation-personnes-utilisatrices/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Autres activités | Documentation pour les personnes utilisatrices
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iteration1/plan-test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Qualité logicielle | Plan de test
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Autres ressources
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_3_11">
-              <span class="md-nav__icon md-icon"></span>
-              
-  
-  Autres ressources
-
-            </label>
-            <ul class="md-nav__list" data-md-scrollfix>
               
                 
                   
@@ -1511,6 +1986,221 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Implémentation
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Implémentation
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/complexite-algorithmes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Complexité des algorithmes
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/documentation-technique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documenter du code
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Qualité logicielle
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Qualité logicielle
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteration1/plan-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Plan de test
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -1527,6 +2217,16 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1539,10 +2239,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1560,8 +2262,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_4">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1569,60 +2271,6 @@
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iterationN/documentation.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Analyse | Maintenir à jour la documentation
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../iterationN/implementation.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Implémentation | Continuer et réutiliser le code existant
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
               
                 
                   
@@ -1744,26 +2392,39 @@
       
   
   
+    
   
   
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1781,8 +2442,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1795,26 +2456,47 @@
                   
   
   
+    
   
   
-    
-    
+  
     
     
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+      
         
           
-          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="">
             
   
   
@@ -1832,8 +2514,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5_1">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_6_1">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -1876,7 +2558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../javafx-intro.md" class="md-nav__link">
+      <a href="../javafx-intro/" class="md-nav__link">
         
   
   
@@ -1903,7 +2585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conteneurs-javafx.md" class="md-nav__link">
+      <a href="../conteneurs-javafx/" class="md-nav__link">
         
   
   
@@ -1927,10 +2609,36 @@
                   
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../formulaire-javafx.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Créer un formulaire avec JavaFX
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1945,6 +2653,177 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#la-disposition-des-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        La disposition des éléments
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-controles-de-formulaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Les contrôles de formulaire
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les contrôles de formulaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#populer-les-combobox" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Populer les <code class="language-java highlight"><span class="n">ComboBox</span></code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementer-la-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Implémenter la validation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implémenter la validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation-des-boites-de-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Validation des boîtes de sélection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-des-champs-textes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Validation des champs textes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-de-la-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Validation de la date
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-des-boutons-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Validation des boutons radio
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendre-la-validation-dynamique" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Rendre la validation dynamique
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculer-le-total-du-voyage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Calculer le total du voyage
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-des-styles-a-notre-formulaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ajouter des styles à notre formulaire
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajouter des styles à notre formulaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendre-les-styles-dynamiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Rendre les styles dynamiques
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1957,7 +2836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../listes-javafx.md" class="md-nav__link">
+      <a href="../listes-javafx/" class="md-nav__link">
         
   
   
@@ -1984,7 +2863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fenetre-javafx.md" class="md-nav__link">
+      <a href="../fenetre-javafx/" class="md-nav__link">
         
   
   
@@ -2011,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../erreur-javafx.md" class="md-nav__link">
+      <a href="../erreur-javafx/" class="md-nav__link">
         
   
   
@@ -2048,22 +2927,31 @@
   
     
     
-    
-    
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
         
           
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="">
             
   
   
@@ -2081,8 +2969,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_5_2">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_2">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2127,6 +3015,102 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  JUnit
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  JUnit
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../junit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Bibliothèque de tests unitaire JUnit
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -2143,6 +3127,34 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2155,10 +3167,436 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Patrons
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Patrons
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/commande/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Commande
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/composite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Composite
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/decorateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Décorateur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/etat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  États
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/fabrique/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Fabrique
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/fabrique-abstraite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Fabrique abstraite
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/mediateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Médiateur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/memento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Mémento
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/monteur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Monteur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/flyweight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Poids-mouche
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Prototype
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/strategie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Stratégie
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patrons/visiteur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Visiteur
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2176,8 +3614,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6">
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2194,6 +3632,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -2206,10 +3648,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
             
   
   
@@ -2227,8 +3671,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_1">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_1">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2335,6 +3779,18 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2347,10 +3803,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
         
           
-          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
             
   
   
@@ -2368,8 +3826,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_4">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_4">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2530,6 +3988,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -2542,10 +4004,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_5" >
         
           
-          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
             
   
   
@@ -2563,8 +4027,8 @@
           </label>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_6_5">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_5">
               <span class="md-nav__icon md-icon"></span>
               
   
@@ -2661,14 +4125,136 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../java-gradle/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Implémentation
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../java-gradle/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    JavaFX
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 <a id="__skip" tabindex="-1"></a>
                 
+
+
+
+
                   
 
 
-<h1 id="creer-un-formulaire-avec-javafx">Créer un formulaire avec JavaFX</h1>
+<h1 id="creer-un-formulaire-avec-javafx">Créer un formulaire avec JavaFX<a class="headerlink" href="#creer-un-formulaire-avec-javafx" title="Permanent link">&para;</a></h1>
 <div class="competences">
 <div style="flex: 0 0 70%">
 <p class="subtitle"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.25.25 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.94.94 0 0 1-.663.275"/><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.4 9.4 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12"/><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12"/></svg></span> <span class="subtitle-content">Contenus de la section</span></p>
@@ -2682,7 +4268,7 @@
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 6.08s-6.84 1.71-3.56 5.48c.97 1.11-.25 2.11-.25 2.11s2.45-1.25 1.31-2.85c-1.06-1.47-1.86-2.2 2.5-4.74m-4.47 1.2C16.08 4.08 14 2 14 2c.84 3.3-2.96 4.3-4.33 6.36-.94 1.4.46 2.91 2.33 4.64-.71-1.7-3.22-3.16.03-5.72M9.37 17.47c-3.08.86 1.88 2.63 5.79.96-.38-.15-.75-.33-1.1-.54-1.36.31-2.76.37-4.14.18-1.31-.16-.55-.6-.55-.6m5.32-1.68c-1.75.38-3.56.47-5.34.26-1.31-.13-.45-.77-.45-.77-3.4 1.13 1.88 2.4 6.6 1.02-.29-.11-.57-.3-.81-.51m3.42 3.3s.57.47-.61.83c-2.28.68-9.43.89-11.41.03-.71-.31.63-.74 1.05-.83.23-.06.46-.08.69-.08-.79-.54-5.13 1.1-2.19 1.56 7.97 1.3 14.54-.6 12.47-1.51m-2.74-4.86c.29-.19.6-.35.92-.49 0 0-1.51.26-3.02.4-1.6.16-3.21.18-4.81.06-2.35-.31 1.29-1.2 1.29-1.2-1.1 0-2.18.26-3.16.75-2.05 1 5.1 1.45 8.78.48m.9 2.42c-.02.04-.04.07-.08.1 5.01-1.31 3.17-4.64.77-3.81-.13.06-.24.14-.31.25.14-.05.28-.09.43-.12 1.2-.24 2.92 1.63-.81 3.58m.13 4.61c-3.01.52-6.09.56-9.12.14 0 0 .46.38 2.81.53 3.6.23 9.13-.13 9.26-1.83.03.01-.23.65-2.95 1.16"/></svg></span> | <a href="https://github.com/thecakeisreal/demo-javafx">L'exemple complet du code final</a></p>
 <p>Cette page donne un aperçu de la création d'un formulaire pour un itinéaire de voyage. L'exemple sera basé sur le diagramme en fil de fer suivant :</p>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/diagramme-formulaire.png"><img alt="" src="../../images/diagramme-formulaire.png" /></a>
+    <img alt="" src="../../images/diagramme-formulaire.png" />
     <ficaption>Maquette d'une interface pour créer un itinéraire</figcaption>
 </figure>
 <div class="admonition warning">
@@ -2690,10 +4276,10 @@
 <p>La maquette est incomplète, elle sert plus à donner un contexte cohérent à la présentation des fonctionnalités de <em>JavaFX</em>.</p>
 <p>Les commentaires sont omis du code pour alléger, car une description de son fonctionnement est fournie autour. En situation réelle, il faut évidemment tout bien documenter avec la <em>javadoc</em>.</p>
 </div>
-<h2 id="la-disposition-des-elements">La disposition des éléments</h2>
+<h2 id="la-disposition-des-elements">La disposition des éléments<a class="headerlink" href="#la-disposition-des-elements" title="Permanent link">&para;</a></h2>
 <p>Pour positionner les éléments on utilise le <code class="language-java highlight"><span class="n">VBox</span></code> (boîte verticale) pour une disposition verticale des éléments de la page (en bleu). Lequel contiendra un <code class="language-java highlight"><span class="n">GridPane</span></code> (grille) pour organiser le formulaire (en rouge) et un <code class="language-java highlight"><span class="n">HBox</span></code> (boîte horizontale) pour les boutons (en vert). Les étiquettes en gris seront disposées dans un second <code class="language-java highlight"><span class="n">GridPane</span></code> à l'intérieur d'un <code class="language-java highlight"><span class="n">HBox</span></code> (en gris). </p>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/diagramme-formulaire-layout.png"><img alt="" src="../../images/diagramme-formulaire-layout.png" /></a>
+    <img alt="" src="../../images/diagramme-formulaire-layout.png" />
     <ficaption markdown>Application des layouts sur le formulaire</figcaption>
 </figure>
 <p>Dans le code nous avons le résultat suivant pour créer l'organisation de notre page.</p>
@@ -2742,7 +4328,7 @@
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nt">&lt;/VBox&gt;</span>
 </span></code></pre></div></td></tr></table></div>
 <p>On remarque sur la ligne 10 que le <code class="language-java highlight"><span class="n">Label</span></code> indique à son parent <code class="language-java highlight"><span class="n">GridPane</span></code> comment l'intégrer. On utilise alors la syntaxe <code class="language-java highlight"><span class="n">Parent</span><span class="p">.</span><span class="na">propriété</span></code> et cela applique la propriété uniquement sur l'enfant actuel (le <code class="language-java highlight"><span class="n">Label</span></code> dans notre cas). Comme le <code class="language-java highlight"><span class="n">GridPane</span></code> prend la forme d'un tableau, il faut indiquer à chaque fois la position de notre élément. </p>
-<h2 id="les-controles-de-formulaire">Les contrôles de formulaire</h2>
+<h2 id="les-controles-de-formulaire">Les contrôles de formulaire<a class="headerlink" href="#les-controles-de-formulaire" title="Permanent link">&para;</a></h2>
 <p>Lorsqu'on crée les contrôles d'un formulaire il est important de leur donner à chacun un <code class="language-java highlight"><span class="nl">fx</span><span class="p">:</span><span class="n">id</span></code> pour récupérer leur valeur dans le contrôleur et pouvoir l'utiliser. Le formulaire avec tous les contrôles ressemble à ceci (uniquement le <code class="language-java highlight"><span class="n">GridPane</span></code> est présenté). Des <code class="language-java highlight"><span class="n">Label</span></code> vides ont été ajoutés pour contenir d'éventuels messages d'erreur.</p>
 <div class="language-xml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Structure du formulaire</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
@@ -2836,10 +4422,10 @@
 <li>Le contrôle <code class="language-java highlight"><span class="n">Button</span></code> possède la propriété <code class="language-java highlight"><span class="n">onAction</span></code> qui définit la méthode appelée lorsqu'on appuie dessus.</li>
 </ol>
 <figure>
-    <a class="glightbox" data-type="image" href="../../images/formulaire-simple.png"><img alt="" src="../../images/formulaire-simple.png" /></a>
+    <img alt="" src="../../images/formulaire-simple.png" />
     <ficaption markdown>État du formulaire après la création simple des champs</figcaption>
 </figure>
-<h3 id="populer-les-combobox">Populer les <code class="language-java highlight"><span class="n">ComboBox</span></code></h3>
+<h3 id="populer-les-combobox">Populer les <code class="language-java highlight"><span class="n">ComboBox</span></code><a class="headerlink" href="#populer-les-combobox" title="Permanent link">&para;</a></h3>
 <p>En <em>JavaFX</em>, il <strong>ne faut pas</strong> manipuler le constructeur lorsqu'on veut accéder à la logique d'initialisation. Il faut plutôt déclarer une méthode appelée <code class="language-java highlight"><span class="n">initialize</span></code> avec l'annotation <code class="language-java highlight"><span class="nd">@FXML</span></code>. Cette méthode est automatiquement appelée par <em>JavaFX</em> lors de la création du contrôleur.</p>
 <p>Pour les <code class="language-java highlight"><span class="n">ComboBox</span></code> elles doivent contenir une <code class="language-java highlight"><span class="n">ObservableArrayList</span></code> qui se comporte exactement comme une <code class="language-java highlight"><span class="n">ArrayList</span></code> standard (avec les mêmes méthodes, sauf pour la création) et permet à l'interface de se mettre à jour lorsqu'on change les éléments de la liste (une liste qui implémente le patron observateur).</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Peuplement des ComboBox</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
@@ -2875,9 +4461,9 @@
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <p>À la ligne 12, on aurait pu passer des objets dans un tableaux ou une <code class="language-java highlight"><span class="n">ArrayLst</span></code> à la méthode <code class="language-java highlight"><span class="n">observableArrayList</span></code> de <code class="language-java highlight"><span class="n">FXCollections</span></code> qui agit comme une <strong>Fabrique</strong> d'<code class="language-java highlight"><span class="n">ObservableArrayList</span></code>.</p>
-<h2 id="implementer-la-validation">Implémenter la validation</h2>
+<h2 id="implementer-la-validation">Implémenter la validation<a class="headerlink" href="#implementer-la-validation" title="Permanent link">&para;</a></h2>
 <p>Pour respecter les bons principes d'affectation de responsabilité (une méthode, une tâche), chaque type de validation aura une méthode dédiée. On va structurer la validation pour pouvoir réutiliser le même code pour valider la ville et le pays de départ ou d'arrivée.</p>
-<h3 id="validation-des-boites-de-selection">Validation des boîtes de sélection</h3>
+<h3 id="validation-des-boites-de-selection">Validation des boîtes de sélection<a class="headerlink" href="#validation-des-boites-de-selection" title="Permanent link">&para;</a></h3>
 <p>Le code ci-dessous s'assure qu'une valeur ait été sélectionné dans la <code class="language-java highlight"><span class="n">ComboBox</span></code> indiquée en paramètre. Si l'item sélectionné est nul, alors le <code class="language-java highlight"><span class="n">Label</span></code> voit sa valeur modifiée pour prendre le message d'erreur. Dans le cas contraire, on met le contenu du <code class="language-java highlight"><span class="n">Label</span></code> à vide.</p>
 <p>La mtéhode <code class="language-java highlight"><span class="n">getSelectionModel</span></code> retourne un objet de type <code class="language-java highlight"><span class="n">SelectionModel</span></code> qui est utilisé pour gérer la sélection dans les contrôles de sélection. Il offre plusieurs méthodes pour la sélection unique et multiple. On appelle <code class="language-java highlight"><span class="n">getSelectedItem</span></code> qui nous retourne un <code class="language-java highlight"><span class="n">String</span></code> car la <code class="language-java highlight"><span class="n">ComboBox</span></code> contient des <code class="language-java highlight"><span class="n">Stirng</span></code>. </p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Validation des pays</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
@@ -2898,7 +4484,7 @@
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">valide</span><span class="p">;</span>
 </span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="validation-des-champs-textes">Validation des champs textes</h3>
+<h3 id="validation-des-champs-textes">Validation des champs textes<a class="headerlink" href="#validation-des-champs-textes" title="Permanent link">&para;</a></h3>
 <p>Pour la validation d'un champs texte, on peut simplement appeler la méthode <code class="language-java highlight"><span class="n">getText</span></code> qui retourne la valeur entrée dans le champs.</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Validation des villes</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
@@ -2916,7 +4502,7 @@
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="validation-de-la-date">Validation de la date</h3>
+<h3 id="validation-de-la-date">Validation de la date<a class="headerlink" href="#validation-de-la-date" title="Permanent link">&para;</a></h3>
 <p>Pour la validation de la date on accède à la <code class="language-java highlight"><span class="n">value</span></code> du champs de sélection de date, ce qui retourne un objet <a href="https://docs.oracle.com/javase/8/docs/api/?java/time/LocalDate.html"><code class="language-java highlight"><span class="n">LocalDate</span></code></a>. On la compare ensuite à la date actuelle et affiche le message d'erreur (ou le retire) selon la situation.</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Validation de la date du départ</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
@@ -2948,7 +4534,7 @@
 </span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">valide</span><span class="p">;</span>
 </span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="validation-des-boutons-radio">Validation des boutons radio</h3>
+<h3 id="validation-des-boutons-radio">Validation des boutons radio<a class="headerlink" href="#validation-des-boutons-radio" title="Permanent link">&para;</a></h3>
 <p>Pour valider les moyens de transport, on utilise le <code class="language-java highlight"><span class="n">ToggleGroup</span></code> pour récupérer la valeur de l'élément sélectionné parmi tous les <code class="language-java highlight"><span class="n">RadioButton</span></code>. Si aucun moyen n'est sélectionné ou que le moyen est invalide pour les destinations on affiche un message d'erreur.</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Validation du mode de transport</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
@@ -2988,7 +4574,7 @@
 </span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">valide</span><span class="p">;</span>
 </span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="rendre-la-validation-dynamique">Rendre la validation dynamique</h3>
+<h3 id="rendre-la-validation-dynamique">Rendre la validation dynamique<a class="headerlink" href="#rendre-la-validation-dynamique" title="Permanent link">&para;</a></h3>
 <p>Pour rendre la validation dynamique, on utilise la propriété <code class="language-java highlight"><span class="n">focus</span></code> pour déterminer lorsqu'un objet permet le focus. Les propriétés en java, qui sont développées dans la bibliothèque <em>JavaFX</em>, sont en fait des valeurs observables. Donc sur la propriété <code class="language-java highlight"><span class="n">focused</span></code> on ajoute un observateur qui implémente l'interface <code class="language-java highlight"><span class="n">ChangeListener</span></code> :</p>
 <div class="language-java highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Signature d&#x27;un observateur de changement en java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
 <span class="normal"><a href="#__codelineno-8-2">2</a></span>
@@ -3024,7 +4610,7 @@
 <p class="admonition-title">Sélection du mode de transport</p>
 <p>Aucune liaison vers la propriété <code class="language-java highlight"><span class="n">focused</span></code> a été faite pour les boutons radios, car leur fonctionnement assure qu'ils sont cochés lors de la perte de focus.</p>
 </div>
-<h2 id="calculer-le-total-du-voyage">Calculer le total du voyage</h2>
+<h2 id="calculer-le-total-du-voyage">Calculer le total du voyage<a class="headerlink" href="#calculer-le-total-du-voyage" title="Permanent link">&para;</a></h2>
 <p>Pour calculer le coût total du voyage, notre formulaire va devoir réagir au changement de valeurs dans les champs et non simplement à la perte de focus. On peut ajouter notre code de calcul à l'observateur de <code class="language-java highlight"><span class="n">focused</span></code> pour les champs qui ont déjà un observateur de ce type. Par contre, pour les boutons radios, les cases à cocher et le contrôle d'entier, on pourra réagir au changement de la valeur plutôt qu'à la perte de focus ce qui se traduit par une interface plus réactive.</p>
 <p>Pour les boutons radios et les cases à cocher, nous ajouterons un observateur sur la propriété <code class="language-java highlight"><span class="n">selected</span></code> qui change de valeur (et notifie) lorsque la case est sélectionnée ou désélectionnée. Pour le nombre de personne, la propriété <code class="language-java highlight"><span class="n">value</span></code> est celle observée.</p>
 <p>Pour gérer les données dans les coûts, une classe de propriété <code class="language-java highlight"><span class="n">IntegerProperty</span></code> sera utilisée plutôt que le type <code class="language-java highlight"><span class="kt">int</span></code>. La classe de propriété permet de lui intégrer un observateur. </p>
@@ -3190,7 +4776,7 @@
 </span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="p">});</span>
 </span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="ajouter-des-styles-a-notre-formulaire">Ajouter des styles à notre formulaire</h2>
+<h2 id="ajouter-des-styles-a-notre-formulaire">Ajouter des styles à notre formulaire<a class="headerlink" href="#ajouter-des-styles-a-notre-formulaire" title="Permanent link">&para;</a></h2>
 <p>Les <code class="language-java highlight"><span class="n">styleclass</span></code> en <em>JavaFX</em> fonctionne de façon similaire aux classes CSS. De plus, <em>JavaFX</em> permet l'intégration de feuilles de style CSS, mais avec le nom des propriété précédé par -fx-. L'ensemble des règles CSS sont disponibles dans la <a href="https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html">documentation officielle</a>. Le symbole "@" indique que la ressource doit être chargée du même répertoire. </p>
 <div class="language-xml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Coloration des boutons du formulaire</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
@@ -3272,7 +4858,7 @@
 </span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="w">    </span><span class="nv">-fx-font-weight</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
 </span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="rendre-les-styles-dynamiques">Rendre les styles dynamiques</h3>
+<h3 id="rendre-les-styles-dynamiques">Rendre les styles dynamiques<a class="headerlink" href="#rendre-les-styles-dynamiques" title="Permanent link">&para;</a></h3>
 <p>Il est possible de modifier les <code class="language-java highlight"><span class="n">styleclass</span></code> des objets durant l'exécution. Pour le faire, on accède à la liste des <code class="language-java highlight"><span class="n">styleclass</span></code> qui retourne une <code class="language-java highlight"><span class="n">ObservableList</span></code> de chaînes de caractères : les classes de style de l'objet.</p>
 <p>Dans le formulaire, des bordures rouges seront ajoutées et enlevées des champs selon leur degré de validité avec la classe <code class="language-java highlight"><span class="n">erreur</span></code>. La ligne surlignée est ajoutée à la méthode <code class="language-java highlight"><span class="n">validerPays</span></code> déjà présente.</p>
 <div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bordure pour les erreurs</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
@@ -3340,17 +4926,65 @@
 
 
                 
+
+
               </article>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Retour en haut de la page
+</button>
         
       </main>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../conteneurs-javafx/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Conteneurs JavaFX">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Conteneurs JavaFX
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../listes-javafx/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Listes de données">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Listes de données
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -3358,7 +4992,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      CC BY-NC-SA Alexandre Ouellet
+      CC BY-NC-SA | 2026 | Alexandre Ouellet
     </div>
   
   
@@ -3394,14 +5028,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
-    
-    
-    
-    
-    <a href="" target="_blank" rel="noopener" title="ouellet.alexandre@cegepvicto.ca" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
-    </a>
-  
 </div>
       
     </div>
@@ -3421,14 +5047,16 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","content.code.select","content.tooltips","navigation.footer","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.path","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow","toc.integrate"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>
